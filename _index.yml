@@ -10,7 +10,7 @@ indexpage:
     - title: VMware vSphere용 ONTAP 툴에 대해 자세히 알아보십시오
       url: "/concepts/concept_ontap_tools_overview.html"
     - title: ONTAP 도구 빠른 시작
-      url: "/qsg_10.html"
+      url: "/deploy/qsg_10.html"
     - title: ONTAP 툴 구축
       url: "/deploy/prepare_deployment.html"
     - title: ONTAP 도구를 마이그레이션합니다

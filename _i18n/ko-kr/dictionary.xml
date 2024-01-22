@@ -441,7 +441,6 @@ ONTAP REST API를 사용하여 애그리게이트 ID, 스토리지_ID(SVM uuid)�
   <block id="f6a8c4418598dbac9139a7fe52e99cd9" category="admonition">기존 사용자는 9.10D 패치 또는 9.11D 패치로 업그레이드하기 전에 9.10/9.11에서 OVA 백업을 수행해야 합니다</block>
   <block id="2db68a279bc2b75d7d1a4b6e68d05ff4" category="list-text">VMware vSphere 9.10D2 및 9.11D4용 기존 ONTAP 툴에서 더비 포트 1527을 활성화합니다. 포트를 활성화하려면 루트 사용자로 CLI에 로그인하고 다음 명령을 실행합니다.</block>
   <block id="e695b432b77d6bddfcb785c76f5e5442" category="inline-link-macro">ONTAP 도구 빠른 시작</block>
-  <block id="6f6b7bd58886693f11eb96bd0341b5b3" category="list-text">VMware vSphere 10.0 릴리즈용 ONTAP 툴용 OVA 구축 을 참조하십시오 <block ref="a02083ee995a4c6975877ba810ab5474" category="inline-link-macro-rx"></block></block>
   <block id="17a7ed8efe05072366e69496ed1711fb" category="list-text">VMware vSphere 10.0 릴리즈용 ONTAP 툴로 마이그레이션할 vCenter를 추가합니다. 을 참조하십시오 <block ref="a10f9e2fb5f93213a95f892ddd0bf865" category="inline-link-macro-rx"></block>.</block>
   <block id="184c4f313c0a230f7a83d7121fa485d7" category="inline-link-macro">온보드 스토리지 백엔드</block>
   <block id="bf632d416dbc3267749473a4eedebc79" category="list-text">원격 플러그인 vCenter API에서 로컬로 스토리지 백엔드를 온보드합니다. 을 참조하십시오 <block ref="3019410685f421965726529ee880cf27" category="inline-link-macro-rx"></block>. 마이그레이션을 위해 스토리지를 로컬 범위로 추가합니다.</block>
@@ -675,7 +674,6 @@ VVol Virtual Machine Summary Report(VVol 가상 머신 요약 보고서) 메뉴�
   <block id="ff31982aef870d546d52f49bb30ef34b" category="section-title">구현할 수 있습니다</block>
   <block id="26d3524e83da73ce160fdf15b9ee1f7f" category="paragraph">VMware vSphere용 ONTAP 툴을 구축하기 전에 배포 패키지의 공간 요구 사항과 몇 가지 기본적인 호스트 시스템 요구 사항을 숙지해야 합니다.</block>
   <block id="f4930bf161a0a7075db869066f0839f9" category="paragraph">ONTAP 툴은 Windows vCenter Server 또는 vCSA(VMware vCenter Server VirtualAppliance)와 함께 사용할 수 있습니다. ESXi 시스템이 포함된 지원되는 vSphere에 ONTAP 툴을 구축해야 합니다.</block>
-  <block id="ec86808f81c82b9651e18a844d1ea19f" category="paragraph">자세한 내용은 을 참조하십시오 <block ref="cab16d3be602ba465c507fec284cffbd" category="inline-link-macro-rx"></block></block>
   <block id="86f56c72e0832c1bb59b9394dbcb0853" category="section-title">ONTAP 툴 요구사항</block>
   <block id="dfa57bc5abba0952197bf25265b987c7" category="list-text">ova 파일을 다운로드합니다.</block>
   <block id="a81177e1cbc66e893d0b2b880b7fb4f4" category="list-text">vCenter Server 인스턴스에 대한 로그인 자격 증명입니다.</block>
@@ -841,4 +839,6 @@ vCenter 8은 씬 프로비저닝에서 256GB LUN의 용량을 사용합니다.</
   <block id="31b887a5d4bfcf42237476c03005131d" category="paragraph">사용자 및 그룹은 vCenter Server 역할의 일부가 되어 역할에 액세스할 수 있습니다.</block>
   <block id="8a52f25f3fca1f3b4922e7e5dc09fb04" category="admonition">Delete VVols Datastore 워크플로는 DELETE_VOLUME 플래그를 true로 전달한 경우 DataStore-볼륨이 관리되는지 여부와 관계없이 Datastore-volumes를 삭제합니다.</block>
   <block id="d0119a1425315c47822975d16de6de70" category="sidebar">ONTAP 툴에 대한 역할 기반 액세스 제어 개요</block>
+  <block id="9984e4b52821af66b163b37639e5ffca" category="list-text">VMware vSphere 10.0 릴리즈용 ONTAP 툴용 OVA 구축 을 참조하십시오 <block ref="09991ee05a1b93f3c38bbfed0e5d1010" category="inline-link-macro-rx"></block></block>
+  <block id="e5317f6738020b54574baa6f35cf9f92" category="paragraph">자세한 내용은 을 참조하십시오 <block ref="cab16d3be602ba465c507fec284cffbd" category="inline-link-macro-rx"></block></block>
 </blocks>

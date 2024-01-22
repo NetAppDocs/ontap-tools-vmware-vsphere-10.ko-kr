@@ -33,7 +33,7 @@ NOTE: 기존 사용자는 9.10D 패치 또는 9.11D 패치로 업그레이드하
 ----
 iptables -I INPUT 1 -p tcp --dport 1527 -j ACCEPT
 ----
-. VMware vSphere 10.0 릴리즈용 ONTAP 툴용 OVA 구축 을 참조하십시오 link:../qsg_10.html["ONTAP 도구 빠른 시작"]
+. VMware vSphere 10.0 릴리즈용 ONTAP 툴용 OVA 구축 을 참조하십시오 link:../deploy/qsg_10.html["ONTAP 도구 빠른 시작"]
 . VMware vSphere 10.0 릴리즈용 ONTAP 툴로 마이그레이션할 vCenter를 추가합니다. 을 참조하십시오 link:../configure/add_vcenter.html["vCenter를 추가합니다"].
 . 원격 플러그인 vCenter API에서 로컬로 스토리지 백엔드를 온보드합니다. 을 참조하십시오 link:../configure/onboard_svm.html["온보드 스토리지 백엔드"]. 마이그레이션을 위해 스토리지를 로컬 범위로 추가합니다.
 . 마이그레이션하려면 다음 API를 사용하십시오.
