@@ -15,7 +15,7 @@ ONTAP 툴 및 ONTAP System Manager와 함께 제공되는 JSON 파일을 사용�
 
 * 필요한 것 *
 
-* ONTAP 권한 파일은 ONTAP 도구에서 \https://<loadbalancerIP>:8443/virtualization/user-privileges/users_roles.zip을 사용하여 다운로드해야 합니다.
+* 을 사용하여 ONTAP 도구에서 ONTAP 권한 파일을 다운로드해야 합니다 `\https://<loadbalancerIP>:8443/virtualization/user-privileges/users_roles.zip`.
 +
 
 NOTE: 클러스터 또는 직접 스토리지 가상 머신(SVM) 레벨에서 사용자를 생성할 수 있습니다. user_roles.json 파일을 사용하지 않고 사용자를 생성할 수도 있습니다. 생성한 경우 SVM 레벨에서 최소 권한 세트가 있어야 합니다.

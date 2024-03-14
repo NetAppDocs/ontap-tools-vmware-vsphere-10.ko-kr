@@ -19,7 +19,7 @@ vCenter는 호스트, VM(가상 머신) 및 스토리지 백엔드를 제어할 
 
 * 단계 *
 
-. 을 시작합니다 https://loadBalanceIP:8443/virtualization/ui/[] 구축하는 동안 제공된 ONTAP 도구 관리자 자격 증명을 사용하여 브라우저에서
+. 을 시작합니다 `\https://loadBalanceIP:8443/virtualization/ui/` 구축하는 동안 제공된 ONTAP 도구 관리자 자격 증명을 사용하여 브라우저에서
 . 사이드바에서 vCenter를 선택합니다
 . vCenter IP 주소/호스트 이름, 사용자 이름, 암호 및 포트가 있는 온보드 vCenter에 * 추가 * 를 선택합니다.
 

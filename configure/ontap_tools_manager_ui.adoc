@@ -26,7 +26,7 @@ ONTAP 툴의 성능은 다음과 같습니다.
 * 로그 번들 다운로드
 
 
-ONTAP 도구 UI에 액세스하려면 를 실행합니다 https://loadBalanceIP:8443/virtualization/ui/[] 브라우저에서 로그인한 후 배포 중에 제공된 ONTAP 도구 관리자 자격 증명을 사용하여 로그인합니다.
+ONTAP 도구 UI에 액세스하려면 를 실행합니다 `\https://loadBalanceIP:8443/virtualization/ui/` 브라우저에서 로그인한 후 배포 중에 제공된 ONTAP 도구 관리자 자격 증명을 사용하여 로그인합니다.
 
 image::../media/ontap_tools_manager.png[ONTAP 도구 관리자 UI]
 

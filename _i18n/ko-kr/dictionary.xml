@@ -275,7 +275,6 @@ OVA를 HA 구성으로 배포하기 전에 콘텐츠 라이브러리를 만들�
   <block id="88e2b3b526ba4e178ae29fd3079bdbfe" category="summary">ONTAP 툴과 ONTAP System Manager와 함께 제공되는 JSON 파일을 사용하여 스토리지 백엔드 관리를 위한 새로운 사용자 역할을 구성할 수 있습니다.</block>
   <block id="47929bf09df6c8f0f0361e68f281ea29" category="paragraph">ONTAP 툴 및 ONTAP System Manager와 함께 제공되는 JSON 파일을 사용하여 스토리지 백엔드 관리를 위한 새로운 사용자 역할 및 권한을 구성할 수 있습니다.</block>
   <block id="6e511cfe87a95df884e3eeb9f86e7f6c" category="paragraph">* 필요한 것 *</block>
-  <block id="660df50b4a5374980fdf792a56f7f8fa" category="list-text">ONTAP 권한 파일은 ONTAP 도구에서 \https://&lt;loadbalancerIP&gt;:8443/virtualization/user-privileges/users_roles.zip을 사용하여 다운로드해야 합니다.</block>
   <block id="03370342849465520eebddf710012fb0" category="admonition">클러스터 또는 직접 스토리지 가상 머신(SVM) 레벨에서 사용자를 생성할 수 있습니다. user_roles.json 파일을 사용하지 않고 사용자를 생성할 수도 있습니다. 생성한 경우 SVM 레벨에서 최소 권한 세트가 있어야 합니다.</block>
   <block id="9baaec212ea7cc94549bac65152b30f9" category="list-text">스토리지 백엔드에 대한 관리자 권한으로 로그인해야 합니다.</block>
   <block id="33cb2eeaa8ed39dc8e17a80d28ad882c" category="list-text">다운로드한 파일의 압축을 풉니다<block ref="7f922dba99ab8084641c5a38eed2214d" prefix=" " category="inline-code"></block> 파일.</block>
@@ -360,7 +359,6 @@ ONTAP REST API를 사용하여 애그리게이트 ID, 스토리지_ID(SVM uuid)�
   <block id="431131d0beb0c4676312767a56da7f4b" category="summary">vCenter는 호스트, VM(가상 머신) 및 스토리지 백엔드를 제어할 수 있는 중앙 관리 플랫폼입니다.</block>
   <block id="612aa7a1930dd6f3ed723264e94c2a7e" category="doc">vCenter를 추가합니다</block>
   <block id="9f65fe2e1d78de824bf3eadfc84dcb76" category="paragraph">하나의 VMware vCenter 10.0용 ONTAP 툴 인스턴스를 사용하여 여러 vCenter를 추가하고 관리할 수 있습니다.</block>
-  <block id="b95dce2bcc7adc6e60834ff81ca5af5d" category="list-text">을 시작합니다<block ref="e068378fd08c8099e0a9b67e1ace0a53" category="inline-link-rx"></block> 구축하는 동안 제공된 ONTAP 도구 관리자 자격 증명을 사용하여 브라우저에서</block>
   <block id="7381f9313b931dde25f155f59fb3be63" category="list-text">사이드바에서 vCenter를 선택합니다</block>
   <block id="a56ab30c3fa2c56c499feecf7b173c5d" category="list-text">vCenter IP 주소/호스트 이름, 사용자 이름, 암호 및 포트가 있는 온보드 vCenter에 * 추가 * 를 선택합니다.</block>
   <block id="ed05b72b00296d4ab8e08f703c69cf9c" category="paragraph">을 참조하십시오 <block ref="fef8f4e7151721135aee00bc2c3cdcc6" category="inline-link-macro-rx"></block>.</block>
@@ -419,7 +417,6 @@ ONTAP REST API를 사용하여 애그리게이트 ID, 스토리지_ID(SVM uuid)�
   <block id="6a2a753f23f929a7e63dfdcca93ad8b5" category="paragraph">스토리지 백엔드는 ONTAP Tools Manager 또는 Commons API를 통해 추가할 때 글로벌화되고 vCenter API에서 추가할 경우 로컬입니다.
 예: 멀티 테넌트 설정의 경우, 스토리지 백엔드(클러스터)를 글로벌 및 SVM을 로컬에서 추가하여 직접 SVM 자격 증명을 사용할 수 있습니다.</block>
   <block id="af2c5b945e20e23dc75787cf093c5d9f" category="list-text">로그 번들 다운로드</block>
-  <block id="bb23f693be2a0f4972ca64c8a621cd2b" category="paragraph">ONTAP 도구 UI에 액세스하려면 를 실행합니다<block ref="e068378fd08c8099e0a9b67e1ace0a53" category="inline-link-rx"></block> 브라우저에서 로그인한 후 배포 중에 제공된 ONTAP 도구 관리자 자격 증명을 사용하여 로그인합니다.</block>
   <block id="37960991e64430632025d4f9e59e3070" category="image-alt">ONTAP 도구 관리자 UI</block>
   <block id="e39f043c7b33aada178210c63dc687b2" category="paragraph">같은 브라우저에서 다시 로그인할 때 이 팝업을 표시하지 않으려면 * 다시 표시 안 함 * 옵션을 선택할 수 있습니다.</block>
   <block id="0b116b89d80e19bf956dfc85f50bc1e9" category="summary">정보가 필요합니다.</block>
@@ -833,7 +830,6 @@ vCenter 8은 씬 프로비저닝에서 256GB LUN의 용량을 사용합니다.</
   <block id="956040396bc93fbe70e3c9e235f5bfdb" category="sidebar">ONTAP 툴 유지보수 콘솔에 액세스합니다</block>
   <block id="0460583622f03a52d7693094d6fa2452" category="sidebar">개념</block>
   <block id="99da96b7c57595264a2d5f3ba294a0af" category="sidebar">역할 기반 액세스 제어</block>
-  <block id="d24271a1f22c82f9f35e39eb3c1987a9" category="list-text">URL:<block ref="9db1fbe5367e07ad476cea37f9aa812e" category="inline-link-rx"></block> - URL의 이름은 단일 vCenter 구축을 위한 OVA 배포(또는 다중 vCenter 구축을 위한 도메인 이름)에서 제공되는 가상 IP에 해당합니다. URL에 인증서를 추가합니다. 동일한 인증서가 vCenter에 게시됩니다.</block>
   <block id="706d26bec853805e4de29044300749ad" category="list-text">관리자 사용자 이름 및 관리자 암호: * ONTAP 도구 관리자 * UI에 로그인하는 데 사용되는 암호입니다.</block>
   <block id="b910beb5fe2953d304ea1b38de1c4fa3" category="list-text">상용 CA에서 CA 인증서(루트, 리프 및 중간 인증서)를 조달합니다.</block>
   <block id="31b887a5d4bfcf42237476c03005131d" category="paragraph">사용자 및 그룹은 vCenter Server 역할의 일부가 되어 역할에 액세스할 수 있습니다.</block>
@@ -841,4 +837,8 @@ vCenter 8은 씬 프로비저닝에서 256GB LUN의 용량을 사용합니다.</
   <block id="d0119a1425315c47822975d16de6de70" category="sidebar">ONTAP 툴에 대한 역할 기반 액세스 제어 개요</block>
   <block id="9984e4b52821af66b163b37639e5ffca" category="list-text">VMware vSphere 10.0 릴리즈용 ONTAP 툴용 OVA 구축 을 참조하십시오 <block ref="09991ee05a1b93f3c38bbfed0e5d1010" category="inline-link-macro-rx"></block></block>
   <block id="e5317f6738020b54574baa6f35cf9f92" category="paragraph">자세한 내용은 을 참조하십시오 <block ref="cab16d3be602ba465c507fec284cffbd" category="inline-link-macro-rx"></block></block>
+  <block id="dae8459d0e2ebd11c707cda235a5e574" category="paragraph">ONTAP 도구 UI에 액세스하려면 를 실행합니다<block ref="1910f09ff940f1765a7dd530bdeb5127" prefix=" " category="inline-code"></block> 브라우저에서 로그인한 후 배포 중에 제공된 ONTAP 도구 관리자 자격 증명을 사용하여 로그인합니다.</block>
+  <block id="99c32328fc9914bedd703b6f5db4812f" category="list-text">을 사용하여 ONTAP 도구에서 ONTAP 권한 파일을 다운로드해야 합니다<block ref="7f922dba99ab8084641c5a38eed2214d" prefix=" " category="inline-code"></block>.</block>
+  <block id="6be14525037bcd46eae29cee0ba163b7" category="list-text">URL:<block ref="e4f02d6075674fe650d716797297966f" prefix=" " category="inline-code"></block> - URL의 이름은 단일 vCenter 구축을 위한 OVA 배포(또는 다중 vCenter 구축을 위한 도메인 이름)에서 제공되는 가상 IP에 해당합니다. URL에 인증서를 추가합니다. 동일한 인증서가 vCenter에 게시됩니다.</block>
+  <block id="734f31344c53092d434b6ffc00072ad9" category="list-text">을 시작합니다<block ref="1910f09ff940f1765a7dd530bdeb5127" prefix=" " category="inline-code"></block> 구축하는 동안 제공된 ONTAP 도구 관리자 자격 증명을 사용하여 브라우저에서</block>
 </blocks>

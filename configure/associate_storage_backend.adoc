@@ -19,7 +19,7 @@ vCenter 목록 페이지에는 연결된 스토리지 백엔드 수가 표시됩
 
 * 단계 *
 
-. 을 시작합니다 https://loadBalanceIP:8443/virtualization/ui/[] 구축하는 동안 제공된 ONTAP 도구 관리자 자격 증명을 사용하여 브라우저에서
+. 을 시작합니다 `\https://loadBalanceIP:8443/virtualization/ui/` 구축하는 동안 제공된 ONTAP 도구 관리자 자격 증명을 사용하여 브라우저에서
 . 사이드바에서 vCenter를 선택합니다.
 . 스토리지 백엔드와 연결할 vCenter에 대해 세로 줄임표를 클릭합니다.
 . 팝업의 드롭다운에서 스토리지 백엔드를 선택합니다.

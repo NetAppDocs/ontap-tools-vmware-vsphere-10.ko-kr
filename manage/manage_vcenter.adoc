@@ -21,7 +21,7 @@ vCenter는 호스트, 가상 머신 및 스토리지 백엔드를 제어할 수 
 
 * 단계 *
 
-. 을 시작합니다 https://loadBalanceIP:8443/virtualization/ui/[] 구축하는 동안 제공된 ONTAP 도구 관리자 자격 증명을 사용하여 브라우저에서
+. 을 시작합니다 `\https://loadBalanceIP:8443/virtualization/ui/` 구축하는 동안 제공된 ONTAP 도구 관리자 자격 증명을 사용하여 브라우저에서
 . 사이드바에서 vCenter를 선택합니다
 . vCenter IP 주소/호스트 이름, 사용자 이름, 암호 및 포트가 있는 온보드 vCenter에 * 추가 * 를 선택합니다.
 . 스토리지 백엔드 * 페이지로 이동하여 호스트 이름, 사용자 이름, 암호 및 포트가 있는 * 온보드 스토리지 백엔드에 추가 * (ONTAP 클러스터)를 선택합니다.
@@ -38,7 +38,7 @@ vCenter 목록 페이지에는 연결된 스토리지 백엔드 수가 표시됩
 
 * 단계 *
 
-. 을 시작합니다 https://loadBalanceIP:8443/virtualization/ui/[] 구축하는 동안 제공된 ONTAP 도구 관리자 자격 증명을 사용하여 브라우저에서
+. 을 시작합니다 `\https://loadBalanceIP:8443/virtualization/ui/` 구축하는 동안 제공된 ONTAP 도구 관리자 자격 증명을 사용하여 브라우저에서
 . 사이드바에서 vCenter를 선택합니다.
 . 스토리지 백엔드와 연결하거나 분리할 vCenter에 대해 세로 줄임표를 클릭합니다.
 . 수행할 작업에 따라 * 스토리지 백엔드 연결 또는 연결 해제 * 를 선택합니다.
@@ -53,7 +53,7 @@ vCenter 목록 페이지에는 연결된 스토리지 백엔드 수가 표시됩
 
 아래 단계에 따라 vCenter를 수정합니다.
 
-. 을 시작합니다 https://loadBalanceIP:8443/virtualization/ui/[] 구축하는 동안 제공된 ONTAP 도구 관리자 자격 증명을 사용하여 브라우저에서
+. 을 시작합니다 `\https://loadBalanceIP:8443/virtualization/ui/` 구축하는 동안 제공된 ONTAP 도구 관리자 자격 증명을 사용하여 브라우저에서
 . 사이드바에서 vCenter를 선택합니다
 . 수정할 vCenter에 대한 세로 줄임표를 클릭하고 * Modify * 를 선택합니다.
 . vCenter 세부 정보를 수정하고 * Modify * 를 선택합니다.
@@ -65,7 +65,7 @@ vCenter 목록 페이지에는 연결된 스토리지 백엔드 수가 표시됩
 
 제거하기 전에 vCenter에 연결된 모든 스토리지 백엔드를 제거해야 합니다.
 
-. 을 시작합니다 https://loadBalanceIP:8443/virtualization/ui/[] 구축하는 동안 제공된 ONTAP 도구 관리자 자격 증명을 사용하여 브라우저에서
+. 을 시작합니다 `\https://loadBalanceIP:8443/virtualization/ui/` 구축하는 동안 제공된 ONTAP 도구 관리자 자격 증명을 사용하여 브라우저에서
 . 사이드바에서 vCenter를 선택합니다
 . 제거하려는 vCenter에 대한 세로 줄임표를 클릭하고 * Remove * 를 선택합니다.
 +
