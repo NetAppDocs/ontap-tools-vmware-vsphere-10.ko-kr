@@ -2,23 +2,35 @@
 section: configure
 title: ONTAP 도구를 구성합니다
 entries:
-- title: 네트워크 액세스를 관리합니다
-  url: "/configure/ip_whitelisting.html"
-- title: 사용자 역할 및 권한을 구성합니다
-  url: "/configure/task_configure_user_role_and_privileges.html"
 - title: ONTAP 도구 관리자 사용자 인터페이스
-  url: "/configure/ontap_tools_manager_ui.html"
-- title: vCenter를 추가합니다
-  url: "/configure/add_vcenter.html"
+  url: "/configure/manager-user-interface.html"
+- title: vCenter Server 추가 및 관리
+  url: "/configure/add-vcenter.html"
+- title: vCenter Server에 VASA Provider를 등록합니다
+  url: "/configure/registration-process.html"
+- title: 등록된 VASA 공급자를 확인합니다
+  url: "/configure/verify-registration.html"
+- title: NFS VAAI 플러그인을 설치합니다
+  url: "/configure/install-nfs-vaai-plug-in.html"
+- title: 호스트 데이터를 업데이트합니다
+  url: "/configure/update-host-data.html"
+- title: ESXi 호스트 설정을 구성합니다
+  entries:
+  - title: ESXi 서버 다중 경로 및 시간 초과 설정을 구성합니다
+    url: "/configure/configure-esx-server-multipath-and-timeout-settings.html"
+  - title: ESXi 호스트 값을 설정합니다
+    url: "/configure/esxi-host-values.html"
+- title: 스토리지 시스템 및 호스트를 검색합니다
+  url: "/configure/discover-storage-systems-and-hosts.html"
 - title: 스토리지 백엔드를 추가합니다
-  url: "/configure/add_storage_backend.html"
-- title: 스토리지 백엔드를 vCenter에 연결합니다
-  url: "/configure/associate_storage_backend.html"
-- title: vCenter를 사용하는 온보드 스토리지 백엔드(SVM 또는 클러스터
-  url: "/configure/onboard_svm.html"
-- title: vCenter에 VASA Provider를 등록합니다
-  url: "/configure/register_vasa.html"
-- title: VVOL 데이터 저장소를 생성합니다
-  url: "/configure/create_vvols_datastore.html"
-- title: 등록된 SVM 확인
-  url: "/configure/verify_registered_svm.html"
+  url: "/configure/add-storage-backend.html"
+- title: 스토리지 백엔드를 vCenter Server에 연결합니다
+  url: "/configure/associate-storage-backend.html"
+- title: 네트워크 액세스를 구성합니다
+  url: "/configure/configure-network-access.html"
+- title: ONTAP 사용자 역할 및 권한을 구성합니다
+  url: "/configure/configure-user-role-and-privileges.html"
+- title: VMware vSphere용 NetApp ONTAP 툴 플러그인 대시보드 개요
+  url: "/configure/dashboard-overview.html"
+- title: 데이터 저장소를 생성합니다
+  url: "/configure/create-vvols-datastore.html"
