@@ -50,13 +50,10 @@ VMware vSphere용 ONTAP 툴을 VMware vCSA(vCenter Server 가상 어플라이언
 | ONTAP | ONTAP 9.12.1, 9.13.1 또는 9.14.1의 최신 패치 릴리스 
 
 
-| VMware vSphere를 참조하십시오 | VMware 7.0U3, 8.0U1 또는 8.0U2 
-
-
 | ESXi 호스트 | ESXi 7.0.3을 참조하십시오 
 
 
-| vCenter Server입니다 | vCenter 7.0U3, 8.0U1 또는 8.0U2 
+| vCenter Server입니다 | vCenter 7.0U3 
 
 
 | VASA 공급자 | 3.0 

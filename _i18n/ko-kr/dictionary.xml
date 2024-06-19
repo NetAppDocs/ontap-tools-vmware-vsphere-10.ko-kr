@@ -45,7 +45,6 @@
   <block id="97157b0bbe0ba304414559c34c463fa8" category="section-title">최소 스토리지 및 애플리케이션 요구사항:</block>
   <block id="17d884d1bc0b828c55d255e092457a6d" category="cell">스토리지, 호스트 및 애플리케이션</block>
   <block id="253b40ae359ba25b56231803430c4873" category="cell">ONTAP</block>
-  <block id="8887a9a417a1629326acdb917d224337" category="cell">VMware vSphere를 참조하십시오</block>
   <block id="42094e9e4a0f05012b8d6753300a1657" category="cell">ESXi 호스트</block>
   <block id="6a81c846c8c35b839d7586abc329dfda" category="cell">vCenter Server입니다</block>
   <block id="cc7378d924a7a641ed80e623576e3981" category="cell">VASA 공급자</block>
@@ -72,7 +71,6 @@
   <block id="0ab827837bc64b58b05cd348d8091ccd" category="list-text">기본적으로 * Enable ASUP * 확인란이 선택되어 있습니다.</block>
   <block id="668e412f320c49b9f89a8e8605221e62" category="list-text">유지 관리 사용자 암호: '이전 콘솔 옵션'에 대한 액세스 권한을 부여하는 데 사용됩니다.</block>
   <block id="5465c5a8e21220567f3ba4f1efaac90d" category="list-text">Customize template * &gt; * Deployment Configuration * 창에서 다음 세부 정보를 입력합니다.</block>
-  <block id="344e7fea24fbe3dae5345953d18ee85c" category="list-text">ONTAP/SVM 암호 를 입력합니다.</block>
   <block id="08c09a05323f6950d8f48ace64dcce65" category="list-text">기본 VM은 기본적으로 사용하도록 설정되어 있습니다. 이 선택을 변경하지 마십시오.</block>
   <block id="c62a64bea2e2d5c666e24dfb5d069512" category="list-text">Customize template * &gt; * Content Library Details * 창에서 * Content Library Name * 과 * OVF Template Name * 을 입력합니다.</block>
   <block id="263c52df144ff2a8cb1c5fb283b06e3b" category="list-text">Customize template * &gt; * Node Configuration * 창에서 3개 노드 모두에 대한 OVA의 네트워크 속성을 입력합니다.</block>
@@ -847,9 +845,7 @@ vSphere 7.0U3에서 vSphere 8.0 버전까지 옵션이 표시되더라도 작업
   <block id="a57c0ce4d3d1909f36fd6d1a7910403f" category="cell">메모리(GB)</block>
   <block id="7749f88b50568c3684b1ec4d9887097a" category="cell">최소 버전 요구 사항</block>
   <block id="2402f961ea404a2d19f517d27391d5ce" category="cell">ONTAP 9.12.1, 9.13.1 또는 9.14.1의 최신 패치 릴리스</block>
-  <block id="4a5720859f5b334d0e52f781b6d0866b" category="cell">VMware 7.0U3, 8.0U1 또는 8.0U2</block>
   <block id="ec1d455e2f0ce4adc778f46d4fbf159f" category="cell">ESXi 7.0.3을 참조하십시오</block>
-  <block id="25ae27c71592ed325ef896fdb496c487" category="cell">vCenter 7.0U3, 8.0U1 또는 8.0U2</block>
   <block id="88d1955de012defb14b2db6f4797ff20" category="cell">10.1</block>
   <block id="4ee667a9190fbad5088c191cedc77afb" category="paragraph">ONTAP 도구 배포를 사용자 지정할 때 몇 가지 요구 사항을 고려해야 합니다.</block>
   <block id="4de4e6307c23d1e06ba251e848109d58" category="paragraph">관리자 계정에 할당된 암호입니다. 보안상의 이유로 암호 길이는 8-30자로, 최소 1자, 1자, 1자리, 1개의 특수 문자를 포함하는 것이 좋습니다.</block>
@@ -929,9 +925,6 @@ vSphere 7.0U3에서 vSphere 8.0 버전까지 옵션이 표시되더라도 작업
 다음 세부 정보를 입력합니다.
 ... 애플리케이션 사용자 이름 및 암호: 이 사용자 이름과 암호는 vCenter Server에서 VASA Provider와 SRA를 모두 등록하는 데 사용됩니다.
 ... 기본적으로 * Enable ASUP * 확인란이 선택되어 있습니다.</block>
-  <block id="51491a1b63f1ab74ff3d5c3f04737d97" category="paragraph">를 누릅니다
-AutoSupport는 배포 중에만 활성화 또는 비활성화할 수 있습니다.</block>
-  <block id="06dada7d059c163e436d8babbfe496b2" category="list-text">관리자 사용자 이름 및 관리자 암호: ONTAP 도구 관리자에 로그인하는 데 사용되는 암호입니다.</block>
   <block id="2b86a57a5ac0aad5d414c4e50460a2d9" category="list-text">직접 추가한 SVM 사용자 계정을 사용하려는 경우 * SVM 범위 지정 활성화 * 옵션을 선택합니다. ONTAP 클러스터를 사용하려면 확인란을 선택하지 마십시오.</block>
   <block id="7bf4b753fd6180b89cfa814803b686df" category="admonition">SVM 범위가 활성화되면 관리 IP 주소를 통해 SVM 지원을 이미 사용하도록 설정해야 합니다.</block>
   <block id="5068ca71ed06e693eb275de382372bac" category="admonition">여기에 제공된 정보는 설치 과정 중에 올바른 패턴에 대해 검증됩니다. 일치하지 않는 경우 웹 콘솔에 오류 메시지가 표시되고 제공된 잘못된 정보를 수정하라는 메시지가 표시됩니다.</block>
@@ -1079,17 +1072,6 @@ sudo rke2-uninstall.sh (모든 VM).</block>
   <block id="041bb037e3c06caf84dedc58c6457aab" category="list-text">네트워크 선택 * 창에서 각 소스 네트워크에 대한 대상 네트워크를 선택합니다.</block>
   <block id="33f9aca743a2e76b383f29162f592587" category="admonition">로드 밸런서 IP 주소 및 Kubernetes API Server IP 주소를 유지해야 합니다. 노드 IP 주소를 변경하거나 동일한 IP 주소를 유지할 수 있습니다.</block>
   <block id="95a5639e9ced3c2a924d88f72bf15202" category="list-text">애플리케이션 사용자 이름 및 암호: 이 사용자 이름과 암호는 vCenter Server에서 VASA Provider와 SRA를 모두 등록하는 데 사용됩니다. 이는 초기 배포 시 제공된 사용자 이름 및 암호와 다를 수 있습니다.</block>
-  <block id="e0d1be9dd9681bb313cf7fc3d4d2466a" category="paragraph">AutoSupport는 배포 중에만 활성화 또는 비활성화할 수 있습니다.</block>
-  <block id="d760d8124a3b7b4f25d7a060fbbe28c2" category="list-text">관리자 사용자 이름 및 관리자 암호: ONTAP 도구 관리자에 로그인하는 데 사용되는 암호입니다. 이는 초기 배포 시 제공된 사용자 이름 및 암호와 다를 수 있습니다.</block>
-  <block id="fbc464170efb8207d41115c5aa6b9f5c" category="list-text">유지 관리 사용자 암호: 유지 관리 콘솔 옵션에 대한 액세스 권한을 부여하는 데 사용됩니다.</block>
-  <block id="56a705dd58842237be39c9dc6690dc11" category="list-text">Customize template * &gt; * Deployment Configuration * 창에 구축하는 동안 제공된 세부 정보를 입력합니다. 데이터 LIF 값을 제외하고 이 섹션의 모든 값은 초기 구축 중에 제공된 값과 같아야 합니다.</block>
-  <block id="1878c6b5e06a450ebbda55598dd1f46c" category="admonition">복구 데이터가 저장되는 위치에서 스토리지 SVM 이름을 변경하면 안 됩니다. 이는 직접 추가한 SVM 사용자 계정에도 적용됩니다.</block>
-  <block id="8996b03753e9ce7a80c11afe0264c52b" category="list-text">HA 배포 복구의 경우 다음 세부 정보를 제공합니다.</block>
-  <block id="1f53b41bbade1ab389a3607b4142c02b" category="list-text">콘텐츠 라이브러리 세부 정보입니다.</block>
-  <block id="740a5b1a45f3bf1d6aafe19c7e697d76" category="list-text">vCenter 구성 세부 정보</block>
-  <block id="6451c3c167ea5dc647d10405f29fbe55" category="list-text">Customize template * &gt; * Node Configuration * 창에 복구하려는 설정, 비 HA 또는 HA 설정으로 세부 정보를 입력합니다.</block>
-  <block id="8c5fb624497b2b75cfb141fd905af66d" category="list-text">확인 * 또는 * 취소 * 를 선택하면 제공된 값이 다시 검증됩니다. 모든 값을 3회 수정할 수 있는 권한이 있습니다. 3회 시도 내에 수정하지 못하면 제품 설치가 중지되고 새 VM에 설치를 시도하는 것이 좋습니다.</block>
-  <block id="195da22c42b67fa5228bd7b955f4c001" category="list-text">설치가 완료되면 웹 콘솔에 VMware vSphere용 ONTAP 툴의 상태가 표시됩니다. 설치가 완료되면 의 지침에 따라 하드웨어 요구 사항을 수동으로 편집해야 합니다 <block ref="6def0b647efb922e7343ea3e904763b4" category="inline-link-macro-rx"></block> 페이지.</block>
   <block id="dd47efe31efd4cc6180876f236c1c622" category="doc">VMware vSphere용 ONTAP 툴 다운로드</block>
   <block id="4c322557b2037165ab2dfd286fa6a839" category="paragraph">를 다운로드할 수 있습니다<block ref="daf4de58883c030f033f07e61debf025" prefix=" " category="inline-code"></block> 에서 VMware vSphere용 ONTAP 툴에 대한 바이너리(_.ova_)와 서명된 인증서를 포함하는 파일입니다<block ref="c28762f698ce57f013f1f9dff01575ab" category="inline-link-rx"></block>.</block>
   <block id="5a3fc9b654cc05d821feead33114167a" category="paragraph">구축이 완료되면 VMware vSphere 및 VASA 제품용 ONTAP 툴이 사용자 환경에 설치됩니다. 기본적으로 VMware vSphere용 ONTAP 툴은 후속 구축 모델을 결정하고 요구 사항에 따라 VASA Provider를 사용할지 여부를 선택하는 즉시 작동합니다. 을 참조하십시오 <block ref="a322950c1b9e940cddaca5a47e2d5895" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
@@ -1106,7 +1088,6 @@ OVA를 HA 구성으로 배포하기 전에 OVA를 저장할 콘텐츠 라이브�
 구축 계획을 미리 계획하고 해당 환경에서 VMware vSphere용 ONTAP 툴을 구성하는 방법을 결정합니다.</block>
   <block id="e34466eda4e5b5f68501a10425c10513" category="paragraph">구축을 진행하기 전에 VMware vSphere 요구 사항에 대한 ONTAP 툴은 다음과 같습니다.</block>
   <block id="1584251f717b5c5b67df88454cbd8688" category="list-text">(선택 사항) 자동화 사용자를 위해 사용됨 - NetApp에서 제공하는 Postman 컬렉션 JSON 파일을 수집합니다.</block>
-  <block id="44e7cf5dfde42bfb03c0f3e90458f84e" category="list-text">OVA를 구축하기 위한 상위 vCenter Server 자격 증명</block>
   <block id="d8cea021ae68f06628331588ee1f7b9f" category="list-text">OVA가 구축된 호스트 또는 리소스 풀에 에 나와 있는 최소 리소스가 있는지 확인합니다 <block ref="6def0b647efb922e7343ea3e904763b4" category="inline-link-macro-rx"></block> 섹션을 참조하십시오.</block>
   <block id="3aa072fa38b0383a0d289fde6a7bdb7c" category="list-text">VMware vSphere용 ONTAP 툴이 등록을 위해 구축 후에 연결할 vCenter Server 인스턴스의 로그인 자격 증명입니다.</block>
   <block id="0d129795e915c1dfe3e328d2bb4d641e" category="list-text">HA가 아닌 배포의 경우 3개의 무료 IP 주소, 로드 밸런서를 위한 무료 IP 주소 1개, Kubernetes 컨트롤 플레인을 위한 무료 IP 주소 1개, 노드에 대한 IP 주소 1개가 필요합니다. HA 배포의 경우 이 세 개의 IP 주소와 함께 두 번째 및 세 번째 노드에 대해 두 개의 추가 IP 주소가 필요합니다.
@@ -1128,7 +1109,6 @@ OVA를 HA 구성으로 배포하기 전에 OVA를 저장할 콘텐츠 라이브�
   <block id="888a77f5ac0748b6c8001822417df8b6" category="list-text">프로토콜</block>
   <block id="85c3dba7de47b75da65759dc70b8b923" category="list-text">Kubernetes 컨트롤 플레인의 가상 IP 주소입니다.</block>
   <block id="a3163c4ad052022f35412b6401e0b839" category="list-text">HA/비 HA 드롭다운</block>
-  <block id="0013740280b976265b3a365f87034e52" category="list-text">호스트 이름 목록)</block>
   <block id="1d05598e5b2e831093de6c37162ef10e" category="list-text">IP 주소(문자열)</block>
   <block id="511ff4e20173d429ce366128f541bc37" category="list-text">콘텐츠 라이브러리 이름입니다</block>
   <block id="e32539630c3af1f9f5940e0473d0ed81" category="list-text">OVF 템플릿 이름입니다</block>
@@ -1651,7 +1631,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="7ceb96cf2f53ab82cf68115087e42798" category="inline-link">VMware vSphere 설명서: 스토리지 공급자 설정 변경</block>
   <block id="b16f93be354af7771dc8708241003863" category="paragraph"><block ref="b16f93be354af7771dc8708241003863" category="inline-link-rx"></block></block>
   <block id="6deaa5e1cafca832bac1b468485b9454" category="section-title">저장소 설정</block>
-  <block id="c98cb9d5c24721c2e52ce120aae0abef" category="paragraph">확장성이 높은 환경에서는 의 가치를 설정해야 합니다<block ref="e7a7316b2dab3875c5aa0977c256ae38" prefix=" " category="inline-code"></block> 및<block ref="b6c033f4806640a2a2858512cf9f8c1b" prefix=" " category="inline-code"></block> 99,999초까지의 시간 초과 간격입니다.</block>
   <block id="00a510939945fb6eb144a70baf6f9fd4" category="admonition">지정된 시간 제한 간격이 최대값입니다. 최대 시간 초과에 도달할 때까지 기다릴 필요가 없습니다. 대부분의 명령이 설정된 최대 시간 제한 간격 내에 완료됩니다.</block>
   <block id="b2dacb077897e6e20eab5019528b0b4d" category="paragraph">자세한 내용은 SAN Provider 설정 수정에 대한 VMware 설명서를 참조하십시오.</block>
   <block id="c106a2cd545fb9665a990784905584ee" category="inline-link">VMware Site Recovery Manager 설명서: 스토리지 설정 변경</block>
@@ -1867,4 +1846,39 @@ HA 및 비 HA 구현 모두에서 업그레이드가 지원됩니다.</block>
   <block id="6956cfc9382ccb41c8ac57f99255b409" category="sidebar">복제된 스토리지 시스템을 확인합니다</block>
   <block id="437c283786a19efa2a883c2776477f2a" category="sidebar">VMware vSphere 버전용 최신 ONTAP 툴로 마이그레이션하십시오</block>
   <block id="a2fa58344be7fbd9a2be0320a8df0f77" category="sidebar">ONTAP 툴을 업그레이드합니다</block>
+  <block id="42ac03a8bab25efc61489f3923976820" category="summary">ONTAP tools Manager 암호를 잊은 경우 VMware vSphere 유지 관리 콘솔용 ONTAP tools에서 생성한 토큰을 사용하여 관리자 자격 증명을 재설정할 수 있습니다.</block>
+  <block id="5f479a62f2104046972d10f2cbf88255" category="paragraph">시간 초과에 도달하면 의 값을 늘리십시오<block ref="e7a7316b2dab3875c5aa0977c256ae38" prefix=" " category="inline-code"></block> 및<block ref="b6c033f4806640a2a2858512cf9f8c1b" prefix=" " category="inline-code"></block> 더 높은 값으로.</block>
+  <block id="2aa80bb65f090b8d6c9ff632d1836a2b" category="list-text">OVA를 구축하기 위한 상위 vCenter Server 자격 증명 상위 vCenter Server 암호에는 이러한 특수 문자($,',")가 포함될 수 없습니다.</block>
+  <block id="7443ebb7d3e5fd61a07b688ed33f3c1c" category="list-text">호스트 이름 목록입니다</block>
+  <block id="78188fd22202c681b7a1e12f470fb065" category="paragraph">AutoSupport는 배포 중에만 활성화 또는 비활성화할 수 있습니다.
+... AutoSupport 데이터 전송에 대한 방화벽 차단을 방지하기 위해 * ASUP 프록시 URL * 필드에 이 URL을 입력합니다.
+... 관리자 사용자 이름 및 관리자 암호: ONTAP 도구 관리자에 로그인하는 데 사용되는 암호입니다. 이는 초기 배포 시 제공된 사용자 이름 및 암호와 다를 수 있습니다.
+... NTP 서버 * 필드에 NTP 서버 정보를 입력합니다.
+... 유지 관리 사용자 암호: 유지 관리 콘솔 옵션에 대한 액세스 권한을 부여하는 데 사용됩니다.
+. Customize template * &gt; * Deployment Configuration * 창에 구축하는 동안 제공된 세부 정보를 입력합니다. 데이터 LIF 값을 제외하고 이 섹션의 모든 값은 초기 구축 중에 제공된 값과 같아야 합니다.</block>
+  <block id="59ccb8025c048802013b2da5a2e36f2e" category="admonition">복구 데이터가 저장되는 위치에서 스토리지 SVM 이름을 변경하면 안 됩니다. 이는 직접 추가한 SVM 사용자 계정에도 적용됩니다.
+. HA 배포 복구의 경우 다음 세부 정보를 제공합니다.
+... 콘텐츠 라이브러리 세부 정보입니다.
+... vCenter 구성 세부 정보
+. Customize template * &gt; * Node Configuration * 창에 복구하려는 설정, 비 HA 또는 HA 설정으로 세부 정보를 입력합니다.
+. 완료 준비 * 창에서 세부 정보를 검토하고 * 마침 * 을 선택합니다.</block>
+  <block id="4a3c1579f0245205d5b4f1e7a0fb0199" category="paragraph">를 누릅니다
+구축 작업이 생성되면 vSphere 작업 표시줄에 진행 상황이 표시됩니다.
+. 작업 완료 후 VM의 전원을 켭니다.</block>
+  <block id="ac13898d80338928a374c608bab436b1" category="paragraph">를 누릅니다
+설치가 시작됩니다. VM의 웹 콘솔에서 설치 진행률을 추적할 수 있습니다.
+설치 과정에서 노드 구성이 검증됩니다. OVF 양식의 Customize(사용자 지정) 템플릿 아래에 있는 여러 섹션에 제공된 입력의 유효성을 검사합니다. 일치하지 않는 경우 대화 상자에 시정 조치를 취하라는 메시지가 표시됩니다.
+. 대화 상자 프롬프트에서 필요한 사항을 변경합니다. Tab 버튼을 사용하여 패널을 탐색하여 값을 입력합니다. * OK * 또는 * Cancel * 을 선택합니다.
+. 확인 * 또는 * 취소 * 를 선택하면 제공된 값이 다시 검증됩니다. 모든 값을 3회 수정할 수 있는 권한이 있습니다. 3회 시도 내에 수정하지 못하면 제품 설치가 중지되고 새 VM에 설치를 시도하는 것이 좋습니다.
+. 설치가 완료되면 웹 콘솔에 VMware vSphere용 ONTAP 툴의 상태가 표시됩니다. 설치가 완료되면 의 지침에 따라 하드웨어 요구 사항을 수동으로 편집해야 합니다 <block ref="6def0b647efb922e7343ea3e904763b4" category="inline-link-macro-rx"></block> 페이지.</block>
+  <block id="a84fd12354047a6ec2a5b6b1711524f5" category="cell">vCenter 7.0U3</block>
+  <block id="b5a405460149721025d3f0b33b133321" category="list-text">ONTAP/SVM 암호 를 입력합니다. 이 스토리지 VM의 ONTAP/SVM 로그인 암호에는 다음 특수 문자($,',")가 포함되어서는 안 됩니다.</block>
+  <block id="94f46bf8acbeafbae8c2da9d2cc27158" category="paragraph">AutoSupport는 배포 중에만 활성화 또는 비활성화할 수 있습니다.
+... AutoSupport 데이터 전송에 대한 방화벽 차단을 방지하기 위해 * ASUP 프록시 URL * 필드에 이 URL을 입력합니다.
+... 관리자 사용자 이름 및 관리자 암호: ONTAP 도구 관리자에 로그인하는 데 사용되는 암호입니다.
+... NTP 서버 * 필드에 NTP 서버 정보를 입력합니다.
+... 유지 관리 사용자 암호: '이전 콘솔 옵션'에 대한 액세스 권한을 부여하는 데 사용됩니다.
+. Customize template * &gt; * Deployment Configuration * 창에서 다음 세부 정보를 입력합니다.</block>
+  <block id="b8237d978365427c8b91b5f11293f5e5" category="paragraph">를 누릅니다
+<block ref="89d79dbcc89ba4076180d653020a5110" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

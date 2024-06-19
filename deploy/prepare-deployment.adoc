@@ -23,7 +23,7 @@ VMware vSphere용 ONTAP 툴을 구축하기 전에 기본 스토리지 백엔드
 . vCenter Server 환경을 구성하고 설정합니다.
 . _.ova_file을 다운로드합니다.
 . (선택 사항) 자동화 사용자를 위해 사용됨 - NetApp에서 제공하는 Postman 컬렉션 JSON 파일을 수집합니다.
-. OVA를 구축하기 위한 상위 vCenter Server 자격 증명
+. OVA를 구축하기 위한 상위 vCenter Server 자격 증명 상위 vCenter Server 암호에는 이러한 특수 문자($,',")가 포함될 수 없습니다.
 . OVA가 구축된 호스트 또는 리소스 풀에 에 나와 있는 최소 리소스가 있는지 확인합니다 link:../deploy/sizing-requirements.html["VMware vSphere용 ONTAP 툴을 구축하기 위한 사전 요구 사항"] 섹션을 참조하십시오.
 . VMware vSphere용 ONTAP 툴이 등록을 위해 구축 후에 연결할 vCenter Server 인스턴스의 로그인 자격 증명입니다.
 . 브라우저 캐시를 삭제합니다.
@@ -47,7 +47,7 @@ VMware vSphere용 ONTAP 툴을 구축하기 전에 기본 스토리지 백엔드
 .. 프로토콜
 .. Kubernetes 컨트롤 플레인의 가상 IP 주소입니다.
 .. HA/비 HA 드롭다운
-.. 호스트 이름 목록)
+.. 호스트 이름 목록입니다
 .. IP 주소(문자열)
 .. 콘텐츠 라이브러리 이름입니다
 .. OVF 템플릿 이름입니다
