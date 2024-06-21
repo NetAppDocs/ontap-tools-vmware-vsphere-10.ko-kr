@@ -29,7 +29,6 @@
   <block id="6a90716733c7d74d3742e2f3700f6422" category="list-text">브라우저 캐시를 삭제합니다.</block>
   <block id="9918cd46976715deff1f5b36e3f39bea" category="list-text">* 노드별 설치 패키지 공간 요구 사항 *</block>
   <block id="98f2fde112dbbbfa4faf3948eb59905c" category="list-text">씬 프로비저닝된 설치의 경우 10GB</block>
-  <block id="62648a528ee4599cab2971c0bcbe7294" category="list-text">일반 프로비저닝 설치의 경우 200GB</block>
   <block id="9c2ad9332e9d21d6c8fadbc51425c55b" category="list-text">* 노드당 호스트 시스템 크기 조정 요구 사항 *
 배포 크기와 노드별 권장 메모리는 아래 표와 같습니다.</block>
   <block id="bf444bdf7f96ac7722b4e0845a28088a" category="cell">배포 유형입니다</block>
@@ -1542,12 +1541,7 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="dfb1f7e164fa9a18cdccdd70cc836871" category="doc">SRA 자격 증명을 업데이트합니다</block>
   <block id="ee51889e9927730735b810a56b6257a4" category="inline-link-macro">SRM 어플라이언스에 SRA를 구성합니다</block>
   <block id="3ac66bb3c6a9ea86b09af707ea7b346e" category="paragraph">이 항목에서 설명한 단계를 실행해야 합니다 <block ref="2844354f8ed275182ec054cfc4f78370" category="inline-link-macro-rx"></block></block>
-  <block id="91041cdb80acf69ffc64bea820b683a1" category="list-text">의 내용을 삭제합니다<block ref="deb83d2dfd0ec1ec35caefe22e2fc515" prefix=" " category="inline-code"></block> 사용:</block>
-  <block id="c8c76585229a8fa67ac61e761baed2fc" category="list-text"><block ref="3f4f7415d3b5542ac20a11b143c4cee8" prefix="" category="inline-code"></block></block>
   <block id="bc5ad92fecd3f6eeb4473c9df6479d46" category="list-text"><block ref="4609acba202877f99742342f4195d95e" prefix="" category="inline-code"></block></block>
-  <block id="42f35b3ef9c82737da1f02ca0b45f308" category="list-text">perl 명령을 실행하여 새 자격 증명으로 SRA를 구성합니다.</block>
-  <block id="325c22d13dffac10de126d900c39ff29" category="list-text"><block ref="c8a7687f579de473b4cc34b8e40736ff" prefix="" category="inline-code"></block></block>
-  <block id="54772781d1f02544ab65b187cf257798" category="list-text"><block ref="f82187243129e0447d2310deb9687edf" prefix="" category="inline-code"></block></block>
   <block id="a505f8df337aa6363aedcbf7da761b22" category="summary">보호 사이트와 복구 사이트의 폴더를 매핑하여 폴더 간 통신을 활성화해야 합니다.</block>
   <block id="16dac3a3c7de93aedd97c33f658f9028" category="doc">폴더 매핑을 구성합니다</block>
   <block id="975a5d96a32b63ae9e78d2fab188fc7d" category="list-text">관리 탭에서 * 폴더 매핑 * 을 선택합니다.</block>
@@ -1881,4 +1875,32 @@ HA 및 비 HA 구현 모두에서 업그레이드가 지원됩니다.</block>
 . Customize template * &gt; * Deployment Configuration * 창에서 다음 세부 정보를 입력합니다.</block>
   <block id="b8237d978365427c8b91b5f11293f5e5" category="paragraph">를 누릅니다
 <block ref="89d79dbcc89ba4076180d653020a5110" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="99126fb772977a83acb4723e429a29c0" category="admonition">ONTAP 툴 VMware vSphere 가상 머신을 관리하는 VVOL 데이터 저장소에 배포하지 마십시오.</block>
+  <block id="6287b30826f078b30c5359360e127f14" category="list-text">일반 프로비저닝 설치의 경우 248GB</block>
+  <block id="c5e37bc00c030bf0bbf393fbb0102c75" category="summary">VMware vSphere 구축을 위해 ONTAP 툴을 삭제한 후에는 구축 중에 생성된 FlexVolumes를 정리해야 합니다. 구축에 전용 클러스터를 사용한 경우에는 구축 시 많은 FlexVolumes가 생성되므로 사용되지 않은 채로 인해 성능이 저하되므로 ONTAP를 정리해야 합니다.</block>
+  <block id="ad528646e45a18d9a7dfd1bdb26d3590" category="doc">볼륨을 정리합니다</block>
+  <block id="01eca24b015422068e7eaa5d160ba4c7" category="paragraph">다음 지침에 따라 VMware vSphere 배포용 ONTAP 툴 제거 후 FlexVolumes를 정리합니다.</block>
+  <block id="bdb13f3eee9a7d0b56448fc712a7cde0" category="list-text">VMware vSphere용 ONTAP 툴의 운영 노드 VM에서 다음 명령을 실행하여 구축 유형을 식별합니다.</block>
+  <block id="6aa67ccabd12c5a1df1d1b2ed5e708fe" category="paragraph">_cat/opt/netapp/meta/Ansible_vars.yaml | grep-i 프로토콜 _</block>
+  <block id="500709781cf1f23d88b63694fea55531" category="paragraph">iSCSI를 구축하는 경우에는 igroup도 삭제해야 합니다.</block>
+  <block id="bb113144dfd0e0dacc7ebb805636d51b" category="list-text">다음 명령을 사용하여 배포 중에 ONTAP에서 생성된 FlexVolumes 목록을 가져옵니다.</block>
+  <block id="a2b995300ba8f79cc278568247266c61" category="paragraph">_kubectl persistentvolumes|grep internalName|awk-F'='{print$2}'_ 을(를) 설명합니다</block>
+  <block id="15408f1c813642ad74ef2fc0f2b80003" category="inline-link">vCenter Server 또는 데이터 저장소에서 VM 또는 VM 템플릿을 제거합니다</block>
+  <block id="1f9681143775b9bbb796eb20e711fdc5" category="list-text">vCenter Server에서 VM 삭제 를 참조하십시오<block ref="9df05bce2537d61ac4cfd60da50857ed" category="inline-link-rx"></block></block>
+  <block id="ef5b87aeaa907022daf2aa19faf9b465" category="inline-link">FlexVol 볼륨을 삭제합니다</block>
+  <block id="61829ef583e1b41805512593ab501327" category="list-text">ONTAP 시스템 관리자에서 볼륨을 삭제합니다. 를 참조하십시오<block ref="eac8c90151648d7bc2ba6d1146004c9d" category="inline-link-rx"></block>. 볼륨을 삭제하려면 CLI 명령에 FlexVolume의 정확한 이름을 지정합니다.</block>
+  <block id="e38d6f0a684b3cc719c83432498db42b" category="inline-link">SAN 이니시에이터 및 igroup을 보고 관리합니다</block>
+  <block id="c3a21329f59e75c5e2c910cc4e4e7a7e" category="list-text">iSCSI 배포의 경우 ONTAP에서 SAN igroup을 삭제합니다. 를 참조하십시오<block ref="14bc02d0e479c1e35338b733fac8ca0e" category="inline-link-rx"></block>.</block>
+  <block id="8eb7110d281793cfd0b541853bac16d5" category="paragraph">HA 배포에서는 4개의 igroup이 생성되고 비 HA 구축에서는 2개의 igroup이 생성됩니다.
+다음 명령을 실행하여 첫 번째 igroup 이름을 찾습니다.</block>
+  <block id="c26071422bbf92a43331f2741632aca9" category="paragraph">_kubectl -n trident tbc trident-backend-o YAML | grep igroupName:|awk-F':'{print$2}'_</block>
+  <block id="497c71b0c5006d96abb762b862d3b40a" category="paragraph">다른 igroup 이름은 VM의 호스트 이름으로 시작됩니다.</block>
+  <block id="3642e7476d2c39d4c6204e36acaa5431" category="list-text">다음 명령을 실행하여 SRM 컴퓨터 폴더 캐시된 ONTAP 도구 사용자 이름 암호를 삭제합니다.</block>
+  <block id="98ea8bb5748846a8eb48ec17775dd65c" category="list-text"><block ref="73be5ab307e7055f684cc317b6aff741" prefix="" category="inline-code"></block></block>
+  <block id="9aac114d9a8bbe576d39d35cf5fad65b" category="list-text"><block ref="5ec1d0f6687a4c1e0107632871d4a131" prefix="" category="inline-code"></block></block>
+  <block id="be886d30990ecb1cd7da9458a1301ba3" category="list-text"><block ref="ed73a6dfaf2769c449bcf6ac1257b40e" prefix="" category="inline-code"></block></block>
+  <block id="2a7f66eb3c213058f0136bcf65d63f11" category="list-text"><block ref="1c2934a64ebf7e159bf45c1e6c30b478" prefix="" category="inline-code"></block></block>
+  <block id="c6503e5473d2858467146e434dedb32e" category="list-text">perl 명령을 실행하여 새 자격 증명으로 SRA를 구성합니다.</block>
+  <block id="d2ef96c1cd4e9e918af9cc6fe693d19c" category="list-text"><block ref="3e82875f30595fcc3e2ea7112a52aec3" prefix="" category="inline-code"></block></block>
+  <block id="d6dc3fa77b8368a0795d43ba5098caec" category="list-text"><block ref="f82187243129e0447d2310deb9687edf" prefix="" category="inline-code"></block> 암호 값을 따옴표로 묶어야 합니다.</block>
 </blocks>

@@ -64,3 +64,5 @@ entries:
     url: "/manage/reset-app-password.html"
   - title: 유지보수 콘솔 사용자 암호를 재설정합니다
     url: "/manage/reset-maint-password.html"
+- title: 볼륨을 정리합니다
+  url: "/manage/delete-deployment.html"
