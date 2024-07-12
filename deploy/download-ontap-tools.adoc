@@ -13,7 +13,7 @@ summary: NetApp Support 사이트에서 VMware vSphere용 ONTAP 툴에 대한 .o
 [role="lead"]
 를 다운로드할 수 있습니다 `.zip` 에서 VMware vSphere용 ONTAP 툴에 대한 바이너리(_.ova_)와 서명된 인증서를 포함하는 파일입니다 https://mysupport.netapp.com/site/products/all/details/otv/downloads-tab["NetApp Support 사이트"^].
 
-구축이 완료되면 VMware vSphere 및 VASA 제품용 ONTAP 툴이 사용자 환경에 설치됩니다. 기본적으로 VMware vSphere용 ONTAP 툴은 후속 구축 모델을 결정하고 요구 사항에 따라 VASA Provider를 사용할지 여부를 선택하는 즉시 작동합니다. 을 참조하십시오 link:../configure/registration-process.html["vCenter Server 인스턴스에 VASA Provider를 등록합니다"] 를 참조하십시오.
+구축이 완료되면 VMware vSphere 및 VASA 제품용 ONTAP 툴이 사용자 환경에 설치됩니다. 기본적으로 VMware vSphere용 ONTAP 툴은 구축 모델을 결정하고 요구 사항에 따라 VASA Provider를 사용할지 여부를 선택하는 즉시 작동합니다. 자세한 내용은 을 link:../configure/registration-process.html["vCenter Server 인스턴스에 VASA Provider를 등록합니다"] 참조하십시오.
 
 
 
@@ -33,5 +33,5 @@ OVA를 HA 구성으로 배포하기 전에 OVA를 저장할 콘텐츠 라이브�
 . 페이지 오른쪽에서 * 만들기 * 를 선택합니다.
 . 라이브러리 이름을 지정하고 콘텐츠 라이브러리를 만듭니다.
 . 만든 콘텐츠 라이브러리로 이동합니다.
-. 페이지 오른쪽에서 * Actions * 를 선택하고 * Import item * 을 선택한 후 OVA 파일을 가져옵니다.
+. 페이지 오른쪽의 * Actions * 를 선택하고 * Import item * 을 선택한 후 OVA 파일을 가져옵니다.
 

@@ -28,7 +28,7 @@ entries:
   url: "/manage/manage-vcenter.html"
 - title: 인증서를 관리합니다
   url: "/manage/certificate-manage.html"
-- title: igroup 및 엑스포트 정책을 관리합니다
+- title: Igroup 및 엑스포트 정책을 관리합니다
   url: "/manage/igroup-management.html"
 - title: VMware vSphere 유지 관리 콘솔용 ONTAP 툴에 액세스할 수 있습니다
   entries:
@@ -66,3 +66,5 @@ entries:
     url: "/manage/reset-maint-password.html"
 - title: 볼륨을 정리합니다
   url: "/manage/delete-deployment.html"
+- title: 호스트 클러스터를 보호합니다
+  url: "/manage/protect-cluster.html"

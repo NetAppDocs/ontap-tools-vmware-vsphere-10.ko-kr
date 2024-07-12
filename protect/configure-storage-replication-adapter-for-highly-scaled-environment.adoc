@@ -54,7 +54,7 @@ summary: 'SRA\(Storage Replication Adapter\)의 권장 설정에 따라 스토�
 |===
 또한 를 활성화해야 합니다 `StorageProvider.autoResignatureMode` 옵션을 선택합니다.
 
-스토리지 공급자 설정 수정에 대한 자세한 내용은 VMware 설명서를 참조하십시오.
+Storage Provider 설정을 수정하는 방법에 대한 자세한 내용은 VMware 설명서를 참조하십시오.
 
 https://docs.vmware.com/en/Site-Recovery-Manager/8.7/com.vmware.srm.admin.doc/GUID-E4060824-E3C2-4869-BC39-76E88E2FF9A0.html["VMware vSphere 설명서: 스토리지 공급자 설정 변경"]
 

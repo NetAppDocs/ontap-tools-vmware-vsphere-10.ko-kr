@@ -1,0 +1,36 @@
+---
+permalink: manage/protect-cluster.html 
+sidebar: sidebar 
+keywords: vVols datastore,delete vVol 
+summary: 데이터 저장소 삭제 작업은 데이터 저장소를 삭제합니다. NFS 또는 VMFS 데이터 저장소의 경우 데이터 저장소를 사용 중인 VM 목록이 포함된 대화 상자가 나타납니다. 
+---
+= 호스트 클러스터를 보호합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+:firstname: [.lead]
+:author: [.lead]
+:authorinitials: [
+:authors: [.lead]
+:revdate: ONTAP tools for VMware vSphere manages protection of a host cluster.
+
+
+선택한 SVM에 속하는 모든 데이터 저장소(그리고 클러스터의 하나 이상의 호스트에 마운트된 데이터 저장소)가 호스트 클러스터에서 보호되어 있습니다(SMAS용).
+
+.필수 구성 요소
+호스트 클러스터를 보호하기 전에 다음 조건이 충족되는지 확인하십시오. 호스트 클러스터에는 하나의 SVM의 데이터 저장소만 있습니다. SVM(SB) 버전은 9.15.1보다 커야 합니다. 호스트 클러스터에 마운트된 모든 데이터 저장소는 클러스터 외부의 호스트에 마운트해서는 안 됩니다. . 호스트 클러스터에 마운트된 모든 데이터 저장소는 VMFS 데이터 저장소여야 합니다. . 호스트 클러스터에 마운트된 데이터 저장소를 형성하는 FlexVol/LUN이 기존 CG의 일부가 되어서는 안 됩니다. . 모든 FlexVol 또는 LUN은 SnapMirror 관계에 포함될 수 없습니다
+
+.단계
+. 을 사용하여 vSphere Client에 로그인합니다 `\https://vcenterip/ui`
+. 호스트 클러스터를 마우스 오른쪽 버튼으로 클릭한 다음 * NetApp ONTAP tools * > * Protect Cluster * 를 선택합니다.
+. 클러스터 보호 창에서 보호할 데이터 저장소에 대한 보호 설정을 입력합니다. 호스트 클러스터에는 하나의 SVM(클러스터)에 있는 데이터 저장소만 있을 수 있습니다.
+. 타겟 ONTAP 클러스터 및 스토리지 VM 옵션 중 하나를 선택합니다.
+. 로컬 스냅샷 정책을 데이터 저장소의 백업 볼륨에 연결하려면 * Enable local Snapshot * 확인란을 선택합니다.
+. 선택한 AutomatedFailoverDuplex 정책, 타겟 클러스터 및 타겟 스토리지 VM으로 데이터 저장소를 보호하려면 * Enable SnapMirror * 확인란을 선택하고 * Add Relationship * 을 선택합니다.
+. 균일 구성의 경우 * 균일 호스트 구성 * 전환 버튼을 true로 선택합니다.
+. 호스트 구성 토글 버튼 선택에 따라 각 호스트에 * 호스트 근접 * 또는 * 액세스 * 를 제공합니다.
+. 추가 * 를 선택합니다.
+. 요약 페이지를 검토하고 보호 를 선택합니다.
+
+
+작업이 vCenter에 생성됩니다. 생성된 jobid를 사용하여 작업을 모니터링합니다.

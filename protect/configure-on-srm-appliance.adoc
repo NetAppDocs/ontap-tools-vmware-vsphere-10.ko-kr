@@ -2,7 +2,7 @@
 permalink: protect/configure-on-srm-appliance.html 
 sidebar: sidebar 
 keywords:  
-summary: 'SRM 어플라이언스를 배포한 후에는 SRM 어플라이언스에 SRA를 구성해야 합니다. SRA를 성공적으로 구성하면 SRM 어플라이언스가 재해 복구 관리를 위해 SRA와 통신할 수 있습니다. SRM 어플라이언스와 SRA 간의 통신을 활성화하려면 VMware vSphere 자격 증명\(IP 주소 및 관리자 암호\)에 대한 ONTAP 툴을 SRM 어플라이언스에 저장해야 합니다.' 
+summary: 'SRM 어플라이언스를 배포한 후에는 SRM 어플라이언스에 SRA를 구성해야 합니다. SRA 구성이 성공하면 SRM 어플라이언스가 SRA와 통신하여 재해 복구 관리를 수행할 수 있습니다. SRM 어플라이언스와 SRA 간의 통신을 활성화하려면 VMware vSphere 자격 증명\(IP 주소 및 관리자 암호\)에 대한 ONTAP 툴을 SRM 어플라이언스에 저장해야 합니다.' 
 ---
 = SRM 어플라이언스에 SRA를 구성합니다
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 'SRM 어플라이언스를 배포한 후에는 SRM 어플라이언스�
 
 
 [role="lead"]
-SRM 어플라이언스를 배포한 후에는 SRM 어플라이언스에 SRA를 구성해야 합니다. SRA를 성공적으로 구성하면 SRM 어플라이언스가 재해 복구 관리를 위해 SRA와 통신할 수 있습니다. SRM 어플라이언스와 SRA 간의 통신을 활성화하려면 SRM 어플라이언스에 VMware vSphere 자격 증명(IP 주소)용 ONTAP 툴을 저장해야 합니다.
+SRM 어플라이언스를 배포한 후에는 SRM 어플라이언스에 SRA를 구성해야 합니다. SRA 구성이 성공하면 SRM 어플라이언스가 SRA와 통신하여 재해 복구 관리를 수행할 수 있습니다. SRM 어플라이언스와 SRA 간의 통신을 활성화하려면 SRM 어플라이언스에 VMware vSphere 자격 증명(IP 주소)용 ONTAP 툴을 저장해야 합니다.
 
 * 필요한 것 *
 
@@ -19,7 +19,7 @@ SRM 어플라이언스를 배포한 후에는 SRM 어플라이언스에 SRA를 �
 
 * 이 작업에 대한 정보 *
 
-SRM 어플라이언스의 SRA 구성은 SRM 어플라이언스에 SRA 자격 증명을 저장합니다.
+SRM 어플라이언스의 SRA 구성은 SRA 자격 증명을 SRM 어플라이언스에 저장합니다.
 
 * 단계 *
 
@@ -27,8 +27,8 @@ SRM 어플라이언스의 SRA 구성은 SRM 어플라이언스에 SRA 자격 증
 . SRM에 _.tar.gz_파일을 업로드합니다.
 . putty를 사용하여 관리자 계정을 사용하여 SRM 어플라이언스에 로그인합니다.
 . 다음 명령을 사용하여 루트 사용자로 전환합니다. `su root`
-. 명령을 실행합니다 `cd /var/log/vmware/srm` 로그 디렉토리로 이동합니다.
-. 로그 위치에 SRA에서 사용하는 Docker ID를 가져오는 명령을 입력합니다. `docker ps -l`
+. 명령을 `cd /var/log/vmware/srm` 실행하여 로그 디렉토리로 이동합니다.
+. 로그 위치에 명령을 입력하여 SRA에서 사용하는 Docker ID를 가져옵니다. `docker ps -l`
 . 컨테이너 ID에 로그인하려면 명령을 입력합니다. `docker exec -it -u srm <container id> sh`
 . 다음 명령을 사용하여 VMware vSphere IP 주소 및 암호용 ONTAP 툴을 사용하여 SRM을 구성합니다. `perl command.pl -I --otv-ip <OTV_IP>:8443 --otv-username <Application username> --otv-password <Application password> --vcenter-guid <VCENTER_GUID>'`
 +

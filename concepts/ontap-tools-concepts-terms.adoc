@@ -35,13 +35,19 @@ LUN은 SAN(Storage Area Network) 내에서 논리 유닛을 식별하는 데 사
 
 === ONTAP 도구 관리자
 
-ONTAP tools Manager를 사용하면 VMware vSphere 관리자가 관리되는 vCenter Server 인스턴스 및 온보드된 스토리지 백엔드에 대해 ONTAP 툴을 더 효율적으로 제어할 수 있습니다. ONTAP tools Manger는 vCenter Server 인스턴스, 스토리지 백 엔드, 인증서, 암호 및 로그 번들 다운로드 관리를 지원합니다.
+ONTAP tools Manager를 사용하면 VMware vSphere 관리자가 관리되는 vCenter Server 인스턴스 및 온보드된 스토리지 백엔드에 대해 ONTAP 툴을 더 효율적으로 제어할 수 있습니다. ONTAP tools Manger는 vCenter Server 인스턴스, 스토리지 백엔드, 인증서, 암호 및 로그 번들 다운로드 관리에 도움이 됩니다.
 
 
 
 === OVA(개방형 가상 어플라이언스)
 
 OVA는 가상 머신에서 실행해야 하는 가상 어플라이언스 또는 소프트웨어를 패키징하고 배포하는 개방형 표준입니다.
+
+
+
+=== SnapMirror 액티브(SMAS)
+
+SnapMirror 액티브 동기화를 사용하면 전체 사이트 장애가 발생하더라도 비즈니스 서비스를 계속 운영할 수 있으므로 보조 복사본을 사용하여 애플리케이션을 투명하게 페일오버할 수 있습니다. SnapMirror 활성 동기화로 페일오버를 트리거하려면 수동 개입 또는 사용자 지정 스크립팅이 필요합니다.
 
 
 

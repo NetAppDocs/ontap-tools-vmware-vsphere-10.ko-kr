@@ -11,7 +11,7 @@ summary: ONTAP tools Manager는 VMware vSphere 관리자를 위한 ONTAP 툴에 
 
 
 [role="lead"]
-VMware vSphere용 ONTAP 툴은 멀티 테넌트 시스템으로, 여러 vCenter Server 인스턴스를 관리합니다. ONTAP tools Manager를 사용하면 VMware vSphere 관리자가 관리되는 vCenter Server 인스턴스 및 온보드된 스토리지 백엔드에 대해 ONTAP 툴을 더 효율적으로 제어할 수 있습니다.
+VMware vSphere용 ONTAP 툴은 여러 vCenter Server 인스턴스를 관리할 수 있는 멀티 테넌트 시스템입니다. ONTAP tools Manager를 사용하면 VMware vSphere 관리자가 관리되는 vCenter Server 인스턴스 및 온보드된 스토리지 백엔드에 대해 ONTAP 툴을 더 효율적으로 제어할 수 있습니다.
 
 ONTAP Tools Manager는 다음과 같은 기능을 제공합니다.
 

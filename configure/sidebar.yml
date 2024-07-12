@@ -24,7 +24,7 @@ entries:
   url: "/configure/discover-storage-systems-and-hosts.html"
 - title: 스토리지 백엔드를 추가합니다
   url: "/configure/add-storage-backend.html"
-- title: 스토리지 백엔드를 vCenter Server에 연결합니다
+- title: 스토리지 백엔드를 vCenter Server 인스턴스에 연결합니다
   url: "/configure/associate-storage-backend.html"
 - title: 네트워크 액세스를 구성합니다
   url: "/configure/configure-network-access.html"
