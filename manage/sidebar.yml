@@ -66,5 +66,3 @@ entries:
     url: "/manage/reset-maint-password.html"
 - title: 볼륨을 정리합니다
   url: "/manage/delete-deployment.html"
-- title: 호스트 클러스터를 보호합니다
-  url: "/manage/protect-cluster.html"

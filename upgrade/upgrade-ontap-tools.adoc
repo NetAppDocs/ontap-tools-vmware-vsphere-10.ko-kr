@@ -2,7 +2,7 @@
 permalink: upgrade/upgrade-ontap-tools.html 
 sidebar: sidebar 
 keywords: upgrade 
-summary: VMware vSphere 10.0 및 10.1용 ONTAP 툴에서 10.2로 업그레이드하면 복구 볼륨이 생성되고 필요한 모든 세부 정보가 복구 볼륨에 포함됩니다. 
+summary: VMware vSphere 10.0 및 10.1용 ONTAP 툴에서 10.1로 업그레이드하면 복구 볼륨이 생성되고 필요한 모든 세부 정보가 복구 볼륨에 포함됩니다. 
 ---
 = ONTAP 툴의 최신 릴리즈로 업그레이드하십시오
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: VMware vSphere 10.0 및 10.1용 ONTAP 툴에서 10.2로 업그레이드
 
 
 [role="lead"]
-VMware vSphere 10.0 및 10.1용 ONTAP 툴에서 10.2로 업그레이드하면 복구 볼륨이 생성되고 필요한 모든 세부 정보가 복구 볼륨에 포함됩니다. 구성을 복구해야 하는 경우 복구 볼륨을 사용하여 VMware vSphere 설정을 위한 ONTAP 툴을 복구할 수 있습니다. VMware vSphere 10.2용 ONTAP 툴의 패치 수준 업그레이드를 수행하는 경우 동일한 복구 볼륨이 사용되고 세부 정보가 업데이트됩니다. HA 및 비 HA 구현 모두에서 업그레이드가 지원됩니다.
+VMware vSphere 10.0 및 10.1용 ONTAP 툴에서 10.1로 업그레이드하면 복구 볼륨이 생성되고 필요한 모든 세부 정보가 복구 볼륨에 포함됩니다. 구성을 복구해야 하는 경우 복구 볼륨을 사용하여 VMware vSphere 설정을 위한 ONTAP 툴을 복구할 수 있습니다. VMware vSphere 10.1용 ONTAP 툴의 패치 수준 업그레이드를 수행하는 경우 동일한 복구 볼륨이 사용되고 세부 정보가 업데이트됩니다. HA 및 비 HA 구현 모두에서 업그레이드가 지원됩니다.
 
 * 시작하기 전에 *
 

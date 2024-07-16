@@ -47,7 +47,7 @@ VMware vSphere용 ONTAP 툴을 VMware vCSA(vCenter Server 가상 어플라이언
 | 스토리지, 호스트 및 애플리케이션 | 최소 버전 요구 사항 
 
 
-| ONTAP | ONTAP 9.13.1, 9.14.1 및 9.15.1의 최신 패치 릴리즈입니다. 
+| ONTAP | ONTAP 9.12.1, 9.13.1 또는 9.14.1의 최신 패치 릴리스 
 
 
 | ESXi 호스트 | ESXi 7.0.3을 참조하십시오 
@@ -59,7 +59,7 @@ VMware vSphere용 ONTAP 툴을 VMware vCSA(vCenter Server 가상 어플라이언
 | VASA 공급자 | 3.0 
 
 
-| OVA 응용 프로그램 | 10.2 
+| OVA 응용 프로그램 | 10.1 
 |===
 상호 운용성 매트릭스 툴(IMT)에는 지원되는 ONTAP 버전, vCenter Server, ESXi 호스트 및 플러그인 애플리케이션에 대한 최신 정보가 포함되어 있습니다.
 
