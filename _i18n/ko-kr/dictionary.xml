@@ -188,10 +188,6 @@
   <block id="87c93b9816d806cccc58f0b610872eda" category="list-text">를 입력합니다<block ref="a87ff679a2f3e71d9181a67b7542122c" prefix=" " category="inline-code"></block> 지원 및 진단 을 선택합니다.</block>
   <block id="ef7a1860bfa2c5f2ea33155989f85ee5" category="list-text">를 입력합니다<block ref="c4ca4238a0b923820dcc509a6f75849b" prefix=" " category="inline-code"></block> 진단 쉘 액세스를 선택합니다.</block>
   <block id="78efad1f6bb75b53e0c5236fd154c135" category="list-text">를 입력합니다<block ref="415290769594460e2e485922904f345d" prefix=" " category="inline-code"></block> 를 눌러 계속합니다.</block>
-  <block id="6e1ee8250e4dc3ce6e26c0ebdbaab54a" category="list-text">필요에 따라 자격 증명을 업데이트합니다.</block>
-  <block id="512e6df6579ba9be187fcdaf015cd5e6" category="paragraph">otv-update--ontapUsername &lt;new username&gt;--ontapPassword &lt;new password&gt; 를 참조하십시오</block>
-  <block id="7291058dd83795e1ab1d74629e7b59d5" category="paragraph">odv-update--vcenterUsername &lt;new username&gt;--vcenterPassword &lt;new password&gt; 를 참조하십시오</block>
-  <block id="1c7a1c71a372b297fb2ddde652f24fcc" category="paragraph">otv-update--dataLif &lt;new Datalif IP&gt;</block>
   <block id="f2bf379ad5a0f05a54bbcdb5678a796e" category="inline-image-macro">재생 버튼</block>
   <block id="0b8a80106a177e9178ec383905046532" category="cell">* 콘솔 메뉴 *</block>
   <block id="2c639d8cf692c100e3eba8b611821414" category="cell">* 옵션 *</block>
@@ -1696,7 +1692,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
 구축 작업이 생성되면 vSphere 작업 표시줄에 진행 상황이 표시됩니다.
 . 작업 완료 후 VM의 전원을 켭니다.</block>
   <block id="a84fd12354047a6ec2a5b6b1711524f5" category="cell">vCenter 7.0U3</block>
-  <block id="b5a405460149721025d3f0b33b133321" category="list-text">ONTAP/SVM 암호 를 입력합니다. 이 스토리지 VM의 ONTAP/SVM 로그인 암호에는 다음 특수 문자($,',")가 포함되어서는 안 됩니다.</block>
   <block id="b8237d978365427c8b91b5f11293f5e5" category="paragraph">를 누릅니다
 <block ref="89d79dbcc89ba4076180d653020a5110" category="inline-image-macro-rx" type="image"></block></block>
   <block id="99126fb772977a83acb4723e429a29c0" category="admonition">ONTAP 툴 VMware vSphere 가상 머신을 관리하는 VVOL 데이터 저장소에 배포하지 마십시오.</block>
@@ -1825,9 +1820,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="62d979a8af29380891d017376cb44c65" category="section-title">저장소 백엔드를 제거합니다</block>
   <block id="9ca9be4cf1830049310642af0d8597cf" category="paragraph">스토리지 백엔드를 제거하기 전에 스토리지 백엔드에 연결된 모든 데이터 저장소를 삭제해야 합니다. 스토리지 백엔드를 제거하려면 다음 단계를 수행하십시오.</block>
   <block id="492536f303a280d3ebdae80179b9c31a" category="list-text">오른쪽 창에서 * Configure * 탭을 클릭합니다.</block>
-  <block id="167eaea484341a685fe24829668ec35c" category="list-text">ONTAP 자격 증명을 업데이트하려면 다음 명령을 실행합니다.</block>
-  <block id="a2e55f135d38f547623aac8e3523ca89" category="list-text">vCenter 자격 증명을 업데이트하려면 다음 명령을 실행합니다.</block>
-  <block id="4b2505432ca227b6c7b2991e5b223d7d" category="list-text">데이터 LIF를 업데이트하려면 다음 명령을 실행합니다.</block>
   <block id="d8fadf5b37e6090e5c48155442e6dd13" category="list-text">오른쪽 창에서 * Monitor * 탭을 클릭합니다.</block>
   <block id="3afd1d6d6eee36d82c692f7555428de3" category="list-text">VMware vSphere 스토리지 공급자용 ONTAP 툴을 vCenter Server 및 에 추가합니다 <block ref="5d4adca70c5644b1b13c61d5e49e1ff7" category="inline-link-macro-rx"></block>.</block>
   <block id="e93b5d3770694f17c18a300557f18fd2" category="paragraph">이전 VASA 공급자가 중지되면 vCenter Server가 VMware vSphere용 ONTAP 툴로 페일오버됩니다. 모든 데이터 저장소와 VM에 액세스할 수 있으며 VMware vSphere용 ONTAP 툴을 통해 제공됩니다.</block>
@@ -1867,4 +1859,8 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="33857256a63a7aef7c5bdd248e2cbd12" category="summary">VMware vSphere 10.0 및 10.1용 ONTAP 툴에서 10.1로 업그레이드하면 복구 볼륨이 생성되고 필요한 모든 세부 정보가 복구 볼륨에 포함됩니다.</block>
   <block id="05138d33f74ef24966432b76ee85d18f" category="paragraph">VMware vSphere 10.0 및 10.1용 ONTAP 툴에서 10.1로 업그레이드하면 복구 볼륨이 생성되고 필요한 모든 세부 정보가 복구 볼륨에 포함됩니다. 구성을 복구해야 하는 경우 복구 볼륨을 사용하여 VMware vSphere 설정을 위한 ONTAP 툴을 복구할 수 있습니다. VMware vSphere 10.1용 ONTAP 툴의 패치 수준 업그레이드를 수행하는 경우 동일한 복구 볼륨이 사용되고 세부 정보가 업데이트됩니다. HA 및 비 HA 구현 모두에서 업그레이드가 지원됩니다.</block>
   <block id="2a18716f8022631c1d2fd79a8fbb75e8" category="sidebar">VMware vSphere 10.1 문서용 ONTAP 툴</block>
+  <block id="344e7fea24fbe3dae5345953d18ee85c" category="list-text">ONTAP/SVM 암호 를 입력합니다.</block>
+  <block id="cea5a13834803a12adaeb249165351df" category="list-text">를<block ref="c81e728d9d4c2f636f067f89cc14862c" prefix=" " category="inline-code"></block> 입력하여 시스템 구성 메뉴를 선택합니다.</block>
+  <block id="86ce6e9c3af571980099ca308cd245e3" category="list-text">ONTAP 자격 증명을 변경하려면 를<block ref="45c48cce2e2d7fbdea1afc51c7c6ad26" prefix=" " category="inline-code"></block> 입력합니다.</block>
+  <block id="207c00a73dde0270cc0fbc7ce9c5f2fd" category="list-text">vCenter 자격 증명을 변경하려면 를<block ref="d3d9446802a44259755d38e6d163e820" prefix=" " category="inline-code"></block> 입력합니다.</block>
 </blocks>
