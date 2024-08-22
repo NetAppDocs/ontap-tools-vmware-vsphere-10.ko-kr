@@ -18,7 +18,7 @@ ONTAP 툴의 유지보수 콘솔을 사용하여 애플리케이션, 시스템 �
 
 NOTE: 에 대한 암호를 설정해야 합니다 `diag` 원격 진단을 활성화하는 동안 사용자.
 
-유지 관리 콘솔에 액세스하려면 구축된 VMware vSphere용 ONTAP 툴의 * Summary * 탭을 사용해야 합니다. 를 클릭합니다 image:../media/launch-maintenance-console.gif["재생 버튼"], 유지보수 콘솔이 시작됩니다.
+유지 관리 콘솔에 액세스하려면 구축된 VMware vSphere용 ONTAP 툴의 * Summary * 탭을 사용해야 합니다. 을 image:../media/launch-maintenance-console.gif["재생 버튼"]클릭하면 유지 관리 콘솔이 시작됩니다.
 
 |===
 

@@ -28,7 +28,7 @@ VMware vSphere용 ONTAP 툴을 VMware vCSA(vCenter Server 가상 어플라이언
 |===
 
 
-| 배포 유형입니다 | CPU입니다 | 메모리(GB) 
+| * 배포 유형 * | * CPU * | * 메모리(GB) * 
 
 
 | 소형(S) | 8 | 16 
@@ -39,6 +39,8 @@ VMware vSphere용 ONTAP 툴을 VMware vCSA(vCenter Server 가상 어플라이언
 
 | 크게(L) | 16 | 32 
 |===
+link:../deploy/config-limits.html["VMware vSphere용 ONTAP 툴을 구축하기 위한 구성 제한"]자세한 내용은 을 참조하십시오.
+
 
 
 == 최소 스토리지 및 애플리케이션 요구사항

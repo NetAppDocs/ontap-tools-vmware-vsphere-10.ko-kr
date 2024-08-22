@@ -26,11 +26,11 @@ SRM(Site Recovery Manager)에 대해 SRA(Storage Replication Adapter)를 실행�
 SRM 설치에 대한 문서는 VMware 사이트에 있습니다.
 
 +
-https://www.vmware.com/support/pubs/srm_pubs.html["VMware Site Recovery Manager 설명서"]
+https://docs.vmware.com/en/Site-Recovery-Manager/index.html["VMware Site Recovery Manager 설명서"]
 
 * SRA
 +
-어댑터는 SRM에 설치됩니다.
+어댑터가 SRM에 설치됩니다.
 
 
 
@@ -58,7 +58,7 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
 SRM 설치에 대한 설명서는 VMware 사이트에서 찾을 수 있습니다.
 
 +
-https://www.vmware.com/support/pubs/srm_pubs.html["VMware Site Recovery Manager 설명서"]
+https://docs.vmware.com/en/Site-Recovery-Manager/index.html["VMware Site Recovery Manager 설명서"]
 
 * SRA
 +

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: 'VMware vSphere용 ONTAP 툴은 고가용성\(HA\) 구성을 지원하여 장애 발생 시 VMware vSphere용 ONTAP 툴의 중단 없는 기능을 제공합니다.' 
 ---
-= VMware vSphere용 ONTAP 툴의 고가용성 구성
+= VMware vSphere용 ONTAP 툴의 고가용성
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
