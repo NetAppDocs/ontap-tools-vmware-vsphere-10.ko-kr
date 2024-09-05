@@ -61,7 +61,7 @@ link:../deploy/config-limits.html["VMware vSphere용 ONTAP 툴을 구축하기 �
 | VASA 공급자 | 3.0 
 
 
-| OVA 응용 프로그램 | 10.1 
+| OVA 응용 프로그램 | 10.2 
 |===
 상호 운용성 매트릭스 툴(IMT)에는 지원되는 ONTAP 버전, vCenter Server, ESXi 호스트 및 플러그인 애플리케이션에 대한 최신 정보가 포함되어 있습니다.
 

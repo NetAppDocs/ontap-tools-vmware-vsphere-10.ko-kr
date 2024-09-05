@@ -1551,14 +1551,10 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="a40a3427484ba9037317f84856abff69" category="list-text">필요한 스토리지 쌍을 선택하고 해당 세부 정보를 확인합니다.</block>
   <block id="a780a238f22a802c24a2182aea27323f" category="paragraph">* vCenter에서 VMware vSphere VM용 ONTAP 툴의 스냅샷 생성(HA 구축 시 VM 3개, 비 HA 구축 시 VM 1개) *</block>
   <block id="2402f961ea404a2d19f517d27391d5ce" category="cell">ONTAP 9.12.1, 9.13.1 또는 9.14.1의 최신 패치 릴리스</block>
-  <block id="88d1955de012defb14b2db6f4797ff20" category="cell">10.1</block>
   <block id="246912033b1b0195389ee2e1bbbb4194" category="paragraph">마이그레이션은 VMware vSphere 9.10D2, 9.11D4, 9.12 및 9.13 릴리즈용 ONTAP 툴에서 10.1 릴리즈로 지원됩니다.</block>
   <block id="2e2a1bc69765f559199ac318acd2a7d7" category="list-text">VMware vSphere 10.1 릴리스용 ONTAP용 OVA 도구를 배포합니다.</block>
-  <block id="9f24f41794806941dd2aeb79a4491cc8" category="list-text">VMware vSphere 10.1 릴리즈용 ONTAP 툴로 마이그레이션할 vCenter Server 인스턴스를 추가합니다. 을 참조하십시오 <block ref="28e8d51b831bb2b416c05f461b67f7df" category="inline-link-macro-rx"></block></block>
-  <block id="4a03a1c1f0cc7fc87194ca50c15f95d1" category="list-text">VMware vSphere 9.xx용 ONTAP 툴에서 마이그레이션된 NFS 및 VMFS 데이터 저장소는 데이터 저장소 검색 작업이 트리거된 후에만 VMware vSphere 10.1용 ONTAP 툴에 표시됩니다. 이 작업은 트리거하는 데 최대 30분이 걸릴 수 있습니다. 데이터 저장소가 VMware vSphere용 ONTAP Tools 플러그인 UI 페이지의 개요 페이지에 표시되는지 확인합니다.</block>
   <block id="84f820da6ba65a6cab821392a70f4e42" category="list-text">의 단계에 따라 보호 및 복구 사이트 모두에 VMware vSphere 10.1 SRA 어댑터용 ONTAP 툴을 설치합니다 <block ref="c2b5ee5d8065c08146407751d4d3a3d6" category="inline-link-macro-rx"></block></block>
   <block id="d3f31e51d90c6cd2652af74dae461781" category="paragraph">마이그레이션에 성공하고 ONTAP Tools 10.1을 vCenter Server에 등록한 후 다음을 수행합니다.</block>
-  <block id="2a18716f8022631c1d2fd79a8fbb75e8" category="sidebar">VMware vSphere 10.1 문서용 ONTAP 툴</block>
   <block id="cea5a13834803a12adaeb249165351df" category="list-text">를<block ref="c81e728d9d4c2f636f067f89cc14862c" prefix=" " category="inline-code"></block> 입력하여 시스템 구성 메뉴를 선택합니다.</block>
   <block id="86ce6e9c3af571980099ca308cd245e3" category="list-text">ONTAP 자격 증명을 변경하려면 를<block ref="45c48cce2e2d7fbdea1afc51c7c6ad26" prefix=" " category="inline-code"></block> 입력합니다.</block>
   <block id="207c00a73dde0270cc0fbc7ce9c5f2fd" category="list-text">vCenter 자격 증명을 변경하려면 를<block ref="d3d9446802a44259755d38e6d163e820" prefix=" " category="inline-code"></block> 입력합니다.</block>
@@ -1848,4 +1844,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="0b05bd7cf8d32e0eca345c170c1c2bdd" category="sidebar">vCenter Server 및 ONTAP 자격 증명을 업데이트합니다</block>
   <block id="b380edc36b1ed383fd72d0b93d5857c5" category="sidebar">호스트 클러스터 보호 관리</block>
   <block id="430cbe0d7261af556b6d05cea5b38e0e" category="sidebar">호스트 클러스터 보호를 수정합니다</block>
+  <block id="a9d9d1b0257dda96d595bd00149cccdb" category="cell">10.2</block>
+  <block id="bcb59ed8656cede47cff74ddfd5a154f" category="sidebar">VMware vSphere 10.2 문서용 ONTAP 툴</block>
 </blocks>
