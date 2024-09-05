@@ -1,5 +1,5 @@
 ---
-permalink: manage/delete-vvols.html 
+permalink: manage/delete-ds.html 
 sidebar: sidebar 
 keywords: vVols datastore,delete vVol 
 summary: 데이터 저장소 삭제 작업은 데이터 저장소를 삭제합니다. NFS 또는 VMFS 데이터 저장소의 경우 데이터 저장소를 사용 중인 VM 목록이 포함된 대화 상자가 나타납니다. 
@@ -30,7 +30,7 @@ vCenter Server의 ONTAP 도구에서 NFS, VMFS 또는 VVOL 데이터 저장소�
 . 호스트 시스템 또는 호스트 클러스터 또는 데이터 저장소를 마우스 오른쪽 버튼으로 클릭하고 * NetApp ONTAP tools * > * Delete datastore * 를 선택합니다.
 +
 
-NOTE: 해당 데이터 저장소를 사용하는 가상 시스템이 있는 경우 데이터 저장소를 삭제할 수 없습니다. 데이터 저장소를 삭제하기 전에 가상 머신을 다른 데이터 저장소로 이동해야 합니다.
+NOTE: 해당 데이터 저장소를 사용하는 가상 시스템이 있는 경우 데이터 저장소를 삭제할 수 없습니다. 데이터 저장소를 삭제하기 전에 가상 머신을 다른 데이터 저장소로 이동해야 합니다. 데이터 저장소가 보호된 호스트 클러스터에 속한 경우 볼륨 삭제 확인란을 선택할 수 없습니다.
 
 +
 .. NFS 또는 VMFS 데이터 저장소의 경우 데이터 저장소를 사용 중인 VM 목록이 포함된 대화 상자가 나타납니다.
@@ -38,4 +38,8 @@ NOTE: 해당 데이터 저장소를 사용하는 가상 시스템이 있는 경�
 
 
 . ONTAP 스토리지에서 백업 볼륨을 삭제하려면 * Delete volumes on ONTAP cluster * 를 선택합니다.
++
+
+NOTE: 보호된 호스트 클러스터에 속하는 VMFS 데이터 저장소에 대한 ONTAP 클러스터의 볼륨은 삭제할 수 없습니다.
+
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: migrate 
 summary: 스토리지 데이터를 마이그레이션할 때 REST API를 사용하여 스토리지 백엔드를 수동으로 온보드합니다. VASA 공급자 데이터를 마이그레이션할 때 기존 Derby 데이터베이스에서 데이터를 내보내고 MongoDB 데이터베이스로 가져옵니다. 
 ---
-= ONTAP 도구의 최신 릴리즈로 마이그레이션하십시오
+= VMware vSphere 9.x용 ONTAP 툴에서 10.2로 마이그레이션합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -14,7 +14,7 @@ summary: 스토리지 데이터를 마이그레이션할 때 REST API를 사용�
 스토리지 데이터를 마이그레이션할 때 REST API를 사용하여 스토리지 백엔드를 수동으로 온보드합니다. VASA 공급자 데이터를 마이그레이션할 때 기존 Derby 데이터베이스에서 데이터를 내보내고 MongoDB 데이터베이스로 가져옵니다.
 
 
-NOTE: 설정 시 VASA 공급자 기능만 제공하는 경우에만 VMware vSphere 9.xx 설정용 ONTAP 툴을 마이그레이션하는 것이 좋습니다. NVMe 데이터 저장소와 VVOL 복제가 있는 경우 설정을 VMware vSphere 10.1용 ONTAP 툴로 마이그레이션하지 않는 것이 좋습니다.
+NOTE: 설정 시 VASA 공급자 기능만 제공하는 경우에만 VMware vSphere 9.xx 설정용 ONTAP 툴을 마이그레이션하는 것이 좋습니다.
 
 * 이 작업에 대한 정보 *
 
@@ -27,6 +27,10 @@ NOTE: 기존 사용자는 패치 릴리스로 업그레이드하기 전에 현�
 
 == 일반적인 마이그레이션 단계
 
+. VMware vSphere 10.2 릴리스용 ONTAP용 OVA 도구를 배포합니다.
+. VMware vSphere 10.2 릴리즈용 ONTAP 툴로 마이그레이션할 vCenter Server 인스턴스를 추가합니다. 을 참조하십시오 link:../configure/add-vcenter.html["vCenter Server 인스턴스를 추가하고 관리합니다"]
+. VMware vSphere 플러그인 vCenter Server API용 ONTAP 툴에서 로컬로 스토리지 백엔드를 온보드합니다. 마이그레이션을 위해 스토리지를 로컬 범위 스토리지로 추가합니다.
+. VMware vSphere 9.xx용 ONTAP 툴에서 마이그레이션된 NFS 및 VMFS 데이터 저장소는 데이터 저장소 검색 작업이 트리거된 후에만 VMware vSphere 10.2용 ONTAP 툴에 표시됩니다. 이 작업은 트리거하는 데 최대 30분이 걸릴 수 있습니다. 데이터 저장소가 VMware vSphere용 ONTAP Tools 플러그인 UI 페이지의 개요 페이지에 표시되는지 확인합니다.
 . VMware vSphere 10.1 릴리스용 ONTAP용 OVA 도구를 배포합니다.
 . VMware vSphere 10.1 릴리즈용 ONTAP 툴로 마이그레이션할 vCenter Server 인스턴스를 추가합니다. 을 참조하십시오 link:../configure/add-vcenter.html["vCenter Server 인스턴스를 추가하고 관리합니다"]
 . VMware vSphere 플러그인 vCenter API용 ONTAP 툴에서 로컬로 스토리지 백엔드를 온보드합니다. 마이그레이션을 위해 스토리지를 로컬 범위 스토리지로 추가합니다.
@@ -70,9 +74,9 @@ NOTE: 페일오버가 방금 완료되고 재보호가 보류 중인 경우에�
 ----
 iptables -I INPUT 1 -p tcp --dport 1527 -j ACCEPT
 ----
-. VMware vSphere 10.1 릴리스용 ONTAP용 OVA 도구를 배포합니다.
-. VMware vSphere 10.1 릴리즈용 ONTAP 툴로 마이그레이션할 vCenter Server 인스턴스를 추가합니다. 을 link:../configure/add-vcenter.html["vCenter Server 인스턴스를 추가합니다"]참조하십시오.
-. 원격 플러그인 vCenter API에서 로컬로 스토리지 백엔드를 온보드합니다. 마이그레이션을 위해 스토리지를 로컬 범위로 추가합니다.
+. VMware vSphere 10.2 릴리스용 ONTAP용 OVA 도구를 배포합니다.
+. VMware vSphere 10.2 릴리즈용 ONTAP 툴로 마이그레이션할 vCenter Server 인스턴스를 추가합니다. 을 link:../configure/add-vcenter.html["vCenter Server 인스턴스를 추가합니다"]참조하십시오.
+. 원격 플러그인 vCenter Server API에서 로컬로 스토리지 백엔드를 온보드합니다. 마이그레이션을 위해 스토리지를 로컬 범위로 추가합니다.
 . 마이그레이션하려면 다음 API 호출을 실행합니다.
 +
 []

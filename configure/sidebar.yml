@@ -32,5 +32,7 @@ entries:
   url: "/configure/configure-user-role-and-privileges.html"
 - title: VMware vSphere용 NetApp ONTAP 툴 플러그인 대시보드 개요
   url: "/configure/dashboard-overview.html"
+- title: 호스트 클러스터 보호를 생성합니다
+  url: "/configure/protect-cluster.html"
 - title: 데이터 저장소를 생성합니다
   url: "/configure/create-vvols-datastore.html"

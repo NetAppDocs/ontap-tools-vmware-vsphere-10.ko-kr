@@ -42,6 +42,28 @@ summary: VMware vSphere용 ONTAP 툴을 구축하기 위한 구성 제한
 다음 표에는 VMware vSphere용 ONTAP 툴을 사용하여 SRM 인스턴스당 지원되는 수가 나와 있습니다.
 
 |===
+
+
+| 스토리지 기반 복제를 사용하여 보호를 위해 구성된 총 가상 시스템 수입니다 | 5000 
+
+
+| 스토리지 기반 복제 보호 그룹의 총 수입니다 | 250 
+
+
+| 복구 계획당 총 보호 그룹 수입니다 | 50 
+
+
+| 복제된 데이터 저장소 수입니다 | 255 
+|===
+노드당 호스트 시스템 크기 조정 요구 사항에 대한 자세한 내용은 을 link:../deploy/sizing-requirements.html["VMware vSphere용 ONTAP 툴을 구축하기 위한 사전 요구 사항"]참조하십시오.
+
+
+
+== VMware vSphere용 ONTAP 툴 - SRA(Storage Replication Adapter)
+
+다음 표에는 VMware vSphere용 ONTAP 툴을 사용하여 SRM 인스턴스당 지원되는 수가 나와 있습니다.
+
+|===
 | * vCenter 배포 크기 * | * 소형 * | * 중간 * 
 
 

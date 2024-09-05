@@ -25,7 +25,7 @@ SRA는 클러스터 수준 관리 및 SVM 수준 관리를 지원합니다. 클�
 
 * 단계 *
 
-. SRM에서 * Array Managers * 를 클릭한 다음 * Add Array Manager * 를 클릭합니다.
+. SRM에서 * Array Managers * 를 클릭하고 * Add Array Manager * 를 클릭합니다.
 . SRM의 어레이를 설명하는 다음 정보를 입력합니다.
 +
 .. Display Name* 필드에 어레이 관리자를 식별할 이름을 입력하십시오.

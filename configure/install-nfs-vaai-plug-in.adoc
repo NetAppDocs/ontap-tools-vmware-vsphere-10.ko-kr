@@ -33,8 +33,8 @@ VMware vSphere용 ONTAP 툴을 사용하여 VAAI(VMware vStorage APIs for Array 
 . ONTAP Tools for VMware vSphere 홈 페이지에서 * Settings * 를 클릭합니다.
 . NFS VAAI Tools * 탭을 클릭합니다.
 . VAAI 플러그인이 vCenter Server에 업로드되면 * Existing version * 섹션에서 * Change * 를 선택합니다. VAAI 플러그인이 vCenter Server에 업로드되지 않은 경우 * 업로드 * 버튼을 선택합니다.
-. 를 찾아 선택합니다 `.vib` 파일을 클릭한 다음 * 업로드 * 를 클릭하여 파일을 ONTAP 도구에 업로드합니다.
-. EXSi 호스트에서 * 설치 * 를 클릭하고 NFS VAAI 플러그인을 설치할 ESXi 호스트를 선택한 다음 * 설치 * 를 클릭합니다.
+.  `.vib`파일을 찾아 선택하고 * 업로드 * 를 클릭하여 ONTAP 도구에 파일을 업로드합니다.
+. ESXi 호스트에 설치 * 를 클릭하고 NFS VAAI 플러그인을 설치할 ESXi 호스트를 선택한 다음 * 설치 * 를 클릭합니다.
 +
 플러그인 설치에 적합한 ESXi 호스트만 표시됩니다. 화면의 지시에 따라 설치를 완료해야 합니다. vSphere Web Client의 Recent Tasks 섹션에서 설치 진행률을 모니터링할 수 있습니다.
 

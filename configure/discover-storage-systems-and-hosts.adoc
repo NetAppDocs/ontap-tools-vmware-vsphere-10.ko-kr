@@ -28,7 +28,7 @@ vSphere 클라이언트에서 VMware vSphere용 ONTAP 툴을 처음 실행하면
 * 단계 *
 
 . vSphere Client 홈 페이지에서 * 호스트 및 클러스터 * 를 선택합니다.
-. 필요한 데이터 센터를 마우스 오른쪽 단추로 클릭한 다음 * NetApp ONTAP tools * > * 호스트 데이터 업데이트 * 를 선택합니다.
+. 필요한 데이터 센터를 마우스 오른쪽 버튼으로 클릭하고 * NetApp ONTAP tools * > * Update Host Data * 를 선택합니다.
 +
 VMware vSphere용 ONTAP 툴에 다음 메시지가 포함된 * 확인 * 대화 상자가 표시됩니다.
 
@@ -36,7 +36,7 @@ VMware vSphere용 ONTAP 툴에 다음 메시지가 포함된 * 확인 * 대화 �
 "이 작업은 연결된 모든 스토리지 시스템의 검색을 다시 시작하며 몇 분 정도 걸릴 수 있습니다. 계속하시겠습니까?"
 
 . 예 * 를 클릭합니다.
-. 상태가 인 검색된 스토리지 컨트롤러를 선택합니다 `Authentication Failure`를 클릭하고 * Actions * > * Modify * 를 클릭합니다.
+. 상태인 검색된 스토리지 컨트롤러를 `Authentication Failure` 선택하고 * Actions * > * Modify * 를 클릭합니다.
 . 스토리지 시스템 수정 * 대화 상자에 필요한 정보를 입력합니다.
 . 를 사용하는 모든 스토리지 컨트롤러에 대해 4단계와 5단계를 반복합니다 `Authentication Failure` 상태.
 
