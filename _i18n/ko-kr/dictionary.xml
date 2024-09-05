@@ -1550,8 +1550,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="71a16bd19bda0e91c90a56e37682dc0d" category="list-text">Perl 명령을 실행하여 새 자격 증명으로 SRA를 구성합니다.</block>
   <block id="a40a3427484ba9037317f84856abff69" category="list-text">필요한 스토리지 쌍을 선택하고 해당 세부 정보를 확인합니다.</block>
   <block id="a780a238f22a802c24a2182aea27323f" category="paragraph">* vCenter에서 VMware vSphere VM용 ONTAP 툴의 스냅샷 생성(HA 구축 시 VM 3개, 비 HA 구축 시 VM 1개) *</block>
-  <block id="2402f961ea404a2d19f517d27391d5ce" category="cell">ONTAP 9.12.1, 9.13.1 또는 9.14.1의 최신 패치 릴리스</block>
-  <block id="246912033b1b0195389ee2e1bbbb4194" category="paragraph">마이그레이션은 VMware vSphere 9.10D2, 9.11D4, 9.12 및 9.13 릴리즈용 ONTAP 툴에서 10.1 릴리즈로 지원됩니다.</block>
   <block id="2e2a1bc69765f559199ac318acd2a7d7" category="list-text">VMware vSphere 10.1 릴리스용 ONTAP용 OVA 도구를 배포합니다.</block>
   <block id="84f820da6ba65a6cab821392a70f4e42" category="list-text">의 단계에 따라 보호 및 복구 사이트 모두에 VMware vSphere 10.1 SRA 어댑터용 ONTAP 툴을 설치합니다 <block ref="c2b5ee5d8065c08146407751d4d3a3d6" category="inline-link-macro-rx"></block></block>
   <block id="d3f31e51d90c6cd2652af74dae461781" category="paragraph">마이그레이션에 성공하고 ONTAP Tools 10.1을 vCenter Server에 등록한 후 다음을 수행합니다.</block>
@@ -1581,7 +1579,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="72fa3a55085ed575e69d7aaa8847dce6" category="cell">5만</block>
   <block id="76dc611d6ebaafc66cc0879c71b5db5c" category="cell">128</block>
   <block id="a767227b9eba64196b4788edef7ac1b7" category="cell">100k 이하</block>
-  <block id="4817fc1db77ffd3d9559878c1947be09" category="paragraph">노드당 호스트 시스템 크기 조정 요구 사항에 대한 자세한 내용은 을 <block ref="6def0b647efb922e7343ea3e904763b4" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="38c5b65e97cdb4c6de7600ae7479af40" category="section-title">VMware vSphere용 ONTAP 툴 - SRA(Storage Replication Adapter)</block>
   <block id="747389dd88507b473bef28a38f605585" category="paragraph">다음 표에는 VMware vSphere용 ONTAP 툴을 사용하여 SRM 인스턴스당 지원되는 수가 나와 있습니다.</block>
   <block id="bff4a5ed353e2265f8bc7ee336bcb8a8" category="cell">* vCenter 배포 크기 *</block>
@@ -1634,7 +1631,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="adbcecad06ff22a439836e6c9002cc82" category="section-title">vSphere Metro 스토리지 클러스터</block>
   <block id="fdaedd61903be1be2102df0b95fd62f8" category="inline-link">VMware vSphere Metro 스토리지 클러스터</block>
   <block id="ab214a77aca7f1a5595c69a10b7f0c9d" category="paragraph">vMSC(vSphere Metro Storage Cluster)는 확장된 클러스터 구축 환경에서 vSphere를 활성화하고 지원하는 기술입니다. vMSC 솔루션은 NetApp MetroCluster 및 SnapMirror Active Sync(이전의 SMBC)에서 지원됩니다. 이러한 솔루션은 도메인 장애 시 향상된 비즈니스 연속성을 제공합니다. 복원력 모델은 특정한 구성 선택에 따라 달라집니다. 에 대해 자세히<block ref="fae35a77d8fa39590c619f954aeac240" category="inline-link-rx"></block>알아보십시오.</block>
-  <block id="becce2ec351a7286510e90f70f5d4890" category="paragraph">VMware vSphere용 ONTAP 툴은 가상 머신 라이프사이클 관리를 위한 툴 세트입니다. VMware 에코시스템과 통합되어 데이터 저장소 용량 할당 및 가상 시스템에 대한 기본 보호 기능을 제공합니다. VMware vSphere용 ONTAP 툴은 수평으로 확장 가능한 이벤트 기반 마이크로서비스의 모음으로, OVA(Open Virtual Appliance)로 구축됩니다. 이 릴리즈에서는 REST API와 ONTAP의 통합이 가능합니다.</block>
   <block id="743bb9eba37e39241a186d033a7c1e5d" category="list-text">호스트를 마우스 오른쪽 버튼으로 클릭하고 * NetApp ONTAP tools * &gt; * Update host data * 를 선택합니다.</block>
   <block id="7da745ff746553dfa65f8ae5fbe4b8ff" category="list-text">보호된 클러스터에서 VMFS 데이터 저장소만 생성할 수 있습니다. VMFS 데이터 저장소를 보호된 클러스터에 추가하면 데이터 저장소가 자동으로 보호됩니다.</block>
   <block id="7f4eeeb7066fc64c51f02eba557a897f" category="list-text">하나 이상의 보호된 호스트 클러스터가 있는 데이터 센터에서는 데이터 저장소를 생성할 수 없습니다.</block>
@@ -1846,4 +1842,8 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="430cbe0d7261af556b6d05cea5b38e0e" category="sidebar">호스트 클러스터 보호를 수정합니다</block>
   <block id="a9d9d1b0257dda96d595bd00149cccdb" category="cell">10.2</block>
   <block id="bcb59ed8656cede47cff74ddfd5a154f" category="sidebar">VMware vSphere 10.2 문서용 ONTAP 툴</block>
+  <block id="3b5ecbf19ef44926d9273018c28f7e3c" category="paragraph">VMware vSphere용 ONTAP 툴은 가상 머신 라이프사이클 관리를 위한 툴 세트입니다. VMware 에코시스템과 통합되어 데이터 저장소 용량 할당 및 가상 시스템에 대한 기본 보호 기능을 제공합니다.</block>
+  <block id="9b69ea2dc9e7a75dc2e6d51a798b7c4e" category="paragraph">VMware vSphere용 ONTAP 툴은 수평으로 확장 가능한 이벤트 기반 마이크로서비스의 모음으로, OVA(Open Virtual Appliance)로 구축됩니다. 이 릴리즈에서는 REST API와 ONTAP의 통합이 가능합니다.</block>
+  <block id="5cf2ee241dad8c2f06781c1f8cde814d" category="cell">ONTAP 9.12.1, 9.13.1, 9.14.1 및 9.15.1의 최신 패치 릴리스.</block>
+  <block id="c20372b10311b40a3f12981f90015dec" category="paragraph">마이그레이션은 VMware vSphere 9.10D2, 9.11D4, 9.12 및 9.13 릴리즈용 ONTAP 툴에서 10.2 릴리즈로 지원됩니다.</block>
 </blocks>

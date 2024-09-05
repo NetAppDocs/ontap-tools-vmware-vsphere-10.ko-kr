@@ -49,7 +49,7 @@ link:../deploy/config-limits.html["VMware vSphere용 ONTAP 툴을 구축하기 �
 | 스토리지, 호스트 및 애플리케이션 | 최소 버전 요구 사항 
 
 
-| ONTAP | ONTAP 9.12.1, 9.13.1 또는 9.14.1의 최신 패치 릴리스 
+| ONTAP | ONTAP 9.12.1, 9.13.1, 9.14.1 및 9.15.1의 최신 패치 릴리스. 
 
 
 | ESXi 호스트 | ESXi 7.0.3을 참조하십시오 
