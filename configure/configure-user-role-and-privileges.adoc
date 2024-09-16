@@ -141,3 +141,80 @@ API 사용:
 
 | /API 를 참조하십시오 | 읽기 전용 | 클러스터 사용자는 올바른 스토리지 백엔드 상태를 얻으려면 이 권한이 있어야 합니다. 그렇지 않으면 ONTAP Tools Manager가 "알 수 없는" 스토리지 백엔드 상태를 표시합니다. 
 |===
+
+
+=== VMware vSphere 10.1 사용자용 ONTAP 툴을 10.2 사용자로 업그레이드합니다
+
+VMware vSphere 10.1 사용자용 ONTAP 툴이 json 파일을 사용하여 생성된 클러스터 범위 사용자인 경우, admin 사용자를 사용하여 ONTAP CLI에서 다음 명령을 실행하여 10.2 릴리즈로 업그레이드하십시오.
+
+제품 기능:
+
+* VSC
+* VSC 및 VASA 공급자
+* VSC 및 SRA
+* VSC, VASA 공급자 및 SRA:
+
+
+클러스터 Privileges:
+
+_security login role create -role <existing-role-name> -cmdddirname "vserver NVMe namespace show" -access all_
+
+_security login role create -role <existing-role-name> -cmdddirname "vserver NVMe subsystem show" -access all _
+
+_security login role create -role <existing-role-name> -cmdddirname "vserver NVMe 서브시스템 host show" -access all _
+
+_security login role create -role <existing-role-name> -cmddirname "vserver NVMe subsystem map show" -access all_
+
+_security login role create -role <existing-role-name> -cmddirname "vserver NVMe show -interface" -access read _
+
+_security login role create -role <existing-role-name> -cmdddirname "vserver NVMe 하위 시스템 호스트 추가" -access all_
+
+_security login role create -role <existing-role-name> -cmddirname "vserver NVMe 하위 시스템 맵 add" -access all_
+
+_security login role create -role <existing-role-name> -cmdddirname "vserver NVMe namespace delete" -access all _
+
+_security login role create -role <existing-role-name> -cmdddirname "vserver NVMe 하위 시스템 삭제" -access all_
+
+_security login role create -role <existing-role-name> -cmdddirname "vserver NVMe 하위 시스템 호스트 제거" -access all_
+
+_security login role create -role <existing-role-name> -cmdddirname "vserver NVMe 하위 시스템 맵 제거" -access all_
+
+VMware vSphere 10.1 사용자용 ONTAP 툴이 json 파일을 사용하여 생성된 SVM 범위 사용자인 경우, admin 사용자를 사용하여 ONTAP CLI에서 다음 명령을 실행하여 10.2 릴리즈로 업그레이드하십시오.
+
+SVM Privileges:
+
+_security login role create -role <existing-role-name> -cmdddirname "vserver NVMe namespace show" -access all -vserver <vserver-name>_
+
+_security login role create -role <existing-role-name> -cmdddirname "vserver NVMe subsystem show" -access all -vserver <vserver-name>_
+
+_security login role create -role <existing-role-name> -cmdddirname "vserver NVMe 하위 시스템 host show" -access all -vserver <vserver-name>_
+
+_security login role create -role <existing-role-name> -cmddirname "vserver NVMe subsystem map show" -access all -vserver <vserver-name>_
+
+_security login role create -role <existing-role-name> -cmddirname "vserver NVMe show -interface" -access read -vserver <vserver-name>_
+
+_security login role create -role <existing-role-name> -cmdddirname "vserver NVMe 하위 시스템 호스트 추가" -access all -vserver <vserver-name>_
+
+_security login role create -role <existing-role-name> -cmddirname "vserver NVMe 서브시스템 맵 add" -access all -vserver <vserver-name> _
+
+_security login role create -role <existing-role-name> -cmdddirname "vserver NVMe namespace delete" -access all -vserver <vserver-name> _
+
+_security login role create -role <existing-role-name> -cmdddirname "vserver NVMe 하위 시스템 삭제" -access all -vserver <vserver-name>_
+
+_security login role create -role <existing-role-name> -cmdddirname "vserver NVMe 하위 시스템 호스트 제거" -access all -vserver <vserver-name>_
+
+_security login role create -role <existing-role-name> -cmdddirname "vserver NVMe 하위 시스템 맵 제거" -access all -vserver <vserver-name>_
+
+command_vserver NVMe namespace show_and_vserver NVMe subsystem show_를 기존 역할에 추가하면 다음 명령이 추가됩니다.
+
+[listing]
+----
+vserver nvme namespace create
+
+vserver nvme namespace modify
+
+vserver nvme subsystem create
+
+vserver nvme subsystem modify
+
+----

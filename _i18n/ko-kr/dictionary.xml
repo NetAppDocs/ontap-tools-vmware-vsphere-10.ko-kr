@@ -389,7 +389,6 @@
   <block id="c03bc8dea77957c05715c985399fb113" category="list-text">vCenter Server 인스턴스를 필요한 스토리지 백엔드와 연결하려면 * 스토리지 백엔드 연결 * 옵션을 선택하십시오.</block>
   <block id="3a0689f041b08d0026691257176a98a0" category="summary">VMware vSphere용 ONTAP 툴을 사용하여 VAAI\(NetApp NFS Plug-in for VMware vStorage APIs for Array Integration)를 설치할 수 있습니다.</block>
   <block id="e1f59101bee140f72feebf78fe15f214" category="doc">NFS VAAI 플러그인을 설치합니다</block>
-  <block id="a5b8801a0ba9635ef23bd70071c67750" category="paragraph">VMware vSphere용 ONTAP 툴을 사용하여 VAAI(VMware vStorage APIs for Array Integration)용 NetApp NFS 플러그인을 설치할 수 있습니다.</block>
   <block id="bf25ac3fc5bee2b3ec36e32661767682" category="inline-link">VMware VAAI용 NetApp NFS 플러그인</block>
   <block id="b06b2ee29e6deda3faf9551f7a95a102" category="list-text">VAAI용 NFS 플러그인의 설치 패키지를 다운로드해야 합니다 <block ref="74f7b54ea713d9f5b69839982911bbf7" prefix="(" category="inline-code"></block>)NetApp Support 사이트 를 클릭합니다.<block ref="e6fae45561f1786d6f3534aff65b3377" category="inline-link-rx"></block></block>
   <block id="2cbf3acde0066a81e3f588aacafd10d4" category="list-text">ESXi 호스트 7.0U3 최신 패치를 최소 버전 및 ONTAP 9.12.1Px(최신 P 릴리스) 9.13.1Px, 9.14.1Px 이상 버전으로 설치해야 합니다.</block>
@@ -856,7 +855,6 @@ OVA를 HA 구성으로 배포하기 전에 OVA를 저장할 콘텐츠 라이브�
   <block id="371f2af35c3d593cb0efc6e2989b7d16" category="section-title">ONTAP 도구 관리자</block>
   <block id="a39a4228addf857a8cc9e8fe734663cb" category="section-title">OVA(개방형 가상 어플라이언스)</block>
   <block id="c9f5ca447815e462c7d32fff356e728e" category="paragraph">OVA는 가상 머신에서 실행해야 하는 가상 어플라이언스 또는 소프트웨어를 패키징하고 배포하는 개방형 표준입니다.</block>
-  <block id="bfbd6000516e794a62754b4144ff4157" category="paragraph">SRA는 SRM 어플라이언스 내부에 설치되는 스토리지 공급업체별 소프트웨어입니다. 이 어댑터를 사용하면 SVM(Storage Virtual Machine) 레벨 및 클러스터 레벨 구성에서 사이트 복구 관리자와 스토리지 컨트롤러 간의 통신이 가능합니다.</block>
   <block id="3298716a4d6cee7cbe7a2a663e211fd7" category="section-title">스토리지 가상 시스템(SVM)</block>
   <block id="93f9c78c8d180c415934eb15d4de3dcf" category="paragraph">하이퍼바이저에서 실행되는 가상 머신과 마찬가지로 SVM은 물리적 리소스를 추상화하는 논리적 엔터티입니다. SVM은 데이터 볼륨과 클라이언트에 데이터를 제공하는 데 사용되는 하나 이상의 LIF를 포함합니다.</block>
   <block id="b974fadb0566d9c95961ac569d7d7be3" category="section-title">VMFS(가상 머신 파일 시스템)</block>
@@ -865,8 +863,6 @@ OVA를 HA 구성으로 배포하기 전에 OVA를 저장할 콘텐츠 라이브�
   <block id="2d08064a233b59569e0969cc89ff1c77" category="paragraph">VVOL은 가상 머신에서 사용되는 스토리지에 대한 볼륨 수준 추상화를 제공합니다. 여기에는 여러 가지 이점이 있으며 기존 LUN을 사용하는 대신 사용할 수 있습니다. VVOL 데이터 저장소는 일반적으로 VVOL의 컨테이너 역할을 하는 단일 LUN과 연결됩니다.</block>
   <block id="c50f2e348b4fba38341d27b8208f8bb1" category="section-title">VM 스토리지 정책</block>
   <block id="6cfe864129eb89d3d7838d439bc7e8d9" category="paragraph">VM 스토리지 정책은 정책 및 프로필 아래에 vCenter Server에 생성됩니다. VVOL의 경우 NetApp VVols 스토리지 유형 공급자의 규칙을 사용하여 규칙 세트를 생성합니다.</block>
-  <block id="f11c4cc510a050644bd15b5b2c8fe90b" category="section-title">VMware 사이트 복구 관리자(SRM)</block>
-  <block id="25a67d76b6c398d49fafaa56e5aaaacd" category="paragraph">SRM은 VMware 가상 환경을 위한 무중단 업무 운영, 재해 복구, 사이트 마이그레이션 및 무중단 테스트 기능을 제공합니다.</block>
   <block id="9c966bb66c3f7b3890693e1fe9b3468f" category="section-title">VASA(VMware vSphere APIs for Storage Awareness)</block>
   <block id="902f8374c2cb1f01140d44e3741911c1" category="paragraph">VASA는 관리 및 관리를 위해 스토리지 어레이를 vCenter Server와 통합하는 API 세트입니다. 이 아키텍처는 VMware vSphere와 스토리지 시스템 간의 통신을 처리하는 VASA Provider를 비롯한 여러 구성 요소를 기반으로 합니다.</block>
   <block id="1e75c3aefc057fba3eb404b66908f202" category="section-title">VMware vSphere Storage API - 어레이 통합(VAAI)</block>
@@ -1081,8 +1077,6 @@ _\https://&lt;ip_address&gt;/docs/api_</block>
   <block id="f7f3984fa732d05af01413abe0c139fa" category="summary">vSphere Client를 사용하여 생성한 보호 사이트와 복구 사이트를 페어링하여 SRA\(Storage Replication Adapter\)에서 스토리지 시스템을 검색하도록 설정해야 합니다.</block>
   <block id="31f39e1dd44660cbf064de93a5ac5fe9" category="doc">보호 사이트와 복구 사이트 페어링</block>
   <block id="7156f9669ad3e8dc5543b26c90b677b9" category="paragraph">vSphere Client를 사용하여 생성한 보호 사이트와 복구 사이트를 페어링하여 SRA(Storage Replication Adapter)가 스토리지 시스템을 검색할 수 있도록 설정해야 합니다.</block>
-  <block id="55f9395cfa441b1f8063a2839d538f3c" category="admonition">SRA(Storage Replication Adapter)는 팬아웃 SnapMirror 구성을 지원하지 않습니다. SnapMirror 팬아웃 구성은 소스 볼륨이 서로 다른 두 대상에 복제되는 구성입니다. SRM이 대상에서 가상 시스템을 복구해야 하는 경우 복구 중에 문제가 발생합니다.</block>
-  <block id="ca04ddc73aae6ab19dc2e5b6362aff34" category="list-text">보호 사이트와 복구 사이트에 SRM(Site Recovery Manager)이 설치되어 있어야 합니다.</block>
   <block id="153de28c544cedf1d0476c82a497c1d4" category="list-text">보호 사이트와 복구 사이트에 SRA가 설치되어 있어야 합니다.</block>
   <block id="0cb204757fc030d9ca635551827fb5fc" category="list-text">Objects * &gt; * Actions * &gt; * Pair Sites * 를 클릭합니다.</block>
   <block id="175196fb642ea5ad4b3eb3694afac00f" category="list-text">사이트 복구 관리자 서버 페어링 대화 상자에서 보호 사이트의 플랫폼 서비스 컨트롤러 주소를 입력한 후 * 다음 * 을 클릭합니다.</block>
@@ -1097,9 +1091,6 @@ _\https://&lt;ip_address&gt;/docs/api_</block>
   <block id="f0b89458744ef827ff23713551229aa7" category="list-text">ONTAP 툴을 배포해야 합니다.</block>
   <block id="0fd28be9959e611e7350a85da18ec3d2" category="list-text">SRA 어댑터를 다운로드해야 합니다<block ref="d6f1afa70d6145a212d9dc6bc8a2fa64" prefix=" " category="inline-code"></block> 에서 파일<block ref="c28762f698ce57f013f1f9dff01575ab" category="inline-link-rx"></block>.</block>
   <block id="3cd3d1462bf37583e74346e9e49e0712" category="list-text">새 어댑터 * 를 선택합니다.</block>
-  <block id="b1fb84ee8230e3e0cf8f6ea25e31815a" category="list-text">SRA 플러그인의 _.tar.gz_installer를 SRM에 업로드합니다.</block>
-  <block id="62e2395b9502450403c7d739423410eb" category="list-text">어댑터를 다시 검색하여 SRM Storage Replication Adapter에서 세부 정보가 업데이트되었는지 확인합니다
-페이지.</block>
   <block id="c88f553be5a81e83a1a2cd590af81efb" category="summary">보호된 가상 머신 \(VM\)의 복구 사이트에서 vCenter 인벤토리에 위치를 보관하도록 자리 표시자 데이터 저장소를 구성해야 합니다. 자리 표시자 VM이 작고 수백 킬로바이트 이하만 사용하기 때문에 자리 표시자 데이터 저장소는 크기가 클 필요가 없습니다.</block>
   <block id="a079415d00c6083e09f585ea2ed56548" category="doc">자리 표시자 데이터 저장소를 구성합니다</block>
   <block id="b2beb4d07aac60ef0509b65054500a7c" category="paragraph">보호된 가상 머신(VM)의 복구 사이트에서 vCenter 인벤토리에 위치를 보관하도록 자리 표시자 데이터 저장소를 구성해야 합니다. 자리 표시자 VM이 작고 수백 킬로바이트 이하만 사용하기 때문에 자리 표시자 데이터 저장소는 크기가 클 필요가 없습니다.</block>
@@ -1112,7 +1103,6 @@ _\https://&lt;ip_address&gt;/docs/api_</block>
   <block id="8f3d1b277e0dbea837f55587d2d62dcd" category="summary">보호 사이트에서 가상 머신 그룹을 보호하려면 보호 그룹을 만들어야 합니다.</block>
   <block id="3ef7adcba4fd1c35e2debd8e209d9c47" category="doc">보호 그룹을 구성합니다</block>
   <block id="2d1feca885442920df4a76e66f4b88de" category="paragraph">소스 사이트와 타겟 사이트가 모두 다음에 대해 구성되어 있는지 확인해야 합니다.</block>
-  <block id="9e7fafcc17a65440606d84ceb4e654c9" category="list-text">동일한 버전의 SRM이 설치되었습니다</block>
   <block id="460fd136eab61e2db49d5f457f164f87" category="list-text">페어링된 보호 및 복구 사이트</block>
   <block id="e438ef52a4347c4c5df1158aecfbabec" category="list-text">소스 및 대상 데이터 저장소를 해당 사이트에 마운트해야 합니다</block>
   <block id="74bdf365bbc7a26268d2593a0697fb5b" category="list-text">vCenter Server에 로그인한 다음 * Site Recovery * &gt; * Protection Groups * 를 클릭합니다.</block>
@@ -1123,36 +1113,25 @@ _\https://&lt;ip_address&gt;/docs/api_</block>
   <block id="3ec3afd258436b0602e7b898eedbf8db" category="paragraph">복제 그룹의 모든 가상 머신이 보호 그룹에 추가됩니다.</block>
   <block id="3bafeb6f773f96336dfd3d5f7f966bba" category="list-text">기존 복구 계획을 선택하거나 * Add to new recovery plan * 을 클릭하여 새 계획을 생성합니다.</block>
   <block id="aeeb33a98931ed155510009c93a039a0" category="list-text">Ready to Complete 탭에서 생성한 보호 그룹의 세부 정보를 검토한 다음 * Finish * 를 클릭합니다.</block>
-  <block id="f300b633d34eb5cda6cc96a42e5bbb25" category="summary">Site Recovery Manager\(SRM\)에 대해 SRA\(Storage Replication Adapter\)를 실행하기 전에 스토리지 시스템을 설정해야 합니다.</block>
   <block id="97daabed54f11ac04f0838fb633676b3" category="doc">SAN 및 NAS 환경에 대해 SRA 구성</block>
-  <block id="b9d97945088b80f838a082f326da006a" category="paragraph">SRM(Site Recovery Manager)에 대해 SRA(Storage Replication Adapter)를 실행하기 전에 스토리지 시스템을 설정해야 합니다.</block>
   <block id="f222eba86de49df529ce1b0bd8136570" category="paragraph">보호된 사이트와 복구 사이트에 다음 프로그램이 설치되어 있어야 합니다.</block>
-  <block id="56d43ad1a280ada5e16fd2960ae44b32" category="list-text">SRM</block>
-  <block id="03b870ced8b149ca765fa1ffe2f8b770" category="paragraph">SRM 설치에 대한 문서는 VMware 사이트에 있습니다.</block>
-  <block id="4617dd5a7193927c5552182931541c9c" category="inline-link">VMware Site Recovery Manager 설명서</block>
   <block id="406292f3c5b20715e348f48fa5e6d6e3" category="list-text">SRA</block>
   <block id="39d642e40fbcd108eb0ab15715ee349d" category="list-text">운영 ESXi 호스트가 보호 사이트의 운영 스토리지 시스템에 있는 LUN에 연결되어 있는지 확인합니다.</block>
   <block id="c295c005211b8c46c7e8ae09f97dae78" category="list-text">LUN이 igroup에 있는지 확인합니다<block ref="0d6ab6a77645c5e5eca594cd0178560d" prefix=" " category="inline-code"></block> 운영 스토리지 시스템에서 옵션을 _VMware_로 설정합니다.</block>
   <block id="a340d4cdfac0ffa0f805506a4dcc486a" category="paragraph">이 작업은 ESXi 호스트에 SVM 또는 에 로컬 LUN이 연결되어 있는지 확인하여 수행할 수 있습니다<block ref="855f251760f36b28957ff0a7b42be36a" prefix=" " category="inline-code"></block> SVM에서 명령을 실행합니다.
 ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI 접속을 확인합니다.</block>
-  <block id="1eb176cea5abcd7b2040e0863742d426" category="paragraph">SRM 설치에 대한 설명서는 VMware 사이트에서 찾을 수 있습니다.</block>
-  <block id="1a4c02d907de9cf09a31d1f5f6ab334f" category="paragraph">어댑터는 SRM 및 SRA 서버에 설치됩니다.</block>
   <block id="bdeb77edc25aca768d0b70a5251e91d6" category="list-text">보호 사이트의 데이터 저장소에 vCenter Server에 등록된 가상 머신이 포함되어 있는지 확인합니다.</block>
   <block id="2c1418946774ea2b6a511fb53b6e6726" category="list-text">보호 사이트의 ESXi 호스트에서 NFS 엑스포트 볼륨을 SVM(스토리지 가상 머신)에서 마운트했는지 확인합니다.</block>
-  <block id="12b9fac59cdb8d19d27d9bb7abdc97d5" category="list-text">Array Manager 마법사를 사용하여 SRM에 어레이를 추가할 때 NFS 내보내기가 있는 IP 주소, 호스트 이름 또는 FQDN과 같은 유효한 주소가 * NFS 주소 * 필드에 지정되어 있는지 확인합니다.</block>
   <block id="c15f6cdb57f72faef1aa17926a9bf11b" category="list-text">를 사용합니다<block ref="df911f0151f9ef021d410b4be5060972" prefix=" " category="inline-code"></block> 복구 사이트의 각 ESXi 호스트에서 명령을 실행하여 호스트에 SVM에서 NFS 엑스포트를 지원하는 데 사용되는 IP 주소를 액세스할 수 있는 VMkernel 포트가 있는지 확인합니다.</block>
   <block id="9f3b4e502e54057e8ea3bc344de9cf8f" category="summary">SRA(Storage Replication Adapter\)를 구성한 후 보호 사이트와 복구 사이트가 성공적으로 페어링되었는지 확인해야 합니다. 복제된 스토리지 시스템은 보호 사이트와 복구 사이트 모두에서 검색할 수 있어야 합니다.</block>
   <block id="79d8a92408e3c5cb0a892432af2c8045" category="doc">복제된 스토리지 시스템을 확인합니다</block>
   <block id="9e6567846f3b6c9a8e1d38a420da704c" category="paragraph">SRA(Storage Replication Adapter)를 구성한 후 보호 사이트와 복구 사이트가 성공적으로 페어링되었는지 확인해야 합니다. 복제된 스토리지 시스템은 보호 사이트와 복구 사이트 모두에서 검색할 수 있어야 합니다.</block>
   <block id="8beb897fce777c3277508139c7915a20" category="list-text">스토리지 시스템을 구성해야 합니다.</block>
-  <block id="46befd28b937c2b3ba5e67e1d720903c" category="list-text">SRM 어레이 관리자를 사용하여 보호 사이트와 복구 사이트를 페어링해야 합니다.</block>
   <block id="7ceb2eab648208033ac8e2800ced40ef" category="list-text">SRA에 대한 테스트 페일오버 작업 및 페일오버 작업을 수행하기 전에 FlexClone 라이센스 및 SnapMirror 라이센스를 활성화해야 합니다.</block>
   <block id="71efe8ad619e3e3d48e0a978e35c5446" category="list-text">vCenter Server에 로그인합니다.</block>
   <block id="d391b9b18b1b004fbc0f4ac49a921710" category="list-text">사이트 복구 * &gt; * 스토리지 기반 복제 * 로 이동합니다.</block>
   <block id="8bb83fccb484f1f0daa29d9b57c5cf9a" category="paragraph">보호 사이트 및 복구 사이트에서 상태가 ""Enabled""로 설정된 스토리지 시스템을 검색해야 합니다.</block>
-  <block id="652ad8bc056a4a1827fa19aee589e718" category="summary">SRM이 SRA와 통신하려면 자격 증명을 수정한 경우 SRM 서버에서 SRA 자격 증명을 업데이트해야 합니다.</block>
   <block id="dfb1f7e164fa9a18cdccdd70cc836871" category="doc">SRA 자격 증명을 업데이트합니다</block>
-  <block id="ee51889e9927730735b810a56b6257a4" category="inline-link-macro">SRM 어플라이언스에 SRA를 구성합니다</block>
   <block id="bc5ad92fecd3f6eeb4473c9df6479d46" category="list-text"><block ref="4609acba202877f99742342f4195d95e" prefix="" category="inline-code"></block></block>
   <block id="a505f8df337aa6363aedcbf7da761b22" category="summary">보호 사이트와 복구 사이트의 폴더를 매핑하여 폴더 간 통신을 활성화해야 합니다.</block>
   <block id="16dac3a3c7de93aedd97c33f658f9028" category="doc">폴더 매핑을 구성합니다</block>
@@ -1165,31 +1144,20 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="dfa5d044985f5ffcb33239e7e7f02f4f" category="paragraph">폴더 매핑 페이지에는 보호된 사이트 리소스와 복구 사이트 리소스가 표시됩니다. 사용자 환경의 다른 네트워크에 대해서도 동일한 단계를 수행할 수 있습니다.</block>
   <block id="ab6fe2f57f912e70a50c692b568b9324" category="summary">가상 시스템이 하나의 호스트 그룹 또는 다른 그룹으로 페일오버되도록 구성되도록 보호 사이트 및 복구 사이트에 리소스를 매핑해야 합니다.</block>
   <block id="7e4aa301715707912ba8ed9cba9c0eb7" category="doc">리소스 매핑을 구성합니다</block>
-  <block id="caeb76e03a32069563fffdb32d55954a" category="admonition">SRM(Site Recovery Manager)에서 리소스는 리소스 풀, ESXi 호스트 또는 vSphere 클러스터가 될 수 있습니다.</block>
   <block id="881a8180069b4ef6ce578dc05747c26c" category="list-text">관리 탭에서 * 리소스 매핑 * 을 선택합니다.</block>
   <block id="19e61e235692dd382ea607cb28ec7bd8" category="list-text">새 리소스 매핑을 만들려면 * New * 를 클릭합니다.</block>
   <block id="ca61b18f56707ba483d313f4fd42d21b" category="paragraph">자원 매핑 작성 마법사가 나타납니다.</block>
   <block id="20586b09df186411bee0e3968b2ef2dd" category="list-text">리소스 매핑 생성 마법사에서 다음을 수행합니다.</block>
   <block id="3c16183aac3a35635bd37651c6e30ca9" category="paragraph">리소스 매핑 페이지에는 보호된 사이트 리소스와 복구 사이트 리소스가 표시됩니다. 사용자 환경의 다른 네트워크에 대해서도 동일한 단계를 수행할 수 있습니다.</block>
-  <block id="cd2685641396761c6f3ba6bd284a62b6" category="doc">SRM 어플라이언스에 SRA를 구성합니다</block>
   <block id="9efe335a21c7ed7fb03853b29d60db35" category="paragraph">에서 _tar.gz_파일을 다운로드해야 합니다<block ref="0e1d5eb136c80762086cbb6a49f15235" category="inline-link-rx"></block>.</block>
-  <block id="7031c53bfcae1c83e261523e07d0c753" category="list-text">SRM 어플라이언스 화면에서 * Storage Replication Adapter * &gt; * New Adapter * 를 클릭합니다.</block>
-  <block id="d75bd630a4a4d5d445ca5dcb7d3bf5c4" category="list-text">SRM에 _.tar.gz_파일을 업로드합니다.</block>
-  <block id="aa4f1b473a61ae34105656a9bcd6e2e4" category="list-text">putty를 사용하여 관리자 계정을 사용하여 SRM 어플라이언스에 로그인합니다.</block>
   <block id="bef92ccaf2eaa0578e6024bf1bbf9ea7" category="list-text">다음 명령을 사용하여 루트 사용자로 전환합니다.<block ref="ed4421a15b86845cfea13385b427b340" prefix=" " category="inline-code"></block></block>
-  <block id="e51f1b9a003185993b4e02d1d807d0e4" category="list-text">다음 명령을 사용하여 VMware vSphere IP 주소 및 암호용 ONTAP 툴을 사용하여 SRM을 구성합니다.<block ref="83f30183bb230f5e651ad5daf51de6eb" prefix=" " category="inline-code"></block></block>
   <block id="eec423b8c8e795c4422b564b889c72ba" category="admonition">Perl 스크립트가 암호의 특수 문자를 입력의 구분 기호로 읽지 않도록 하려면 암호 값을 작은따옴표로 묶어야 합니다.</block>
-  <block id="14b43dd2552a2c17dce082e25a8b784a" category="list-text">어댑터를 다시 검색하여 SRM Storage Replication Adapters 페이지에서 세부 정보가 업데이트되었는지 확인합니다.</block>
   <block id="3e06c9490934f18ce97a637bf06b781e" category="paragraph">스토리지 자격 증명이 저장되었음을 확인하는 성공 메시지가 표시됩니다. SRA는 제공된 IP 주소, 포트 및 자격 증명을 사용하여 SRA 서버와 통신할 수 있습니다.</block>
-  <block id="56432a21668094f186d5ab119b91103a" category="summary">SRM과 스토리지 가상 시스템(SVM\) 간의 상호 작용을 지원하기 위해 SRM\(Site Recovery Manager)의 Array Manager 마법사를 사용하여 SRA\(Storage Replication Adapter\)를 구성할 수 있습니다.</block>
   <block id="e19aa5b1d5cc9af071d6a8aaa3d6133b" category="doc">Array Manager를 사용하여 SRA를 구성합니다</block>
-  <block id="162e9c2c35038a17f958fbf922755a04" category="paragraph">SRM(Site Recovery Manager)의 Array Manager 마법사를 사용하여 SRA(Storage Replication Adapter)를 구성하여 SRM과 SVM(Storage Virtual Machine) 간의 상호 작용을 활성화할 수 있습니다.</block>
-  <block id="6631d60cf5ca66d42db81cd09cca033b" category="list-text">SRM에서 보호된 사이트와 복구 사이트를 페어링해야 합니다.</block>
   <block id="76d60258ae9519f2e750508c02117351" category="list-text">어레이 관리자를 구성하기 전에 온보드된 스토리지를 구성해야 합니다.</block>
   <block id="f4edbbba44fbefe7bf6f5c4bc22763ac" category="list-text">보호된 사이트와 복구 사이트 간에 SnapMirror 관계를 구성하고 복제해야 합니다.</block>
   <block id="aea831da533b866659e6c7f178c6d573" category="list-text">멀티테넌시를 사용하도록 SVM 관리 LIF를 활성화해야 합니다.</block>
   <block id="a80d024f2a7c355dc177c761f433822b" category="paragraph">SRA는 클러스터 수준 관리 및 SVM 수준 관리를 지원합니다. 클러스터 레벨에서 스토리지를 추가하면 클러스터의 모든 SVM을 검색하고 작업을 수행할 수 있습니다. SVM 레벨에서 스토리지를 추가할 경우 해당 SVM만 관리할 수 있습니다.</block>
-  <block id="f261d04be54b549afdd31002593bbb29" category="list-text">SRM의 어레이를 설명하는 다음 정보를 입력합니다.</block>
   <block id="1ab0ff4eb911cc78d5eb0f4853b1351c" category="list-text">Display Name* 필드에 어레이 관리자를 식별할 이름을 입력하십시오.</block>
   <block id="c2ec82204a228daa91ba9e84fa95f375" category="list-text">SRA Type * 필드에서 * ONTAP * 용 NetApp 스토리지 복제 어댑터를 선택합니다.</block>
   <block id="b679ceeadb8258b066c691d0bd3d1425" category="list-text">클러스터 또는 SVM에 연결할 정보를 입력합니다.</block>
@@ -1210,7 +1178,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="9e28f23a92c9abcf9ad62bef3a78490f" category="summary">SRA\(Storage Replication Adapter\)의 권장 설정에 따라 스토리지 시간 초과 간격을 구성하여 확장성이 높은 환경에서 최적으로 수행되도록 해야 합니다.</block>
   <block id="0665e266b8a667d47913e7a384e164d3" category="paragraph">확장성이 높은 환경에서 최적으로 수행되도록 SRA(Storage Replication Adapter)의 권장 설정에 따라 스토리지 시간 초과 간격을 구성해야 합니다.</block>
   <block id="383c9f9f08441de49a64fa51e25ad9c9" category="section-title">저장소 공급자 설정</block>
-  <block id="68c185224c05d2129a14987da1b847a6" category="paragraph">확장 환경의 경우 SRM에서 다음 시간 초과 값을 설정해야 합니다.</block>
   <block id="d82fe6db018dee28465d1cfa5d82a46d" category="cell">* 고급 설정 *</block>
   <block id="837aba0a8aff2313403af838d63d1905" category="cell">* 시간 초과 값 *</block>
   <block id="f1b44a8212d147c13bae14404ec82d1a" category="paragraph"><block ref="cfb1af8547e34b1470b19edbde9418b8" prefix="" category="inline-code"></block></block>
@@ -1223,11 +1190,9 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="8febbf8519703d62abe5d2086aa5386b" category="paragraph">높은 값을 설정합니다(예: 99999).</block>
   <block id="c30b7c029fe2d9044307db1e0f6ea417" category="paragraph">또한 를 활성화해야 합니다<block ref="227c938fa0f7b152cce7b139b698bf4c" prefix=" " category="inline-code"></block> 옵션을 선택합니다.</block>
   <block id="7ceb96cf2f53ab82cf68115087e42798" category="inline-link">VMware vSphere 설명서: 스토리지 공급자 설정 변경</block>
-  <block id="b16f93be354af7771dc8708241003863" category="paragraph"><block ref="b16f93be354af7771dc8708241003863" category="inline-link-rx"></block></block>
   <block id="6deaa5e1cafca832bac1b468485b9454" category="section-title">저장소 설정</block>
   <block id="00a510939945fb6eb144a70baf6f9fd4" category="admonition">지정된 시간 제한 간격이 최대값입니다. 최대 시간 초과에 도달할 때까지 기다릴 필요가 없습니다. 대부분의 명령이 설정된 최대 시간 제한 간격 내에 완료됩니다.</block>
   <block id="c106a2cd545fb9665a990784905584ee" category="inline-link">VMware Site Recovery Manager 설명서: 스토리지 설정 변경</block>
-  <block id="ea75df2f0ee3a53782c8c6b7a94cb283" category="paragraph"><block ref="ea75df2f0ee3a53782c8c6b7a94cb283" category="inline-link-rx"></block></block>
   <block id="2159a3bf8db76f7d77e80538e9941cab" category="summary">보호 사이트와 복구 사이트에 네트워크를 매핑하여 이들 간에 통신을 활성화해야 합니다.</block>
   <block id="f9db3cd2b1be9139f944eb07d33427eb" category="doc">네트워크 매핑을 구성합니다</block>
   <block id="dc93626e4e57c8b4d053c8c2dda38bd5" category="paragraph">보호 사이트에서 복구 사이트의 적절한 리소스로 각 리소스를 매핑할 수 있도록 두 사이트의 VM 네트워크, ESXi 호스트 및 폴더와 같은 리소스 매핑을 구성해야 합니다.</block>
@@ -1248,13 +1213,10 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="37470572c4c0d1df68b6e2c9cf86ecf9" category="paragraph">마이그레이션하기 전에 사이트 중 하나가 보호 상태이고 다른 사이트가 복구 상태에 있는지 확인합니다.</block>
   <block id="064e145ea2f6bfb5bc6045ba1fb3a818" category="admonition">페일오버가 방금 완료되고 재보호가 보류 중인 경우에는 마이그레이션하지 마십시오. 재보호를 완료한 다음 마이그레이션을 수행합니다.
 복구 계획 테스트에도 동일하게 적용됩니다. 복구 계획 테스트가 완료되면 테스트 복구를 정리한 다음 마이그레이션을 시작합니다.</block>
-  <block id="6b49b7321f202d0fd9af959e06616543" category="list-text">SRM UI에서 VMware vSphere 9.xx 릴리즈 SRA 어댑터용 ONTAP 툴을 삭제하려면 다음 단계를 수행하십시오.</block>
-  <block id="ce8ea8eb081b443ff1b8a1a7fc246850" category="list-text">SRM 구성 관리 페이지로 이동합니다</block>
   <block id="0bb95f551fcbc064f5de91693d368db6" category="list-text">스토리지 복제 어댑터 섹션으로 이동합니다</block>
   <block id="232d0e465aee7b5200e7b62306c225ae" category="list-text">Kebab 메뉴를 클릭하고 * Reset configuration * 을 클릭합니다</block>
   <block id="016028ae8dab91fa4005e97b8161e840" category="list-text">Kebab 메뉴를 클릭하고 * 삭제 * 를 선택합니다</block>
   <block id="77efba168b5a2059c2d20a1e2673f5d1" category="paragraph">보호 사이트와 복구 사이트 모두에서 다음 단계를 수행합니다.</block>
-  <block id="9c05b43ac756f3fc9a0e02542edb990d" category="list-text">SRM UI 페이지에서 * 스토리지 검색 * 및 * 장치 검색 * 작업을 수행하고 마이그레이션 전과 동일하게 장치가 표시되는지 확인합니다.</block>
   <block id="519560f6fd07a96b2ba7c35fc86da502" category="section-title">VASA 공급자 마이그레이션 단계</block>
   <block id="0052540e6b71b0dead0bb00933d9a68d" category="list-text">VMware vSphere용 기존 ONTAP 툴에서 더비 포트 1527을 활성화합니다. 포트를 활성화하려면 루트 사용자로 CLI에 로그인하고 다음 명령을 실행합니다.</block>
   <block id="c713abd43a97c8915e6503cd7f93ad36" category="list-text">마이그레이션하려면 다음 API 호출을 실행합니다.</block>
@@ -1392,7 +1354,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="fc7f17ed33d951dfbd3445c149321837" category="sidebar">VMware vSphere용 ONTAP 툴을 마이그레이션합니다</block>
   <block id="cb879d6b2b33e094cf730b0a0881b07a" category="sidebar">VMware vSphere용 ONTAP 툴 사용</block>
   <block id="eaf78ca462bf848b7c59c410077002b6" category="sidebar">데이터 저장소를 보호합니다</block>
-  <block id="61a99f785393d77e79ad0730010056a5" category="sidebar">VMware vSphere용 ONTAP 툴의 이전 버전에 대한 설명서</block>
   <block id="cac6cd9e650cdc4d7120d3f0cceba925" category="sidebar">vCenter Server 추가 및 관리</block>
   <block id="fbbd8350e625abcdc720a38414ee983f" category="sidebar">vCenter Server에 VASA Provider를 등록합니다</block>
   <block id="1030a4736944c363305ecfdc816d75b0" category="sidebar">ESXi 호스트 설정을 구성합니다</block>
@@ -1438,14 +1399,12 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
 다음 명령을 실행하여 첫 번째 igroup 이름을 찾습니다.</block>
   <block id="c26071422bbf92a43331f2741632aca9" category="paragraph">_kubectl -n trident tbc trident-backend-o YAML | grep igroupName:|awk-F':'{print$2}'_</block>
   <block id="497c71b0c5006d96abb762b862d3b40a" category="paragraph">다른 igroup 이름은 VM의 호스트 이름으로 시작됩니다.</block>
-  <block id="3642e7476d2c39d4c6204e36acaa5431" category="list-text">다음 명령을 실행하여 SRM 컴퓨터 폴더 캐시된 ONTAP 도구 사용자 이름 암호를 삭제합니다.</block>
   <block id="98ea8bb5748846a8eb48ec17775dd65c" category="list-text"><block ref="73be5ab307e7055f684cc317b6aff741" prefix="" category="inline-code"></block></block>
   <block id="9aac114d9a8bbe576d39d35cf5fad65b" category="list-text"><block ref="5ec1d0f6687a4c1e0107632871d4a131" prefix="" category="inline-code"></block></block>
   <block id="be886d30990ecb1cd7da9458a1301ba3" category="list-text"><block ref="ed73a6dfaf2769c449bcf6ac1257b40e" prefix="" category="inline-code"></block></block>
   <block id="2a7f66eb3c213058f0136bcf65d63f11" category="list-text"><block ref="1c2934a64ebf7e159bf45c1e6c30b478" prefix="" category="inline-code"></block></block>
   <block id="d2ef96c1cd4e9e918af9cc6fe693d19c" category="list-text"><block ref="3e82875f30595fcc3e2ea7112a52aec3" prefix="" category="inline-code"></block></block>
   <block id="d6dc3fa77b8368a0795d43ba5098caec" category="list-text"><block ref="f82187243129e0447d2310deb9687edf" prefix="" category="inline-code"></block> 암호 값을 따옴표로 묶어야 합니다.</block>
-  <block id="ae9e134b52cf2ea444919f84285ae485" category="paragraph">ONTAP tools Manager를 사용하면 VMware vSphere 관리자가 관리되는 vCenter Server 인스턴스 및 온보드된 스토리지 백엔드에 대해 ONTAP 툴을 더 효율적으로 제어할 수 있습니다. ONTAP tools Manger는 vCenter Server 인스턴스, 스토리지 백엔드, 인증서, 암호 및 로그 번들 다운로드 관리에 도움이 됩니다.</block>
   <block id="b7d863d6846eaf1689410c02279f9ea6" category="doc">스토리지 백엔드를 추가합니다</block>
   <block id="3cfe1abd2c991601dea204cde0b4d546" category="paragraph">이 작업은 ONTAP 클러스터를 온보딩하는 데 도움이 됩니다. ONTAP Tools Manager를 사용하여 스토리지 백엔드를 추가하면 스토리지 백엔드가 글로벌 클러스터에 추가됩니다. 글로벌 클러스터를 vCenter Server 인스턴스와 연결하여 SVM 사용자를 VVOL 데이터 저장소 프로비저닝에 사용할 수 있도록 합니다.</block>
   <block id="11d338a3b0af56cfdced607e83e44a27" category="admonition">vSphere Client UI를 사용하여 스토리지 백엔드를 추가하는 경우 VVOL 데이터 저장소에서 SVM 사용자를 직접 추가할 수 없습니다.</block>
@@ -1527,9 +1486,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="d8fadf5b37e6090e5c48155442e6dd13" category="list-text">오른쪽 창에서 * Monitor * 탭을 클릭합니다.</block>
   <block id="3afd1d6d6eee36d82c692f7555428de3" category="list-text">VMware vSphere 스토리지 공급자용 ONTAP 툴을 vCenter Server 및 에 추가합니다 <block ref="5d4adca70c5644b1b13c61d5e49e1ff7" category="inline-link-macro-rx"></block>.</block>
   <block id="e93b5d3770694f17c18a300557f18fd2" category="paragraph">이전 VASA 공급자가 중지되면 vCenter Server가 VMware vSphere용 ONTAP 툴로 페일오버됩니다. 모든 데이터 저장소와 VM에 액세스할 수 있으며 VMware vSphere용 ONTAP 툴을 통해 제공됩니다.</block>
-  <block id="aa37ece429cdd8d8eb8497434085200a" category="summary">SRM 어플라이언스를 배포한 후에는 SRM 어플라이언스에 SRA를 구성해야 합니다. SRA 구성이 성공하면 SRM 어플라이언스가 SRA와 통신하여 재해 복구 관리를 수행할 수 있습니다. SRM 어플라이언스와 SRA 간의 통신을 활성화하려면 VMware vSphere 자격 증명\(IP 주소 및 관리자 암호\)에 대한 ONTAP 툴을 SRM 어플라이언스에 저장해야 합니다.</block>
-  <block id="7f1de51a94944bdde2c4458094963297" category="paragraph">SRM 어플라이언스를 배포한 후에는 SRM 어플라이언스에 SRA를 구성해야 합니다. SRA 구성이 성공하면 SRM 어플라이언스가 SRA와 통신하여 재해 복구 관리를 수행할 수 있습니다. SRM 어플라이언스와 SRA 간의 통신을 활성화하려면 SRM 어플라이언스에 VMware vSphere 자격 증명(IP 주소)용 ONTAP 툴을 저장해야 합니다.</block>
-  <block id="3eed86b47b47a45bf41f076589a64165" category="paragraph">SRM 어플라이언스의 SRA 구성은 SRA 자격 증명을 SRM 어플라이언스에 저장합니다.</block>
   <block id="5dca53226c3a1262b461c063e61fd9e1" category="list-text">명령을<block ref="ab64b2f5839594835c3c4d3e3c725c7c" prefix=" " category="inline-code"></block> 실행하여 로그 디렉토리로 이동합니다.</block>
   <block id="1678c2984a8ccc5f17124abb9acb5bb8" category="list-text">로그 위치에 명령을 입력하여 SRA에서 사용하는 Docker ID를 가져옵니다.<block ref="c3933049d26fccba0396e7760f0fba06" prefix=" " category="inline-code"></block></block>
   <block id="d5d2ad55b774ba92aef91e985c285c4b" category="list-text">컨테이너 ID에 로그인하려면 명령을 입력합니다.<block ref="1b6eefce0212551da88d489c9ed8f5e9" prefix=" " category="inline-code"></block></block>
@@ -1540,18 +1496,15 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="c296e8788b295e89d6f8e1bfcd28b6ff" category="list-text">복구 사이트의 ESXi 호스트가 SVM(스토리지 가상 머신)에 대한 iSCSI 연결이 적절한지 확인합니다. 보조 사이트 ESXi 호스트는 보조 사이트 스토리지에 액세스할 수 있어야 하며 운영 사이트 ESXi 호스트는 운영 사이트 스토리지에 액세스할 수 있어야 합니다.</block>
   <block id="0cd8afb704226b6e22e0e52f54ef48ba" category="section-title">NAS 환경에 대한 SRA 구성</block>
   <block id="f2752e6caaa6a7299132353ae30a162b" category="summary">VMware vSphere용 ONTAP 툴은 SRA 기능을 사용하여 재해 복구를 구성할 수 있는 옵션을 제공합니다.</block>
-  <block id="3a471908933d4b5cc2b8aa6e91739e41" category="list-text">URL:을 사용하여 SRM 어플라이언스 관리 인터페이스에 로그인한<block ref="bdf0203c0900e161332057d261c69ba5" prefix=" " category="inline-code"></block>다음 VMware SRM 어플라이언스 관리 인터페이스의 스토리지 복제 어댑터로 이동합니다.</block>
   <block id="3b204745724768bca001c3a2060e50d1" category="list-text">이름이 일치하는 폴더에 대한 매핑 자동 준비 * 를 선택하고 * 다음 * 을 클릭합니다.</block>
   <block id="51a24aec0d2aefedac755d5648602767" category="list-text">보호 및 복구 사이트에 필요한 데이터 센터 개체를 선택하고 * 매핑 추가 * 를 클릭합니다.</block>
   <block id="3fe42195c23f54944aea2da2ed4b723c" category="list-text">역방향 매핑을 생성하기 위해 이전에 사용된 오브젝트를 선택한 다음 * 마침 * 을 클릭합니다.</block>
   <block id="7fa438f9d261a519dd8e0870c68c752d" category="list-text">이름이 일치하는 네트워크에 대한 매핑 자동 준비 * 를 선택하고 * 다음 * 을 클릭합니다.</block>
   <block id="31eaa05ff0db5b24f55f9ba8a07eb25c" category="list-text">일치하는 이름의 리소스에 대한 매핑 자동 준비 * 를 선택하고 * 다음 * 을 클릭합니다.</block>
-  <block id="d43a71ae180632566a3e174280cb4453" category="paragraph">항목에서 언급한 단계를 실행했어야 <block ref="2844354f8ed275182ec054cfc4f78370" category="inline-link-macro-rx"></block>합니다.</block>
   <block id="71a16bd19bda0e91c90a56e37682dc0d" category="list-text">Perl 명령을 실행하여 새 자격 증명으로 SRA를 구성합니다.</block>
   <block id="a40a3427484ba9037317f84856abff69" category="list-text">필요한 스토리지 쌍을 선택하고 해당 세부 정보를 확인합니다.</block>
   <block id="a780a238f22a802c24a2182aea27323f" category="paragraph">* vCenter에서 VMware vSphere VM용 ONTAP 툴의 스냅샷 생성(HA 구축 시 VM 3개, 비 HA 구축 시 VM 1개) *</block>
   <block id="2e2a1bc69765f559199ac318acd2a7d7" category="list-text">VMware vSphere 10.1 릴리스용 ONTAP용 OVA 도구를 배포합니다.</block>
-  <block id="84f820da6ba65a6cab821392a70f4e42" category="list-text">의 단계에 따라 보호 및 복구 사이트 모두에 VMware vSphere 10.1 SRA 어댑터용 ONTAP 툴을 설치합니다 <block ref="c2b5ee5d8065c08146407751d4d3a3d6" category="inline-link-macro-rx"></block></block>
   <block id="d3f31e51d90c6cd2652af74dae461781" category="paragraph">마이그레이션에 성공하고 ONTAP Tools 10.1을 vCenter Server에 등록한 후 다음을 수행합니다.</block>
   <block id="cea5a13834803a12adaeb249165351df" category="list-text">를<block ref="c81e728d9d4c2f636f067f89cc14862c" prefix=" " category="inline-code"></block> 입력하여 시스템 구성 메뉴를 선택합니다.</block>
   <block id="86ce6e9c3af571980099ca308cd245e3" category="list-text">ONTAP 자격 증명을 변경하려면 를<block ref="45c48cce2e2d7fbdea1afc51c7c6ad26" prefix=" " category="inline-code"></block> 입력합니다.</block>
@@ -1580,7 +1533,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="76dc611d6ebaafc66cc0879c71b5db5c" category="cell">128</block>
   <block id="a767227b9eba64196b4788edef7ac1b7" category="cell">100k 이하</block>
   <block id="38c5b65e97cdb4c6de7600ae7479af40" category="section-title">VMware vSphere용 ONTAP 툴 - SRA(Storage Replication Adapter)</block>
-  <block id="747389dd88507b473bef28a38f605585" category="paragraph">다음 표에는 VMware vSphere용 ONTAP 툴을 사용하여 SRM 인스턴스당 지원되는 수가 나와 있습니다.</block>
   <block id="bff4a5ed353e2265f8bc7ee336bcb8a8" category="cell">* vCenter 배포 크기 *</block>
   <block id="e8ae9f0392263b55e4580177a75c948e" category="cell">* 소형 *</block>
   <block id="f3e6e184202c9901024fa409f2c24cb1" category="cell">* 중간 *</block>
@@ -1596,8 +1548,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="e49da487a27e7484579695ad7765c888" category="cell">VM 수입니다</block>
   <block id="1bd69c7df3112fb9a584fbd9edfc6c90" category="cell">4000</block>
   <block id="708be71b9ab6e0a84252760579ade9f1" category="cell">7000</block>
-  <block id="d037256bbf0f0260699fa03968eba2cf" category="paragraph">다음 표에는 SRM 수와 VMware vSphere 구축 크기용 ONTAP 툴의 수가 나와 있습니다.</block>
-  <block id="3a1a412e50cda82ae9e433b202ecc21a" category="cell">* SRM 인스턴스 수 *</block>
   <block id="6be4728a24ecd589d1ceed4bba75de25" category="cell">* ONTAP 도구 배포 크기 *</block>
   <block id="e107d10db282d343eb4fc9317e44b024" category="cell">최대 4개</block>
   <block id="2660064e68655415da2628c2ae2f7592" category="cell">작은 크기</block>
@@ -1613,8 +1563,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="9062a44d27a4f37689abd458521d9079" category="paragraph"><block ref="e6f7130920699b61d596eeb5119cbced" category="inline-link-macro-rx"></block>자세한 내용은 을 참조하십시오.</block>
   <block id="c09f9ab815eaddacaa1dc798048be564" category="paragraph">ONTAP에서는 엑스포트 정책을 사용하여 호스트에 대한 볼륨 데이터 경로 액세스를 제공하고, 이니시에이터 그룹(igroups)을 사용하여 ESXi 호스트에 대한 LUN(논리 유닛 번호) 데이터 경로 액세스를 제공합니다. VMware vSphere용 ONTAP 툴을 사용하면 igroup을 쉽고 직관적으로 생성하고 풍부한 엔드 투 엔드 워크플로우를 제공할 수 있습니다. 일관성을 보장하기 위해 스토리지 플랫폼에서의 직접 iGroup 생성은 지원되지 않습니다.</block>
   <block id="ab8c04758635a74f379d11d4d8d6dd6d" category="paragraph">유지 관리 콘솔에 액세스하려면 구축된 VMware vSphere용 ONTAP 툴의 * Summary * 탭을 사용해야 합니다. 을 <block ref="e47dca9fdf7d5de4c84091183b635b44" category="inline-image-macro-rx" type="image"></block>클릭하면 유지 관리 콘솔이 시작됩니다.</block>
-  <block id="a1b160da533b2cfee0734b4e536da205" category="paragraph"><block ref="a1b160da533b2cfee0734b4e536da205" category="inline-link-rx"></block></block>
-  <block id="783dbbcc9c265d80adfea7bac4a2d980" category="paragraph">어댑터가 SRM에 설치됩니다.</block>
   <block id="f02f2c757f889d163cf5903890ac95ef" category="sidebar">구성 제한</block>
   <block id="ae9e13b66877a85be97724063f459ec2" category="section-title">일관성 그룹</block>
   <block id="eba11c7a4079ec571b88361adcae2df5" category="inline-link">일관성 그룹</block>
@@ -1808,7 +1756,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="6d1879a84e19ef83d0b9cc05a65ac444" category="list-text">VMware vSphere 9.xx용 ONTAP 툴에서 마이그레이션된 NFS 및 VMFS 데이터 저장소는 데이터 저장소 검색 작업이 트리거된 후에만 VMware vSphere 10.2용 ONTAP 툴에 표시됩니다. 이 작업은 트리거하는 데 최대 30분이 걸릴 수 있습니다. 데이터 저장소가 VMware vSphere용 ONTAP Tools 플러그인 UI 페이지의 개요 페이지에 표시되는지 확인합니다.</block>
   <block id="f2f34eedd3398b474ec363008e4f96c1" category="list-text">VMware vSphere 10.2 릴리즈용 ONTAP 툴로 마이그레이션할 vCenter Server 인스턴스를 추가합니다. 을 <block ref="946669e64e0e42585f18099dec81ec03" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="1c9a04fa9475b21ef9be5e7bd0f30822" category="list-text">원격 플러그인 vCenter Server API에서 로컬로 스토리지 백엔드를 온보드합니다. 마이그레이션을 위해 스토리지를 로컬 범위로 추가합니다.</block>
-  <block id="266bcd4b381daecdf6ce46cc3cb55488" category="list-text">SRM에서 * Array Managers * 를 클릭하고 * Add Array Manager * 를 클릭합니다.</block>
   <block id="1f80017cff7192214efc53298c1489d3" category="list-text">보호된 사이트를 선택하고 * 관리 * 를 클릭합니다.</block>
   <block id="1c511a264bbd662cde1cfebeb069c175" category="list-text">적절한 데이터 저장소를 선택하고 * OK * 를 클릭합니다.</block>
   <block id="74b27627165f74c84a8f31981da59bce" category="list-text">보호 그룹의 이름과 설명을 지정하고 * 다음 * 을 클릭합니다.</block>
@@ -1846,4 +1793,96 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="9b69ea2dc9e7a75dc2e6d51a798b7c4e" category="paragraph">VMware vSphere용 ONTAP 툴은 수평으로 확장 가능한 이벤트 기반 마이크로서비스의 모음으로, OVA(Open Virtual Appliance)로 구축됩니다. 이 릴리즈에서는 REST API와 ONTAP의 통합이 가능합니다.</block>
   <block id="5cf2ee241dad8c2f06781c1f8cde814d" category="cell">ONTAP 9.12.1, 9.13.1, 9.14.1 및 9.15.1의 최신 패치 릴리스.</block>
   <block id="c20372b10311b40a3f12981f90015dec" category="paragraph">마이그레이션은 VMware vSphere 9.10D2, 9.11D4, 9.12 및 9.13 릴리즈용 ONTAP 툴에서 10.2 릴리즈로 지원됩니다.</block>
+  <block id="9c914c30102fcf893634491740cba696" category="paragraph">ONTAP tools Manager를 사용하면 VMware vSphere 관리자가 관리되는 vCenter Server 인스턴스 및 온보드된 스토리지 백엔드에 대해 ONTAP 툴을 더 효율적으로 제어할 수 있습니다. ONTAP tools Manager는 vCenter Server 인스턴스, 스토리지 백엔드, 인증서, 암호 및 로그 번들 다운로드를 관리하는 데 도움이 됩니다.</block>
+  <block id="81d59d981388d591597f0840a1778f7c" category="paragraph">SRA는 VMware Live Site Recovery 어플라이언스 내부에 설치되는 스토리지 공급업체별 소프트웨어입니다. 이 어댑터를 사용하면 SVM(Storage Virtual Machine) 레벨 및 클러스터 레벨 구성에서 사이트 복구 관리자와 스토리지 컨트롤러 간의 통신이 가능합니다.</block>
+  <block id="4fb2d974d1e232174a0545c1d40f5345" category="section-title">VMware 라이브 사이트 복구</block>
+  <block id="1d722888e5f73607abb8bf4b2938744c" category="paragraph">VMware Live Site Recovery는 VMware 가상 환경에 대한 무중단 업무 운영, 재해 복구, 사이트 마이그레이션 및 무중단 테스트 기능을 제공합니다.</block>
+  <block id="489718a7ec98d7c9043bb7d8e021398c" category="section-title">VMware vSphere 10.1 사용자용 ONTAP 툴을 10.2 사용자로 업그레이드합니다</block>
+  <block id="e189254c231c7dcd34530ab75115b200" category="paragraph">VMware vSphere 10.1 사용자용 ONTAP 툴이 json 파일을 사용하여 생성된 클러스터 범위 사용자인 경우, admin 사용자를 사용하여 ONTAP CLI에서 다음 명령을 실행하여 10.2 릴리즈로 업그레이드하십시오.</block>
+  <block id="605caedbbf37df4c8a64351c8698690d" category="paragraph">제품 기능:</block>
+  <block id="66d8073e2bee2f887f0a4b000fd4018a" category="list-text">VSC</block>
+  <block id="11032269c7440d479ebdfed54df8983e" category="list-text">VSC 및 VASA 공급자</block>
+  <block id="492e7a46a25d7c5e1486eba727a4233d" category="list-text">VSC 및 SRA</block>
+  <block id="d629e0f9a84197a983a23f2f90b0b08a" category="list-text">VSC, VASA 공급자 및 SRA:</block>
+  <block id="1ef8110d8ea5f9d520ea22f1ee0e1879" category="paragraph">클러스터 Privileges:</block>
+  <block id="2c980ca2b98595a219bfc4433cb596cf" category="paragraph">_security login role create -role &lt;existing-role-name&gt; -cmdddirname "vserver NVMe namespace show" -access all_</block>
+  <block id="49918875a309549e1412d96862a21196" category="paragraph">_security login role create -role &lt;existing-role-name&gt; -cmdddirname "vserver NVMe subsystem show" -access all _</block>
+  <block id="d8fe6e8ed5b7d5b20b668c466285d700" category="paragraph">_security login role create -role &lt;existing-role-name&gt; -cmdddirname "vserver NVMe 서브시스템 host show" -access all _</block>
+  <block id="199881478924f26a59f5514f3c1550ee" category="paragraph">_security login role create -role &lt;existing-role-name&gt; -cmddirname "vserver NVMe subsystem map show" -access all_</block>
+  <block id="b891ffe7d6124b11ff4ce4eb1d1b2ee1" category="paragraph">_security login role create -role &lt;existing-role-name&gt; -cmddirname "vserver NVMe show -interface" -access read _</block>
+  <block id="eb6c61c0081101129527225636e40c97" category="paragraph">_security login role create -role &lt;existing-role-name&gt; -cmdddirname "vserver NVMe 하위 시스템 호스트 추가" -access all_</block>
+  <block id="debe05b56bfb310c975d41cd97c76a07" category="paragraph">_security login role create -role &lt;existing-role-name&gt; -cmddirname "vserver NVMe 하위 시스템 맵 add" -access all_</block>
+  <block id="8d3a2560a448ee3eddc804ff88026179" category="paragraph">_security login role create -role &lt;existing-role-name&gt; -cmdddirname "vserver NVMe namespace delete" -access all _</block>
+  <block id="23ae123087ed1b8607470840a23ef352" category="paragraph">_security login role create -role &lt;existing-role-name&gt; -cmdddirname "vserver NVMe 하위 시스템 삭제" -access all_</block>
+  <block id="301ba6f12701ec396d7ed4ddcd10eb2c" category="paragraph">_security login role create -role &lt;existing-role-name&gt; -cmdddirname "vserver NVMe 하위 시스템 호스트 제거" -access all_</block>
+  <block id="3f92a510e867ff8c9654f1a9d78d7256" category="paragraph">_security login role create -role &lt;existing-role-name&gt; -cmdddirname "vserver NVMe 하위 시스템 맵 제거" -access all_</block>
+  <block id="b5076c18bade0b411ea86d0ae81fed83" category="paragraph">VMware vSphere 10.1 사용자용 ONTAP 툴이 json 파일을 사용하여 생성된 SVM 범위 사용자인 경우, admin 사용자를 사용하여 ONTAP CLI에서 다음 명령을 실행하여 10.2 릴리즈로 업그레이드하십시오.</block>
+  <block id="ac49fe994923e737311f3ca00af0c41a" category="paragraph">SVM Privileges:</block>
+  <block id="6ae1f45115015d96b1b6c36617ec4c94" category="paragraph">_security login role create -role &lt;existing-role-name&gt; -cmdddirname "vserver NVMe namespace show" -access all -vserver &lt;vserver-name&gt;_</block>
+  <block id="8c001ffb2b3a01c3fbbc6dde42029eb0" category="paragraph">_security login role create -role &lt;existing-role-name&gt; -cmdddirname "vserver NVMe subsystem show" -access all -vserver &lt;vserver-name&gt;_</block>
+  <block id="6189135ecb532eb246137875c3f9b7dc" category="paragraph">_security login role create -role &lt;existing-role-name&gt; -cmdddirname "vserver NVMe 하위 시스템 host show" -access all -vserver &lt;vserver-name&gt;_</block>
+  <block id="d07bbd45386f2488da60b45fbb4973f3" category="paragraph">_security login role create -role &lt;existing-role-name&gt; -cmddirname "vserver NVMe subsystem map show" -access all -vserver &lt;vserver-name&gt;_</block>
+  <block id="7fff01c58a2e857e96c05c3df9d52254" category="paragraph">_security login role create -role &lt;existing-role-name&gt; -cmddirname "vserver NVMe show -interface" -access read -vserver &lt;vserver-name&gt;_</block>
+  <block id="c6e8c5c1b6aa1f68e01b19750ac01fe9" category="paragraph">_security login role create -role &lt;existing-role-name&gt; -cmdddirname "vserver NVMe 하위 시스템 호스트 추가" -access all -vserver &lt;vserver-name&gt;_</block>
+  <block id="87989e888fd0df664805ada6465cf871" category="paragraph">_security login role create -role &lt;existing-role-name&gt; -cmddirname "vserver NVMe 서브시스템 맵 add" -access all -vserver &lt;vserver-name&gt; _</block>
+  <block id="5d41672426f411e756a4f66892159625" category="paragraph">_security login role create -role &lt;existing-role-name&gt; -cmdddirname "vserver NVMe namespace delete" -access all -vserver &lt;vserver-name&gt; _</block>
+  <block id="3378051ca8595d565a2aa9f355dad63d" category="paragraph">_security login role create -role &lt;existing-role-name&gt; -cmdddirname "vserver NVMe 하위 시스템 삭제" -access all -vserver &lt;vserver-name&gt;_</block>
+  <block id="900ab615cb0b69371787d676b2d30046" category="paragraph">_security login role create -role &lt;existing-role-name&gt; -cmdddirname "vserver NVMe 하위 시스템 호스트 제거" -access all -vserver &lt;vserver-name&gt;_</block>
+  <block id="2914fec8c6d9818079914b9b8cb6298a" category="paragraph">_security login role create -role &lt;existing-role-name&gt; -cmdddirname "vserver NVMe 하위 시스템 맵 제거" -access all -vserver &lt;vserver-name&gt;_</block>
+  <block id="599c83eeb4cf9aa9a7147d39be6bd9a6" category="paragraph">command_vserver NVMe namespace show_and_vserver NVMe subsystem show_를 기존 역할에 추가하면 다음 명령이 추가됩니다.</block>
+  <block id="0b6608365eac52ef503495b26a3e9b1f" category="paragraph">VMware vSphere용 ONTAP 툴을 사용하여 VAAI(vSphere API for Array Integration)용 NetApp NFS 플러그인을 설치할 수 있습니다.</block>
+  <block id="d9f27aaf5ae6bd3eb465792e14cafec5" category="section-title">VAAI 복사 오프로드에 대한 올바른 NFS 내보내기 정책을 구성합니다</block>
+  <block id="2dfc2d6cb8bd212554f059fbb234cecf" category="paragraph">NFS 환경에서 VAAI를 구성할 때는 다음 요구 사항을 고려하여 내보내기 정책 규칙을 구성해야 합니다.</block>
+  <block id="88328c1c70d6d0322b7c07bf6d9760c8" category="list-text">해당 볼륨에서 NFSv4 호출을 허용해야 합니다.</block>
+  <block id="81b7f8451857d47e62047334509e0b36" category="list-text">루트 사용자는 루트로 유지되어야 하고 NFSv4는 모든 접합 상위 볼륨에서 허용되어야 합니다.</block>
+  <block id="805928a0c13b6e1b2d20173f40408bd7" category="list-text">VAAI 지원 옵션은 관련 NFS 서버에서 설정해야 합니다.</block>
+  <block id="93cda38e25aee6138627f64e6c259593" category="paragraph">절차에 대한 자세한 내용은<block ref="e6212f694a3524de381ff5a79b542f51" category="inline-link-rx"></block> KB 문서 를 참조하십시오.</block>
+  <block id="810eb1be62c2223bbb6ff683af2508bd" category="paragraph">다음 표에는 VMware vSphere용 ONTAP 툴을 사용하여 VMware 라이브 사이트 복구 인스턴스당 지원되는 수가 나와 있습니다.</block>
+  <block id="beadd6cb6100e1a0cce84603ccb7105a" category="paragraph">다음 표에는 VMware Live Site Recovery의 수와 VMware vSphere 구축 크기용 ONTAP 툴의 수가 나와 있습니다.</block>
+  <block id="df0d7eb56e12922cca30035472c40aa7" category="cell">* VMware Live Site Recovery 인스턴스 수 *</block>
+  <block id="d6efc4dcb0d701b8153c2ef1af6e22b9" category="list-text">VMware Live Site Recovery UI에서 VMware vSphere 9.xx 릴리즈 SRA 어댑터용 ONTAP 툴을 삭제하려면 다음 단계를 수행하십시오.</block>
+  <block id="de7cd16aa682868ad900edd519b06059" category="list-text">VMware Live Site Recovery 구성 관리 페이지로 이동합니다</block>
+  <block id="e6af441b9194db7f4427a1199ae8c274" category="inline-link-macro">VMware Live Site Recovery 어플라이언스에 SRA를 구성합니다</block>
+  <block id="9bf06b478ac6a48afec45b6081899c00" category="list-text">의 단계에 따라 보호 및 복구 사이트 모두에 VMware vSphere 10.1 SRA 어댑터용 ONTAP 툴을 설치합니다 <block ref="200275c92830164958f040bec21a478e" category="inline-link-macro-rx"></block></block>
+  <block id="f24af9463aafeb0a644c3f3baddedb00" category="list-text">VMware Live Site Recovery UI 페이지에서 * 스토리지 검색 * 및 * 장치 검색 * 작업을 수행하고 마이그레이션 전과 동일하게 장치가 표시되는지 확인합니다.</block>
+  <block id="0b3582622e579cb352e246015d6ca171" category="summary">VMware Live Site Recovery의 Array Manager 마법사를 사용하여 SRA(스토리지 복제 어댑터)를 구성하여 VMware Live Site Recovery와 스토리지 가상 머신\(SVM\) 간의 상호 작용을 지원할 수 있습니다.</block>
+  <block id="fe3a4c2227170fc60976b4e12c53d157" category="paragraph">VMware Live Site Recovery의 Array Manager 마법사를 사용하여 SRA(스토리지 복제 어댑터)를 구성하여 VMware Live Site Recovery와 SVM(스토리지 가상 머신) 간의 상호 작용을 지원할 수 있습니다.</block>
+  <block id="986d9b60b2308d9411e69051124f1e90" category="list-text">VMware Live Site Recovery에서 보호된 사이트와 복구 사이트를 페어링해야 합니다.</block>
+  <block id="83d479d6142f609752232069f2e45305" category="list-text">VMware Live Site Recovery에서 * Array Managers * 를 클릭하고 * Add Array Manager * 를 클릭합니다.</block>
+  <block id="a276fae7dadb74c9d51a7a7823f174bc" category="list-text">VMware Live Site Recovery의 스토리지를 설명하는 다음 정보를 입력합니다.</block>
+  <block id="bba4b1edcf0645b5356e4f3ffed77b3a" category="summary">VMware Live Site Recovery 어플라이언스를 구축한 후에는 VMware Live Site Recovery 어플라이언스에 SRA를 구성해야 합니다. SRA 구성이 성공하면 VMware Live Site Recovery 어플라이언스가 SRA와 통신하여 재해 복구 관리를 수행할 수 있습니다. VMware Live Site Recovery 어플라이언스와 SRA 간의 통신을 활성화하려면 VMware vSphere 자격 증명(IP 주소 및 관리자 암호\)용 ONTAP 툴을 VMware Live Site Recovery 어플라이언스에 저장해야 합니다.</block>
+  <block id="ac7f1666af7e74993cdbf1eb27d64168" category="paragraph">VMware Live Site Recovery 어플라이언스를 구축한 후에는 VMware Live Site Recovery 어플라이언스에 SRA를 구성해야 합니다. SRA 구성이 성공하면 VMware Live Site Recovery 어플라이언스가 SRA와 통신하여 재해 복구 관리를 수행할 수 있습니다. VMware Live Site Recovery 어플라이언스와 SRA 간의 통신을 활성화하려면 VMware vSphere 자격 증명(IP 주소)용 ONTAP 툴을 VMware Live Site Recovery 어플라이언스에 저장해야 합니다.</block>
+  <block id="21e557aeec91fdacbde971d5f1de9806" category="paragraph">VMware Live Site Recovery 어플라이언스에서 SRA를 구성하면 SRA 자격 증명이 VMware Live Site Recovery 어플라이언스에 저장됩니다.</block>
+  <block id="2fdef650865ae2c93b66f0f8c3481d33" category="list-text">VMware Live Site Recovery 어플라이언스 화면에서 * Storage Replication Adapter * &gt; * New Adapter * 를 클릭합니다.</block>
+  <block id="7ebae8ab4249a32272c6182685fb369b" category="list-text">VMware Live Site Recovery에 _.tar.gz_파일을 업로드합니다.</block>
+  <block id="e94e8319bfdee87f64f751c05ceaa14e" category="list-text">putty를 사용하여 관리자 계정을 사용하여 VMware Live Site Recovery 어플라이언스에 로그인합니다.</block>
+  <block id="08155ff6aa2057ea9c3c11ad9a0e78c9" category="list-text">다음 명령을 사용하여 VMware vSphere용 ONTAP 툴을 사용하여 VMware 라이브 사이트 복구를 구성합니다.<block ref="83f30183bb230f5e651ad5daf51de6eb" prefix=" " category="inline-code"></block></block>
+  <block id="60979ebd2e27db419252e2b56556ea91" category="list-text">어댑터를 다시 검색하여 VMware Live Site Recovery Storage Replication Adapters 페이지에서 세부 정보가 업데이트되었는지 확인합니다.</block>
+  <block id="8e6f017dbd3eba811685ff6bf60372e5" category="list-text">동일한 버전의 VMware Live Site Recovery가 설치되었습니다</block>
+  <block id="7b1dbf4673b204ff52118b225f9154bf" category="paragraph">확장 환경에 대해 VMware Live Site Recovery에서 다음 시간 초과 값을 설정해야 합니다.</block>
+  <block id="e164323b5cce43e95866eb2640776865" category="paragraph"><block ref="e164323b5cce43e95866eb2640776865" category="inline-link-rx"></block></block>
+  <block id="b33d5fcf11274a869f9e11c1a59f0aed" category="paragraph"><block ref="b33d5fcf11274a869f9e11c1a59f0aed" category="inline-link-rx"></block></block>
+  <block id="b20ccd4ba538ec482298b894f6a0437e" category="summary">VMware Live Site Recovery용 스토리지 복제 어댑터\(SRA\)를 실행하기 전에 스토리지 시스템을 설정해야 합니다.</block>
+  <block id="c031f6f2a8dcb171b23de55cec95fc3a" category="paragraph">VMware Live Site Recovery용 SRA(Storage Replication Adapter)를 실행하기 전에 스토리지 시스템을 설정해야 합니다.</block>
+  <block id="84dd7fb9943b147c95a8074d22954775" category="paragraph">VMware Live Site Recovery 설치에 대한 설명서는 VMware 사이트에 있습니다.</block>
+  <block id="4de2c2cc8da509c592b09bc5114c2360" category="inline-link">VMware Live Site Recovery에 대해 알아보십시오</block>
+  <block id="fa1073d8b1d22f5d4b220d1a14c1c5e6" category="paragraph"><block ref="fa1073d8b1d22f5d4b220d1a14c1c5e6" category="inline-link-rx"></block></block>
+  <block id="7285a921f077fca33245569e2e0b7b8d" category="paragraph">어댑터는 VMware Live Site Recovery에 설치됩니다.</block>
+  <block id="2467510d19a9c4f9eee4a00341a74b62" category="paragraph">VMware Live Site Recovery 설치에 대한 설명서는 VMware 사이트에서 확인할 수 있습니다.</block>
+  <block id="17935256185c49fb0cf4cd4c4d27c3e9" category="paragraph">어댑터는 VMware Live Site Recovery 및 SRA 서버에 설치됩니다.</block>
+  <block id="bfbfb5bc1330e788e3f387d36887c71f" category="list-text">Array Manager 마법사를 사용하여 VMware Live Site Recovery에 어레이를 추가할 때 NFS 내보내기가 있는 IP 주소, 호스트 이름 또는 FQDN과 같은 유효한 주소가 * NFS 주소 * 필드에 지정되었는지 확인합니다.</block>
+  <block id="ccc1c774c930be50b0755d16bd1d24f7" category="list-text">URL:을 사용하여 VMware Live Site Recovery 어플라이언스 관리 인터페이스에 로그인한<block ref="bdf0203c0900e161332057d261c69ba5" prefix=" " category="inline-code"></block> 다음 VMware VMware Live Site Recovery 어플라이언스 관리 인터페이스의 스토리지 복제 어댑터로 이동합니다.</block>
+  <block id="b68c9ef41cc9baad79e9d936239d54ce" category="list-text">SRA 플러그인용 _.tar.gz_installer를 VMware Live Site Recovery에 업로드합니다.</block>
+  <block id="00ec528fa77cc5bd426cb0521f2dfe6f" category="list-text">어댑터를 다시 검색하여 VMware Live Site Recovery Storage Replication Adapters 페이지에서 세부 정보가 업데이트되었는지 확인합니다.</block>
+  <block id="de958ca4246386d24c708fb5f2871258" category="admonition">VMware Live Site Recovery에서 리소스는 리소스 풀, ESXi 호스트 또는 vSphere 클러스터가 될 수 있습니다.</block>
+  <block id="7a81ea7b61ebfaa106b42abac78e427a" category="admonition">SRA(Storage Replication Adapter)는 팬아웃 SnapMirror 구성을 지원하지 않습니다. SnapMirror 팬아웃 구성은 소스 볼륨이 서로 다른 두 대상에 복제되는 구성입니다. VMware Live Site Recovery에서 대상 위치에서 가상 시스템을 복구해야 하는 경우 이러한 문제가 발생합니다.</block>
+  <block id="2268184944a360ac30d7effc3f458ecb" category="list-text">보호 사이트와 복구 사이트에 VMware Live Site Recovery가 설치되어 있어야 합니다.</block>
+  <block id="9edf84271808a5c15b41bb81868d40cb" category="summary">VMware Live Site Recovery가 SRA와 통신하려면 자격 증명을 수정한 경우 VMware Live Site Recovery 서버에서 SRA 자격 증명을 업데이트해야 합니다.</block>
+  <block id="7427d0cf7230792f39aef3b63b2efed4" category="inline-link-macro">VMware Live Site Recovery 어플라이언스에서 SRA 구성</block>
+  <block id="234e9bf11d28f2eb5743a4afd467b352" category="paragraph">항목에서 언급한 단계를 실행했어야 <block ref="63dec5e0603452dbccad6eca584eafe1" category="inline-link-macro-rx"></block>합니다.</block>
+  <block id="ea3aed5969a29eebb3849662acbdc1ca" category="list-text">다음 명령을 실행하여 VMware Live Site Recovery 시스템 폴더 캐시된 ONTAP tools 사용자 이름 암호를 삭제합니다.</block>
+  <block id="12aad99311cc30ce7ff1a450a29c3ec0" category="list-text">VMware Live Site Recovery 어레이 관리자를 사용하여 보호 사이트와 복구 사이트를 페어링해야 합니다.</block>
+  <block id="c8af2a359991324c5027f67981fcf118" category="sidebar">VMware vSphere 10.1용 ONTAP 툴 설명서</block>
+  <block id="425e3f9f511fc3cc32fb57688da1ec81" category="sidebar">VMware vSphere 9용 ONTAP 툴의 이전 버전에 대한 설명서</block>
+  <block id="ee3ab12b14efcd93221e2e76410a3142" category="sidebar">ONTAP 지원 VMware vSphere에 대해 자세히 알아보십시오</block>
 </blocks>

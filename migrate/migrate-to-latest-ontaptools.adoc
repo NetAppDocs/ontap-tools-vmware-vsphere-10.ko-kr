@@ -49,9 +49,9 @@ NOTE: 기존 사용자는 패치 릴리스로 업그레이드하기 전에 현�
 NOTE: 페일오버가 방금 완료되고 재보호가 보류 중인 경우에는 마이그레이션하지 마십시오. 재보호를 완료한 다음 마이그레이션을 수행합니다.
 복구 계획 테스트에도 동일하게 적용됩니다. 복구 계획 테스트가 완료되면 테스트 복구를 정리한 다음 마이그레이션을 시작합니다.
 
-. SRM UI에서 VMware vSphere 9.xx 릴리즈 SRA 어댑터용 ONTAP 툴을 삭제하려면 다음 단계를 수행하십시오.
+. VMware Live Site Recovery UI에서 VMware vSphere 9.xx 릴리즈 SRA 어댑터용 ONTAP 툴을 삭제하려면 다음 단계를 수행하십시오.
 +
-.. SRM 구성 관리 페이지로 이동합니다
+.. VMware Live Site Recovery 구성 관리 페이지로 이동합니다
 .. 스토리지 복제 어댑터 섹션으로 이동합니다
 .. Kebab 메뉴를 클릭하고 * Reset configuration * 을 클릭합니다
 .. Kebab 메뉴를 클릭하고 * 삭제 * 를 선택합니다
@@ -60,8 +60,8 @@ NOTE: 페일오버가 방금 완료되고 재보호가 보류 중인 경우에�
 
 
 
-. 의 단계에 따라 보호 및 복구 사이트 모두에 VMware vSphere 10.1 SRA 어댑터용 ONTAP 툴을 설치합니다 link:../protect/configure-on-srm-appliance.html["SRM 어플라이언스에 SRA를 구성합니다"]
-. SRM UI 페이지에서 * 스토리지 검색 * 및 * 장치 검색 * 작업을 수행하고 마이그레이션 전과 동일하게 장치가 표시되는지 확인합니다.
+. 의 단계에 따라 보호 및 복구 사이트 모두에 VMware vSphere 10.1 SRA 어댑터용 ONTAP 툴을 설치합니다 link:../protect/configure-on-srm-appliance.html["VMware Live Site Recovery 어플라이언스에 SRA를 구성합니다"]
+. VMware Live Site Recovery UI 페이지에서 * 스토리지 검색 * 및 * 장치 검색 * 작업을 수행하고 마이그레이션 전과 동일하게 장치가 표시되는지 확인합니다.
 
 
 

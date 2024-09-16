@@ -16,7 +16,7 @@ SRA(Storage Replication Adapter)를 구성한 후 보호 사이트와 복구 사
 * 필요한 것 *
 
 * 스토리지 시스템을 구성해야 합니다.
-* SRM 어레이 관리자를 사용하여 보호 사이트와 복구 사이트를 페어링해야 합니다.
+* VMware Live Site Recovery 어레이 관리자를 사용하여 보호 사이트와 복구 사이트를 페어링해야 합니다.
 * SRA에 대한 테스트 페일오버 작업 및 페일오버 작업을 수행하기 전에 FlexClone 라이센스 및 SnapMirror 라이센스를 활성화해야 합니다.
 
 

@@ -2,7 +2,7 @@
 permalink: protect/configure-array-manager.html 
 sidebar: sidebar 
 keywords:  
-summary: 'SRM과 스토리지 가상 시스템(SVM\) 간의 상호 작용을 지원하기 위해 SRM\(Site Recovery Manager)의 Array Manager 마법사를 사용하여 SRA\(Storage Replication Adapter\)를 구성할 수 있습니다.' 
+summary: 'VMware Live Site Recovery의 Array Manager 마법사를 사용하여 SRA(스토리지 복제 어댑터)를 구성하여 VMware Live Site Recovery와 스토리지 가상 머신\(SVM\) 간의 상호 작용을 지원할 수 있습니다.' 
 ---
 = Array Manager를 사용하여 SRA를 구성합니다
 :allow-uri-read: 
@@ -11,11 +11,11 @@ summary: 'SRM과 스토리지 가상 시스템(SVM\) 간의 상호 작용을 지
 
 
 [role="lead"]
-SRM(Site Recovery Manager)의 Array Manager 마법사를 사용하여 SRA(Storage Replication Adapter)를 구성하여 SRM과 SVM(Storage Virtual Machine) 간의 상호 작용을 활성화할 수 있습니다.
+VMware Live Site Recovery의 Array Manager 마법사를 사용하여 SRA(스토리지 복제 어댑터)를 구성하여 VMware Live Site Recovery와 SVM(스토리지 가상 머신) 간의 상호 작용을 지원할 수 있습니다.
 
 * 필요한 것 *
 
-* SRM에서 보호된 사이트와 복구 사이트를 페어링해야 합니다.
+* VMware Live Site Recovery에서 보호된 사이트와 복구 사이트를 페어링해야 합니다.
 * 어레이 관리자를 구성하기 전에 온보드된 스토리지를 구성해야 합니다.
 * 보호된 사이트와 복구 사이트 간에 SnapMirror 관계를 구성하고 복제해야 합니다.
 * 멀티테넌시를 사용하도록 SVM 관리 LIF를 활성화해야 합니다.
@@ -25,8 +25,8 @@ SRA는 클러스터 수준 관리 및 SVM 수준 관리를 지원합니다. 클�
 
 * 단계 *
 
-. SRM에서 * Array Managers * 를 클릭하고 * Add Array Manager * 를 클릭합니다.
-. SRM의 어레이를 설명하는 다음 정보를 입력합니다.
+. VMware Live Site Recovery에서 * Array Managers * 를 클릭하고 * Add Array Manager * 를 클릭합니다.
+. VMware Live Site Recovery의 스토리지를 설명하는 다음 정보를 입력합니다.
 +
 .. Display Name* 필드에 어레이 관리자를 식별할 이름을 입력하십시오.
 .. SRA Type * 필드에서 * ONTAP * 용 NetApp 스토리지 복제 어댑터를 선택합니다.

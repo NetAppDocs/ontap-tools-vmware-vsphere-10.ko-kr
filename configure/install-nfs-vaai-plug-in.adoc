@@ -11,7 +11,7 @@ summary: 'VMware vSphere용 ONTAP 툴을 사용하여 VAAI\(NetApp NFS Plug-in f
 
 
 [role="lead"]
-VMware vSphere용 ONTAP 툴을 사용하여 VAAI(VMware vStorage APIs for Array Integration)용 NetApp NFS 플러그인을 설치할 수 있습니다.
+VMware vSphere용 ONTAP 툴을 사용하여 VAAI(vSphere API for Array Integration)용 NetApp NFS 플러그인을 설치할 수 있습니다.
 
 * 필요한 것 *
 
@@ -43,3 +43,16 @@ VMware vSphere용 ONTAP 툴을 사용하여 VAAI(VMware vStorage APIs for Array 
 VMware 관리자가 ESXi 호스트를 재부팅하면 VMware vSphere용 ONTAP 툴이 NFS VAAI 플러그인을 자동으로 감지합니다. 플러그인을 활성화하기 위해 추가 단계를 수행할 필요가 없습니다.
 
 
+
+
+
+=== VAAI 복사 오프로드에 대한 올바른 NFS 내보내기 정책을 구성합니다
+
+NFS 환경에서 VAAI를 구성할 때는 다음 요구 사항을 고려하여 내보내기 정책 규칙을 구성해야 합니다.
+
+* 해당 볼륨에서 NFSv4 호출을 허용해야 합니다.
+* 루트 사용자는 루트로 유지되어야 하고 NFSv4는 모든 접합 상위 볼륨에서 허용되어야 합니다.
+* VAAI 지원 옵션은 관련 NFS 서버에서 설정해야 합니다.
+
+
+절차에 대한 자세한 내용은 https://kb.netapp.com/on-prem/ontap/DM/VAAI/VAAI-KBs/Configure_the_correct_NFS_export_policies_for_VAAI_copy_offload["VAAI 복사 오프로드에 대한 올바른 NFS 내보내기 정책을 구성합니다"] KB 문서 를 참조하십시오.

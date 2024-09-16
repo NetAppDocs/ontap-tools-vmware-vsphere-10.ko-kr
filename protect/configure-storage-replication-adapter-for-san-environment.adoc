@@ -2,7 +2,7 @@
 permalink: protect/configure-storage-replication-adapter-for-san-environment.html 
 sidebar: sidebar 
 keywords:  
-summary: 'Site Recovery Manager\(SRM\)에 대해 SRA\(Storage Replication Adapter\)를 실행하기 전에 스토리지 시스템을 설정해야 합니다.' 
+summary: 'VMware Live Site Recovery용 스토리지 복제 어댑터\(SRA\)를 실행하기 전에 스토리지 시스템을 설정해야 합니다.' 
 ---
 = SAN 및 NAS 환경에 대해 SRA 구성
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 'Site Recovery Manager\(SRM\)에 대해 SRA\(Storage Replication Adapte
 
 
 [role="lead"]
-SRM(Site Recovery Manager)에 대해 SRA(Storage Replication Adapter)를 실행하기 전에 스토리지 시스템을 설정해야 합니다.
+VMware Live Site Recovery용 SRA(Storage Replication Adapter)를 실행하기 전에 스토리지 시스템을 설정해야 합니다.
 
 
 
@@ -21,16 +21,16 @@ SRM(Site Recovery Manager)에 대해 SRA(Storage Replication Adapter)를 실행�
 
 보호된 사이트와 복구 사이트에 다음 프로그램이 설치되어 있어야 합니다.
 
-* SRM
+* VMware 라이브 사이트 복구
 +
-SRM 설치에 대한 문서는 VMware 사이트에 있습니다.
+VMware Live Site Recovery 설치에 대한 설명서는 VMware 사이트에 있습니다.
 
 +
-https://docs.vmware.com/en/Site-Recovery-Manager/index.html["VMware Site Recovery Manager 설명서"]
+https://docs.vmware.com/en/VMware-Live-Site-Recovery/9.0/vmware-live-site-recovery/GUID-1F66BEEA-7344-45C7-BDD4-D87734906F16.html["VMware Live Site Recovery에 대해 알아보십시오"]
 
 * SRA
 +
-어댑터가 SRM에 설치됩니다.
+어댑터는 VMware Live Site Recovery에 설치됩니다.
 
 
 
@@ -53,16 +53,16 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
 
 보호된 사이트와 복구 사이트에 다음 프로그램이 설치되어 있어야 합니다.
 
-* SRM
+* VMware 라이브 사이트 복구
 +
-SRM 설치에 대한 설명서는 VMware 사이트에서 찾을 수 있습니다.
+VMware Live Site Recovery 설치에 대한 설명서는 VMware 사이트에서 확인할 수 있습니다.
 
 +
-https://docs.vmware.com/en/Site-Recovery-Manager/index.html["VMware Site Recovery Manager 설명서"]
+https://docs.vmware.com/en/VMware-Live-Site-Recovery/9.0/vmware-live-site-recovery/GUID-1F66BEEA-7344-45C7-BDD4-D87734906F16.html["VMware Live Site Recovery에 대해 알아보십시오"]
 
 * SRA
 +
-어댑터는 SRM 및 SRA 서버에 설치됩니다.
+어댑터는 VMware Live Site Recovery 및 SRA 서버에 설치됩니다.
 
 
 
@@ -70,6 +70,6 @@ https://docs.vmware.com/en/Site-Recovery-Manager/index.html["VMware Site Recover
 
 . 보호 사이트의 데이터 저장소에 vCenter Server에 등록된 가상 머신이 포함되어 있는지 확인합니다.
 . 보호 사이트의 ESXi 호스트에서 NFS 엑스포트 볼륨을 SVM(스토리지 가상 머신)에서 마운트했는지 확인합니다.
-. Array Manager 마법사를 사용하여 SRM에 어레이를 추가할 때 NFS 내보내기가 있는 IP 주소, 호스트 이름 또는 FQDN과 같은 유효한 주소가 * NFS 주소 * 필드에 지정되어 있는지 확인합니다.
+. Array Manager 마법사를 사용하여 VMware Live Site Recovery에 어레이를 추가할 때 NFS 내보내기가 있는 IP 주소, 호스트 이름 또는 FQDN과 같은 유효한 주소가 * NFS 주소 * 필드에 지정되었는지 확인합니다.
 . 를 사용합니다 `ping` 복구 사이트의 각 ESXi 호스트에서 명령을 실행하여 호스트에 SVM에서 NFS 엑스포트를 지원하는 데 사용되는 IP 주소를 액세스할 수 있는 VMkernel 포트가 있는지 확인합니다.
 
