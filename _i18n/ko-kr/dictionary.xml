@@ -1208,7 +1208,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="a00d4477c9c1974aff09f6ea5b44859d" category="paragraph">네트워크 매핑 페이지에는 보호된 사이트 리소스와 복구 사이트 리소스가 표시됩니다. 사용자 환경의 다른 네트워크에 대해서도 동일한 단계를 수행할 수 있습니다.</block>
   <block id="3dd0b6cbf926605abe281a83613cb23c" category="admonition">기존 사용자는 패치 릴리스로 업그레이드하기 전에 현재 릴리스에서 OVA 백업을 가져와야 합니다.</block>
   <block id="135dda3ac3096b9bd31ceb04b513c216" category="section-title">일반적인 마이그레이션 단계</block>
-  <block id="eece6ba8141877366a154b925c32a9f5" category="list-text">VMware vSphere 플러그인 vCenter API용 ONTAP 툴에서 로컬로 스토리지 백엔드를 온보드합니다. 마이그레이션을 위해 스토리지를 로컬 범위 스토리지로 추가합니다.</block>
   <block id="a556515aafd07bfe4c2dfa6abbaa4ccb" category="section-title">SRA 마이그레이션 단계</block>
   <block id="37470572c4c0d1df68b6e2c9cf86ecf9" category="paragraph">마이그레이션하기 전에 사이트 중 하나가 보호 상태이고 다른 사이트가 복구 상태에 있는지 확인합니다.</block>
   <block id="064e145ea2f6bfb5bc6045ba1fb3a818" category="admonition">페일오버가 방금 완료되고 재보호가 보류 중인 경우에는 마이그레이션하지 마십시오. 재보호를 완료한 다음 마이그레이션을 수행합니다.
@@ -1504,8 +1503,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="71a16bd19bda0e91c90a56e37682dc0d" category="list-text">Perl 명령을 실행하여 새 자격 증명으로 SRA를 구성합니다.</block>
   <block id="a40a3427484ba9037317f84856abff69" category="list-text">필요한 스토리지 쌍을 선택하고 해당 세부 정보를 확인합니다.</block>
   <block id="a780a238f22a802c24a2182aea27323f" category="paragraph">* vCenter에서 VMware vSphere VM용 ONTAP 툴의 스냅샷 생성(HA 구축 시 VM 3개, 비 HA 구축 시 VM 1개) *</block>
-  <block id="2e2a1bc69765f559199ac318acd2a7d7" category="list-text">VMware vSphere 10.1 릴리스용 ONTAP용 OVA 도구를 배포합니다.</block>
-  <block id="d3f31e51d90c6cd2652af74dae461781" category="paragraph">마이그레이션에 성공하고 ONTAP Tools 10.1을 vCenter Server에 등록한 후 다음을 수행합니다.</block>
   <block id="cea5a13834803a12adaeb249165351df" category="list-text">를<block ref="c81e728d9d4c2f636f067f89cc14862c" prefix=" " category="inline-code"></block> 입력하여 시스템 구성 메뉴를 선택합니다.</block>
   <block id="86ce6e9c3af571980099ca308cd245e3" category="list-text">ONTAP 자격 증명을 변경하려면 를<block ref="45c48cce2e2d7fbdea1afc51c7c6ad26" prefix=" " category="inline-code"></block> 입력합니다.</block>
   <block id="207c00a73dde0270cc0fbc7ce9c5f2fd" category="list-text">vCenter 자격 증명을 변경하려면 를<block ref="d3d9446802a44259755d38e6d163e820" prefix=" " category="inline-code"></block> 입력합니다.</block>
@@ -1587,7 +1584,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="2b1af6f75eb17029e34abc0a1219ad91" category="list-text">호스트 시스템 또는 호스트 클러스터 또는 데이터 센터를 마우스 오른쪽 버튼으로 클릭하고 * NetApp ONTAP tools * &gt; * Create Datastore * 를 선택합니다.</block>
   <block id="f72f57410286ed6d906bcd47b23e2804" category="list-text">스토리지 * 창에서 * 플랫폼 * 및 * 스토리지 VM * 을 선택합니다. 고급 옵션 * 섹션에서 해당하는 경우 사용자 지정 내보내기 정책(NFS 프로토콜의 경우) 또는 사용자 지정 이니시에이터 그룹 이름(iSCSI AMD FC 프로토콜의 경우)을 선택합니다.</block>
   <block id="a78a02bb1fc75e90c0aa8b7d5ee977d3" category="list-text">호스트 시스템 또는 호스트 클러스터 또는 데이터 센터를 마우스 오른쪽 버튼으로 클릭하고 * NetApp ONTAP tools * &gt; * Create Datastore * 를 선택합니다.</block>
-  <block id="cf15c96a94a1c3b116a75ddc813146c7" category="paragraph">VMFS(Virtual Machine File System)는 VMware vSphere 환경에 가상 머신 파일을 저장하도록 특별히 설계된 클러스터 파일 시스템입니다. 여러 ESXi 호스트가 동일한 가상 머신 파일에 동시에 액세스할 수 있으므로 vMotion 및 High Availability 같은 기능을 사용할 수 있습니다. . 시작하기 전에 다음 항목을 확인하십시오.</block>
   <block id="5574a2ea8c4feb96a776c4e8ce8a26dd" category="list-text">ONTAP 스토리지 쪽의 각 프로토콜에 대해 해당 서비스 및 LIF를 활성화해야 합니다.</block>
   <block id="00e94fd17e3b9474f70e512906843f21" category="list-text">NVMe/TCP 프로토콜을 사용하는 경우 다음 단계를 수행하여 ESXi 호스트를 구성합니다.</block>
   <block id="e08175c6fa64cba68719dea85ebd9d34" category="inline-link">VMware 호환성 가이드 를 참조하십시오</block>
@@ -1843,7 +1839,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="d6efc4dcb0d701b8153c2ef1af6e22b9" category="list-text">VMware Live Site Recovery UI에서 VMware vSphere 9.xx 릴리즈 SRA 어댑터용 ONTAP 툴을 삭제하려면 다음 단계를 수행하십시오.</block>
   <block id="de7cd16aa682868ad900edd519b06059" category="list-text">VMware Live Site Recovery 구성 관리 페이지로 이동합니다</block>
   <block id="e6af441b9194db7f4427a1199ae8c274" category="inline-link-macro">VMware Live Site Recovery 어플라이언스에 SRA를 구성합니다</block>
-  <block id="9bf06b478ac6a48afec45b6081899c00" category="list-text">의 단계에 따라 보호 및 복구 사이트 모두에 VMware vSphere 10.1 SRA 어댑터용 ONTAP 툴을 설치합니다 <block ref="200275c92830164958f040bec21a478e" category="inline-link-macro-rx"></block></block>
   <block id="f24af9463aafeb0a644c3f3baddedb00" category="list-text">VMware Live Site Recovery UI 페이지에서 * 스토리지 검색 * 및 * 장치 검색 * 작업을 수행하고 마이그레이션 전과 동일하게 장치가 표시되는지 확인합니다.</block>
   <block id="0b3582622e579cb352e246015d6ca171" category="summary">VMware Live Site Recovery의 Array Manager 마법사를 사용하여 SRA(스토리지 복제 어댑터)를 구성하여 VMware Live Site Recovery와 스토리지 가상 머신\(SVM\) 간의 상호 작용을 지원할 수 있습니다.</block>
   <block id="fe3a4c2227170fc60976b4e12c53d157" category="paragraph">VMware Live Site Recovery의 Array Manager 마법사를 사용하여 SRA(스토리지 복제 어댑터)를 구성하여 VMware Live Site Recovery와 SVM(스토리지 가상 머신) 간의 상호 작용을 지원할 수 있습니다.</block>
@@ -1885,4 +1880,8 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="c8af2a359991324c5027f67981fcf118" category="sidebar">VMware vSphere 10.1용 ONTAP 툴 설명서</block>
   <block id="425e3f9f511fc3cc32fb57688da1ec81" category="sidebar">VMware vSphere 9용 ONTAP 툴의 이전 버전에 대한 설명서</block>
   <block id="ee3ab12b14efcd93221e2e76410a3142" category="sidebar">ONTAP 지원 VMware vSphere에 대해 자세히 알아보십시오</block>
+  <block id="c81176933931ab131bb0e0556e02bad1" category="paragraph">VMFS(Virtual Machine File System)는 VMware vSphere 환경에 가상 머신 파일을 저장하도록 특별히 설계된 클러스터 파일 시스템입니다. 여러 ESXi 호스트가 동일한 가상 머신 파일에 동시에 액세스할 수 있으므로 vMotion 및 High Availability 같은 기능을 사용할 수 있습니다.</block>
+  <block id="5482792d8f62d9c636f95fc96476727d" category="paragraph">계속하기 전에 다음 항목을 확인하십시오.</block>
+  <block id="2557cccd5218f319091e35b938bd9d10" category="list-text">의 단계에 따라 보호 및 복구 사이트 모두에 VMware vSphere 10.2 SRA 어댑터용 ONTAP 툴을 설치합니다 <block ref="200275c92830164958f040bec21a478e" category="inline-link-macro-rx"></block></block>
+  <block id="910d7f663c0ecfbd5ffa3a1f61a9f541" category="paragraph">마이그레이션에 성공하고 ONTAP Tools 10.2을 vCenter Server에 등록한 후 다음을 수행합니다.</block>
 </blocks>

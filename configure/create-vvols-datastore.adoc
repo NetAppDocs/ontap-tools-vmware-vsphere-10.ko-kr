@@ -80,7 +80,10 @@ NFS 데이터 저장소가 생성되고 모든 호스트에 마운트됩니다.
 
 == VMFS 데이터 저장소를 생성합니다
 
-VMFS(Virtual Machine File System)는 VMware vSphere 환경에 가상 머신 파일을 저장하도록 특별히 설계된 클러스터 파일 시스템입니다. 여러 ESXi 호스트가 동일한 가상 머신 파일에 동시에 액세스할 수 있으므로 vMotion 및 High Availability 같은 기능을 사용할 수 있습니다. . 시작하기 전에 다음 항목을 확인하십시오.
+VMFS(Virtual Machine File System)는 VMware vSphere 환경에 가상 머신 파일을 저장하도록 특별히 설계된 클러스터 파일 시스템입니다. 여러 ESXi 호스트가 동일한 가상 머신 파일에 동시에 액세스할 수 있으므로 vMotion 및 High Availability 같은 기능을 사용할 수 있습니다.
+
+.시작하기 전에
+계속하기 전에 다음 항목을 확인하십시오.
 
 * ONTAP 스토리지 쪽의 각 프로토콜에 대해 해당 서비스 및 LIF를 활성화해야 합니다.
 * NVMe/TCP 프로토콜을 사용하는 경우 다음 단계를 수행하여 ESXi 호스트를 구성합니다.
