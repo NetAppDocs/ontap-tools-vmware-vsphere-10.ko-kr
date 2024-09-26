@@ -11,7 +11,7 @@ indexpage:
     - title: VMware vSphere용 ONTAP 툴에 대해 자세히 알아보십시오
       url: "/concepts/ontap-tools-overview.html"
     - title: VMware vSphere용 ONTAP 툴을 구축합니다
-      url: "/deploy/prepare-deployment.html"
+      url: "/deploy/ontap-tools-deployment.html"
     - title: VMware vSphere용 ONTAP 툴의 최신 릴리즈로 업그레이드하십시오
       url: "/upgrade/upgrade-ontap-tools.html"
     - title: VMware vSphere용 ONTAP 툴을 마이그레이션합니다

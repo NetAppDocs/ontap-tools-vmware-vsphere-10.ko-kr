@@ -143,7 +143,7 @@ API 사용:
 |===
 
 
-=== VMware vSphere 10.1 사용자용 ONTAP 툴을 10.2 사용자로 업그레이드합니다
+== VMware vSphere 10.1 사용자용 ONTAP 툴을 10.2 사용자로 업그레이드합니다
 
 VMware vSphere 10.1 사용자용 ONTAP 툴이 json 파일을 사용하여 생성된 클러스터 범위 사용자인 경우, admin 사용자를 사용하여 ONTAP CLI에서 다음 명령을 실행하여 10.2 릴리즈로 업그레이드하십시오.
 

@@ -24,7 +24,7 @@ entries:
     url: "/manage/virtual-machine-storage-view-datastore.html"
 - title: 스토리지 임계값 관리
   url: "/manage/manage-storage-threshold.html"
-- title: 스토리지 백엔드를 관리합니다
+- title: 스토리지 백엔드 관리
   url: "/manage/storage-backend.html"
 - title: vCenter Server 인스턴스를 관리합니다
   url: "/manage/manage-vcenter.html"
