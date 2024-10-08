@@ -21,7 +21,6 @@
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">통지 파일은 NetApp 소프트웨어에 사용된 타사의 저작권 및 라이센스에 대한 정보를 제공합니다.</block>
   <block id="cb0b3fe7df304baf3d39da385a4ec459" category="summary">새로운 기능 및 개선 사항, 해결된 문제, 알려진 문제, 주의 및 제한 사항을 비롯하여 VMware vSphere용 ONTAP 툴 릴리스에 대한 중요 정보를 제공합니다.</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="doc">릴리스 정보</block>
-  <block id="01de6d9be7e1aa419839bb0c0de0ebde" category="paragraph">해결된 문제, 알려진 문제, 주의 및 제한 사항을 비롯하여 VMware vSphere용 ONTAP 툴 릴리스에 대한 중요 정보를 제공합니다.</block>
   <block id="9918cd46976715deff1f5b36e3f39bea" category="list-text">* 노드별 설치 패키지 공간 요구 사항 *</block>
   <block id="98f2fde112dbbbfa4faf3948eb59905c" category="list-text">씬 프로비저닝된 설치의 경우 10GB</block>
   <block id="9c2ad9332e9d21d6c8fadbc51425c55b" category="list-text">* 노드당 호스트 시스템 크기 조정 요구 사항 *
@@ -1680,7 +1679,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="74b27627165f74c84a8f31981da59bce" category="list-text">보호 그룹의 이름과 설명을 지정하고 * 다음 * 을 클릭합니다.</block>
   <block id="aa204271b3b654aa91947cf038f3e150" category="list-text">vSphere Client 홈 페이지에서 * Site Recovery * 를 두 번 클릭하고 * Sites * 를 클릭합니다.</block>
   <block id="41dd8791118d286f9dd16dda93fb4676" category="inline-link">VMware vSphere 10.2용 ONTAP 툴 릴리즈 노트</block>
-  <block id="c801e65ec97aa4aa423dadb596e0ae66" category="paragraph">자세한 내용은 를<block ref="4c445cf2a5e8fa11ece1f426d363bfb8" category="inline-link-rx"></block>참조하십시오.</block>
   <block id="d2716515bd05082789a31002d4bbc958" category="cell">091</block>
   <block id="43474d50dc285d06ee8ee53c42bd7425" category="cell">iSCSI 업그레이드에 실패했습니다</block>
   <block id="e64770ac6bac05626b4f59b6a03e2ff8" category="cell">092</block>
@@ -1697,8 +1695,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="cd93511e96156295ce407e7171040058" category="admonition">VMware vSphere 10.0용 ONTAP 툴을 10.2 릴리즈로 업그레이드하려면 먼저 VMware vSphere 10.1용 ONTAP 툴로 업그레이드한 다음 10.2 릴리즈로 업그레이드해야 합니다.</block>
   <block id="7504b99fb3697e6b7b59cd3c56ab26b7" category="paragraph">VMware vSphere 10.0용 ONTAP 도구에서 10.1로 업그레이드하는 경우 업그레이드 작업을 진행하기 전에 다음 단계를 완료해야 합니다.</block>
   <block id="aadafc361893326b48d9ad9299ddff34" category="list-text">편집 설정 창의 * CD/DVD 드라이브 * 필드에서 콘텐츠 라이브러리 ISO 파일을 선택합니다.</block>
-  <block id="afa5543a0b0f6f0ebaeb44f21a75df52" category="doc">이 릴리스의 새로운 기능</block>
-  <block id="4d4c4bd87a75920c82f20ee9d507ffc3" category="paragraph">이번 VMware vSphere용 ONTAP 툴 릴리즈에 대한 중요한 정보는 에 나와 있습니다.</block>
   <block id="174e0bb9fd863076b8b78d2ca9e0dd08" category="sidebar">NFS 및 VMFS 데이터 저장소를 마운트합니다</block>
   <block id="41d4fa725cfb558559b7183adeea1e30" category="sidebar">NFS 및 VMFS 데이터 저장소를 마운트 해제합니다</block>
   <block id="e6e4c7644f1b4ac0c9a1fa2e3a633259" category="sidebar">VVOL 데이터 저장소를 확장합니다</block>
@@ -1710,7 +1706,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="3b5ecbf19ef44926d9273018c28f7e3c" category="paragraph">VMware vSphere용 ONTAP 툴은 가상 머신 라이프사이클 관리를 위한 툴 세트입니다. VMware 에코시스템과 통합되어 데이터 저장소 용량 할당 및 가상 시스템에 대한 기본 보호 기능을 제공합니다.</block>
   <block id="9b69ea2dc9e7a75dc2e6d51a798b7c4e" category="paragraph">VMware vSphere용 ONTAP 툴은 수평으로 확장 가능한 이벤트 기반 마이크로서비스의 모음으로, OVA(Open Virtual Appliance)로 구축됩니다. 이 릴리즈에서는 REST API와 ONTAP의 통합이 가능합니다.</block>
   <block id="5cf2ee241dad8c2f06781c1f8cde814d" category="cell">ONTAP 9.12.1, 9.13.1, 9.14.1 및 9.15.1의 최신 패치 릴리스.</block>
-  <block id="c20372b10311b40a3f12981f90015dec" category="paragraph">마이그레이션은 VMware vSphere 9.10D2, 9.11D4, 9.12 및 9.13 릴리즈용 ONTAP 툴에서 10.2 릴리즈로 지원됩니다.</block>
   <block id="9c914c30102fcf893634491740cba696" category="paragraph">ONTAP tools Manager를 사용하면 VMware vSphere 관리자가 관리되는 vCenter Server 인스턴스 및 온보드된 스토리지 백엔드에 대해 ONTAP 툴을 더 효율적으로 제어할 수 있습니다. ONTAP tools Manager는 vCenter Server 인스턴스, 스토리지 백엔드, 인증서, 암호 및 로그 번들 다운로드를 관리하는 데 도움이 됩니다.</block>
   <block id="81d59d981388d591597f0840a1778f7c" category="paragraph">SRA는 VMware Live Site Recovery 어플라이언스 내부에 설치되는 스토리지 공급업체별 소프트웨어입니다. 이 어댑터를 사용하면 SVM(Storage Virtual Machine) 레벨 및 클러스터 레벨 구성에서 사이트 복구 관리자와 스토리지 컨트롤러 간의 통신이 가능합니다.</block>
   <block id="4fb2d974d1e232174a0545c1d40f5345" category="section-title">VMware 라이브 사이트 복구</block>
@@ -1849,4 +1844,63 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="3d7fe3e43f9f24fffe5ed0d546d12f13" category="sidebar">ONTAP 툴 구축</block>
   <block id="4b10c0328f31fc426beffe86fb80aa8e" category="sidebar">ONTAP 도구를 복구합니다</block>
   <block id="d3dc6537536e641facaa2e80efee8fc5" category="sidebar">ONTAP 도구를 복구합니다</block>
+  <block id="65411d7178112726bcaf549fb0afd1f2" category="paragraph">VMware vSphere 9.10D2, 9.11D4, 9.12D1 및 9.13D2 릴리즈용 ONTAP 툴에서 10.2 릴리즈로의 마이그레이션이 지원됩니다.</block>
+  <block id="7cf21d459cdbb9c2a1e4864da9f56b5a" category="summary">VMware vSphere 9용 ONTAP 툴과 VMware vSphere 10용 ONTAP 툴 기능 비교에 대해 알아보십시오</block>
+  <block id="8db6f8bda67c3085df85aeea7d620ac7" category="doc">VMware vSphere 9용 ONTAP 툴 및 VMware vSphere 10용 ONTAP 툴 기능 비교</block>
+  <block id="9ed4a475dd3705157a9fed8811f63ce2" category="inline-link">NetApp 상호 운용성 매트릭스 툴</block>
+  <block id="71581c0be7a347807a5d3847fde7ec18" category="paragraph">VMware vSphere 9용 ONTAP 툴에서 VMware vSphere 10.1 또는 VMware vSphere 10.2용 ONTAP 툴로 마이그레이션하는 것이 적합한지 알아보십시오. 최신 호환성 정보는 을 참조하십시오<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block>.</block>
+  <block id="21021ea0e52be8e9c599f4dff41e5be0" category="cell">피처</block>
+  <block id="e2e5efdc8b340ced50733afbe15a4fad" category="cell">ONTAP 도구 9.13</block>
+  <block id="ec00f002c530dcfbc3a0e06a58d47937" category="cell">ONTAP 도구 10.1</block>
+  <block id="8192138c7b90bb4854daa73842003f2c" category="cell">ONTAP 도구 10.2</block>
+  <block id="ab83860ed087a089d00a21810f2a0bf7" category="cell">주요 가치 제안</block>
+  <block id="4273cb76acdc3e1de02819d037c77ad4" category="cell">향상된 보안, 규정 준수 및 자동화 기능으로 Day 0 ~ Day 2 운영을 간소화하고 단순화합니다</block>
+  <block id="798f5d4722c6982593d6671eef46371d" category="cell">10.x에서 9.x 패리티로 진화하는 ONTAP 도구, 고가용성, 성능 및 확장성 제한 확장</block>
+  <block id="b96b395121ebad86d9a5850232e77183" category="cell">VMFS 및 VVOL용 FC, VMFS-oF/FC, NVMe-oF/TCP만 포함하도록 지원이 확장되었습니다. NetApp SnapMirror의 간편한 사용, vSphere Metro 스토리지 클러스터의 간단한 설정 및 3개 사이트 SRM 지원</block>
+  <block id="92d3c85edd0fa69062ef2c7cca594814" category="cell">ONTAP 릴리스 자격</block>
+  <block id="f69940d2c889c5ba58609514e4ec4bff" category="cell">ONTAP 9.9.1에서 ONTAP 9.15.1로</block>
+  <block id="d4dcb3d0be17e55a6784a2f961f93bc2" category="cell">ONTAP 9.12.1에서 ONTAP 9.14.1로</block>
+  <block id="aaf6e1251cbc7e7b17911496f89b36fe" category="cell">ONTAP 9.12.1에서 ONTAP 9.15.1로</block>
+  <block id="d67ece44624c7aa69b0f38715d1ac2fb" category="cell">VMware 릴리스 지원</block>
+  <block id="af0223f5c63fe0b5a6e75d3087868abd" category="cell">vSphere 7.x-8.x VMware SRM(Site Recovery Manager) 8.5에서 VMware Live Site Recovery 9.0으로 마이그레이션</block>
+  <block id="170ea24c94c478abd1871386c2d1ec72" category="cell">vSphere 7.x-8.x VMware SRM(Site Recovery Manager) 8.7에서 VMware Live Site Recovery 9.0으로</block>
+  <block id="30388d1a3ab1a01f6930553a577eb80b" category="cell">프로토콜 지원</block>
+  <block id="e810af0cb36135a5b8e6f2da4440d6cb" category="cell">NFS 및 VMFS 데이터 저장소: NFS(v3 및 v4.1), VMFS(iSCSI 및 FCP) 데이터 저장소: iSCSI, FCP, NVMe/FC, NFS v3</block>
+  <block id="8bc8491da19ddf762b07de3144d61829" category="cell">NFS 및 VMFS 데이터 저장소: NFS(v3 및 v4.1), VMFS(iSCSI) VVol 데이터 저장소: iSCSI, NFS v3</block>
+  <block id="945e5bf339d57e18c8160e2e3df16d62" category="cell">NFS 및 VMFS 데이터 저장소: NFS(v3 및 v4.1), VMFS(iSCSI/FCP/NVMe-oF) 데이터 저장소: iSCSI, FCP, NFS v3</block>
+  <block id="2d215ebfc0280f8163d071454ec7ce01" category="cell">확장성</block>
+  <block id="1dc64c16edbea8bc4c02d8fc9f91793e" category="cell">호스트 및 VM: 호스트 300개, VM 최대 10,000개 데이터 저장소: NFS 600개, VMFS 최대 50개, VVol 최대 250개: 최대 14,000개</block>
+  <block id="1cd0e9deda1f8d2ec1d07623c8de9dd3" category="cell">호스트 및 VM: 호스트 vVols 600개: 최대 140,000개</block>
+  <block id="31fd0c2c8d388a4cd2c6459234743476" category="cell">관찰 가능성</block>
+  <block id="0ae86707597758caa42797b966846966" category="cell">성능, 용량 및 호스트 규정 준수 대시보드 동적 VM 및 데이터 저장소 보고서</block>
+  <block id="e48d3655de549622076e6823dc5953da" category="cell">업데이트된 성능, 용량 및 호스트 규정 준수 대시보드 동적 VM 및 데이터 저장소 보고서</block>
+  <block id="7e7397a7b79323762c61941fc0e6b5f9" category="cell">데이터 보호</block>
+  <block id="efee7a2d070a492110e424ced07a5cb4" category="cell">VMFS 및 NFS FlexVol에 대한 SRA 복제 VVols SCV 통합 및 백업에 대한 상호 운용이 가능한 복제 기반</block>
+  <block id="15449f9a7ac234221e11423d597b85d4" category="cell">iSCSI VMFS 및 NFS v3 데이터 저장소에 대한 SRA 복제</block>
+  <block id="60d68cab51d9c8a782f647a80a3dc658" category="cell">iSCSI VMFS 및 NFS v3 데이터 저장소에 대한 SRA 복제 SMAS와 SRM을 결합한 3개 사이트 보호</block>
+  <block id="b3dc8af7a4f134b177b24282d77ca3eb" category="cell">VASA 공급자 지원</block>
+  <block id="8fc79c740ab04e88f200d7eddd9e1931" category="cell">VASA 4.0 를 참조하십시오</block>
+  <block id="5638860cdd6d2160f1889c6659867484" category="cell">VASA 3.0 를 참조하십시오</block>
+  <block id="620a99069ca21ddda63311030de128d1" category="paragraph">VMware vSphere 10.2용 ONTAP 툴에서 사용할 수 있는 새롭고 향상된 기능에 대해 알아보십시오.</block>
+  <block id="a0f2f641913db0ffffab76fafad81203" category="inline-xref-macro">VMware vSphere 10.2용 ONTAP 툴의 새로운 기능</block>
+  <block id="c796cc4c6989b5a604c6eef24c2de84d" category="paragraph">새로운 기능 및 향상된 기능의 전체 목록은 를 참조하십시오<block ref="815f650045efcb134f42d68a8e4fca4c" category="inline-xref-macro-rx"></block>.</block>
+  <block id="66e41f837b141c5c933d4281f7abe97c" category="paragraph">VMware vSphere 9용 ONTAP 툴에서 ONTAP Tools 10.2로의 마이그레이션이 올바른 방법인지 자세히 알아보려면 을 참조하십시오<block ref="947428ca1064f8d19137fb8976698998" category="inline-xref-macro-rx"></block>. VMware vSphere 9.10D2, 9.11D4, 9.12 및 9.13 릴리스의 ONTAP 툴에서 ONTAP 툴 10.2로의 마이그레이션이 지원됩니다.</block>
+  <block id="bb8eb6c356c3f564a1613f6389297778" category="paragraph">자세한 내용은 를<block ref="4c445cf2a5e8fa11ece1f426d363bfb8" category="inline-link-rx"></block>참조하십시오. 릴리스 정보에 액세스하려면 NetApp 계정으로 로그인하거나 계정을 만들어야 합니다.</block>
+  <block id="0d43955405fcb8a6a71cf0abd21c3e42" category="summary">VMware vSphere 10.2용 ONTAP 툴에서 사용할 수 있는 새로운 기능에 대해 알아보십시오.</block>
+  <block id="e326cb748235539f45a016f59b087724" category="doc">VMware vSphere 10.2용 ONTAP 툴의 새로운 기능</block>
+  <block id="06933067aafd48425d67bcb01bba5cb6" category="cell">업데이트</block>
+  <block id="f9c5165567b26fd44d26cca28ae989f8" category="inline-xref-macro">NVMe 프로토콜 지원</block>
+  <block id="4348c73f2f4a3114c481b101d6c05b63" category="paragraph"><block ref="4348c73f2f4a3114c481b101d6c05b63" category="inline-xref-macro-rx"></block></block>
+  <block id="5a0b2b57fe55f878474bb1c7fe15d781" category="paragraph">VMware vSphere 10.2용 ONTAP 툴은 VMFS 데이터 저장소를 프로비저닝할 때 NVMe/FC 및 NVMe/TCP 프로토콜을 모두 지원합니다. vCenter 인터페이스 내에 원활하게 통합된 워크플로우를 통해 데이터 저장소 프로비저닝이 쉬워집니다. VMFS 데이터 저장소를 프로비저닝할 때 NVMe/FC 및 NVMe/TCP 프로토콜을 사용하여 최적화된 성능, 대규모 확장성 및 여러 데이터 요청의 효율적인 처리, 대폭적인 감소, 효율적인 리소스 관리 등의 이점을 얻을 수 있습니다. NVMe 기반 스토리지 IO는 레거시 데이터 프로토콜에 비해 CPU 활용률이 최대 50% 더 낮습니다.</block>
+  <block id="7d8b9f8f245933a3f23753f3aa1969c9" category="inline-xref-macro">파이버 채널(FC) 프로토콜 지원</block>
+  <block id="3c85cd96a35bb2b0e89ca5aa4ed84c95" category="paragraph"><block ref="3c85cd96a35bb2b0e89ca5aa4ed84c95" category="inline-xref-macro-rx"></block></block>
+  <block id="5dea3d6458f352c0baabcd90a7577765" category="paragraph">VMware vSphere 10.2용 ONTAP 툴은 VVOL 및 VMFS 데이터 저장소를 프로비저닝하기 위한 FC 프로토콜을 지원합니다. FC 프로토콜 지원의 이점으로는 고성능, 안정성 및 안정성, 확장성, 향상된 보안 및 효율적인 리소스 관리 등이 있습니다.</block>
+  <block id="b0152c6ea6956b36bce225d922d832c9" category="paragraph"><block ref="b0152c6ea6956b36bce225d922d832c9" category="inline-xref-macro-rx"></block></block>
+  <block id="e7dc7e22d370d773fbdac05c041a62da" category="paragraph">VMware vSphere 10.2용 ONTAP 툴을 통한 SnapMirror Active Sync 지원에는 vCenter UI 내에서 vSphere Metro 스토리지를 구축하기 위한 완벽한 구성 워크플로우를 제공하는 완전히 새로운 보호 클러스터 기능이 포함되어 있습니다. 따라서 전체 사이트 장애 시에도 비즈니스 서비스가 계속 작동하는 확장 클러스터 구성이 가능하여 보조 복사본을 사용하여 애플리케이션을 투명하게 페일오버할 수 있습니다.</block>
+  <block id="282017cc6c0ad4ab6de03aa6f4cdbd64" category="paragraph">SnapMirror 마법사는 SnapMirror Active Sync 외에도 SnapMirror 비동기 및 동기화를 구성할 수 있습니다.</block>
+  <block id="1d8dd3cdaea3514d2aa5572ad597f0ca" category="inline-xref-macro">SRA(Storage Replication Adapter) 개선 사항</block>
+  <block id="118d400244411eadc174437736f63aef" category="paragraph"><block ref="118d400244411eadc174437736f63aef" category="inline-xref-macro-rx"></block></block>
+  <block id="bcb303519e38c6fa54f97973b5fa43ac" category="paragraph">SRA는 VMware SRM(Site Recovery Manager) 사양 기반 DR(재해 복구) 솔루션을 구현합니다. SRM 통합을 통한 SnapMirror 액티브 동기화는 재해 복구 계획 및 조정 솔루션을 지원하여 투명한 애플리케이션 페일오버를 제공합니다.</block>
+  <block id="5dd03e8d039863e563e049be198c3fd3" category="sidebar">릴리즈 노트</block>
+  <block id="ed8359854c43609fca7bc8a46cca9eac" category="sidebar">ONTAP tools 9 및 ONTAP tools 10 기능 비교</block>
 </blocks>
