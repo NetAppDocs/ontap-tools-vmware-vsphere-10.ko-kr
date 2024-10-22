@@ -1902,6 +1902,7 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="4e005c882cc1edecc6f4ea8355bca7b4" category="paragraph">자세한 내용은 아래 _VMware vSphere용 ONTAP 툴을 구축하는 데 필요한 구성 제한_섹션을 참조하십시오.</block>
   <block id="38d6f95d0d958810c2a3735385b13b81" category="admonition">설정 시 VASA 공급자 기능만 제공하는 경우에만 VMware vSphere 9.x 설정용 ONTAP 툴을 마이그레이션하는 것이 좋습니다.</block>
   <block id="62ff1a79568cb8455f7bd93a686848b3" category="admonition">ONTAP 툴 10.2는 VMFS 데이터 저장소를 사용하는 NVMe-oF만 지원하므로 VMware vSphere 9.x용 ONTAP 툴에서 10.2로 마이그레이션한 후 NVMe/FC 프로토콜을 사용하는 VVOL 데이터 저장소가 작동하지 않습니다.</block>
-  <block id="3a3be4ef9c2ffae0f29834b33de5a0ac" category="list-text">비 HA 배포에 사용할 수 있는 3개의 무료 IP 주소, 로드 밸런서용 무료 IP 주소 1개, Kubernetes 컨트롤 플레인용 무료 IP 주소 1개, 노드에 대한 IP 주소 1개가 있어야 합니다. HA 배포의 경우 이 세 개의 IP 주소와 함께 두 번째 및 세 번째 노드에 대해 두 개의 추가 IP 주소가 필요합니다. HA 및 비 HA 배포를 모두 할당하기 전에 호스트 이름을 DNS의 사용 가능한 IP 주소에 매핑해야 합니다. HA 배포에서 5개의 IP 주소 모두 배포용으로 선택된 동일한 VLAN에 있어야 합니다.</block>
   <block id="78ea61f628036a39a60fcb38cdcb0095" category="list-text">사이트 복구 관리자 서버 페어링 * 대화 상자에서 보호된 사이트의 플랫폼 서비스 컨트롤러 주소를 입력한 후 * 다음 * 을 클릭합니다.</block>
+  <block id="310782e61fec1bb5ccb93c0b13bfd162" category="list-text">비 HA 배포에 사용할 수 있는 3개의 무료 IP 주소, 로드 밸런서용 무료 IP 주소 1개, Kubernetes 컨트롤 플레인용 무료 IP 주소 1개, 노드에 대한 IP 주소 1개가 있어야 합니다. HA 배포의 경우 이 세 개의 IP 주소와 함께 두 번째 및 세 번째 노드에 대해 두 개의 추가 IP 주소가 필요합니다. HA 및 비 HA 배포를 모두 할당하기 전에 호스트 이름을 DNS의 사용 가능한 IP 주소에 매핑해야 합니다. HA 배포의 5개 IP 주소와 비 HA 배포의 3개 IP 주소는 모두 배포를 위해 선택된 동일한 VLAN에 있어야 합니다.</block>
+  <block id="598d1a03a9fabe277211c3c65adbfbc6" category="admonition">애플리케이션 사용자 이름 및 암호는 ONTAP 도구 배포 중에 설정됩니다. 이는 VASA 공급자/SRA 등록에 필요합니다.</block>
 </blocks>
