@@ -1014,7 +1014,6 @@ _\https://&lt;ip_address&gt;/docs/api_</block>
   <block id="7156f9669ad3e8dc5543b26c90b677b9" category="paragraph">vSphere Client를 사용하여 생성한 보호 사이트와 복구 사이트를 페어링하여 SRA(Storage Replication Adapter)가 스토리지 시스템을 검색할 수 있도록 설정해야 합니다.</block>
   <block id="153de28c544cedf1d0476c82a497c1d4" category="list-text">보호 사이트와 복구 사이트에 SRA가 설치되어 있어야 합니다.</block>
   <block id="0cb204757fc030d9ca635551827fb5fc" category="list-text">Objects * &gt; * Actions * &gt; * Pair Sites * 를 클릭합니다.</block>
-  <block id="175196fb642ea5ad4b3eb3694afac00f" category="list-text">사이트 복구 관리자 서버 페어링 대화 상자에서 보호 사이트의 플랫폼 서비스 컨트롤러 주소를 입력한 후 * 다음 * 을 클릭합니다.</block>
   <block id="c036188407dc1d12b6c53670d6f74de9" category="list-text">vCenter Server 선택 섹션에서 다음을 수행합니다.</block>
   <block id="c5740be3b9782c8fc0bd8ed3b5756bae" category="list-text">보호 사이트의 vCenter Server가 페어링하는 데 일치하는 후보로 나타나는지 확인합니다.</block>
   <block id="f866f4a2783cef537c7ed29ec6bffe37" category="list-text">SSO 관리 자격 증명을 입력한 다음 * 마침 * 을 클릭합니다.</block>
@@ -1825,7 +1824,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="4501e00e353424cff3952eefd1e4da0b" category="admonition">상위 vCenter Server 암호에는 이러한 특수 문자($,',")가 포함될 수 없습니다.</block>
   <block id="c5323fb352d4289acd4e443d9b6ffbc6" category="list-text">VMware vSphere용 ONTAP 툴이 구축 후 에 연결하여 등록할 vCenter Server 인스턴스에 대한 로그인 자격 증명이 있습니다.</block>
   <block id="f0e37f4c361ffc72156998eab274a0df" category="list-text">브라우저 캐시가 삭제됩니다.</block>
-  <block id="3329fe5e48659261596f0eb67edfb0ee" category="list-text">비 HA 배포에 사용할 수 있는 3개의 무료 IP 주소, 로드 밸런서용 무료 IP 주소 1개, Kubernetes 컨트롤 플레인용 무료 IP 주소 1개, 노드에 대한 IP 주소 1개가 있어야 합니다. HA 배포의 경우 이 세 개의 IP 주소와 함께 두 번째 및 세 번째 노드에 대해 두 개의 추가 IP 주소가 필요합니다. 호스트 이름은 를 할당하기 전에 DNS의 사용 가능한 IP 주소에 매핑되어야 합니다. 5개의 IP 주소 모두 배포용으로 선택된 동일한 VLAN에 있어야 합니다.</block>
   <block id="89e60c832660d19053506627cc1f15b4" category="list-text">사용자 지정 CA 인증서가 필수인 다중 vCenter 배포의 경우 인증서가 발급된 도메인 이름이 가상 IP 주소에 매핑되어 있는지 확인합니다. 도메인 이름에 _nslookup_check 를 수행하여 도메인이 의도된 IP 주소로 확인되는지 확인합니다. 인증서는 부하 분산 장치 IP 주소의 도메인 이름과 IP 주소를 사용하여 만들어야 합니다.</block>
   <block id="7b4a891ff8781d5df1c6613d8a092a8a" category="doc">vCenter Server 인스턴스를 관리합니다</block>
   <block id="55a2bc624166080e36f75d7c8c9ae6a9" category="paragraph">vCenter Server 인스턴스는 호스트, 가상 머신 및 스토리지 백엔드를 제어할 수 있는 중앙 관리 플랫폼입니다.</block>
@@ -1904,4 +1902,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="4e005c882cc1edecc6f4ea8355bca7b4" category="paragraph">자세한 내용은 아래 _VMware vSphere용 ONTAP 툴을 구축하는 데 필요한 구성 제한_섹션을 참조하십시오.</block>
   <block id="38d6f95d0d958810c2a3735385b13b81" category="admonition">설정 시 VASA 공급자 기능만 제공하는 경우에만 VMware vSphere 9.x 설정용 ONTAP 툴을 마이그레이션하는 것이 좋습니다.</block>
   <block id="62ff1a79568cb8455f7bd93a686848b3" category="admonition">ONTAP 툴 10.2는 VMFS 데이터 저장소를 사용하는 NVMe-oF만 지원하므로 VMware vSphere 9.x용 ONTAP 툴에서 10.2로 마이그레이션한 후 NVMe/FC 프로토콜을 사용하는 VVOL 데이터 저장소가 작동하지 않습니다.</block>
+  <block id="3a3be4ef9c2ffae0f29834b33de5a0ac" category="list-text">비 HA 배포에 사용할 수 있는 3개의 무료 IP 주소, 로드 밸런서용 무료 IP 주소 1개, Kubernetes 컨트롤 플레인용 무료 IP 주소 1개, 노드에 대한 IP 주소 1개가 있어야 합니다. HA 배포의 경우 이 세 개의 IP 주소와 함께 두 번째 및 세 번째 노드에 대해 두 개의 추가 IP 주소가 필요합니다. HA 및 비 HA 배포를 모두 할당하기 전에 호스트 이름을 DNS의 사용 가능한 IP 주소에 매핑해야 합니다. HA 배포에서 5개의 IP 주소 모두 배포용으로 선택된 동일한 VLAN에 있어야 합니다.</block>
+  <block id="78ea61f628036a39a60fcb38cdcb0095" category="list-text">사이트 복구 관리자 서버 페어링 * 대화 상자에서 보호된 사이트의 플랫폼 서비스 컨트롤러 주소를 입력한 후 * 다음 * 을 클릭합니다.</block>
 </blocks>
