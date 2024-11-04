@@ -2,8 +2,12 @@
 section: manage
 title: ONTAP 툴 관리
 entries:
+- title: VMware vSphere용 NetApp ONTAP 툴 플러그인 대시보드 개요
+  url: "/configure/dashboard-overview.html"
 - title: 데이터 저장소를 관리합니다
   entries:
+  - title: 데이터 저장소를 생성합니다
+    url: "/configure/create-vvols-datastore.html"
   - title: NFS 및 VMFS 데이터 저장소를 마운트합니다
     url: "/manage/mount-datastores-on-host.html"
   - title: NFS 및 VMFS 데이터 저장소를 마운트 해제합니다
@@ -54,6 +58,8 @@ entries:
     url: "/manage/migrate-standard-virtual-machines-to-vvols-datastores.html"
   - title: VASA 정리
     url: "/manage/delete-virtual-machines.html"
+- title: 스토리지 시스템 및 호스트를 검색합니다
+  url: "/configure/discover-storage-systems-and-hosts.html"
 - title: ESXi 호스트 설정을 수정합니다
   url: "/manage/edit-esxi-host-settings.html"
 - title: 암호 관리

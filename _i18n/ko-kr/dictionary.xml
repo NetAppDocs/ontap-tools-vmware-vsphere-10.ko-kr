@@ -308,9 +308,6 @@
   <block id="27e514c64c8a3970155422f887b4e4c9" category="cell">ESXi 호스트 규정 준수 카드</block>
   <block id="37a7aee5902e5e8b7d36af678ff3baf3" category="cell">이 카드는 설정 그룹/범주별로 권장되는 NetApp 호스트 설정과 관련된 모든 ESXi 호스트(선택한 vCenter에 대한) 설정의 전체 규정 준수 상태를 표시합니다.
 권장 설정 적용 링크를 클릭하여 권장 설정을 적용할 수 있습니다. Issues/unknown을 클릭하여 호스트 목록을 볼 수 있습니다.</block>
-  <block id="ea87c4ef97995827b2d23fec795f9cbd" category="summary">ESXi 호스트에서 주문형 검색을 실행하여 스토리지 데이터에 대한 최신 업데이트를 가져올 수 있습니다.</block>
-  <block id="de458ad6ecb99cfc8e4cc7fa762462c4" category="doc">호스트 데이터를 업데이트합니다</block>
-  <block id="6099322beed408d39a0c31a402ba9f04" category="list-text">호스트 데이터 업데이트 * 팝업 창에서 * 예 * 를 선택하여 접속된 모든 스토리지 시스템을 다시 검색합니다.</block>
   <block id="1772747eceb4be4c72a7b0ba5c7c5a67" category="summary">VMware vSphere 및 ONTAP System Manager용 ONTAP 툴과 함께 제공되는 JSON 파일을 사용하여 스토리지 백엔드 관리를 위한 새로운 사용자 역할을 구성할 수 있습니다.</block>
   <block id="fde3f7a850bbaaac2a3706bf8c7df54c" category="doc">ONTAP 사용자 역할 및 권한을 구성합니다</block>
   <block id="322c3ffbc77c8245a48d32406a927fb6" category="paragraph">VMware vSphere 및 ONTAP System Manager용 ONTAP 툴과 함께 제공되는 JSON 파일을 사용하여 스토리지 백엔드 관리를 위한 새로운 사용자 역할 및 권한을 구성할 수 있습니다.</block>
@@ -1301,9 +1298,7 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="721041095b64df665034c0b19c967475" category="sidebar">VMware vSphere용 ONTAP 툴의 고가용성</block>
   <block id="01c23a6022de21870627c656bac73ece" category="sidebar">REST API를 사용하여 자동화</block>
   <block id="f724dfae8a2bb3b34e049dcedf88d10d" category="sidebar">데이터 저장소와 가상 머신을 보호합니다</block>
-  <block id="30dcbadaeab2008f15a279a602f8b6e2" category="sidebar">재해 복구를 위한 스토리지 시스템 구성</block>
   <block id="25890161c3df1f2618234e8f48e2c18b" category="sidebar">확장성이 높은 환경에 맞게 SRA를 구성합니다</block>
-  <block id="3d7d171ecad1cba0c2d8d707b648b023" category="sidebar">보호 및 복구 사이트를 구성합니다</block>
   <block id="a239701adb72159a71164b036c18a53a" category="sidebar">보호 및 복구 사이트 리소스를 구성합니다</block>
   <block id="6956cfc9382ccb41c8ac57f99255b409" category="sidebar">복제된 스토리지 시스템을 확인합니다</block>
   <block id="a2fa58344be7fbd9a2be0320a8df0f77" category="sidebar">ONTAP 툴을 업그레이드합니다</block>
@@ -1524,7 +1519,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="521a15c47fb41d8055141333f4c3f248" category="inline-link">소프트웨어 NVMe over RDMA 또는 NVMe over TCP 어댑터를 추가합니다</block>
   <block id="7b30cf0bf941c59665059610f32765b2" category="list-text">VMware vSphere 7 릴리즈의 경우 VMware 사이트의 지침에 따라<block ref="78ea54819b62ddbcd655a4671d8a5b88" category="inline-link-rx"></block> NVMe/TCP 소프트웨어 어댑터를 구성합니다. VMware vSphere 8 릴리즈의 경우, 에 따라<block ref="d7f2ab4a5e61632cb53ab17b5775b973" category="inline-link-rx"></block> NVMe/TCP 소프트웨어 어댑터를 구성합니다.</block>
   <block id="f897e941469c1def0ceaad5904784393" category="inline-link">vSphere 8.0 업데이트 1 및 VMFS 데이터 저장소용 ONTAP 9.13.1을 사용하여 NVMe/TCP를 구성하는 방법</block>
-  <block id="81dc7c047ef799c2030ebccbe36d3322" category="list-text"><block ref="6c4ebf1ca886332539cd9c26d849d11e" category="inline-link-macro-rx"></block>ESXi 호스트에서 작업을 실행합니다. 자세한 내용은 을 참조하십시오<block ref="08964a7c7e6cd9155ed7286907a68824" category="inline-link-rx"></block></block>
   <block id="b52744b7fe6a50a639b45ebe19c17f96" category="list-text">NVMe/FC 프로토콜을 사용하는 경우 다음 단계를 수행하여 ESXi 호스트를 구성합니다.</block>
   <block id="0d2e4cff54d6f550e6b15a47007a161c" category="list-text">ESXi 호스트에서 NVMe-oF(NVMe over Fabrics)를 사용하도록 설정합니다.</block>
   <block id="802068251371051bc6ae5a5f001b4460" category="list-text">SCSI 조닝을 완료합니다.</block>
@@ -1839,7 +1833,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="c93b5a9d65c77be9a5dfa309362afe22" category="sidebar">vCenter Server를 추가합니다</block>
   <block id="3d7fe3e43f9f24fffe5ed0d546d12f13" category="sidebar">ONTAP 툴 구축</block>
   <block id="4b10c0328f31fc426beffe86fb80aa8e" category="sidebar">ONTAP 도구를 복구합니다</block>
-  <block id="d3dc6537536e641facaa2e80efee8fc5" category="sidebar">ONTAP 도구를 복구합니다</block>
   <block id="65411d7178112726bcaf549fb0afd1f2" category="paragraph">VMware vSphere 9.10D2, 9.11D4, 9.12D1 및 9.13D2 릴리즈용 ONTAP 툴에서 10.2 릴리즈로의 마이그레이션이 지원됩니다.</block>
   <block id="7cf21d459cdbb9c2a1e4864da9f56b5a" category="summary">VMware vSphere 9용 ONTAP 툴과 VMware vSphere 10용 ONTAP 툴 기능 비교에 대해 알아보십시오</block>
   <block id="8db6f8bda67c3085df85aeea7d620ac7" category="doc">VMware vSphere 9용 ONTAP 툴 및 VMware vSphere 10용 ONTAP 툴 기능 비교</block>
@@ -1905,4 +1898,8 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="78ea61f628036a39a60fcb38cdcb0095" category="list-text">사이트 복구 관리자 서버 페어링 * 대화 상자에서 보호된 사이트의 플랫폼 서비스 컨트롤러 주소를 입력한 후 * 다음 * 을 클릭합니다.</block>
   <block id="310782e61fec1bb5ccb93c0b13bfd162" category="list-text">비 HA 배포에 사용할 수 있는 3개의 무료 IP 주소, 로드 밸런서용 무료 IP 주소 1개, Kubernetes 컨트롤 플레인용 무료 IP 주소 1개, 노드에 대한 IP 주소 1개가 있어야 합니다. HA 배포의 경우 이 세 개의 IP 주소와 함께 두 번째 및 세 번째 노드에 대해 두 개의 추가 IP 주소가 필요합니다. HA 및 비 HA 배포를 모두 할당하기 전에 호스트 이름을 DNS의 사용 가능한 IP 주소에 매핑해야 합니다. HA 배포의 5개 IP 주소와 비 HA 배포의 3개 IP 주소는 모두 배포를 위해 선택된 동일한 VLAN에 있어야 합니다.</block>
   <block id="598d1a03a9fabe277211c3c65adbfbc6" category="admonition">애플리케이션 사용자 이름 및 암호는 ONTAP 도구 배포 중에 설정됩니다. 이는 VASA 공급자/SRA 등록에 필요합니다.</block>
+  <block id="9fc56e301e08de92885a49e832294c9b" category="list-text"><block ref="d7dfa373f3b590500a261c503f3d702f" category="inline-link-macro-rx"></block>ESXi 호스트에서 작업을 실행합니다. 자세한 내용은 을 참조하십시오<block ref="08964a7c7e6cd9155ed7286907a68824" category="inline-link-rx"></block></block>
+  <block id="1bf63b567c68de7fcd78fcc89f42f93c" category="sidebar">호스트 클러스터 보호를 사용하여 보호합니다</block>
+  <block id="d8ddfdd9298e5862ca00168195c4be29" category="sidebar">SRA 보호를 사용하여 보호합니다</block>
+  <block id="f6af7ed15ad67767270b003672cdfdbb" category="sidebar">ONTAP 도구 설정을 복구합니다</block>
 </blocks>
