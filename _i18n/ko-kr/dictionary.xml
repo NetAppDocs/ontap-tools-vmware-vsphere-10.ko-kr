@@ -243,8 +243,6 @@
   <block id="7cd974572a0712e3f4e007a1ceb0f760" category="paragraph">ONTAP 툴에서 vCenter Server 인스턴스를 제거하면 다음 작업이 자동으로 수행됩니다.</block>
   <block id="32d5cbccaec76a2688c3f202f4a0fc0c" category="list-text">플러그인이 등록되지 않았습니다.</block>
   <block id="bc4832cad0eb15905b3945a4b071a06d" category="list-text">플러그인 권한 및 플러그인 역할이 제거됩니다.</block>
-  <block id="d5fb672b62a493a68492dfcdac746c0b" category="summary">온보딩된 SVM이 vCenter 클라이언트 UI의 VASA Provider 아래에 표시되는지 확인합니다.</block>
-  <block id="53d752e3cc33b6d74616d71f03425e0f" category="doc">등록된 VASA 공급자를 확인합니다</block>
   <block id="b05db788b95e64cca7587ea1c9a8d4fe" category="paragraph">온보드된 VASA 공급자가 vCenter 클라이언트 UI 및 원격 플러그인 UI의 VASA Provider 아래에 표시되는지 확인합니다.</block>
   <block id="12c4b643913312ffb0ca49cedfcedd35" category="list-text">vCenter 클라이언트 UI에서 VASA Provider를 확인하려면 다음 단계를 수행하십시오.</block>
   <block id="45b4fd4eef700c8aca7d8e7d745b8cbd" category="list-text">스토리지 공급자/스토리지 백엔드에서 온보드된 VASA 공급자가 올바르게 나열되는지 확인합니다.</block>
@@ -1902,4 +1900,5 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="1bf63b567c68de7fcd78fcc89f42f93c" category="sidebar">호스트 클러스터 보호를 사용하여 보호합니다</block>
   <block id="d8ddfdd9298e5862ca00168195c4be29" category="sidebar">SRA 보호를 사용하여 보호합니다</block>
   <block id="f6af7ed15ad67767270b003672cdfdbb" category="sidebar">ONTAP 도구 설정을 복구합니다</block>
+  <block id="a2635d75789f249837881cc5136979e1" category="paragraph">* 완료 후 *</block>
 </blocks>
