@@ -1901,4 +1901,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="d8ddfdd9298e5862ca00168195c4be29" category="sidebar">SRA 보호를 사용하여 보호합니다</block>
   <block id="f6af7ed15ad67767270b003672cdfdbb" category="sidebar">ONTAP 도구 설정을 복구합니다</block>
   <block id="a2635d75789f249837881cc5136979e1" category="paragraph">* 완료 후 *</block>
+  <block id="7770bd163d7ff3ef18fb8fde03d271ba" category="list-text">배포 HA 모드에서 배포 후 VM 이름의 이름을 바꾸지 마십시오.</block>
+  <block id="c1d3c828ba9f7365c33657c18574ce0d" category="admonition">VMware vSphere 9.13P1 버전용 ONTAP 툴을 사용하는 경우 10.2 버전으로 마이그레이션하기 전에 9.13D2로 업그레이드해야 합니다.</block>
 </blocks>
