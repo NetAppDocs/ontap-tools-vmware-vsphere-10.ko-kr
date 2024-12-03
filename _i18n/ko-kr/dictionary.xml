@@ -313,8 +313,6 @@
   <block id="5d0fbbf77d63dd4a6501929f5b229ee9" category="admonition">사용자는 클러스터 또는 스토리지 가상 머신(SVM) 레벨에서 직접 생성할 수 있습니다. user_roles.json 파일을 사용하지 않고 사용자를 생성할 수도 있습니다. 생성한 경우 SVM 레벨에서 최소 권한 세트가 있어야 합니다.</block>
   <block id="43646e7149ab6454d53dccb48f546e65" category="list-text">다운로드한 _\https://&lt;loadbalancerIP&gt;:8443/virtualization/user-privileges/users_roles.zip_file의 압축을 풉니다.</block>
   <block id="e85e7085cb02b451ed0ba49e3f1febd6" category="list-text">클러스터의 클러스터 관리 IP 주소를 사용하여 ONTAP System Manager에 액세스합니다.</block>
-  <block id="6e2198e632f8de89c3e71e8215c06c49" category="list-text">클러스터 또는 SVM 사용자로 로그인합니다.</block>
-  <block id="ecc1dbb4ae50c911f6b9e1bb413a439f" category="list-text">클러스터 * &gt; * 설정 * &gt; * 사용자 및 역할 * 창을 선택합니다.</block>
   <block id="6689eaef2ac72f5df927cd96978a3e89" category="list-text">* 찾아보기 * ONTAP 권한 JSON 파일을 선택하여 업로드합니다.</block>
   <block id="64d37b9f5522fbf3a1c422e4d3605497" category="paragraph">Product(제품) 필드는 자동으로 채워집니다.</block>
   <block id="3bf7f46e9f0a95a7cd2b53aa11857658" category="list-text">제품 기능 드롭다운 메뉴에서 필요한 기능을 선택합니다.</block>
@@ -1903,4 +1901,10 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="a2635d75789f249837881cc5136979e1" category="paragraph">* 완료 후 *</block>
   <block id="7770bd163d7ff3ef18fb8fde03d271ba" category="list-text">배포 HA 모드에서 배포 후 VM 이름의 이름을 바꾸지 마십시오.</block>
   <block id="c1d3c828ba9f7365c33657c18574ce0d" category="admonition">VMware vSphere 9.13P1 버전용 ONTAP 툴을 사용하는 경우 10.2 버전으로 마이그레이션하기 전에 9.13D2로 업그레이드해야 합니다.</block>
+  <block id="cf16829e329e313f56570072f21af5b9" category="list-text">admin Privileges를 사용하여 클러스터에 로그인합니다. 사용자를 구성하려면 다음 단계를 수행하십시오.</block>
+  <block id="73413dc748808c141555f95dacc368af" category="list-text">클러스터 ONTAP 툴 사용자를 구성하려면 * 클러스터 * &gt; * 설정 * &gt; * 사용자 및 역할 * 창을 선택합니다.</block>
+  <block id="122159aaab87ec5c9bfb746121abf088" category="list-text">SVM ONTAP 툴 사용자를 구성하려면 * 스토리지 SVM * &gt; * 설정 * &gt; * 사용자 및 역할 * 창을 선택하십시오.</block>
+  <block id="2000e83d945563ce0118bc3b5c5f6fbc" category="list-text">admin Privileges를 사용하여 클러스터에 로그인합니다.</block>
+  <block id="9d65b5cebe69c5a066b9142b67334767" category="list-text">클러스터 ONTAP 툴 역할을 구성하려면 * 클러스터 * &gt; * 설정 * &gt; * 사용자 및 역할 * 창을 선택합니다.</block>
+  <block id="5aa0457cc95965b125467f8be60fadcf" category="list-text">클러스터 SVM ONTAP 툴 역할을 구성하려면 * 스토리지 SVM * &gt; * 설정 * &gt; * 사용자 및 역할 * 창을 선택합니다</block>
 </blocks>
