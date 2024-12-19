@@ -160,4 +160,5 @@ NOTE: 상위 vCenter Server 암호에는 이러한 특수 문자($,',")가 포�
 
 
 * 사용자 지정 CA 인증서가 필수인 다중 vCenter 배포의 경우 인증서가 발급된 도메인 이름이 가상 IP 주소에 매핑되어 있는지 확인합니다. 도메인 이름에 _nslookup_check 를 수행하여 도메인이 의도된 IP 주소로 확인되는지 확인합니다. 인증서는 부하 분산 장치 IP 주소의 도메인 이름과 IP 주소를 사용하여 만들어야 합니다.
+* HA가 아닌 고급 및 HA 구성에서 VMware vSphere 10.2용 ONTAP 툴을 설치하기 전에 KB 문서: https://kb.netapp.com/on-prem/ontap/da/NAS/NAS-KBs/pre-requisites_for_installing_OTV_10.1_and_10.2_in_NonHA_Advanced_and_HA["비 HA 고급 및 HA 구성을 위한 사전 요구 사항"]
 
