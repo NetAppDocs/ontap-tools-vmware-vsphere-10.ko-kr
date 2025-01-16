@@ -2008,4 +2008,5 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="3c8480343462c93f8ec9ed8f6c4a4282" category="sidebar">VMware vSphere 10.2용 ONTAP 툴 설명서</block>
   <block id="2e0332b2709dcff7df5d28c654c54066" category="sidebar">VMware vSphere 10.3용 ONTAP 툴</block>
   <block id="3d7d171ecad1cba0c2d8d707b648b023" category="sidebar">보호 및 복구 사이트를 구성합니다</block>
+  <block id="039f647b3ad55c89a6a5ff0d6109bd4f" category="paragraph">VMware vSphere 10.3용 ONTAP 툴은 VMFS, VVOL 데이터 저장소와 해당 VM에 대한 관측성 메트릭 지원을 확장합니다.</block>
 </blocks>
