@@ -2,8 +2,12 @@
 section: manage
 title: ONTAP 툴 관리
 entries:
-- title: VMware vSphere용 NetApp ONTAP 툴 플러그인 대시보드 개요
+- title: VMware vSphere용 ONTAP 툴 대시보드 개요
   url: "/configure/dashboard-overview.html"
+- title: ONTAP 도구 관리자 사용자 인터페이스
+  url: "/configure/manager-user-interface.html"
+- title: 어플라이언스 설정을 편집합니다
+  url: "/manage/edit-appliance-settings.html"
 - title: 데이터 저장소를 관리합니다
   entries:
   - title: 데이터 저장소를 생성합니다
@@ -34,8 +38,6 @@ entries:
   url: "/manage/manage-vcenter.html"
 - title: 인증서를 관리합니다
   url: "/manage/certificate-manage.html"
-- title: Igroup 및 엑스포트 정책을 관리합니다
-  url: "/manage/igroup-management.html"
 - title: VMware vSphere 유지 관리 콘솔용 ONTAP 툴에 액세스할 수 있습니다
   entries:
   - title: VMware vSphere 유지 관리 콘솔용 ONTAP 툴 개요
@@ -80,3 +82,5 @@ entries:
     url: "/manage/edit-hostcluster-protection.html"
   - title: 호스트 클러스터 보호를 제거합니다
     url: "/manage/delete-hostcluster-protection.html"
+- title: 제로급 RPO
+  url: "/manage/enable-backup.html"

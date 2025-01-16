@@ -8,12 +8,9 @@ summary: 데이터 저장소 마운트 해제 작업은 ESXi 호스트에서 NFS
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
-:firstname: [.lead]
-:author: [.lead]
-:authorinitials: [
-:authors: [.lead]
 
 
+[role="lead"]
 데이터 저장소 마운트 해제 작업은 ESXi 호스트에서 NFS 또는 VMFS 데이터 저장소를 마운트 해제합니다. 데이터 저장소 마운트 해제 작업은 VMware vSphere용 ONTAP 툴로 검색되거나 관리되는 NFS 및 VMFS 데이터 저장소에 대해 설정됩니다.
 
 * 단계 *

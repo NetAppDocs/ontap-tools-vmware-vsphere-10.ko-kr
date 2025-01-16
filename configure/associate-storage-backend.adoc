@@ -11,7 +11,7 @@ summary: 정보가 필요합니다.
 
 
 [role="lead"]
-vCenter Server 목록 페이지에는 연결된 스토리지 백엔드 수가 표시됩니다. 각 vCenter Server 인스턴스에는 스토리지 백엔드를 연결하는 옵션이 있습니다.
+vCenter Server 목록 페이지에는 연결된 스토리지 백엔드 수가 표시됩니다. 각 vCenter Server 인스턴스에는 스토리지 백엔드와 연결할 수 있는 옵션이 있습니다.
 
 * 이 작업에 대한 정보 *
 

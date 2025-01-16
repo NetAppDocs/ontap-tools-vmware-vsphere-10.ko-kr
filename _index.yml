@@ -7,7 +7,7 @@ indexpage:
   - title: 시작하십시오
     links:
     - title: 릴리스 정보
-      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP3327064
+      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP3334864
     - title: VMware vSphere용 ONTAP 툴에 대해 자세히 알아보십시오
       url: "/concepts/ontap-tools-overview.html"
     - title: VMware vSphere용 ONTAP 툴을 구축합니다
@@ -28,6 +28,8 @@ indexpage:
       url: "/protect/enable-storage-replication-adapter.html"
   - title: 더 많은 리소스
     links:
+    - title: VMware vSphere 10.2용 ONTAP 툴 설명서
+      url: https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere-102/index.html
     - title: VMware vSphere 10.1용 ONTAP 툴 설명서
       url: https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere-101/index.html
     - title: VMware vSphere 9용 ONTAP 툴의 이전 버전에 대한 설명서

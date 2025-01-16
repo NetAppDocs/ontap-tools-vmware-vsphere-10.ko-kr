@@ -21,4 +21,5 @@ VMware vSphere용 ONTAP 툴의 구성 요소:
 * VM 세부 관리를 위한 VASA 공급자
 * 스토리지 정책 기반 관리
 * SRA(Storage Replication Adapter)
+* SnapMirror 활성 동기화(SMAS)
 

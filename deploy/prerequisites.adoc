@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ONTAP tools,Storage Replication Adapter 
 summary: VMware vSphere용 ONTAP 툴을 구축하기 전에 배포 패키지의 공간 요구 사항과 몇 가지 기본적인 호스트 시스템 요구 사항을 숙지해야 합니다. 
 ---
-= VMware vSphere용 ONTAP 툴을 구축하기 위한 사전 요구 사항
+= VMware vSphere 구축을 위한 ONTAP 툴 사전 요구 사항
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -21,8 +21,8 @@ VMware vSphere용 ONTAP 툴을 VMware vCSA(vCenter Server 가상 어플라이언
 
 * * 노드별 설치 패키지 공간 요구 사항 *
 +
-** 씬 프로비저닝된 설치의 경우 10GB
-** 일반 프로비저닝 설치의 경우 248GB
+** 씬 프로비저닝된 설치의 경우 15GB
+** 일반 프로비저닝 설치의 경우 348GB
 
 
 * * 노드당 호스트 시스템 크기 조정 요구 사항 *
@@ -32,19 +32,23 @@ VMware vSphere용 ONTAP 툴을 VMware vCSA(vCenter Server 가상 어플라이언
 |===
 
 
-| * 배포 유형 * | * CPU * | * 메모리(GB) * 
+| * 배포 유형 * | * CPU * | * 메모리(GB) * | * 디스크 공간(GB) 일반 프로비저닝 * 
 
 
-| 소형(S) | 8 | 16 
+| 비 HA 소형 | 9 | 18 | 350 
 
 
-| 중간(M) | 12 | 24 
+| HA 미디어가 아닙니다 | 13 | 26 | 350 
 
 
-| 크게(L) | 16 | 32 
+| HA 소규모 | 27 | 54 | 1050 
+
+
+| HA 중간 규모 | 39 | 78 | 1050 
+
+
+| HA 대규모 | 51 | 102 | 1050 
 |===
-자세한 내용은 아래 _VMware vSphere용 ONTAP 툴을 구축하는 데 필요한 구성 제한_섹션을 참조하십시오.
-
 
 
 == 최소 스토리지 및 애플리케이션 요구사항
@@ -53,7 +57,7 @@ VMware vSphere용 ONTAP 툴을 VMware vCSA(vCenter Server 가상 어플라이언
 | 스토리지, 호스트 및 애플리케이션 | 최소 버전 요구 사항 
 
 
-| ONTAP | ONTAP 9.12.1, 9.13.1, 9.14.1 및 9.15.1의 최신 패치 릴리스. 
+| ONTAP | 9.14.1, 9.15.1 및 9.16.0. FAS, ASA A-Series, ASA C-Series, AFF A-Series, AFF C-Series 및 ASA R2와 같은 스토리지 효율성 기술을 보유하고 있습니다. 
 
 
 | ESXi 호스트 | ESXi 7.0.3을 참조하십시오 
@@ -65,7 +69,7 @@ VMware vSphere용 ONTAP 툴을 VMware vCSA(vCenter Server 가상 어플라이언
 | VASA 공급자 | 3.0 
 
 
-| OVA 응용 프로그램 | 10.2 
+| OVA 응용 프로그램 | 10.3 
 |===
 상호 운용성 매트릭스 툴(IMT)에는 지원되는 ONTAP 버전, vCenter Server, ESXi 호스트 및 플러그인 애플리케이션에 대한 최신 정보가 포함되어 있습니다.
 
@@ -80,22 +84,22 @@ https://imt.netapp.com/matrix/imt.jsp?components=105475;&solution=1777&isHWU&src
 |===
 
 
-| * 배포 * | * 유형 * | * VVol 수 * | * 호스트 수 * | * 프로토콜 유형 * 
+| * 배포 * | * 유형 * | * VVol 수 * | * 호스트 수 * 
 
 
-| 손쉬운 배포 | 소형(S) | 12K 이하 | 32 | NFS, iSCSI를 지원합니다 
+| HA가 아닙니다 | 소형(S) | 12K 이하 | 32 
 
 
-| 손쉬운 배포 | 중간(M) | 24K 이하 | 64 | NFS, iSCSI를 지원합니다 
+| HA가 아닙니다 | 중간(M) | 24K 이하 | 64 
 
 
-| 고가용성 | 소형(S) | 24K 이하 | 64 | NFS, iSCSI를 지원합니다 
+| 고가용성 | 소형(S) | 24K 이하 | 64 
 
 
-| 고가용성 | 중간(M) | 5만 | 128 | NFS, iSCSI를 지원합니다 
+| 고가용성 | 중간(M) | 5만 | 128 
 
 
-| 고가용성 | 크게(L) | 100k 이하 | 256 [참고] 표에 있는 호스트 수는 여러 vCenter의 총 호스트 수를 보여 줍니다. | NFS, iSCSI를 지원합니다 
+| 고가용성 | 크게(L) | 100k 이하 | 256 [참고] 표에 있는 호스트 수는 여러 vCenter의 총 호스트 수를 보여 줍니다. 
 |===
 노드당 호스트 시스템 크기 조정 요구 사항에 대한 자세한 내용은 을 link:../deploy/prerequisites.html["VMware vSphere용 ONTAP 툴을 구축하기 위한 사전 요구 사항"]참조하십시오.
 
@@ -143,22 +147,70 @@ https://imt.netapp.com/matrix/imt.jsp?components=105475;&solution=1777&isHWU&src
 
 
 
+== 포트 요구 사항
+
+다음 표에는 NetApp에서 사용하는 네트워크 포트와 그 용도가 요약되어 있습니다. 이러한 포트가 열려 있고 시스템 내에서 올바른 작동 및 통신을 위해 액세스할 수 있는지 확인하십시오. 관련 서비스를 위해 이러한 포트의 트래픽이 올바르게 작동할 수 있도록 필요한 네트워크 구성이 준비되어 있는지 확인합니다. 보안 정책에 따라 네트워크 내에서 이 트래픽을 허용하도록 방화벽 또는 기타 보안 어플라이언스를 구성해야 할 수 있습니다.
+
+|===
+
+
+| * 포트 * | * 설명 * 
+
+
+| 22(TCP) | Ansible은 클러스터 프로비저닝 중의 통신에 이 SSH 포트를 사용합니다. 이 포트는 유지 보수 사용자 암호, 상태 메시지 변경 및 HA 구성의 경우 세 노드 모두에서 값을 업데이트하는 등의 기능에 필요합니다. 
+
+
+| 443(TCP) | VASA 공급자 서비스에 대한 들어오는 통신을 위한 통과 포트입니다. VASA 공급자 자체 서명 인증서 및 사용자 지정 CA 인증서가 이 포트에서 호스팅됩니다. 
+
+
+| 8443(TCP) | 이 포트는 Swagger 및 Manager 사용자 인터페이스 애플리케이션을 통해 API 설명서를 호스팅합니다. 
+
+
+| 2379(TCP) | 이 포트는 etcd 키 값 저장소에서 키를 가져오거나, 넣거나, 삭제하거나, 감시하는 등의 클라이언트 요청에 대한 기본 포트입니다. 
+
+
+| 2380(TCP) | 이 포트는 etcd가 데이터 복제 및 일관성을 위해 사용하는 raft consensus 알고리즘에 사용되는 etcd 클러스터의 서버 간 통신을 위한 기본 포트입니다. 
+
+
+| 7472(TCP+UDP) | Prometheus 메트릭 서비스 포트입니다. 
+
+
+| 7946(TCP+UDP) | 이 포트는 Docker의 컨테이너 네트워크 검색에 사용됩니다. 
+
+
+| 9083(TCP) | 이 포트는 VASA 공급자 서비스에 대해 내부적으로 사용되는 서비스 포트입니다. 
+
+
+| 1162(UDP) | SNMP 트랩 패킷 포트입니다. 
+
+
+| 6443(TCP) | 소스: RKE2 에이전트 노드. 대상: REK2 서버 노드. 설명: Kubernetes API 
+
+
+| 9345(TCP) | 소스: RKE2 에이전트 노드. 대상: REK2 서버 노드. 설명: REK2 Supervisor API 
+
+
+| 8472(TCP+UDP) | 플란넬 VXLAN을 사용하는 경우 모든 노드가 UDP 포트 8472를 통해 다른 노드에 연결할 수 있어야 합니다. 소스: 모든 RKE2 노드. 대상: 모든 REK2 노드. 설명: VXLAN과 Canal CNI 
+
+
+| 10250(TCP) | 소스: 모든 RKE2 노드. 대상: 모든 REK2 노드. 설명: Kubelet 메트릭 
+
+
+| 30000-32767(TCP) | 소스: 모든 RKE2 노드. 대상: 모든 REK2 노드. 설명: NodePort 포트 범위입니다 
+
+
+| 123(TCP) | ntpd는 이 포트를 사용하여 NTP 서버의 검증을 수행합니다. 
+|===
+
+
 == 배포 전 검사
 
 배포를 진행하기 전에 다음 항목이 준비되어 있는지 확인합니다.
 
 * vCenter Server 환경이 설정 및 구성됩니다.
-* (선택 사항) 자동화 사용자의 경우 - NetApp에서 제공한 Postman 컬렉션 JSON 파일이 수집됩니다.
 * OVA를 구축하기 위한 상위 vCenter Server 자격 증명이 마련되어 있습니다.
-+
-
-NOTE: 상위 vCenter Server 암호에는 이러한 특수 문자($,',")가 포함될 수 없습니다.
-
 * VMware vSphere용 ONTAP 툴이 구축 후 에 연결하여 등록할 vCenter Server 인스턴스에 대한 로그인 자격 증명이 있습니다.
 * 브라우저 캐시가 삭제됩니다.
-* 비 HA 배포에 사용할 수 있는 3개의 무료 IP 주소, 로드 밸런서용 무료 IP 주소 1개, Kubernetes 컨트롤 플레인용 무료 IP 주소 1개, 노드에 대한 IP 주소 1개가 있어야 합니다. HA 배포의 경우 이 세 개의 IP 주소와 함께 두 번째 및 세 번째 노드에 대해 두 개의 추가 IP 주소가 필요합니다. HA 및 비 HA 배포를 모두 할당하기 전에 호스트 이름을 DNS의 사용 가능한 IP 주소에 매핑해야 합니다. HA 배포의 5개 IP 주소와 비 HA 배포의 3개 IP 주소는 모두 배포를 위해 선택된 동일한 VLAN에 있어야 합니다.
-
-
+* 비 HA 배포에 사용할 수 있는 3개의 무료 IP 주소, 로드 밸런서용 무료 IP 주소 1개, Kubernetes 컨트롤 플레인용 무료 IP 주소 1개, 노드에 대한 IP 주소 1개가 있어야 합니다. HA 배포의 경우 이 세 개의 IP 주소와 함께 두 번째 및 세 번째 노드에 대해 두 개의 추가 IP 주소가 필요합니다. 호스트 이름은 를 할당하기 전에 DNS의 사용 가능한 IP 주소에 매핑되어야 합니다. 5개의 IP 주소 모두 배포용으로 선택된 동일한 VLAN에 있어야 합니다.
 * 사용자 지정 CA 인증서가 필수인 다중 vCenter 배포의 경우 인증서가 발급된 도메인 이름이 가상 IP 주소에 매핑되어 있는지 확인합니다. 도메인 이름에 _nslookup_check 를 수행하여 도메인이 의도된 IP 주소로 확인되는지 확인합니다. 인증서는 부하 분산 장치 IP 주소의 도메인 이름과 IP 주소를 사용하여 만들어야 합니다.
-* HA가 아닌 고급 및 HA 구성에서 VMware vSphere 10.2용 ONTAP 툴을 설치하기 전에 KB 문서: https://kb.netapp.com/on-prem/ontap/da/NAS/NAS-KBs/pre-requisites_for_installing_OTV_10.1_and_10.2_in_NonHA_Advanced_and_HA["비 HA 고급 및 HA 구성을 위한 사전 요구 사항"]
 

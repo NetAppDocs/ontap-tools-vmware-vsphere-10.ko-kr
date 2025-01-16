@@ -15,7 +15,10 @@ summary: 스토리지 백엔드는 ESXi 호스트가 데이터 스토리지에 �
 
 * 이 작업에 대한 정보 *
 
-이 작업은 ONTAP 클러스터를 온보딩하는 데 도움이 됩니다. ONTAP Tools Manager를 사용하여 스토리지 백엔드를 추가하면 스토리지 백엔드가 글로벌 클러스터에 추가됩니다. 글로벌 클러스터를 vCenter Server 인스턴스와 연결하여 SVM 사용자를 VVOL 데이터 저장소 프로비저닝에 사용할 수 있도록 합니다.
+이 작업은 ONTAP 클러스터를 온보딩하는 데 도움이 됩니다. ONTAP Tools Manager를 사용하여 스토리지 백엔드를 추가하면 스토리지 백엔드가 글로벌 클러스터에 추가됩니다. 글로벌 클러스터를 vCenter Server 인스턴스와 연결하여 SVM 사용자를 VVOL 데이터 저장소 프로비저닝에 사용할 수 있도록 합니다. vCenter에서는 SVM을 통해서만 스토리지를 추가할 수 있다.
+
+
+NOTE: 멀티 테넌트 워크플로우의 경우 ONTAP Tools Manager를 사용하여 ONTAP 클러스터를 전역적으로 추가하고 클러스터를 원하는 vCenter 테넌트와 연결해야 합니다. 그런 다음 vCenter 테넌트가 원하는 SVM(Storage Virtual Machine)을 온보딩해야 합니다. 멀티 테넌시가 필요하지 않은 경우 vCenter UI만 사용하여 ONTAP 시스템을 직접 추가해야 합니다.
 
 [role="tabbed-block"]
 ====
@@ -49,7 +52,7 @@ NOTE: vSphere Client UI를 사용하여 스토리지 백엔드를 추가하는 �
 . Add Storage Backend * 창에서 서버 IP 주소, 사용자 이름, 암호 및 포트 세부 정보를 입력하고 * Add * 를 클릭합니다.
 +
 
-NOTE: 클러스터 기반 자격 증명, IPv4 및 IPv6 관리 LIF를 추가하거나 SVM 관리 LIF와 함께 SVM 기반 자격 증명을 제공하여 SVM 사용자를 직접 추가할 수 있습니다.
+NOTE: 클러스터 기반 자격 증명, IPv4 및 IPv6 주소 관리 LIF를 추가하거나 SVM 관리 LIF와 함께 SVM 기반 자격 증명을 제공하여 SVM 사용자를 직접 추가할 수 있습니다.
 
 
 

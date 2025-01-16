@@ -22,3 +22,5 @@ entries:
   url: "/configure/associate-storage-backend.html"
 - title: 네트워크 액세스를 구성합니다
   url: "/configure/configure-network-access.html"
+- title: 데이터 저장소를 생성합니다
+  url: "/configure/create-vvols-datastore.html"
