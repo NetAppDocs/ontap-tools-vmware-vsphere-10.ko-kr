@@ -708,141 +708,14 @@ sudo rke2-uninstall.sh (모든 VM).</block>
   <block id="86087fc8fd9dd51486dc3c430bf6abac" category="cell">이 역할을 사용하여 스토리지를 수정할 수 있습니다. 이 역할에는 검색 역할 및 스토리지 생성 역할과 연결된 모든 권한도 포함됩니다.</block>
   <block id="a62ba12e7d9cf0e95b53a7ef0ccc6987" category="cell">이 역할을 사용하면 스토리지를 제거할 수 있습니다. 이 역할에는 검색 역할, 스토리지 생성 역할 및 스토리지 수정 역할과 연결된 모든 권한도 포함됩니다.</block>
   <block id="9aba481264947da03013bacc0bdb5337" category="paragraph">VMware vSphere용 ONTAP 툴을 사용하는 경우에는 PBM(정책 기반 관리) 역할도 설정해야 합니다. 이 역할을 통해 스토리지 정책을 사용하여 스토리지를 관리할 수 있습니다. 이 역할을 수행하려면 "Discovery" 역할도 설정해야 합니다.</block>
-  <block id="5f5192bbcb78a1952f0c1de27add636d" category="summary">API에 액세스하면 실시간 설정에서 보다 복잡한 워크플로 프로세스를 사용하여 API를 사용하기 전에 몇 가지 관점을 제공합니다.</block>
-  <block id="6f800f16fa2f6cc79e50877afd6a63ea" category="doc">REST API를 시작합니다</block>
-  <block id="fa5c00786ec8e725c475f243f896380c" category="paragraph">VMware vSphere REST API용 ONTAP 툴을 사용하여 빠르게 시작할 수 있습니다. API에 액세스하면 실시간 설정에서 보다 복잡한 워크플로 프로세스를 사용하여 API를 사용하기 전에 몇 가지 관점을 제공합니다.</block>
-  <block id="b10a8db164e0754105b7a99be72e3fe5" category="section-title">헬로우 월드</block>
-  <block id="e6cc5e45bd046642f9fb680d6739d7fd" category="paragraph">시스템에서 간단한 명령을 실행하여 VMware vSphere REST API용 ONTAP 툴을 사용하여 가용성을 확인할 수 있습니다.</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="list-title">시작하기 전에</block>
-  <block id="d35295349c96319976125d2295393ac0" category="list-text">시스템에서 Curl 유틸리티를 사용할 수 있는지 확인합니다.</block>
-  <block id="832f7b2b1efea4397918df5d6a77294e" category="list-text">VMware vSphere Server용 ONTAP 툴의 IP 주소 또는 호스트 이름입니다</block>
-  <block id="f59f21c2861931d779d39f5711d60be6" category="list-text">VMware vSphere REST API용 ONTAP 툴에 액세스할 수 있는 권한이 있는 계정의 사용자 이름 및 암호입니다.</block>
-  <block id="da932131b500d8e907961663d8ef346b" category="admonition">자격 증명에 특수 문자가 포함되어 있는 경우 사용 중인 셸에 따라 Curl에 허용되는 형식으로 형식을 지정해야 합니다. 예를 들어 각 특수 문자 앞에 백슬래시를 삽입하거나 전체 문자를 줄 바꿈할 수 있습니다<block ref="133e1b8eda335c4c7f7a508620ca7f10" prefix=" " category="inline-code"></block> 문자열을 작은따옴표로 묶습니다.</block>
-  <block id="48c7c41b72e1d678923ce3571aa65b2d" category="paragraph-title">단계</block>
-  <block id="34d07047db39e17aa64415185872d7ba" category="paragraph">명령줄 인터페이스에서 다음을 실행하여 플러그인 정보를 검색합니다.</block>
-  <block id="016102d7f7027f4ec05121416c47259c" category="paragraph"><block ref="d7aacb5ab235e8ea9ffe1d2ca3f09c46" prefix="" category="inline-code"></block></block>
-  <block id="ab6f9bbbd6d40b1f24817d6aecb81f9d" category="paragraph"><block ref="f2c814248d385aa127395dbcd2585e06" prefix="" category="inline-code"></block></block>
-  <block id="0c18d1276ce1aa636415ddb70d628488" category="summary">REST API를 사용하여 VMware vSphere 관리 작업을 위한 여러 ONTAP 툴을 수행하는 방법을 설명합니다. REST API는 Swagger 웹 페이지를 통해 표시됩니다.</block>
-  <block id="0c889d77d71512ceb7241bd0f6d6ca23" category="doc">REST API 개요</block>
-  <block id="c330f595b02061ecdc25ecb17672913c" category="paragraph">REST API를 사용하여 VMware vSphere 관리 작업을 위한 여러 ONTAP 툴을 수행할 수 있습니다. REST API는 Swagger 웹 페이지를 통해 표시됩니다.</block>
-  <block id="11f00f575ae2ef170b7ce5ba13ff4781" category="paragraph">\https://loadbalancerIP:8443/_에서 제공하는 Swagger 웹 페이지에 액세스하여 REST API 설명서를 표시하고 API 호출을 수동으로 실행할 수 있습니다.</block>
-  <block id="9a6f34cb1082502a6afd96556dec761f" category="admonition">모든 API에는 swagger 페이지에 언급된 요청 본문과 예제가 있습니다. 이 섹션에 제공된 워크플로 및 예제는 참조용으로만 사용됩니다.</block>
-  <block id="527df4f1ccd81173595bb685c8266938" category="summary">로컬 ONTAP 시스템에서 Swagger UI를 통해 ONTAP REST API 설명서에 액세스할 수 있습니다.</block>
-  <block id="95b1a4018b5f1cefffdc18991e0fd8f5" category="doc">Swagger UI를 통해 VMware vSphere API용 ONTAP 툴 참조 문서에 액세스합니다</block>
-  <block id="161fbe930f63fa83671b46be2b2b3d58" category="paragraph">다음과 같은 항목이 있어야 합니다.</block>
-  <block id="f9f1769b9ec1d047022000f65ca5c05a" category="list-text">ONTAP 클러스터 관리 LIF의 IP 주소 또는 호스트 이름입니다</block>
-  <block id="f2c6f5ac63b1ff8994bac2da18ed694c" category="list-text">ONTAP REST API 액세스 권한이 있는 계정의 사용자 이름과 암호입니다</block>
-  <block id="16f20abf4a7cb0a347b84a8585743c43" category="list-text">브라우저에 URL을 입력하고 * Enter * 를 누릅니다.
-_\https://&lt;ip_address&gt;/docs/api_</block>
-  <block id="a64f9f553a037daa06b0333e4f974c7c" category="list-text">ONTAP 계정을 사용하여 로그인합니다</block>
-  <block id="382dcdb42dd365fa6d100546e6d7a4d7" category="paragraph">ONTAP API 설명서 페이지는 주요 리소스로 구성된 API 호출과 함께 표시됩니다
-범주를 선택합니다.</block>
-  <block id="b7998fdfa579757468dfd6407b7df0e3" category="list-text">개별 API 호출의 예로 * cluster * 범주로 스크롤하고 * get/cluster * 를 클릭합니다.</block>
-  <block id="3c09024082538b393ae85161883b78ab" category="summary">여러 가지 방법으로 ONTAP REST API에 액세스할 수 있습니다.</block>
-  <block id="20e6657503c09b23dd000fa27ddc5cc7" category="doc">VMware vSphere REST API용 ONTAP 툴에 액세스하는 방법</block>
-  <block id="933f7bf924b9ab3c423ac46225afd9c7" category="section-title">VMware vSphere API용 ONTAP 툴 온라인 설명서 페이지</block>
-  <block id="ab8a406d9f7f9d15ebedd520911bf0ef" category="paragraph">VMware vSphere용 NetApp ONTAP 툴의 지원 페이지에 있는 하이퍼링크에서 Swagger에 액세스할 수 있습니다.</block>
-  <block id="af945751c0efb1d33830b48e2e17c2e6" category="paragraph">최신 버전의 API에 대한 설명서 페이지에 액세스하는 데 사용되는 URL 형식은 다음과 같습니다.</block>
-  <block id="07189fcc640ffa4ecc043942258a8fc6" category="paragraph">' https://&lt;loadbalancer_ip_address&gt;/docs/api '</block>
-  <block id="26af4f060203125bc0739a38e9ddfa2b" category="section-title">사용자 정의 소프트웨어 및 도구</block>
-  <block id="ffbba6018a0b637f1a55c4b05779c1c3" category="paragraph">VMware vSphere API용 ONTAP 툴은 여러 가지 프로그래밍 언어와 툴을 사용하여 액세스할 수 있습니다. Python, Java, Curl, PowerShell을 비롯한 다양한 옵션이 제공됩니다. API를 사용하는 프로그램, 스크립트 또는 도구는 REST 웹 서비스 클라이언트로 작동합니다. 프로그래밍 언어를 사용하면 API를 보다 깊이 이해할 수 있고 VMware vSphere 관리를 위한 ONTAP 툴을 자동화할 수 있습니다.</block>
-  <block id="9670d5b867b93341fdec8b7aadfdba79" category="paragraph">최신 버전의 API에 직접 액세스하는 데 사용되는 기본 URL의 형식은 다음과 같습니다.</block>
-  <block id="b62c382502f5a7724851aff63073a5b0" category="paragraph">' https://&lt;loadbalancer_ip_address&gt;/API '</block>
-  <block id="433c12a33fdba27dd646123b380a2c4e" category="paragraph">여러 버전이 지원되는 특정 API 버전에 액세스하려면 URL 형식은 다음과 같습니다.</block>
-  <block id="383d966886384e9939a6e4b9de3f5bea" category="paragraph">' https://&lt;loadbalancer_ip_address&gt;/api/v1 '</block>
-  <block id="fc004b0a2e525fdc279e93342807a662" category="summary">HTTP 요청에 설정된 매개 변수와 변수를 통해 API 호출이 처리되는 방식을 제어할 수 있습니다.</block>
-  <block id="ee083ff11ffc430b7230624e8985e88c" category="doc">API 요청을 제어하는 입력 변수입니다</block>
   <block id="957a8c35c28e967701ff975f1d7182d5" category="section-title">HTTP 메서드</block>
-  <block id="504b3e70c32650134b8928f353c98158" category="paragraph">다음 표에는 VMware vSphere REST API용 ONTAP 툴에서 지원되는 HTTP 방법이 나와 있습니다.</block>
-  <block id="ed96d2fc76580fb63f9f0408276dd927" category="admonition">모든 HTTP 메서드를 각 REST 끝점에서 사용할 수 있는 것은 아닙니다.</block>
-  <block id="3ded167f4ad4afb85c6ace5862e27ba0" category="cell">HTTP 메소드</block>
   <block id="7528035a93ee69cedb1dbddb2f0bfcc8" category="cell">가져오기</block>
-  <block id="0decd4a1f47d9c9f9601109afe0d9a4e" category="cell">리소스 인스턴스 또는 컬렉션의 개체 속성을 검색합니다.</block>
   <block id="a02439ec229d8be0e74b0c1602392310" category="cell">게시</block>
-  <block id="fb9e1a48a4257dee6289fcb9c187cc7d" category="cell">제공된 입력을 기반으로 새 리소스 인스턴스를 만듭니다.</block>
   <block id="32f68a60cef40faedbc6af20298c1a1e" category="cell">삭제</block>
   <block id="eef129331314d2c9f4c4a5b0fdde3c7e" category="cell">기존 리소스 인스턴스를 삭제합니다.</block>
   <block id="3e75383a5992a6d15fb81e872e46e256" category="cell">를 누릅니다</block>
-  <block id="2071d14ff2885e064879040ea18a09e5" category="cell">기존 리소스 인스턴스를 수정합니다.</block>
-  <block id="736943e80c16e2be98d8595e6376e4ee" category="section-title">요청 헤더</block>
-  <block id="406537306d9a15baf8ae1febe4afdec1" category="paragraph">HTTP 요청에 여러 헤더를 포함해야 합니다.</block>
-  <block id="f64aadb713838867dd5f6cb3d02558a0" category="section-title">콘텐츠 유형</block>
-  <block id="c29560cde9e7309356bf9bb27ace99c7" category="paragraph">요청 본문에 JSON이 포함된 경우 이 헤더를 _application/json_으로 설정해야 합니다.</block>
   <block id="c4408d335012a56ff58937d78050efad" category="section-title">수락</block>
-  <block id="2746025afdf3b4921a2c5d71d5bf62c3" category="paragraph">이 헤더는 _application/json_으로 설정해야 합니다.</block>
-  <block id="9cd8a2455b1839ff98ef70c05b9b5983" category="section-title">권한 부여</block>
-  <block id="78ea3bb2b55ad98896cff83f4d15f205" category="paragraph">기본 인증은 base64 문자열로 인코딩된 사용자 이름과 암호로 설정해야 합니다.</block>
-  <block id="a3ba8461439f7d0176ef3944696ea2ac" category="section-title">요청 본문</block>
-  <block id="973ab3cad185dec8eac7662330e49f1c" category="paragraph">요청 본문의 내용은 특정 호출에 따라 달라집니다. HTTP 요청 본문은 다음 중 하나로 구성됩니다.</block>
-  <block id="b86f5c6ed2b7d52e2940495dc8a984f4" category="list-text">입력 변수가 있는 JSON 개체입니다</block>
-  <block id="ce2c8aed9c2fa0cfbed56cbda4d8bf07" category="list-text">비어 있습니다</block>
-  <block id="ac860c2e604ebd01436860da72828954" category="section-title">오브젝트 필터링</block>
-  <block id="0438b035fcfcfd3b3c333dd8d993e532" category="paragraph">Get을 사용하는 API 호출을 실행할 때 모든 특성에 따라 반환된 객체를 제한하거나 필터링할 수 있습니다. 예를 들어, 다음과 같이 정확하게 일치하는 값을 지정할 수 있습니다.</block>
-  <block id="1fc998fba92eac6c354078a63d749232" category="paragraph"><block ref="9f076f2b1cbf046a6f73c579be1c3ca0" prefix="" category="inline-code"></block></block>
-  <block id="fd412bde4d95f6a11ca6eb5291ec5055" category="paragraph">정확한 일치 항목 외에도 다른 연산자를 사용하여 값 범위에 있는 개체 집합을 반환할 수 있습니다. VMware vSphere REST API용 ONTAP 툴은 아래 표에 나와 있는 필터링 연산자를 지원합니다.</block>
-  <block id="e1b3ec89ead7f83a9245ed5c9cacfdbf" category="cell">운영자</block>
-  <block id="43ec3e5dee6e706af7766fffea512721" category="cell">=</block>
-  <block id="495c04002891bebf41bc3b56507f6d6b" category="cell">같음</block>
-  <block id="524a50782178998021a88b8cd4c8dcd8" category="cell">를 누릅니다</block>
-  <block id="ad647e4ae904c7ed54ee93040d8298c7" category="cell">보다 작음</block>
-  <block id="cedf8da05466bb54708268b3c694a78f" category="cell">를 누릅니다</block>
-  <block id="05824b7be006782aaefd1fdb97c71e06" category="cell">보다 큼</block>
-  <block id="a7eeaea90b4e8312b88abcd178019929" category="cell">lt;=.(&amp;L</block>
-  <block id="28d1141142e2cbb29e657b69a044ddf4" category="cell">보다 작거나 같음</block>
-  <block id="3a1e9b87c94b54dec1202b5ca6539806" category="cell">GT;=.(&amp;T</block>
-  <block id="798fe01fcb2754a295b6937ed885a69a" category="cell">보다 크거나 같음</block>
-  <block id="15a8022d0ed9cd9c2a2e756822703eb4" category="cell">업데이트</block>
-  <block id="3a2d5fe857d8f9541136a124c2edec6c" category="cell">또는</block>
-  <block id="9033e0e305f247c0c3c80d0c7848c8b3" category="cell">!</block>
-  <block id="9bc7de899cf1c0d3ada046cd81f96aff" category="cell">같지 않음</block>
-  <block id="3389dae361af79b04c9c8e7057f60cc6" category="cell">*</block>
-  <block id="05a8a074dcf1a74c3e6c55d4f730a475" category="cell">greedy 와일드카드</block>
-  <block id="f3c93baa1e74d313b05f6891f58a4530" category="paragraph">쿼리의 일부로 * null * 키워드 또는 해당 부정 *!null * 을 사용하여 특정 필드가 설정되었는지 여부를 기준으로 개체 컬렉션을 반환할 수도 있습니다.</block>
-  <block id="5260f8fe460e79195a4c88c011e51342" category="admonition">설정되지 않은 필드는 일반적으로 일치하는 쿼리에서 제외됩니다.</block>
-  <block id="6d8c6f6bd33a2c5ad3268242ca5ff59b" category="section-title">특정 객체 필드를 요청하는 중입니다</block>
-  <block id="3195a941efa016d87e87f54db2226a79" category="paragraph">기본적으로 Get 을 사용하여 API 호출을 실행하면 개체나 개체를 고유하게 식별하는 특성만 반환됩니다. 이 최소 필드 집합은 각 개체의 키 역할을 하며 개체 유형에 따라 달라집니다. 를 사용하여 추가 개체 속성을 선택할 수 있습니다<block ref="d05b6ed7d2345020440df396d6da7f73" prefix=" " category="inline-code"></block> 쿼리 매개 변수는 다음과 같은 방식으로 지정합니다.</block>
-  <block id="c679b8eaf3069c4f7bffc461e34b95fb" category="section-title">공통 또는 표준 필드</block>
-  <block id="8aca4f931f0c66b003614a9f6cdbb501" category="paragraph">가장 일반적으로 사용되는 개체 필드를 검색하려면 * fields=** 를 지정합니다. 이러한 필드는 일반적으로 로컬 서버 메모리에 유지되거나 액세스에 필요한 처리가 거의 필요하지 않습니다. 이 속성은 URL 경로 키(UUID)로 GET을 사용한 후 개체에 대해 반환되는 속성과 동일합니다.</block>
-  <block id="36579447315838f79ada095ab26bf693" category="section-title">모든 필드</block>
-  <block id="d89fcd8c35307904ba8719856b606ebb" category="paragraph">액세스 시 추가 서버 처리가 필요한 필드를 포함하여 모든 오브젝트 필드를 검색하려면 * fields = *** 를 지정합니다.</block>
-  <block id="a686d83a73b66e60196ab98b2632e7da" category="section-title">사용자 정의 필드 선택</block>
-  <block id="d2d353f9dda5271bad41d3e7e0a85b8e" category="paragraph">필드=&lt;field_name&gt;* 를 사용하여 원하는 필드를 정확하게 지정합니다. 여러 필드를 요청할 때는 공백 없이 쉼표를 사용하여 값을 구분해야 합니다.</block>
-  <block id="e8145dd54cca5af37c6636e941e14f5e" category="admonition">가장 좋은 방법은 항상 원하는 특정 필드를 식별하는 것입니다. 필요한 경우 공통 필드 또는 모든 필드 집합만 검색해야 합니다. 공통으로 분류되어 _ FACTORS= * _ 로 반환되는 필드는 내부 성능 분석에 따라 NetApp에서 결정합니다. 필드의 분류는 향후 릴리스에서 변경될 수 있습니다.</block>
-  <block id="8b9514b4e7a0d660f91152d4a5baf424" category="section-title">출력 집합에서 오브젝트 정렬</block>
-  <block id="760ed1003f95d4d8f38b6a7862a1fcd6" category="paragraph">리소스 컬렉션의 레코드는 개체에서 정의한 기본 순서로 반환됩니다. 를 사용하여 순서를 변경할 수 있습니다<block ref="da3ad3b4322b19b609e4fa9d0a98a97b" prefix=" " category="inline-code"></block> 다음과 같이 필드 이름 및 정렬 방향을 가진 쿼리 매개 변수:</block>
-  <block id="42ac83dab536d4c72f5e57b001e9d1b7" category="paragraph"><block ref="5c4be89fa58910749118c299d7146409" prefix="" category="inline-code"></block></block>
-  <block id="ec8ebedbd75e137e3d60f61956a459a3" category="paragraph">예를 들어 유형 필드를 내림차순으로 정렬한 다음 ID를 오름차순으로 정렬할 수 있습니다.</block>
-  <block id="ae95344c2bcf9d6ce4630f98e0438896" category="paragraph"><block ref="e725b51939475fb54936bc15ff698a67" prefix="" category="inline-code"></block></block>
-  <block id="20687dcab7f3b4cba9b39b22c38c8ad5" category="list-text">정렬 필드를 지정하지만 방향을 지정하지 않으면 값이 오름차순으로 정렬됩니다.</block>
-  <block id="c1b49548ca5d2466ba6ba83d2979b184" category="list-text">매개 변수가 여러 개인 경우 필드를 쉼표로 구분해야 합니다.</block>
-  <block id="245272e0c4968634df98eb3e43fe7188" category="section-title">컬렉션의 개체를 검색할 때 페이지 매김</block>
-  <block id="6151e9d3df64b1356357d21e15fdcf59" category="paragraph">GET를 사용하여 동일한 유형의 객체 컬렉션에 액세스하는 API 호출을 실행할 때 VMware vSphere용 ONTAP 툴은 두 가지 제약 조건에 따라 가능한 한 많은 객체를 반환하려고 시도합니다. 요청에 대한 추가 쿼리 매개 변수를 사용하여 이러한 각 제약 조건을 제어할 수 있습니다. 특정 GET 요청에 대한 첫 번째 제약 조건에 도달하면 요청이 종료되고 반환된 레코드 수가 제한됩니다.</block>
-  <block id="77f9234bccd7df3df5de9766fc1ee88a" category="admonition">모든 개체를 반복하기 전에 요청이 종료되면 응답에는 다음 레코드 배치를 검색하는 데 필요한 링크가 포함됩니다.</block>
-  <block id="9b694e5a19d32713635e80d596a204af" category="section-title">개체 수 제한</block>
-  <block id="b6d10b2319c50121a995ce56d9a78fb5" category="paragraph">기본적으로 VMware vSphere용 ONTAP 툴은 GET 요청에 대해 최대 10,000개의 객체를 반환합니다. 이 제한은 _max_records_query 매개 변수를 사용하여 변경할 수 있습니다. 예를 들면 다음과 같습니다.</block>
-  <block id="ca70aeac050e5deeb2d294566c856b35" category="paragraph"><block ref="6442f0c42ddfbf1a4d6374ad73dea2eb" prefix="" category="inline-code"></block></block>
-  <block id="cb5652e059687de540fb7ab71200a4e3" category="paragraph">반환되는 개체 수는 관련 시간 제약 조건과 시스템의 총 개체 수에 따라 실제 최대값보다 작을 수 있습니다.</block>
-  <block id="cec4fc9be41c96cfd5b0d11b548d1a5e" category="section-title">객체를 검색하는 데 사용되는 시간 제한</block>
-  <block id="a6422605eda5232370b98ff9dd129108" category="paragraph">기본적으로 VMware vSphere용 ONTAP 툴은 GET 요청에 허용되는 시간 내에 최대한 많은 객체를 반환합니다. 기본 시간 초과는 15초입니다. return_timeout_query 매개 변수를 사용하여 이 제한을 변경할 수 있습니다. 예를 들면 다음과 같습니다.</block>
-  <block id="4f2ca89743f0c1642129bde507459575" category="paragraph"><block ref="2eef2059f1d9935a31cf756727a21ca4" prefix="" category="inline-code"></block></block>
-  <block id="cca254a24814ec91f1f1b7933614e633" category="paragraph">시스템의 총 개체 수 및 개체 수에 대한 관련 제약 조건을 기준으로 반환된 개체 수가 유효 최대값보다 작을 수 있습니다.</block>
-  <block id="2dadc767979da8ab1576ee0aa8da5e21" category="section-title">결과 집합 축소</block>
-  <block id="ab92d69f97ee430d4048a43a5452659c" category="paragraph">필요한 경우 이러한 두 매개 변수를 추가 쿼리 매개 변수와 결합하여 결과 집합의 범위를 좁힐 수 있습니다. 예를 들어, 지정된 시간 이후에 생성된 최대 10개의 EMS 이벤트가 반환됩니다.</block>
-  <block id="89163f6e2498a9f894e7813e6de46b08" category="paragraph"><block ref="3a4009b6b07614ee155d4af5ecfaf8bc" prefix="" category="inline-code"></block></block>
-  <block id="5394a0e51a0e30e195e0299ede162a02" category="paragraph">여러 요청을 발행하여 객체를 통해 페이지를 이동할 수 있습니다. 이후의 각 API 호출은 마지막 결과 집합의 최신 이벤트를 기반으로 새 시간 값을 사용해야 합니다.</block>
-  <block id="050a8c11f48cd555f6e5e6bab96225d6" category="section-title">크기 속성</block>
-  <block id="721165b216d0f852ad3d9fd6e430dbe1" category="paragraph">일부 API 호출과 특정 쿼리 매개 변수에 사용되는 입력 값은 숫자입니다. 정수(바이트)를 제공하는 대신 다음 표에 나와 있는 접미사를 선택적으로 사용할 수 있습니다.</block>
-  <block id="56e6ddd1cb6cec596b433440dfb21c17" category="cell">접미사</block>
-  <block id="ab57fd0432e25d5b3013133a1c910d56" category="cell">KB를 클릭합니다</block>
-  <block id="9664b7d53f6c3f95743d9d5e1e03e0f6" category="cell">KB 킬로바이트(1024바이트) 또는 키비바이트</block>
-  <block id="8d8fcc1abd550c5f25dbfaa57d59cb67" category="cell">MB</block>
-  <block id="1bfdb499a2daaef53342602344b219d2" category="cell">MB 메가바이트(KB x 1024바이트) 또는 메가바이트</block>
-  <block id="79cba1185463850dedba31f172f1dc5b" category="cell">GB</block>
-  <block id="9a19cb477310ba69217d25ed9ca7c242" category="cell">GB 기가바이트(MB x 1024바이트) 또는 기비바이트</block>
-  <block id="ff88442a425c06d961f97bccb11ddf5d" category="cell">TB</block>
-  <block id="db6eb0e01af53f05894f9ad1203350c6" category="cell">TB 테라바이트(GB x 1024 byes) 또는 테비바이트</block>
-  <block id="cd203ccd68b84de1c5df8fd890e104e0" category="cell">PB</block>
-  <block id="ac22fdf0c10c83edf98e803174984090" category="cell">PB 페타바이트(TB x 1024 byes) 또는 페이비바이트</block>
   <block id="f7f3984fa732d05af01413abe0c139fa" category="summary">vSphere Client를 사용하여 생성한 보호 사이트와 복구 사이트를 페어링하여 SRA\(Storage Replication Adapter\)에서 스토리지 시스템을 검색하도록 설정해야 합니다.</block>
   <block id="31f39e1dd44660cbf064de93a5ac5fe9" category="doc">보호 사이트와 복구 사이트 페어링</block>
   <block id="7156f9669ad3e8dc5543b26c90b677b9" category="paragraph">vSphere Client를 사용하여 생성한 보호 사이트와 복구 사이트를 페어링하여 SRA(Storage Replication Adapter)가 스토리지 시스템을 검색할 수 있도록 설정해야 합니다.</block>
@@ -1110,7 +983,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="6bc1d2c44eecf063e620d732e6c3e492" category="sidebar">vCenter Server 사용 권한</block>
   <block id="a9f3de4f2df78227aea2ac4a6b2e7aef" category="sidebar">권장되는 ONTAP 역할</block>
   <block id="721041095b64df665034c0b19c967475" category="sidebar">VMware vSphere용 ONTAP 툴의 고가용성</block>
-  <block id="01c23a6022de21870627c656bac73ece" category="sidebar">REST API를 사용하여 자동화</block>
   <block id="f724dfae8a2bb3b34e049dcedf88d10d" category="sidebar">데이터 저장소와 가상 머신을 보호합니다</block>
   <block id="25890161c3df1f2618234e8f48e2c18b" category="sidebar">확장성이 높은 환경에 맞게 SRA를 구성합니다</block>
   <block id="a239701adb72159a71164b036c18a53a" category="sidebar">보호 및 복구 사이트 리소스를 구성합니다</block>
@@ -2009,4 +1881,155 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="2e0332b2709dcff7df5d28c654c54066" category="sidebar">VMware vSphere 10.3용 ONTAP 툴</block>
   <block id="3d7d171ecad1cba0c2d8d707b648b023" category="sidebar">보호 및 복구 사이트를 구성합니다</block>
   <block id="039f647b3ad55c89a6a5ff0d6109bd4f" category="paragraph">VMware vSphere 10.3용 ONTAP 툴은 VMFS, VVOL 데이터 저장소와 해당 VM에 대한 관측성 메트릭 지원을 확장합니다.</block>
+  <block id="01e681f5a8de12d6be77dfc0e567c731" category="summary">VMware vSphere 10 REST API 참조용 ONTAP 툴에는 모든 API 호출에 대한 자세한 정보가 포함되어 있습니다. 이 참조는 자동화 애플리케이션을 개발할 때 유용합니다.</block>
+  <block id="d2f73ce531661447cb475cb1f2d2e3bf" category="doc">VMware vSphere 10 REST API용 ONTAP 툴에 대한 API 참조입니다</block>
+  <block id="ae1e8fd3c75f65498c54084ccfaf3047" category="paragraph">Swagger UI를 통해 VMware vSphere 10 REST API용 ONTAP 툴 설명서에 온라인으로 액세스할 수 있습니다. 포트뿐만 아니라 VMware vSphere 10 게이트웨이 서비스용 ONTAP 툴의 IP 주소 또는 FQDN이 필요합니다.</block>
+  <block id="08abdf16d81e0cbba6b259bea49cdf99" category="list-text">브라우저에 변수에 대해 적절한 IP 주소와 포트 조합을 대체할 다음 URL을 입력하고 * Enter * 키를 누릅니다.</block>
+  <block id="6ff8508bd0ad0da36fc04c76066c464c" category="paragraph"><block ref="4c9882763c7aaf0e39789953130b5809" prefix="" category="inline-code"></block></block>
+  <block id="938f1047c15f00fdd0cbfc8e4cfa15e1" category="paragraph">* 예 *</block>
+  <block id="95d36d22664f8854f7a69597b5d159e9" category="paragraph"><block ref="bcaca837447d687465d80574c1488516" prefix="" category="inline-code"></block></block>
+  <block id="029cd27c82b397ce647ab6fdab6ce96b" category="list-text">개별 API 호출의 예로, 아래로 스크롤하여 * vCenters * 범주로 이동한 후 끝점 옆에 있는 * Get * 을 클릭합니다<block ref="22d8515b1a0806aac1067186e4429b4c" prefix=" " category="inline-code"></block></block>
+  <block id="9e2559913ee384f282b7c8922d9c892e" category="summary">curl을 사용하여 API 호출을 실행하여 VMware vSphere 10 REST API용 ONTAP 툴을 시작할 수 있습니다.</block>
+  <block id="25aa7ee97346651715a55a99bba91d34" category="doc">VMware vSphere 10 REST API 호출용 첫 번째 ONTAP 툴</block>
+  <block id="190ffd22724cdd7dfb04a0d2211e12bd" category="paragraph">curl 예제에 필요한 정보와 매개변수를 검토해야 합니다.</block>
+  <block id="f8ad24507fa09d903436c3525e8e9d3f" category="paragraph-title">필수 정보입니다</block>
+  <block id="4c6a9048ac276eb9391ebe2abd8e0c0d" category="paragraph">다음이 필요합니다.</block>
+  <block id="112ab2a5a85b5a3c5e85046e1604d105" category="list-text">VMware vSphere 10 IP 주소 또는 FQDN 및 포트용 ONTAP 툴</block>
+  <block id="6d6423832c50665dadd867e3c67e504f" category="list-text">ONTAP 도구 관리자 자격 증명(사용자 이름 및 암호)</block>
+  <block id="f2081dc24b29bb5a138819e4d3388b68" category="paragraph-title">매개 변수 및 변수</block>
+  <block id="226752f860521d9c0712124e8150c7be" category="paragraph">아래에 제시된 컬에는 Bash 스타일 변수가 포함됩니다. 이러한 변수는 Bash 환경에서 설정하거나 명령을 실행하기 전에 수동으로 업데이트할 수 있습니다. 변수를 설정하면 셸이 실행되기 전에 각 명령으로 값을 대체합니다. 변수는 아래 표에 설명되어 있습니다.</block>
+  <block id="47c14840d8e15331fa420b9b2f757cd9" category="cell">변수</block>
+  <block id="fa15b0d6419dfb51864af28640b46c50" category="cell">$FQDN_IP_port</block>
+  <block id="efad8dda7813f2f61e59fee9de5685d6" category="cell">포트 번호와 함께 ONTAP 도구 관리자의 정규화된 도메인 이름 또는 IP 주소입니다.</block>
+  <block id="6c1da12e96e7c12b338227bbad7cd8d6" category="cell">$MYUSER</block>
+  <block id="b3b52329271b1c813d865bd3430ae0eb" category="cell">ONTAP 도구 관리자 계정의 사용자 이름입니다.</block>
+  <block id="10994ee890089799ef98bd935dda382e" category="cell">$MYPASSWORD</block>
+  <block id="92a0f772935e69502901a4b26e6ea4a1" category="cell">ONTAP 도구 관리자 사용자 이름과 연결된 암호입니다.</block>
+  <block id="31740ff30d8989f8731a7aa9804037d9" category="cell">$access_token입니다</block>
+  <block id="c5ee7f5f35e3c470c8e8b9454338235e" category="cell">ONTAP 도구 관리자가 발급한 액세스 토큰.</block>
+  <block id="34ca808d2fbc6b479eae5050e7d1f0cd" category="paragraph">Linux CLI에서의 다음 명령 및 출력은 변수를 설정하고 표시하는 방법을 보여줍니다.</block>
+  <block id="5f165fc040c2d67a1c762d4992cfd3ad" category="section-title">1단계: 액세스 토큰을 획득합니다</block>
+  <block id="c3a5aea28e3c833fa7fb488eac1f890b" category="paragraph">REST API를 사용하려면 액세스 토큰을 얻어야 합니다. 액세스 토큰을 요청하는 방법의 예는 다음과 같습니다. 환경에 적합한 값으로 대체해야 합니다.</block>
+  <block id="aacc5a70f620b045087d925821bd671e" category="paragraph">응답에 제공된 액세스 토큰을 복사하고 저장합니다.</block>
+  <block id="5ae6bfa5e93581b8f03eef7ec9d31b21" category="section-title">2단계: REST API 호출을 실행합니다</block>
+  <block id="e35953edb90a1aa9f24be40109966b36" category="paragraph">액세스 토큰이 있으면 curl을 사용하여 REST API 호출을 실행할 수 있습니다. 첫 번째 단계에서 획득한 액세스 토큰을 포함합니다.</block>
+  <block id="e0da47631d6f2648f3a36bde7e269c3b" category="listing-title">컬의 예</block>
+  <block id="e77c6880701fcbe894a878111bcb9ca8" category="paragraph">JSON 응답에는 ONTAP Tools Manager에 구성된 VMware vCenter 인스턴스 목록이 포함됩니다.</block>
+  <block id="bf93d289f74793d6a72e909b5fc9cca0" category="summary">VMware vSphere 10용 ONTAP 툴은 가상 머신 라이프사이클 관리를 위한 툴 세트입니다. 이 솔루션에는 자동화 프로세스의 일부로 사용할 수 있는 강력한 REST API가 포함되어 있습니다.</block>
+  <block id="10a7a63d5f7f3ff2c6438bb0f95d5494" category="doc">VMware vSphere 10 REST API용 ONTAP 툴에 대해 알아보십시오</block>
+  <block id="8ed6428212b41847f33c5db651c2aa70" category="section-title">REST 웹 서비스 기반</block>
+  <block id="9e1fbdb44af04bcec2aeaa02a0374832" category="paragraph">REST(Representational State Transfer)는 웹 서비스 API 설계를 비롯한 분산 웹 애플리케이션을 만드는 스타일입니다. 서버 기반 리소스를 노출하고 상태를 관리하기 위한 일련의 기술을 구축합니다.</block>
+  <block id="b0fcdfb2c58efafaace08609d3e95f6d" category="paragraph-title">리소스 및 상태 표시</block>
+  <block id="58b5d7d3ac91e5d496cb361d0f6d5ace" category="paragraph">리소스는 REST 웹 서비스 애플리케이션의 기본 구성 요소입니다. REST API를 설계할 때 두 가지 중요한 초기 작업이 있습니다.</block>
+  <block id="cffc973837b1552a3c62d15a0a02dca0" category="list-text">시스템 또는 서버 기반 리소스를 식별합니다</block>
+  <block id="b1c112dff346df8f223cab36c5c0604b" category="list-text">리소스 상태 및 관련 상태 전환 작업을 정의합니다</block>
+  <block id="a45c3425ff6af29eaf7bfe965fcd8f88" category="paragraph">클라이언트 응용 프로그램은 잘 정의된 메시지 흐름을 통해 리소스 상태를 표시하고 변경할 수 있습니다.</block>
+  <block id="34d23bd6dd51b3238872241264de74bf" category="paragraph-title">HTTP 메시지</block>
+  <block id="1179c71c84b4d7a8614fcc6541a55e88" category="paragraph">HTTP(Hypertext Transfer Protocol)는 웹 서비스 클라이언트와 서버에서 리소스에 대한 메시지를 교환하기 위해 사용하는 프로토콜입니다. 일반 작업 생성, 읽기, 업데이트 및 삭제 작업을 기반으로 한 CRUD 모델을 따릅니다. HTTP 프로토콜에는 응답 상태 코드뿐만 아니라 요청 및 응답 헤더가 포함됩니다.</block>
+  <block id="1d569ac5d527081ee4fa316da144f4ed" category="paragraph-title">JSON 데이터 형식</block>
+  <block id="6bbcb060053c7d65bb870650b05080eb" category="paragraph">사용할 수 있는 메시지 형식은 여러 가지지만 가장 많이 사용되는 옵션은 JSON(JavaScript Object Notation)입니다. JSON은 단순 데이터 구조를 일반 텍스트로 표시하기 위한 업계 표준이며 리소스와 원하는 작업을 설명하는 상태 정보를 전송하는 데 사용됩니다.</block>
+  <block id="2fae32629d4ef4fc6341f1751b405e45" category="paragraph-title">보안</block>
+  <block id="ea288d064f7533a546b1d51c58a66f0b" category="paragraph">REST API에서는 보안이 중요한 요소입니다. 네트워크를 통해 HTTP 트래픽을 보호하는 데 사용되는 TLS(Transport Layer Security) 프로토콜 외에도 VMware vSphere 10 REST API용 ONTAP 툴은 인증에 액세스 토큰을 사용합니다. 액세스 토큰을 획득하여 이후 API 호출에 사용해야 합니다.</block>
+  <block id="01480a89d67ec4bd3886317483878e03" category="paragraph-title">비동기 요청 지원</block>
+  <block id="5ff9ea1e93ec4247f77d5572721ef380" category="paragraph">VMware vSphere 10 REST API용 ONTAP 툴은 대부분의 요청을 동기식으로 수행하며 작업이 완료되면 상태 코드를 반환합니다. 또한 완료하는 데 시간이 오래 걸리는 작업에 대한 비동기 프로세싱도 지원합니다.</block>
+  <block id="85a37144ab554873deea56aa55eabc63" category="section-title">ONTAP 도구 관리자 환경</block>
+  <block id="e06ff039f00c0a1d73976133549b5c46" category="paragraph">ONTAP 도구 관리자 환경에는 몇 가지 측면을 고려해야 합니다.</block>
+  <block id="76c3fe1d90eec0f4dbe5dd8bf85ff05b" category="paragraph-title">가상 머신</block>
+  <block id="c256f323fa290d7d44d55a41351b43c3" category="paragraph">VMware vSphere 10용 ONTAP 툴은 vSphere 원격 플러그인 아키텍처를 사용하여 구축됩니다. REST API 지원을 포함한 소프트웨어가 별도의 가상 머신에서 실행됩니다.</block>
+  <block id="b213ee322b1762505374c8ee6d84f177" category="paragraph-title">ONTAP 도구 IP 주소입니다</block>
+  <block id="1543737af385e98b263eb837cefbed68" category="paragraph">VMware vSphere 10용 ONTAP 툴은 가상 머신의 기능에 대한 게이트웨이를 제공하는 단일 IP 주소를 표시합니다. 초기 구성 중에 주소를 제공해야 하며 내부 로드 밸런서 구성 요소에 할당됩니다. 이 주소는 Swagger 문서 페이지 및 REST API에 직접 액세스할 뿐만 아니라 ONTAP 도구 관리자 사용자 인터페이스에서 사용됩니다.</block>
+  <block id="be1cd531936ba46a2647fa7dd8d85828" category="paragraph-title">REST API 2개</block>
+  <block id="3a77755c4eaf7897cda1f7db8e722428" category="inline-link">ONTAP 자동화</block>
+  <block id="5de3d520a303cddad4df07a561f32c63" category="paragraph">ONTAP 클러스터에는 VMware vSphere 10 REST API용 ONTAP 툴 외에도 자체 REST API가 있습니다. ONTAP 툴 관리자는 ONTAP REST API를 클라이언트로 사용하여 스토리지 관련 작업을 수행한다. 이 두 가지 API는 별개이며 구별된다는 점을 명심해야 합니다. <block ref="2d4aebc414c2e9f6455c923c16f6303c" category="inline-link-rx"></block>ONTAP REST API에 대한 자세한 내용은 설명서를 참조하십시오.</block>
+  <block id="20516199cb9481d285d518fc11cdca0a" category="summary">REST에서 일반적인 기술 세트와 모범 사례를 설정하지만 각 API의 정확한 구현은 설계 선택에 따라 다를 수 있습니다. 그리고 VMware vSphere 10 REST API용 ONTAP 툴의 설계 방법을 숙지한 후에 사용해야 합니다.</block>
+  <block id="73e04cfa7b08e07a2220873d48382c98" category="doc">VMware vSphere 10 REST API용 ONTAP 툴 구현 세부 정보입니다</block>
+  <block id="19ec08da81a826d919d64ab860845c04" category="inline-link-macro">API 참조</block>
+  <block id="3a7801515e8905c5c1b58caba299deae" category="paragraph">REST API에는 vCenter 및 Aggregate와 같은 몇 가지 리소스 범주가 포함되어 있습니다. 자세한 내용은 를 <block ref="f993b2671c2a028bb49c8687852396a0" category="inline-link-macro-rx"></block>참조하십시오.</block>
+  <block id="45cd4354f07a1ab359a1cc263ed79868" category="section-title">REST API 액세스 방법</block>
+  <block id="655869188533f107f8244bd668d07902" category="paragraph">ONTAP 툴 로드 밸런서 IP 주소와 포트를 통해 VMware vSphere 10 REST API용 ONTAP 툴에 액세스할 수 있습니다. 전체 URL에는 다음과 같은 여러 부분이 있습니다.</block>
+  <block id="2380e443be52c3a8babdac8a3660044f" category="list-text">ONTAP 도구 IP 주소 및 포트</block>
+  <block id="7d1d9327371097419bdf83ffa671d2f2" category="list-text">API 버전</block>
+  <block id="bbf5c9c73b20bfa79e158e8eeb77c470" category="list-text">자원 범주</block>
+  <block id="e6e84e4970cb2f91fac914024e7baf80" category="list-text">특정 리소스</block>
+  <block id="33fb1e3ea3bf8658ae3a5a56799992ad" category="paragraph">초기 구성 중에 IP 주소를 구성해야 하며 포트는 항상 8443입니다. 또한 VMware vSphere 10용 특정 ONTAP 툴의 경우 URL의 첫 번째 부분은 일정합니다. 끝점마다 자원 범주와 특정 자원만 다릅니다.</block>
+  <block id="2b8e805ca5043f79e7d7895b37f35f24" category="admonition">아래 예제의 IP 주소 및 포트 값은 예시용입니다. 환경에 맞게 이러한 값을 변경해야 합니다.</block>
+  <block id="d66885731813874c4dabe678de135836" category="paragraph-title">인증 서비스 액세스 예</block>
+  <block id="d7593fde749e66b8acd303f60946cc1c" category="paragraph"><block ref="85aef1afd5758ea88a9da531790b9beb" prefix="" category="inline-code"></block></block>
+  <block id="37ce291feb740401bb26a4bcbdf918c9" category="paragraph">이 URL은 POST 메서드를 사용하여 액세스 토큰을 요청하는 데 사용할 수 있습니다.</block>
+  <block id="ca2d4582209691db052fbd2c60f9f562" category="paragraph-title">vCenter Server를 나열하는 예입니다</block>
+  <block id="51d2f920de63fca9d095d187b7d6e131" category="paragraph"><block ref="8966dcc71fcdaf44a08f9124e1d70fb0" prefix="" category="inline-code"></block></block>
+  <block id="24194695bb79b6d8c33b4828f530acf5" category="paragraph">이 URL은 Get 메서드를 사용하여 정의된 vCenter Server 인스턴스의 목록을 요청하는 데 사용할 수 있습니다.</block>
+  <block id="7ab91fd48b58ce1ea4cada1f1a4e1808" category="section-title">HTTP 세부 정보입니다</block>
+  <block id="756ebff3bca8295fe64008e02bb36be6" category="paragraph">VMware vSphere 10 REST API용 ONTAP 툴은 HTTP 및 관련 매개 변수를 사용하여 리소스 인스턴스 및 컬렉션에 대해 작동합니다. HTTP 구현에 대한 자세한 내용은 아래에 나와 있습니다.</block>
+  <block id="042aa0a27ac3cee02b1b53beb8e4a111" category="paragraph">REST API가 지원하는 HTTP 메서드 또는 동사는 아래 표에 나와 있습니다.</block>
+  <block id="4c3880bb027f159e801041b1021e88e8" category="cell">방법</block>
+  <block id="8ecfde6cfb333d8f81de0672a75b159c" category="cell">CRUD</block>
+  <block id="7a1a5f3e79fdc91edf2f5ead9d66abb4" category="cell">읽기</block>
+  <block id="034aca0a59cf5f755b56ff0e7a3d2faa" category="cell">리소스 인스턴스 또는 컬렉션의 개체 속성을 검색합니다. 이 작업은 컬렉션과 함께 사용할 때 목록 작업으로 간주됩니다.</block>
+  <block id="686e697538050e4664636337cc3b834f" category="cell">생성</block>
+  <block id="dab70249a81ca66a3d22ab410ef021a9" category="cell">입력 매개 변수를 기반으로 새 리소스 인스턴스를 만듭니다.</block>
+  <block id="6b328273cc49d43e9c2e399042be392d" category="cell">제공된 JSON 요청 본문으로 전체 리소스 인스턴스를 업데이트합니다. 사용자가 수정할 수 없는 키 값은 유지됩니다.</block>
+  <block id="06c620d6076e01f68380b53a426ccf45" category="cell">요청에 대해 선택한 변경 사항을 리소스 인스턴스에 적용하도록 요청합니다.</block>
+  <block id="f2a6c498fb90ee345d997f888fce3b18" category="cell">삭제</block>
+  <block id="61967c09828f8562a1a95fc9f6fd0151" category="section-title">요청 및 응답 헤더</block>
+  <block id="3161915a502f7dd153d9e9c3b9ce5d86" category="paragraph">다음 표에는 REST API와 함께 사용되는 가장 중요한 HTTP 헤더가 요약되어 있습니다.</block>
+  <block id="bf50d5e661106d0abe925af3c2e6f7e7" category="cell">머리글</block>
+  <block id="a1fa27779242b4902f7ae3bdd5c6d508" category="cell">유형</block>
+  <block id="81098f701c45e252a078b3eee62f0dab" category="cell">사용 참고 사항</block>
+  <block id="15c2d85f1fae22a3c3a0594510a1f611" category="cell">요청하십시오</block>
+  <block id="fcc5591447e85130af8ef80203f214b4" category="cell">클라이언트 응용 프로그램에서 허용할 수 있는 콘텐츠 유형입니다. 유효한 값에는 '\ */ * ' OR<block ref="d1f5a9d446c6cec2cf63545e8163e585" prefix=" " category="inline-code"></block>이 포함됩니다.</block>
+  <block id="27e609fa34c63bdd66a44eac9027c817" category="cell">X - 인증</block>
+  <block id="03a782daddc7d3b959264503c09fa71d" category="cell">클라이언트 응용 프로그램을 통해 요청을 실행하는 사용자를 식별하는 액세스 토큰이 포함되어 있습니다.</block>
+  <block id="dc105ac52c237f9f09c74b0767f64f74" category="cell">Content-Type(콘텐츠 유형)</block>
+  <block id="d64ed3e9c10229648e069f56e32f4c8e" category="cell">응답</block>
+  <block id="f0f2464004c8835c0d059c35d1f73ba4" category="cell">요청 헤더에 따라 서버에서<block ref="c4408d335012a56ff58937d78050efad" prefix=" " category="inline-code"></block> 반환됩니다.</block>
+  <block id="2974f783f17d54a41f4040c8daa90545" category="section-title">HTTP 상태 코드입니다</block>
+  <block id="4d2dab0f16d4faba319968bb4f554c83" category="paragraph">REST API에서 사용하는 HTTP 상태 코드는 다음과 같다.</block>
+  <block id="ca0dbad92a874b2f69b549293387925e" category="cell">코드</block>
+  <block id="7277de5f2ed6f17c61f1f25594591a82" category="cell">의미</block>
+  <block id="3644a684f98ea8fe223c713b77189a77" category="cell">200</block>
+  <block id="e0aa021e21dddbd6d8cecec71e9cf564" category="cell">좋습니다</block>
+  <block id="ebe8cd0cd7287699e570e52e72202209" category="cell">새 리소스 인스턴스를 만들지 않는 호출의 성공 여부를 나타냅니다.</block>
+  <block id="757b505cfd34c64c85ca5b5690ee5293" category="cell">201</block>
+  <block id="0eceeb45861f9585dd7a97a3e36f85c6" category="cell">작성됨</block>
+  <block id="ee1b2304db98c9dc895c168c5c3e2d95" category="cell">리소스 인스턴스에 대한 고유 식별자를 사용하여 개체가 생성되었습니다.</block>
+  <block id="854d6fae5ee42911677c739ee1734486" category="cell">202</block>
+  <block id="382ab522931673c11e398ead1b7b1678" category="cell">수락됨</block>
+  <block id="6ea0874423a44f55cc8ee103147a4bb0" category="cell">요청이 수락되었으며 요청을 수행하기 위한 백그라운드 작업이 생성되었습니다.</block>
+  <block id="274ad4786c3abca69fa097b85867d9a4" category="cell">204</block>
+  <block id="8386bf720b8b55126f9551c6678647f9" category="cell">콘텐츠가 없습니다</block>
+  <block id="aae60f64e8a8cfaba50bb2292348bc3c" category="cell">반환된 콘텐츠가 없지만 요청이 성공했습니다.</block>
+  <block id="18d8042386b79e2c279fd162df0205c8" category="cell">400</block>
+  <block id="0fc30646d5cf22910283967bf24ebf66" category="cell">잘못된 요청입니다</block>
+  <block id="d61713af1a9c56d51f7fb3873bed7e92" category="cell">요청 입력이 인식되지 않거나 부적절합니다.</block>
+  <block id="816b112c6105b3ebd537828a39af4818" category="cell">401</block>
+  <block id="e06d1ba70f1331e9f9a113cc2f887d3f" category="cell">권한이 없습니다</block>
+  <block id="521a106379f6926504948326fd953a38" category="cell">사용자에게 권한이 없으므로 인증을 받아야 합니다.</block>
+  <block id="bbf94b34eb32268ada57a3be5062fe7d" category="cell">403</block>
+  <block id="722969577a96ca3953e84e3d949dee81" category="cell">금지됨</block>
+  <block id="8df9e8f24b204c91ad0a9031f9c09a16" category="cell">인증 오류로 인해 액세스가 거부되었습니다.</block>
+  <block id="4f4adcbf8c6f66dcfc8a3282ac2bf10a" category="cell">404</block>
+  <block id="9e076f5885f5cc16a4b5aeb8de4adff5" category="cell">찾을 수 없습니다</block>
+  <block id="24ff0a9484d837d82e7f8f8218e196b6" category="cell">요청에서 참조되는 리소스가 없습니다.</block>
+  <block id="a96b65a721e561e1e3de768ac819ffbb" category="cell">409</block>
+  <block id="f1d4ac54357cc0932f385d56814ba7e4" category="cell">충돌</block>
+  <block id="47a99fc0005eeb289896eda4eb4b708a" category="cell">개체가 이미 있으므로 개체를 만들지 못했습니다.</block>
+  <block id="cee631121c2ec9232f3a2f028ad5c89b" category="cell">500</block>
+  <block id="8f8913c1f755436db84ae169e37c61f9" category="cell">내부 오류입니다</block>
+  <block id="03f0e0f686ebd5f796ca9febd1723676" category="cell">서버에서 일반적인 내부 오류가 발생했습니다.</block>
+  <block id="c75f7811d70d17dbcd88e9d03752cbed" category="section-title">인증</block>
+  <block id="e9e6a27d4bfbd7f5042800de53a926bb" category="paragraph">REST API에 대한 클라이언트 인증은 액세스 토큰을 사용하여 수행됩니다. 토큰 및 인증 프로세스의 관련 특징은 다음과 같습니다.</block>
+  <block id="73005c4ee1b6da331856852270bb4928" category="list-text">클라이언트는 ONTAP 도구 관리자 관리자 자격 증명(사용자 이름 및 암호)을 사용하여 토큰을 요청해야 합니다.</block>
+  <block id="f9c59a96248bb30ec8fe1f39c8b4902a" category="list-text">토큰은 JSON 웹 토큰(JWT)으로 포맷됩니다.</block>
+  <block id="43a0f271454bd2f46f0629ca623fd6e6" category="list-text">각 토큰은 60분 후에 만료됩니다.</block>
+  <block id="b2e958775d667e0a227cfddbcebd684f" category="list-text">클라이언트의 API 요청은 요청 헤더에 토큰을 포함해야<block ref="27e609fa34c63bdd66a44eac9027c817" prefix=" " category="inline-code"></block> 합니다.</block>
+  <block id="8921c3b98c12a84674b91d6afb231018" category="inline-link-macro">첫 번째 REST API 호출</block>
+  <block id="97464d8b78e344ca1b8dbef846959c30" category="paragraph">액세스 토큰을 요청하고 사용하는 예는 을 <block ref="02f9c42fec62e806982e89939749ac1d" category="inline-link-macro-rx"></block>참조하십시오.</block>
+  <block id="a629cb231a04093c2a17e9137fcc8b2e" category="section-title">동기 및 비동기 요청</block>
+  <block id="a7fdec025c999a2d4658d175b36b6816" category="paragraph">대부분의 REST API 호출은 빠르게 완료되므로 동기식으로 실행됩니다. 즉, 요청이 완료된 후 상태 코드(예: 200)를 반환합니다. 백그라운드 작업을 사용하여 비동기적으로 실행하는 데 시간이 오래 걸리는 요청</block>
+  <block id="ee0683b0f9214e5957ad88b24d1d0692" category="paragraph">비동기적으로 실행되는 API 호출을 실행한 후 서버는 202 HTTP 상태 코드를 반환합니다. 이는 요청이 수락되었지만 아직 완료되지 않았음을 나타냅니다. 백그라운드 작업을 쿼리하여 성공 또는 실패를 포함하여 상태를 확인할 수 있습니다.</block>
+  <block id="c6484bc2fdbc6f333ba72fd2ff67490d" category="paragraph">비동기식 처리는 데이터 저장소 및 VVOL 작업을 포함하여 여러 유형의 장기 실행 작업에 사용됩니다. 자세한 내용은 Swagger 페이지에서 REST API의 작업 관리자 범주를 참조하십시오.</block>
+  <block id="3672cc73e8f241c0e99fa671f7d984c5" category="sidebar">REST API를 사용하여 자동화</block>
+  <block id="90182eba2ac7240af5b5cb5ba83a8c1b" category="sidebar">REST API에 대해 자세히 알아보십시오</block>
+  <block id="d58b759501469292f5d0464d265c376c" category="sidebar">REST 구현</block>
 </blocks>
