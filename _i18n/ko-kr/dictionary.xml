@@ -92,10 +92,7 @@
   <block id="d428ebb7ac02e1484781b38a799a4f99" category="paragraph">* 필요한 것 *</block>
   <block id="0b116b89d80e19bf956dfc85f50bc1e9" category="summary">정보가 필요합니다.</block>
   <block id="87b9292b96462f70c7dfb870481b1445" category="list-text">팝업의 드롭다운에서 스토리지 백엔드를 선택합니다.</block>
-  <block id="b2ed14efa60f0218dbe29d217936db05" category="list-text">작업이 완료되면 마이그레이션 보고서를 검증합니다. jobData의 일부로 작업 응답의 보고서를 볼 수 있습니다.</block>
-  <block id="940a68f40b0387ef09c8890b5f3351a3" category="list-text">다음 API를 사용하여 패치 마이그레이션을 수행합니다.</block>
   <block id="603041e40db447bbdd32fd4b4c2f994d" category="admonition">UUID는 사후 마이그레이션 API의 응답으로 반환된 마이그레이션 uuid입니다.</block>
-  <block id="c433a687863536676c660d246d95f8f1" category="paragraph">패치 마이그레이션 API가 성공하면 모든 VM이 스토리지 정책을 준수합니다.</block>
   <block id="07fdc7a244250b2e1c9e6533ff0ea4e0" category="paragraph">마이그레이션을 위한 API 삭제:</block>
   <block id="6b50b8836085008a8950ddeafeb7453a" category="list-text">모든 호스트에서 인증서를 새로 고칩니다.</block>
   <block id="f14c276c07197ebef1394a5a219087a1" category="cell">* 설명 *</block>
@@ -242,7 +239,6 @@
   <block id="db02bd2307c791062e633781a3c11af0" category="list-text">vCenter Server 인스턴스 관리 - vCenter Server 인스턴스를 ONTAP 툴에 추가 및 관리합니다.</block>
   <block id="7642832535ff83a877a05e578e6e55f7" category="list-text">스토리지 백엔드 관리 - ONTAP 스토리지 클러스터를 VMware vSphere용 ONTAP 툴에 추가 및 관리하고 전체적으로 온보딩된 vCenter Server 인스턴스에 매핑합니다.</block>
   <block id="ce3d50f0dc891fd49131a5879ff0cfbb" category="list-text">로그 번들 다운로드 - VMware vSphere용 ONTAP 툴에 대한 로그 파일을 수집합니다.</block>
-  <block id="68ab2bf8c2ce15ec9d7b00c479775a7e" category="list-text">암호 관리 - 사용자에 대한 OVA 응용 프로그램 암호를 재설정합니다.</block>
   <block id="201e0f05da35ce967557e2ecf9f130be" category="paragraph">ONTAP 도구 관리자에 액세스하려면 를 실행합니다<block ref="1910f09ff940f1765a7dd530bdeb5127" prefix=" " category="inline-code"></block> 구축 중에 제공한 VMware vSphere 관리자 자격 증명용 ONTAP 툴을 사용하여 브라우저에서 로그인하고 로그인합니다.</block>
   <block id="3fae23455f0376a5d42734cbd65edc69" category="summary">vSphere Client에서 VMware vSphere용 ONTAP 툴을 처음 실행하면 VMware vSphere용 ONTAP 툴이 ESXi 호스트, 해당 LUN 및 NFS 내보내기, 해당 LUN 및 내보내기를 소유한 NetApp 스토리지 시스템을 검색합니다.</block>
   <block id="8fd43ee482a4e281b8feee6762fb22d2" category="doc">스토리지 시스템 및 호스트를 검색합니다</block>
@@ -847,15 +843,9 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="6753f4982155708aac37a1bd3bef1245" category="paragraph">네트워크 매핑 생성 마법사가 나타납니다.</block>
   <block id="6211d5bb29b9c1509eb64e37fd1af6f4" category="list-text">네트워크 매핑 생성 마법사에서 다음을 수행합니다.</block>
   <block id="a00d4477c9c1974aff09f6ea5b44859d" category="paragraph">네트워크 매핑 페이지에는 보호된 사이트 리소스와 복구 사이트 리소스가 표시됩니다. 사용자 환경의 다른 네트워크에 대해서도 동일한 단계를 수행할 수 있습니다.</block>
-  <block id="3dd0b6cbf926605abe281a83613cb23c" category="admonition">기존 사용자는 패치 릴리스로 업그레이드하기 전에 현재 릴리스에서 OVA 백업을 가져와야 합니다.</block>
   <block id="135dda3ac3096b9bd31ceb04b513c216" category="section-title">일반적인 마이그레이션 단계</block>
   <block id="a556515aafd07bfe4c2dfa6abbaa4ccb" category="section-title">SRA 마이그레이션 단계</block>
-  <block id="37470572c4c0d1df68b6e2c9cf86ecf9" category="paragraph">마이그레이션하기 전에 사이트 중 하나가 보호 상태이고 다른 사이트가 복구 상태에 있는지 확인합니다.</block>
-  <block id="064e145ea2f6bfb5bc6045ba1fb3a818" category="admonition">페일오버가 방금 완료되고 재보호가 보류 중인 경우에는 마이그레이션하지 마십시오. 재보호를 완료한 다음 마이그레이션을 수행합니다.
-복구 계획 테스트에도 동일하게 적용됩니다. 복구 계획 테스트가 완료되면 테스트 복구를 정리한 다음 마이그레이션을 시작합니다.</block>
-  <block id="0bb95f551fcbc064f5de91693d368db6" category="list-text">스토리지 복제 어댑터 섹션으로 이동합니다</block>
   <block id="77efba168b5a2059c2d20a1e2673f5d1" category="paragraph">보호 사이트와 복구 사이트 모두에서 다음 단계를 수행합니다.</block>
-  <block id="0052540e6b71b0dead0bb00933d9a68d" category="list-text">VMware vSphere용 기존 ONTAP 툴에서 더비 포트 1527을 활성화합니다. 포트를 활성화하려면 루트 사용자로 CLI에 로그인하고 다음 명령을 실행합니다.</block>
   <block id="c713abd43a97c8915e6503cd7f93ad36" category="list-text">마이그레이션하려면 다음 API 호출을 실행합니다.</block>
   <block id="4b2e39d58448cd6246edaab6e2789245" category="paragraph">*HTTP 메서드 및 끝점*</block>
   <block id="0b0231c1815d06ad4701a091ce91a740" category="paragraph">이 REST API 호출은 다음과 같은 메소드와 엔드포인트를 사용합니다.</block>
@@ -892,31 +882,16 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   "상태":"실행 중"
 }</block>
   <block id="ec874bf582309d24e5c0f1f38429fb73" category="inline-link-macro">vCenter Server에 VASA Provider를 등록합니다</block>
-  <block id="5fec27e27d789740b1557e43765e8712" category="list-text">유지 관리 콘솔에서 VMware vSphere 스토리지 공급자용 ONTAP 툴 9.10/9.11/9.12/9.13 VASA Provider 서비스를 중지합니다.</block>
   <block id="63bc9a3997d66d835d9f3ec29451407d" category="cell">패치</block>
   <block id="41e9abb5d58ca11ff36c3067c273a762" category="paragraph">패치 "/api/v1/vCenters/56d373bd-4163-44f9-a872-9adabb008ca9/migration-jobs/84dr73bd-9173-65r7-w345-8ufdb887d43</block>
   <block id="bdfee7ad87d9004e1091e6e1762d0e84" category="paragraph">* JSON 입력 예 *</block>
-  <block id="80d6f8b7b33941158bf11590d8f340f5" category="paragraph">패치 작업을 위한 요청 본문이 비어 있습니다.</block>
   <block id="cef9fa1aa0d8c4bd89bf89cf8cbb5cae" category="paragraph">/api/v1/vCenters/{vcguid}/migration-jobs/{migration_id}</block>
-  <block id="f45df61923075bce3925756b5ef238ac" category="paragraph">이 API는 마이그레이션 ID별 마이그레이션을 삭제하고 지정된 vCenter Server에서 마이그레이션을 삭제합니다.</block>
-  <block id="02b629daee69a13e1d9e1bb586f9aeaa" category="list-text">잠시 기다린 후 데이터 저장소(DS) 및 가상 머신(VM) 작업을 수행합니다. 대기 시간은 설정에 있는 호스트, DS 및 VM의 수에 따라 다릅니다. 기다리지 않으면 작업이 간헐적으로 실패할 수 있습니다.</block>
   <block id="07959986337388ebd736dc282a14afca" category="paragraph">* 진단 활성화 *</block>
-  <block id="070fdd3da4ee331b0ced27113978cc9a" category="list-text">vCenter Server에서 콘솔을 열고 ONTAP 툴을 엽니다.</block>
   <block id="589c4957e1e0bb7b0bf55fa835dbaf3d" category="list-text">y * 를 입력하여 선택한 암호를 설정합니다.</block>
-  <block id="f6026db814a9f3dd7f8b744a321a37f6" category="paragraph">* MongoDB 백업 *</block>
-  <block id="3ad298269c982c99cdf89686fc99f90e" category="paragraph">다음 명령을 실행하여 MongoDB 백업을 수행합니다.</block>
   <block id="0a01c0c2d00b20ff323dc6b25ceb30a5" category="list-text">kN Exec-IT NTV-mongodb-0 sh-kn은 kubectl-n NTV-system의 별칭입니다.</block>
-  <block id="6ac951df6c4326c0b5ba21fb03e462b0" category="list-text">env | grep mongodb_root_password - 포드 내부에서 이 명령을 실행합니다.</block>
-  <block id="56773b08cc852ed52964549dfb9fc61e" category="list-text">'exit'(종료) - 이것을 실행하여 포드에서 나오십시오.</block>
-  <block id="93c8b0f299af9bd0eec6a1b971e57816" category="list-text">kN Exec NTV-mongodb-0--mongodump -u root -p mongodb_root_password--archive=/tmp/mongodb-backup.gz - -gzip -이 명령을 실행하여 위의 명령에서 설정된 Mongo_root_password를 대체합니다.</block>
-  <block id="e3a9f4dcb4a04b10f748467637c474e9" category="list-text">kN CP NTV-mongodb-0:/tmp/mongodb-backup.gz./mongodb-backup.gz - 위의 명령을 사용하여 생성된 MongoDB 백업을 POD에서 호스트로 복사하려면 이 명령을 실행합니다.</block>
-  <block id="7511ae8db149d434a6d995197e107fcb" category="list-text">'kn Get PVC' 명령을 실행하고 명령의 출력을 저장합니다.</block>
   <block id="bfc1d4c138c87f77e5b639193ca91674" category="list-text">다음 방법 중 하나를 사용하여 모든 볼륨의 스냅샷을 하나씩 생성합니다.</block>
   <block id="bcf0e596a358c1cb63fd717d9fa47cd7" category="list-text">CLI에서 _volume snapshot create -vserver &lt;vserver_name&gt; -volume &lt;volume_name&gt; -snapshot &lt;snapshot_name&gt;_ 명령을 실행합니다</block>
-  <block id="37bdbf0e3834e7af7a371007e55bb5b8" category="list-text">ONTAP 시스템 관리자 사용자 인터페이스에서 검색 표시줄에서 볼륨을 이름으로 검색한 다음 이름을 클릭하여 해당 볼륨을 엽니다. 스냅샷으로 이동하여 해당 볼륨의 스냅샷을 추가합니다.</block>
   <block id="c3710cf1c44da535612cf08236cee98f" category="list-text">vSphere Client 사용자 인터페이스에서 VM을 선택합니다.</block>
-  <block id="0c7449d65eaf3d8213f7d1d7f8e79d1c" category="paragraph">업그레이드를 수행하기 전에 로그 번들에서 접두사 "generate-support-bundle-job"이 있는 완료된 Pod를 삭제하십시오.
-지원 번들 생성이 진행 중인 경우 완료될 때까지 기다린 다음 Pod를 삭제하십시오.</block>
   <block id="b06f0e274f6c746f0d30521b5c7f392e" category="list-text">VMware vSphere용 ONTAP 툴을 컨텐츠 라이브러리로 업그레이드합니다.</block>
   <block id="dd5382558ec4a47dfbc203fb25698772" category="list-text">기본 VM 페이지에서 * Actions * &gt; * Edit Settings * 를 선택합니다</block>
   <block id="54a029420d74c0dff69239155cf510b5" category="inline-image-macro">설정을 편집합니다</block>
@@ -1297,7 +1272,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="fb9ce87f03a0429d0af0760d01b74612" category="cell">095</block>
   <block id="b5e39b37a2c811e88e1f07aa15f0ba15" category="summary">HA 및 비 HA 구현 모두에서 업그레이드가 지원됩니다.</block>
   <block id="7504b99fb3697e6b7b59cd3c56ab26b7" category="paragraph">VMware vSphere 10.0용 ONTAP 도구에서 10.1로 업그레이드하는 경우 업그레이드 작업을 진행하기 전에 다음 단계를 완료해야 합니다.</block>
-  <block id="aadafc361893326b48d9ad9299ddff34" category="list-text">편집 설정 창의 * CD/DVD 드라이브 * 필드에서 콘텐츠 라이브러리 ISO 파일을 선택합니다.</block>
   <block id="174e0bb9fd863076b8b78d2ca9e0dd08" category="sidebar">NFS 및 VMFS 데이터 저장소를 마운트합니다</block>
   <block id="41d4fa725cfb558559b7183adeea1e30" category="sidebar">NFS 및 VMFS 데이터 저장소를 마운트 해제합니다</block>
   <block id="e6e4c7644f1b4ac0c9a1fa2e3a633259" category="sidebar">VVOL 데이터 저장소를 확장합니다</block>
@@ -1353,7 +1327,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="d6efc4dcb0d701b8153c2ef1af6e22b9" category="list-text">VMware Live Site Recovery UI에서 VMware vSphere 9.xx 릴리즈 SRA 어댑터용 ONTAP 툴을 삭제하려면 다음 단계를 수행하십시오.</block>
   <block id="de7cd16aa682868ad900edd519b06059" category="list-text">VMware Live Site Recovery 구성 관리 페이지로 이동합니다</block>
   <block id="e6af441b9194db7f4427a1199ae8c274" category="inline-link-macro">VMware Live Site Recovery 어플라이언스에 SRA를 구성합니다</block>
-  <block id="f24af9463aafeb0a644c3f3baddedb00" category="list-text">VMware Live Site Recovery UI 페이지에서 * 스토리지 검색 * 및 * 장치 검색 * 작업을 수행하고 마이그레이션 전과 동일하게 장치가 표시되는지 확인합니다.</block>
   <block id="0b3582622e579cb352e246015d6ca171" category="summary">VMware Live Site Recovery의 Array Manager 마법사를 사용하여 SRA(스토리지 복제 어댑터)를 구성하여 VMware Live Site Recovery와 스토리지 가상 머신\(SVM\) 간의 상호 작용을 지원할 수 있습니다.</block>
   <block id="fe3a4c2227170fc60976b4e12c53d157" category="paragraph">VMware Live Site Recovery의 Array Manager 마법사를 사용하여 SRA(스토리지 복제 어댑터)를 구성하여 VMware Live Site Recovery와 SVM(스토리지 가상 머신) 간의 상호 작용을 지원할 수 있습니다.</block>
   <block id="986d9b60b2308d9411e69051124f1e90" category="list-text">VMware Live Site Recovery에서 보호된 사이트와 복구 사이트를 페어링해야 합니다.</block>
@@ -1536,13 +1509,9 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="35b4916fa7f87e2934afc9aa83571dfc" category="paragraph">플러그인 설치에 적합한 ESXi 호스트만 표시됩니다. 화면의 지시에 따라 설치를 완료해야 합니다. vSphere Web Client의 최근 작업 섹션에서 설치 진행률을 모니터링할 수 있습니다.</block>
   <block id="6dc52c7290e3cfc8eb925243061b7551" category="list-text">인증서 관리 - 자체 서명된 인증서를 사용자 지정 CA 인증서로 변경하고 VASA 공급자 및 ONTAP 툴의 모든 인증서를 갱신하거나 새로 고칩니다.</block>
   <block id="f8e55333fdf93a54b9c4999e28d01f1c" category="inline-image-macro">ONTAP tools Manager 대시보드 개요</block>
-  <block id="69a8f62bd40b2285b7006bc878f63e59" category="paragraph">ONTAP Tools Manager 개요 섹션은 서비스 관리, 노드 크기 확장 및 고가용성(HA) 지원과 같은 어플라이언스 구성을 관리하는 데 도움이 됩니다. 또한 상태, 네트워크 세부 정보 및 경고와 같이 노드와 관련된 전반적인 ONTAP 툴에 대한 정보를 모니터링할 수 있습니다. <block ref="eaff07db9f9bd4c788b59cf5ac2e6f5e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="438feb29c72033a1e461b5f8627d139d" category="cell">어플라이언스 카드</block>
-  <block id="21a9feeb29c1c0a30517eb98535f5202" category="cell">어플라이언스 카드는 전체 ONTAP 도구 어플라이언스 상태를 제공합니다. 어플라이언스 구성 세부 정보 및 활성화된 서비스의 상태를 표시합니다. ONTAP 툴 어플라이언스와 관련된 자세한 내용을 보려면 * 상세 정보 보기 * 링크를 클릭하십시오. 어플라이언스 설정 편집 작업이 진행 중인 경우 어플라이언스 포틀릿에 작업의 상태 및 세부 정보가 표시됩니다.</block>
   <block id="2ba512cd332d9fb8cdb8eaaa68126426" category="cell">경고 카드</block>
-  <block id="2a1cd4a592ca1d01c6e03390d7a6d5d1" category="cell">경고 카드에는 HA 노드 수준 경고를 포함하여 유형별 ONTAP 툴 경고가 표시됩니다. 개수 텍스트(하이퍼링크)를 클릭하여 알림 목록을 볼 수 있습니다. 링크는 선택한 유형으로 필터링된 경고 보기 페이지로 연결됩니다.</block>
   <block id="3c3237ebddf22ec92cfa91fee8b87db8" category="cell">ONTAP 도구 노드 카드</block>
-  <block id="50d0b4e12fbe47a8699d3c2d31ef6505" category="cell">ONTAP tools nodes 카드는 노드 이름, 노드 VM 이름, 상태 및 모든 네트워크 관련 데이터가 있는 노드 목록을 표시합니다. View details * 를 클릭하면 선택한 노드와 관련된 추가 세부 정보를 볼 수 있습니다. [참고] HA가 아닌 경우 하나의 노드만 표시됩니다. HA의 경우 3개의 노드가 표시됩니다.</block>
   <block id="c749ba6a66c9c4d365591fada904e866" category="list-text">호스트 클러스터에 마운트된 모든 데이터 저장소는 iSCSI/FC 프로토콜을 사용하는 VMFS 데이터 저장소여야 합니다. NVMe/FC 및 NVMe/TCP 프로토콜을 사용하는 VVol, NFS 또는 VMFS 데이터 저장소는 지원되지 않습니다.</block>
   <block id="6107bfa2400c41e392656bedd41adf70" category="list-text">protect cluster * 창에서 생성 작업 중에는 삭제 작업만 지원됩니다. 보호를 삭제하고 다시 추가할 수 있습니다. Modify host cluster protection(호스트 클러스터 보호 수정) 작업 중에 편집 옵션을 사용할 수 있습니다. 줄임표 메뉴 옵션을 사용하여 관계를 편집하거나 삭제할 수 있습니다.</block>
   <block id="79f9acbcb92275b6970c0803108ab558" category="paragraph">작업 ID 세부 정보와 함께 vCenter 작업이 생성되고 진행률이 Recent Tasks(최근 작업) 패널에 표시됩니다. 이 작업은 비동기 작업이며 사용자 인터페이스는 요청 제출 상태만 표시하고 작업이 완료될 때까지 기다리지 않습니다.</block>
@@ -1751,22 +1720,12 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="0e098cc28d02ba04dfc24f8fb59c1fd1" category="admonition">이 보기는 ASA R2 기반 VVol 데이터 저장소에 대해 지원되지 않습니다.</block>
   <block id="c46965d55afff0a89c0bb3bd26c0a653" category="summary">스토리지 데이터를 마이그레이션할 때 REST API를 사용하여 스토리지 백엔드를 수동으로 온보드합니다. VASA Provider 데이터를 마이그레이션할 때 기존 Derby 데이터베이스에서 데이터를 내보내고 MongoDB 데이터베이스로 가져옵니다.</block>
   <block id="e43b5fd407b2bc9fda1a39851a48f9bb" category="doc">VMware vSphere 9.x용 ONTAP 툴에서 10.3로 마이그레이션합니다</block>
-  <block id="f729a2cd0859c6ed3e1a05f2799ab893" category="admonition">설정 시 VASA Provider 기능만 제공하는 경우에만 VMware vSphere 9.xx 설정용 ONTAP 툴을 마이그레이션하는 것이 좋습니다.</block>
-  <block id="6572323c8c420a17787c730db23bfe73" category="admonition">ONTAP 툴 10.3은 VMFS 데이터 저장소를 통해 NVMe-oF만 지원하므로 VMware vSper 9.x용 ONTAP 툴에서 10.3으로 마이그레이션한 후 NVMe/FC 프로토콜을 사용하는 VVOL 데이터 저장소가 작동하지 않습니다.</block>
-  <block id="fedbcbfcba84e0f83145c9556e237d18" category="paragraph">VMware vSphere 9.12D1 및 9.13D2 릴리즈용 ONTAP 툴에서 10.3 릴리즈로의 마이그레이션이 지원됩니다.</block>
   <block id="98db65da9a06955541a5451543410fde" category="list-text">VMware vSphere 10.3 릴리스용 ONTAP용 OVA 도구를 배포합니다.</block>
-  <block id="df773402e8f2ed0ab0c0814bc876c2b4" category="list-text">VMware vSphere 10.3 릴리즈용 ONTAP 툴로 마이그레이션할 vCenter Server 인스턴스를 추가합니다. 을 참조하십시오 <block ref="fbc3413db4202f1fe331f16af6b38f13" category="inline-link-macro-rx"></block></block>
-  <block id="528ca6fe76d1644ad915c3bc45c4d63d" category="list-text">VMware vSphere 9.xx용 ONTAP 툴에서 마이그레이션된 NFS 및 VMFS 데이터 저장소는 데이터 저장소 검색 작업이 트리거된 후에만 VMware vSphere 10.3용 ONTAP 툴에 표시됩니다. 이 작업은 트리거하는 데 최대 30분이 걸릴 수 있습니다. 데이터 저장소가 VMware vSphere용 ONTAP Tools 플러그인 UI 페이지의 개요 페이지에 표시되는지 확인합니다.</block>
-  <block id="c86e769a3ebdcd57610a068230678ec7" category="list-text">줄임표 메뉴를 클릭하고 * 구성 재설정 * 을 클릭합니다</block>
-  <block id="96069341a33c50a0ef5c1407a1fd182f" category="list-text">줄임표 메뉴를 클릭하고 * 삭제 * 를 선택합니다</block>
   <block id="b81b2046e8a2fa467c645a47a0ade5d0" category="list-text">의 단계에 따라 보호 및 복구 사이트 모두에 VMware vSphere 10.3 SRA 어댑터용 ONTAP 툴을 설치합니다 <block ref="200275c92830164958f040bec21a478e" category="inline-link-macro-rx"></block></block>
   <block id="b7b423b5e37e418ae4659bcf83c729b5" category="section-title">VASA Provider 마이그레이션 단계</block>
-  <block id="2cd7a3049fe96503b7de6e7f7aa952df" category="list-text">VMware vSphere 10.3 릴리즈용 ONTAP 툴로 마이그레이션할 vCenter Server 인스턴스를 추가합니다. 을 <block ref="946669e64e0e42585f18099dec81ec03" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="2d3feeef6331c15c90e4aea5b6cc1e41" category="list-text">VMware vSphere 스토리지 공급자용 ONTAP 툴을 vCenter Server 및 에 추가합니다 <block ref="a322950c1b9e940cddaca5a47e2d5895" category="inline-link-macro-rx"></block>.</block>
   <block id="ffdec42d5d13cecca850e153f75748ec" category="paragraph">VASA Provider를 삭제하지 마십시오.</block>
-  <block id="b5a25fbe7772c238f78e903d293f5308" category="paragraph">이전 VASA Provider가 중지되면 vCenter Server가 VMware vSphere용 ONTAP 툴로 페일오버됩니다. 모든 데이터 저장소와 VM에 액세스할 수 있으며 VMware vSphere용 ONTAP 툴을 통해 제공됩니다.</block>
   <block id="29d0e7add25c8163223dbcb531abf7d0" category="paragraph">마이그레이션에 성공하고 ONTAP Tools 10.3을 vCenter Server에 등록한 후 다음을 수행합니다.</block>
-  <block id="b6d81ca221627275f71a12c9cd54aaf8" category="paragraph">VMware vSphere용 ONTAP 툴의 이전 릴리스에서 10.3 릴리스로 마이그레이션한 후에는 SRA 어댑터를 다시 검색하여 VMware 라이브 사이트 복구 스토리지 복제 어댑터 페이지에서 세부 정보가 업데이트되는지 확인합니다.</block>
   <block id="8e9a07c053d2ef05978af8e903731d91" category="paragraph">VMware vSphere 9용 ONTAP 툴에서 VMware vSphere 10.1 이상 버전용 ONTAP 툴로 마이그레이션하는 것이 적합한지 알아보십시오. 최신 호환성 정보는 을 참조하십시오<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block>.</block>
   <block id="073983521d52887782f4ac8fcd628e60" category="cell">ONTAP TOOLS 10.2 이상</block>
   <block id="f4950bb5572ea7201d6246f4bd786edd" category="cell">ONTAP 툴 10.2 9.14.1, 9.15.1 및 ONTAP 툴 10.3용 9.16.0. ONTAP 툴용 ONTAP 9.12.1 - ONTAP 9.15.1.</block>
@@ -1823,17 +1782,12 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="2298090c8808f9e231d33a417e9f8fda" category="cell">보조 노드의 리소스를 새로 고치지 못했습니다</block>
   <block id="1ca37d27a58b0a0a35fd38c8f42f39fc" category="admonition">VMware vSphere 10.3용 ONTAP 툴은 제로 RPO를 지원합니다.</block>
   <block id="e085c3225ffce6bb698ac8cf50cc0dc4" category="doc">VMware vSphere 10.x용 ONTAP 툴을 10.3로 업그레이드하십시오</block>
-  <block id="c45b0da6267d1b3ac800c0b030304702" category="paragraph">HA 및 비 HA 구현 모두에서 업그레이드가 지원됩니다. 지원되는 업그레이드 경로는 다음과 같습니다.</block>
   <block id="b82f42f52ac5fdc3e618aefefe8a32c4" category="cell">VMware vSphere 10.1 및 10.2 구성에 대한 ONTAP 툴 활용</block>
   <block id="b3b9272a2c469166be75d90b4b3c80cc" category="cell">VMware vSphere 10.3 구성을 위한 ONTAP 툴</block>
   <block id="55fccd63301cc56ac04a1c6d2f582d36" category="cell">HA가 아닌 고급 소형</block>
   <block id="2f876f935e1583f150a8df2b2a6edbf0" category="cell">비 HA 및 고급 매체</block>
   <block id="4bab1341c76020b5f6d28c63555579b4" category="cell">고급 소형</block>
   <block id="8cd81bc4ea1b977ea6e585721caa4349" category="cell">고급 미디어</block>
-  <block id="d2326859c3dfbf997316b902ffdd2b00" category="admonition">VM ware vSphere 10.1 및 10.2에서 10.3까지의 ONTAP 툴에서 업그레이드가 지원됩니다. ONTAP 도구 10.0에서 10.3으로 직접 업그레이드할 수 없습니다.</block>
-  <block id="1a66f7eb5566c2688b2d5d921d9eef6f" category="paragraph">HA가 아닌 업그레이드의 경우 ONTAP 도구 VM의 전원을 끄고 HA 업그레이드의 경우 가상 머신(VM) 설정을 다음과 같이 변경하기 전에 첫 번째 노드의 전원을 끕니다.</block>
-  <block id="b646416d8819b3149b9593d11ae9e16f" category="list-text">서비스 데이터가 VM에 로컬로 저장될 때 각 노드에 100GB의 추가 하드 디스크를 추가합니다.</block>
-  <block id="fc5ce7eb2b2cb08c38ec14e4d238751d" category="list-text">배포 방식에 따라 전원이 꺼진 VM의 CPU 및 메모리를 변경합니다. CPU 및 RAM에 대해 핫 플러그인을 활성화합니다.</block>
   <block id="1b6cfd8c0ad7fbb4f3aad55904bed183" category="cell">10.3 배포 유형</block>
   <block id="5d86ea2686b1b1322f7a0284c0f51191" category="cell">노드당 CPU(코어</block>
   <block id="5c42add8c77b8db0c96fe2b4bd853355" category="cell">노드당 메모리(GB)입니다</block>
@@ -1848,35 +1802,18 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="662e7928456061bbc4ff15203f731479" category="cell">HA 대규모</block>
   <block id="70efdf2ec9b086079795c442636b55fb" category="cell">17</block>
   <block id="e369853df766fa44e1ed0ff613f563bd" category="cell">34</block>
-  <block id="87d8a82ad972c59e0687fe82cccc2694" category="list-text">변경이 완료된 후 VM의 전원을 켜고 서비스가 실행 상태가 될 때까지 기다립니다.</block>
-  <block id="c2bf492958f9a5af46545d2cbb870e2f" category="list-text">HA 배포의 경우 리소스를 변경하고, CPU 및 RAM에 대한 핫 플러그인을 활성화하고, 두 번째 노드와 세 번째 노드에 대해 100GB 하드 디스크를 추가합니다. 이러한 노드를 재부팅할 필요가 없습니다.</block>
-  <block id="22a804da0dd55275401036ab63b714e8" category="list-text">어플라이언스가 ONTAP tools 10.1 또는 10.2 버전을 사용하여 로컬 경로(간편한 배포)로 배포된 경우 업그레이드하기 전에 스냅샷을 중지해야 합니다.</block>
   <block id="8a6126b328272cba568f4c25bb25de85" category="list-text">4 * 를 입력하여 * 지원 및 진단 * 을 선택합니다.</block>
   <block id="1e137377f709a1d14e9081a633895f6d" category="list-text">2 * 를 입력하여 * 원격 진단 액세스 활성화 * 를 선택합니다.</block>
-  <block id="a285f3b4aeefb88ca2fd8666fcd325b0" category="list-text">터미널/putty에서 이전 단계에서 설정한 'DIAG' 및 암호로 VM IP 주소에 로그인합니다.</block>
   <block id="6628bd5e9dbb13f60147cfc8d04cb977" category="paragraph">* 모든 볼륨의 Quaise 스냅샷을 촬영합니다 *</block>
   <block id="a6d135b70268e6dae6e2414dc9c7e465" category="inline-link">가상 시스템의 스냅샷을 생성합니다</block>
   <block id="557eb1dc4f7a93540b6e414ed969c26c" category="list-text">스냅샷 탭으로 이동하고 * 스냅샷 촬영 * 버튼을 클릭합니다. VM의 일시 중지된 스냅샷을 생성합니다. 자세한 내용은 을<block ref="f606a1111a1f40f1cc809e71ec5c1234" category="inline-link-rx"></block> 참조하십시오.</block>
-  <block id="1b2929d74bbfce8f97efe465aa7ef62a" category="paragraph">모든 유형의 업그레이드를 위해 100GB 크기의 하드 디스크 드라이브(HDD)를 추가해야 합니다. HDD를 추가하려면 다음 작업을 수행하십시오.</block>
-  <block id="5919e650880cfeabf035fac93b2a3d51" category="list-text">단일 노드 구성의 VM을 선택하거나 HA 구성의 VM 3개를 모두 선택합니다.</block>
   <block id="f0032c952bebc43c75710433e2994c19" category="list-text">VM을 마우스 오른쪽 버튼으로 클릭하고 * Add New Device * &gt; * Hard Disk * 를 선택합니다</block>
-  <block id="24b529fa7fe637c09879ca05c8c7c2c3" category="list-text">새 하드 디스크 * 필드에 100GB 크기의 HDD를 추가합니다.</block>
   <block id="91228eef6e9a7bdc25cdad1b40b153b6" category="list-text">적용 * 을 클릭합니다</block>
-  <block id="635d38999d7fdd67d78a58a7fd2c957c" category="paragraph">하드 디스크를 추가한 후 해당 구성에 대한 VM의 리소스를 업데이트하고 기본 VM을 다시 시작합니다.</block>
-  <block id="b2c62309c8e6bb5418cb5e49fdc348d4" category="paragraph">새 HDD가 생성됩니다. Dynamic Storage Provisioner는 이 HDD를 사용하여 볼륨을 생성하거나 복제합니다.</block>
   <block id="51d976aa6e2371bc36e19441158b8e08" category="paragraph">VMware vSphere 10.3용 ONTAP 툴로 업그레이드한 후 다음을 수행할 수 있습니다.</block>
-  <block id="4919e6f9219e550bfd4f15862ca7c4e1" category="list-text">관리자 UI에서 서비스를 비활성화합니다</block>
-  <block id="cd45571610eaf41dc79736a925d0dd90" category="list-text">비 HA 설정에서 HA 설정으로 이동</block>
-  <block id="3d7a5459b11b0dd9ed444d6d42cd9d4c" category="list-text">HA가 아닌 소규모 구성을 HA가 아닌 미디어 또는 HA 중간 규모 또는 대규모 구성으로 확장합니다.</block>
-  <block id="573cfbe6133f4358783c68d68d4d7733" category="list-text">HA가 아닌 업그레이드의 경우 변경 사항을 반영하도록 ONTAP 도구 VM을 재부팅합니다. HA를 업그레이드하는 경우 첫 번째 노드를 재부팅하여 노드의 변경 사항을 반영합니다.</block>
-  <block id="f305a79263533021079634e7a636a791" category="paragraph">VMware vSphere용 ONTAP 툴의 이전 릴리스에서 10.3 릴리스로 업그레이드한 후에는 SRA 어댑터를 다시 검색하여 VMware 라이브 사이트 복구 스토리지 복제 어댑터 페이지에서 세부 정보가 업데이트되는지 확인합니다.</block>
   <block id="12da67bb345ae219e1ec7b1f8d8f09dd" category="paragraph">성공적으로 업그레이드한 후 다음 절차에 따라 ONTAP에서 Trident 볼륨을 수동으로 삭제합니다.</block>
-  <block id="fc95380c03a9e2251e07f1937e36341b" category="admonition">VMware vSphere 10.1 또는 10.2용 ONTAP 툴이 HA가 아닌 소규모 또는 비 HA 중간 규모(로컬 경로) 구성인 경우에는 이러한 단계가 필요하지 않습니다.</block>
   <block id="528fcc96313b41a079cf4a618d21bc56" category="list-text">4 * 를 입력하여 * 지원 및 진단 * 메뉴를 선택합니다.</block>
-  <block id="7c7165f05246a4a849b52f09cdc55f2e" category="list-text">Access diagnostics shell * 옵션을 선택하려면 * 1 * 을 입력합니다.</block>
   <block id="69fc33706a999a8497eea8a0a1410092" category="list-text">다음 명령을 실행합니다</block>
   <block id="4c4796167c3422541c6e31f440e40302" category="list-text">ONTAP 사용자 이름과 암호를 입력합니다</block>
-  <block id="cb0777e7c086fec2eb034fbc83e6ea2c" category="paragraph">이렇게 하면 VMware vSphere 10.1/10.2용 ONTAP 툴에 사용된 ONTAP에 있는 Trident 볼륨이 모두 삭제됩니다.</block>
   <block id="3c8480343462c93f8ec9ed8f6c4a4282" category="sidebar">VMware vSphere 10.2용 ONTAP 툴 설명서</block>
   <block id="2e0332b2709dcff7df5d28c654c54066" category="sidebar">VMware vSphere 10.3용 ONTAP 툴</block>
   <block id="3d7d171ecad1cba0c2d8d707b648b023" category="sidebar">보호 및 복구 사이트를 구성합니다</block>
@@ -2032,4 +1969,75 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="3672cc73e8f241c0e99fa671f7d984c5" category="sidebar">REST API를 사용하여 자동화</block>
   <block id="90182eba2ac7240af5b5cb5ba83a8c1b" category="sidebar">REST API에 대해 자세히 알아보십시오</block>
   <block id="d58b759501469292f5d0464d265c376c" category="sidebar">REST 구현</block>
+  <block id="cfd78a7adbcd7e4e099e4150d96d4189" category="list-text">암호 관리 - 사용자의 OVA 응용 프로그램 암호를 재설정합니다.</block>
+  <block id="86e9662d627799ea9b0d956617badc77" category="paragraph">ONTAP tools Manager 개요 섹션은 서비스 관리, 노드 크기 확장 및 고가용성(HA) 지원과 같은 어플라이언스 구성을 관리하는 데 도움이 됩니다. 또한 상태, 네트워크 세부 정보, 알림과 같이 노드와 관련된 ONTAP 툴의 전반적인 정보를 모니터링할 수 있습니다.</block>
+  <block id="eaff07db9f9bd4c788b59cf5ac2e6f5e" category="paragraph"><block ref="eaff07db9f9bd4c788b59cf5ac2e6f5e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9190f42ee5e75c97614269214dfcb136" category="cell">어플라이언스 카드는 ONTAP 도구 어플라이언스의 전체 상태를 제공합니다. 어플라이언스 구성 세부 정보 및 활성화된 서비스의 상태를 표시합니다. ONTAP 툴 어플라이언스에 대한 자세한 내용을 보려면 * 상세 정보 보기 * 링크를 클릭하십시오. 어플라이언스 설정 편집 작업 작업이 진행 중이면 어플라이언스 포틀릿에 작업의 상태 및 세부 정보가 표시됩니다.</block>
+  <block id="faf239172dda3b91c4655d9bbde63c82" category="cell">경고 카드에는 HA 노드 레벨 경고를 포함하여 ONTAP 툴 경고가 유형별로 나열됩니다. 개수 텍스트(하이퍼링크)를 클릭하여 알림 목록을 볼 수 있습니다. 링크는 선택한 유형별로 필터링된 경고 보기 페이지로 연결됩니다.</block>
+  <block id="0e347dbe23febdf1001ed9dfb3e15bc1" category="cell">ONTAP tools nodes 카드는 노드 이름, 노드 VM 이름, 상태 및 모든 네트워크 관련 데이터가 있는 노드 목록을 표시합니다. View details * 를 클릭하면 선택한 노드와 관련된 추가 세부 정보를 볼 수 있습니다. [참고] 비 HA 설정에서는 하나의 노드만 표시됩니다. HA 설정에서 3개의 노드가 표시됩니다.</block>
+  <block id="8c5a94dd08e58279f7461d929aa633e6" category="paragraph">스토리지 데이터를 마이그레이션할 때 REST API를 사용하여 스토리지 백엔드를 수동으로 온보드합니다. VASA Provider 데이터를 마이그레이션할 때 기존 Derby 데이터베이스에서 데이터를 내보내고 MongoDB 데이터베이스로 가져옵니다.</block>
+  <block id="b191a7ff08bb6435186d922c59ff1907" category="admonition">설정 시 VASA Provider 기능만 제공하는 경우에만 VMware vSphere 9.xx 설정용 ONTAP 툴을 마이그레이션해야 합니다.</block>
+  <block id="656a2ce4c62bd399a29a0cc087a7eb83" category="admonition">ONTAP 툴 10.3은 VMFS 데이터 저장소를 사용하는 NVMe-oF만 지원하므로 VMware vSphere 9.x용 ONTAP 툴에서 10.3으로 마이그레이션한 후 NVMe/FC 프로토콜을 사용하는 VVOL 데이터 저장소가 작동하지 않습니다.</block>
+  <block id="f9f52fdfc3b658d087ef0d1715cc2008" category="paragraph">VMware vSphere 9.12D1 및 9.13D2 릴리즈용 ONTAP 툴에서 10.3으로 마이그레이션할 수 있습니다.</block>
+  <block id="12f864a7f79090b1b0f169109899eb43" category="admonition">패치 릴리스로 업그레이드하기 전에 현재 릴리스에서 OVA 백업을 가져와야 합니다.</block>
+  <block id="6a52711c7181000aac8a9b276baf324a" category="list-text">VMware vSphere 10.3 릴리즈용 ONTAP 툴로 마이그레이션할 vCenter Server 인스턴스를 추가합니다. 을 참조하십시오 <block ref="fbc3413db4202f1fe331f16af6b38f13" category="inline-link-macro-rx"></block></block>
+  <block id="9a8e25e84fe96275dbb27d27d2cca595" category="list-text">VMware vSphere 9.xx용 ONTAP 툴에서 마이그레이션된 NFS 및 VMFS 데이터 저장소는 데이터 저장소 검색 작업이 트리거된 후에만 VMware vSphere 10.3용 ONTAP 툴에 표시됩니다. 이 작업은 트리거하는 데 최대 30분이 걸릴 수 있습니다. 데이터 저장소가 VMware vSphere 플러그인 UI 페이지의 ONTAP Tools 개요 페이지에 표시되는지 확인합니다.</block>
+  <block id="b4c20aabb2d8056ffe9e2b60a0164bf2" category="paragraph">마이그레이션하기 전에 사이트 중 하나가 보호 상태이고 다른 사이트가 복구 상태에 있는지 확인합니다.</block>
+  <block id="c7c25af309bd84b7749f1862027abc3f" category="admonition">페일오버가 방금 완료되었고 재보호가 보류 중인 경우에는 마이그레이션하지 마십시오. 재보호를 완료한 다음 마이그레이션을 수행합니다. 복구 계획 테스트를 완료한 후 테스트 복구를 정리하고 마이그레이션을 시작합니다.</block>
+  <block id="0f47e7ab13b9f8031de10689d97b861b" category="list-text">스토리지 복제 어댑터 * 섹션으로 이동합니다</block>
+  <block id="c28d0a48f388c92ed3ec2fccafeb15ea" category="list-text">줄임표 메뉴를 클릭하고 * Reset configuration * 을 선택합니다</block>
+  <block id="1c5f97ee40c90341d1819bd10d046a29" category="list-text">줄임표 메뉴를 클릭하고 * 삭제 * 를 선택합니다</block>
+  <block id="e7563198149b4ef22a580dcc695a13ec" category="list-text">VMware Live Site Recovery UI 페이지에서 * 스토리지 검색 * 및 * 장치 검색 * 작업을 수행하고 마이그레이션 전의 상태로 장치가 표시되는지 확인합니다.</block>
+  <block id="e316aaa000b8dea913558dbe47e2ab03" category="list-text">VMware vSphere용 기존 ONTAP 툴에서 더비 포트 1527을 활성화합니다. 포트를 활성화하려면 루트 사용자로 CLI에 로그인하고 다음 명령을 실행합니다.</block>
+  <block id="fdb5b6876d97a075f0bc2a07cd4be907" category="list-text">VMware vSphere 10.3용 ONTAP 툴용 OVA 구축</block>
+  <block id="34b17f133cdce8c13fd8b812b8c11211" category="list-text">VMware vSphere 10.3 릴리즈용 ONTAP 툴로 마이그레이션할 vCenter Server 인스턴스를 추가합니다. 을 <block ref="946669e64e0e42585f18099dec81ec03" category="inline-link-macro-rx"></block>참조하십시오.</block>
+  <block id="142e4d3f8edb2747fa0e3d260133b8c1" category="paragraph">작업이 완료되면 마이그레이션 보고서를 검증합니다. 보고서는 작업 데이터의 일부이며 작업 응답에서 볼 수 있습니다.</block>
+  <block id="009dbe214d15197679fe0b95a8a01cc3" category="list-text">유지 관리 콘솔에서 VMware vSphere 스토리지 공급자용 ONTAP 툴 9.10/9.11/9.12/9.13 VASA Provider 서비스를 중지합니다.</block>
+  <block id="4bf6186a3a16efffdaebdafdd4fcaf4b" category="paragraph">이전 VASA Provider가 중지되면 vCenter Server가 VMware vSphere용 ONTAP 툴로 페일오버됩니다. 모든 데이터 저장소와 VM에 액세스할 수 있으며 VMware vSphere용 ONTAP 툴을 통해 제공됩니다.</block>
+  <block id="ba5c200a0d4600ec4fe2ef79c26593b8" category="list-text">다음 API를 사용하여 패치 마이그레이션을 수행합니다.</block>
+  <block id="f663ec26fcc5dbf0e82a2df73c30a3e3" category="paragraph">패치 작업을 위한 요청 본문이 비어 있습니다.</block>
+  <block id="e4453a0aab117b65b26edb59d78793fd" category="paragraph">패치 마이그레이션 API가 성공적으로 실행되면 모든 VM이 스토리지 정책을 준수합니다.</block>
+  <block id="cd6f62989595e510d57e7b407691336a" category="paragraph">이 API는 마이그레이션 ID를 기준으로 마이그레이션을 삭제하고 지정된 vCenter Server에서 마이그레이션을 삭제합니다.</block>
+  <block id="9a43f64b9545dfa5ddfcc70dbc73d001" category="list-text">잠시 기다린 후 데이터 저장소(DS) 및 가상 머신(VM) 작업을 수행합니다. 대기 시간은 설정에 있는 호스트, DS 및 VM의 수에 따라 다릅니다. 기다리지 않으면 작업이 간헐적으로 실패할 수 있습니다.</block>
+  <block id="d338e834d62b1cf850a89cbfdf1d9bd7" category="paragraph">VMware vSphere용 ONTAP 툴의 이전 릴리스에서 10.3으로 마이그레이션한 후 SRA 어댑터를 다시 검색하여 VMware 라이브 사이트 복구 스토리지 복제 어댑터 페이지에 세부 정보가 업데이트되는지 확인합니다.</block>
+  <block id="422c2a3517291219d45e5d0be95be9d1" category="paragraph">업그레이드 후 가상 머신 규정 준수 상태가 최신이 아니면 다음 단계를 사용하여 가상 머신 스토리지 정책을 다시 적용합니다.</block>
+  <block id="15e560ab707fa2bf2b7b0833adbe8bb9" category="list-text">데이터 저장소로 이동하고 * Summary * &gt; * VM Storage policies * 를 선택합니다.</block>
+  <block id="578a0636e92ae2e1b6afe3bdc7c9f9b3" category="paragraph">VM 스토리지 정책 준수 * 에서 규정 준수 상태를 확인할 수 있습니다. 업데이트 안됨 * 으로 표시됩니다</block>
+  <block id="325367fe0120f7c1592bf3028da84bee" category="list-text">스토리지 VM 정책과 해당 VM을 선택합니다</block>
+  <block id="c16f1c2a54634bdad6dee177f8131ef5" category="list-text">적용 * 을 선택합니다</block>
+  <block id="b180a96ee0634f423c4629bca8858873" category="paragraph">VM 저장소 정책 준수 * 의 규정 준수 상태가 이제 준수 상태로 표시됩니다.</block>
+  <block id="bd6bc908cf442363948229bac8df6193" category="list-text">소스 및 대상 ONTAP 클러스터에서 SRA 워크플로우를 실행하기 전에 생성된 동일한 사용자 지정 SnapMirror 일정이 있어야 합니다.</block>
+  <block id="53fa6655b37323ab66a83f1beb9f66c1" category="paragraph">업그레이드는 HA 및 비 HA 구현 모두에서 지원됩니다. 지원되는 업그레이드 경로는 다음과 같습니다.</block>
+  <block id="6057f03ffe4bbf8fd9e051002f4f22bb" category="admonition">VMware vSphere 10.1 및 10.2용 ONTAP 툴에서 10.3으로 업그레이드할 수 있습니다. ONTAP 도구 10.0에서 10.3으로 직접 업그레이드할 수 없습니다.</block>
+  <block id="a37e11c372d948a69c1ca06f96f29654" category="paragraph">HA가 아닌 업그레이드의 경우 ONTAP 도구 VM의 전원을 끄고 HA 업그레이드의 경우 가상 머신(VM) 설정을 변경하기 전에 첫 번째 노드의 전원을 끕니다.</block>
+  <block id="360d7dde1452a41a726a072836e13df3" category="list-text">서비스 데이터가 VM에 로컬로 저장되므로 각 노드에 100GB 하드 디스크를 추가합니다.</block>
+  <block id="d542d6e6bfec95dca9488d55ed772578" category="list-text">배포 종류에 따라 전원이 꺼진 VM의 CPU 및 메모리를 변경합니다. CPU 및 RAM에 대한 핫 플러그인을 활성화합니다.</block>
+  <block id="fdd3abbed4073b09c3b2a7f9316d5c88" category="list-text">변경이 완료된 후 VM의 전원을 켜고 서비스가 실행 상태가 될 때까지 기다립니다.</block>
+  <block id="ff305864530c5baf345b9688bd0631f4" category="list-text">HA 배포의 경우 리소스를 변경하고 CPU 및 RAM용 핫 플러그인을 활성화하고 두 번째 노드와 세 번째 노드에 100GB 하드 디스크를 추가합니다. 이러한 노드를 재부팅할 필요가 없습니다.</block>
+  <block id="aaa3919b119a4a5719987a826b3f426c" category="list-text">ONTAP tools 10.1 또는 10.2를 사용하여 어플라이언스를 로컬 경로로 배포한 경우 업그레이드하기 전에 스냅샷을 중지해야 합니다.</block>
+  <block id="c1da67abb88e41cb6c66ffcb6aa791c1" category="list-text">vCenter Server에서 콘솔을 열고 ONTAP 툴을 엽니다.</block>
+  <block id="8f6d00eacbf6d4158bc6e74700b0499e" category="list-text">사용자가 'DIAG'로, 이전 단계에서 설정한 암호를 사용하여 터미널/putty에서 VM IP 주소에 로그인합니다.</block>
+  <block id="2528cd48cce125276b1d088b78c23ac4" category="paragraph">* MongoDB 백업 *</block>
+  <block id="968d0c04f7a1680429ceb1db128906cd" category="paragraph">다음 명령을 실행하여 MongoDB 백업을 수행합니다.</block>
+  <block id="54efa270b0d74ef97f3590c0aae1393d" category="list-text">포드 안에서 _env | grep mongodb_root_password_command 를 실행합니다.</block>
+  <block id="97493984eff3f2fe92f1d3aa5ec1c13a" category="list-text">run_exit_command 를 실행하여 포드에서 나오십시오.</block>
+  <block id="91e2ec0f0dd7d843927f5c85366a02ec" category="list-text">run_kn exec ntv-mongodb-0--mongodump -u root -p mongodb_root_password--archive=/tmp/mongodb-backup.gz - -gzip_command 를 실행하여 위의 명령에서 설정한 Mongo_root_password를 대체합니다.</block>
+  <block id="4728f0b778ffa8e0ae5be992c59e144b" category="list-text">run_kn CP NTV-mongodb-0:/tmp/mongodb-backup.gz./mongodb-backup.gz_command를 실행하여 위의 명령을 사용하여 생성된 MongoDB 백업을 Pod에서 호스트로 복사합니다.</block>
+  <block id="8694eb97cf4ec570d09d33becf6a8eed" category="list-text">'kn Get PVC' 명령을 실행하고 명령 출력을 저장합니다.</block>
+  <block id="a9e8526531fd29e961f43f5bb243319e" category="list-text">ONTAP 시스템 관리자 사용자 인터페이스에서 검색 표시줄에서 볼륨을 이름으로 검색한 다음 이름을 클릭하여 해당 볼륨을 엽니다. 스냅샷으로 이동하여 해당 볼륨의 스냅샷을 추가합니다.</block>
+  <block id="07cf559ee7bbc8841180f1dd59c2917f" category="paragraph">업그레이드를 수행하기 전에 앞에 "generate-support-bundle-job"이라는 접두사가 있는 완료된 Pod를 로그 번들에서 삭제하십시오. 지원 번들 생성이 진행 중인 경우 완료될 때까지 기다린 다음 Pod를 삭제하십시오.</block>
+  <block id="7817c7412ad536f5c02bd959934f66d5" category="paragraph">모든 업그레이드 유형의 경우 100GB HDD(하드 디스크 드라이브)를 추가해야 합니다. HDD를 추가하려면 다음 작업을 수행하십시오.</block>
+  <block id="11873b433682caa870371cc1631ef90f" category="list-text">단일 노드 구성의 VM을 선택하거나 HA 구성의 VM 3개 모두를 선택합니다.</block>
+  <block id="3fed8c7b63099eeb7748cc54424abfec" category="list-text">새 하드 디스크 * 필드에 100GB HDD를 추가합니다.</block>
+  <block id="cd457aeee08a9f6476660a1f15284160" category="paragraph">하드 디스크를 추가한 후 각 구성에 대한 VM 리소스를 업데이트하고 기본 VM을 다시 시작합니다.</block>
+  <block id="82c4bde04ac809c6d15f232949e072ce" category="paragraph">새 HDD가 생성됩니다. Dynamic Storage Provisioner는 이 HDD를 사용하여 볼륨을 생성하거나 복제합니다.</block>
+  <block id="ef9e53e40d78d57abe78283a3603eb4e" category="list-text">편집 설정 창의 * CD/DVD 드라이브 * 필드에서 콘텐츠 라이브러리 ISO 파일을 선택합니다.</block>
+  <block id="e4965c8171d689acf2bfafb148ebfaa8" category="list-text">관리자 UI에서 서비스를 비활성화합니다</block>
+  <block id="c8c29d2a26286541354fc8e377f3b6ce" category="list-text">비 HA 설정에서 HA 설정으로 이동합니다</block>
+  <block id="4521a8bb9c231770ace79aca6602dc13" category="list-text">HA가 아닌 소규모 구성을 HA가 아닌 매체 또는 HA 매체 또는 대규모 구성으로 확장합니다.</block>
+  <block id="48f74593cd55f85759914f3614a0c3b9" category="list-text">HA가 아닌 업그레이드의 경우 ONTAP 툴 VM을 재부팅하여 변경 사항을 반영합니다. HA를 업그레이드하는 경우 첫 번째 노드를 재부팅하여 노드의 변경 사항을 반영합니다.</block>
+  <block id="29c35069673bbb39e41492464283c461" category="paragraph">VMware vSphere용 ONTAP 툴의 이전 릴리스에서 10.3으로 업그레이드한 후 SRA 어댑터를 다시 검색하여 VMware 라이브 사이트 복구 스토리지 복제 어댑터 페이지에 세부 정보가 업데이트되는지 확인합니다.</block>
+  <block id="97157e33a0e033b7effd56e6305b9030" category="admonition">VMware vSphere 10.1 또는 10.2용 ONTAP 툴이 비 HA 소형 또는 중형(로컬 경로) 구성인 경우에는 이러한 단계가 필요하지 않습니다.</block>
+  <block id="3ff3da4c344f1ccca0d255803305cce9" category="list-text">Access diagnostics shell * 옵션을 선택하려면 * 1 * 을 입력합니다.</block>
+  <block id="a1f81812b9996ffae82950938651b560" category="paragraph">이렇게 하면 VMware vSphere 10.1/10.2용 ONTAP 툴에 사용된 ONTAP의 Trident 볼륨이 모두 삭제됩니다.</block>
 </blocks>
