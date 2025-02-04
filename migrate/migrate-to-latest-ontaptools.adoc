@@ -244,3 +244,7 @@ VM 스토리지 정책 준수 * 에서 규정 준수 상태를 확인할 수 있
 VM 저장소 정책 준수 * 의 규정 준수 상태가 이제 준수 상태로 표시됩니다.
 
 
+
+* 관련 정보 *
+
+link:../upgrade/upgrade-ontap-tools.html["VMware vSphere 10.x용 ONTAP 툴을 10.3로 업그레이드하십시오"]
