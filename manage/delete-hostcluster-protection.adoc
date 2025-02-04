@@ -18,5 +18,5 @@ summary: 호스트 클러스터 보호를 제거하면 데이터 저장소가 �
 +
 이 페이지에서는 보호 상태, SnapMirror 관계 및 해당 SnapMirror 상태와 함께 보호 호스트 클러스터를 모니터링할 수 있습니다.
 
-. Host cluster protection * 창에서 클러스터에 대한 줄임표 메뉴를 클릭한 다음 * Remove protection * 을 선택합니다.
+. Host cluster protection * 창에서 클러스터에 대한 줄임표 메뉴를 선택한 다음 * Remove protection * 을 선택합니다.
 

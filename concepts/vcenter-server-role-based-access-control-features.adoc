@@ -55,7 +55,7 @@ vSphere 객체 및 작업에 대한 액세스를 제한하려는 경우에만 vC
 
 vCenter Server 권한 및 RBAC를 간편하게 사용할 수 있도록 VMware vSphere용 ONTAP 툴은 VMware vSphere 역할에 사용할 수 있는 표준 ONTAP 툴을 제공합니다. 이 툴을 사용하면 VMware vSphere 작업에 대한 주요 ONTAP 툴을 수행할 수 있습니다. 또한 정보를 볼 수는 있지만 작업을 수행할 수 없는 읽기 전용 역할도 있습니다.
 
-vSphere Client 홈 페이지에서 * 역할 * 을 클릭하여 VMware vSphere 표준 역할용 ONTAP 툴을 볼 수 있습니다. VMware vSphere용 ONTAP 툴이 제공하는 역할을 사용하면 다음 작업을 수행할 수 있습니다.
+vSphere Client 홈 페이지에서 * Roles * 를 선택하여 VMware vSphere 표준 역할용 ONTAP 툴을 볼 수 있습니다. VMware vSphere용 ONTAP 툴이 제공하는 역할을 사용하면 다음 작업을 수행할 수 있습니다.
 
 |===
 

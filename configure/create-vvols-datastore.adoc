@@ -38,7 +38,7 @@ VMware vSphere 10.3용 ONTAP 툴부터 ASA R2 유형의 ONTAP 스토리지를 �
 
 
 .단계
-. 을 사용하여 vSphere Client에 로그인합니다 `\https://vcenterip/ui`
+. 을 사용하여 vSphere Client에 로그인합니다 `\https://<vcenterip>/<ui>`
 . 호스트 시스템 또는 호스트 클러스터 또는 데이터 센터를 마우스 오른쪽 버튼으로 클릭하고 * NetApp ONTAP tools * > * Create Datastore * 를 선택합니다.
 . Type * 창에서 * Datastore Type * 에서 VVol을 선택합니다.
 . Name and Protocol * 창에서 * Datastore name * 및 * Protocol * 정보를 입력합니다.
@@ -52,7 +52,7 @@ NOTE: ASA R2 스토리지 유형은 VVOL을 위해 iSCSI 및 FC 프로토콜만 
 NOTE: ASA R2 스토리지 유형 SVM에서 스토리지 유닛(LUN/네임스페이스)은 데이터 저장소가 논리적 컨테이너일 뿐이므로 생성되지 않습니다.
 
 . Storage attributes * 창에서 새 볼륨을 생성하거나 기존 볼륨을 사용할 수 있습니다. 새 볼륨을 생성할 때 데이터 저장소에서 QoS를 사용하도록 설정할 수 있습니다. VVOL 데이터 저장소에 백업 볼륨이 없으므로 ASA R2 유형의 ONTAP 스토리지를 사용하는 VVol 데이터 저장소에는 이 단계가 적용되지 않습니다. 모든 LUN 생성 요청에는 기본적으로 하나의 볼륨이 생성됩니다.
-. Summary * 창에서 선택 항목을 검토하고 * Finish * 를 클릭합니다. VVol 데이터 저장소가 생성되고 모든 호스트에 마운트됩니다.
+. 요약 * 창에서 선택 항목을 검토하고 * 마침 * 을 선택합니다. VVol 데이터 저장소가 생성되고 모든 호스트에 마운트됩니다.
 
 
 --
@@ -61,7 +61,7 @@ NOTE: ASA R2 스토리지 유형 SVM에서 스토리지 유닛(LUN/네임스페�
 VMware NFS(Network File System) 데이터 저장소는 NFS 프로토콜을 사용하여 네트워크를 통해 ESXi 호스트를 공유 스토리지 디바이스에 연결합니다. NFS 데이터 저장소는 VMware vSphere 환경에서 일반적으로 사용되며 사용 편의성과 유연성과 같은 여러 가지 이점을 제공합니다.
 
 .단계
-. 을 사용하여 vSphere Client에 로그인합니다 `\https://vcenterip/ui`
+. 을 사용하여 vSphere Client에 로그인합니다 `\https://<vcenterip>/<ui>`
 . 호스트 시스템 또는 호스트 클러스터 또는 데이터 센터를 마우스 오른쪽 버튼으로 클릭하고 * NetApp ONTAP tools * > * Create Datastore * 를 선택합니다.
 . Type * 창의 * Datastore Type * 에서 NFS를 선택합니다.
 . Name and Protocol * 창에서 데이터스토어 이름, 크기 및 프로토콜 정보를 입력합니다. 고급 옵션에서 * Datastore cluster * 및 * Kerberos Authentication * 을 선택합니다.
@@ -76,7 +76,7 @@ NOTE: Kerberos 인증은 NFS 4.1 프로토콜을 선택한 경우에만 사용�
 
 
 . Storage Attributes * 창에서 볼륨 생성을 위한 집계를 선택합니다. 고급 옵션에서 필요에 따라 * Space Reserve * 및 * Enable QoS * 를 선택합니다.
-. Summary * 창에서 선택 항목을 검토하고 * Finish * 를 클릭합니다.
+. Summary * 창에서 선택 항목을 검토하고 * Finish * 를 선택합니다.
 
 
 NFS 데이터 저장소가 생성되고 모든 호스트에 마운트됩니다.
@@ -121,7 +121,7 @@ VMware vSphere 8.0에서 NVMe/FC 프로토콜 사용에 대한 자세한 내용�
 VMware vSphere 7.0에서 NVMe/FC를 사용하는 방법에 대한 자세한 내용은 https://docs.netapp.com/us-en/ontap-sanhost/nvme_esxi_8.html["ONTAP NVMe/FC 호스트 구성 가이드"] 및 을 참조하십시오 http://www.netapp.com/us/media/tr-4684.pdf["TR-4684를 참조하십시오"].
 
 .단계
-. 을 사용하여 vSphere Client에 로그인합니다 `\https://vcenterip/ui`
+. 을 사용하여 vSphere Client에 로그인합니다 `\https://<vcenterip>/<ui>`
 . 호스트 시스템 또는 호스트 클러스터 또는 데이터 저장소를 마우스 오른쪽 버튼으로 클릭하고 * NetApp ONTAP tools * > * Create Datastore * 를 선택합니다.
 . Type * 창의 * Datastore Type * 에서 VMFS를 선택합니다.
 . Name and Protocol * 창에서 데이터 저장소 이름, 크기 및 프로토콜 정보를 입력합니다. 새 데이터 저장소를 기존 VMFS 데이터 저장소 클러스터에 추가하기로 선택한 경우 * 고급 옵션 * 아래에서 데이터 저장소 클러스터 선택기를 선택합니다.
@@ -148,7 +148,7 @@ NOTE: NVMe/FC 또는 NVMe/TCP 프로토콜을 사용하여 VMFS 데이터 저장
 
 
 
-. Summary * 창에서 데이터 저장소 세부 정보를 검토하고 * Finish * 를 클릭합니다.
+. Summary * 창에서 데이터 저장소 세부 정보를 검토하고 * Finish * 를 선택합니다.
 
 
 

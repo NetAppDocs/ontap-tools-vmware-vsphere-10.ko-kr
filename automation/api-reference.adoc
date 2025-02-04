@@ -29,5 +29,5 @@ Swagger UI를 통해 VMware vSphere 10 REST API용 ONTAP 툴 설명서에 온라
 +
 `\https://10.61.25.33:8443/`
 
-. 개별 API 호출의 예로, 아래로 스크롤하여 * vCenters * 범주로 이동한 후 끝점 옆에 있는 * Get * 을 클릭합니다 `/virtualization/api/v1/vcenters`
+. 개별 API 호출의 예로, 아래로 스크롤하여 * vCenters * 범주로 이동한 후 끝점 옆에 있는 * Get * 을 선택합니다 `/virtualization/api/v1/vcenters`
 

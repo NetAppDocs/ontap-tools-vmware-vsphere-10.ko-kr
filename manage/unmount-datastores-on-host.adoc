@@ -15,7 +15,7 @@ summary: 데이터 저장소 마운트 해제 작업은 ESXi 호스트에서 NFS
 
 * 단계 *
 
-. 을 사용하여 vSphere Client에 로그인합니다 `\https://vcenterip/ui`
+. 을 사용하여 vSphere Client에 로그인합니다 `\https://<vcenterip>/<ui>`
 . NFS 또는 VMFS 데이터 저장소 객체를 마우스 오른쪽 버튼으로 클릭하고 * Unmount datastore * 를 선택합니다.
 +
 대화 상자가 열리고 데이터 저장소가 마운트된 ESXi 호스트가 나열됩니다. 보호된 데이터 저장소에서 작업을 수행하면 화면에 경고 메시지가 표시됩니다.
