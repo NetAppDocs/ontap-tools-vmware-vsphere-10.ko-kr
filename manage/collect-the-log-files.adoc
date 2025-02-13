@@ -16,8 +16,7 @@ VMware vSphere용 ONTAP 툴에 대한 로그 파일은 ONTAP Tools Manager 사�
 
 NOTE: ONTAP Tools Manager에서 로그를 생성하는 데는 모든 vCenter Server 인스턴스에 대한 모든 로그가 포함됩니다. vCenter 클라이언트 UI에서 로그를 생성하는 작업은 선택한 vCenter Server에 대해 범위가 지정됩니다.
 
-* 단계 *
-
+.단계
 . 웹 브라우저에서 ONTAP 도구 관리자를 실행합니다. `\https://loadBalancerIP:8443/virtualization/ui/`
 . 구축 중에 제공한 VMware vSphere 관리자 자격 증명용 ONTAP 툴을 사용하여 로그인합니다.
 . 사이드바에서 * 로그 번들 * 을 선택합니다.

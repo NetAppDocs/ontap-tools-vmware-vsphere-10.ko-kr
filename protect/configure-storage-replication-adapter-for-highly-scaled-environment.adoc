@@ -54,9 +54,7 @@ summary: 'SRA\(Storage Replication Adapter\)의 권장 설정에 따라 스토�
 |===
 또한 를 활성화해야 합니다 `StorageProvider.autoResignatureMode` 옵션을 선택합니다.
 
-Storage Provider 설정을 수정하는 방법에 대한 자세한 내용은 VMware 설명서를 참조하십시오.
-
-https://docs.vmware.com/en/VMware-Live-Site-Recovery/9.0/vmware-live-site-recovery/GUID-E4060824-E3C2-4869-BC39-76E88E2FF9A0.html["VMware vSphere 설명서: 스토리지 공급자 설정 변경"]
+저장소 공급자 설정 수정에 대한 자세한 내용은 을 https://techdocs.broadcom.com/us/en/vmware-cis/live-recovery/live-site-recovery/9-0/how-do-i-protect-my-environment/advanced-srm-configuration/reconfigure-srm-settings/change-storage-provider-settings.html["저장소 공급자 설정을 변경합니다"] 참조하십시오.
 
 
 
@@ -67,6 +65,4 @@ https://docs.vmware.com/en/VMware-Live-Site-Recovery/9.0/vmware-live-site-recove
 
 NOTE: 지정된 시간 제한 간격이 최대값입니다. 최대 시간 초과에 도달할 때까지 기다릴 필요가 없습니다. 대부분의 명령이 설정된 최대 시간 제한 간격 내에 완료됩니다.
 
-자세한 내용은 SAN Provider 설정 수정에 대한 VMware 설명서를 참조하십시오.
-
-https://docs.vmware.com/en/VMware-Live-Site-Recovery/9.0/vmware-live-site-recovery/GUID-711FD223-50DB-414C-A2A7-3BEB8FAFDBD9.html["VMware Site Recovery Manager 설명서: 스토리지 설정 변경"]
+SAN Provider 설정을 수정하는 방법은 을 https://techdocs.broadcom.com/us/en/vmware-cis/live-recovery/live-site-recovery/9-0/how-do-i-protect-my-environment/advanced-srm-configuration/reconfigure-srm-settings/change-storage-settings.html["저장소 설정을 변경합니다"] 참조하십시오.

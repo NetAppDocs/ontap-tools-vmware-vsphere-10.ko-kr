@@ -109,7 +109,7 @@ VMware vSphere 10.0용 ONTAP 도구에서 10.1로 업그레이드하는 경우 �
 * vCenter에서 VMware vSphere VM용 ONTAP 툴의 스냅샷 생성(HA 구축 시 VM 3개, 비 HA 구축 시 VM 1개) *
 
 * vSphere Client 사용자 인터페이스에서 VM을 선택합니다.
-* 스냅샷 탭으로 이동하여 * 스냅샷 촬영 * 버튼을 선택합니다. VM의 일시 중지된 스냅샷을 생성합니다. 자세한 내용은 을 https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vm_admin.doc/GUID-9720B104-9875-4C2C-A878-F1C351A4F3D8.html["가상 시스템의 스냅샷을 생성합니다"^] 참조하십시오.
+* 스냅샷 탭으로 이동하여 * 스냅샷 촬영 * 버튼을 선택합니다. VM의 일시 중지된 스냅샷을 생성합니다. 자세한 내용은 을 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/take-snapshots-of-a-virtual-machine.html["가상 시스템의 스냅샷을 생성합니다"^] 참조하십시오.
 
 
 업그레이드를 수행하기 전에 앞에 "generate-support-bundle-job"이라는 접두사가 있는 완료된 Pod를 로그 번들에서 삭제하십시오. 지원 번들 생성이 진행 중인 경우 완료될 때까지 기다린 다음 Pod를 삭제하십시오.
@@ -119,15 +119,14 @@ VMware vSphere 10.0용 ONTAP 도구에서 10.1로 업그레이드하는 경우 �
 . 단일 노드 구성의 VM을 선택하거나 HA 구성의 VM 3개 모두를 선택합니다.
 . VM을 마우스 오른쪽 버튼으로 클릭하고 * Add New Device * > * Hard Disk * 를 선택합니다
 . 새 하드 디스크 * 필드에 100GB HDD를 추가합니다.
-. 적용 * 을 클릭합니다
+. 적용 * 을 선택합니다
 
 
 하드 디스크를 추가한 후 각 구성에 대한 VM 리소스를 업데이트하고 기본 VM을 다시 시작합니다.
 
 새 HDD가 생성됩니다. Dynamic Storage Provisioner는 이 HDD를 사용하여 볼륨을 생성하거나 복제합니다.
 
-* 단계 *
-
+.단계
 . VMware vSphere용 ONTAP 툴을 컨텐츠 라이브러리로 업그레이드합니다.
 . 기본 VM 페이지에서 * Actions * > * Edit Settings * 를 선택합니다
 . 편집 설정 창의 * CD/DVD 드라이브 * 필드에서 콘텐츠 라이브러리 ISO 파일을 선택합니다.

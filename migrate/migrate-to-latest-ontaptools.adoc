@@ -31,7 +31,7 @@ NOTE: 패치 릴리스로 업그레이드하기 전에 현재 릴리스에서 OV
 == 일반적인 마이그레이션 단계
 
 . VMware vSphere 10.3 릴리스용 ONTAP용 OVA 도구를 배포합니다.
-. VMware vSphere 10.3 릴리즈용 ONTAP 툴로 마이그레이션할 vCenter Server 인스턴스를 추가합니다. 을 참조하십시오 link:../configure/add-vcenter.html["vCenter Server 인스턴스를 추가합니다"]
+. VMware vSphere 10.3 릴리즈용 ONTAP 툴로 마이그레이션할 vCenter Server 인스턴스를 추가합니다. link:../configure/add-vcenter.html["vCenter Server 인스턴스를 추가합니다"]을 참조하십시오.
 . VMware vSphere 플러그인 vCenter Server API용 ONTAP 툴에서 로컬로 스토리지 백엔드를 온보드합니다. 마이그레이션을 위해 스토리지를 로컬 범위 스토리지로 추가합니다.
 . VMware vSphere 9.xx용 ONTAP 툴에서 마이그레이션된 NFS 및 VMFS 데이터 저장소는 데이터 저장소 검색 작업이 트리거된 후에만 VMware vSphere 10.3용 ONTAP 툴에 표시됩니다. 이 작업은 트리거하는 데 최대 30분이 걸릴 수 있습니다. 데이터 저장소가 VMware vSphere 플러그인 UI 페이지의 ONTAP Tools 개요 페이지에 표시되는지 확인합니다.
 

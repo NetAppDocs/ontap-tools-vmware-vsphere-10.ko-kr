@@ -25,8 +25,7 @@ VMware vSphere용 ONTAP 툴을 VMware vCSA(vCenter Server 가상 어플라이언
 ** 일반 프로비저닝 설치의 경우 348GB
 
 
-* * 노드당 호스트 시스템 크기 조정 요구 사항 *
-배포 크기와 노드별 권장 메모리는 아래 표와 같습니다.
+* * 호스트 시스템 크기 조정 요구 사항 * 배포 크기에 따른 권장 메모리는 아래 표와 같습니다.
 
 
 |===
@@ -41,13 +40,13 @@ VMware vSphere용 ONTAP 툴을 VMware vCSA(vCenter Server 가상 어플라이언
 | HA 미디어가 아닙니다 | 13 | 26 | 350 
 
 
-| HA 소규모 | 27 | 54 | 1050 
+| 소규모 HA(3개 노드의 누적) | 27 | 54 | 1050 
 
 
-| HA 중간 규모 | 39 | 78 | 1050 
+| HA 중간(3개 노드의 누적) | 39 | 78 | 1050 
 
 
-| HA 대규모 | 51 | 102 | 1050 
+| HA 대형(3개 노드의 누적) | 51 | 102 | 1050 
 |===
 
 
@@ -143,7 +142,7 @@ https://imt.netapp.com/matrix/imt.jsp?components=105475;&solution=1777&isHWU&src
 
 | 8개 이상 | 대형 
 |===
-자세한 내용은 을 https://docs.vmware.com/en/VMware-Live-Recovery/services/vmware-live-site-recovery/GUID-3AD7D565-8A27-450C-8493-7B53F995BB14.html["VMware Live Site Recovery의 운영상의 한계"]참조하십시오.
+자세한 내용은 을 https://techdocs.broadcom.com/us/en/vmware-cis/live-recovery/live-site-recovery/9-0/overview/site-recovery-manager-system-requirements/operational-limits-of-site-recovery-manager.html["VMware Live Site Recovery의 운영상의 한계"]참조하십시오.
 
 
 

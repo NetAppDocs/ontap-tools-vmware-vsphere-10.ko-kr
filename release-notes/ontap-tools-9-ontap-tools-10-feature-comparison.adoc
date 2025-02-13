@@ -11,7 +11,7 @@ summary: VMware vSphere 9용 ONTAP 툴과 VMware vSphere 10용 ONTAP 툴 기능 
 
 
 [role="lead"]
-VMware vSphere 9용 ONTAP 툴에서 VMware vSphere 10.1 이상 버전용 ONTAP 툴로 마이그레이션하는 것이 적합한지 알아보십시오. 최신 호환성 정보는 을 참조하십시오 https://mysupport.netapp.com/matrix["NetApp 상호 운용성 매트릭스 툴"^].
+VMware vSphere 9용 ONTAP 툴에서 VMware vSphere 10.1 이상 버전용 ONTAP 툴로 마이그레이션하는 것이 적합한지 알아보십시오. 최신 호환성 정보는 을 https://mysupport.netapp.com/matrix["NetApp 상호 운용성 매트릭스 툴"^]참조하십시오.
 
 [cols="20%,25%,25%,30%"]
 |===

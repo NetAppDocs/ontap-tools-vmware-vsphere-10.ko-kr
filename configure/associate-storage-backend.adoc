@@ -17,8 +17,7 @@ vCenter Server 목록 페이지에는 연결된 스토리지 백엔드 수가 �
 
 이 작업은 스토리지 백엔드와 온보딩된 vCenter Server 인스턴스 간의 매핑을 생성하는 데 도움이 됩니다.
 
-* 단계 *
-
+.단계
 . 웹 브라우저에서 ONTAP 도구 관리자를 실행합니다. `\https://loadBalancerIP:8443/virtualization/ui/`
 . 구축 중에 제공한 VMware vSphere 관리자 자격 증명용 ONTAP 툴을 사용하여 로그인합니다.
 . 사이드바에서 vCenter를 선택합니다.

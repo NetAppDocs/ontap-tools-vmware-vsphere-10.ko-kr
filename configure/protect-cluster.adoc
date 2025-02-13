@@ -13,7 +13,7 @@ summary: VMware vSphere용 ONTAP 툴을 사용하여 호스트 클러스터의 �
 [role="lead"]
 VMware vSphere용 ONTAP 툴은 호스트 클러스터의 보호를 관리합니다. 선택한 SVM에 속하고 클러스터의 하나 이상의 호스트에 마운트된 모든 데이터 저장소는 호스트 클러스터에서 보호됩니다.
 
-.필수 구성 요소
+.시작하기 전에
 다음 필수 구성 요소가 충족되는지 확인합니다.
 
 * 호스트 클러스터에는 하나의 SVM의 데이터 저장소만 있습니다.
@@ -38,7 +38,7 @@ VMware vSphere용 ONTAP 툴은 호스트 클러스터의 보호를 관리합니�
 SnapMirror 관계를 AutomatedFailOverDuplex 유형 정책으로 추가하는 경우 VMware vSphere용 ONTAP 툴이 구축된 동일한 vCenter에 타겟 스토리지 VM을 스토리지 백엔드로 추가해야 합니다.
 
 +
-AutomatedFailOverDuplex 정책 유형에는 균일하고 균일하지 않은 호스트 구성이 있습니다. uniform host configuration * 토글 버튼을 선택하면 호스트 이니시에이터 그룹 구성이 타겟 사이트에 암시적으로 복제됩니다. 자세한 내용은 을 참조하십시오 link:../concepts/ontap-tools-concepts-terms.html["주요 개념 및 용어"]
+AutomatedFailOverDuplex 정책 유형에는 균일하고 균일하지 않은 호스트 구성이 있습니다. uniform host configuration * 토글 버튼을 선택하면 호스트 이니시에이터 그룹 구성이 타겟 사이트에 암시적으로 복제됩니다. 자세한 내용은 을 link:../concepts/ontap-tools-concepts-terms.html["주요 개념 및 용어"]참조하십시오.
 
 . 비균일한 호스트 구성을 사용하도록 선택한 경우 해당 클러스터 내의 각 호스트에 대한 호스트 액세스(소스/타겟)를 선택합니다.
 . 추가 * 를 선택합니다.
