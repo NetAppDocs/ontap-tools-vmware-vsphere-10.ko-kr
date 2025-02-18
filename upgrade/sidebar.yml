@@ -1,6 +1,6 @@
 ---
 section: upgrade
-title: ONTAP 툴을 업그레이드합니다
+title: VMware vSphere용 ONTAP 툴을 업그레이드합니다
 entries:
 - title: VMware vSphere 10.x용 ONTAP 툴을 10.3로 업그레이드하십시오
   url: "/upgrade/upgrade-ontap-tools.html"

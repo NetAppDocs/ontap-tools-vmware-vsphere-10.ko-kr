@@ -61,7 +61,7 @@ NOTE: VMware vSphere용 ONTAP 툴은 vCenter Server RBAC ONTAP 작업을 간소�
 
 == vSphere 객체
 
-사용 권한은 vCenter Server, ESXi 호스트, 가상 머신, 데이터 저장소, 데이터 센터 등의 vSphere 객체와 연결됩니다. 및 폴더. 모든 vSphere 객체에 권한을 할당할 수 있습니다. vSphere 객체에 할당된 권한에 따라 vCenter Server는 해당 객체에 대해 수행할 수 있는 작업을 결정합니다. VMware vSphere 관련 작업에 사용되는 ONTAP 툴의 경우 사용 권한은 루트 폴더 레벨(vCenter Server)에서만 할당되고 검증되며 다른 엔터티에서는 할당되지 않습니다. VAAI 플러그인 작업을 제외하고 관련 ESXi 호스트에 대해 사용 권한이 검증됩니다.
+사용 권한은 vCenter Server, ESXi 호스트, 가상 머신, 데이터 저장소, 데이터 센터 및 폴더와 같은 vSphere 객체와 연결됩니다. 모든 vSphere 객체에 권한을 할당할 수 있습니다. vSphere 객체에 할당된 권한에 따라 vCenter Server는 해당 객체에 대해 수행할 수 있는 작업을 결정합니다. VMware vSphere 관련 작업에 사용되는 ONTAP 툴의 경우 사용 권한은 루트 폴더 레벨(vCenter Server)에서만 할당되고 검증되며 다른 엔터티에서는 할당되지 않습니다. VAAI 플러그인 작업을 제외하고 관련 ESXi 호스트에 대해 사용 권한이 검증됩니다.
 
 
 

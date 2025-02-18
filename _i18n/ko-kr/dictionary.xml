@@ -175,14 +175,9 @@
   <block id="8f7be3c874feb6ef0fd5f20afd8d5fbb" category="sidebar">VMware vSphere용 ONTAP 툴을 사용하면 vCenter Server 환경에서 가상 데이터 저장소를 구성, 관리 및 보호할 수 있습니다.</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">시작하십시오</block>
   <block id="da951ef1610be90b45b31baf7b25b179" category="sidebar">VMware vSphere용 ONTAP 툴에 대해 자세히 알아보십시오</block>
-  <block id="1e4bd1ddc2319e118af50ab5c5d7522f" category="sidebar">ONTAP 도구를 마이그레이션합니다</block>
   <block id="317bbf73ff27c5f981628c8fb83ebf22" category="sidebar">역할 기반 액세스 제어를 구성합니다</block>
   <block id="48bc2d028cb2a507ef974230ca3ba793" category="sidebar">원격 진단 구성</block>
   <block id="dfcc398099d6a64026e51ab282e16253" category="sidebar">더 많은 리소스</block>
-  <block id="4c3c39a603eb21106d2df2836d4b456c" category="sidebar">NetApp 기술 자료 - ONTAP 툴</block>
-  <block id="72393f9ef0b6b69526a30ac7ce5276bc" category="sidebar">NetApp 커뮤니티 - ONTAP 툴</block>
-  <block id="a7c1f19a0afcdde0b988ba73af98d366" category="sidebar">ONTAP 도구를 구성합니다</block>
-  <block id="4226794a7bb33ab0a2309e30c07c9031" category="sidebar">ONTAP 툴 관리</block>
   <block id="0460583622f03a52d7693094d6fa2452" category="sidebar">개념</block>
   <block id="99da96b7c57595264a2d5f3ba294a0af" category="sidebar">역할 기반 액세스 제어</block>
   <block id="31b887a5d4bfcf42237476c03005131d" category="paragraph">사용자 및 그룹은 vCenter Server 역할의 일부가 되어 역할에 액세스할 수 있습니다.</block>
@@ -277,7 +272,6 @@
   <block id="062e7967273cea76dff9c3579a0c44db" category="doc">vCenter Server 인스턴스에 VASA Provider를 등록합니다</block>
   <block id="3f95368adb4475e89e1f4206049b54ad" category="summary">VVOL 데이터 저장소 마운트 대화 상자를 사용하여 하나 이상의 추가 호스트에 VVol(VMware Virtual Volumes) 데이터 저장소를 마운트할 수 있습니다. 데이터 저장소를 마운트하면 추가 호스트에 대한 스토리지 액세스가 가능합니다. API를 통해서만 VVOL 데이터 저장소를 마운트 해제할 수 있습니다.</block>
   <block id="8ac8af3fafb018169f82c906bf521ceb" category="paragraph">VVol(VMware Virtual Volumes) 데이터 저장소를 하나 이상의 추가 호스트에 마운트하여 추가 호스트에 대한 스토리지 액세스를 제공할 수 있습니다. API를 통해서만 VVOL 데이터 저장소를 마운트 해제할 수 있습니다.</block>
-  <block id="0e6fc56cbe91d72cb03e33a904ae9ab3" category="list-text">탐색 창에서 데이터 저장소가 포함된 데이터 센터를 선택합니다.</block>
   <block id="011c7edf1e9f3c93cbdd438d0b9298d1" category="list-text">데이터 저장소를 마우스 오른쪽 버튼으로 클릭하고 * NetApp ONTAP tools * &gt; * Mount datastore * 를 선택합니다.</block>
   <block id="d3cd4bffc1abc46e60337f8438f457b9" category="summary">스토리지 보기에는 가상 시스템에서 생성된 VVol 목록이 표시됩니다.</block>
   <block id="f6607063532d19e10b746de0f6108f15" category="doc">가상 머신 스토리지 뷰</block>
@@ -287,16 +281,13 @@
   <block id="6d710894cd1d83594944bdb2f558f3dd" category="paragraph">'열 관리' 옵션을 사용하여 다른 열을 숨기거나 표시할 수 있습니다.</block>
   <block id="890e36ddbad7723990bfc85c381032f7" category="summary">diag 사용자에 대해 SSH 액세스를 사용하도록 VMware vSphere용 ONTAP 툴을 구성할 수 있습니다.</block>
   <block id="08eb6f69a04bed1d014eb12b7cdc3039" category="paragraph">vCenter Server 인스턴스에 대해 VASA Provider 확장을 설정해야 합니다.</block>
-  <block id="95644633de6b27d9f2b2fc90e3f78d10" category="list-text">vCenter Server에서 VASA Provider에 대한 콘솔을 엽니다.</block>
   <block id="7aaefa4d4b1dc5f22ac66195d817ec42" category="summary">데이터 저장소의 크기를 조정하면 가상 시스템 파일의 스토리지를 늘릴 수 있습니다. 인프라 요구사항의 변화에 따라 데이터 저장소의 크기를 변경할 수 있습니다.</block>
   <block id="acaef68592c39a3506e0d7bb3c9e162c" category="paragraph">NFS 및 VMFS 데이터 저장소의 크기만 늘릴 수 있습니다. NFS 및 VMFS 데이터 저장소의 일부인 FlexVol 볼륨은 기존 크기 이하로 줄일 수 없지만 최대 120% 확장할 수 있습니다.</block>
   <block id="823a888350d98ab4dac348c27cf264a3" category="doc">응용 프로그램 사용자 암호를 재설정합니다</block>
   <block id="e811200464bd3c07736511ca762cfead" category="summary">VMware vSphere용 ONTAP Tools 그래픽 사용자 인터페이스\(GUI\)에서 사용할 수 있는 옵션을 통해 VMware vSphere용 ONTAP 툴에 대한 로그 파일을 수집할 수 있습니다. 기술 지원 부서에서 문제 해결을 위해 로그 파일을 수집하도록 요청할 수 있습니다.</block>
   <block id="8058137328d41c72a79d7dea14eaab18" category="paragraph">VMware vSphere용 ONTAP 툴에 대한 로그 파일은 ONTAP Tools Manager 사용자 인터페이스에서 사용할 수 있는 옵션을 통해 수집할 수 있습니다. 기술 지원 부서에서 문제 해결을 위해 로그 파일을 수집하도록 요청할 수 있습니다.</block>
-  <block id="83c32c47578180e0e39fc648094deb0c" category="admonition">ONTAP Tools Manager에서 로그를 생성하는 데는 모든 vCenter Server 인스턴스에 대한 모든 로그가 포함됩니다. vCenter 클라이언트 UI에서 로그를 생성하는 작업은 선택한 vCenter Server에 대해 범위가 지정됩니다.</block>
   <block id="909e5a5a2da50cba2a6a4610ecbd83f5" category="list-text">로그 파일을 생성하려면 * Generate * 를 선택하십시오.</block>
   <block id="5a6b08b3ada6eceaa1860448ce07c41d" category="list-text">로그 번들의 레이블을 입력하고 * Generate * 를 선택합니다.</block>
-  <block id="848b8712489d456b70c8b96ba07809e7" category="paragraph">vCenter 클라이언트 UI를 사용하여 로그 번들을 생성하려면 다음 단계를 수행하십시오.</block>
   <block id="b6d50c4645c0bca6b859870159ef8d88" category="list-text">vSphere Client 홈 페이지에서 * Support * &gt; * Log bundle * &gt; * Generate * 로 이동합니다.</block>
   <block id="d33e0eed0ba191bd65fd110cd78b4fe3" category="list-text">로그 번들 레이블을 제공하고 로그 번들을 생성합니다.
 파일이 생성되면 다운로드 옵션을 볼 수 있습니다. 다운로드하는 데 시간이 걸릴 수 있습니다.</block>
@@ -304,7 +295,6 @@
   <block id="2917b452ab6d9fd65242e5b878abb0ca" category="paragraph">vCenter Server에 연결된 모든 스토리지 백엔드를 제거한 후 제거해야 합니다.</block>
   <block id="c1506892d1092bf8f73a94ec8249a0f5" category="summary">ONTAP 도구 관리자를 사용하여 관리자 암호를 변경할 수 있습니다.</block>
   <block id="c4f8ed60e900e21e211600378be9ee4b" category="doc">ONTAP 도구 관리자 암호를 변경합니다</block>
-  <block id="6082370b0d6d5f8a68f4878e7fa6c9ee" category="list-text">암호 변경 팝업 창에서 이전 암호와 새 암호 세부 정보를 입력합니다. 암호 변경에 대한 제한이 UI 화면에 표시됩니다.</block>
   <block id="2da2062b7a007e397ad268a2b32e9012" category="summary">데이터 저장소 삭제 작업은 선택한 데이터 저장소에 VVol이 없을 때 데이터 저장소를 삭제합니다.</block>
   <block id="6cfbd682adda5c4eac39b86ca21a3fd0" category="admonition">VVol이 상주하는 볼륨을 선택하는 옵션은 비활성화됩니다.</block>
   <block id="28557ae56fb972905373e3ac7d9f0f7a" category="summary">NFS 및 VMFS 데이터 저장소에서 VVol(Virtual Volumes\) 데이터 저장소로 가상 머신을 마이그레이션하여 정책 기반 VM 관리 및 기타 VVol 기능을 활용할 수 있습니다. VVOL 데이터 저장소를 사용하면 증가하는 워크로드 요구사항을 충족할 수 있습니다.</block>
@@ -364,10 +354,7 @@
   <block id="4300089ef33ef55dfedd4e30b4a8f256" category="list-text">스토리지 백엔드에 대해 허용 및 제한된 권한입니다. 하위 SVM의 경우 정보는 상위 스토리지 백엔드와 동일합니다. 권한은 클러스터 기반 스토리지 백엔드에만 표시됩니다. SVM을 스토리지 백엔드로 추가하면 권한 정보가 표시되지 않습니다.</block>
   <block id="e844d9fd53042c733afd7279ded5c1f9" category="summary">VMware vSphere용 ONTAP 툴의 대시보드를 사용하여 ESXi 호스트 설정을 편집할 수 있습니다.</block>
   <block id="02ab3ab0847511acbd4b15c4effc3a0f" category="list-text">데이터 저장소를 마우스 오른쪽 버튼으로 클릭하고 * NetApp ONTAP tools * &gt; * Add storage to datastore * 를 선택합니다.</block>
-  <block id="1559d9c8a77bef2ef4cd2769fa8d4bce" category="list-text">Create 또는 Select Volumes * 창에서 새 볼륨을 생성하거나 기존 볼륨에서 선택할 수 있습니다. UI는 쉽게 설명할 수 있습니다. 원하는 대로 지침을 따릅니다.</block>
-  <block id="0d4c7a909a42ee4216c9dc3a711d6f9c" category="summary">데이터 센터에서 가상 시스템을 마이그레이션하는 동안 고려해야 할 몇 가지 사항에 대해 알고 있어야 합니다.</block>
   <block id="15f1aa9e115051855bd946481392de06" category="doc">가상 머신의 마이그레이션 또는 클론 생성 고려 사항</block>
-  <block id="39f552e7cb4d162813d312b5f0d5fb70" category="paragraph">데이터 센터에서 기존 가상 시스템을 마이그레이션할 때 고려해야 할 몇 가지 사항에 대해 알고 있어야 합니다.</block>
   <block id="ba5e8da9e0b96260b6e9888a3f83a70f" category="section-title">보호된 가상 시스템을 마이그레이션합니다</block>
   <block id="d994c03b04179f08c8f70c2b40c6b1ed" category="paragraph">보호된 가상 시스템을 다음으로 마이그레이션할 수 있습니다.</block>
   <block id="76626cf93866fa9c640a48246c5c37f2" category="list-text">다른 ESXi 호스트에서 동일한 VVol 데이터 저장소</block>
@@ -400,9 +387,6 @@
   <block id="a8211be0a6fb73b95cdffd1ac6d2b9d5" category="list-text">ONTAP 스토리지에서 백업 볼륨을 삭제하려면 * Delete volumes on ONTAP cluster * 를 선택합니다.</block>
   <block id="c00d479945ae0ac31dc91b4e3dd1e862" category="summary">데이터 저장소를 마운트하면 추가 호스트에 대한 스토리지 액세스가 제공됩니다. VMware 환경에 호스트를 추가한 후 추가 호스트에 데이터 저장소를 마운트할 수 있습니다.</block>
   <block id="36a4b56b73b4162884e7f45d9d8a7152" category="doc">NFS 및 VMFS 데이터 저장소를 마운트합니다</block>
-  <block id="dcc028a494b54047b30256c7b7196909" category="paragraph">데이터 저장소를 마운트하면 추가(NFS/VMFS) 호스트에 대한 스토리지 액세스 권한을 얻을 수 있습니다. VMware 환경에 호스트를 추가한 후 추가 호스트에 데이터 저장소를 마운트할 수 있습니다.</block>
-  <block id="3e919dcfc20808ddf2ade7ab9176112b" category="list-text">탐색 창에서 호스트가 포함된 데이터 센터를 선택합니다.</block>
-  <block id="1e08ec71c2d2c7b9039817023cf0561c" category="list-text">추가 호스트에 대해 2단계를 반복합니다.</block>
   <block id="803cd3ad44ce6241271ae7cf5198e3d0" category="summary">볼륨과 집계 용량이 특정 수준에 도달하면 vCenter Server에서 알림을 받도록 임계값을 설정할 수 있습니다. </block>
   <block id="6758b1c73221d6658afeee2ccd4a3e13" category="paragraph">볼륨과 집계 용량이 특정 수준에 도달하면 vCenter Server에서 알림을 받도록 임계값을 설정할 수 있습니다.</block>
   <block id="0ca6560aa88bd22fa1b3bb69d8594555" category="list-title">단계:</block>
@@ -592,7 +576,6 @@ sudo rke2-uninstall.sh (모든 VM).</block>
   <block id="5e4a27fe472e02379e0fad15d3b8be53" category="admonition">VMware vSphere용 ONTAP 툴은 vCenter Server RBAC ONTAP 작업을 간소화하기 위해 VMware vSphere 작업에 필요한 모든 ONTAP 툴과 기본 권한을 포함하는 여러 가지 표준 역할을 제공합니다.</block>
   <block id="a61c7e49f2d62469efe4be0dd2d42a28" category="paragraph">권한 내에서 권한을 변경하면 해당 권한과 연결된 사용자가 로그아웃한 다음 로그인하여 업데이트된 권한을 활성화해야 합니다.</block>
   <block id="0c26eb3da0cc8bb038a438623b92ece4" category="section-title">vSphere 객체</block>
-  <block id="3175c43c3cb643b4f4919fed4fa56e48" category="paragraph">사용 권한은 vCenter Server, ESXi 호스트, 가상 머신, 데이터 저장소, 데이터 센터 등의 vSphere 객체와 연결됩니다. 및 폴더. 모든 vSphere 객체에 권한을 할당할 수 있습니다. vSphere 객체에 할당된 권한에 따라 vCenter Server는 해당 객체에 대해 수행할 수 있는 작업을 결정합니다. VMware vSphere 관련 작업에 사용되는 ONTAP 툴의 경우 사용 권한은 루트 폴더 레벨(vCenter Server)에서만 할당되고 검증되며 다른 엔터티에서는 할당되지 않습니다. VAAI 플러그인 작업을 제외하고 관련 ESXi 호스트에 대해 사용 권한이 검증됩니다.</block>
   <block id="ce0f8ed3eb5e44bde1c81a61f9bd5f2f" category="paragraph">Active Directory(또는 로컬 vCenter Server 머신)를 사용하여 사용자 및 사용자 그룹을 설정할 수 있습니다. 그런 다음 vCenter Server 권한을 사용하여 이러한 사용자 또는 그룹이 VMware vSphere 작업에 대한 특정 ONTAP 툴을 수행할 수 있도록 액세스 권한을 부여할 수 있습니다.</block>
   <block id="602291944388a73cbe9572d935cac7b1" category="admonition">이러한 vCenter Server 사용 권한은 VMware vSphere vCenter 사용자용 ONTAP 툴에 적용되며, VMware vSphere 관리자용 ONTAP 툴에는 적용되지 않습니다. 기본적으로 VMware vSphere 관리자용 ONTAP 툴은 제품에 대한 모든 액세스 권한을 가지며 해당 툴에 할당된 권한이 필요하지 않습니다.</block>
   <block id="c3a3dd532edfb82b4e332bc19f333c01" category="paragraph">사용자 및 그룹에 할당된 역할이 없습니다. vCenter Server 권한의 일부이기 때문에 역할에 액세스할 수 있습니다.</block>
@@ -625,7 +608,6 @@ sudo rke2-uninstall.sh (모든 VM).</block>
   <block id="f5687be176cf7331c8455f99c17ffcf2" category="paragraph">보호된 사이트와 복구 사이트가 모두 개체 대화 상자에 나타납니다.</block>
   <block id="22bf2e5e3e861785a0e8f1eb7bd7492e" category="doc">SRA를 활성화하여 데이터 저장소를 보호합니다</block>
   <block id="f8159a1f10595cc4a80126746a124cb1" category="list-text">vCenter Server 인스턴스를 설정하고 ESXi 호스트를 구성해야 합니다.</block>
-  <block id="f0b89458744ef827ff23713551229aa7" category="list-text">ONTAP 툴을 배포해야 합니다.</block>
   <block id="0fd28be9959e611e7350a85da18ec3d2" category="list-text">SRA 어댑터를 다운로드해야 합니다<block ref="d6f1afa70d6145a212d9dc6bc8a2fa64" prefix=" " category="inline-code"></block> 에서 파일<block ref="c28762f698ce57f013f1f9dff01575ab" category="inline-link-rx"></block>.</block>
   <block id="3cd3d1462bf37583e74346e9e49e0712" category="list-text">새 어댑터 * 를 선택합니다.</block>
   <block id="c88f553be5a81e83a1a2cd590af81efb" category="summary">보호된 가상 머신 \(VM\)의 복구 사이트에서 vCenter 인벤토리에 위치를 보관하도록 자리 표시자 데이터 저장소를 구성해야 합니다. 자리 표시자 VM이 작고 수백 킬로바이트 이하만 사용하기 때문에 자리 표시자 데이터 저장소는 크기가 클 필요가 없습니다.</block>
@@ -684,8 +666,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="b679ceeadb8258b066c691d0bd3d1425" category="list-text">클러스터 또는 SVM에 연결할 정보를 입력합니다.</block>
   <block id="2d95ef4a43bff393818e73874fcb7000" category="list-text">클러스터에 연결하려면 클러스터 관리 LIF를 입력해야 합니다.</block>
   <block id="eb1163d01cf9f6ac755b66a60c5ed76a" category="list-text">SVM에 직접 연결하는 경우 SVM 관리 LIF의 IP 주소를 입력해야 합니다.</block>
-  <block id="316c7883e7ce8756f4a0c49400b39c85" category="admonition">어레이 관리자를 구성할 때는 ONTAP 툴에서 스토리지 시스템을 온보딩하는 데 사용된 스토리지 시스템에 대해 동일한 연결(IP 주소)을 사용해야 합니다.
-예를 들어, 어레이 관리자 구성이 SVM 범위인 경우 VMware vSphere용 ONTAP 툴에 있는 스토리지를 SVM 레벨에서 추가해야 합니다.</block>
   <block id="561c3a3eaf4827d88af62c588eab69f3" category="list-text">클러스터에 연결하려면 SVM 이름 * 필드에 SVM 이름을 입력합니다.</block>
   <block id="9e9dbfb2c534e6a51c7020dd15ee5452" category="paragraph">이 필드를 비워 둘 수도 있습니다.</block>
   <block id="e974d897f41267015c11698e8a684c07" category="list-text">Volume include list *(볼륨 포함 목록 *) 필드에 검색할 볼륨을 입력합니다.</block>
@@ -836,7 +816,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="25890161c3df1f2618234e8f48e2c18b" category="sidebar">확장성이 높은 환경에 맞게 SRA를 구성합니다</block>
   <block id="a239701adb72159a71164b036c18a53a" category="sidebar">보호 및 복구 사이트 리소스를 구성합니다</block>
   <block id="6956cfc9382ccb41c8ac57f99255b409" category="sidebar">복제된 스토리지 시스템을 확인합니다</block>
-  <block id="a2fa58344be7fbd9a2be0320a8df0f77" category="sidebar">ONTAP 툴을 업그레이드합니다</block>
   <block id="42ac03a8bab25efc61489f3923976820" category="summary">ONTAP tools Manager 암호를 잊은 경우 VMware vSphere 유지 관리 콘솔용 ONTAP tools에서 생성한 토큰을 사용하여 관리자 자격 증명을 재설정할 수 있습니다.</block>
   <block id="5f479a62f2104046972d10f2cbf88255" category="paragraph">시간 초과에 도달하면 의 값을 늘리십시오<block ref="e7a7316b2dab3875c5aa0977c256ae38" prefix=" " category="inline-code"></block> 및<block ref="b6c033f4806640a2a2858512cf9f8c1b" prefix=" " category="inline-code"></block> 더 높은 값으로.</block>
   <block id="a84fd12354047a6ec2a5b6b1711524f5" category="cell">vCenter 7.0U3</block>
@@ -972,9 +951,7 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="fdaedd61903be1be2102df0b95fd62f8" category="inline-link">VMware vSphere Metro 스토리지 클러스터</block>
   <block id="ab214a77aca7f1a5595c69a10b7f0c9d" category="paragraph">vMSC(vSphere Metro Storage Cluster)는 확장된 클러스터 구축 환경에서 vSphere를 활성화하고 지원하는 기술입니다. vMSC 솔루션은 NetApp MetroCluster 및 SnapMirror Active Sync(이전의 SMBC)에서 지원됩니다. 이러한 솔루션은 도메인 장애 시 향상된 비즈니스 연속성을 제공합니다. 복원력 모델은 특정한 구성 선택에 따라 달라집니다. 에 대해 자세히<block ref="fae35a77d8fa39590c619f954aeac240" category="inline-link-rx"></block>알아보십시오.</block>
   <block id="743bb9eba37e39241a186d033a7c1e5d" category="list-text">호스트를 마우스 오른쪽 버튼으로 클릭하고 * NetApp ONTAP tools * &gt; * Update host data * 를 선택합니다.</block>
-  <block id="7f4eeeb7066fc64c51f02eba557a897f" category="list-text">하나 이상의 보호된 호스트 클러스터가 있는 데이터 센터에서는 데이터 저장소를 생성할 수 없습니다.</block>
   <block id="a2104e04e16a5328c37eb86f38533aab" category="list-text">상위 호스트 클러스터가 자동화된 페일오버 이중 정책 유형(단일/비균일 구성)의 관계로 보호되는 경우 호스트에서 데이터 저장소를 생성할 수 없습니다.</block>
-  <block id="2b1af6f75eb17029e34abc0a1219ad91" category="list-text">호스트 시스템 또는 호스트 클러스터 또는 데이터 센터를 마우스 오른쪽 버튼으로 클릭하고 * NetApp ONTAP tools * &gt; * Create Datastore * 를 선택합니다.</block>
   <block id="5574a2ea8c4feb96a776c4e8ce8a26dd" category="list-text">ONTAP 스토리지 쪽의 각 프로토콜에 대해 해당 서비스 및 LIF를 활성화해야 합니다.</block>
   <block id="00e94fd17e3b9474f70e512906843f21" category="list-text">NVMe/TCP 프로토콜을 사용하는 경우 다음 단계를 수행하여 ESXi 호스트를 구성합니다.</block>
   <block id="e08175c6fa64cba68719dea85ebd9d34" category="inline-link">VMware 호환성 가이드 를 참조하십시오</block>
@@ -998,7 +975,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="636da39a2033c6179a718983c5ce1222" category="inline-link">ONTAP NVMe/FC 호스트 구성 가이드</block>
   <block id="81ef6507a13da5635951bc5b533deb59" category="inline-link">TR-4684를 참조하십시오</block>
   <block id="bcfcba3d84c95eb110df0649ab05c280" category="paragraph">VMware vSphere 7.0에서 NVMe/FC를 사용하는 방법에 대한 자세한 내용은<block ref="27816f9f9cf7e278691c8ea8c1dd01dc" category="inline-link-rx"></block> 및 을 참조하십시오<block ref="a23d4cc1b9464bb497e26d387d612153" category="inline-link-rx"></block>.</block>
-  <block id="ea681736881aaf06c82b7e06948e2e8a" category="list-text">필요한 데이터 센터를 마우스 오른쪽 버튼으로 클릭하고 * NetApp ONTAP tools * &gt; * Update Host Data * 를 선택합니다.</block>
   <block id="973e35fe570f98dc6e1c5fe1bd6b5876" category="summary">VMware vSphere용 ONTAP 툴을 사용하여 호스트 클러스터의 보호를 관리합니다.</block>
   <block id="46bf98dea599db077d28c3e2f58a655a" category="doc">호스트 클러스터 보호를 생성합니다</block>
   <block id="dd4ee610bd1d035c73bc0cbcd80e46da" category="paragraph">다음 필수 구성 요소가 충족되는지 확인합니다.</block>
@@ -1058,13 +1034,9 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="946a83271556c139842bcb5af7ae1f0a" category="list-text">AutomatedFailoOverDuplex 정책 유형을 선택한 경우 호스트 근접 또는 호스트 액세스 세부 정보를 추가합니다.</block>
   <block id="c94bbde5a330b4478f870b948c9975d9" category="doc">VVOL 데이터 저장소를 확장합니다</block>
   <block id="97c7ab1ce39aa0129e7264728d8af0ff" category="list-text">'성자' 사용자 암호를 변경합니다</block>
-  <block id="58fe9e1cb934ac74ee3f8b5376d19217" category="list-text">vSphere 7.0U3에서 vSphere 8.0 버전까지 옵션이 표시되더라도 작업이 비활성화됩니다.</block>
-  <block id="67ea44e3ba9af443d11fa13f297377fc" category="list-text">호스트 클러스터가 균일한 구성으로 보호되는 경우 데이터 저장소 마운트가 비활성화됩니다.</block>
-  <block id="2485c52972ea7083934a6c2fe7c6b077" category="list-text">호스트 또는 호스트 클러스터에 NFS/VMFS 데이터 저장소를 마운트하려면 해당 데이터를 마우스 오른쪽 버튼으로 클릭하고 * NetApp ONTAP tools * &gt; * Mount datores * 를 선택합니다.</block>
   <block id="b5783ac409e73180ab37229219e49c28" category="doc">VVOL 데이터 저장소를 축소합니다</block>
   <block id="cfe2ade5e927260481a4080015905722" category="paragraph">5초 이내에 옵션을 선택할 수 있습니다. 아무 키나 눌러 진행 과정을 중지하고 GRUB 메뉴를 고정합니다.</block>
   <block id="4c734aa54cd53c11c7a3b92546fe4f71" category="admonition">VM의 전원을 켜는 동안에도 동일한 GRUB 메뉴가 나타납니다. 그러나 * Restart Guest OS * 옵션에만 암호 재설정 옵션을 사용해야 합니다.</block>
-  <block id="7297f5439531e38507b51692d1e1240a" category="paragraph">관리자 암호를 재설정하려면 VMware vSphere 유지 보수 콘솔용 ONTAP 툴을 사용하여 재설정 토큰을 생성해야 합니다. ... vCenter Server에서 유지 관리 콘솔을 엽니다. '2'를 입력하여 시스템 구성 옵션을 선택합니다. '이전' 사용자 암호를 변경하려면 '3'을 입력하십시오.</block>
   <block id="9704bbe9f3dcdd6bcaf267fe293ed88b" category="doc">NFS 및 VMFS 데이터 저장소의 크기를 조정합니다</block>
   <block id="394fd800a2f0eeab4ce90d523f482596" category="list-text">VMFS 데이터 저장소에 NVMe/TCP 또는 NVMe/FC 프로토콜을 사용하는 경우 네임스페이스 세부 정보 페이지에 네임스페이스와 관련된 데이터가 포함됩니다.</block>
   <block id="66b35670e1d214ace40486c73d0f6adb" category="paragraph"><block ref="f7d732a4279ec8aa2eb5d17d00714307" category="inline-link-macro-rx"></block>섹션의 지침에 따라 VVols 데이터 저장소를 추가하고 <block ref="6d832355e25e19af70f0fa408b0b686f" category="inline-link-macro-rx"></block> 섹션을 따라 데이터 저장소를 삭제합니다.</block>
@@ -1073,7 +1045,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="087d0d40d47400dd85813f2eeff8bfc0" category="list-text">NFS 또는 VMFS 데이터 저장소 객체를 마우스 오른쪽 버튼으로 클릭하고 * Unmount datastore * 를 선택합니다.</block>
   <block id="dfa0dbf66f9f02b82fdb955b47146f58" category="paragraph">대화 상자가 열리고 데이터 저장소가 마운트된 ESXi 호스트가 나열됩니다. 보호된 데이터 저장소에서 작업을 수행하면 화면에 경고 메시지가 표시됩니다.</block>
   <block id="145030897b3622bf5373be4a74e8ad80" category="list-text">데이터 저장소를 마운트 해제할 ESXi 호스트를 하나 이상 선택합니다.</block>
-  <block id="992476f7360110bb8ea5099a404ab50a" category="paragraph">모든 호스트에서 데이터 저장소를 마운트 해제할 수 없습니다. UI에서는 대신 데이터 저장소 삭제 작업을 사용하는 것이 좋습니다.</block>
   <block id="b58a084a2e5b8ee16e91cff21aeacb3b" category="list-text">Unmount * 버튼을 선택합니다.</block>
   <block id="58ee9210196e8f4558d87b26bba5bc19" category="paragraph">데이터 저장소가 보호된 호스트 클러스터의 일부인 경우 경고 메시지가 표시됩니다.</block>
   <block id="303fed3350b929d95f1f937c9d4e0032" category="admonition">보호된 데이터 저장소가 마운트 해제되면 기존 보호 설정이 부분적으로 보호될 수 있습니다. <block ref="7f22d9c478ecf91907e72215f8fe7f7b" category="inline-link-macro-rx"></block>전체 보호를 활성화하려면 을 참조하십시오.</block>
@@ -1133,7 +1104,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="810eb1be62c2223bbb6ff683af2508bd" category="paragraph">다음 표에는 VMware vSphere용 ONTAP 툴을 사용하여 VMware 라이브 사이트 복구 인스턴스당 지원되는 수가 나와 있습니다.</block>
   <block id="beadd6cb6100e1a0cce84603ccb7105a" category="paragraph">다음 표에는 VMware Live Site Recovery의 수와 VMware vSphere 구축 크기용 ONTAP 툴의 수가 나와 있습니다.</block>
   <block id="df0d7eb56e12922cca30035472c40aa7" category="cell">* VMware Live Site Recovery 인스턴스 수 *</block>
-  <block id="d6efc4dcb0d701b8153c2ef1af6e22b9" category="list-text">VMware Live Site Recovery UI에서 VMware vSphere 9.xx 릴리즈 SRA 어댑터용 ONTAP 툴을 삭제하려면 다음 단계를 수행하십시오.</block>
   <block id="de7cd16aa682868ad900edd519b06059" category="list-text">VMware Live Site Recovery 구성 관리 페이지로 이동합니다</block>
   <block id="e6af441b9194db7f4427a1199ae8c274" category="inline-link-macro">VMware Live Site Recovery 어플라이언스에 SRA를 구성합니다</block>
   <block id="0b3582622e579cb352e246015d6ca171" category="summary">VMware Live Site Recovery의 Array Manager 마법사를 사용하여 SRA(스토리지 복제 어댑터)를 구성하여 VMware Live Site Recovery와 스토리지 가상 머신\(SVM\) 간의 상호 작용을 지원할 수 있습니다.</block>
@@ -1173,7 +1143,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="c81176933931ab131bb0e0556e02bad1" category="paragraph">VMFS(Virtual Machine File System)는 VMware vSphere 환경에 가상 머신 파일을 저장하도록 특별히 설계된 클러스터 파일 시스템입니다. 여러 ESXi 호스트가 동일한 가상 머신 파일에 동시에 액세스할 수 있으므로 vMotion 및 High Availability 같은 기능을 사용할 수 있습니다.</block>
   <block id="5482792d8f62d9c636f95fc96476727d" category="paragraph">계속하기 전에 다음 항목을 확인하십시오.</block>
   <block id="da6388fdc3d2fad794be9aa033101c19" category="open-title">ONTAP 도구 관리자 사용</block>
-  <block id="66d025bf05fa7a9a47b57b658e95b76a" category="open-title">vSphere Client UI 사용</block>
   <block id="6245e46af5a3bdaf57696763c4214c70" category="doc">vCenter Server 인스턴스를 추가합니다</block>
   <block id="9d0c1154faecde38baf4c2a1e8f8e9e6" category="list-text"><block ref="daf4de58883c030f033f07e61debf025" prefix=" " category="inline-code"></block>에서 VMware vSphere용 ONTAP 툴에 대한 바이너리(_.ova_)와 서명된 인증서가 포함된 파일을<block ref="c28762f698ce57f013f1f9dff01575ab" category="inline-link-rx"></block> 다운로드합니다.</block>
   <block id="76c9f2fd0b61e8f84a42f7ab8d5ce641" category="admonition">자세한 내용은<block ref="b5992e6d058c0c347b7f52b58c58c7d5" category="inline-link-rx"></block> 블로그 를 참조하십시오.</block>
@@ -1197,7 +1166,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="9d7b692a21eb697ecb2b728a45d820e9" category="list-text">사이드바에서 해당 vCenter Server 인스턴스를 선택합니다</block>
   <block id="53b6d9a27611577cca2fc7f28a47183c" category="admonition">vCenter Server 인스턴스를 제거하면 더 이상 애플리케이션에서 해당 인스턴스를 유지 관리할 수 없습니다.</block>
   <block id="c93b5a9d65c77be9a5dfa309362afe22" category="sidebar">vCenter Server를 추가합니다</block>
-  <block id="3d7fe3e43f9f24fffe5ed0d546d12f13" category="sidebar">ONTAP 툴 구축</block>
   <block id="7cf21d459cdbb9c2a1e4864da9f56b5a" category="summary">VMware vSphere 9용 ONTAP 툴과 VMware vSphere 10용 ONTAP 툴 기능 비교에 대해 알아보십시오</block>
   <block id="8db6f8bda67c3085df85aeea7d620ac7" category="doc">VMware vSphere 9용 ONTAP 툴 및 VMware vSphere 10용 ONTAP 툴 기능 비교</block>
   <block id="9ed4a475dd3705157a9fed8811f63ce2" category="inline-link">NetApp 상호 운용성 매트릭스 툴</block>
@@ -1240,7 +1208,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="9d65b5cebe69c5a066b9142b67334767" category="list-text">클러스터 ONTAP 툴 역할을 구성하려면 * 클러스터 * &gt; * 설정 * &gt; * 사용자 및 역할 * 창을 선택합니다.</block>
   <block id="5aa0457cc95965b125467f8be60fadcf" category="list-text">클러스터 SVM ONTAP 툴 역할을 구성하려면 * 스토리지 SVM * &gt; * 설정 * &gt; * 사용자 및 역할 * 창을 선택합니다</block>
   <block id="ef0a0294be4f16882c4e18df7a17b72f" category="paragraph">유지보수 콘솔 옵션 * 애플리케이션 구성 * &gt; * AutoSupport 사용 안 함 * 을 사용하여 AutoSupport을 사용하지 않도록 설정할 수 있습니다. 활성화 상태로 두는 것이 좋습니다. AutoSupport를 활성화하면 문제를 더 빠르게 감지하고 문제를 더 빠르게 해결할 수 있습니다. 시스템은 AutoSupport 정보를 수집하여 AutoSupport가 비활성화된 경우에도 로컬에 저장합니다. 그러나 보고서를 어떤 네트워크에도 보내지 않습니다. 첫 번째 VM의 유지 관리 콘솔을 사용하여 프록시 URL을 제공해야 합니다. 애플리케이션 구성 * &gt; * AutoSupport 프록시 URL 업데이트 * 옵션을 사용하여 프록시 URL을 입력합니다.</block>
-  <block id="df5b8332c344a8d1a2ca6124ea06defe" category="section-title">ASA r2 를 참조하십시오</block>
   <block id="e995d56efd9e31d97825dd79be4d1383" category="inline-link">ASA R2 스토리지 시스템에 대해 알아보십시오</block>
   <block id="5b1c546117e368c44e82ae035c45be9d" category="paragraph">새로운 NetApp ASA R2 시스템(ASA A1K, ASA A70 및 ASA A90)은 SAN 전용 고객의 요구 사항에 맞는 간소화된 환경을 제공하는 통합된 하드웨어 및 소프트웨어 솔루션을 제공합니다.<block ref="f9c69c3c94cab41a57233cdf7452c3d6" category="inline-link-rx"></block>..</block>
   <block id="e3d3af7525d3e3fb797e7dad595bc6a3" category="section-title">복구 지점 목표(RPO)</block>
@@ -1407,7 +1374,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="56b3d744b9b4be462a3690ae4544597f" category="doc">제로급 RPO</block>
   <block id="801f8e0562d879f86130e69cbce87379" category="paragraph">VMware vSphere 10.3용 ONTAP 툴은 동적 스토리지 프로비저닝을 사용하므로 제로 RPO를 달성할 수 없습니다. 하지만 거의 0에 가까운 RPO를 달성할 수 있습니다. RPO가 0에 가까우려면 설정 백업을 생성하고 새 가상 시스템에서 복원해야 합니다.</block>
   <block id="c6f939dae0e5259bce57860afc541419" category="section-title">백업을 생성하고 백업 파일을 다운로드합니다</block>
-  <block id="debeb849ccfa01c4ffeafab9f3f22b42" category="list-text">vCenter Server에서 유지 관리 콘솔을 엽니다.</block>
   <block id="7da533dd7cf119bc5d2fd71b38cfc352" category="list-text">를<block ref="a87ff679a2f3e71d9181a67b7542122c" prefix=" " category="inline-code"></block> 입력하여 * 지원 및 진단 * 을 선택합니다.</block>
   <block id="0ffb851c60654455c01df466a395c905" category="list-text">Enter 키를 눌러<block ref="eccbc87e4b5ce2fe28308fd9f2a7baf3" prefix=" " category="inline-code"></block> * 시스템 백업 활성화 * 옵션을 선택합니다.</block>
   <block id="94f646a73d5a709f18793e2ac8edad42" category="list-text">HA가 아닌 경우 ONTAP 툴 가상 머신을 구축할 vCenter 자격 증명을 입력합니다.</block>
@@ -1551,7 +1517,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="039f647b3ad55c89a6a5ff0d6109bd4f" category="paragraph">VMware vSphere 10.3용 ONTAP 툴은 VMFS, VVOL 데이터 저장소와 해당 VM에 대한 관측성 메트릭 지원을 확장합니다.</block>
   <block id="01e681f5a8de12d6be77dfc0e567c731" category="summary">VMware vSphere 10 REST API 참조용 ONTAP 툴에는 모든 API 호출에 대한 자세한 정보가 포함되어 있습니다. 이 참조는 자동화 애플리케이션을 개발할 때 유용합니다.</block>
   <block id="d2f73ce531661447cb475cb1f2d2e3bf" category="doc">VMware vSphere 10 REST API용 ONTAP 툴에 대한 API 참조입니다</block>
-  <block id="ae1e8fd3c75f65498c54084ccfaf3047" category="paragraph">Swagger UI를 통해 VMware vSphere 10 REST API용 ONTAP 툴 설명서에 온라인으로 액세스할 수 있습니다. 포트뿐만 아니라 VMware vSphere 10 게이트웨이 서비스용 ONTAP 툴의 IP 주소 또는 FQDN이 필요합니다.</block>
   <block id="08abdf16d81e0cbba6b259bea49cdf99" category="list-text">브라우저에 변수에 대해 적절한 IP 주소와 포트 조합을 대체할 다음 URL을 입력하고 * Enter * 키를 누릅니다.</block>
   <block id="6ff8508bd0ad0da36fc04c76066c464c" category="paragraph"><block ref="4c9882763c7aaf0e39789953130b5809" prefix="" category="inline-code"></block></block>
   <block id="938f1047c15f00fdd0cbfc8e4cfa15e1" category="paragraph">* 예 *</block>
@@ -1705,11 +1670,9 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="656a2ce4c62bd399a29a0cc087a7eb83" category="admonition">ONTAP 툴 10.3은 VMFS 데이터 저장소를 사용하는 NVMe-oF만 지원하므로 VMware vSphere 9.x용 ONTAP 툴에서 10.3으로 마이그레이션한 후 NVMe/FC 프로토콜을 사용하는 VVOL 데이터 저장소가 작동하지 않습니다.</block>
   <block id="f9f52fdfc3b658d087ef0d1715cc2008" category="paragraph">VMware vSphere 9.12D1 및 9.13D2 릴리즈용 ONTAP 툴에서 10.3으로 마이그레이션할 수 있습니다.</block>
   <block id="12f864a7f79090b1b0f169109899eb43" category="admonition">패치 릴리스로 업그레이드하기 전에 현재 릴리스에서 OVA 백업을 가져와야 합니다.</block>
-  <block id="9a8e25e84fe96275dbb27d27d2cca595" category="list-text">VMware vSphere 9.xx용 ONTAP 툴에서 마이그레이션된 NFS 및 VMFS 데이터 저장소는 데이터 저장소 검색 작업이 트리거된 후에만 VMware vSphere 10.3용 ONTAP 툴에 표시됩니다. 이 작업은 트리거하는 데 최대 30분이 걸릴 수 있습니다. 데이터 저장소가 VMware vSphere 플러그인 UI 페이지의 ONTAP Tools 개요 페이지에 표시되는지 확인합니다.</block>
   <block id="b4c20aabb2d8056ffe9e2b60a0164bf2" category="paragraph">마이그레이션하기 전에 사이트 중 하나가 보호 상태이고 다른 사이트가 복구 상태에 있는지 확인합니다.</block>
   <block id="c7c25af309bd84b7749f1862027abc3f" category="admonition">페일오버가 방금 완료되었고 재보호가 보류 중인 경우에는 마이그레이션하지 마십시오. 재보호를 완료한 다음 마이그레이션을 수행합니다. 복구 계획 테스트를 완료한 후 테스트 복구를 정리하고 마이그레이션을 시작합니다.</block>
   <block id="0f47e7ab13b9f8031de10689d97b861b" category="list-text">스토리지 복제 어댑터 * 섹션으로 이동합니다</block>
-  <block id="e7563198149b4ef22a580dcc695a13ec" category="list-text">VMware Live Site Recovery UI 페이지에서 * 스토리지 검색 * 및 * 장치 검색 * 작업을 수행하고 마이그레이션 전의 상태로 장치가 표시되는지 확인합니다.</block>
   <block id="e316aaa000b8dea913558dbe47e2ab03" category="list-text">VMware vSphere용 기존 ONTAP 툴에서 더비 포트 1527을 활성화합니다. 포트를 활성화하려면 루트 사용자로 CLI에 로그인하고 다음 명령을 실행합니다.</block>
   <block id="fdb5b6876d97a075f0bc2a07cd4be907" category="list-text">VMware vSphere 10.3용 ONTAP 툴용 OVA 구축</block>
   <block id="34b17f133cdce8c13fd8b812b8c11211" category="list-text">VMware vSphere 10.3 릴리즈용 ONTAP 툴로 마이그레이션할 vCenter Server 인스턴스를 추가합니다. 을 <block ref="946669e64e0e42585f18099dec81ec03" category="inline-link-macro-rx"></block>참조하십시오.</block>
@@ -1752,7 +1715,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="cd457aeee08a9f6476660a1f15284160" category="paragraph">하드 디스크를 추가한 후 각 구성에 대한 VM 리소스를 업데이트하고 기본 VM을 다시 시작합니다.</block>
   <block id="82c4bde04ac809c6d15f232949e072ce" category="paragraph">새 HDD가 생성됩니다. Dynamic Storage Provisioner는 이 HDD를 사용하여 볼륨을 생성하거나 복제합니다.</block>
   <block id="ef9e53e40d78d57abe78283a3603eb4e" category="list-text">편집 설정 창의 * CD/DVD 드라이브 * 필드에서 콘텐츠 라이브러리 ISO 파일을 선택합니다.</block>
-  <block id="e4965c8171d689acf2bfafb148ebfaa8" category="list-text">관리자 UI에서 서비스를 비활성화합니다</block>
   <block id="c8c29d2a26286541354fc8e377f3b6ce" category="list-text">비 HA 설정에서 HA 설정으로 이동합니다</block>
   <block id="4521a8bb9c231770ace79aca6602dc13" category="list-text">HA가 아닌 소규모 구성을 HA가 아닌 매체 또는 HA 매체 또는 대규모 구성으로 확장합니다.</block>
   <block id="48f74593cd55f85759914f3614a0c3b9" category="list-text">HA가 아닌 업그레이드의 경우 ONTAP 툴 VM을 재부팅하여 변경 사항을 반영합니다. HA를 업그레이드하는 경우 첫 번째 노드를 재부팅하여 노드의 변경 사항을 반영합니다.</block>
@@ -1762,8 +1724,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="a1f81812b9996ffae82950938651b560" category="paragraph">이렇게 하면 VMware vSphere 10.1/10.2용 ONTAP 툴에 사용된 ONTAP의 Trident 볼륨이 모두 삭제됩니다.</block>
   <block id="9c1b85c4b3c7f912b4954489e7d9f1ad" category="list-text">개별 API 호출의 예로, 아래로 스크롤하여 * vCenters * 범주로 이동한 후 끝점 옆에 있는 * Get * 을 선택합니다<block ref="22d8515b1a0806aac1067186e4429b4c" prefix=" " category="inline-code"></block></block>
   <block id="ef78cf93c4b4adc658c8565b28ac853c" category="paragraph">액세스 토큰을 요청하고 사용하는 예는 을 <block ref="02f9c42fec62e806982e89939749ac1d" category="inline-link-macro-rx"></block>참조하십시오.</block>
-  <block id="8a9926c3485a1ac96ffad76b582819b3" category="paragraph">VMware vSphere GUI용 ONTAP 툴에 액세스하려면 올바른 vSphere 객체 수준에서 제품 수준의 ONTAP 툴별 보기 권한이 할당되어 있어야 합니다. 이 권한 없이 로그인하면 VMware vSphere용 ONTAP Tools에서 NetApp 아이콘을 선택하면 오류 메시지가 표시되고 ONTAP 툴에 액세스할 수 없게 됩니다.</block>
-  <block id="06aedf9059711b0467a247ef51dde236" category="paragraph">할당 수준은 UI에서 볼 수 있는 부분을 결정합니다. 루트 객체(폴더)에 보기 권한을 할당하면 NetApp 아이콘을 선택하여 VMware vSphere용 ONTAP 툴을 시작할 수 있습니다.</block>
   <block id="82723240a39079ab06612c9bd8a4524f" category="paragraph">vSphere Client 홈 페이지에서 * Roles * 를 선택하여 VMware vSphere 표준 역할용 ONTAP 툴을 볼 수 있습니다. VMware vSphere용 ONTAP 툴이 제공하는 역할을 사용하면 다음 작업을 수행할 수 있습니다.</block>
   <block id="7b0f795e746611f8d000c88ef7404ee7" category="list-text">웹 브라우저에서 ONTAP 도구 관리자를 실행합니다.<block ref="77c71965079b644560fbebe7e17805d3" prefix=" " category="inline-code"></block></block>
   <block id="6700bd2d5a11f981faf541727c91e5eb" category="list-text">을 사용하여 vSphere Client에 로그인합니다<block ref="9ad784043785fc1c1be39efefce3e216" prefix=" " category="inline-code"></block></block>
@@ -1869,8 +1829,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="99458b1e600e8f8642f1d6a53c1cee4f" category="list-text">Apply recommended host settings * 창에서 NetApp 권장 호스트 설정을 준수할 호스트를 선택하고 * Next * 를 선택합니다.</block>
   <block id="b9c098c7cabaa0b14f3cbc46dd8aee99" category="list-text">요약 창에서 값을 확인하고 * Finish * 를 선택합니다. 최근 작업 패널에서 진행 상황을 추적할 수 있습니다.</block>
   <block id="1823e2571adf15490a9c436b943a6c76" category="list-text">NetApp ONTAP tools * &gt; * 보호 * &gt; * 호스트 클러스터 관계 * 로 이동한 후 클러스터에 대한 줄임표 메뉴를 선택하고 * 편집 * 또는 을 선택합니다</block>
-  <block id="14b863fe869a79efed0088cc76e88374" category="summary">vCenter 객체 보기에서 데이터 저장소 객체를 마우스 오른쪽 버튼으로 클릭하면 VMware vSphere용 ONTAP 툴 지원 작업이 플러그인 섹션 아래에 표시됩니다.</block>
-  <block id="49502d33ce4af19779137b32f66be652" category="paragraph">vCenter 객체 보기에서 데이터 저장소 객체를 마우스 오른쪽 버튼으로 클릭하면 VMware vSphere용 ONTAP 툴 지원 작업이 플러그인 섹션 아래에 표시됩니다. 데이터 저장소의 유형과 현재 사용자 권한에 따라 특정 작업이 설정됩니다.</block>
   <block id="bbe57747f4505ee1666f69c3e2e22914" category="list-text">Summary * 창에서 선택 사항을 검토하고 * Expand * 를 선택합니다. 최근 작업 패널에서 진행 상황을 추적할 수 있습니다.</block>
   <block id="7126c2d3ac63ad339fed10c3e80b9154" category="paragraph">유지 관리 콘솔에 액세스하려면 구축된 VMware vSphere용 ONTAP 툴의 * Summary * 탭을 사용해야 합니다. 을 <block ref="e47dca9fdf7d5de4c84091183b635b44" category="inline-image-macro-rx" type="image"></block>선택하면 유지보수 콘솔이 시작됩니다.</block>
   <block id="29f385adfbfb27c8582d1c11890c8556" category="list-text">Edit Threshold * 창에서 * 거의 다 찼음 * 및 * 전체 * 필드에 원하는 값을 입력하고 * Save * 를 선택합니다. 숫자를 권장 값으로 재설정할 수 있습니다. 이 값은 거의 가득 찬 경우 80이고 가득 찬 경우 90입니다.</block>
@@ -1882,7 +1840,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="8df33af7cabc049e0ed0647bce4e331c" category="list-text">Change storage only * 를 선택하고 * Next * 를 선택합니다.</block>
   <block id="62ac5355da102c7e942b48071ff5f72a" category="list-text">설정을 검토하고 * Finish * 를 선택합니다.</block>
   <block id="6ca1f41f9b51c9451c86fc8719b6b18d" category="list-text">호스트에 데이터 저장소 마운트 * 대화 상자에서 데이터 저장소를 마운트할 호스트를 선택한 다음 * 마운트 * 를 선택합니다.</block>
-  <block id="d0e3569f211e8dd2861fa8f7c186ba77" category="list-text">vSphere Client 버전 및 선택한 데이터 저장소 유형에 따라 일부 마우스 오른쪽 클릭 작업이 해제되거나 사용할 수 없습니다. vSphere Client 8.0 이상 버전을 사용하는 경우 마우스 오른쪽 버튼 클릭 옵션 중 일부가 표시되지 않습니다.</block>
   <block id="cd976ca49583a8080802261ae61aa5a0" category="list-text">마운트할 데이터 저장소를 선택하고 * Mount * 를 선택합니다.</block>
   <block id="f90f65776adad29b4cbb92ed52a8e69c" category="list-text">VVOL 데이터 저장소를 마우스 오른쪽 버튼으로 클릭하고 * NetApp ONTAP tools * &gt; * Remove storage from datastore * 를 선택합니다.</block>
   <block id="5aa7caeeea3e4a3e60d0414cc9a54be1" category="list-text">VVol이 없는 볼륨을 선택하고 * Remove * 를 선택합니다.</block>
@@ -1953,8 +1910,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="a761d3a6a5565687c80a0d269ca343c4" category="admonition">멀티 테넌트 설정에서 스토리지 백엔드 클러스터를 글로벌 및 SVM을 로컬에서 추가하여 SVM 사용자 자격 증명을 사용할 수 있습니다.</block>
   <block id="9cb992b5ee53404c646502db030f7c27" category="list-text">스토리지 백엔드를 추가하고 서버 IP 주소 또는 FQDN, 사용자 이름 및 암호 세부 정보를 제공합니다.</block>
   <block id="60f27fc86b38229b1a666fd3c7b129f1" category="admonition">IPv4 및 IPv6 주소 관리 LIF가 지원됩니다.</block>
-  <block id="e2110f6da662960cfcf0c47b8cb53bc2" category="admonition">vSphere Client UI를 사용하여 스토리지 백엔드를 추가하는 경우 VVol 데이터 저장소에서 SVM 사용자를 직접 추가할 수 없습니다.</block>
-  <block id="c565d2607965437af6879f40cf3d205b" category="list-text">스토리지 백엔드를 추가하고 서버 IP 주소, 사용자 이름, 암호 및 포트 세부 정보를 제공합니다.</block>
   <block id="1aa7bf4bed36956e632c48c6bb9fe6ba" category="admonition">SVM 사용자를 직접 추가하기 위해 클러스터 기반 자격 증명, IPv4 및 IPv6 주소 관리 LIF를 추가하거나 SVM 관리 LIF에 SVM 기반 자격 증명을 제공할 수 있습니다.</block>
   <block id="3f297ef15cde0668e93b35f2752fd4fd" category="paragraph-title">다음 단계</block>
   <block id="10492389e94efdebbb66f7b0cd8a1324" category="list-text">저장 * 을 선택합니다.</block>
@@ -2002,11 +1957,8 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="ca38c9b2032228fad900b11b07470b17" category="cell">HA 중간(3개 노드의 누적)</block>
   <block id="721a0cb2e546dae89564af8a23d13306" category="cell">HA 대형(3개 노드의 누적)</block>
   <block id="4c90abc26074daa0aa69e5fcd9bac645" category="paragraph">자세한 내용은 을<block ref="39a0a12cac57df4f5e3df88c1e683703" category="inline-link-rx"></block>참조하십시오.</block>
-  <block id="8dd1b64be0dd46b9c3a80e407d38b6df" category="paragraph">구축 중에 기본적으로 ONTAP 툴 및 VASA Provider에 대해 자체 서명된 인증서가 생성됩니다. ONTAP 도구 관리자 인터페이스를 사용하여 인증서를 갱신하거나 사용자 지정 CA로 업그레이드할 수 있습니다.</block>
-  <block id="4a132f845a55de557f0829dacbc03a93" category="list-text">인증서가 발급되는 도메인 이름은 사용자 지정 CA 인증서가 필수인 다중 vCenter 배포의 가상 IP 주소에 매핑되어야 합니다.</block>
   <block id="10cd1f260e9855405e5e3b0b9fd330f5" category="list-text">도메인 이름에 대해 nslookup 검사를 실행하여 도메인이 원하는 IP 주소로 확인되는지 확인합니다.</block>
   <block id="a1f792ad305382a9dcc1c8551581cb57" category="list-text">인증서는 도메인 이름과 부하 분산 장치 IP 주소를 사용하여 만들어야 합니다.</block>
-  <block id="3e796de02283c0f84159059a89c9681a" category="admonition">로드 밸런서 IP 주소는 FQDN(정규화된 도메인 이름)에 매핑되어야 합니다. 로드 밸런서 IP 주소에 매핑된 동일한 FQDN을 사용하여 인증서를 생성해야 합니다.</block>
   <block id="f01050ae79f30f1986973e3e8b1d62e0" category="admonition">CA에서 서명한 인증서에서 자체 서명된 인증서로 전환할 수 없습니다.</block>
   <block id="49f94738c3644fbe9136c4a2d758c0e8" category="open-title">ONTAP 도구 인증서를 업그레이드합니다</block>
   <block id="d051d66420b4ab4228c2f209cd30a155" category="list-text">인증서를 갱신하려면 * 인증서 * &gt; * ONTAP tools * &gt; * 갱신 * 을 선택합니다.</block>
@@ -2021,8 +1973,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="fafffe2e2a76baaa761981b13de575ba" category="list-text">인증서 * &gt; * VASA 공급자 * 또는 * ONTAP 툴 * &gt; * CA로 업그레이드 * 를 선택하여 자체 서명된 인증서를 사용자 지정 CA 인증서로 업그레이드합니다.</block>
   <block id="6ab10f666dd4d5c8df15f3d1ec4b0587" category="list-text">변경 사항을 적용하려면 * 변경 * 을 선택하십시오.</block>
   <block id="3d7fb394c85bb4d38079573b5a7dd241" category="paragraph">로그인 세션은 다음 날 자정까지만 유효합니다.</block>
-  <block id="5e72086f8631962277d90aa3e0098f29" category="list-text">vCenter Server에서 VM을 삭제합니다. 을<block ref="d6e07286372376b6b92ed9babd2f6996" category="inline-link-rx"></block>참조하십시오.</block>
-  <block id="e58da45c53be4fa05c044e29df8205bf" category="list-text">호스트 시스템 또는 호스트 클러스터 또는 데이터 센터를 마우스 오른쪽 버튼으로 클릭하고 * NetApp ONTAP tools * &gt; * Delete datastore * 를 선택합니다.</block>
   <block id="4a724ef496ce3cb45c0d4dd43ce4a1cf" category="doc">ONTAP 툴을 사용하여 ESXi 호스트 설정을 수정합니다</block>
   <block id="e275b0caaa6d0402ee0e31d7da910bcf" category="paragraph"><block ref="e275b0caaa6d0402ee0e31d7da910bcf" category="inline-link-macro-rx"></block></block>
   <block id="cc307b25622cbd7026f0a8c0e553a4df" category="list-text">필요한 사항을 변경한 후 * 저장 * 을 선택합니다.</block>
@@ -2053,4 +2003,53 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="4703b882263e89c7d597b2ada50fc99a" category="paragraph">새로운 기능 및 개선 사항의 전체 목록은 을 <block ref="bc3843eace7f4e21a753a0095be21ba6" category="inline-xref-macro-rx"></block>참조하십시오.</block>
   <block id="eac305d871d102753386a94dcd4e13bf" category="paragraph">자세한 내용은 를<block ref="94872377b6c91690a7121bf54978d0b3" category="inline-link-rx"></block>참조하십시오. 릴리스 정보에 액세스하려면 NetApp 계정으로 로그인하거나 계정을 만들어야 합니다.</block>
   <block id="ed05024ef185f71f630610fa2998b97c" category="list-text">스냅샷 탭으로 이동하여 * 스냅샷 촬영 * 버튼을 선택합니다. VM의 일시 중지된 스냅샷을 생성합니다. 자세한 내용은 을<block ref="cfbcb02d8f4029fded9e80960c9fdffc" category="inline-link-rx"></block> 참조하십시오.</block>
+  <block id="edeaa9dc153db64cc7a139687f690234" category="paragraph">Swagger 사용자 인터페이스를 통해 VMware vSphere 10 REST API용 ONTAP 툴 설명서에 온라인으로 액세스할 수 있습니다. 포트뿐만 아니라 VMware vSphere 10 게이트웨이 서비스용 ONTAP 툴의 IP 주소 또는 FQDN이 필요합니다.</block>
+  <block id="fde1abb5537b55c34521d414267b3f70" category="section-title">ASA r2 시스템</block>
+  <block id="bd605fff7af6a2da2d78ab96c4c19217" category="section-title">스토리지 백엔드</block>
+  <block id="e11e4e825b2240bfaf05656d41f53cd9" category="paragraph">스토리지 백엔드는 ESXi 호스트가 가상 머신 파일, 데이터 및 기타 리소스를 저장하는 데 사용하는 기본 스토리지 인프라스트럭처입니다. 스토리지 백엔드를 사용하면 ESXi 호스트가 영구 데이터를 액세스하고 관리할 수 있으므로 가상화 환경에 필요한 스토리지 기능과 성능을 제공할 수 있습니다.</block>
+  <block id="7cdf42e875600623792db5729c81ff94" category="paragraph">VMware vSphere GUI용 ONTAP 툴에 액세스하려면 올바른 vSphere 객체 수준에서 제품 수준의 ONTAP 툴별 보기 권한이 할당되어 있어야 합니다. 이 권한 없이 로그인하면 VMware vSphere용 ONTAP Tools에서 NetApp 아이콘을 선택하면 오류 메시지가 표시되고 VMware vSphere용 ONTAP 툴에 액세스할 수 없습니다.</block>
+  <block id="c005a2f296e1f1b3a93d8cb2491ce926" category="paragraph">할당 수준에 따라 사용자 인터페이스에서 볼 수 있는 부분이 결정됩니다. 루트 객체(폴더)에 보기 권한을 할당하면 NetApp 아이콘을 선택하여 VMware vSphere용 ONTAP 툴을 시작할 수 있습니다.</block>
+  <block id="c1287de0652e56f6a72160899cfb2b87" category="paragraph">사용 권한은 vCenter Server, ESXi 호스트, 가상 머신, 데이터 저장소, 데이터 센터 및 폴더와 같은 vSphere 객체와 연결됩니다. 모든 vSphere 객체에 권한을 할당할 수 있습니다. vSphere 객체에 할당된 권한에 따라 vCenter Server는 해당 객체에 대해 수행할 수 있는 작업을 결정합니다. VMware vSphere 관련 작업에 사용되는 ONTAP 툴의 경우 사용 권한은 루트 폴더 레벨(vCenter Server)에서만 할당되고 검증되며 다른 엔터티에서는 할당되지 않습니다. VAAI 플러그인 작업을 제외하고 관련 ESXi 호스트에 대해 사용 권한이 검증됩니다.</block>
+  <block id="a6fd0b4332e8ac1bd18da3d605f3f558" category="open-title">vSphere Client 사용자 인터페이스 사용</block>
+  <block id="15d9ec0601efc7a09529f55671b2bf35" category="admonition">vSphere Client 사용자 인터페이스를 사용하여 스토리지 백엔드를 추가할 경우 VVol 데이터 저장소에서 SVM 사용자를 직접 추가할 수 없습니다.</block>
+  <block id="1371ece860fedc2eae03b50872f67242" category="list-text">스토리지 백엔드를 추가하고 서버 IP 주소, 사용자 이름, 암호 및 포트 세부 정보를 제공합니다.</block>
+  <block id="ced4c95f9fc4250c1aa74943c11ec206" category="list-text">하나 이상의 보호된 호스트 클러스터가 있는 데이터 센터에는 데이터 저장소를 생성할 수 없습니다.</block>
+  <block id="60d8b8fa72f69251888a1e6ca934ed63" category="list-text">호스트 시스템 또는 호스트 클러스터 또는 데이터 센터를 마우스 오른쪽 버튼으로 클릭하고 * NetApp ONTAP tools * &gt; * Create Datastore * 를 선택합니다.</block>
+  <block id="be6209d3bb83a7fd9e539a7a650de2dc" category="list-text">필요한 데이터 센터를 마우스 오른쪽 버튼으로 클릭하고 * NetApp ONTAP tools * &gt; * Update Host Data * 를 선택합니다.</block>
+  <block id="4e6630988c8d5d2e339ab683b972f17c" category="paragraph">구축 중에 기본적으로 ONTAP 툴 및 VASA Provider에 대해 자체 서명된 인증서가 생성됩니다. ONTAP 도구 관리자 인터페이스를 사용하여 인증서를 갱신하거나 사용자 지정 CA로 업그레이드할 수 있습니다. 다중 vCenter 배포에서는 사용자 지정 CA 인증서가 필수입니다.</block>
+  <block id="853d42cf6fdf63ba4697dcc8b9eada59" category="list-text">인증서가 발급된 도메인 이름을 가상 IP 주소에 매핑해야 합니다.</block>
+  <block id="292db4dba96726f00285658995af4df7" category="admonition">로드 밸런서 IP 주소는 FQDN(정규화된 도메인 이름)에 매핑되어야 합니다. 인증서에는 제목 또는 제목 대체 이름의 로드 밸런서 IP 주소에 매핑된 동일한 FQDN이 포함되어야 합니다.</block>
+  <block id="02d844dfe5fd0fc7cd13020f356ee57c" category="list-text">암호 변경 팝업 창에서 이전 암호와 새 암호 세부 정보를 입력합니다. 암호 변경에 대한 제한은 사용자 인터페이스 화면에 표시됩니다.</block>
+  <block id="b8b09f632a0b8f73d042a76d983ea497" category="admonition">ONTAP Tools Manager에서 로그를 생성하는 데는 모든 vCenter Server 인스턴스에 대한 모든 로그가 포함됩니다. vCenter 클라이언트 사용자 인터페이스에서 로그를 생성하는 작업은 선택한 vCenter Server에 대해 범위가 지정됩니다.</block>
+  <block id="b4c23769d8288509b67a8cd8c0c74fcf" category="paragraph">vCenter 클라이언트 사용자 인터페이스를 사용하여 로그 번들을 생성하려면 다음 단계를 수행하십시오.</block>
+  <block id="ae8542fbf5a656049ee2f2fc888a8431" category="list-text">vCenter Server에서 콘솔을 열고 VASA Provider로 이동합니다.</block>
+  <block id="2592c417fb6b2a29bf22d64b8f735cff" category="list-text">vCenter Server에서 VM을 삭제합니다. 을 참조하십시오.<block ref="d6e07286372376b6b92ed9babd2f6996" category="inline-link-rx"></block></block>
+  <block id="cde76a5e3518bca3235881c1b9c7c0eb" category="list-text">호스트 시스템 또는 호스트 클러스터 또는 데이터 센터를 마우스 오른쪽 버튼으로 클릭하고 * NetApp ONTAP tools * &gt; * Delete datastore * 를 선택합니다.</block>
+  <block id="4711338ec6a6f73fded479cc268bfa48" category="list-text">vCenter Server에서 유지 관리 콘솔을 엽니다.</block>
+  <block id="015fcba2f73d0510a2747315bc1f001d" category="summary">vCenter 객체 보기에서 데이터 저장소 객체를 마우스 오른쪽 버튼으로 클릭하면 VMware vSphere용 ONTAP 툴 지원 작업이 플러그인 섹션 아래에 표시됩니다.</block>
+  <block id="22bd336c17d35d26f84b7caca1b5c5ca" category="paragraph">vCenter 객체 보기에서 데이터 저장소 객체를 마우스 오른쪽 버튼으로 클릭하면 VMware vSphere용 ONTAP 툴 지원 작업이 플러그인 섹션 아래에 표시됩니다. 데이터 저장소의 유형과 현재 사용자 권한에 따라 특정 작업이 설정됩니다.</block>
+  <block id="e6a483c76429d58f0d32ec49db43b74b" category="list-text">탐색 창에서 데이터 저장소가 포함된 데이터 센터를 선택합니다.</block>
+  <block id="178077fdd0973ab5a00a9f6211645ddf" category="list-text">Create 또는 Select Volumes * 창에서 새 볼륨을 생성하거나 기존 볼륨에서 선택할 수 있습니다. 사용자 인터페이스는 쉽게 설명할 수 있습니다. 원하는 대로 지침을 따릅니다.</block>
+  <block id="300d66653082bbd427bcd4e1d4cacd87" category="summary">기존 가상 머신을 데이터 센터에서 마이그레이션할 때 고려해야 할 몇 가지 사항을 알고 있어야 합니다.</block>
+  <block id="b7a43456a2c0967142f6439b24bcbbe1" category="paragraph">데이터 센터에서 기존 가상 머신을 마이그레이션할 때 고려해야 할 몇 가지 사항을 알고 있어야 합니다.</block>
+  <block id="bbe48fb854ea022537208eeeff822f91" category="list-title">이 작업에 대해</block>
+  <block id="d71ad052f215892f4dc93f59a3cadac4" category="list-text">vSphere Client 버전 및 선택한 데이터 저장소 유형에 따라 일부 마우스 오른쪽 버튼 클릭 작업이 해제되거나 사용할 수 없습니다.</block>
+  <block id="2e833566ef9159934f13bfc085d5d3d8" category="list-text">vSphere Client 8.0 이상 버전을 사용하는 경우 마우스 오른쪽 버튼 클릭 옵션 중 일부가 표시되지 않습니다.</block>
+  <block id="a109b0e6328f3c52176e48fdf19eb575" category="list-text">vSphere 7.0U3에서 vSphere 8.0 버전까지 옵션이 표시되더라도 작업이 비활성화됩니다.</block>
+  <block id="cecfed09fac678ab192681a3f210d345" category="list-text">호스트 클러스터가 균일한 구성으로 보호되는 경우 데이터 저장소 마운트 옵션이 비활성화됩니다.</block>
+  <block id="39037b551a4495c32d5aa53bb3952e75" category="list-text">왼쪽 탐색 창에서 호스트가 포함된 데이터 센터를 선택합니다.</block>
+  <block id="54862297571dca9382bb198a79d53cf3" category="list-text">호스트 또는 호스트 클러스터에 NFS/VMFS 데이터 저장소를 마운트하려면 마우스 오른쪽 버튼을 클릭하고 * NetApp ONTAP tools * &gt; * Mount Datastores * 를 선택합니다.</block>
+  <block id="c28ad89693a8ed5dd2d20a231db5b96f" category="paragraph">관리자 암호를 재설정하려면 VMware vSphere 유지 보수 콘솔용 ONTAP 툴을 사용하여 재설정 토큰을 생성해야 합니다. ... vCenter Server에서 유지 관리 콘솔을 엽니다. '2'를 입력하여 시스템 구성 옵션을 선택합니다. '이전' 사용자 암호를 변경하려면 '3'을 입력하십시오.</block>
+  <block id="fa946c7b8b00ac3d8f1845bdcf279074" category="paragraph">모든 호스트에서 데이터 저장소를 마운트 해제할 수 없습니다. 사용자 인터페이스에서 데이터 저장소 삭제 작업을 대신 사용할 것을 제안합니다.</block>
+  <block id="0cd5eb24f781f0b49a6c666e5220c98c" category="list-text">VMware vSphere 9.xx용 ONTAP 툴에서 마이그레이션된 NFS 및 VMFS 데이터 저장소는 데이터 저장소 검색 작업이 트리거된 후에만 VMware vSphere 10.3용 ONTAP 툴에 표시됩니다. 이 작업은 트리거하는 데 최대 30분이 걸릴 수 있습니다. 데이터 저장소가 VMware vSphere Plugin 사용자 인터페이스용 ONTAP Tools 페이지의 개요 페이지에 표시되는지 확인합니다.</block>
+  <block id="a0e42a34ad94909291f9863e606095c3" category="list-text">VMware Live Site Recovery 사용자 인터페이스에서 VMware vSphere 9.xx 릴리즈 SRA 어댑터용 ONTAP 툴을 삭제하려면 다음 단계를 수행하십시오.</block>
+  <block id="989a54cf1e604ac6307e40dbc2072ca2" category="list-text">VMware Live Site Recovery 사용자 인터페이스 페이지에서 * 스토리지 검색 * 및 * 장치 검색 * 작업을 수행하고 마이그레이션 전의 상태로 장치가 표시되는지 확인합니다.</block>
+  <block id="664d1c7a4b62c8e9260ce3fdf6ca12ed" category="admonition">스토리지 관리자를 구성할 때는 VMware vSphere용 ONTAP 툴에서 스토리지 시스템을 온보딩하는 데 사용된 스토리지 시스템에 대해 동일한 접속(IP 주소)을 사용해야 합니다. 예를 들어, 어레이 관리자 구성이 SVM 범위인 경우 VMware vSphere용 ONTAP 툴에 있는 스토리지를 SVM 레벨에서 추가해야 합니다.</block>
+  <block id="eec58e3060e5203d2095052a30fc9008" category="list-text">VMware vSphere용 ONTAP 툴을 배포해야 합니다.</block>
+  <block id="d6481cf07889069ce702a2aa485a338b" category="list-text">관리자 사용자 인터페이스에서 서비스를 비활성화합니다</block>
+  <block id="304ea2802d8eb389e9a95bf595435571" category="sidebar">NetApp 기술 자료 - VMware vSphere용 ONTAP 툴</block>
+  <block id="98203a91b4e7ef7e9ab24f7c736d736d" category="sidebar">NetApp 커뮤니티 - VMware vSphere용 ONTAP 툴</block>
+  <block id="4de1c4f6191ac837f89defd159014d4f" category="sidebar">VMware vSphere용 ONTAP 툴을 구성합니다</block>
+  <block id="dc2afa03f9d9070dcc18808c51d3b403" category="sidebar">VMware vSphere용 ONTAP 툴을 관리합니다</block>
+  <block id="dd018bb6638d4453bb4643baac23fad3" category="sidebar">VMware vSphere용 ONTAP 툴을 업그레이드합니다</block>
 </blocks>

@@ -14,7 +14,7 @@ summary: 'VMware vSphere용 ONTAP Tools 그래픽 사용자 인터페이스\(GUI
 VMware vSphere용 ONTAP 툴에 대한 로그 파일은 ONTAP Tools Manager 사용자 인터페이스에서 사용할 수 있는 옵션을 통해 수집할 수 있습니다. 기술 지원 부서에서 문제 해결을 위해 로그 파일을 수집하도록 요청할 수 있습니다.
 
 
-NOTE: ONTAP Tools Manager에서 로그를 생성하는 데는 모든 vCenter Server 인스턴스에 대한 모든 로그가 포함됩니다. vCenter 클라이언트 UI에서 로그를 생성하는 작업은 선택한 vCenter Server에 대해 범위가 지정됩니다.
+NOTE: ONTAP Tools Manager에서 로그를 생성하는 데는 모든 vCenter Server 인스턴스에 대한 모든 로그가 포함됩니다. vCenter 클라이언트 사용자 인터페이스에서 로그를 생성하는 작업은 선택한 vCenter Server에 대해 범위가 지정됩니다.
 
 .단계
 . 웹 브라우저에서 ONTAP 도구 관리자를 실행합니다. `\https://loadBalancerIP:8443/virtualization/ui/`
@@ -30,7 +30,7 @@ tar.gz 파일을 다운로드하여 기술 지원 부서에 보내십시오.
 
 
 
-vCenter 클라이언트 UI를 사용하여 로그 번들을 생성하려면 다음 단계를 수행하십시오.
+vCenter 클라이언트 사용자 인터페이스를 사용하여 로그 번들을 생성하려면 다음 단계를 수행하십시오.
 
 .단계
 . 을 사용하여 vSphere Client에 로그인합니다 `\https://<vcenterip>/<ui>`

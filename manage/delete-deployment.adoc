@@ -27,7 +27,7 @@ iSCSI를 구축하는 경우에는 igroup도 삭제해야 합니다.
 +
 _kubectl persistentvolumes|grep internalName|awk-F'='{print$2}'_ 을(를) 설명합니다
 
-. vCenter Server에서 VM을 삭제합니다. 을 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vsphere-virtual-machine-administration-guide-8-0/managing-virtual-machinesvsphere-vm-admin/adding-and-removing-virtual-machinesvsphere-vm-admin.html#GUID-376174FE-F936-4BE4-B8C2-48EED42F110B-en["VM 및 VM 템플릿을 제거하고 다시 등록합니다"]참조하십시오.
+. vCenter Server에서 VM을 삭제합니다. 을 참조하십시오. https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vsphere-virtual-machine-administration-guide-8-0/managing-virtual-machinesvsphere-vm-admin/adding-and-removing-virtual-machinesvsphere-vm-admin.html#GUID-376174FE-F936-4BE4-B8C2-48EED42F110B-en["VM 및 VM 템플릿을 제거하고 다시 등록합니다"]
 . ONTAP System Manager에서 볼륨을 삭제하는 방법은 을 참조하십시오 https://docs.netapp.com/us-en/ontap/volumes/delete-flexvol-task.html["FlexVol 볼륨을 삭제합니다"]. 볼륨을 삭제하려면 CLI 명령에 FlexVolume의 정확한 이름을 지정합니다.
 . iSCSI 배포의 경우 ONTAP에서 SAN igroup을 삭제합니다. 를 참조하십시오. https://docs.netapp.com/us-en/ontap/san-admin/manage-san-initiators-task.html["SAN 이니시에이터 및 igroup을 보고 관리합니다"]
 
