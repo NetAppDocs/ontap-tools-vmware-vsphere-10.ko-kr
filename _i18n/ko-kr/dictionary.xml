@@ -598,7 +598,6 @@ sudo rke2-uninstall.sh (모든 VM).</block>
   <block id="eef129331314d2c9f4c4a5b0fdde3c7e" category="cell">기존 리소스 인스턴스를 삭제합니다.</block>
   <block id="3e75383a5992a6d15fb81e872e46e256" category="cell">를 누릅니다</block>
   <block id="c4408d335012a56ff58937d78050efad" category="section-title">수락</block>
-  <block id="f7f3984fa732d05af01413abe0c139fa" category="summary">vSphere Client를 사용하여 생성한 보호 사이트와 복구 사이트를 페어링하여 SRA\(Storage Replication Adapter\)에서 스토리지 시스템을 검색하도록 설정해야 합니다.</block>
   <block id="31f39e1dd44660cbf064de93a5ac5fe9" category="doc">보호 사이트와 복구 사이트 페어링</block>
   <block id="7156f9669ad3e8dc5543b26c90b677b9" category="paragraph">vSphere Client를 사용하여 생성한 보호 사이트와 복구 사이트를 페어링하여 SRA(Storage Replication Adapter)가 스토리지 시스템을 검색할 수 있도록 설정해야 합니다.</block>
   <block id="153de28c544cedf1d0476c82a497c1d4" category="list-text">보호 사이트와 복구 사이트에 SRA가 설치되어 있어야 합니다.</block>
@@ -975,7 +974,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="81ef6507a13da5635951bc5b533deb59" category="inline-link">TR-4684를 참조하십시오</block>
   <block id="bcfcba3d84c95eb110df0649ab05c280" category="paragraph">VMware vSphere 7.0에서 NVMe/FC를 사용하는 방법에 대한 자세한 내용은<block ref="27816f9f9cf7e278691c8ea8c1dd01dc" category="inline-link-rx"></block> 및 을 참조하십시오<block ref="a23d4cc1b9464bb497e26d387d612153" category="inline-link-rx"></block>.</block>
   <block id="973e35fe570f98dc6e1c5fe1bd6b5876" category="summary">VMware vSphere용 ONTAP 툴을 사용하여 호스트 클러스터의 보호를 관리합니다.</block>
-  <block id="46bf98dea599db077d28c3e2f58a655a" category="doc">호스트 클러스터 보호를 생성합니다</block>
   <block id="dd4ee610bd1d035c73bc0cbcd80e46da" category="paragraph">다음 필수 구성 요소가 충족되는지 확인합니다.</block>
   <block id="7c923b6532ecd9637deac92eebf7333a" category="list-text">호스트 클러스터에는 하나의 SVM의 데이터 저장소만 있습니다.</block>
   <block id="abd2c79ea68f2d7802d6d7a46312971e" category="list-text">호스트 클러스터에 마운트된 데이터 저장소는 클러스터 외부의 호스트에 마운트해서는 안 됩니다.</block>
@@ -1845,9 +1843,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="eed7fc96f746813cb6dc7931e0b308b0" category="list-text">수직 타원 메뉴를 선택하고 * 제거 * 를 선택합니다.</block>
   <block id="1b46a38e17199ae5d2201aa53d2f0fe9" category="paragraph">스토리지 백엔드에서 상위 클러스터 또는 하위 클러스터를 선택하면 구성 요소의 전체 요약을 볼 수 있습니다. 상위 클러스터를 선택하면 검색 스토리지, 수정 및 제거 작업을 수행할 수 있는 작업 드롭다운이 표시됩니다.</block>
   <block id="3192ac3fc20742576276f99f96eb7d0b" category="summary">이 섹션의 지침에 따라 VMware vSphere 구축을 위한 ONTAP 툴을 정상적으로 종료합니다.</block>
-  <block id="d1a23a03023137fd38165cea715f27d9" category="doc">ONTAP 툴 구축을 종료합니다</block>
-  <block id="33338c06d0b18b2f71e85923222b72e5" category="paragraph">이 섹션의 지침에 따라 VMware vSphere 구축을 위한 ONTAP 툴을 올바르게 종료하십시오.</block>
-  <block id="5a542b803059205c8fd2335844a87295" category="admonition">VMware vSphere용 ONTAP 툴을 종료하면 툴의 모든 데이터가 삭제됩니다.</block>
   <block id="f0833ce92c23eb056dde238669740988" category="list-text"><block ref="523efdef8100699453c6b07ce8f4921c" category="inline-link-macro-rx"></block> VMware vSphere용 ONTAP 툴에 생성되었습니다.</block>
   <block id="446b6ba7fba75a7ecc60d88a968956a4" category="list-text">ONTAP 툴에서 화면 아래쪽에 있는 * Settings * &gt; * VASA Provider settings * &gt; * Unregister * 옵션을 선택합니다.</block>
   <block id="60ba17bf2537f7f153738b7a53985263" category="list-text">vCenter Server 인스턴스에서 모든 스토리지 백엔드의 연결을 해제합니다. 을 <block ref="8743d7af4f3d1585e8a908d41950b1ae" category="inline-link-macro-rx"></block>참조하십시오.</block>
@@ -2054,4 +2049,7 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="27668debe2a46165745d80fe01711790" category="list-text">다음 단계에 따라 모든 vCenter 서버에서 VASA Provider를 등록 취소합니다.</block>
   <block id="89cc07c4865380b62ec83b09b399b504" category="list-text">VASA 공급자 등록 취소 * 페이지에서 애플리케이션 사용자 자격 증명을 제공하고 * 등록 취소 * 를 선택합니다.</block>
   <block id="4dbcaa40dfd796f9c86fd033df9508db" category="admonition">애플리케이션 사용자 이름 및 암호는 ONTAP 도구 배포 중에 설정됩니다. VASA Provider/SRA 등록에 필요합니다.</block>
+  <block id="cd8867ea57955f19f3087c7262d1186d" category="doc">ONTAP 도구 배포를 제거합니다</block>
+  <block id="f54e212052df635bcc70d25302fd583e" category="paragraph">VMware vSphere용 ONTAP 툴을 제거하면 툴의 데이터가 모두 삭제됩니다.</block>
+  <block id="9ebcd4f583a00c985808cafa9e416f71" category="sidebar">VMware vSphere 9.x용 ONTAP 툴을 10.3으로 마이그레이션합니다</block>
 </blocks>

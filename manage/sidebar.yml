@@ -80,7 +80,7 @@ entries:
     url: "/manage/delete-hostcluster-protection.html"
 - title: 제로급 RPO
   url: "/manage/enable-backup.html"
-- title: ONTAP 툴 구축을 종료합니다
+- title: ONTAP 도구 배포를 제거합니다
   url: "/manage/uninstall-deployment.html"
 - title: 볼륨을 정리합니다
   url: "/manage/delete-deployment.html"

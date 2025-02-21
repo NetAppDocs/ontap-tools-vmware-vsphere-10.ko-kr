@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: vVols datastore,delete vVol 
 summary: VMware vSphere용 ONTAP 툴을 사용하여 호스트 클러스터의 보호를 관리합니다. 
 ---
-= 호스트 클러스터 보호를 생성합니다
+= 호스트 클러스터 보호를 사용하여 보호합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
