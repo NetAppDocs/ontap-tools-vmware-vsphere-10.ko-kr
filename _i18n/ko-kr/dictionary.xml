@@ -255,7 +255,6 @@
   <block id="72eb6abf9272757a5494f0d1f1c91658" category="cell">액세스 수준</block>
   <block id="f5791a18ace280c34a57c2ee7a726d7b" category="cell">에 사용됩니다</block>
   <block id="c0408daa39083be454279f1fca2118d9" category="cell">클러스터가 로컬로 추가된 경우 SVM 구성을 가져옵니다.</block>
-  <block id="0b249e5cb515a51c79589c2459adbaf6" category="summary">최상의 성능과 성공적인 페일오버를 보장하기 위해 VMware vSphere용 ONTAP 툴을 사용하여 ESXi 호스트에서 시간 초과 및 기타 값을 설정할 수 있습니다. VMware vSphere용 ONTAP 툴 세트는 내부 NetApp 테스트를 기반으로 합니다.</block>
   <block id="a883deebdfbfeb611d06d3f55178ccbf" category="doc">ESXi 호스트 값을 설정합니다</block>
   <block id="9232ab7e918fc93452c2dc7c8fab1b8c" category="paragraph">ESXi 호스트에서 다음 값을 설정할 수 있습니다.</block>
   <block id="ab9d8dfb65807487a899df1683e128fa" category="section-title">HBA/CNA 어댑터 설정</block>
@@ -1199,7 +1198,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="06933067aafd48425d67bcb01bba5cb6" category="cell">업데이트</block>
   <block id="5dd03e8d039863e563e049be198c3fd3" category="sidebar">릴리즈 노트</block>
   <block id="ed8359854c43609fca7bc8a46cca9eac" category="sidebar">ONTAP tools 9 및 ONTAP tools 10 기능 비교</block>
-  <block id="598d1a03a9fabe277211c3c65adbfbc6" category="admonition">애플리케이션 사용자 이름 및 암호는 ONTAP 도구 배포 중에 설정됩니다. 이는 VASA 공급자/SRA 등록에 필요합니다.</block>
   <block id="1bf63b567c68de7fcd78fcc89f42f93c" category="sidebar">호스트 클러스터 보호를 사용하여 보호합니다</block>
   <block id="d8ddfdd9298e5862ca00168195c4be29" category="sidebar">SRA 보호를 사용하여 보호합니다</block>
   <block id="a2635d75789f249837881cc5136979e1" category="paragraph">* 완료 후 *</block>
@@ -1323,7 +1321,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="f0585a6acfa5b4078673a8a1c0d350ac" category="cell">22(TCP)</block>
   <block id="07ac8d53698f067d7d278deb303748d3" category="cell">Ansible은 클러스터 프로비저닝 중의 통신에 이 SSH 포트를 사용합니다. 이 포트는 유지 보수 사용자 암호, 상태 메시지 변경 및 HA 구성의 경우 세 노드 모두에서 값을 업데이트하는 등의 기능에 필요합니다.</block>
   <block id="5d778c994f28bde711dfc3896d087acc" category="cell">443(TCP)</block>
-  <block id="13a1c454aee21c16e72ab8733d5644a5" category="cell">VASA 공급자 서비스에 대한 들어오는 통신을 위한 통과 포트입니다. VASA 공급자 자체 서명 인증서 및 사용자 지정 CA 인증서가 이 포트에서 호스팅됩니다.</block>
   <block id="51e1729ebe78aa6583c2806bd5982eb7" category="cell">8443(TCP)</block>
   <block id="05820e7e588ce97dc4656c92f1b83966" category="cell">이 포트는 Swagger 및 Manager 사용자 인터페이스 애플리케이션을 통해 API 설명서를 호스팅합니다.</block>
   <block id="2a03194d164e0f03a76cc41099ff8988" category="cell">2379(TCP)</block>
@@ -1335,7 +1332,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="8c340be6a89ca97c4af7b42628cbc335" category="cell">7946(TCP+UDP)</block>
   <block id="d0c5d9fb3af3553dbc8aa2d531b38b8f" category="cell">이 포트는 Docker의 컨테이너 네트워크 검색에 사용됩니다.</block>
   <block id="4669594dac40249be880d63ece4e60fd" category="cell">9083(TCP)</block>
-  <block id="65edc2a79bfdeeed4b3c0d4383d7abda" category="cell">이 포트는 VASA 공급자 서비스에 대해 내부적으로 사용되는 서비스 포트입니다.</block>
   <block id="e44129481d47005dcb6572a5d35961cb" category="cell">1162(UDP)</block>
   <block id="ef2d924bd68e8697255e5349875213c7" category="cell">SNMP 트랩 패킷 포트입니다.</block>
   <block id="219b39abc603cd5da84b03eac4802e2b" category="cell">6443(TCP)</block>
@@ -1403,7 +1399,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="b6b9d4100dc66eb2a9d44485b61f0fba" category="paragraph">vCenter Server 목록 페이지에는 연결된 스토리지 백엔드 수가 표시됩니다. 각 vCenter Server 인스턴스에는 스토리지 백엔드에 연결하거나 연결을 해제하는 옵션이 있습니다. 이 작업은 스토리지 백엔드와 온보딩된 vCenter Server 인스턴스 간의 매핑을 생성하는 데 도움이 됩니다.</block>
   <block id="425455a0df6d10586a41711a1553bfae" category="inline-link">클론 생성을 위한 가상 머신 생성</block>
   <block id="681d233e491ad7e8ec82fd9193581181" category="paragraph">자세한 내용은 을<block ref="276aed995f6320cbafa4bfe03cc7ac04" category="inline-link-rx"></block> 참조하십시오.</block>
-  <block id="67d8055ce447427d2190d1100319cddc" category="paragraph">ASA R2 스토리지 유형이 있는 Windows VM의 경우 가상 머신의 스냅샷을 생성하면 읽기 전용 스냅샷이 됩니다. VM에 대한 전원 호출 시 VASA Provider는 읽기 전용 스냅샷을 사용하여 LUN을 생성한 다음 IOPS를 사용하도록 설정합니다. 전원 끄기 요청 중에 VASA Provider는 생성된 LUN을 삭제한 다음 IOPS를 비활성화합니다.</block>
   <block id="70a4eccd665ed7fc2f16889dd9f717de" category="paragraph">최근 작업 패널에서 진행 상황을 추적할 수 있습니다.</block>
   <block id="a1a77ce2be2c879d158a13c22d948645" category="admonition">ASA R2 기반 VVols 데이터 저장소에 대해서는 VVOL 데이터 저장소 축소 작업이 지원되지 않습니다.</block>
   <block id="e3ad07a7efc1e8b336d03741c1f32de2" category="doc">ONTAP 도구 보고서</block>
@@ -1789,12 +1784,9 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="d7c513071870643e06bdd5a2952a3848" category="list-text">protect * 버튼을 선택합니다.</block>
   <block id="5522fdca4065fd1e9ed7b389f3a8e7b2" category="paragraph">vCenter 작업이 작업 ID 세부 정보와 함께 생성되며 진행 상황이 Recent Tasks 패널에 표시됩니다. 이 작업은 비동기 작업이며 사용자 인터페이스는 요청 제출 상태만 표시하고 작업이 완료될 때까지 기다리지 않습니다.</block>
   <block id="ded8026201084be2fda01a73c0b6a45c" category="summary">VMware vSphere 원격 플러그인 인터페이스용 ONTAP 툴을 사용하여 vCenter Server 인스턴스에 VASA Provider를 등록할 수 있습니다.</block>
-  <block id="609d93e638a93ef3fbaff21b075792f5" category="paragraph">VMware vSphere용 ONTAP 툴을 사용하여 vCenter Server 인스턴스에 VASA Provider를 등록할 수 있습니다. VASA Provider Settings 섹션에는 선택한 vCenter Server에 대한 VASA Provider 등록 상태가 표시됩니다.</block>
   <block id="dbf218ab7bc36005b7fdd93dda1f6eda" category="list-text">플러그인 섹션에서 * 바로 가기 * &gt; * NetApp ONTAP tools * 를 선택합니다.</block>
   <block id="1767c8dcd2dacb5056d2a398b5761669" category="list-text">Settings * &gt; * VASA Provider settings * 를 선택합니다. VASA Provider 등록 상태가 등록되지 않음으로 표시됩니다.</block>
   <block id="600ff4b29760f4ad12573092ddf700ed" category="list-text">VASA Provider를 등록하려면 * 등록 * 버튼을 선택합니다.</block>
-  <block id="df1a39c4f4e7ca54718d4638a0fbe196" category="list-text">VASA 공급자 이름을 입력하고 VMware vSphere 애플리케이션 사용자 자격 증명을 위한 ONTAP 툴을 제공하고 * 등록 * 을 선택합니다.</block>
-  <block id="f4a7e7e14fab1c3d711985600e2ee7f0" category="list-text">등록 및 페이지 새로 고침이 성공하면 등록된 VASA 공급자의 상태, 이름 및 버전이 표시됩니다. 등록 후 등록 취소 작업이 활성화됩니다.</block>
   <block id="2a8d2860baf78d6dcd2ba9cf54828350" category="paragraph">온보딩된 VASA Provider가 vCenter 클라이언트의 VASA Provider 아래에 표시되는지 확인합니다.</block>
   <block id="b2d759d8409be83670d858be76d08a57" category="list-text">vCenter Server 인스턴스로 이동합니다.</block>
   <block id="31cbb70f53b2d4a961916f4f580b9afa" category="list-text">스토리지 공급자 * &gt; * 구성 * 을 선택합니다. 온보드된 VASA Provider가 올바르게 나열되는지 확인합니다.</block>
@@ -1857,9 +1849,7 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="33338c06d0b18b2f71e85923222b72e5" category="paragraph">이 섹션의 지침에 따라 VMware vSphere 구축을 위한 ONTAP 툴을 올바르게 종료하십시오.</block>
   <block id="5a542b803059205c8fd2335844a87295" category="admonition">VMware vSphere용 ONTAP 툴을 종료하면 툴의 모든 데이터가 삭제됩니다.</block>
   <block id="f0833ce92c23eb056dde238669740988" category="list-text"><block ref="523efdef8100699453c6b07ce8f4921c" category="inline-link-macro-rx"></block> VMware vSphere용 ONTAP 툴에 생성되었습니다.</block>
-  <block id="1e51d74fa593c2d20970490a2e9adbe0" category="list-text">다음 단계에 따라 모든 vCenter 서버에서 VASA 공급자를 등록 취소합니다.</block>
   <block id="446b6ba7fba75a7ecc60d88a968956a4" category="list-text">ONTAP 툴에서 화면 아래쪽에 있는 * Settings * &gt; * VASA Provider settings * &gt; * Unregister * 옵션을 선택합니다.</block>
-  <block id="ff58dfdcb939738020bc3b48ae83b617" category="list-text">VASA 공급자 등록 취소 * 페이지에서 애플리케이션 사용자 자격 증명을 제공하고 * 등록 취소 * 를 선택합니다.</block>
   <block id="60ba17bf2537f7f153738b7a53985263" category="list-text">vCenter Server 인스턴스에서 모든 스토리지 백엔드의 연결을 해제합니다. 을 <block ref="8743d7af4f3d1585e8a908d41950b1ae" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="b2aac3a919762e9dd0f89ef1b3999500" category="list-text">모든 스토리지 백엔드를 삭제합니다. 을 <block ref="c97897721457f9108ce9caf2b3f0d235" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="39ebf4e5b2fe43c5d1e039f8afb8a330" category="list-text">VMware Live Site Recovery에서 SRA 어댑터 제거:</block>
@@ -1967,14 +1957,12 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="2da89430805560f209041c63cfb2f20f" category="list-text">팝업 창에서 서버 인증서, 서버 인증서 개인 키, 루트 CA 인증서 및 중간 인증서 파일을 업로드합니다.</block>
   <block id="ca148a970e5b5a81a77ce6e27a1e6a55" category="list-text">이 인증서를 생성한 도메인 이름을 입력하고 인증서를 업그레이드합니다.</block>
   <block id="96e25bc2ea7c946d5cb80df5623b04f4" category="admonition">업그레이드가 완료될 때까지 시스템이 오프라인 상태가 되고 ONTAP 도구 관리자 인터페이스에서 로그아웃됩니다.</block>
-  <block id="b0c94213de0564c17f37b032d9d91905" category="open-title">VASA 공급자 인증서를 업그레이드합니다</block>
   <block id="4d8920fb51dbe2e0eeb3d23c3b11224b" category="paragraph">VMware vSphere용 ONTAP 툴은 VASA Provider에 대한 자체 서명 인증서와 함께 구축됩니다. 이 옵션을 사용하면 VVol 데이터 저장소에 대해 하나의 vCenter Server 인스턴스만 관리할 수 있습니다. 여러 vCenter Server 인스턴스를 관리하고 이러한 인스턴스에서 VVol 기능을 활성화하려면 자체 서명된 인증서를 사용자 지정 CA 인증서로 변경해야 합니다.</block>
   <block id="81914abf558d30aee207170f7eb62743" category="list-text">인증서를 갱신하려면 * 인증서 * &gt; * VASA 공급자 * 또는 * ONTAP 툴 * &gt; * 갱신 * 을 선택합니다.</block>
   <block id="fafffe2e2a76baaa761981b13de575ba" category="list-text">인증서 * &gt; * VASA 공급자 * 또는 * ONTAP 툴 * &gt; * CA로 업그레이드 * 를 선택하여 자체 서명된 인증서를 사용자 지정 CA 인증서로 업그레이드합니다.</block>
   <block id="6ab10f666dd4d5c8df15f3d1ec4b0587" category="list-text">변경 사항을 적용하려면 * 변경 * 을 선택하십시오.</block>
   <block id="3d7fb394c85bb4d38079573b5a7dd241" category="paragraph">로그인 세션은 다음 날 자정까지만 유효합니다.</block>
   <block id="4a724ef496ce3cb45c0d4dd43ce4a1cf" category="doc">ONTAP 툴을 사용하여 ESXi 호스트 설정을 수정합니다</block>
-  <block id="e275b0caaa6d0402ee0e31d7da910bcf" category="paragraph"><block ref="e275b0caaa6d0402ee0e31d7da910bcf" category="inline-link-macro-rx"></block></block>
   <block id="cc307b25622cbd7026f0a8c0e553a4df" category="list-text">필요한 사항을 변경한 후 * 저장 * 을 선택합니다.</block>
   <block id="20d541172ecc7e2d477ce2738120938c" category="list-text">protect * 를 선택합니다.</block>
   <block id="ec4a1dbd6ed28379905f9f6ea733a254" category="list-text">마이그레이션할 데이터 저장소의 기능과 일치하는 가상 디스크 형식, VM 스토리지 정책 및 VVOL 데이터 저장소를 선택합니다.</block>
@@ -2039,7 +2027,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="cecfed09fac678ab192681a3f210d345" category="list-text">호스트 클러스터가 균일한 구성으로 보호되는 경우 데이터 저장소 마운트 옵션이 비활성화됩니다.</block>
   <block id="39037b551a4495c32d5aa53bb3952e75" category="list-text">왼쪽 탐색 창에서 호스트가 포함된 데이터 센터를 선택합니다.</block>
   <block id="54862297571dca9382bb198a79d53cf3" category="list-text">호스트 또는 호스트 클러스터에 NFS/VMFS 데이터 저장소를 마운트하려면 마우스 오른쪽 버튼을 클릭하고 * NetApp ONTAP tools * &gt; * Mount Datastores * 를 선택합니다.</block>
-  <block id="c28ad89693a8ed5dd2d20a231db5b96f" category="paragraph">관리자 암호를 재설정하려면 VMware vSphere 유지 보수 콘솔용 ONTAP 툴을 사용하여 재설정 토큰을 생성해야 합니다. ... vCenter Server에서 유지 관리 콘솔을 엽니다. '2'를 입력하여 시스템 구성 옵션을 선택합니다. '이전' 사용자 암호를 변경하려면 '3'을 입력하십시오.</block>
   <block id="fa946c7b8b00ac3d8f1845bdcf279074" category="paragraph">모든 호스트에서 데이터 저장소를 마운트 해제할 수 없습니다. 사용자 인터페이스에서 데이터 저장소 삭제 작업을 대신 사용할 것을 제안합니다.</block>
   <block id="0cd5eb24f781f0b49a6c666e5220c98c" category="list-text">VMware vSphere 9.xx용 ONTAP 툴에서 마이그레이션된 NFS 및 VMFS 데이터 저장소는 데이터 저장소 검색 작업이 트리거된 후에만 VMware vSphere 10.3용 ONTAP 툴에 표시됩니다. 이 작업은 트리거하는 데 최대 30분이 걸릴 수 있습니다. 데이터 저장소가 VMware vSphere Plugin 사용자 인터페이스용 ONTAP Tools 페이지의 개요 페이지에 표시되는지 확인합니다.</block>
   <block id="a0e42a34ad94909291f9863e606095c3" category="list-text">VMware Live Site Recovery 사용자 인터페이스에서 VMware vSphere 9.xx 릴리즈 SRA 어댑터용 ONTAP 툴을 삭제하려면 다음 단계를 수행하십시오.</block>
@@ -2052,4 +2039,19 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="4de1c4f6191ac837f89defd159014d4f" category="sidebar">VMware vSphere용 ONTAP 툴을 구성합니다</block>
   <block id="dc2afa03f9d9070dcc18808c51d3b403" category="sidebar">VMware vSphere용 ONTAP 툴을 관리합니다</block>
   <block id="dd018bb6638d4453bb4643baac23fad3" category="sidebar">VMware vSphere용 ONTAP 툴을 업그레이드합니다</block>
+  <block id="8ce287b63bedf11bff1339b770533de1" category="paragraph">VMware vSphere용 ONTAP 툴을 사용하여 vCenter Server 인스턴스에 VASA Provider를 등록할 수 있습니다. VASA Provider settings 섹션에는 선택한 vCenter Server에 대한 VASA Provider 등록 상태가 표시됩니다.</block>
+  <block id="30219dec23be3c12e0dc980cd1686912" category="list-text">VASA Provider의 이름을 입력하고 VMware vSphere 애플리케이션 사용자 자격 증명을 위한 ONTAP 툴을 제공하고 * 등록 * 을 선택합니다.</block>
+  <block id="9d097d858bfbec2ad77c2f37fa3f2b14" category="list-text">등록 및 페이지 새로 고침이 성공하면 등록된 VASA Provider의 상태, 이름 및 버전이 표시됩니다. 등록 후 등록 취소 작업이 활성화됩니다.</block>
+  <block id="9bb143d7a2036a80e106dc066c6b01f2" category="cell">VASA Provider 서비스에 대한 들어오는 통신을 위한 통과 포트입니다. VASA Provider 자체 서명 인증서와 사용자 지정 CA 인증서가 이 포트에서 호스팅됩니다.</block>
+  <block id="131790b08b90f216c8731a6e1a071001" category="cell">이 포트는 VASA Provider 서비스에 대해 내부적으로 사용되는 서비스 포트입니다.</block>
+  <block id="f86285920a635060c5823a8276628377" category="open-title">VASA Provider 인증서를 업그레이드합니다</block>
+  <block id="bfa75497fc09ee1e1a68a164c43dbf33" category="paragraph"><block ref="bfa75497fc09ee1e1a68a164c43dbf33" category="inline-link-macro-rx"></block></block>
+  <block id="7276496c35fbec54a8fb3dface57c5bb" category="paragraph">ASA R2 스토리지 유형이 있는 Windows VM의 경우 가상 머신의 스냅샷을 생성하면 읽기 전용 스냅샷이 됩니다. VM에 대한 전원 호출 시 VASA Provider는 읽기 전용 스냅샷을 사용하여 LUN을 생성한 다음 IOPS를 사용하도록 설정합니다. 전원 끄기 요청 중에 VASA Provider는 생성된 LUN을 삭제한 다음 IOPS를 비활성화합니다.</block>
+  <block id="378348480ef2745d6f8b174eaac75780" category="paragraph">관리자 암호를 재설정하려면 VMware vSphere 유지 보수 콘솔용 ONTAP 툴을 사용하여 재설정 토큰을 생성해야 합니다.</block>
+  <block id="35baad0cee1a9c308249049e655932ff" category="list-text">vCenter Server에서 유지 관리 콘솔을 엽니다</block>
+  <block id="0728c65962557eb1d00ebeef0418b72c" category="list-text">'2'를 입력하여 시스템 구성 옵션을 선택합니다</block>
+  <block id="5c4950449fdd46ff4c3981422e3fd6ff" category="list-text">'이전' 사용자 암호를 변경하려면 '3'을 입력하십시오.</block>
+  <block id="27668debe2a46165745d80fe01711790" category="list-text">다음 단계에 따라 모든 vCenter 서버에서 VASA Provider를 등록 취소합니다.</block>
+  <block id="89cc07c4865380b62ec83b09b399b504" category="list-text">VASA 공급자 등록 취소 * 페이지에서 애플리케이션 사용자 자격 증명을 제공하고 * 등록 취소 * 를 선택합니다.</block>
+  <block id="4dbcaa40dfd796f9c86fd033df9508db" category="admonition">애플리케이션 사용자 이름 및 암호는 ONTAP 도구 배포 중에 설정됩니다. VASA Provider/SRA 등록에 필요합니다.</block>
 </blocks>

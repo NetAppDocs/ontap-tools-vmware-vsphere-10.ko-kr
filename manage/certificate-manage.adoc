@@ -55,7 +55,7 @@ NOTE: 업그레이드가 완료될 때까지 시스템이 오프라인 상태가
 
 
 --
-.VASA 공급자 인증서를 업그레이드합니다
+.VASA Provider 인증서를 업그레이드합니다
 --
 VMware vSphere용 ONTAP 툴은 VASA Provider에 대한 자체 서명 인증서와 함께 구축됩니다. 이 옵션을 사용하면 VVol 데이터 저장소에 대해 하나의 vCenter Server 인스턴스만 관리할 수 있습니다. 여러 vCenter Server 인스턴스를 관리하고 이러한 인스턴스에서 VVol 기능을 활성화하려면 자체 서명된 인증서를 사용자 지정 CA 인증서로 변경해야 합니다.
 

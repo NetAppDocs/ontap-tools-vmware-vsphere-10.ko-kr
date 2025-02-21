@@ -159,7 +159,7 @@ https://imt.netapp.com/matrix/imt.jsp?components=105475;&solution=1777&isHWU&src
 | 22(TCP) | Ansible은 클러스터 프로비저닝 중의 통신에 이 SSH 포트를 사용합니다. 이 포트는 유지 보수 사용자 암호, 상태 메시지 변경 및 HA 구성의 경우 세 노드 모두에서 값을 업데이트하는 등의 기능에 필요합니다. 
 
 
-| 443(TCP) | VASA 공급자 서비스에 대한 들어오는 통신을 위한 통과 포트입니다. VASA 공급자 자체 서명 인증서 및 사용자 지정 CA 인증서가 이 포트에서 호스팅됩니다. 
+| 443(TCP) | VASA Provider 서비스에 대한 들어오는 통신을 위한 통과 포트입니다. VASA Provider 자체 서명 인증서와 사용자 지정 CA 인증서가 이 포트에서 호스팅됩니다. 
 
 
 | 8443(TCP) | 이 포트는 Swagger 및 Manager 사용자 인터페이스 애플리케이션을 통해 API 설명서를 호스팅합니다. 
@@ -177,7 +177,7 @@ https://imt.netapp.com/matrix/imt.jsp?components=105475;&solution=1777&isHWU&src
 | 7946(TCP+UDP) | 이 포트는 Docker의 컨테이너 네트워크 검색에 사용됩니다. 
 
 
-| 9083(TCP) | 이 포트는 VASA 공급자 서비스에 대해 내부적으로 사용되는 서비스 포트입니다. 
+| 9083(TCP) | 이 포트는 VASA Provider 서비스에 대해 내부적으로 사용되는 서비스 포트입니다. 
 
 
 | 1162(UDP) | SNMP 트랩 패킷 포트입니다. 

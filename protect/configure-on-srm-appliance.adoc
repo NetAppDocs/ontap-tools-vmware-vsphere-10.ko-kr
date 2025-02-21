@@ -35,7 +35,7 @@ NOTE: Perl 스크립트가 암호의 특수 문자를 입력의 구분 기호로
 
 +
 
-NOTE: 애플리케이션 사용자 이름 및 암호는 ONTAP 도구 배포 중에 설정됩니다. 이는 VASA 공급자/SRA 등록에 필요합니다.
+NOTE: 애플리케이션 사용자 이름 및 암호는 ONTAP 도구 배포 중에 설정됩니다. VASA Provider/SRA 등록에 필요합니다.
 
 . 어댑터를 다시 검색하여 VMware Live Site Recovery Storage Replication Adapters 페이지에서 세부 정보가 업데이트되었는지 확인합니다.
 

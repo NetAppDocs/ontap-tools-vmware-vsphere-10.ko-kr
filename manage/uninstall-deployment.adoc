@@ -19,7 +19,7 @@ NOTE: VMware vSphere용 ONTAP 툴을 종료하면 툴의 모든 데이터가 삭
 .단계
 . VMware vSphere용 ONTAP 툴을 통해 관리되는 데이터 저장소에서 모든 가상 머신을 제거합니다. 이러한 데이터를 삭제하거나(참조) 를 사용하여 https://techdocs.broadcom.com/it/it/vmware-cis/vsphere/vsphere/8-0/vcenter-and-host-management-8-0/migrating-virtual-machines-host-management/migration-with-vmotion-host-management/migration-with-storage-vmotion-host-management.html["마이그레이션"] 관리되지 않는 데이터 저장소로 이동할 수 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vsphere-virtual-machine-administration-guide-8-0/managing-virtual-machinesvsphere-vm-admin/adding-and-removing-virtual-machinesvsphere-vm-admin.html#GUID-376174FE-F936-4BE4-B8C2-48EED42F110B-en["VM 및 VM 템플릿을 제거하고 다시 등록합니다"] 있습니다.
 . link:../manage/delete-ds.html["데이터 저장소를 삭제합니다"] VMware vSphere용 ONTAP 툴에 생성되었습니다.
-. 다음 단계에 따라 모든 vCenter 서버에서 VASA 공급자를 등록 취소합니다.
+. 다음 단계에 따라 모든 vCenter 서버에서 VASA Provider를 등록 취소합니다.
 +
 .. ONTAP 툴에서 화면 아래쪽에 있는 * Settings * > * VASA Provider settings * > * Unregister * 옵션을 선택합니다.
 .. VASA 공급자 등록 취소 * 페이지에서 애플리케이션 사용자 자격 증명을 제공하고 * 등록 취소 * 를 선택합니다.
