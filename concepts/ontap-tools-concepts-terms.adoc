@@ -21,12 +21,6 @@ summary: 다음 섹션에서는 이 문서에 사용된 핵심 개념과 용어�
 
 
 
-=== AutoSupport
-
-AutoSupport는 시스템의 상태를 능동적으로 모니터링하고 NetApp 기술 지원, 내부 지원 조직 및 지원 파트너에게 메시지를 자동으로 보내는 메커니즘입니다.
-
-
-
 === CA(인증 기관)
 
 CA는 SSL(Secure Sockets Layer) 인증서를 발급하는 신뢰할 수 있는 엔터티입니다.
