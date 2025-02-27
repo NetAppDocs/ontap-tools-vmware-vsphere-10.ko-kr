@@ -17,7 +17,7 @@ summary: 다음 섹션에서는 이 문서에 사용된 핵심 개념과 용어�
 
 === ASA r2 시스템
 
-새로운 NetApp ASA R2 시스템(ASA A1K, ASA A70 및 ASA A90)은 SAN 전용 고객의 요구 사항에 맞는 간소화된 환경을 제공하는 통합된 하드웨어 및 소프트웨어 솔루션을 제공합니다. https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html["ASA R2 스토리지 시스템에 대해 알아보십시오"]..
+새로운 NetApp ASA R2 시스템은 통합 하드웨어 및 소프트웨어 솔루션을 제공하여 SAN 전용 고객의 요구 사항에 맞는 간소화된 환경을 제공합니다. https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html["ASA R2 스토리지 시스템에 대해 알아보십시오"]..
 
 
 

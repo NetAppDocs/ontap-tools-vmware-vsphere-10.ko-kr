@@ -25,8 +25,7 @@ NOTE: 나중에 HA 배포를 활성화하려면 ONTAP 툴을 호스팅하는 가
 
 적합한 콘텐츠 라이브러리가 아직 없는 경우 다음 단계에 따라 콘텐츠 라이브러리를 만드십시오.
 
-
-NOTE: 소규모 단일 노드 배포만 사용하려는 경우에는 콘텐츠 라이브러리를 만들 필요가 없습니다.
+* 콘텐츠 라이브러리 만들기 * 소규모 단일 노드 배포만 사용하려는 경우에는 콘텐츠 라이브러리를 만들 필요가 없습니다.
 
 .  `.zip`에서 VMware vSphere용 ONTAP 툴에 대한 바이너리(_.ova_)와 서명된 인증서가 포함된 파일을 https://mysupport.netapp.com/site/products/all/details/otv/downloads-tab["NetApp Support 사이트"^] 다운로드합니다.
 . 을 사용하여 vSphere Client에 로그인합니다 `\https://<vcenterip>/<ui>`

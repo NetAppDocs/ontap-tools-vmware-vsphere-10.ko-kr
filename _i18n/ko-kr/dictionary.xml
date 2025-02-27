@@ -85,7 +85,6 @@
   <block id="fa12509cfb8e8ccded16e2a254e988c4" category="list-text">추가 * 를 선택합니다.</block>
   <block id="87b9292b96462f70c7dfb870481b1445" category="list-text">팝업의 드롭다운에서 스토리지 백엔드를 선택합니다.</block>
   <block id="603041e40db447bbdd32fd4b4c2f994d" category="admonition">UUID는 사후 마이그레이션 API의 응답으로 반환된 마이그레이션 uuid입니다.</block>
-  <block id="07fdc7a244250b2e1c9e6533ff0ea4e0" category="paragraph">마이그레이션을 위한 API 삭제:</block>
   <block id="6b50b8836085008a8950ddeafeb7453a" category="list-text">모든 호스트에서 인증서를 새로 고칩니다.</block>
   <block id="f14c276c07197ebef1394a5a219087a1" category="cell">* 설명 *</block>
   <block id="d59f94015529940d2e6778d013097380" category="summary">vCenter는 호스트, 가상 머신 및 스토리지 백엔드를 제어할 수 있는 중앙 관리 플랫폼입니다.</block>
@@ -724,7 +723,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="63bc9a3997d66d835d9f3ec29451407d" category="cell">패치</block>
   <block id="41e9abb5d58ca11ff36c3067c273a762" category="paragraph">패치 "/api/v1/vCenters/56d373bd-4163-44f9-a872-9adabb008ca9/migration-jobs/84dr73bd-9173-65r7-w345-8ufdb887d43</block>
   <block id="bdfee7ad87d9004e1091e6e1762d0e84" category="paragraph">* JSON 입력 예 *</block>
-  <block id="cef9fa1aa0d8c4bd89bf89cf8cbb5cae" category="paragraph">/api/v1/vCenters/{vcguid}/migration-jobs/{migration_id}</block>
   <block id="07959986337388ebd736dc282a14afca" category="paragraph">* 진단 활성화 *</block>
   <block id="589c4957e1e0bb7b0bf55fa835dbaf3d" category="list-text">y * 를 입력하여 선택한 암호를 설정합니다.</block>
   <block id="0a01c0c2d00b20ff323dc6b25ceb30a5" category="list-text">kN Exec-IT NTV-mongodb-0 sh-kn은 kubectl-n NTV-system의 별칭입니다.</block>
@@ -1144,7 +1142,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="db846111e857460f56cbf51ec88e1faa" category="section-title">vCenter Server 인스턴스를 제거합니다</block>
   <block id="9d7b692a21eb697ecb2b728a45d820e9" category="list-text">사이드바에서 해당 vCenter Server 인스턴스를 선택합니다</block>
   <block id="53b6d9a27611577cca2fc7f28a47183c" category="admonition">vCenter Server 인스턴스를 제거하면 더 이상 애플리케이션에서 해당 인스턴스를 유지 관리할 수 없습니다.</block>
-  <block id="c93b5a9d65c77be9a5dfa309362afe22" category="sidebar">vCenter Server를 추가합니다</block>
   <block id="7cf21d459cdbb9c2a1e4864da9f56b5a" category="summary">VMware vSphere 9용 ONTAP 툴과 VMware vSphere 10용 ONTAP 툴 기능 비교에 대해 알아보십시오</block>
   <block id="8db6f8bda67c3085df85aeea7d620ac7" category="doc">VMware vSphere 9용 ONTAP 툴 및 VMware vSphere 10용 ONTAP 툴 기능 비교</block>
   <block id="9ed4a475dd3705157a9fed8811f63ce2" category="inline-link">NetApp 상호 운용성 매트릭스 툴</block>
@@ -1187,7 +1184,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="5aa0457cc95965b125467f8be60fadcf" category="list-text">클러스터 SVM ONTAP 툴 역할을 구성하려면 * 스토리지 SVM * &gt; * 설정 * &gt; * 사용자 및 역할 * 창을 선택합니다</block>
   <block id="ef0a0294be4f16882c4e18df7a17b72f" category="paragraph">유지보수 콘솔 옵션 * 애플리케이션 구성 * &gt; * AutoSupport 사용 안 함 * 을 사용하여 AutoSupport을 사용하지 않도록 설정할 수 있습니다. 활성화 상태로 두는 것이 좋습니다. AutoSupport를 활성화하면 문제를 더 빠르게 감지하고 문제를 더 빠르게 해결할 수 있습니다. 시스템은 AutoSupport 정보를 수집하여 AutoSupport가 비활성화된 경우에도 로컬에 저장합니다. 그러나 보고서를 어떤 네트워크에도 보내지 않습니다. 첫 번째 VM의 유지 관리 콘솔을 사용하여 프록시 URL을 제공해야 합니다. 애플리케이션 구성 * &gt; * AutoSupport 프록시 URL 업데이트 * 옵션을 사용하여 프록시 URL을 입력합니다.</block>
   <block id="e995d56efd9e31d97825dd79be4d1383" category="inline-link">ASA R2 스토리지 시스템에 대해 알아보십시오</block>
-  <block id="5b1c546117e368c44e82ae035c45be9d" category="paragraph">새로운 NetApp ASA R2 시스템(ASA A1K, ASA A70 및 ASA A90)은 SAN 전용 고객의 요구 사항에 맞는 간소화된 환경을 제공하는 통합된 하드웨어 및 소프트웨어 솔루션을 제공합니다.<block ref="f9c69c3c94cab41a57233cdf7452c3d6" category="inline-link-rx"></block>..</block>
   <block id="e3d3af7525d3e3fb797e7dad595bc6a3" category="section-title">복구 지점 목표(RPO)</block>
   <block id="881eb19c557d05be93005ed4bcf1f120" category="paragraph">RPO는 데이터가 백업 또는 복제되는 빈도를 나타내는 척도입니다. 운영 중단 후 비즈니스 운영을 재개하기 위해 데이터를 복구해야 하는 시점을 나타냅니다. 예를 들어 조직의 RPO가 4시간인 경우 재해 시 최대 4시간의 데이터 손실을 허용할 수 있습니다.</block>
   <block id="1f8552f10eb7513163cf1762849c2bcd" category="list-text">admin Privileges를 사용하여 클러스터에 로그인합니다. 사용자를 구성하려면 다음 단계를 수행하십시오.</block>
@@ -1208,7 +1204,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="3ce635f0fbf3a9f1cd9709aa0a4edb7d" category="section-title">VMware vSphere 10.1 사용자용 ONTAP 툴을 10.3 사용자로 업그레이드합니다</block>
   <block id="1e881b0096e32efd8f76e57798bfb5be" category="paragraph">VMware vSphere 10.1 사용자용 ONTAP 툴이 json 파일을 사용하여 생성된 클러스터 범위 사용자인 경우, admin 사용자를 사용하여 ONTAP CLI에서 다음 명령을 실행하여 10.3 릴리즈로 업그레이드하십시오.</block>
   <block id="59ce3cdcb64efaf0360e7ca205dc328e" category="paragraph">VMware vSphere 10.1 사용자용 ONTAP 툴이 json 파일을 사용하여 생성된 SVM 범위 사용자인 경우, admin 사용자를 사용하여 ONTAP CLI에서 다음 명령을 실행하여 10.3 릴리즈로 업그레이드하십시오.</block>
-  <block id="86d82f563697cadf4cd70dd1f81981f5" category="paragraph">데이터 저장소 생성 작업 마법사는 NFS, VMFS 및 VVol 데이터 저장소 생성을 지원합니다.</block>
   <block id="0f8e6a0c5a16a490062aa9802999b596" category="list-text">보호된 클러스터에서만 VMFS 데이터 저장소를 생성할 수 있습니다. VMFS 데이터 저장소를 보호된 클러스터에 추가하면 데이터 저장소가 자동으로 보호됩니다.</block>
   <block id="9ff5d4b4efce8f3dada6ea961efce12d" category="list-text">호스트에서 비동기식 관계가 있는 경우에만 VMFS 데이터 저장소를 생성할 수 있습니다.</block>
   <block id="99ffb35f7a315e5b9ff4015fcee0ac1b" category="paragraph">VMware vSphere 10.3용 ONTAP 툴부터 ASA R2 유형의 ONTAP 스토리지를 사용하여 VVOL 데이터 저장소를 생성할 수 있습니다. ASA R2 시스템에서 생성된 VVol 데이터 저장소는 공간 효율성을 Thin.VVol로 생성합니다. VASA Provider는 VVOL 데이터 저장소 생성 워크플로우 중에 컨테이너와 원하는 프로토콜 엔드포인트를 생성합니다. 이 컨테이너에는 백업 볼륨이 없습니다.</block>
@@ -1260,7 +1255,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="aa4b6b62ba667064e973028ccfaba3af" category="admonition">클러스터의 모든 호스트가 액세스할 수 있도록 컨텐츠 라이브러리를 공유 데이터 저장소에 저장해야 합니다. 어플라이언스 설정을 HA 구성으로 변경하기 전에 OVA를 저장할 콘텐츠 라이브러리를 만들어야 합니다. 업로드한 콘텐츠 라이브러리 서식 파일은 배포 후 삭제해서는 안 됩니다.</block>
   <block id="3d408fd9ee71e5590c9d127632f486ff" category="admonition">나중에 HA 배포를 활성화하려면 ONTAP 툴을 호스팅하는 가상 시스템을 ESXi 호스트에 직접 배포해서는 안 됩니다. 대신 클러스터 또는 리소스 풀에 구축되어야 합니다.</block>
   <block id="8fc66c32d9085d19a2b350fb78e96657" category="paragraph">적합한 콘텐츠 라이브러리가 아직 없는 경우 다음 단계에 따라 콘텐츠 라이브러리를 만드십시오.</block>
-  <block id="8f059bfa91977298a44c980b287d6091" category="admonition">소규모 단일 노드 배포만 사용하려는 경우에는 콘텐츠 라이브러리를 만들 필요가 없습니다.</block>
   <block id="75e558b408663f8095495e2f3ccd77f2" category="paragraph">OVA를 콘텐츠 라이브러리로 가져왔는지 확인합니다.</block>
   <block id="2866bbf24409f82bd4b074e071e1aa1b" category="list-text"><block ref="daf4de58883c030f033f07e61debf025" prefix=" " category="inline-code"></block>에서 VMware vSphere용 ONTAP 툴에 대한 바이너리(_.ova_)와 서명된 인증서가 포함된 파일을<block ref="c28762f698ce57f013f1f9dff01575ab" category="inline-link-rx"></block> 다운로드합니다. 콘텐츠 라이브러리로 OVA를 가져온 경우 이 단계를 건너뛰고 콘텐츠 라이브러리에서 직접 배포할 수 있으므로 다음 단계를 진행할 수 있습니다.</block>
   <block id="a8dd039d7118472ec1580db699aa661d" category="admonition">VMware vSphere 가상 머신용 ONTAP 툴을 관리하는 VVOL 데이터 저장소에 저장하지 마십시오.</block>
@@ -1644,7 +1638,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="ba5c200a0d4600ec4fe2ef79c26593b8" category="list-text">다음 API를 사용하여 패치 마이그레이션을 수행합니다.</block>
   <block id="f663ec26fcc5dbf0e82a2df73c30a3e3" category="paragraph">패치 작업을 위한 요청 본문이 비어 있습니다.</block>
   <block id="e4453a0aab117b65b26edb59d78793fd" category="paragraph">패치 마이그레이션 API가 성공적으로 실행되면 모든 VM이 스토리지 정책을 준수합니다.</block>
-  <block id="cd6f62989595e510d57e7b407691336a" category="paragraph">이 API는 마이그레이션 ID를 기준으로 마이그레이션을 삭제하고 지정된 vCenter Server에서 마이그레이션을 삭제합니다.</block>
   <block id="9a43f64b9545dfa5ddfcc70dbc73d001" category="list-text">잠시 기다린 후 데이터 저장소(DS) 및 가상 머신(VM) 작업을 수행합니다. 대기 시간은 설정에 있는 호스트, DS 및 VM의 수에 따라 다릅니다. 기다리지 않으면 작업이 간헐적으로 실패할 수 있습니다.</block>
   <block id="422c2a3517291219d45e5d0be95be9d1" category="paragraph">업그레이드 후 가상 머신 규정 준수 상태가 최신이 아니면 다음 단계를 사용하여 가상 머신 스토리지 정책을 다시 적용합니다.</block>
   <block id="15e560ab707fa2bf2b7b0833adbe8bb9" category="list-text">데이터 저장소로 이동하고 * Summary * &gt; * VM Storage policies * 를 선택합니다.</block>
@@ -2052,4 +2045,7 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="9f147a250dd9a5cd9d9745eb3f5f7668" category="paragraph">프록시 서버가 네트워크 액세스 제어 또는 보안 조치에 사용되는 시나리오에서 AutoSupport 프록시 URL을 업데이트하여 AutoSupport 기능이 올바르게 작동하는지 확인합니다. AutoSupport 데이터를 적절한 프록시를 통해 라우팅하여 안전한 전송 및 규정 준수를 보장합니다.</block>
   <block id="8b1bce08d5421e10a7f1c336b269cbd5" category="list-text">4를 입력하여 * AutoSupport 프록시 URL 업데이트 * 를 선택합니다.</block>
   <block id="24bbb6c78509566d72fa3e18de92a0fe" category="list-text">프록시 URL을 입력합니다.</block>
+  <block id="cea51b5f4b8c25d096d54257d5d0348e" category="paragraph">새로운 NetApp ASA R2 시스템은 통합 하드웨어 및 소프트웨어 솔루션을 제공하여 SAN 전용 고객의 요구 사항에 맞는 간소화된 환경을 제공합니다.<block ref="f9c69c3c94cab41a57233cdf7452c3d6" category="inline-link-rx"></block>..</block>
+  <block id="9401e344ca7f0cbda5f2f0b48709397f" category="paragraph">호스트 클러스터 레벨에서 데이터 저장소를 생성하면 모든 대상 호스트에 데이터 저장소가 생성되고 마운트됩니다. 필요한 Privileges가 있는 경우에만 이 옵션을 볼 수 있습니다.</block>
+  <block id="1dd9aa2a5203b6e1a1980842e9af2082" category="paragraph">* 콘텐츠 라이브러리 만들기 * 소규모 단일 노드 배포만 사용하려는 경우에는 콘텐츠 라이브러리를 만들 필요가 없습니다.</block>
 </blocks>

@@ -2,7 +2,7 @@
 section: configure
 title: VMware vSphere용 ONTAP 툴을 구성합니다
 entries:
-- title: vCenter Server를 추가합니다
+- title: vCenter Server 인스턴스를 추가합니다
   url: "/configure/add-vcenter.html"
 - title: vCenter Server에 VASA Provider를 등록합니다
   url: "/configure/registration-process.html"
