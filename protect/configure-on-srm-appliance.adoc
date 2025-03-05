@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: 'VMware Live Site Recovery 어플라이언스를 구축한 후에는 VMware Live Site Recovery 어플라이언스에 SRA를 구성해야 합니다. SRA 구성이 성공하면 VMware Live Site Recovery 어플라이언스가 SRA와 통신하여 재해 복구 관리를 수행할 수 있습니다. VMware Live Site Recovery 어플라이언스와 SRA 간의 통신을 활성화하려면 VMware vSphere 자격 증명(IP 주소 및 관리자 암호\)용 ONTAP 툴을 VMware Live Site Recovery 어플라이언스에 저장해야 합니다.' 
 ---
-= VMware Live Site Recovery 어플라이언스에 SRA를 구성합니다
+= VMware Live Site Recovery 어플라이언스에서 SRA를 구성합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

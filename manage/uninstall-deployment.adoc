@@ -22,7 +22,7 @@ VMware vSphere용 ONTAP 툴을 제거하면 툴의 데이터가 모두 삭제됩
 .. VASA 공급자 등록 취소 * 페이지에서 애플리케이션 사용자 자격 증명을 제공하고 * 등록 취소 * 를 선택합니다.
 
 
-. vCenter Server 인스턴스에서 모든 스토리지 백엔드의 연결을 해제합니다. 을 link:../manage/manage-vcenter.html["스토리지 백엔드를 vCenter Server 인스턴스에 연결하거나 분리합니다"]참조하십시오.
+. vCenter Server 인스턴스에서 모든 스토리지 백엔드의 연결을 해제합니다. 을 link:../manage/manage-vcenter.html["vCenter Server 인스턴스로 스토리지 백엔드를 분리합니다"]참조하십시오.
 . 모든 스토리지 백엔드를 삭제합니다. 을 link:../manage/storage-backend.html["스토리지 백엔드 관리"]참조하십시오.
 . VMware Live Site Recovery에서 SRA 어댑터 제거:
 +

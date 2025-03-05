@@ -83,12 +83,10 @@
   <block id="aee895c24ce8b1de4db4cd6c7eabc1e3" category="paragraph">다음 URI를 사용하여 상태를 확인합니다.</block>
   <block id="f323831468d8f05429defe22a9e81256" category="list-text">측면 표시줄에서 * Storage Backend * 를 선택합니다.</block>
   <block id="fa12509cfb8e8ccded16e2a254e988c4" category="list-text">추가 * 를 선택합니다.</block>
-  <block id="87b9292b96462f70c7dfb870481b1445" category="list-text">팝업의 드롭다운에서 스토리지 백엔드를 선택합니다.</block>
   <block id="603041e40db447bbdd32fd4b4c2f994d" category="admonition">UUID는 사후 마이그레이션 API의 응답으로 반환된 마이그레이션 uuid입니다.</block>
   <block id="6b50b8836085008a8950ddeafeb7453a" category="list-text">모든 호스트에서 인증서를 새로 고칩니다.</block>
   <block id="f14c276c07197ebef1394a5a219087a1" category="cell">* 설명 *</block>
   <block id="d59f94015529940d2e6778d013097380" category="summary">vCenter는 호스트, 가상 머신 및 스토리지 백엔드를 제어할 수 있는 중앙 관리 플랫폼입니다.</block>
-  <block id="aeb18aa675191e7f63da99f8c2975141" category="list-text">수행할 작업에 따라 * 스토리지 백엔드 연결 또는 연결 해제 * 를 선택합니다.</block>
   <block id="a1c4eb450799cb3f30c400d0201414e7" category="doc">탐색</block>
   <block id="81eeab9506186e2dca8faefa78d54067" category="paragraph">예:</block>
   <block id="84fd2e9f48ced2057b35ca005d2e23dd" category="doc">로그 파일을 수집합니다</block>
@@ -1082,13 +1080,10 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="beadd6cb6100e1a0cce84603ccb7105a" category="paragraph">다음 표에는 VMware Live Site Recovery의 수와 VMware vSphere 구축 크기용 ONTAP 툴의 수가 나와 있습니다.</block>
   <block id="df0d7eb56e12922cca30035472c40aa7" category="cell">* VMware Live Site Recovery 인스턴스 수 *</block>
   <block id="de7cd16aa682868ad900edd519b06059" category="list-text">VMware Live Site Recovery 구성 관리 페이지로 이동합니다</block>
-  <block id="e6af441b9194db7f4427a1199ae8c274" category="inline-link-macro">VMware Live Site Recovery 어플라이언스에 SRA를 구성합니다</block>
   <block id="0b3582622e579cb352e246015d6ca171" category="summary">VMware Live Site Recovery의 Array Manager 마법사를 사용하여 SRA(스토리지 복제 어댑터)를 구성하여 VMware Live Site Recovery와 스토리지 가상 머신\(SVM\) 간의 상호 작용을 지원할 수 있습니다.</block>
   <block id="fe3a4c2227170fc60976b4e12c53d157" category="paragraph">VMware Live Site Recovery의 Array Manager 마법사를 사용하여 SRA(스토리지 복제 어댑터)를 구성하여 VMware Live Site Recovery와 SVM(스토리지 가상 머신) 간의 상호 작용을 지원할 수 있습니다.</block>
   <block id="986d9b60b2308d9411e69051124f1e90" category="list-text">VMware Live Site Recovery에서 보호된 사이트와 복구 사이트를 페어링해야 합니다.</block>
   <block id="a276fae7dadb74c9d51a7a7823f174bc" category="list-text">VMware Live Site Recovery의 스토리지를 설명하는 다음 정보를 입력합니다.</block>
-  <block id="bba4b1edcf0645b5356e4f3ffed77b3a" category="summary">VMware Live Site Recovery 어플라이언스를 구축한 후에는 VMware Live Site Recovery 어플라이언스에 SRA를 구성해야 합니다. SRA 구성이 성공하면 VMware Live Site Recovery 어플라이언스가 SRA와 통신하여 재해 복구 관리를 수행할 수 있습니다. VMware Live Site Recovery 어플라이언스와 SRA 간의 통신을 활성화하려면 VMware vSphere 자격 증명(IP 주소 및 관리자 암호\)용 ONTAP 툴을 VMware Live Site Recovery 어플라이언스에 저장해야 합니다.</block>
-  <block id="ac7f1666af7e74993cdbf1eb27d64168" category="paragraph">VMware Live Site Recovery 어플라이언스를 구축한 후에는 VMware Live Site Recovery 어플라이언스에 SRA를 구성해야 합니다. SRA 구성이 성공하면 VMware Live Site Recovery 어플라이언스가 SRA와 통신하여 재해 복구 관리를 수행할 수 있습니다. VMware Live Site Recovery 어플라이언스와 SRA 간의 통신을 활성화하려면 VMware vSphere 자격 증명(IP 주소)용 ONTAP 툴을 VMware Live Site Recovery 어플라이언스에 저장해야 합니다.</block>
   <block id="21e557aeec91fdacbde971d5f1de9806" category="paragraph">VMware Live Site Recovery 어플라이언스에서 SRA를 구성하면 SRA 자격 증명이 VMware Live Site Recovery 어플라이언스에 저장됩니다.</block>
   <block id="7ebae8ab4249a32272c6182685fb369b" category="list-text">VMware Live Site Recovery에 _.tar.gz_파일을 업로드합니다.</block>
   <block id="e94e8319bfdee87f64f751c05ceaa14e" category="list-text">putty를 사용하여 관리자 계정을 사용하여 VMware Live Site Recovery 어플라이언스에 로그인합니다.</block>
@@ -1360,7 +1355,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="7a8e7317ab9023c8e3dac44950232672" category="list-text">AutoSupport 프록시 URL을 업데이트합니다</block>
   <block id="d51a3b8155ff2f65ec368b7278c07f16" category="list-text">백업을 위한 vCenter 자격 증명을 제공합니다</block>
   <block id="1f3bf2522a0df56ad834875880cfcc04" category="list-text">백업을 수행합니다</block>
-  <block id="b6b9d4100dc66eb2a9d44485b61f0fba" category="paragraph">vCenter Server 목록 페이지에는 연결된 스토리지 백엔드 수가 표시됩니다. 각 vCenter Server 인스턴스에는 스토리지 백엔드에 연결하거나 연결을 해제하는 옵션이 있습니다. 이 작업은 스토리지 백엔드와 온보딩된 vCenter Server 인스턴스 간의 매핑을 생성하는 데 도움이 됩니다.</block>
   <block id="425455a0df6d10586a41711a1553bfae" category="inline-link">클론 생성을 위한 가상 머신 생성</block>
   <block id="681d233e491ad7e8ec82fd9193581181" category="paragraph">자세한 내용은 을<block ref="276aed995f6320cbafa4bfe03cc7ac04" category="inline-link-rx"></block> 참조하십시오.</block>
   <block id="70a4eccd665ed7fc2f16889dd9f717de" category="paragraph">최근 작업 패널에서 진행 상황을 추적할 수 있습니다.</block>
@@ -1380,7 +1374,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="c46965d55afff0a89c0bb3bd26c0a653" category="summary">스토리지 데이터를 마이그레이션할 때 REST API를 사용하여 스토리지 백엔드를 수동으로 온보드합니다. VASA Provider 데이터를 마이그레이션할 때 기존 Derby 데이터베이스에서 데이터를 내보내고 MongoDB 데이터베이스로 가져옵니다.</block>
   <block id="e43b5fd407b2bc9fda1a39851a48f9bb" category="doc">VMware vSphere 9.x용 ONTAP 툴에서 10.3로 마이그레이션합니다</block>
   <block id="98db65da9a06955541a5451543410fde" category="list-text">VMware vSphere 10.3 릴리스용 ONTAP용 OVA 도구를 배포합니다.</block>
-  <block id="b81b2046e8a2fa467c645a47a0ade5d0" category="list-text">의 단계에 따라 보호 및 복구 사이트 모두에 VMware vSphere 10.3 SRA 어댑터용 ONTAP 툴을 설치합니다 <block ref="200275c92830164958f040bec21a478e" category="inline-link-macro-rx"></block></block>
   <block id="b7b423b5e37e418ae4659bcf83c729b5" category="section-title">VASA Provider 마이그레이션 단계</block>
   <block id="2d3feeef6331c15c90e4aea5b6cc1e41" category="list-text">VMware vSphere 스토리지 공급자용 ONTAP 툴을 vCenter Server 및 에 추가합니다 <block ref="a322950c1b9e940cddaca5a47e2d5895" category="inline-link-macro-rx"></block>.</block>
   <block id="ffdec42d5d13cecca850e153f75748ec" category="paragraph">VASA Provider를 삭제하지 마십시오.</block>
@@ -1774,7 +1767,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="bbe57747f4505ee1666f69c3e2e22914" category="list-text">Summary * 창에서 선택 사항을 검토하고 * Expand * 를 선택합니다. 최근 작업 패널에서 진행 상황을 추적할 수 있습니다.</block>
   <block id="7126c2d3ac63ad339fed10c3e80b9154" category="paragraph">유지 관리 콘솔에 액세스하려면 구축된 VMware vSphere용 ONTAP 툴의 * Summary * 탭을 사용해야 합니다. 을 <block ref="e47dca9fdf7d5de4c84091183b635b44" category="inline-image-macro-rx" type="image"></block>선택하면 유지보수 콘솔이 시작됩니다.</block>
   <block id="29f385adfbfb27c8582d1c11890c8556" category="list-text">Edit Threshold * 창에서 * 거의 다 찼음 * 및 * 전체 * 필드에 원하는 값을 입력하고 * Save * 를 선택합니다. 숫자를 권장 값으로 재설정할 수 있습니다. 이 값은 거의 가득 찬 경우 80이고 가득 찬 경우 90입니다.</block>
-  <block id="0f7693907bf1c5887f11085d59c4b126" category="section-title">스토리지 백엔드를 vCenter Server 인스턴스에 연결하거나 분리합니다</block>
   <block id="e86e9d91e2d4fec33d849cf922251ff6" category="list-text">스토리지 백엔드와 연결하거나 분리할 vCenter Server에 대해 세로 줄임표를 선택합니다.</block>
   <block id="c059c6405b3526137de28981e7d60b16" category="list-text">수정할 vCenter Server에 대해 수직 타원을 선택하고 * Modify * 를 선택합니다.</block>
   <block id="b5c456ea007c6f139a957980317bbe28" category="list-text">제거할 vCenter Server에 대해 수직 타원을 선택하고 * Remove * 를 선택합니다.</block>
@@ -1797,7 +1789,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="3192ac3fc20742576276f99f96eb7d0b" category="summary">이 섹션의 지침에 따라 VMware vSphere 구축을 위한 ONTAP 툴을 정상적으로 종료합니다.</block>
   <block id="f0833ce92c23eb056dde238669740988" category="list-text"><block ref="523efdef8100699453c6b07ce8f4921c" category="inline-link-macro-rx"></block> VMware vSphere용 ONTAP 툴에 생성되었습니다.</block>
   <block id="446b6ba7fba75a7ecc60d88a968956a4" category="list-text">ONTAP 툴에서 화면 아래쪽에 있는 * Settings * &gt; * VASA Provider settings * &gt; * Unregister * 옵션을 선택합니다.</block>
-  <block id="60ba17bf2537f7f153738b7a53985263" category="list-text">vCenter Server 인스턴스에서 모든 스토리지 백엔드의 연결을 해제합니다. 을 <block ref="8743d7af4f3d1585e8a908d41950b1ae" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="b2aac3a919762e9dd0f89ef1b3999500" category="list-text">모든 스토리지 백엔드를 삭제합니다. 을 <block ref="c97897721457f9108ce9caf2b3f0d235" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="39ebf4e5b2fe43c5d1e039f8afb8a330" category="list-text">VMware Live Site Recovery에서 SRA 어댑터 제거:</block>
   <block id="6b888cf1301944636f489bc5295c2ef7" category="list-text">5480 포트를 admin으로 사용하여 VMware Live Site Recovery 어플라이언스 관리 인터페이스에 로그인합니다.</block>
@@ -2005,7 +1996,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="9ebcd4f583a00c985808cafa9e416f71" category="sidebar">VMware vSphere 9.x용 ONTAP 툴을 10.3으로 마이그레이션합니다</block>
   <block id="d15333fd508f1d73c6c7c18f9657c60b" category="summary">스토리지 백엔드를 vCenter Server에 연결하여 스토리지 백엔드와 온보딩된 vCenter Server 인스턴스 간의 매핑을 전체적으로 생성합니다.</block>
   <block id="f2b44f635f2072efed00e9602e1e2ff4" category="list-text">스토리지 백엔드에 연결할 vCenter Server 인스턴스에 대해 세로 줄임표를 선택합니다.</block>
-  <block id="9d85f6212023f4e0b82efdeec842c0c7" category="list-text">드롭다운에서 스토리지 백엔드를 선택하고 vCenter Server 인스턴스를 필요한 스토리지 백엔드와 연결합니다.</block>
   <block id="199ed231411d6d659f29a3a7b2ea8db6" category="summary">스토리지 시스템을 처음으로 구성할 경우 AutoSupport가 기본적으로 사용하도록 설정됩니다. 활성화 후 24시간 후에 기술 지원 부서에 메시지를 보냅니다.</block>
   <block id="c5adbf27ae2d8bfae599b0a24c10a95f" category="paragraph">스토리지 시스템을 처음으로 구성할 경우 AutoSupport가 기본적으로 사용하도록 설정됩니다. 활성화 후 24시간 후에 기술 지원 부서에 메시지를 보냅니다. AutoSupport를 비활성화하면 더 이상 사전 지원 및 모니터링을 받을 수 없습니다.</block>
   <block id="e58a5d9f48a5cdc890b1cc0ed74ce0b4" category="admonition">AutoSupport를 사용하도록 설정하는 것이 좋습니다. 문제 감지 및 해결 시간을 단축할 수 있습니다. 시스템이 AutoSupport 정보를 수집하여 로컬에 저장합니다. 비활성화된 경우에도 마찬가지입니다.</block>
@@ -2048,4 +2038,13 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="cea51b5f4b8c25d096d54257d5d0348e" category="paragraph">새로운 NetApp ASA R2 시스템은 통합 하드웨어 및 소프트웨어 솔루션을 제공하여 SAN 전용 고객의 요구 사항에 맞는 간소화된 환경을 제공합니다.<block ref="f9c69c3c94cab41a57233cdf7452c3d6" category="inline-link-rx"></block>..</block>
   <block id="9401e344ca7f0cbda5f2f0b48709397f" category="paragraph">호스트 클러스터 레벨에서 데이터 저장소를 생성하면 모든 대상 호스트에 데이터 저장소가 생성되고 마운트됩니다. 필요한 Privileges가 있는 경우에만 이 옵션을 볼 수 있습니다.</block>
   <block id="1dd9aa2a5203b6e1a1980842e9af2082" category="paragraph">* 콘텐츠 라이브러리 만들기 * 소규모 단일 노드 배포만 사용하려는 경우에는 콘텐츠 라이브러리를 만들 필요가 없습니다.</block>
+  <block id="40291729bc47db016ddfca9972ab2bda" category="list-text">드롭다운에서 스토리지 백엔드를 선택하여 vCenter Server 인스턴스를 필요한 스토리지 백엔드와 연결합니다.</block>
+  <block id="5a43e80953e87c7df463deaedcab9879" category="section-title">vCenter Server 인스턴스로 스토리지 백엔드를 분리합니다</block>
+  <block id="b5ae5420b0908ddbac99943f9b50285d" category="paragraph">vCenter Server 목록 페이지에는 연결된 스토리지 백엔드 수가 표시됩니다. 각 vCenter Server 인스턴스에는 스토리지 백엔드에 연결하거나 연결을 해제하는 옵션이 있습니다.</block>
+  <block id="9a9ef84d994bd8c482cd3e98feba5977" category="list-text">스토리지 백엔드 분리 * 를 선택합니다.</block>
+  <block id="02a713a12e2b216b65a52896d0728a0a" category="list-text">vCenter Server 인스턴스에서 모든 스토리지 백엔드의 연결을 해제합니다. 을 <block ref="8f766e539ddb39a7c07c0c84dded1670" category="inline-link-macro-rx"></block>참조하십시오.</block>
+  <block id="f75d6048a8fcc9f4822dcc0f5eef23d2" category="inline-link-macro">VMware Live Site Recovery 어플라이언스에서 SRA를 구성합니다</block>
+  <block id="3bf1c404c0b424b9520fcc0dc5fb8998" category="list-text">의 단계에 따라 보호 및 복구 사이트 모두에 VMware vSphere 10.3 SRA 어댑터용 ONTAP 툴을 설치합니다 <block ref="9b6610ae0d9b3f2df042445cc8433cf4" category="inline-link-macro-rx"></block></block>
+  <block id="0789cade62ba5a348d7e1ed5a15e5429" category="summary">VMware Live Site Recovery 어플라이언스를 구축한 후에는 VMware Live Site Recovery 어플라이언스에 SRA를 구성해야 합니다. SRA 구성이 성공하면 VMware Live Site Recovery 어플라이언스가 SRA와 통신하여 재해 복구 관리를 수행할 수 있습니다. VMware Live Site Recovery 어플라이언스와 SRA 간의 통신을 활성화하려면 VMware vSphere 자격 증명(IP 주소 및 관리자 암호\)용 ONTAP 툴을 VMware Live Site Recovery 어플라이언스에 저장해야 합니다.</block>
+  <block id="ca19ccb681ec240b3ba2bef453f35015" category="paragraph">VMware Live Site Recovery 어플라이언스를 구축한 후에는 VMware Live Site Recovery 어플라이언스에 SRA를 구성해야 합니다. SRA 구성이 성공하면 VMware Live Site Recovery 어플라이언스가 SRA와 통신하여 재해 복구 관리를 수행할 수 있습니다. VMware Live Site Recovery 어플라이언스와 SRA 간의 통신을 활성화하려면 VMware vSphere 자격 증명(IP 주소)용 ONTAP 툴을 VMware Live Site Recovery 어플라이언스에 저장해야 합니다.</block>
 </blocks>

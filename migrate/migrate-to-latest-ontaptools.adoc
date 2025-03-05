@@ -58,7 +58,7 @@ NOTE: 페일오버가 방금 완료되었고 재보호가 보류 중인 경우�
 
 
 
-. 의 단계에 따라 보호 및 복구 사이트 모두에 VMware vSphere 10.3 SRA 어댑터용 ONTAP 툴을 설치합니다 link:../protect/configure-on-srm-appliance.html["VMware Live Site Recovery 어플라이언스에 SRA를 구성합니다"]
+. 의 단계에 따라 보호 및 복구 사이트 모두에 VMware vSphere 10.3 SRA 어댑터용 ONTAP 툴을 설치합니다 link:../protect/configure-on-srm-appliance.html["VMware Live Site Recovery 어플라이언스에서 SRA를 구성합니다"]
 . VMware Live Site Recovery 사용자 인터페이스 페이지에서 * 스토리지 검색 * 및 * 장치 검색 * 작업을 수행하고 마이그레이션 전의 상태로 장치가 표시되는지 확인합니다.
 
 
