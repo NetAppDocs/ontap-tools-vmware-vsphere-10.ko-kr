@@ -16,7 +16,7 @@ VMware vSphere용 ONTAP 툴은 SRA 기능을 사용하여 재해 복구를 구�
 .시작하기 전에
 * vCenter Server 인스턴스를 설정하고 ESXi 호스트를 구성해야 합니다.
 * VMware vSphere용 ONTAP 툴을 배포해야 합니다.
-* SRA 어댑터를 다운로드해야 합니다 `.tar.gz` 에서 파일 https://mysupport.netapp.com/site/products/all/details/otv/downloads-tab["NetApp Support 사이트"^].
+*  `.tar.gz`에서 SRA Adapter 파일을 다운로드해야 https://mysupport.netapp.com/site/products/all/details/otv10/downloads-tab["NetApp Support 사이트"^] 합니다.
 * 소스 및 대상 ONTAP 클러스터에서 SRA 워크플로우를 실행하기 전에 생성된 동일한 사용자 지정 SnapMirror 일정이 있어야 합니다.
 
 

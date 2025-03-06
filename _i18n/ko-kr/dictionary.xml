@@ -588,7 +588,6 @@ sudo rke2-uninstall.sh (모든 VM).</block>
   <block id="f5687be176cf7331c8455f99c17ffcf2" category="paragraph">보호된 사이트와 복구 사이트가 모두 개체 대화 상자에 나타납니다.</block>
   <block id="22bf2e5e3e861785a0e8f1eb7bd7492e" category="doc">SRA를 활성화하여 데이터 저장소를 보호합니다</block>
   <block id="f8159a1f10595cc4a80126746a124cb1" category="list-text">vCenter Server 인스턴스를 설정하고 ESXi 호스트를 구성해야 합니다.</block>
-  <block id="0fd28be9959e611e7350a85da18ec3d2" category="list-text">SRA 어댑터를 다운로드해야 합니다<block ref="d6f1afa70d6145a212d9dc6bc8a2fa64" prefix=" " category="inline-code"></block> 에서 파일<block ref="c28762f698ce57f013f1f9dff01575ab" category="inline-link-rx"></block>.</block>
   <block id="3cd3d1462bf37583e74346e9e49e0712" category="list-text">새 어댑터 * 를 선택합니다.</block>
   <block id="c88f553be5a81e83a1a2cd590af81efb" category="summary">보호된 가상 머신 \(VM\)의 복구 사이트에서 vCenter 인벤토리에 위치를 보관하도록 자리 표시자 데이터 저장소를 구성해야 합니다. 자리 표시자 VM이 작고 수백 킬로바이트 이하만 사용하기 때문에 자리 표시자 데이터 저장소는 크기가 클 필요가 없습니다.</block>
   <block id="a079415d00c6083e09f585ea2ed56548" category="doc">자리 표시자 데이터 저장소를 구성합니다</block>
@@ -632,7 +631,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="7e4aa301715707912ba8ed9cba9c0eb7" category="doc">리소스 매핑을 구성합니다</block>
   <block id="20586b09df186411bee0e3968b2ef2dd" category="list-text">리소스 매핑 생성 마법사에서 다음을 수행합니다.</block>
   <block id="3c16183aac3a35635bd37651c6e30ca9" category="paragraph">리소스 매핑 페이지에는 보호된 사이트 리소스와 복구 사이트 리소스가 표시됩니다. 사용자 환경의 다른 네트워크에 대해서도 동일한 단계를 수행할 수 있습니다.</block>
-  <block id="9efe335a21c7ed7fb03853b29d60db35" category="paragraph">에서 _tar.gz_파일을 다운로드해야 합니다<block ref="0e1d5eb136c80762086cbb6a49f15235" category="inline-link-rx"></block>.</block>
   <block id="bef92ccaf2eaa0578e6024bf1bbf9ea7" category="list-text">다음 명령을 사용하여 루트 사용자로 전환합니다.<block ref="ed4421a15b86845cfea13385b427b340" prefix=" " category="inline-code"></block></block>
   <block id="eec423b8c8e795c4422b564b889c72ba" category="admonition">Perl 스크립트가 암호의 특수 문자를 입력의 구분 기호로 읽지 않도록 하려면 암호 값을 작은따옴표로 묶어야 합니다.</block>
   <block id="3e06c9490934f18ce97a637bf06b781e" category="paragraph">스토리지 자격 증명이 저장되었음을 확인하는 성공 메시지가 표시됩니다. SRA는 제공된 IP 주소, 포트 및 자격 증명을 사용하여 SRA 서버와 통신할 수 있습니다.</block>
@@ -1116,7 +1114,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="5482792d8f62d9c636f95fc96476727d" category="paragraph">계속하기 전에 다음 항목을 확인하십시오.</block>
   <block id="da6388fdc3d2fad794be9aa033101c19" category="open-title">ONTAP 도구 관리자 사용</block>
   <block id="6245e46af5a3bdaf57696763c4214c70" category="doc">vCenter Server 인스턴스를 추가합니다</block>
-  <block id="9d0c1154faecde38baf4c2a1e8f8e9e6" category="list-text"><block ref="daf4de58883c030f033f07e61debf025" prefix=" " category="inline-code"></block>에서 VMware vSphere용 ONTAP 툴에 대한 바이너리(_.ova_)와 서명된 인증서가 포함된 파일을<block ref="c28762f698ce57f013f1f9dff01575ab" category="inline-link-rx"></block> 다운로드합니다.</block>
   <block id="76c9f2fd0b61e8f84a42f7ab8d5ce641" category="admonition">자세한 내용은<block ref="b5992e6d058c0c347b7f52b58c58c7d5" category="inline-link-rx"></block> 블로그 를 참조하십시오.</block>
   <block id="6b373c8cb8fb1cd1a92b3762ada8ce1d" category="paragraph">VM의 웹 콘솔에서 설치 진행률을 추적할 수 있습니다.</block>
   <block id="1e496ca2f7a66d863132588473f14de2" category="section-title">시스템 요구 사항</block>
@@ -1251,7 +1248,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="3d408fd9ee71e5590c9d127632f486ff" category="admonition">나중에 HA 배포를 활성화하려면 ONTAP 툴을 호스팅하는 가상 시스템을 ESXi 호스트에 직접 배포해서는 안 됩니다. 대신 클러스터 또는 리소스 풀에 구축되어야 합니다.</block>
   <block id="8fc66c32d9085d19a2b350fb78e96657" category="paragraph">적합한 콘텐츠 라이브러리가 아직 없는 경우 다음 단계에 따라 콘텐츠 라이브러리를 만드십시오.</block>
   <block id="75e558b408663f8095495e2f3ccd77f2" category="paragraph">OVA를 콘텐츠 라이브러리로 가져왔는지 확인합니다.</block>
-  <block id="2866bbf24409f82bd4b074e071e1aa1b" category="list-text"><block ref="daf4de58883c030f033f07e61debf025" prefix=" " category="inline-code"></block>에서 VMware vSphere용 ONTAP 툴에 대한 바이너리(_.ova_)와 서명된 인증서가 포함된 파일을<block ref="c28762f698ce57f013f1f9dff01575ab" category="inline-link-rx"></block> 다운로드합니다. 콘텐츠 라이브러리로 OVA를 가져온 경우 이 단계를 건너뛰고 콘텐츠 라이브러리에서 직접 배포할 수 있으므로 다음 단계를 진행할 수 있습니다.</block>
   <block id="a8dd039d7118472ec1580db699aa661d" category="admonition">VMware vSphere 가상 머신용 ONTAP 툴을 관리하는 VVOL 데이터 저장소에 저장하지 마십시오.</block>
   <block id="b2beb53e07d823dec2c2ea3f5bc86599" category="list-text">Select a name and folder * for the virtual machine 창에서 가상 머신 이름을 입력하고 가상 머신의 위치를 선택합니다. * 이 가상 시스템의 하드웨어 사용자 정의 * 확인란을 선택하면 * 완료 준비 * 창에 도달하기 전에 * 하드웨어 사용자 정의 * 라는 단계가 활성화됩니다.</block>
   <block id="84cc92b833510ebb4c14b968eaac82ce" category="admonition">Pure IPv6는 지원되지 않습니다. 혼합 모드는 IPv6 주소와 IPv4 주소가 모두 있는 VLAN에서 지원됩니다.</block>
@@ -2047,4 +2043,8 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="3bf1c404c0b424b9520fcc0dc5fb8998" category="list-text">의 단계에 따라 보호 및 복구 사이트 모두에 VMware vSphere 10.3 SRA 어댑터용 ONTAP 툴을 설치합니다 <block ref="9b6610ae0d9b3f2df042445cc8433cf4" category="inline-link-macro-rx"></block></block>
   <block id="0789cade62ba5a348d7e1ed5a15e5429" category="summary">VMware Live Site Recovery 어플라이언스를 구축한 후에는 VMware Live Site Recovery 어플라이언스에 SRA를 구성해야 합니다. SRA 구성이 성공하면 VMware Live Site Recovery 어플라이언스가 SRA와 통신하여 재해 복구 관리를 수행할 수 있습니다. VMware Live Site Recovery 어플라이언스와 SRA 간의 통신을 활성화하려면 VMware vSphere 자격 증명(IP 주소 및 관리자 암호\)용 ONTAP 툴을 VMware Live Site Recovery 어플라이언스에 저장해야 합니다.</block>
   <block id="ca19ccb681ec240b3ba2bef453f35015" category="paragraph">VMware Live Site Recovery 어플라이언스를 구축한 후에는 VMware Live Site Recovery 어플라이언스에 SRA를 구성해야 합니다. SRA 구성이 성공하면 VMware Live Site Recovery 어플라이언스가 SRA와 통신하여 재해 복구 관리를 수행할 수 있습니다. VMware Live Site Recovery 어플라이언스와 SRA 간의 통신을 활성화하려면 VMware vSphere 자격 증명(IP 주소)용 ONTAP 툴을 VMware Live Site Recovery 어플라이언스에 저장해야 합니다.</block>
+  <block id="16f65f1a2c3859080a448540a2f81494" category="list-text"><block ref="daf4de58883c030f033f07e61debf025" prefix=" " category="inline-code"></block>에서 VMware vSphere용 ONTAP 툴에 대한 바이너리(_.ova_)와 서명된 인증서가 포함된 파일을<block ref="db8756d7f65d6a8e593e69ba45adbb2e" category="inline-link-rx"></block> 다운로드합니다.</block>
+  <block id="9ec5add7ee06ee04d0890fe8cedb44a5" category="list-text"><block ref="daf4de58883c030f033f07e61debf025" prefix=" " category="inline-code"></block>에서 VMware vSphere용 ONTAP 툴에 대한 바이너리(_.ova_)와 서명된 인증서가 포함된 파일을<block ref="db8756d7f65d6a8e593e69ba45adbb2e" category="inline-link-rx"></block> 다운로드합니다. 콘텐츠 라이브러리로 OVA를 가져온 경우 이 단계를 건너뛰고 콘텐츠 라이브러리에서 직접 배포할 수 있으므로 다음 단계를 진행할 수 있습니다.</block>
+  <block id="b0dfff6a1c3e295ea3b778c18fd97c19" category="paragraph">에서 _tar.gz_파일을 다운로드해야<block ref="2daaad32389df9c23111b0df1c3a53df" category="inline-link-rx"></block> 합니다.</block>
+  <block id="7f17c0be45130bf2b12d5bf5ec2ead98" category="list-text"><block ref="d6f1afa70d6145a212d9dc6bc8a2fa64" prefix=" " category="inline-code"></block>에서 SRA Adapter 파일을 다운로드해야<block ref="db8756d7f65d6a8e593e69ba45adbb2e" category="inline-link-rx"></block> 합니다.</block>
 </blocks>
