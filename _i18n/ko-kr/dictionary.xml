@@ -135,11 +135,7 @@
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">단계</block>
   <block id="01e377670806c0c1bb0a507160a3b7ad" category="paragraph">VMware vSphere용 ONTAP 툴의 구성 요소:</block>
   <block id="4c94c0434ea110b41df3e17bf583daa7" category="list-text">스토리지 정책 기반 관리</block>
-  <block id="74d56f13e9a7c977cac9a88a879fcbfc" category="paragraph">루트 개체는 보기 권한이 포함된 권한을 할당하는 데 권장되는 장소입니다.</block>
   <block id="02621f852bb8e8078b864aaa378a1b3b" category="paragraph">이 역할을 통해 스토리지 시스템을 추가할 수 있습니다.</block>
-  <block id="765b7167d2cfb7c36210a70c5d8b606e" category="list-text">스토리지 생성</block>
-  <block id="d91d511439023f9dc5e437233b815e8e" category="list-text">스토리지 수정</block>
-  <block id="3d384eb1ba36d273adab30ad3d265c2d" category="list-text">스토리지 폐기</block>
   <block id="f3c1d0e4118d5d9501e1a7aeed19d224" category="list-text">호스트 오류입니다</block>
   <block id="734be913391a1dc4dbeed479e524a09f" category="admonition">단일 노드 장애만 지원됩니다.</block>
   <block id="031f25fc50366090e766a7daac6c8eb8" category="list-text">네트워크 오류입니다</block>
@@ -148,26 +144,14 @@
   <block id="6645e0ebb53d4b6e68be7936af3a8039" category="doc">AutoSupport</block>
   <block id="31147c2932798eadd955620b17929169" category="paragraph">AutoSupport는 시스템의 상태를 능동적으로 모니터링하고 NetApp 기술 지원, 내부 지원 조직 및 지원 파트너에게 메시지를 자동으로 보내는 메커니즘입니다.</block>
   <block id="73d5b42012a1c21cf5bfd7b8d27dba86" category="paragraph">스토리지 시스템을 처음 구성할 때 AutoSupport가 기본적으로 설정됩니다. AutoSupport는 AutoSupport가 활성화된 후 24시간 후에 기술 지원 부서에 메시지를 보내기 시작합니다.</block>
-  <block id="103274bd7fa9aac4d19ecfb8c9451dce" category="summary">vCenter Server는 vSphere 객체에 대한 액세스를 제어할 수 있도록 역할 기반 액세스 제어(RBAC)를 제공합니다.</block>
-  <block id="d72aa008378f653922ff3dc6be92bb92" category="paragraph">vCenter Server는 vSphere 객체에 대한 액세스를 제어할 수 있도록 역할 기반 액세스 제어(RBAC)를 제공합니다. vCenter Server는 역할 및 권한이 있는 사용자 및 그룹 권한을 사용하여 인벤토리에서 다양한 수준으로 중앙 집중식 인증 및 권한 부여 서비스를 제공합니다. vCenter Server에는 RBAC 관리를 위한 5가지 주요 구성 요소가 있습니다.</block>
-  <block id="05bbb43b3d923283e0b6ffafd088f41f" category="cell">구성 요소</block>
   <block id="b5a7adde1af5c87d7fd797b6245c2a39" category="cell">설명</block>
   <block id="d4613ce1ce58f0172e8a4a07c9582cdf" category="cell">권한</block>
-  <block id="e78cf251dfa491b5ec249361b48c6f65" category="cell">권한은 vSphere에서 작업을 수행하기 위한 액세스를 설정하거나 거부합니다.</block>
   <block id="a5cd3ed116608dac017f14c046ea56bf" category="cell">역할</block>
-  <block id="32194064a810a5a489a1733d4e62a576" category="cell">역할에는 하나 이상의 시스템 권한이 포함되며, 여기서 각 권한은 시스템의 특정 개체 또는 개체 유형에 대한 관리 권한을 정의합니다. 사용자에게 역할을 할당하면 사용자는 해당 역할에 정의된 권한의 기능을 상속합니다.</block>
   <block id="b7f56258c47d620440751b7faddb209b" category="cell">사용자 및 그룹</block>
   <block id="d08ccf52b4cdd08e41cfb99ec42e0b29" category="cell">권한</block>
-  <block id="6cad2a8c2c098bc6095c180f24d6e985" category="cell">사용 권한을 통해 사용자 또는 그룹에 특정 작업을 수행하고 vCenter Server 내의 객체를 변경할 수 있는 권한을 할당할 수 있습니다. vCenter Server 사용 권한은 ESXi 호스트에 직접 로그인하는 사용자가 아니라 vCenter Server에 로그인하는 사용자에게만 영향을 줍니다.</block>
-  <block id="497031794414a552435f90151ac3b54b" category="cell">오브젝트</block>
-  <block id="344687b1f8337fc7dd37917a74d46f9a" category="cell">작업이 수행되는 엔티티입니다. VMware vCenter 객체는 데이터 센터, 폴더, 리소스 풀, 클러스터, 호스트, 및 VM을 지원합니다</block>
-  <block id="0f9feaf083615e8846e538d5b34566ac" category="section-title">vCenter Server에 대한 역할 할당 및 수정에 대한 주요 사항</block>
-  <block id="3314432e9743e55f152832883016d5bb" category="paragraph">vSphere 객체 및 작업에 대한 액세스를 제한하려는 경우에만 vCenter Server 역할을 설정해야 합니다. 그렇지 않으면 관리자로 로그인할 수 있습니다. 이 로그인을 통해 모든 vSphere 객체에 자동으로 액세스할 수 있습니다.</block>
-  <block id="cf917d8457fcc174b9b969143eda5613" category="cell">* 역할 *</block>
   <block id="6d8ff32b9b51120334931b95633f779a" category="paragraph">에는 스토리지 용량 할당에 필요한 몇 가지 기본 vCenter Server 권한 및 ONTAP 툴별 권한이 나와 있습니다. 다음 작업을 수행할 수 있습니다.</block>
   <block id="b444bb84c6347f04bc0fe9b808470c02" category="list-text">새 데이터 저장소를 생성합니다</block>
   <block id="1b8a04f09ff55290753a17988fd53c2a" category="list-text">데이터 저장소를 관리합니다</block>
-  <block id="66dbc6e377d603cf1f5e9abf75b00fcf" category="section-title">ONTAP 스토리지 백 엔드 및 vSphere 객체에 대한 권한</block>
   <block id="8f7be3c874feb6ef0fd5f20afd8d5fbb" category="sidebar">VMware vSphere용 ONTAP 툴을 사용하면 vCenter Server 환경에서 가상 데이터 저장소를 구성, 관리 및 보호할 수 있습니다.</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">시작하십시오</block>
   <block id="da951ef1610be90b45b31baf7b25b179" category="sidebar">VMware vSphere용 ONTAP 툴에 대해 자세히 알아보십시오</block>
@@ -176,7 +160,6 @@
   <block id="dfcc398099d6a64026e51ab282e16253" category="sidebar">더 많은 리소스</block>
   <block id="0460583622f03a52d7693094d6fa2452" category="sidebar">개념</block>
   <block id="99da96b7c57595264a2d5f3ba294a0af" category="sidebar">역할 기반 액세스 제어</block>
-  <block id="31b887a5d4bfcf42237476c03005131d" category="paragraph">사용자 및 그룹은 vCenter Server 역할의 일부가 되어 역할에 액세스할 수 있습니다.</block>
   <block id="99c32328fc9914bedd703b6f5db4812f" category="list-text">을 사용하여 ONTAP 도구에서 ONTAP 권한 파일을 다운로드해야 합니다<block ref="7f922dba99ab8084641c5a38eed2214d" prefix=" " category="inline-code"></block>.</block>
   <block id="198ed9d33d0ea5ef2037f6497ce3a42f" category="summary">VMware vSphere용 ONTAP 툴은 NetApp 스토리지 시스템에 가장 적합한 ESXi 호스트 다중 경로 설정과 HBA 시간 초과 설정을 확인하고 설정합니다.</block>
   <block id="90844ba0025d985c5a9dd619dcba22e2" category="doc">ESXi 서버 다중 경로 및 시간 초과 설정을 구성합니다</block>
@@ -469,24 +452,9 @@ sudo rke2-uninstall.sh (모든 VM).</block>
   <block id="e57ef79b89d008b00ca33aabc087c40e" category="list-text">기본 보호 및 재해 복구와 같은 가상 시스템 기능</block>
   <block id="a18d382710dfe7b582ca9e2bd707d11e" category="list-text">VM 세부 관리를 위한 VASA 공급자</block>
   <block id="410414402089bdca884f44be14088a59" category="list-text">SRA(Storage Replication Adapter)</block>
-  <block id="eaa87b49e42055b06bb53bce22bade66" category="doc">VMware vSphere용 ONTAP 툴의 역할 기반 액세스 제어 개요</block>
-  <block id="6492bdbe9707e60be4757f24352e6254" category="cell">사용자 및 그룹은 AD(Active Directory)에서 역할을 할당하기 위한 사용 권한에 사용됩니다. vCenter Server에는 사용할 수 있는 고유한 로컬 사용자 및 그룹이 있습니다.</block>
-  <block id="9b21b9286bc8af38838701ee5b96185b" category="paragraph">작업을 성공적으로 완료하려면 적절한 vCenter Server RBAC 역할이 있어야 합니다. 작업 중에 VMware vSphere용 ONTAP 툴은 사용자의 ONTAP 권한을 확인하기 전에 사용자의 vCenter Server 역할을 확인합니다.</block>
-  <block id="63f592b3bb7f4f2f020b53a89fe41a97" category="admonition">vCenter Server 역할은 VMware vSphere vCenter 사용자용 ONTAP 툴에 적용되며 관리자에게는 적용되지 않습니다. 기본적으로 관리자는 제품에 대한 모든 액세스 권한을 가지며 할당된 역할이 필요하지 않습니다.</block>
-  <block id="57193097a50e1a48745a2b20b325a3e9" category="paragraph">역할을 할당하는 위치에 따라 사용자가 수행할 수 있는 VMware vSphere 작업에 대한 ONTAP 툴이 결정됩니다. 언제든지 하나의 역할을 수정할 수 있습니다.
-역할 내의 권한을 변경하는 경우 해당 역할과 연결된 사용자는 로그아웃한 다음 다시 로그인하여 업데이트된 역할을 사용하도록 설정해야 합니다.</block>
-  <block id="399819e3f9493a6dd1ca2c92fbf64730" category="section-title">VMware vSphere용 ONTAP 툴과 함께 패키지로 제공되는 표준 역할입니다</block>
-  <block id="092c3cc85864d9e570f219b8f2d0300f" category="paragraph">vCenter Server 권한 및 RBAC를 간편하게 사용할 수 있도록 VMware vSphere용 ONTAP 툴은 VMware vSphere 역할에 사용할 수 있는 표준 ONTAP 툴을 제공합니다. 이 툴을 사용하면 VMware vSphere 작업에 대한 주요 ONTAP 툴을 수행할 수 있습니다. 또한 정보를 볼 수는 있지만 작업을 수행할 수 없는 읽기 전용 역할도 있습니다.</block>
   <block id="bf4c81fa7ba63639b09571cecd64f47b" category="cell">VMware vSphere 관리자용 NetApp ONTAP 툴</block>
-  <block id="a01664a084e564d30d3380d980bf3f1e" category="cell">VMware vSphere 작업을 위한 일부 ONTAP 툴을 수행하는 데 필요한 모든 기본 vCenter Server 권한 및 ONTAP 툴별 권한을 제공합니다.</block>
   <block id="b2cd18c44875bb3f426decbafad3b8e6" category="cell">VMware vSphere 읽기 전용용 NetApp ONTAP 툴</block>
   <block id="172e99eeccf15776434aac31db2a4a6e" category="cell">ONTAP 도구에 대한 읽기 전용 액세스를 제공합니다. 이러한 사용자는 액세스가 제어되는 VMware vSphere 작업에 대한 ONTAP 툴을 수행할 수 없습니다.</block>
-  <block id="84cc387d76d323daccad4d96bdd0092c" category="cell">VMware vSphere 프로비저닝용 NetApp ONTAP 툴</block>
-  <block id="95c496cc27d9993938504d08343b90a2" category="paragraph">ONTAP tools Manager 관리자 역할이 vCenter Server에 등록되지 않았습니다. 이 역할은 ONTAP 도구 관리자에 따라 다릅니다.</block>
-  <block id="07f2a14c1a836ac33b378595110abea2" category="paragraph">회사에서 VMware vSphere 역할에 대한 표준 ONTAP 툴보다 더 엄격한 역할을 구현해야 하는 경우 VMware vSphere 역할용 ONTAP 툴을 사용하여 새로운 역할을 생성할 수 있습니다.</block>
-  <block id="ddb49621f905826ec22a5fb8d52fc78f" category="paragraph">이 경우 VMware vSphere 역할에 필요한 ONTAP 툴을 클론 생성한 다음 사용자가 필요로 하는 권한만 갖도록 클론 생성된 역할을 편집합니다.</block>
-  <block id="abb97deac1e9b2cb4179a0aee04823b9" category="paragraph">vCenter Server 권한이 충분하면 VMware vSphere용 ONTAP 툴이 스토리지 백엔드 자격 증명(사용자 이름 및 암호)과 연결된 ONTAP RBAC 권한(ONTAP 역할)을 확인합니다. 해당 스토리지 백엔드에서 VMware vSphere용 ONTAP 툴에 필요한 스토리지 작업을 수행할 수 있는 권한이 있는지 여부를 확인합니다. 올바른 ONTAP 권한이 있는 경우 에 액세스할 수 있습니다
-스토리지가 백엔드로 제공되고 VMware vSphere 작업에 ONTAP 툴을 사용할 수 있습니다. ONTAP 역할에 따라 스토리지 백엔드에서 수행할 수 있는 VMware vSphere 작업에 대한 ONTAP 툴이 결정됩니다.</block>
   <block id="eb59b3767616ff613c26e1d7f5451f0e" category="summary">다음 섹션에서는 이 문서에 사용된 핵심 개념과 용어에 대해 설명합니다.</block>
   <block id="9ffd131623ad515701813a71121ab8a3" category="doc">주요 개념 및 용어</block>
   <block id="d8656f55a37738b40be6ef5801f660e5" category="section-title">CA(인증 기관)</block>
@@ -514,64 +482,15 @@ sudo rke2-uninstall.sh (모든 VM).</block>
   <block id="db07ee4ed1ddb3f939892b140a23cd3a" category="paragraph">VVol 데이터 저장소는 VASA Provider에 의해 생성되고 유지되는 VVol 컨테이너의 논리적 데이터 저장소 표현입니다.</block>
   <block id="6772d57ff19ee93553d25bf56f393392" category="section-title">제로 RPO</block>
   <block id="b528f501fc8de0d95230ff4729b26803" category="paragraph">RPO는 지정된 시간 동안 허용되는 것으로 간주되는 데이터 손실의 양인 복구 시점 목표를 나타냅니다. RPO가 0이면 데이터 손실이 허용되지 않습니다.</block>
-  <block id="e7515d72c1e04da864284dddc38af8e3" category="summary">VMware vSphere 작업에 사용되는 ONTAP 툴이 다르면 VMware vSphere용 ONTAP 툴과 기본 vCenter Server 권한에 대해 서로 다른 권한을 조합해야 합니다.</block>
-  <block id="ad28e08c64876f0d6306fbeecbc9945d" category="doc">ONTAP 툴에 필요한 VMware vSphere 작업에 필요한 권한</block>
-  <block id="076e2508337120e7d5752f5ce8c6c43b" category="paragraph">보기 * 권한에서 VMware vSphere용 ONTAP 툴에 액세스할 수 있습니다. 이 권한을 사용하여 VMware vSphere용 ONTAP 툴 내에서 작업을 수행할 수 없습니다. VMware vSphere 작업에 대한 ONTAP 툴을 수행하려면 해당 작업에 대한 올바른 ONTAP 툴과 기본 vCenter Server 권한이 있어야 합니다.</block>
-  <block id="d0a94c83b68b4f28f7679d108cca67b8" category="paragraph">보기 권한을 다른 vSphere 객체 레벨에 할당할 수 있지만, 이렇게 하면 보고 사용할 수 있는 VMware vSphere 메뉴에 대한 ONTAP 툴이 제한됩니다.</block>
-  <block id="3413a918b6452d3e60e37eb18410f94c" category="summary">vCenter Server 사용 권한을 사용할 때는 몇 가지 주요 사항을 염두에 두어야 합니다. VMware vSphere 작업을 위한 ONTAP 도구의 성공 여부는 권한이 할당된 위치 또는 권한이 수정된 후 사용자가 수행한 작업에 따라 달라집니다.</block>
-  <block id="01f81b02c1a4020173a9881080d42f3d" category="doc">vCenter Server에 대한 사용 권한을 할당하고 수정합니다</block>
   <block id="c8ae2664c1636dc82742c9e4a7d61618" category="section-title">권한 할당</block>
-  <block id="930763c1a1aa2d8dac9f593b88cc97f3" category="paragraph">vSphere 객체 및 작업에 대한 액세스를 제한하려면 vCenter Server 권한만 설정하면 됩니다. 그렇지 않으면 관리자로 로그인할 수 있습니다. 이 로그인을 통해 모든 vSphere 객체에 자동으로 액세스할 수 있습니다.</block>
-  <block id="ec75505e8ca42120049536474d01d15a" category="paragraph">권한을 할당하는 위치에 따라 사용자가 수행할 수 있는 VMware vSphere 작업에 대한 ONTAP 툴이 결정됩니다.</block>
-  <block id="29f32952e4fe0a781b4c32b95c7cc970" category="paragraph">작업이 완료되도록 하려면 루트 개체와 같은 상위 수준에서 사용 권한을 할당해야 하는 경우가 있습니다. 이 경우는 작업에 특정 vSphere 객체에 적용되지 않는 권한(예: 작업 추적)이 필요하거나 vSphere가 아닌 객체(예: 스토리지 시스템)에 필요한 권한이 적용되는 경우에 해당합니다.</block>
-  <block id="71eb8c58c726e9561cc5250bbf77248e" category="paragraph">이러한 경우 사용 권한을 설정하여 자식 엔터티가 사용 권한을 상속할 수 있습니다. 하위 엔티티에 다른 권한을 할당할 수도 있습니다. 자식 엔터티에 할당된 권한은 항상 부모 엔터티로부터 상속된 권한을 재정의합니다. 즉, 자식 엔터티에 권한을 부여하여 루트 개체에 할당되고 자식 엔터티에 의해 상속되는 권한의 범위를 제한할 수 있습니다.</block>
-  <block id="3cfc0fca04f11488b56caab42cdd61d4" category="admonition">회사의 보안 정책에 더 제한적인 권한이 필요한 경우를 제외하고 루트 개체(루트 폴더라고도 함)에 권한을 할당하는 것이 좋습니다.</block>
-  <block id="65e2bf8aa80dc9818c751f89f6af711e" category="section-title">사용 권한 및 비 vSphere 객체</block>
-  <block id="60d77703ef468312376aed86c6291538" category="paragraph">생성한 권한은 vSphere가 아닌 객체에 적용됩니다. 예를 들어, 스토리지 시스템은 vSphere 객체가 아닙니다. 스토리지 시스템에 권한이 적용되는 경우 해당 권한을 할당할 수 있는 vSphere 객체가 없으므로 VMware vSphere 루트 객체용 ONTAP 툴에 해당 권한이 포함된 권한을 할당해야 합니다.</block>
-  <block id="cbed07d432de27b73e998073e1519463" category="paragraph">예를 들어, VMware vSphere용 ONTAP 툴 권한 "스토리지 시스템 추가/수정/건너뛰기"와 같은 권한을 포함하는 모든 권한은 루트 객체 레벨에서 할당되어야 합니다.</block>
-  <block id="b9fb193a2e0ec11e6325daf26766f10a" category="section-title">권한을 수정합니다</block>
-  <block id="a8e01cabe9b5f1e74700dfe84ecb64df" category="paragraph">언제든지 하나의 권한을 수정할 수 있습니다.</block>
-  <block id="738c71d468b929e0b80b012e95674531" category="paragraph">권한 내에서 권한을 변경하는 경우 해당 권한과 연결된 사용자는 로그아웃한 다음 다시 로그인하여 업데이트된 권한을 활성화해야 합니다.</block>
   <block id="8199d65907d89211dfcf977c5adaa6ea" category="summary">VMware vSphere용 ONTAP 툴은 고가용성\(HA\) 구성을 지원하여 장애 발생 시 VMware vSphere용 ONTAP 툴의 중단 없는 기능을 제공합니다.</block>
   <block id="9624863e1bada8aa7f612552980aaa76" category="paragraph">VMware vSphere용 ONTAP 툴은 고가용성(HA) 구성을 지원하여 장애 발생 시 VMware vSphere용 ONTAP 툴의 중단 없는 기능을 지원합니다.</block>
   <block id="8064fc3703a869b3b7423038b89f7e8c" category="paragraph">고가용성(HA) 솔루션을 통해 다음과 같은 원인으로 인한 운영 중단으로부터 신속하게 복구할 수 있습니다.</block>
   <block id="9e376ae380add7745ba0f865258f10a7" category="paragraph">VMware vSphere용 ONTAP 툴에 고가용성(HA)을 제공하기 위해 추가 구성이 필요하지 않습니다.</block>
   <block id="ab797bcbadd3dbc9bd870404057111f1" category="admonition">VMware vSphere용 ONTAP 툴은 vCenter HA를 지원하지 않습니다.</block>
-  <block id="a3a3f39887f64ae51ced6d024f11ac31" category="summary">vCenter Server는 권한이 아닌 권한을 인식합니다. 각 vCenter Server 권한은 세 가지 구성 요소로 구성됩니다.</block>
-  <block id="054195114e28f4a480374b34e3d89663" category="doc">vCenter Server 권한의 구성 요소입니다</block>
-  <block id="5c88132196c6909932172f7c24e72f30" category="paragraph">vCenter Server에는 다음과 같은 구성 요소가 있습니다.</block>
-  <block id="e30cdcbd3580fa95d30eac8911c6dc96" category="list-text">하나 이상의 권한(역할)</block>
-  <block id="62fa3cacab7eb182cc3f1bb8f5497415" category="paragraph">권한은 사용자가 수행할 수 있는 작업을 정의합니다.</block>
-  <block id="bb75957d6dfbcb3803abbc7ab35a2971" category="list-text">vSphere 객체입니다</block>
-  <block id="f764cca89b5f9c76bc996c2837e9ba2c" category="paragraph">개체는 작업의 대상입니다.</block>
-  <block id="1413241f9b9207ddb78c282c13edb014" category="list-text">사용자 또는 그룹</block>
-  <block id="debdb3ce4a86d0a653cb9af2997ed87b" category="paragraph">사용자 또는 그룹은 작업을 수행할 수 있는 사용자를 정의합니다.</block>
-  <block id="83002a8f3da272c6326e5e31c94c7134" category="admonition">이 다이어그램에서 회색 상자는 vCenter Server에 있는 구성 요소를 나타내고 흰색 상자는 vCenter Server가 실행 중인 운영 체제에 있는 구성 요소를 나타냅니다.</block>
-  <block id="c044992cd80fcb18a780756977b6bc3f" category="inline-image-macro">권한 구성 요소 그림</block>
-  <block id="b96085011a4e0805bceab50863c6d6a7" category="paragraph">VMware vSphere용 ONTAP 툴에는 두 가지 유형의 권한이 연결됩니다.</block>
   <block id="ac38773d017495a97d5b88f242578cb8" category="list-text">기본 vCenter Server 권한</block>
-  <block id="812c5d24b89720dbab0e021d979b0bdf" category="paragraph">이러한 권한은 vCenter Server와 함께 제공됩니다.</block>
   <block id="c583b0e017739fb649bcc5aa5ba5619c" category="list-text">ONTAP 도구별 권한</block>
-  <block id="88483b63289d05b7c95896b86e9a811f" category="paragraph">이러한 권한은 VMware vSphere 작업에 대한 특정 ONTAP 툴에 대해 정의됩니다. VMware vSphere용 ONTAP 툴에만 해당됩니다.</block>
-  <block id="e6849a5c9bef90c880922dccbc71793b" category="paragraph">VMware vSphere 작업을 위한 ONTAP 툴에는 ONTAP 툴별 권한과 vCenter Server 기본 권한이 모두 필요합니다. 이러한 권한은 사용자에게 ""역할""을 구성합니다. 권한은 여러 권한을 가질 수 있습니다. 이러한 권한은 vCenter Server에 로그인한 사용자를 위한 것입니다.</block>
-  <block id="5e4a27fe472e02379e0fad15d3b8be53" category="admonition">VMware vSphere용 ONTAP 툴은 vCenter Server RBAC ONTAP 작업을 간소화하기 위해 VMware vSphere 작업에 필요한 모든 ONTAP 툴과 기본 권한을 포함하는 여러 가지 표준 역할을 제공합니다.</block>
-  <block id="a61c7e49f2d62469efe4be0dd2d42a28" category="paragraph">권한 내에서 권한을 변경하면 해당 권한과 연결된 사용자가 로그아웃한 다음 로그인하여 업데이트된 권한을 활성화해야 합니다.</block>
   <block id="0c26eb3da0cc8bb038a438623b92ece4" category="section-title">vSphere 객체</block>
-  <block id="ce0f8ed3eb5e44bde1c81a61f9bd5f2f" category="paragraph">Active Directory(또는 로컬 vCenter Server 머신)를 사용하여 사용자 및 사용자 그룹을 설정할 수 있습니다. 그런 다음 vCenter Server 권한을 사용하여 이러한 사용자 또는 그룹이 VMware vSphere 작업에 대한 특정 ONTAP 툴을 수행할 수 있도록 액세스 권한을 부여할 수 있습니다.</block>
-  <block id="602291944388a73cbe9572d935cac7b1" category="admonition">이러한 vCenter Server 사용 권한은 VMware vSphere vCenter 사용자용 ONTAP 툴에 적용되며, VMware vSphere 관리자용 ONTAP 툴에는 적용되지 않습니다. 기본적으로 VMware vSphere 관리자용 ONTAP 툴은 제품에 대한 모든 액세스 권한을 가지며 해당 툴에 할당된 권한이 필요하지 않습니다.</block>
-  <block id="c3a3dd532edfb82b4e332bc19f333c01" category="paragraph">사용자 및 그룹에 할당된 역할이 없습니다. vCenter Server 권한의 일부이기 때문에 역할에 액세스할 수 있습니다.</block>
-  <block id="2d847d92362470bf79aa0427e1453c96" category="summary">VMware vSphere용 ONTAP 툴 및 역할 기반 액세스 제어\(RBAC\)로 작업할 때 권장되는 몇 가지 ONTAP 역할을 설정할 수 있습니다. 이러한 역할에는 VMware vSphere 작업을 위해 ONTAP 툴을 통해 실행되는 필수 스토리지 작업을 수행하는 데 필요한 ONTAP 권한이 포함됩니다.</block>
-  <block id="ffb080dcf51bd945ecc0be6bb66c6e3a" category="doc">VMware vSphere용 ONTAP 툴에 대해 권장되는 ONTAP 역할</block>
-  <block id="9e1206eb5bee69c287327f64ae7f2c30" category="paragraph">VMware vSphere 및 역할 기반 액세스 제어(RBAC)에 대한 ONTAP 툴로 작업하기 위해 권장되는 여러 ONTAP 역할을 설정할 수 있습니다. 이러한 역할에는 VMware vSphere 작업을 위해 ONTAP 툴에서 실행되는 스토리지 작업을 수행하는 데 필요한 ONTAP 권한이 포함됩니다.</block>
-  <block id="ceda4dc6f91e16840d542d582e38fe0e" category="paragraph">새로운 사용자 역할을 생성하려면 ONTAP를 실행하는 스토리지 시스템의 관리자로 로그인해야 합니다. ONTAP 시스템 관리자 9.8P1 이상을 사용하여 ONTAP 역할을 생성할 수 있습니다.</block>
-  <block id="c6c23d6afef1eec90994809adb35c625" category="paragraph">각 ONTAP 역할에는 역할의 자격 증명을 구성하는 연결된 사용자 이름 및 암호 쌍이 있습니다. 이러한 자격 증명을 사용하여 로그인하지 않으면 해당 역할과 연결된 스토리지 작업에 액세스할 수 없습니다.</block>
-  <block id="69644a6f1157b2daba1739ea376a5e8a" category="paragraph">보안 조치로서 VMware vSphere 관련 ONTAP 역할에 대한 ONTAP 툴은 계층적으로 정렬됩니다. 즉, 첫 번째 역할이 가장 제한적이며 VMware vSphere 스토리지 작업을 위한 가장 기본적인 ONTAP 툴 세트와 관련된 권한만 가집니다. 다음 역할에는 자체 권한 및 이전 역할과 연결된 모든 권한이 포함됩니다. 각 추가 역할은 지원되는 스토리지 작업과 관련하여 덜 제한적입니다.</block>
-  <block id="f74310ba13bf8cb3ecfe7ad2cee5538a" category="paragraph">다음은 VMware vSphere용 ONTAP 툴을 사용할 때 권장되는 ONTAP RBAC 역할 중 일부입니다. 이러한 역할을 생성한 후 가상 시스템 프로비저닝과 같이 스토리지와 관련된 작업을 수행해야 하는 사용자에게 역할을 할당할 수 있습니다.</block>
-  <block id="98dcf1a3ea14d2dcf65106ad521efae4" category="cell">* 권한 *</block>
-  <block id="1958a2c28b13115859c67a58b105f27c" category="cell">이 역할을 사용하여 스토리지를 생성할 수 있습니다. 이 역할에는 검색 역할과 연결된 모든 권한도 포함됩니다.</block>
-  <block id="86087fc8fd9dd51486dc3c430bf6abac" category="cell">이 역할을 사용하여 스토리지를 수정할 수 있습니다. 이 역할에는 검색 역할 및 스토리지 생성 역할과 연결된 모든 권한도 포함됩니다.</block>
-  <block id="a62ba12e7d9cf0e95b53a7ef0ccc6987" category="cell">이 역할을 사용하면 스토리지를 제거할 수 있습니다. 이 역할에는 검색 역할, 스토리지 생성 역할 및 스토리지 수정 역할과 연결된 모든 권한도 포함됩니다.</block>
-  <block id="9aba481264947da03013bacc0bdb5337" category="paragraph">VMware vSphere용 ONTAP 툴을 사용하는 경우에는 PBM(정책 기반 관리) 역할도 설정해야 합니다. 이 역할을 통해 스토리지 정책을 사용하여 스토리지를 관리할 수 있습니다. 이 역할을 수행하려면 "Discovery" 역할도 설정해야 합니다.</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="list-title">시작하기 전에</block>
   <block id="957a8c35c28e967701ff975f1d7182d5" category="section-title">HTTP 메서드</block>
   <block id="7528035a93ee69cedb1dbddb2f0bfcc8" category="cell">가져오기</block>
@@ -785,9 +704,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="1608a10fc8319b14c6c50a77edab9e7c" category="sidebar">ESXi 호스트 설정을 수정합니다</block>
   <block id="ce0ce3ea98d033e77751261b2720fefe" category="sidebar">암호 관리</block>
   <block id="ee68e5b99222bbc29a480fcb0d1d6ee2" category="sidebar">필수 구성 요소</block>
-  <block id="3b878279a04dc47d60932cb294d96259" category="sidebar">개요</block>
-  <block id="6bc1d2c44eecf063e620d732e6c3e492" category="sidebar">vCenter Server 사용 권한</block>
-  <block id="a9f3de4f2df78227aea2ac4a6b2e7aef" category="sidebar">권장되는 ONTAP 역할</block>
   <block id="721041095b64df665034c0b19c967475" category="sidebar">VMware vSphere용 ONTAP 툴의 고가용성</block>
   <block id="f724dfae8a2bb3b34e049dcedf88d10d" category="sidebar">데이터 저장소와 가상 머신을 보호합니다</block>
   <block id="25890161c3df1f2618234e8f48e2c18b" category="sidebar">확장성이 높은 환경에 맞게 SRA를 구성합니다</block>
@@ -869,7 +785,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="207c00a73dde0270cc0fbc7ce9c5f2fd" category="list-text">vCenter 자격 증명을 변경하려면 를<block ref="d3d9446802a44259755d38e6d163e820" prefix=" " category="inline-code"></block> 입력합니다.</block>
   <block id="ab475951501b4995dc2913e61372d546" category="section-title">이중 스택</block>
   <block id="6fad70424d056d4284134202caa28cae" category="paragraph">이중 스택 네트워크는 IPv4 및 IPv6 주소를 동시에 사용할 수 있도록 지원하는 네트워킹 환경입니다.</block>
-  <block id="38fbb1e19cdf2b31cbfb571328fbea35" category="paragraph"><block ref="38fbb1e19cdf2b31cbfb571328fbea35" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c44d290e1f1de6d718f00f72c70dbd6b" category="paragraph">호스트 클러스터 레벨에서 데이터 저장소를 생성하면 데이터 저장소가 대상의 모든 호스트에 생성되고 마운트되며 현재 사용자에게 실행 권한이 있는 경우에만 작업이 활성화됩니다.</block>
   <block id="259450d9669b66ac4364e9fcbb6c06e6" category="list-text">Name and Protocol * 창에서 데이터스토어 이름, 크기 및 프로토콜 정보를 입력합니다. 고급 옵션에서 * Datastore cluster * 및 * Kerberos Authentication * 을 선택합니다.</block>
   <block id="5541521d8d465590f0919510f29154b2" category="summary">VMware vSphere용 ONTAP 툴을 구축하기 위한 구성 제한</block>
@@ -1107,7 +1022,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="234e9bf11d28f2eb5743a4afd467b352" category="paragraph">항목에서 언급한 단계를 실행했어야 <block ref="63dec5e0603452dbccad6eca584eafe1" category="inline-link-macro-rx"></block>합니다.</block>
   <block id="ea3aed5969a29eebb3849662acbdc1ca" category="list-text">다음 명령을 실행하여 VMware Live Site Recovery 시스템 폴더 캐시된 ONTAP tools 사용자 이름 암호를 삭제합니다.</block>
   <block id="12aad99311cc30ce7ff1a450a29c3ec0" category="list-text">VMware Live Site Recovery 어레이 관리자를 사용하여 보호 사이트와 복구 사이트를 페어링해야 합니다.</block>
-  <block id="c8af2a359991324c5027f67981fcf118" category="sidebar">VMware vSphere 10.1용 ONTAP 툴 설명서</block>
   <block id="425e3f9f511fc3cc32fb57688da1ec81" category="sidebar">VMware vSphere 9용 ONTAP 툴의 이전 버전에 대한 설명서</block>
   <block id="ee3ab12b14efcd93221e2e76410a3142" category="sidebar">ONTAP 지원 VMware vSphere에 대해 자세히 알아보십시오</block>
   <block id="c81176933931ab131bb0e0556e02bad1" category="paragraph">VMFS(Virtual Machine File System)는 VMware vSphere 환경에 가상 머신 파일을 저장하도록 특별히 설계된 클러스터 파일 시스템입니다. 여러 ESXi 호스트가 동일한 가상 머신 파일에 동시에 액세스할 수 있으므로 vMotion 및 High Availability 같은 기능을 사용할 수 있습니다.</block>
@@ -1179,7 +1093,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="e3d3af7525d3e3fb797e7dad595bc6a3" category="section-title">복구 지점 목표(RPO)</block>
   <block id="881eb19c557d05be93005ed4bcf1f120" category="paragraph">RPO는 데이터가 백업 또는 복제되는 빈도를 나타내는 척도입니다. 운영 중단 후 비즈니스 운영을 재개하기 위해 데이터를 복구해야 하는 시점을 나타냅니다. 예를 들어 조직의 RPO가 4시간인 경우 재해 시 최대 4시간의 데이터 손실을 허용할 수 있습니다.</block>
   <block id="1f8552f10eb7513163cf1762849c2bcd" category="list-text">admin Privileges를 사용하여 클러스터에 로그인합니다. 사용자를 구성하려면 다음 단계를 수행하십시오.</block>
-  <block id="9c275e19e563a19853ce98157a4409c7" category="admonition">제거 작업은 ONTAP 도구 역할을 제거하지 않지만 ONTAP 도구 특정 Privileges의 지역화된 이름을 제거하고 접두사를 추가합니다<block ref="9de395ca99b82f3f1184378e489fdde5" prefix=" " category="inline-code"></block>. VMware vSphere용 ONTAP 툴을 다시 설치하거나 최신 버전으로 업그레이드하면 VMware vSphere 역할에 대한 모든 표준 ONTAP 툴과 ONTAP 툴 관련 권한이 복원됩니다.</block>
   <block id="bbeec4867a4357c871f33630e5eb711f" category="list-text">admin Privileges를 사용하여 클러스터에 로그인합니다.</block>
   <block id="137ef7229d434ea827c18ad48fbf2401" category="cell">/api/security/accounts</block>
   <block id="b8c9edfa0cdda60d394e99a82fdfe9e8" category="cell">권한 검색</block>
@@ -1456,7 +1369,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="528fcc96313b41a079cf4a618d21bc56" category="list-text">4 * 를 입력하여 * 지원 및 진단 * 메뉴를 선택합니다.</block>
   <block id="69fc33706a999a8497eea8a0a1410092" category="list-text">다음 명령을 실행합니다</block>
   <block id="4c4796167c3422541c6e31f440e40302" category="list-text">ONTAP 사용자 이름과 암호를 입력합니다</block>
-  <block id="3c8480343462c93f8ec9ed8f6c4a4282" category="sidebar">VMware vSphere 10.2용 ONTAP 툴 설명서</block>
   <block id="2e0332b2709dcff7df5d28c654c54066" category="sidebar">VMware vSphere 10.3용 ONTAP 툴</block>
   <block id="3d7d171ecad1cba0c2d8d707b648b023" category="sidebar">보호 및 복구 사이트를 구성합니다</block>
   <block id="039f647b3ad55c89a6a5ff0d6109bd4f" category="paragraph">VMware vSphere 10.3용 ONTAP 툴은 VMFS, VVOL 데이터 저장소와 해당 VM에 대한 관측성 메트릭 지원을 확장합니다.</block>
@@ -1668,7 +1580,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="a1f81812b9996ffae82950938651b560" category="paragraph">이렇게 하면 VMware vSphere 10.1/10.2용 ONTAP 툴에 사용된 ONTAP의 Trident 볼륨이 모두 삭제됩니다.</block>
   <block id="9c1b85c4b3c7f912b4954489e7d9f1ad" category="list-text">개별 API 호출의 예로, 아래로 스크롤하여 * vCenters * 범주로 이동한 후 끝점 옆에 있는 * Get * 을 선택합니다<block ref="22d8515b1a0806aac1067186e4429b4c" prefix=" " category="inline-code"></block></block>
   <block id="ef78cf93c4b4adc658c8565b28ac853c" category="paragraph">액세스 토큰을 요청하고 사용하는 예는 을 <block ref="02f9c42fec62e806982e89939749ac1d" category="inline-link-macro-rx"></block>참조하십시오.</block>
-  <block id="82723240a39079ab06612c9bd8a4524f" category="paragraph">vSphere Client 홈 페이지에서 * Roles * 를 선택하여 VMware vSphere 표준 역할용 ONTAP 툴을 볼 수 있습니다. VMware vSphere용 ONTAP 툴이 제공하는 역할을 사용하면 다음 작업을 수행할 수 있습니다.</block>
   <block id="7b0f795e746611f8d000c88ef7404ee7" category="list-text">웹 브라우저에서 ONTAP 도구 관리자를 실행합니다.<block ref="77c71965079b644560fbebe7e17805d3" prefix=" " category="inline-code"></block></block>
   <block id="6700bd2d5a11f981faf541727c91e5eb" category="list-text">을 사용하여 vSphere Client에 로그인합니다<block ref="9ad784043785fc1c1be39efefce3e216" prefix=" " category="inline-code"></block></block>
   <block id="3a3cf1aabccd549ecea01e8e5bd01415" category="list-text">바로 가기 페이지의 플러그인 섹션에서 * NetApp ONTAP tools * 를 선택합니다.</block>
@@ -1929,9 +1840,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="fde1abb5537b55c34521d414267b3f70" category="section-title">ASA r2 시스템</block>
   <block id="bd605fff7af6a2da2d78ab96c4c19217" category="section-title">스토리지 백엔드</block>
   <block id="e11e4e825b2240bfaf05656d41f53cd9" category="paragraph">스토리지 백엔드는 ESXi 호스트가 가상 머신 파일, 데이터 및 기타 리소스를 저장하는 데 사용하는 기본 스토리지 인프라스트럭처입니다. 스토리지 백엔드를 사용하면 ESXi 호스트가 영구 데이터를 액세스하고 관리할 수 있으므로 가상화 환경에 필요한 스토리지 기능과 성능을 제공할 수 있습니다.</block>
-  <block id="7cdf42e875600623792db5729c81ff94" category="paragraph">VMware vSphere GUI용 ONTAP 툴에 액세스하려면 올바른 vSphere 객체 수준에서 제품 수준의 ONTAP 툴별 보기 권한이 할당되어 있어야 합니다. 이 권한 없이 로그인하면 VMware vSphere용 ONTAP Tools에서 NetApp 아이콘을 선택하면 오류 메시지가 표시되고 VMware vSphere용 ONTAP 툴에 액세스할 수 없습니다.</block>
-  <block id="c005a2f296e1f1b3a93d8cb2491ce926" category="paragraph">할당 수준에 따라 사용자 인터페이스에서 볼 수 있는 부분이 결정됩니다. 루트 객체(폴더)에 보기 권한을 할당하면 NetApp 아이콘을 선택하여 VMware vSphere용 ONTAP 툴을 시작할 수 있습니다.</block>
-  <block id="c1287de0652e56f6a72160899cfb2b87" category="paragraph">사용 권한은 vCenter Server, ESXi 호스트, 가상 머신, 데이터 저장소, 데이터 센터 및 폴더와 같은 vSphere 객체와 연결됩니다. 모든 vSphere 객체에 권한을 할당할 수 있습니다. vSphere 객체에 할당된 권한에 따라 vCenter Server는 해당 객체에 대해 수행할 수 있는 작업을 결정합니다. VMware vSphere 관련 작업에 사용되는 ONTAP 툴의 경우 사용 권한은 루트 폴더 레벨(vCenter Server)에서만 할당되고 검증되며 다른 엔터티에서는 할당되지 않습니다. VAAI 플러그인 작업을 제외하고 관련 ESXi 호스트에 대해 사용 권한이 검증됩니다.</block>
   <block id="a6fd0b4332e8ac1bd18da3d605f3f558" category="open-title">vSphere Client 사용자 인터페이스 사용</block>
   <block id="15d9ec0601efc7a09529f55671b2bf35" category="admonition">vSphere Client 사용자 인터페이스를 사용하여 스토리지 백엔드를 추가할 경우 VVol 데이터 저장소에서 SVM 사용자를 직접 추가할 수 없습니다.</block>
   <block id="1371ece860fedc2eae03b50872f67242" category="list-text">스토리지 백엔드를 추가하고 서버 IP 주소, 사용자 이름, 암호 및 포트 세부 정보를 제공합니다.</block>
@@ -2047,4 +1955,132 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="9ec5add7ee06ee04d0890fe8cedb44a5" category="list-text"><block ref="daf4de58883c030f033f07e61debf025" prefix=" " category="inline-code"></block>에서 VMware vSphere용 ONTAP 툴에 대한 바이너리(_.ova_)와 서명된 인증서가 포함된 파일을<block ref="db8756d7f65d6a8e593e69ba45adbb2e" category="inline-link-rx"></block> 다운로드합니다. 콘텐츠 라이브러리로 OVA를 가져온 경우 이 단계를 건너뛰고 콘텐츠 라이브러리에서 직접 배포할 수 있으므로 다음 단계를 진행할 수 있습니다.</block>
   <block id="b0dfff6a1c3e295ea3b778c18fd97c19" category="paragraph">에서 _tar.gz_파일을 다운로드해야<block ref="2daaad32389df9c23111b0df1c3a53df" category="inline-link-rx"></block> 합니다.</block>
   <block id="7f17c0be45130bf2b12d5bf5ec2ead98" category="list-text"><block ref="d6f1afa70d6145a212d9dc6bc8a2fa64" prefix=" " category="inline-code"></block>에서 SRA Adapter 파일을 다운로드해야<block ref="db8756d7f65d6a8e593e69ba45adbb2e" category="inline-link-rx"></block> 합니다.</block>
+  <block id="92b0e7888dea318ff0d52ecace485e8b" category="summary">역할 기반 액세스 제어(RBAC)는 조직 내 리소스에 대한 액세스를 제어하기 위한 보안 프레임워크입니다. RBAC는 개별 사용자에게 권한을 할당하는 대신 특정 수준의 권한을 사용하여 역할을 정의하여 관리를 단순화합니다. 정의된 역할이 사용자에게 할당되므로 오류 위험을 줄이고 조직 전체에서 액세스 제어 관리를 간소화할 수 있습니다.</block>
+  <block id="bc7d4efb983c07650bf67ebd23206b42" category="doc">VMware vSphere 10 RBAC용 ONTAP 툴에 대해 알아보십시오</block>
+  <block id="d4f28f897c6613f7cf374c4b672a42af" category="paragraph">RBAC 표준 모델은 여러 구현 기술 또는 복잡성 증가의 단계로 구성됩니다. 그 결과, 소프트웨어 공급업체와 고객의 요구사항에 따라 실제 RBAC 구축이 비교적 단순 배포에서 매우 복잡한 배포까지 그 범위가 다를 수 있습니다.</block>
+  <block id="768c252904fcf4ee8a7b04339470d9d4" category="section-title">RBAC 구성 요소</block>
+  <block id="3a45671de0dc0525b288d3633ab884e8" category="paragraph">개략적으로 보면 모든 RBAC 구현에 일반적으로 포함되는 여러 가지 구성 요소가 있습니다. 이러한 구성 요소는 권한 부여 프로세스를 정의하는 과정에서 서로 다른 방식으로 바인딩됩니다.</block>
+  <block id="d030a619fc394824cae6f9f006b210b2" category="paragraph">_privilege_는 허용하거나 거부할 수 있는 작업 또는 기능입니다. 파일을 읽는 기능과 같은 간단한 작업일 수도 있고 특정 소프트웨어 시스템에 특정한 추상적인 작업일 수도 있습니다. REST API 엔드포인트 및 CLI 명령에 대한 액세스를 제한하도록 Privileges를 정의할 수도 있습니다. 모든 RBAC 구현에는 사전 정의된 Privileges가 포함되며 관리자가 사용자 지정 Privileges을 생성할 수도 있습니다.</block>
+  <block id="0e54116025e006443a313af3422c73b6" category="paragraph">역할 _ 은(는) 하나 이상의 Privileges을 포함하는 컨테이너입니다. 역할은 일반적으로 특정 작업 또는 직무에 따라 정의됩니다. 사용자에게 역할이 할당되면 역할에 포함된 모든 Privileges가 사용자에게 부여됩니다. 또한 Privileges와 마찬가지로 구현에는 사전 정의된 역할이 포함되며 일반적으로 사용자 지정 역할을 생성할 수 있습니다.</block>
+  <block id="c8308b1eba7ba926a61b8fd802194386" category="paragraph-title">오브젝트</block>
+  <block id="251ba6a14d90c886235eec2229fddbaa" category="paragraph">_object_는 RBAC 환경 내에서 식별된 실제 또는 추상 리소스를 나타냅니다. Privileges를 통해 정의된 작업은 연결된 객체에서 또는 관련 객체에서 수행됩니다. 구현에 따라 Privileges 를 개체 형식 또는 특정 개체 인스턴스에 부여할 수 있습니다.</block>
+  <block id="d06c4b7230b78df6a13a1ffe93c68ea7" category="paragraph">_Users_는 인증 후 적용된 역할에 할당되거나 연결됩니다. 일부 RBAC 구현에서는 한 번에 하나의 역할만 사용자에게 할당할 수 있는 반면, 한 번에 하나의 역할만 활성 상태일 수 있는 역할도 있습니다. 역할을 _groups_에 할당하면 보안 관리를 더욱 간소화할 수 있습니다.</block>
+  <block id="74b037a49a7d27ecca7fc6857aedcd2a" category="paragraph">permission_은 사용자 또는 그룹과 역할을 객체에 바인딩하는 정의입니다. 사용 권한은 계층 구조에서 하위 개체가 선택적으로 상속할 수 있는 계층적 개체 모델에 유용할 수 있습니다.</block>
+  <block id="ecc206dfcc570366eb56c27d01c64234" category="section-title">2개의 RBAC 환경</block>
+  <block id="857ac2a8af334039722446a532094bd6" category="paragraph">VMware vSphere 10용 ONTAP 툴을 사용할 때는 두 가지 별개의 RBAC 환경을 고려해야 합니다.</block>
+  <block id="7b992155512beae7a0c0bcd838bf53bc" category="paragraph-title">VMware vCenter Server 를 참조하십시오</block>
+  <block id="a44122ce0420d82ffec8245eb58d1686" category="inline-link-macro">vCenter Server RBAC 환경</block>
+  <block id="abfe427299b92162e94931d6113396c6" category="paragraph">VMware vCenter Server의 RBAC 구현은 vSphere Client 사용자 인터페이스를 통해 노출된 객체에 대한 액세스를 제한하는 데 사용됩니다. VMware vSphere 10용 ONTAP 툴을 설치할 때 RBAC 환경이 확장되어 ONTAP 툴의 기능을 나타내는 추가 개체가 포함됩니다. 이러한 객체에 대한 액세스는 원격 플러그인을 통해 제공됩니다. 자세한  내용은 을 참조하십시오.<block ref="0dce39201791f8056b9c7e84d5c66f06" category="inline-link-macro-rx"></block></block>
+  <block id="dbc7df65565b4f36db0a469d1e54a440" category="paragraph-title">ONTAP 클러스터</block>
+  <block id="95efa80bc6e01f977e0f0ccd4a71490a" category="inline-link-macro">ONTAP RBAC 환경</block>
+  <block id="d5afa90f21ed3ed6f44619bc06967ae9" category="paragraph">VMware vSphere 10용 ONTAP 툴은 ONTAP REST API를 통해 ONTAP 클러스터에 연결하여 스토리지 관련 작업을 수행합니다. 스토리지 리소스에 대한 액세스는 인증 중에 제공된 ONTAP 사용자와 연결된 ONTAP 역할을 통해 제어됩니다. 자세한 내용은 을 <block ref="e4be7d0a80a9c4d84c7c1c04c147ff8e" category="inline-link-macro-rx"></block> 참조하십시오.</block>
+  <block id="8b25344f06ee105a716a7392efac0b3f" category="summary">ONTAP는 강력하고 확장 가능한 RBAC 환경을 제공합니다. RBAC 기능을 사용하여 REST API 및 CLI를 통해 노출되는 스토리지 및 시스템 작업에 대한 액세스를 제어할 수 있습니다. 이 환경을 VMware vSphere 10 구축용 ONTAP 툴과 함께 사용하기 전에 이 환경을 잘 아는 것이 좋습니다.</block>
+  <block id="ffb63b72d307f89b9034ca9eb9c65046" category="doc">VMware vSphere 10용 ONTAP 툴을 사용하는 ONTAP RBAC 환경</block>
+  <block id="4c095493a08eb39706180a8f9166adc3" category="section-title">관리 옵션 개요</block>
+  <block id="d4f827c0c7c9fb2e15e437f882df68ca" category="inline-link">ONTAP 자동화: RBAC 보안 개요</block>
+  <block id="54d793c5631c270bc5de979749809fd2" category="paragraph">ONTAP RBAC를 사용할 때는 환경 및 목표에 따라 몇 가지 옵션을 사용할 수 있습니다. 주요 행정 결정의 개요는 다음과 같다. 자세한 내용은 를<block ref="120c2c6e56fa9c261aa8c0c07fc333dd" category="inline-link-rx"></block> 참조하십시오.</block>
+  <block id="ee01143765aa7dfe1c8f38d4fba08c2f" category="admonition">ONTAP RBAC는 스토리지 환경에 맞게 조정되며 vCenter Server에 제공되는 RBAC 구현보다 더 간단합니다. ONTAP에서는 사용자에게 역할을 직접 할당합니다. ONTAP RBAC에서는 vCenter Server와 함께 사용되는 사용 권한 등 명시적 사용 권한을 구성할 필요가 없습니다.</block>
+  <block id="c06f60010bfa0d3998d5bbc662b880ed" category="paragraph-title">역할 유형 및 Privileges</block>
+  <block id="b7b5a206a6cae3234a904f8160b66b9e" category="paragraph">ONTAP 사용자를 정의할 때는 ONTAP 역할이 필요합니다. ONTAP 역할에는 두 가지 유형이 있습니다.</block>
+  <block id="50780f47f6839d47d60bc4555ee00c3f" category="list-text">휴식</block>
+  <block id="b020897c0b77687983b09de882280534" category="paragraph">나머지 역할은 ONTAP 9.6으로 도입되었으며, REST API를 통해 ONTAP에 액세스하는 사용자에게 일반적으로 적용된다. 이러한 역할에 포함된 Privileges는 ONTAP REST API 끝점에 대한 액세스 및 관련 작업의 측면에서 정의됩니다.</block>
+  <block id="1bfbcce75c3c9a52a464d4cb0984488a" category="list-text">기존</block>
+  <block id="dffa619f8403e2b2cb8724a4a4cda04e" category="paragraph">이는 ONTAP 9.6 이전에 포함된 레거시 역할입니다. 계속해서 RBAC의 기본 측면입니다. Privileges는 ONTAP CLI 명령에 대한 액세스 측면에서 정의됩니다.</block>
+  <block id="c97707263686600c7674280c234c5566" category="paragraph">나머지 역할은 최근에 도입되었지만 전통적인 역할에는 몇 가지 장점이 있습니다. 예를 들어, Privileges가 적용되는 개체를 보다 정확하게 정의하도록 추가 쿼리 매개 변수를 선택적으로 포함할 수 있습니다.</block>
+  <block id="5d113f2038d289f391614c39043629e8" category="paragraph-title">범위</block>
+  <block id="6ba94b087558d51e0653f055d89fd1e5" category="paragraph">ONTAP 역할은 두 가지 다른 범위 중 하나로 정의할 수 있습니다. 특정 데이터 SVM(SVM 레벨) 또는 전체 ONTAP 클러스터(클러스터 레벨)에 적용할 수 있습니다.</block>
+  <block id="4decfe07f6af497a150cb2dd84ce7618" category="paragraph-title">역할 정의</block>
+  <block id="71ce8e2978e352b6f5bb692e3f48b57a" category="paragraph">ONTAP는 클러스터와 SVM 레벨 모두에서 사전 정의된 역할 세트를 제공합니다. 사용자 지정 역할을 정의할 수도 있습니다.</block>
+  <block id="19f0e25901b006bda97a48b2d2f6e165" category="section-title">ONTAP REST 역할을 사용하여 작업합니다</block>
+  <block id="f9c8e8f0f77467890d2e7d7d0a646019" category="paragraph">VMware vSphere 10용 ONTAP 툴에 포함된 ONTAP REST 역할을 사용할 때는 몇 가지 사항을 고려해야 합니다.</block>
+  <block id="dc4c8b8f3e2d25c9c02701f2e4f4a5f6" category="paragraph-title">역할 매핑</block>
+  <block id="14347bc1ffea96e9ab9fb563020db667" category="paragraph">기존 역할을 사용하든 REST 역할을 사용하든 모든 ONTAP 액세스는 기본 CLI 명령을 기반으로 결정됩니다. 하지만 REST 역할의 Privileges는 REST API 엔드포인트의 관점에서 정의되기 때문에 ONTAP는 각 REST 역할에 대해 _mapped_trademic 역할을 생성해야 합니다. 따라서 각 REST 역할은 기본적인 기존 역할에 매핑됩니다. 이를 통해 ONTAP는 역할 유형에 관계없이 일관된 방식으로 액세스 제어 결정을 내릴 수 있습니다. 병렬 매핑된 역할은 수정할 수 없습니다.</block>
+  <block id="39af865fde550e697cea78c7cf019668" category="paragraph-title">CLI Privileges를 사용하여 REST 역할 정의</block>
+  <block id="2c5adc49ae85a10c71840d17103a3ef9" category="paragraph">ONTAP는 항상 CLI 명령을 사용하여 기본 레벨에서 액세스를 결정하므로 REST 엔드포인트 대신 CLI 명령 Privileges를 사용하여 REST 역할을 표현할 수 있습니다. 이 접근 방식의 한 가지 이점은 기존 역할에서 사용할 수 있는 추가 세분화입니다.</block>
+  <block id="1723772cd71ffc40ef36a464ac996953" category="paragraph-title">ONTAP 역할을 정의할 때의 관리 인터페이스입니다</block>
+  <block id="8b74f69bd0a99078b4c4c49ea8d7d099" category="inline-link-macro">VMware vSphere 10용 ONTAP 툴과 함께 ONTAP RBAC를 사용하십시오</block>
+  <block id="33de9a7c17ad95edd4bf87d2e32a7ab6" category="paragraph">ONTAP CLI 및 REST API를 사용하여 사용자와 역할을 생성할 수 있습니다. System Manager 인터페이스와 ONTAP Tools Manager를 통해 사용할 수 있는 JSON 파일을 사용하는 것이 더 편리합니다. 자세한 내용은 을 <block ref="cd4e0c522d130b8c0abe0fca11ee41a7" category="inline-link-macro-rx"></block> 참조하십시오.</block>
+  <block id="75b97d1a08ea05c79f1586fc8900cd8e" category="summary">VMware vSphere 10 RBAC를 운영 환경에서 사용하기 전에 ONTAP를 사용하여 구축하는 ONTAP 툴의 여러 측면을 고려해야 합니다.</block>
+  <block id="8bca7397193febb861597e2ecb032df9" category="section-title">구성 프로세스 개요</block>
+  <block id="5895a8b246dedec8e607b00c78dcaf2a" category="paragraph">VMware vSphere 10용 ONTAP 툴에는 사용자 지정 역할을 가진 ONTAP 사용자를 생성할 수 있는 지원이 포함되어 있습니다. 이 정의는 ONTAP 클러스터에 업로드할 수 있는 JSON 파일로 패키지됩니다. 사용자를 생성하고 환경 및 보안 요구에 맞게 역할을 조정할 수 있습니다.</block>
+  <block id="bb89f796a730c3146a98b69f62482e8d" category="paragraph">주요 구성 단계는 아래에 자세히 설명되어 있습니다. <block ref="b3debf9a0a4da8901422599f88761e9e" category="inline-link-macro-rx"></block>자세한 내용은 을 참조하십시오.</block>
+  <block id="28b866f285e4410c78d90e8cd0fda2d4" category="paragraph-title">1. 준비</block>
+  <block id="b680153df51e82ba263f4bcb7d5dd65d" category="paragraph">ONTAP 툴 관리자와 ONTAP 클러스터 모두에 대한 관리 자격 증명이 있어야 합니다.</block>
+  <block id="5fad7e68da310385f8f20a219196a7b4" category="paragraph-title">2. JSON 정의 파일을 다운로드합니다</block>
+  <block id="ed04383b924fe7780b87ffb754ffa018" category="paragraph">ONTAP 도구 관리자 사용자 인터페이스에 로그인한 후 RBAC 정의가 포함된 JSON 파일을 다운로드할 수 있습니다.</block>
+  <block id="a05c5ee8679155cb70def30bf43cccb1" category="paragraph-title">3. 역할이 있는 ONTAP 사용자를 생성합니다</block>
+  <block id="764285e36c0af4a82a910203c3b82632" category="paragraph">System Manager에 로그인한 후 사용자 및 역할을 생성할 수 있습니다.</block>
+  <block id="29f61373486f27633d96729ea473c9e7" category="list-text">왼쪽에서 * Cluster * 를 선택한 다음 * Settings * 를 선택합니다.</block>
+  <block id="68ef81e78bc386790e42bd6b1c658d2b" category="list-text">아래로 스크롤하여 * 사용자 및 역할 * 을 클릭합니다<block ref="45858e136decb60b1d8904129517fe57" prefix=" " category="inline-code"></block>.</block>
+  <block id="5e33f36fe4c95345500e05c0f606e0f8" category="list-text">사용자 * 아래에서 * 추가 * 를 선택하고 * 가상화 제품 * 을 선택합니다.</block>
+  <block id="e66204bf4ee480dcb50321f8368b8679" category="list-text">로컬 워크스테이션에서 JSON 파일을 선택하고 업로드합니다.</block>
+  <block id="e1ecf0df107c9252cace9925c2a29f31" category="paragraph-title">4. 역할을 구성합니다</block>
+  <block id="98e5d66a7eb282e5a69852ad7275ec67" category="paragraph">역할을 정의하는 과정에서 몇 가지 관리 결정을 내려야 합니다. 자세한 내용은 을 <block ref="bd29c31fcc0cc4783cf22b7c5cfe94c1" category="inline-xref-macro-rx"></block>참조하십시오.</block>
+  <block id="caaada9f24a645cbd103e85551d04c05" category="section-title">System Manager를 사용하여 역할을 구성합니다</block>
+  <block id="e2a35a79ba0aa9b16035aa7c210480f6" category="paragraph">System Manager로 새로운 사용자 및 역할을 생성하고 JSON 파일을 업로드한 후에는 환경과 요구에 따라 역할을 사용자 지정할 수 있습니다.</block>
+  <block id="c64b493bd7f05a91606b4cb92775170f" category="section-title">핵심 사용자 및 역할 구성</block>
+  <block id="bc4dd7304bc570e82641f4dc36d238bc" category="paragraph">RBAC 정의는 VSC, VASA Provider, SRA의 조합을 포함하여 여러 제품 기능으로 패키지됩니다. RBAC 지원이 필요한 환경 또는 환경을 선택해야 합니다. 예를 들어, 원격 플러그인 기능을 지원하는 역할이 필요한 경우 VSC를 선택합니다. 또한 사용자 이름과 관련 암호도 선택해야 합니다.</block>
+  <block id="9e287e56b8c475b9b8dafb51e6efcab2" category="paragraph">Privileges 역할은 ONTAP 스토리지에 필요한 액세스 수준에 따라 4세트로 구성됩니다. 역할의 기반이 되는 Privileges는 다음과 같습니다.</block>
+  <block id="afff6329efc99be50b0cf1045a8df64d" category="list-text">스토리지 생성</block>
+  <block id="cc35f7bfa1d730ac17dcf17a16d1864c" category="paragraph">이 역할을 사용하여 스토리지를 생성할 수 있습니다. 또한 검색 역할과 연결된 모든 Privileges가 포함됩니다.</block>
+  <block id="3e6957e55cc58c7676ae8e001d33606d" category="list-text">스토리지를 수정합니다</block>
+  <block id="24ea39c4af086b250a1ef48b8f73eb27" category="paragraph">이 역할을 사용하여 스토리지를 수정할 수 있습니다. 또한 검색 및 스토리지 역할과 연결된 모든 Privileges가 포함됩니다.</block>
+  <block id="4e7c41e3bba1d4b12b4cb6a39b1814f6" category="list-text">스토리지 폐기</block>
+  <block id="f0a085c6b703ea4bd4c06c6e4ca51aa7" category="paragraph">이 역할을 사용하면 스토리지를 제거할 수 있습니다. 또한 검색, 스토리지 생성 및 스토리지 역할 수정과 관련된 모든 Privileges도 포함됩니다.</block>
+  <block id="e4ed639cf75d595ee4858ce438889671" category="section-title">역할이 있는 사용자를 생성합니다</block>
+  <block id="aa6879df2b3169fbda16473119c2ce29" category="paragraph">사용자 환경에 대한 구성 옵션을 선택한 후 * 추가 * 를 클릭하면 ONTAP가 사용자 및 역할을 생성합니다. 생성된 역할의 이름은 다음 값을 연결한 것입니다.</block>
+  <block id="03706e1dce0c98b08d188205d076dd47" category="list-text">JSON 파일에 정의된 상수 접두사 값(예: "OTV_10")</block>
+  <block id="7dac56e2b364e98d1289533350488840" category="list-text">선택한 제품 기능</block>
+  <block id="1da679710b1adbd212bf4e405b38f281" category="list-text">권한 집합 목록입니다.</block>
+  <block id="0a52730597fb4ffa01fc117d9e71e3a9" category="paragraph-title">예</block>
+  <block id="4628ce4ed29ed74d4945136c742ba3a6" category="paragraph"><block ref="7c14b8ae567d452539a915b9285021b8" prefix="" category="inline-code"></block></block>
+  <block id="d3b71e8bd1ba110ebe240ca63dae1329" category="paragraph">새 사용자가 "사용자 및 역할" 페이지의 목록에 추가됩니다. HTTP 및 ONTAPI 사용자 로그인 방법이 모두 지원됩니다.</block>
+  <block id="cf7e7d1fa6689d4e0e92d999c6237fb5" category="summary">VMware vCenter Server는 vSphere 객체에 대한 액세스를 제어할 수 있는 RBAC 기능을 제공합니다. vCenter 중앙 집중식 인증 및 권한 부여 보안 서비스의 중요한 부분입니다.</block>
+  <block id="dc7c1083aa09af7f48c3dfcd88881a53" category="doc">VMware vSphere 10용 ONTAP 툴을 사용하는 vCenter Server RBAC 환경</block>
+  <block id="c919d083ca35909ad6ec0213308214ee" category="section-title">vCenter Server 사용 권한 그림</block>
+  <block id="f5936d22e8b5eb5001bc642d6372a3ce" category="paragraph">권한은 vCenter Server 환경에서 액세스 제어를 적용하기 위한 기반입니다. 권한 정의에 포함된 사용자 또는 그룹이 있는 vSphere 객체에 적용됩니다. 아래 그림에는 vCenter 사용 권한에 대한 개략적인 설명이 나와 있습니다.</block>
+  <block id="65b1fd655adb8df9bc252ecbc423fd17" category="inline-image-macro">vCenter 사용 권한</block>
+  <block id="6c696fa4db382aa6a86b003bfc7df380" category="paragraph"><block ref="6c696fa4db382aa6a86b003bfc7df380" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="af1d6322de747a6050ffe22586be77f6" category="section-title">vCenter Server 권한의 구성 요소입니다</block>
+  <block id="bf87a4af222cf10da55ca70c08d92f7c" category="paragraph">vCenter Server 권한은 권한이 생성될 때 함께 바인딩되는 여러 구성 요소의 패키지입니다.</block>
+  <block id="1f6500745cb0fece762afaa61fff19be" category="inline-link-macro">vCenter Server와 함께 RBAC를 사용합니다</block>
+  <block id="a3707a4a1f2fa1889a1b2fe7a9c17ac1" category="paragraph">사용 권한은 vCenter Server, ESXi 호스트, 가상 머신, 데이터 저장소, 데이터 센터 및 폴더와 같은 vSphere 객체와 연결됩니다. vCenter Server는 객체의 할당된 사용 권한에 따라 객체에 대해 각 사용자 또는 그룹이 수행할 수 있는 작업 또는 작업을 결정합니다. VMware vSphere용 ONTAP 툴과 관련된 작업의 경우 vCenter Server의 루트 또는 루트 폴더 레벨에서 모든 권한이 할당되고 검증됩니다. 자세한 내용은 을 <block ref="bd32297ae4942b99b96b1173467488f7" category="inline-link-macro-rx"></block> 참조하십시오.</block>
+  <block id="bee14fb76ab72077391e4058cc8f8b53" category="section-title">Privileges 및 역할</block>
+  <block id="1808ba062a2823e5f8f47e9c508e5f88" category="paragraph">VMware vSphere 10용 ONTAP 툴과 함께 사용되는 vSphere Privileges에는 두 가지 유형이 있습니다. 이 환경에서 RBAC를 사용하여 작업을 간소화하기 위해 ONTAP 툴은 필요한 기본 및 사용자 지정 Privileges이 포함된 역할을 제공합니다. Privileges에는 다음이 포함됩니다.</block>
+  <block id="99fb3dfe64d66e2151482a34134ca83c" category="paragraph">vCenter Server에서 제공하는 Privileges입니다.</block>
+  <block id="33f0238bdb7e394a53a83a61dd4a87a3" category="paragraph">VMware vSphere용 ONTAP 툴에 고유한 맞춤형 Privileges입니다.</block>
+  <block id="74e2e4ae3e05b8a6875b8d0942e5d032" category="paragraph">Active Directory 또는 로컬 vCenter Server 인스턴스를 사용하여 사용자 및 그룹을 정의할 수 있습니다. 역할과 함께 vSphere 객체 계층 구조의 객체에 대한 권한을 생성할 수 있습니다. 권한은 연결된 역할의 Privileges를 기반으로 액세스 권한을 부여합니다. 역할은 개별적으로 사용자에게 직접 할당되지 않습니다. 대신 사용자 및 그룹은 더 큰 vCenter Server 권한의 일부로 역할 Privileges를 통해 객체에 대한 액세스 권한을 얻습니다.</block>
+  <block id="11d52c42c4c5e962da96cbb07269c71c" category="summary">운영 환경에서 사용하기 전에 vCenter Server를 사용하여 VMware vSphere 10 RBAC를 구축하는 ONTAP 툴의 몇 가지 측면을 고려해야 합니다.</block>
+  <block id="bad4f36fb4d680591de5a6d098a4900f" category="doc">VMware vSphere 10용 ONTAP 툴과 함께 vCenter Server RBAC를 사용하십시오</block>
+  <block id="402c7f2e2d1ca35a706580b301f4a235" category="section-title">vCenter 역할 및 관리자 계정입니다</block>
+  <block id="40e1cd7cd8a9460fd1ce9dbbb4902ec1" category="paragraph">vSphere 객체 및 관련 관리 작업에 대한 액세스를 제한하려는 경우 사용자 지정 vCenter Server 역할을 정의하고 사용해야 합니다. 액세스 제한이 필요하지 않은 경우에는 관리자 계정을 대신 사용할 수 있습니다. 각 관리자 계정은 객체 계층의 최상위 레벨에서 관리자 역할을 사용하여 정의됩니다. 이렇게 하면 VMware vSphere 10용 ONTAP 툴에 추가된 개체를 비롯하여 vSphere 객체에 대한 모든 액세스가 가능합니다.</block>
+  <block id="ca3c90e3f31cf4cc368af5855131e6ed" category="section-title">vSphere 객체 계층 구조</block>
+  <block id="5feab15f38afcf82447aa4cbe9aa92b2" category="paragraph">vSphere 객체 인벤토리는 계층 구조로 구성됩니다. 예를 들어 다음과 같이 계층 아래로 이동할 수 있습니다.</block>
+  <block id="c35fcf133dd7c94e80fa77cf671290c4" category="paragraph"><block ref="c4436d4a190778b7ec1e9461f6454bdd" prefix="" category="inline-code"></block> -&gt; -&gt;<block ref="615707baa418ce315e44ac2a5d6164af" prefix=" " category="inline-code"></block> --&gt; -&gt;<block ref="249694a485fc5d3289c38986b4f8e887" prefix=" " category="inline-code"></block> --&gt; -&gt;<block ref="52a1e1faba85313e38b02d33db3e72fa" prefix=" " category="inline-code"></block><block ref="b19292cad601553e06435e12582db069" prefix=" " category="inline-code"></block></block>
+  <block id="4ff2ed0d44ed1a198235e972b2e7f020" category="paragraph">타겟 ESXi 호스트에 대해 검증된 VAAI 플러그인 작업을 제외하고 vSphere 객체 계층에서 모든 권한이 검증됩니다.</block>
+  <block id="cf3ebf71afc09e18d1f314148fa3811e" category="section-title">VMware vSphere 10용 ONTAP 툴에 포함된 역할</block>
+  <block id="9956bf2190822dfa9e747d5beea541f5" category="paragraph">vCenter Server RBAC를 사용하여 작업을 간소화하기 위해 VMware vSphere용 ONTAP 툴은 다양한 관리 작업에 맞게 사전 정의된 역할을 제공합니다.</block>
+  <block id="164df67d012e8e0ac61963c54eda6893" category="admonition">필요한 경우 새 사용자 지정 역할을 생성할 수 있습니다. 이 경우 기존 ONTAP 툴 역할 중 하나를 복제하고 필요에 따라 편집해야 합니다. 구성을 변경한 후 영향을 받는 vSphere Client 사용자는 로그아웃했다가 다시 로그인하여 변경 사항을 활성화해야 합니다.</block>
+  <block id="63c3900e2803574b915938ebce0260d4" category="paragraph">VMware vSphere 역할용 ONTAP 툴을 보려면 vSphere Client 상단에서 * 메뉴 * 를 선택하고 왼쪽에서 * 관리 * 를 클릭한 다음 * 역할 * 을 클릭합니다. 아래에 설명된 대로 세 가지 사전 정의된 역할이 있습니다.</block>
+  <block id="37dfa1e83e1bae8babc789706610e685" category="paragraph">VMware vSphere 관리자 작업을 위한 핵심 ONTAP 툴을 수행하는 데 필요한 모든 기본 vCenter Server Privileges 및 ONTAP 툴 관련 Privileges를 제공합니다.</block>
+  <block id="cd027b3cb7fb1e8712103dffdf01a491" category="paragraph-title">VMware vSphere 프로비저닝용 NetApp ONTAP 툴</block>
+  <block id="7e5cada6cb223f80ed0a2b6fee9ab3dc" category="section-title">vSphere 오브젝트 및 ONTAP 스토리지 백 엔드</block>
+  <block id="c9f180d06ed9b9b8dbf48d2f9c6f8b7e" category="paragraph">두 RBAC 환경이 함께 작동합니다. vSphere Client 인터페이스에서 작업을 수행할 때 vCenter Server에 정의된 ONTAP 툴 역할이 먼저 선택됩니다. vSphere에서 작업을 허용하는 경우 ONTAP 역할 Privileges가 검사됩니다. 이 두 번째 단계는 스토리지 백엔드를 생성 및 구성할 때 사용자에게 할당된 ONTAP 역할에 따라 수행됩니다.</block>
+  <block id="ae05278c1a2b0d45fbc61a21675607b9" category="section-title">vCenter Server RBAC 작업</block>
+  <block id="c77af40075fd8cffde6139bae4fbf41e" category="paragraph">vCenter Server Privileges 및 사용 권한으로 작업할 때 고려해야 할 몇 가지 사항이 있습니다.</block>
+  <block id="ffe7522d9ea3d134eb0a945275d454d7" category="section-title">필요한 권한</block>
+  <block id="ff130e198f6b34171e4682320f8f17df" category="paragraph">VMware vSphere 10 사용자 인터페이스용 ONTAP 툴에 액세스하려면 ONTAP 툴별 _View_권한이 있어야 합니다. 이 권한 없이 vSphere에 로그인하고 NetApp 아이콘을 클릭하면 VMware vSphere용 ONTAP 툴에 오류 메시지가 표시되고 사용자 인터페이스에 액세스할 수 없게 됩니다.</block>
+  <block id="6385cb263e2cd14332ec0eb2e87b8b5e" category="paragraph">vSphere 객체 계층 구조의 할당 레벨에 따라 액세스할 수 있는 사용자 인터페이스 부분이 결정됩니다. 루트 객체에 보기 권한을 할당하면 NetApp 아이콘을 클릭하여 VMware vSphere용 ONTAP 툴에 액세스할 수 있습니다.</block>
+  <block id="c4ac20de086e0cd3fd84b12e6d2ea8e1" category="paragraph">대신 다른 낮은 vSphere 객체 레벨에 View 권한을 할당할 수 있습니다. 그러나 이렇게 하면 액세스하고 사용할 수 있는 VMware vSphere용 ONTAP 툴이 제한됩니다.</block>
+  <block id="548c90bb357fe2a9cfd43bd38ea29463" category="paragraph">vSphere 객체 및 작업에 대한 액세스를 제한하려면 vCenter Server 권한을 사용해야 합니다. vSphere 객체 계층에서 권한을 할당하는 경우 사용자가 수행할 수 있는 VMware vSphere 10 작업에 대한 ONTAP 툴이 결정됩니다.</block>
+  <block id="f9cec60da9773f244eba81315b01771b" category="admonition">보다 제한적인 액세스를 정의해야 하는 경우가 아니라면 일반적으로 루트 개체 또는 루트 폴더 수준에서 사용 권한을 할당하는 것이 좋습니다.</block>
+  <block id="2c3800c2e1b0d19b0ee4eac0c7b2181b" category="paragraph">VMware vSphere 10용 ONTAP 툴에서 사용할 수 있는 사용 권한은 스토리지 시스템과 같은 사용자 지정 비 vSphere 객체에 적용됩니다. VMware vSphere 루트 객체에 할당할 수 있는 vSphere 객체가 없으므로 가능하면 이러한 권한을 VMware vSphere 루트 객체에 대한 ONTAP 툴에 할당해야 합니다. 예를 들어, VMware vSphere용 ONTAP 툴 "스토리지 시스템 추가/수정/제거" 권한이 포함된 모든 권한은 루트 객체 레벨에서 할당되어야 합니다.</block>
+  <block id="1c6f51dd930ae7303df3ce602b9079b3" category="paragraph">개체 계층 구조에서 상위 수준에서 사용 권한을 정의할 때 자식 개체가 사용 권한을 전달하고 상속하도록 사용 권한을 구성할 수 있습니다. 필요한 경우 상위 개체에서 상속된 사용 권한을 재정의하는 하위 개체에 추가 사용 권한을 할당할 수 있습니다.</block>
+  <block id="1756a472d8c27ed7ed5cf0e74f8e0204" category="paragraph">사용 권한은 언제든지 수정할 수 있습니다. 권한 내에서 Privileges를 변경하는 경우 권한과 연결된 사용자는 vSphere에서 로그아웃한 후 다시 로그인하여 변경 사항을 활성화해야 합니다.</block>
+  <block id="01f1acd42f23e67e01a07139e3bfa8df" category="sidebar">RBAC에 대해 알아보십시오</block>
+  <block id="89371fddb8c77133f989dc310158af51" category="sidebar">VMware vSphere를 사용하는 RBAC</block>
+  <block id="f892343d37463039adbca9c5b26aff67" category="sidebar">vCenter Server 환경입니다</block>
+  <block id="be4a0889e315bfb69ba644fbb58270ea" category="sidebar">ONTAP을 사용하는 RBAC</block>
+  <block id="c024abed0c8217f644225264da1b23b2" category="sidebar">ONTAP 환경</block>
+  <block id="be1fc37ef971360b0cf69ced82982a58" category="sidebar">ONTAP에서 RBAC 사용</block>
 </blocks>
