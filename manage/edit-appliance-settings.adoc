@@ -18,7 +18,7 @@ ONTAP Tools Manager를 사용하여 VMware vSphere용 ONTAP 툴을 확장하여 
 제공하는 OVA 템플릿의 OVA 버전이 노드 1과 동일한지 확인합니다. 노드 1은 VMware vSphere OVA용 ONTAP 툴이 처음 구축되는 기본 노드입니다.
 
 .단계
-. 웹 브라우저에서 ONTAP 도구 관리자를 실행합니다. `\https://loadBalancerIP:8443/virtualization/ui/`
+. 웹 브라우저에서 ONTAP 도구 관리자를 실행합니다. `\https://<ONTAPtoolsIP>:8443/virtualization/ui/`
 . 구축 중에 제공한 VMware vSphere 관리자 자격 증명용 ONTAP 툴을 사용하여 로그인합니다.
 . 개요 섹션에서 * 어플라이언스 설정 편집 * 을 선택합니다.
 . Configuration * 섹션에서 필요에 따라 노드 크기를 늘릴 수 있도록 스케일업하고 HA 구성을 활성화할 수 있습니다. 변경하려면 vCenter Server 자격 증명이 필요합니다.

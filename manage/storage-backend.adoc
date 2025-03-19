@@ -44,7 +44,7 @@ summary: 스토리지 백엔드는 ESXi 호스트가 데이터 스토리지에 �
 
 다음 단계에 따라 ONTAP 도구 관리자를 사용하여 글로벌 ONTAP 클러스터에 대한 수정 작업을 수행할 수 있습니다.
 
-. 웹 브라우저에서 ONTAP 도구 관리자를 실행합니다. `\https://loadBalancerIP:8443/virtualization/ui/`
+. 웹 브라우저에서 ONTAP 도구 관리자를 실행합니다. `\https://<ONTAPtoolsIP>:8443/virtualization/ui/`
 . 구축 중에 제공한 VMware vSphere 관리자 자격 증명용 ONTAP 툴을 사용하여 로그인합니다.
 . 사이드바에서 스토리지 백엔드를 선택합니다.
 . 수정할 스토리지 백엔드를 선택합니다.
@@ -66,7 +66,7 @@ summary: 스토리지 백엔드는 ESXi 호스트가 데이터 스토리지에 �
 
 ONTAP 툴 관리자를 사용하여 글로벌 ONTAP 클러스터에 대해 제거 작업을 수행할 수 있습니다.
 
-. 웹 브라우저에서 ONTAP 도구 관리자를 실행합니다. `\https://loadBalancerIP:8443/virtualization/ui/`
+. 웹 브라우저에서 ONTAP 도구 관리자를 실행합니다. `\https://<ONTAPtoolsIP>:8443/virtualization/ui/`
 . 구축 중에 제공한 VMware vSphere 관리자 자격 증명용 ONTAP 툴을 사용하여 로그인합니다.
 . 측면 표시줄에서 * Storage Backend * 를 선택합니다.
 . 제거할 스토리지 백엔드를 선택합니다
