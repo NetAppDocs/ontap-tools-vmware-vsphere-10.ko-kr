@@ -84,9 +84,9 @@ entries:
   url: "/manage/disable-autosupport.html"
 - title: AutoSupport 프록시 URL을 업데이트합니다
   url: "/manage/update-proxyurl.html"
-- title: 제로급 RPO
+- title: 백업을 생성하고 설정을 복구합니다
   url: "/manage/enable-backup.html"
-- title: ONTAP 도구 배포를 제거합니다
+- title: VMware vSphere용 ONTAP 툴을 제거합니다
   url: "/manage/uninstall-deployment.html"
-- title: 볼륨을 정리합니다
+- title: FlexVol 볼륨을 제거합니다
   url: "/manage/delete-deployment.html"
