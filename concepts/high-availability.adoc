@@ -29,3 +29,5 @@ VMware vSphere용 ONTAP 툴에 고가용성(HA)을 제공하기 위해 추가 �
 
 
 NOTE: VMware vSphere용 ONTAP 툴은 vCenter HA를 지원하지 않습니다.
+
+HA 기능을 활성화하려면 구축 중에 또는 나중에 VMware vSphere VM용 ONTAP 툴에서 CPU 핫 추가 및 메모리 핫 플러그를 활성화해야 합니다.
