@@ -50,7 +50,7 @@ VMware는 현재 VM 템플릿에 복제된 가상 머신을 지원하지 않습�
 
 보호된 가상 머신의 클론 복제가 지원됩니다.
 
-자세한 내용은 을 https://docs.vmware.com/en/VMware-Horizon/2103/virtual-desktops/GUID-B5020738-8649-4308-A8B0-70AF80527DF6.html["클론 생성을 위한 가상 머신 생성"] 참조하십시오.
+자세한 내용은 을 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vsphere-virtual-machine-administration-guide-7-0/deploying-virtual-machinesvm-admin/clone-an-existing-virtual-machine-h5vm-admin.html["클론 생성을 위한 가상 머신 생성"] 참조하십시오.
 
 
 

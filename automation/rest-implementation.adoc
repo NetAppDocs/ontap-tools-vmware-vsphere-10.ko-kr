@@ -22,7 +22,7 @@ REST API에는 vCenter 및 Aggregate와 같은 몇 가지 리소스 범주가 �
 
 == REST API 액세스 방법
 
-ONTAP 툴 로드 밸런서 IP 주소와 포트를 통해 VMware vSphere 10 REST API용 ONTAP 툴에 액세스할 수 있습니다. 전체 URL에는 다음과 같은 여러 부분이 있습니다.
+ONTAP 툴의 IP 주소와 포트를 통해 VMware vSphere 10 REST API용 ONTAP 툴에 액세스할 수 있습니다. 전체 URL에는 다음과 같은 여러 부분이 있습니다.
 
 * ONTAP 도구 IP 주소 및 포트
 * API 버전

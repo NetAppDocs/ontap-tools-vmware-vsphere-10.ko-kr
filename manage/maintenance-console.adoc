@@ -31,8 +31,6 @@ NOTE: 에 대한 암호를 설정해야 합니다 `diag` 원격 진단을 활성
  a| 
 . 서버 상태 요약을 표시합니다
 . VASA Provider Services 및 SRA Services에 대한 로그 수준을 변경합니다
-. AutoSupport를 비활성화합니다
-. AutoSupport 프록시 URL을 업데이트합니다
 
 
 
@@ -44,7 +42,6 @@ NOTE: 에 대한 암호를 설정해야 합니다 `diag` 원격 진단을 활성
 . 가상 머신을 종료합니다
 . '성자' 사용자 암호를 변경합니다
 . 시간대를 변경합니다
-. 새 NTP 서버를 추가합니다
 . jail 디스크 크기 증가(/jail)
 . 업그레이드
 . VMware Tools를 설치합니다

@@ -24,7 +24,5 @@ entries:
       url: "/concepts/rbac-ontap-use.html"
 - title: VMware vSphere용 ONTAP 툴의 고가용성
   url: "/concepts/high-availability.html"
-- title: AutoSupport
-  url: "/concepts/autosupport.html"
 - title: ONTAP 도구 관리자 사용자 인터페이스
   url: "/configure/manager-user-interface.html"

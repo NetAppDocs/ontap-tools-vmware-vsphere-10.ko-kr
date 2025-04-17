@@ -13,8 +13,10 @@ summary: ONTAP 도구 관리자를 사용하여 관리자 암호를 변경할 �
 [role="lead"]
 ONTAP Tools Manager를 사용하여 VMware vSphere용 ONTAP 툴을 확장하여 구축 시 노드 수를 늘리거나 구성을 고가용성(HA) 설정으로 변경합니다. VMware vSphere 어플라이언스용 ONTAP 툴은 처음에 단일 노드 비 HA 구성으로 구축됩니다.
 
-* 시작하기 전에 *
 
+NOTE: 비 HA 백업이 설정된 경우 HA로 마이그레이션하려면 먼저 백업을 비활성화하고 마이그레이션 후에 다시 활성화하십시오.
+
+.시작하기 전에
 * OVA 템플릿의 OVA 버전이 노드 1과 동일한지 확인합니다. 노드 1은 VMware vSphere OVA용 ONTAP 툴이 처음 구축되는 기본 노드입니다.
 * CPU 핫 애드 및 메모리 핫 플러그가 활성화되어 있는지 확인합니다.
 

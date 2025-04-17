@@ -14,8 +14,8 @@ summary: VMware vSphere 및 ONTAP System Manager용 ONTAP 툴과 함께 제공�
 VMware vSphere 및 ONTAP System Manager용 ONTAP 툴과 함께 제공되는 JSON 파일을 사용하여 스토리지 백엔드 관리를 위한 새로운 사용자 역할 및 권한을 구성할 수 있습니다.
 
 .시작하기 전에
-* VMware vSphere용 ONTAP 툴에서 _\https://<loadbalancerIP>:8443/virtualization/user-privileges/users_roles.zip_을 사용하여 ONTAP 권한 파일을 다운로드해야 합니다.
-* 을 사용하여 ONTAP 도구에서 ONTAP 권한 파일을 다운로드해야 합니다 `\https://<loadbalancerIP>:8443/virtualization/user-privileges/users_roles.zip`.
+* VMware vSphere용 ONTAP 툴에서 _\https://<ONTAPtoolsIP>:8443/virtualization/user-privilization/users_roles.zip_을 사용하여 ONTAP Privileges 파일을 다운로드해야 합니다.
+* 을 사용하여 ONTAP 도구에서 ONTAP Privileges 파일을 다운로드해야 `\https://<ONTAPtoolsIP>:8443/virtualization/user-privileges/users_roles.zip` 합니다.
 +
 
 NOTE: 사용자는 클러스터 또는 스토리지 가상 머신(SVM) 레벨에서 직접 생성할 수 있습니다. user_roles.json 파일을 사용하지 않고 사용자를 생성할 수도 있습니다. 생성한 경우 SVM 레벨에서 최소 권한 세트가 있어야 합니다.
@@ -24,7 +24,7 @@ NOTE: 사용자는 클러스터 또는 스토리지 가상 머신(SVM) 레벨에
 
 
 .단계
-. 다운로드한 _\https://<loadbalancerIP>:8443/virtualization/user-privileges/users_roles.zip_file의 압축을 풉니다.
+. 다운로드한 _\https://<ONTAPtoolsIP>:8443/virtualization/user-privileges/users_roles.zip_file의 압축을 풉니다.
 . 클러스터의 클러스터 관리 IP 주소를 사용하여 ONTAP System Manager에 액세스합니다.
 . admin Privileges를 사용하여 클러스터에 로그인합니다. 사용자를 구성하려면 다음 단계를 수행하십시오.
 +
@@ -36,7 +36,7 @@ NOTE: 사용자는 클러스터 또는 스토리지 가상 머신(SVM) 레벨에
 +
 Product(제품) 필드는 자동으로 채워집니다.
 
-.. 제품 기능 드롭다운 메뉴에서 필요한 기능을 선택합니다.
+.. 드롭다운에서 VSC, VASA 공급자 또는 SRA 등 제품 기능을 선택합니다.
 +
 역할 * 필드는 선택한 제품 기능에 따라 자동으로 채워집니다.
 
@@ -146,6 +146,9 @@ API 사용:
 
 
 | /api/network/ip/interfaces 를 참조하십시오 | 읽기 전용 | 스토리지 백엔드 추가 - 관리 LIF 범위가 클러스터/SVM으로 식별됩니다 
+
+
+| /api/스토리지/가용성 영역 | 읽기 전용 | SAZ 검색. ONTAP 9.16.1 릴리스 이후 및 ASA R2 시스템에 적용됩니다. 
 |===
 
 
@@ -257,6 +260,12 @@ security login rest-role create -role <role-name> -api /api/svm/svms -access rea
 [listing]
 ----
 security login rest-role create -role <role-name> -api /api/storage/storage-units -access all
+----
+ONTAP 버전 9.16.1 이상의 ASA R2 시스템의 경우 다음 명령을 실행합니다.
+
+[listing]
+----
+security login rest-role create -role <role-name> -api /api/storage/availability-zones -access readonly
 ----
 
 
@@ -376,7 +385,7 @@ security login unlock -username testvpsraall -vserver C1_sti160-cluster
 
 == VMware vSphere 10.1 사용자용 ONTAP 툴을 10.3 사용자로 업그레이드합니다
 
-VMware vSphere 10.1 사용자용 ONTAP 툴이 json 파일을 사용하여 생성된 클러스터 범위 사용자인 경우, admin 사용자를 사용하여 ONTAP CLI에서 다음 명령을 실행하여 10.3 릴리즈로 업그레이드하십시오.
+JSON 파일을 사용하여 클러스터 범위 사용자가 생성된 VMware vSphere 10.1 사용자용 ONTAP 툴의 경우, admin Privileges와 함께 다음 ONTAP CLI 명령을 사용하여 10.3 릴리즈로 업그레이드하십시오.
 
 제품 기능:
 
@@ -410,7 +419,7 @@ _security login role create -role <existing-role-name> -cmdddirname "vserver NVM
 
 _security login role create -role <existing-role-name> -cmdddirname "vserver NVMe 하위 시스템 맵 제거" -access all_
 
-VMware vSphere 10.1 사용자용 ONTAP 툴이 json 파일을 사용하여 생성된 SVM 범위 사용자인 경우, admin 사용자를 사용하여 ONTAP CLI에서 다음 명령을 실행하여 10.3 릴리즈로 업그레이드하십시오.
+json 파일을 사용하여 생성된 SVM 범위 사용자가 있는 VMware vSphere 10.1 사용자용 ONTAP 툴의 경우 admin 사용자 Privileges의 ONTAP CLI 명령을 사용하여 10.3 릴리즈로 업그레이드하십시오.
 
 SVM Privileges:
 
@@ -448,4 +457,26 @@ vserver nvme subsystem create
 
 vserver nvme subsystem modify
 
+----
+
+
+== VMware vSphere 10.3 사용자용 ONTAP 툴을 10.4 사용자로 업그레이드합니다
+
+ONTAP 9.16.1부터 VMware vSphere 10.3 사용자용 ONTAP 툴을 10.4 사용자로 업그레이드합니다.
+
+JSON 파일과 ONTAP 버전 9.16.1 이상을 사용하여 클러스터 범위 사용자를 생성한 VMware vSphere 10.3 사용자용 ONTAP 툴의 경우 admin user Privileges와 함께 ONTAP CLI 명령을 사용하여 10.4 릴리즈로 업그레이드하십시오.
+
+제품 기능:
+
+* VSC
+* VSC 및 VASA 공급자
+* VSC 및 SRA
+* VSC, VASA 공급자 및 SRA:
+
+
+클러스터 Privileges:
+
+[listing]
+----
+security login role create -role <existing-role-name> -cmddirname "storage availability-zone show" -access all
 ----

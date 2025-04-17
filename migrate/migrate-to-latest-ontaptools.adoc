@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: migrate 
 summary: 스토리지 데이터를 마이그레이션할 때 REST API를 사용하여 스토리지 백엔드를 수동으로 온보드합니다. VASA Provider 데이터를 마이그레이션할 때 기존 Derby 데이터베이스에서 데이터를 내보내고 MongoDB 데이터베이스로 가져옵니다. 
 ---
-= VMware vSphere 9.x용 ONTAP 툴에서 10.3로 마이그레이션합니다
+= VMware vSphere 9.x용 ONTAP 툴에서 10.4로 마이그레이션합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -17,11 +17,11 @@ summary: 스토리지 데이터를 마이그레이션할 때 REST API를 사용�
 NOTE: 설정 시 VASA Provider 기능만 제공하는 경우에만 VMware vSphere 9.xx 설정용 ONTAP 툴을 마이그레이션해야 합니다.
 
 
-NOTE: ONTAP 툴 10.3은 VMFS 데이터 저장소를 사용하는 NVMe-oF만 지원하므로 VMware vSphere 9.x용 ONTAP 툴에서 10.3으로 마이그레이션한 후 NVMe/FC 프로토콜을 사용하는 VVOL 데이터 저장소가 작동하지 않습니다.
+NOTE: ONTAP 툴 10.4은 VMFS 데이터 저장소를 사용하는 NVMe-oF만 지원하므로 VMware vSphere 9.x용 ONTAP 툴에서 10.4으로 마이그레이션한 후 NVMe/FC 프로토콜을 사용하는 VVOL 데이터 저장소가 작동하지 않습니다.
 
 * 이 작업에 대한 정보 *
 
-VMware vSphere 9.12D1 및 9.13D2 릴리즈용 ONTAP 툴에서 10.3으로 마이그레이션할 수 있습니다.
+VMware vSphere 9.12D1 및 9.13D2 릴리즈용 ONTAP 툴에서 10.4으로 마이그레이션할 수 있습니다.
 
 
 NOTE: 패치 릴리스로 업그레이드하기 전에 현재 릴리스에서 OVA 백업을 가져와야 합니다.
@@ -30,18 +30,17 @@ NOTE: 패치 릴리스로 업그레이드하기 전에 현재 릴리스에서 OV
 
 == 일반적인 마이그레이션 단계
 
-. VMware vSphere 10.3 릴리스용 ONTAP용 OVA 도구를 배포합니다.
-. VMware vSphere 10.3 릴리즈용 ONTAP 툴로 마이그레이션할 vCenter Server 인스턴스를 추가합니다. link:../configure/add-vcenter.html["vCenter Server 인스턴스를 추가합니다"]을 참조하십시오.
+. VMware vSphere 10.4용 ONTAP 툴용 OVA 구축
+. VMware vSphere 10.4 릴리즈용 ONTAP 툴로 마이그레이션할 vCenter Server 인스턴스를 추가합니다. link:../configure/add-vcenter.html["vCenter Server 인스턴스를 추가합니다"]을 참조하십시오.
 . VMware vSphere 플러그인 vCenter Server API용 ONTAP 툴에서 로컬로 스토리지 백엔드를 온보드합니다. 마이그레이션을 위해 스토리지를 로컬 범위 스토리지로 추가합니다.
-. VMware vSphere 9.xx용 ONTAP 툴에서 마이그레이션된 NFS 및 VMFS 데이터 저장소는 데이터 저장소 검색 작업이 트리거된 후에만 VMware vSphere 10.3용 ONTAP 툴에 표시됩니다. 이 작업은 트리거하는 데 최대 30분이 걸릴 수 있습니다. 데이터 저장소가 VMware vSphere Plugin 사용자 인터페이스용 ONTAP Tools 페이지의 개요 페이지에 표시되는지 확인합니다.
+. VMware vSphere 9.xx용 ONTAP 툴에서 마이그레이션된 NFS 및 VMFS 데이터 저장소는 데이터 저장소 검색 작업이 트리거된 후에만 VMware vSphere 10.4용 ONTAP 툴에 표시됩니다. 이 작업은 트리거하는 데 최대 30분이 걸릴 수 있습니다. 데이터 저장소가 VMware vSphere Plugin 사용자 인터페이스용 ONTAP Tools 페이지의 개요 페이지에 표시되는지 확인합니다.
 
 
 
 
 == SRA 마이그레이션 단계
 
-* 시작하기 전에 *
-
+.시작하기 전에
 마이그레이션하기 전에 사이트 중 하나가 보호 상태이고 다른 사이트가 복구 상태에 있는지 확인합니다.
 
 
@@ -72,8 +71,8 @@ NOTE: 페일오버가 방금 완료되었고 재보호가 보류 중인 경우�
 ----
 iptables -I INPUT 1 -p tcp --dport 1527 -j ACCEPT
 ----
-. VMware vSphere 10.3용 ONTAP 툴용 OVA 구축
-. VMware vSphere 10.3 릴리즈용 ONTAP 툴로 마이그레이션할 vCenter Server 인스턴스를 추가합니다. 을 link:../configure/add-vcenter.html["vCenter Server 인스턴스를 추가합니다"]참조하십시오.
+. VMware vSphere 10.4용 ONTAP 툴용 OVA 구축
+. VMware vSphere 10.4 릴리즈용 ONTAP 툴로 마이그레이션할 vCenter Server 인스턴스를 추가합니다. 을 link:../configure/add-vcenter.html["vCenter Server 인스턴스를 추가합니다"]참조하십시오.
 . 원격 플러그인 vCenter Server API에서 로컬로 스토리지 백엔드를 온보드합니다. 마이그레이션을 위해 스토리지를 로컬 범위로 추가합니다.
 . 마이그레이션하려면 다음 API 호출을 실행합니다.
 +
@@ -199,17 +198,14 @@ NOTE: UUID는 사후 마이그레이션 API의 응답으로 반환된 마이그�
 패치 마이그레이션 API가 성공적으로 실행되면 모든 VM이 스토리지 정책을 준수합니다.
 
 ====
-+
-마이그레이션에 성공하고 ONTAP Tools 10.3을 vCenter Server에 등록한 후 다음을 수행합니다.
-
-+
-** 모든 호스트에서 인증서를 새로 고칩니다.
-** 잠시 기다린 후 데이터 저장소(DS) 및 가상 머신(VM) 작업을 수행합니다. 대기 시간은 설정에 있는 호스트, DS 및 VM의 수에 따라 다릅니다. 기다리지 않으면 작업이 간헐적으로 실패할 수 있습니다.
 
 
+.다음 단계
+마이그레이션에 성공하고 ONTAP Tools 10.4을 vCenter Server에 등록한 후 다음을 수행합니다.
 
+* 모든 호스트에서 인증서를 새로 고칩니다.
+* 잠시 기다린 후 데이터 저장소(DS) 및 가상 머신(VM) 작업을 수행합니다. 대기 시간은 설정에 있는 호스트, DS 및 VM의 수에 따라 다릅니다. 기다리지 않으면 작업이 간헐적으로 실패할 수 있습니다.
 
-* 완료 후 *
 
 업그레이드 후 가상 머신 규정 준수 상태가 최신이 아니면 다음 단계를 사용하여 가상 머신 스토리지 정책을 다시 적용합니다.
 
@@ -224,6 +220,5 @@ VM 저장소 정책 준수 * 의 규정 준수 상태가 이제 준수 상태로
 
 
 
-* 관련 정보 *
-
-link:../upgrade/upgrade-ontap-tools.html["VMware vSphere 10.x용 ONTAP 툴을 10.3로 업그레이드하십시오"]
+.관련 정보
+link:../upgrade/upgrade-ontap-tools.html["VMware vSphere 10.x용 ONTAP 툴을 10.4로 업그레이드하십시오"]

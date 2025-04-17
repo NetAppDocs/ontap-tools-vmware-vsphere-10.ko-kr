@@ -11,10 +11,9 @@ summary: VMware vSphere 어플라이언스용 ONTAP 툴은 NFS 및 VMFS 데이�
 
 
 [role="lead"]
-VMware vSphere 어플라이언스용 ONTAP 툴은 NFS 및 VMFS 데이터 저장소를 지원하는 핵심 서비스를 갖춘 소규모 단일 노드로 구축됩니다.
+VMware vSphere 어플라이언스용 ONTAP 툴은 NFS 및 VMFS 데이터 저장소를 지원하는 핵심 서비스를 갖춘 소규모 단일 노드로 구축됩니다. ONTAP 도구 배포 프로세스는 최대 45분 정도 소요될 수 있습니다.
 
-* 시작하기 전에 *
-
+.시작하기 전에
 VMware의 컨텐츠 라이브러리는 VM 템플릿, vApp 템플릿 및 기타 유형의 파일을 저장하는 컨테이너 객체입니다. 콘텐츠 라이브러리를 사용한 배포는 네트워크 연결에 의존하지 않으므로 원활한 환경을 제공합니다.
 
 
@@ -28,7 +27,7 @@ NOTE: 나중에 HA 배포를 활성화하려면 ONTAP 툴을 호스팅하는 가
 * 콘텐츠 라이브러리 만들기 * 소규모 단일 노드 배포만 사용할 계획이라면 콘텐츠 라이브러리를 만들 필요가 없습니다.
 
 .  `.zip`에서 VMware vSphere용 ONTAP 툴에 대한 바이너리(_.ova_)와 서명된 인증서가 포함된 파일을 https://mysupport.netapp.com/site/products/all/details/otv10/downloads-tab["NetApp Support 사이트"^] 다운로드합니다.
-. 을 사용하여 vSphere Client에 로그인합니다 `\https://<vcenterip>/<ui>`
+. vSphere Client에 로그인합니다
 . vSphere Client 메뉴를 선택하고 * Content libraries * 를 선택합니다.
 . 페이지 오른쪽에서 * 만들기 * 를 선택합니다.
 . 라이브러리 이름을 지정하고 콘텐츠 라이브러리를 만듭니다.
@@ -88,7 +87,7 @@ NOTE: Pure IPv6는 지원되지 않습니다. 혼합 모드는 IPv6 및 IPv4 주
 +
 구축 작업이 생성되면 vSphere 작업 표시줄에 진행 상황이 표시됩니다.
 
-. 작업 완료 후 VM의 전원을 켭니다.
+. 작업을 완료한 후 VM의 전원을 자동으로 켜는 옵션이 선택되지 않은 경우 VM의 전원을 켭니다.
 
 
 VM의 웹 콘솔에서 설치 진행률을 추적할 수 있습니다.
@@ -99,6 +98,7 @@ OVF 양식에 불일치가 있는 경우 대화 상자에 수정 조치가 표�
 vCenter Server 7.0.3과 함께 VMware vSphere용 ONTAP 툴을 배포한 경우 구축 후 다음 단계를 수행합니다.
 
 . vCenter 클라이언트에 로그인합니다
+. ONTAP 도구 노드의 전원을 끕니다.
 . Inventory * 아래에서 VMware vSphere 가상 머신용 ONTAP 툴로 이동하고 * Edit settings * 옵션을 선택합니다.
 . CPU * 옵션 아래에서 * Enable CPU hot add * 확인란을 선택합니다
 . 메모리 * 옵션에서 * 메모리 핫 플러그 * 에 대해 * 활성화 * 확인란을 선택합니다.

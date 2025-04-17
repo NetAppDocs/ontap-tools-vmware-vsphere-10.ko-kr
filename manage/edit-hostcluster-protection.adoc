@@ -26,7 +26,7 @@ summary: 보호된 호스트 클러스터의 SnapMirror 관계를 편집할 수 
 호스트 클러스터 보호 상태를 모니터링하려면 다음 절차를 따르십시오. 보호 상태, SnapMirror 관계, 데이터 저장소 및 해당 SnapMirror 상태와 함께 모든 보호 호스트 클러스터를 모니터링할 수 있습니다.
 
 .단계
-. 을 사용하여 vSphere Client에 로그인합니다 `\https://<vcenterip>/<ui>`
+. vSphere Client에 로그인합니다.
 . NetApp ONTAP tools * > * 보호 * > * 호스트 클러스터 관계 * 로 이동합니다.
 +
 보호 열 아래의 아이콘은 보호 상태를 나타냅니다
@@ -41,7 +41,7 @@ summary: 보호된 호스트 클러스터의 SnapMirror 관계를 편집할 수 
 새로 추가된 데이터 저장소나 호스트를 보호하려면 다음 절차를 따르십시오. vCenter 기본 사용자 인터페이스를 사용하여 보호된 클러스터에 새 호스트를 추가하거나 호스트 클러스터에 새 데이터 저장소를 생성할 수 있습니다.
 
 .단계
-. 을 사용하여 vSphere Client에 로그인합니다 `\https://<vcenterip>/<ui>`
+. vSphere Client에 로그인합니다.
 . 보호된 클러스터의 속성을 편집하려면 다음 중 하나를 수행합니다
 +
 .. NetApp ONTAP tools * > * 보호 * > * 호스트 클러스터 관계 * 로 이동한 후 클러스터에 대한 줄임표 메뉴를 선택하고 * 편집 * 또는 을 선택합니다
@@ -65,7 +65,7 @@ vCenter 작업이 생성되고 * Recent task * 패널에서 진행 상황을 추
 == 새 SnapMirror 관계를 추가합니다
 
 .단계
-. 을 사용하여 vSphere Client에 로그인합니다 `\https://<vcenterip>/<ui>`
+. vSphere Client에 로그인합니다.
 . 보호된 클러스터의 속성을 편집하려면 다음 중 하나를 수행합니다
 +
 .. NetApp ONTAP tools * > * 보호 * > * 호스트 클러스터 관계 * 로 이동한 후 클러스터에 대한 줄임표 메뉴를 선택하고 * 편집 * 또는 을 선택합니다
@@ -91,7 +91,7 @@ vCenter 작업이 생성되고 * Recent task * 패널에서 진행 상황을 추
 관계를 삭제하면 보조 사이트에 대한 재검사가 트리거되어 매핑되지 않은 LUN이 호스트에서 활성 경로로 제거됩니다.
 
 .단계
-. 을 사용하여 vSphere Client에 로그인합니다 `\https://<vcenterip>/<ui>`
+. vSphere Client에 로그인합니다.
 . 보호된 클러스터의 속성을 편집하려면 다음 중 하나를 수행합니다
 +
 .. NetApp ONTAP tools * > * 보호 * > * 호스트 클러스터 관계 * 로 이동한 후 클러스터에 대한 줄임표 메뉴를 선택하고 * 편집 * 또는 을 선택합니다
@@ -113,7 +113,7 @@ vCenter 작업이 생성되고 * Recent task * 패널에서 진행 상황을 추
 NOTE: 기존의 비동기식 SnapMirror 관계는 편집할 수 없습니다.
 
 .단계
-. 을 사용하여 vSphere Client에 로그인합니다 `\https://<vcenterip>/<ui>`
+. vSphere Client에 로그인합니다.
 . 보호된 클러스터의 속성을 편집하려면 다음 중 하나를 수행합니다
 +
 .. NetApp ONTAP tools * > * 보호 * > * 호스트 클러스터 관계 * 로 이동한 후 클러스터에 대한 줄임표 메뉴를 선택하고 * 편집 * 또는 을 선택합니다

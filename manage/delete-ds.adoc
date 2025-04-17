@@ -26,7 +26,7 @@ vCenter Server의 VMware vSphere용 ONTAP 툴에서 데이터 저장소 삭제 �
 vCenter Server의 ONTAP 도구에서 NFS, VMFS 또는 VVOL 데이터 저장소를 삭제하려면 다음 단계를 따르십시오.
 
 .단계
-. 을 사용하여 vSphere Client에 로그인합니다 `\https://<vcenterip>/<ui>`
+. vSphere Client에 로그인합니다.
 . 호스트 시스템 또는 호스트 클러스터 또는 데이터 센터를 마우스 오른쪽 버튼으로 클릭하고 * NetApp ONTAP tools * > * Delete datastore * 를 선택합니다.
 +
 

@@ -60,6 +60,8 @@ entries:
     url: "/manage/migrate-standard-virtual-machines-to-vvols-datastores.html"
   - title: VASA 정리
     url: "/manage/delete-virtual-machines.html"
+  - title: 가상 머신에서 데이터 디스크를 연결 또는 분리합니다
+    url: "/manage/attach-detach-disk.html"
 - title: 스토리지 시스템 및 호스트를 검색합니다
   url: "/configure/discover-storage-systems-and-hosts.html"
 - title: ESXi 호스트 설정을 수정합니다
@@ -84,7 +86,9 @@ entries:
   url: "/manage/disable-autosupport.html"
 - title: AutoSupport 프록시 URL을 업데이트합니다
   url: "/manage/update-proxyurl.html"
-- title: 백업을 생성하고 설정을 복구합니다
+- title: NTP 서버를 추가합니다
+  url: "/manage/add-ntpserver.html"
+- title: 백업을 생성하고 ONTAP 도구 설정을 복구합니다
   url: "/manage/enable-backup.html"
 - title: VMware vSphere용 ONTAP 툴을 제거합니다
   url: "/manage/uninstall-deployment.html"
