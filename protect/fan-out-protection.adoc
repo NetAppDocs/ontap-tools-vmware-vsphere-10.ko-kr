@@ -38,6 +38,8 @@ summary: 팬 아웃 보호에서는 일관성 그룹이 첫 번째 대상 ONTAP 
 
 
 |===
+다음 다이어그램은 팬 아웃 보호 구성을 보여 줍니다. image:../media/fan-out-protection.png["팬 아웃 보호 구성"] image:../media/fan-out-protection-relationship.png["팬 아웃 보호 관계"]
+
 * 단계 *
 
 . 새 자리 표시자 데이터 저장소를 생성합니다. 을 참조하십시오 https://docs.vmware.com/en/Site-Recovery-Manager/8.7/com.vmware.srm.admin.doc/GUID-5D4C9F38-37CA-47D1-B43A-A1FED48A05A3.html["자리 표시자 데이터 저장소를 선택합니다"]
