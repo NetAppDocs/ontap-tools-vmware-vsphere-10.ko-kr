@@ -41,7 +41,7 @@ NOTE: IPv4 및 IPv6 주소 관리 LIF가 지원됩니다.
 .vSphere Client 사용자 인터페이스 사용
 --
 
-NOTE: vSphere Client 사용자 인터페이스를 통해 스토리지 백엔드를 구성할 때는 VVol 데이터 저장소에서 SVM 사용자를 직접 추가할 수 없습니다.
+NOTE: vSphere Client 사용자 인터페이스를 통해 스토리지 백엔드를 구성할 경우 VVol 데이터 저장소는 SVM 사용자를 직접 추가하는 것을 지원하지 않습니다.
 
 . vSphere Client에 로그인합니다.
 . 바로 가기 페이지의 플러그인 섹션에서 * NetApp ONTAP tools * 를 선택합니다.
