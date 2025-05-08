@@ -764,8 +764,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="3a69b34ce86dacb205936a8094f6c743" category="cell">대형</block>
   <block id="bff7ca9974a0352c641d1a0709ae7c9f" category="inline-link">VMware Live Site Recovery의 운영상의 한계</block>
   <block id="f4eabc000ad2416081f1f8bc62960f34" category="cell">* 배포 유형 *</block>
-  <block id="cd0e7d46f22aa5207ca306eeab997625" category="cell">* CPU *</block>
-  <block id="5a4776483c0990d54df47e0a2478facc" category="cell">* 메모리(GB) *</block>
   <block id="4270d5032de4f1180467417459750041" category="section-title">NVMe 네임스페이스 및 서브시스템</block>
   <block id="c0b79db5f258f0c991a383cbdbf001dd" category="inline-link">SnapMirror 활성 동기화</block>
   <block id="8e9ed19481c8eb7dd51ab53b6e29d603" category="section-title">균일 및 비균일 설정</block>
@@ -1043,12 +1041,9 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="ec40e9dacf33c1ee930d1b726ee5d873" category="doc">VMware vSphere 구축을 위한 ONTAP 툴 사전 요구 사항</block>
   <block id="b6aec62078a1c571750099cf3731114a" category="list-text">씬 프로비저닝된 설치의 경우 15GB</block>
   <block id="ce87eaff0d4703df952b0aafebf6a78a" category="list-text">일반 프로비저닝 설치의 경우 348GB</block>
-  <block id="768883b74383326d83c0df05849ff8d6" category="cell">* 디스크 공간(GB) 일반 프로비저닝 *</block>
-  <block id="f6b569454a5123b8291e5aeb3ee9c76c" category="cell">비 HA 소형</block>
   <block id="45c48cce2e2d7fbdea1afc51c7c6ad26" category="cell">9</block>
   <block id="6f4922f45568161a8cdf4ad2299f6d23" category="cell">18</block>
   <block id="9de6d14fff9806d4bcd1ef555be766cd" category="cell">350</block>
-  <block id="68e32f2ca80884363d28d319b655230e" category="cell">HA 미디어가 아닙니다</block>
   <block id="c51ce410c124a10e0db5e4b97fc2af39" category="cell">13</block>
   <block id="4e732ced3463d06de0ca9a15b6153677" category="cell">26</block>
   <block id="02e74f10e0327ad868d138f2b4fdd6f0" category="cell">27</block>
@@ -1523,10 +1518,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="56a156ef32c18392cd77249a4e9d04c5" category="inline-link">NFSv4.2에 대한 ONTAP 지원</block>
   <block id="26b3116c80531a47fa8562f359b1a573" category="paragraph"><block ref="26b3116c80531a47fa8562f359b1a573" category="inline-link-rx"></block></block>
   <block id="2fa5bdd6c63d27c52dc92f5e27deea70" category="paragraph">AutomatedFailOverDuplex 정책 유형에는 균일하고 균일하지 않은 호스트 구성이 있습니다. uniform host configuration * 토글 버튼을 선택하면 호스트 이니시에이터 그룹 구성이 타겟 사이트에 암시적으로 복제됩니다. 자세한 내용은 을 <block ref="456cca003d9f01756d52d6978fb7648b" category="inline-link-macro-rx"></block>참조하십시오.</block>
-  <block id="c01ef522cb5ee6461c57aa510b0f9dce" category="list-text">* 호스트 시스템 크기 조정 요구 사항 * 배포 크기에 따른 권장 메모리는 아래 표와 같습니다.</block>
-  <block id="bbab260bdbd12933b5aad202ac803e9c" category="cell">소규모 HA(3개 노드의 누적)</block>
-  <block id="ca38c9b2032228fad900b11b07470b17" category="cell">HA 중간(3개 노드의 누적)</block>
-  <block id="721a0cb2e546dae89564af8a23d13306" category="cell">HA 대형(3개 노드의 누적)</block>
   <block id="4c90abc26074daa0aa69e5fcd9bac645" category="paragraph">자세한 내용은 을<block ref="39a0a12cac57df4f5e3df88c1e683703" category="inline-link-rx"></block>참조하십시오.</block>
   <block id="10cd1f260e9855405e5e3b0b9fd330f5" category="list-text">도메인 이름에 대해 nslookup 검사를 실행하여 도메인이 원하는 IP 주소로 확인되는지 확인합니다.</block>
   <block id="f01050ae79f30f1986973e3e8b1d62e0" category="admonition">CA에서 서명한 인증서에서 자체 서명된 인증서로 전환할 수 없습니다.</block>
@@ -2052,7 +2043,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="3c4b541b5d5310d633c23010dd81989e" category="list-text">vSphere Client에 로그인합니다</block>
   <block id="96b2088e72148a0b1230a8a1ce9ed374" category="list-text">작업을 완료한 후 VM의 전원을 자동으로 켜는 옵션이 선택되지 않은 경우 VM의 전원을 켭니다.</block>
   <block id="0665c15c8e67de0629e2fe45b734ea75" category="list-text">ONTAP 도구 노드의 전원을 끕니다.</block>
-  <block id="265dbce80143757d1ceaac46974e6009" category="admonition">백업이 활성화되면 각 ONTAP Tools 클러스터의 VM이 구축되는 데이터 저장소에 50GB의 공간이 추가로 필요합니다. 따라서 비 HA에는 400GB가 필요하며 HA에는 총 1100GB의 공간이 필요합니다.</block>
   <block id="3fbe74eae84714fcfdd21edafe54f77f" category="cell">버전 요구 사항</block>
   <block id="00a7a9b934cf295b0c55ccd69d08f6f6" category="cell">ONTAP 툴 지원 ESXi 호스트</block>
   <block id="a979e2bdcdd277cf8d9c469763d9bbf2" category="cell">7.0.3 이상</block>
@@ -2224,7 +2214,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="0c72f5748e7c096b829fa8c13bdb6b7f" category="list-text">IPv4는 노드 구성의 IP 주소 구성 요소로, 디버깅 및 유지 관리를 위해 노드에서 진단 셸 및 SSH 액세스를 활성화하는 데 사용할 수 있습니다.</block>
   <block id="b2594cd127874498d2bbfa55ff19c5f5" category="cell">내부 통신을 위한 ONTAP 도구 가상 IP 주소입니다</block>
   <block id="a9919517205886b598c13e9032a09059" category="paragraph">스토리지 데이터의 마이그레이션 중에 REST API를 사용하여 스토리지 백엔드를 수동으로 온보드합니다. VASA Provider 데이터 마이그레이션에는 기존 Derby 데이터베이스의 데이터를 내보내고 MongoDB 데이터베이스로 가져오는 작업이 포함됩니다.</block>
-  <block id="b7760802f5560cd215cd7dee93951bfd" category="admonition">VMware vSphere 9.XX용 ONTAP 툴에서 마이그레이션하려면 VASA Provider 및 VVol을 사용하는 경우에만 필요합니다.</block>
   <block id="9060074cf56d9aadb36767f42ea21b34" category="admonition">VMware vSphere 9.x용 ONTAP 툴에서 10.4로 마이그레이션한 후 NVMe/FC 프로토콜을 사용하는 VVOL 데이터 저장소가 작동하지 않게 됩니다. ONTAP 툴 10.4는 VMFS 데이터 저장소에서만 NVMe-oF 프로토콜을 지원하기 때문입니다.</block>
   <block id="38376c135168fabdcdde30ebd8337b3c" category="paragraph">VMware vSphere 9.12D1, 9.13D2 및 9.13P2 릴리즈용 ONTAP 툴에서 VMware vSphere 10.4용 ONTAP 툴로 마이그레이션할 수 있습니다.</block>
   <block id="8b8b53606264e9f2f6b3466d202a79e7" category="admonition">패치 릴리스로 업그레이드하기 전에 현재 ONTAP 도구의 배포를 백업해야 합니다.</block>
@@ -2277,4 +2266,14 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="96b2fedcc932770f843418dedfe7f004" category="list-text">Swagger 또는 Postman에서 다음 API를 사용하여 패치 마이그레이션을 수행합니다.</block>
   <block id="99a490d727b23ee47f3b441a7342d420" category="paragraph">curl-X 패치 <block ref="fd07e34d045cf59e25acb7168e60f530" category="inline-link-rx"></block></block>
   <block id="5db743b53293821cee54f2f6de3ecd01" category="list-text">검색 * 이 완료될 때까지 기다리면 모든 호스트에서 인증서가 자동으로 새로 고쳐집니다.</block>
+  <block id="821d346df6abaf74ffd3d352413de8ff" category="list-text">* 호스트 시스템 크기 조정 요구 사항 * 배포 크기에 따른 권장 메모리는 아래 표와 같습니다. HA(고가용성)를 배포하려면 표에 지정된 어플라이언스 크기의 3배가 필요합니다.</block>
+  <block id="a13a152159236a6645a22fae6e163217" category="cell">* 노드당 CPU *</block>
+  <block id="339a4871d6e4fe00637c32e9f180e4a4" category="cell">* 노드당 메모리(GB) *</block>
+  <block id="8bf7814538fb554d339918e8af1041b7" category="cell">* 노드당 디스크 공간(GB) 씩 프로비저닝 *</block>
+  <block id="8e1b11ef4c2ef1e1f2b2b515cc7d496b" category="cell">대규모 참고: 대규모 구축은 HA 구성에만 해당됩니다.</block>
+  <block id="1e1982b2e5b48af62e0f42cbc47ece79" category="admonition">백업이 활성화되면 각 ONTAP Tools 클러스터의 VM이 구축되는 데이터 저장소에 50GB의 공간이 추가로 필요합니다. 따라서 비 HA에는 400GB가 필요하며 HA에는 총 1100GB의 공간이 필요합니다.</block>
+  <block id="6b20aec4ce81da173c6f34628ae6d34d" category="admonition">VMware vSphere 9.XX용 ONTAP 툴에서 마이그레이션하려면 VASA Provider 및 VVol을 사용하는 경우에만 필요합니다. NFS 및 VMFS 데이터 저장소는 스토리지 검색 프로세스 중에 검색됩니다.</block>
+  <block id="a30b2082cc14c7d77fb279a7ebc7b82a" category="cell"><block ref="a30b2082cc14c7d77fb279a7ebc7b82a" category="inline-link-macro-rx"></block></block>
+  <block id="104f0fc4c7f350b84c4cabfd2d187d9a" category="cell"><block ref="104f0fc4c7f350b84c4cabfd2d187d9a" category="inline-link-macro-rx"></block></block>
+  <block id="b2eac513dd0bf503b21a9173bc9d6a72" category="cell"><block ref="b2eac513dd0bf503b21a9173bc9d6a72" category="inline-link-macro-rx"></block></block>
 </blocks>

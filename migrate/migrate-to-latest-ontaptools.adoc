@@ -14,7 +14,7 @@ summary: 스토리지 데이터를 마이그레이션할 때 REST API를 사용�
 스토리지 데이터의 마이그레이션 중에 REST API를 사용하여 스토리지 백엔드를 수동으로 온보드합니다. VASA Provider 데이터 마이그레이션에는 기존 Derby 데이터베이스의 데이터를 내보내고 MongoDB 데이터베이스로 가져오는 작업이 포함됩니다.
 
 
-NOTE: VMware vSphere 9.XX용 ONTAP 툴에서 마이그레이션하려면 VASA Provider 및 VVol을 사용하는 경우에만 필요합니다.
+NOTE: VMware vSphere 9.XX용 ONTAP 툴에서 마이그레이션하려면 VASA Provider 및 VVol을 사용하는 경우에만 필요합니다. NFS 및 VMFS 데이터 저장소는 스토리지 검색 프로세스 중에 검색됩니다.
 
 
 NOTE: VMware vSphere 9.x용 ONTAP 툴에서 10.4로 마이그레이션한 후 NVMe/FC 프로토콜을 사용하는 VVOL 데이터 저장소가 작동하지 않게 됩니다. ONTAP 툴 10.4는 VMFS 데이터 저장소에서만 NVMe-oF 프로토콜을 지원하기 때문입니다.
