@@ -898,7 +898,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="810eb1be62c2223bbb6ff683af2508bd" category="paragraph">다음 표에는 VMware vSphere용 ONTAP 툴을 사용하여 VMware 라이브 사이트 복구 인스턴스당 지원되는 수가 나와 있습니다.</block>
   <block id="beadd6cb6100e1a0cce84603ccb7105a" category="paragraph">다음 표에는 VMware Live Site Recovery의 수와 VMware vSphere 구축 크기용 ONTAP 툴의 수가 나와 있습니다.</block>
   <block id="df0d7eb56e12922cca30035472c40aa7" category="cell">* VMware Live Site Recovery 인스턴스 수 *</block>
-  <block id="de7cd16aa682868ad900edd519b06059" category="list-text">VMware Live Site Recovery 구성 관리 페이지로 이동합니다</block>
   <block id="0b3582622e579cb352e246015d6ca171" category="summary">VMware Live Site Recovery의 Array Manager 마법사를 사용하여 SRA(스토리지 복제 어댑터)를 구성하여 VMware Live Site Recovery와 스토리지 가상 머신\(SVM\) 간의 상호 작용을 지원할 수 있습니다.</block>
   <block id="fe3a4c2227170fc60976b4e12c53d157" category="paragraph">VMware Live Site Recovery의 Array Manager 마법사를 사용하여 SRA(스토리지 복제 어댑터)를 구성하여 VMware Live Site Recovery와 SVM(스토리지 가상 머신) 간의 상호 작용을 지원할 수 있습니다.</block>
   <block id="986d9b60b2308d9411e69051124f1e90" category="list-text">VMware Live Site Recovery에서 보호된 사이트와 복구 사이트를 페어링해야 합니다.</block>
@@ -1497,15 +1496,10 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="6a56526090ecb77854d07be849799242" category="paragraph">MPIO 설정은 NetApp 스토리지 시스템에 대한 기본 경로를 정의합니다. 또한 사용 가능한 경로 중 최적화된 경로를 결정하고(상호 연결 케이블을 통과하는 최적화되지 않은 경로와 비교) 기본 경로를 이러한 경로 중 하나로 설정합니다.</block>
   <block id="89f7633ad6a1e114cebf9902aa42fd5c" category="paragraph">NFS VAAI(NFS vStorage API for Array Integration) 플러그인은 VMware vSphere와 NFS 스토리지 어레이를 통합하는 소프트웨어 구성 요소입니다. VMware vSphere용 ONTAP 툴을 사용하여 NFS VAAI 플러그인을 설치하면 NFS 스토리지 어레이의 고급 기능을 활용하여 특정 스토리지 관련 작업을 ESXi 호스트에서 스토리지 시스템으로 오프로드할 수 있습니다.</block>
   <block id="f9fcb823ee6471ecceb63c9625d2c8fc" category="list-text"><block ref="e6fae45561f1786d6f3534aff65b3377" category="inline-link-rx"></block>설치 패키지를 다운로드합니다.</block>
-  <block id="e27bb3e78ef59cd560e56215a182f3b3" category="list-text">ESXi 호스트 7.0U3 최신 패치 이상 버전 및 ONTAP 9.14.1 이상 버전이 있는지 확인합니다.</block>
   <block id="a585389d21dd9fbdbdc15072bd5d7010" category="list-text">NFS 데이터 저장소를 마운트합니다.</block>
-  <block id="3efe2db5c0b83bc2774d6061359381ed" category="list-text">DataMover.HardwareAcceleratedMove, DataMover.HardwareAcceleratedInit 및 VMFS3.HardwareAcceleratedLocking 호스트 설정의 값을 "1"로 설정합니다. 이러한 값을 자동으로 설정하려면 EXSi 호스트의 권장 설정을 적용합니다. 을 <block ref="a13757a488cc72436349db8983ce6613" category="inline-link-macro-rx"></block>참조하십시오.</block>
-  <block id="957daa20d20cf15a7839d7e44ecdb2ab" category="list-text">vserver NFS modify -vserver_name -vStorage enable 명령을 사용하여 SVM(스토리지 가상 머신)에서 vStorage 옵션을 사용하도록 설정하십시오.</block>
-  <block id="d5676260c3a3d58c4d9ebd79f3558bac" category="list-text">vSphere 7.0U3 최신 패치 릴리스가 있는지 확인합니다.</block>
   <block id="0e57b7b27807ae2427ad1a654eca765e" category="list-text">Settings * &gt; * NFS VAAI Tools * 를 선택합니다.</block>
   <block id="75650b415bb2c723c71117c59992e489" category="list-text">ESXi 호스트에 설치 * 를 선택하고 NFS VAAI 플러그인을 설치할 ESXi 호스트를 선택한 다음 * 설치 * 를 선택합니다.</block>
   <block id="681ca77b2652713f7e6d867f281733ec" category="paragraph">플러그인 설치에 적합한 ESXi 호스트만 표시됩니다. vSphere Web Client의 최근 작업 섹션에서 설치 진행률을 모니터링할 수 있습니다.</block>
-  <block id="4969bf5d68bb071342161a9b29a23f5c" category="list-text">설치가 완료된 후 ESXi 호스트를 수동으로 다시 시작해야 합니다.</block>
   <block id="d15e664257aa2207434ef9543a593a8d" category="paragraph">VMware 관리자가 ESXi 호스트를 다시 시작하면 VMware vSphere용 ONTAP 툴이 NFS VAAI 플러그인을 자동으로 감지하고 사용하도록 설정합니다.</block>
   <block id="58eaebf972358f1cf03d386a4ade1a0f" category="paragraph-title">다음 단계</block>
   <block id="90ba1578c2c367413063e7228d8586b5" category="paragraph">NFS VAAI 플러그인을 설치하고 ESXi 호스트를 재부팅한 후에는 VAAI 복사 오프로드에 대한 올바른 NFS 내보내기 정책을 구성해야 합니다. NFS 환경에서 VAAI를 구성할 때는 다음 요구 사항을 고려하여 내보내기 정책 규칙을 구성하십시오.</block>
@@ -1594,7 +1588,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="dc2afa03f9d9070dcc18808c51d3b403" category="sidebar">VMware vSphere용 ONTAP 툴을 관리합니다</block>
   <block id="dd018bb6638d4453bb4643baac23fad3" category="sidebar">VMware vSphere용 ONTAP 툴을 업그레이드합니다</block>
   <block id="8ce287b63bedf11bff1339b770533de1" category="paragraph">VMware vSphere용 ONTAP 툴을 사용하여 vCenter Server 인스턴스에 VASA Provider를 등록할 수 있습니다. VASA Provider settings 섹션에는 선택한 vCenter Server에 대한 VASA Provider 등록 상태가 표시됩니다.</block>
-  <block id="30219dec23be3c12e0dc980cd1686912" category="list-text">VASA Provider의 이름을 입력하고 VMware vSphere 애플리케이션 사용자 자격 증명을 위한 ONTAP 툴을 제공하고 * 등록 * 을 선택합니다.</block>
   <block id="9d097d858bfbec2ad77c2f37fa3f2b14" category="list-text">등록 및 페이지 새로 고침이 성공하면 등록된 VASA Provider의 상태, 이름 및 버전이 표시됩니다. 등록 후 등록 취소 작업이 활성화됩니다.</block>
   <block id="9bb143d7a2036a80e106dc066c6b01f2" category="cell">VASA Provider 서비스에 대한 들어오는 통신을 위한 통과 포트입니다. VASA Provider 자체 서명 인증서와 사용자 지정 CA 인증서가 이 포트에서 호스팅됩니다.</block>
   <block id="131790b08b90f216c8731a6e1a071001" category="cell">이 포트는 VASA Provider 서비스에 대해 내부적으로 사용되는 서비스 포트입니다.</block>
@@ -1624,7 +1617,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="949ade5949e752c9b4f748b78767cb9b" category="admonition">대부분의 입력 옵션은 워크플로우의 용이성을 위해 노드 1 네트워크 세부 정보로 미리 채워져 있습니다. 그러나 마법사의 마지막 페이지로 이동하기 전에 입력 데이터를 편집할 수 있습니다. 첫 번째 노드에서 IPv6 주소가 활성화된 경우에만 다른 두 노드에 대해 IPv6 주소 세부 정보를 입력할 수 있습니다.</block>
   <block id="5a3dd06e1dba58a23c8b8e8cc1b07e40" category="list-text">요약 * 섹션의 세부 사항을 검토하고 변경 사항을 * 저장 * 하십시오.</block>
   <block id="4625cf8c2cfd4d7299bf041ace164a9e" category="doc">VMware vSphere 서비스에 대해 ONTAP 툴을 사용하도록 설정합니다</block>
-  <block id="8c0d7661d66e379665cc68d77a595468" category="paragraph">서비스를 처음 설정할 때는 VASA Provider 및 SRA 자격 증명을 생성해야 합니다. vCenter Server에서 VASA Provider 및 SRA 서비스를 등록하거나 설정하는 데 사용됩니다.</block>
   <block id="7e436228231add180554f1acd06b74fc" category="admonition">선택적 서비스를 비활성화하기 전에 ONTAP 툴로 관리되는 vCenter Server에서 해당 서비스를 사용하지 않도록 하십시오.</block>
   <block id="ef1116c9ce2e3567875a69b012a5c5d8" category="list-text">호스트 클러스터가 균일한 구성으로 보호되는 경우 데이터 저장소 마운트 옵션이 비활성화됩니다.</block>
   <block id="f234e66a493b1542c97d72433c0faca6" category="paragraph">VMware vSphere용 ONTAP 툴은 구성 탭에 데이터 저장소와 해당 볼륨에 대한 ONTAP 스토리지의 뷰를 보여 줍니다.</block>
@@ -1991,7 +1983,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="1870a2aa0cd0290ddebdd4f60c121814" category="list-text">Datastore name * 및 * Protocol * 정보를 입력합니다.</block>
   <block id="44a6b64ae3a7fef2f349f72cf3e32eb2" category="admonition">ASA R2 시스템은 VVOL을 위해 iSCSI 및 FC 프로토콜을 지원합니다.</block>
   <block id="8dde1f10223f65a679d998e569d238c3" category="list-text">데이터 저장소를 생성할 스토리지 VM을 선택합니다.</block>
-  <block id="80d67086677891099603cd75cd0a26e8" category="list-text">고급 옵션 * 에서 NFS 프로토콜에 대한 사용자 지정 내보내기 정책 또는 iSCSI 및 FC 프로토콜에 대한 사용자 지정 이니시에이터 그룹 이름을 선택합니다.</block>
   <block id="fd81895c9b4eb40921c7e241c091a1cd" category="admonition">ASA R2 스토리지 시스템 유형 SVM에서는 데이터 저장소가 논리적 컨테이너일 뿐이므로 스토리지 유닛(LUN/네임스페이스)이 생성되지 않습니다.</block>
   <block id="e31f7e9745380863f95d73e48e2fabbf" category="list-text">Storage attributes * 창에서 새 볼륨을 생성하거나 기존 볼륨을 사용할 수 있습니다. 그러나 이 두 가지 유형의 볼륨을 결합하여 VVol 데이터 저장소를 만들 수는 없습니다.</block>
   <block id="39355798de4906f96b13a31fd76a15e6" category="paragraph">새 볼륨을 생성할 때 데이터 저장소에서 QoS를 사용하도록 설정할 수 있습니다. 기본적으로 LUN 생성 요청마다 하나의 볼륨이 생성됩니다. 이 단계는 ASA R2 스토리지 시스템을 사용하는 VVol 데이터 저장소에는 적용되지 않습니다.</block>
@@ -2001,7 +1992,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="002da57ee8bba82828c8058c7d6cfecf" category="list-text">Name and protocol * 창에 데이터스토어 이름, 크기 및 프로토콜 정보를 입력합니다. 고급 옵션에서 * Datastore cluster * 및 * Kerberos authentication * 을 선택합니다.</block>
   <block id="8d4768d2ffaf314b3ea87a21a27f7ec4" category="admonition">Kerberos 인증은 NFS 4.1 프로토콜을 선택한 경우에만 사용할 수 있습니다.</block>
   <block id="7b2c27e8d2aac8a15e90a619cd860d4d" category="list-text">Storage * 창에서 * Platform * 및 * Storage VM * 을 선택합니다.</block>
-  <block id="b48e3fbf26333d26d1456ba93f1a6c8f" category="list-text">필요한 경우 고급 옵션에서 * 사용자 지정 내보내기 정책 * 을 선택하되 권장하지는 않습니다. 사용하는 경우 vCenter에서 모든 객체에 대해 검색을 실행해야 합니다.</block>
   <block id="97e5c74d2bd0f78816caf0c5c9036a82" category="admonition">SVM의 기본/루트 볼륨 정책을 사용하여 NFS 데이터 저장소를 생성할 수 없습니다.</block>
   <block id="42d1ce422f23ede57a5c2e13f8855890" category="list-text">고급 옵션에서 플랫폼 드롭다운에서 성능 또는 용량을 선택한 경우에만 * 비대칭 * 전환 버튼이 표시됩니다.</block>
   <block id="fa6c3148403311b0d64dfc44a5925b3a" category="list-text">플랫폼 드롭다운에서 * any * 옵션을 선택하면 플랫폼 또는 비대칭 플래그와 상관없이 vCenter의 일부인 SVM을 볼 수 있습니다.</block>
@@ -2214,7 +2204,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="0c72f5748e7c096b829fa8c13bdb6b7f" category="list-text">IPv4는 노드 구성의 IP 주소 구성 요소로, 디버깅 및 유지 관리를 위해 노드에서 진단 셸 및 SSH 액세스를 활성화하는 데 사용할 수 있습니다.</block>
   <block id="b2594cd127874498d2bbfa55ff19c5f5" category="cell">내부 통신을 위한 ONTAP 도구 가상 IP 주소입니다</block>
   <block id="a9919517205886b598c13e9032a09059" category="paragraph">스토리지 데이터의 마이그레이션 중에 REST API를 사용하여 스토리지 백엔드를 수동으로 온보드합니다. VASA Provider 데이터 마이그레이션에는 기존 Derby 데이터베이스의 데이터를 내보내고 MongoDB 데이터베이스로 가져오는 작업이 포함됩니다.</block>
-  <block id="9060074cf56d9aadb36767f42ea21b34" category="admonition">VMware vSphere 9.x용 ONTAP 툴에서 10.4로 마이그레이션한 후 NVMe/FC 프로토콜을 사용하는 VVOL 데이터 저장소가 작동하지 않게 됩니다. ONTAP 툴 10.4는 VMFS 데이터 저장소에서만 NVMe-oF 프로토콜을 지원하기 때문입니다.</block>
   <block id="38376c135168fabdcdde30ebd8337b3c" category="paragraph">VMware vSphere 9.12D1, 9.13D2 및 9.13P2 릴리즈용 ONTAP 툴에서 VMware vSphere 10.4용 ONTAP 툴로 마이그레이션할 수 있습니다.</block>
   <block id="8b8b53606264e9f2f6b3466d202a79e7" category="admonition">패치 릴리스로 업그레이드하기 전에 현재 ONTAP 도구의 배포를 백업해야 합니다.</block>
   <block id="bf24d37a98e4819aab4f021ae207e4a2" category="list-text">VMware vSphere 10.4 릴리즈용 ONTAP 툴로 마이그레이션할 vCenter Server 인스턴스를 추가합니다. 자세한 내용은 을 <block ref="fbc3413db4202f1fe331f16af6b38f13" category="inline-link-macro-rx"></block> 참조하십시오.</block>
@@ -2222,7 +2211,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="46ec37b71ccf8c993dcbf7cb78fe2af7" category="admonition">페일오버가 완료되었지만 재보호가 보류 중인 경우에는 마이그레이션을 시작하지 마십시오. 마이그레이션을 진행하기 전에 재보호 프로세스가 완료되었는지 확인합니다. 테스트 페일오버가 진행 중인 경우 테스트 페일오버를 정리하고 마이그레이션을 시작합니다.</block>
   <block id="da2f48d729eae4ca1010b4a077b66b02" category="list-text">다음 단계에 따라 VMware 사이트 복구에서 VMware vSphere 9.xx용 ONTAP 툴 SRA 어댑터를 삭제합니다.</block>
   <block id="b2c26a87d051d5889e6d2e4ab1fc79de" category="list-text">스토리지 복제 어댑터 * 섹션으로 이동합니다.</block>
-  <block id="b80a5fe26546f4090c014df2108347ab" category="list-text">줄임표 메뉴에서 * Reset configuration * 을 선택합니다.</block>
   <block id="1ab7bd22ce5077185a70517ea0db34ec" category="list-text">줄임표 메뉴에서 * 삭제 * 를 선택합니다.</block>
   <block id="63fbd3cb55ffabae3747cd50140f1b47" category="list-text">의 단계에 따라 VMware vSphere 10.4 SRA 어댑터용 ONTAP 툴을 설치합니다<block ref="9b6610ae0d9b3f2df042445cc8433cf4" category="inline-link-macro-rx"></block>.</block>
   <block id="e3e32085ef48d00b185f9ae05a428520" category="list-text">VMware Live Site Recovery 사용자 인터페이스 페이지에서 * 스토리지 검색 * 및 * 디바이스 검색 * 작업을 수행하고 디바이스가 마이그레이션 전과 동일하게 표시되는지 확인합니다.</block>
@@ -2272,8 +2260,18 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="8bf7814538fb554d339918e8af1041b7" category="cell">* 노드당 디스크 공간(GB) 씩 프로비저닝 *</block>
   <block id="8e1b11ef4c2ef1e1f2b2b515cc7d496b" category="cell">대규모 참고: 대규모 구축은 HA 구성에만 해당됩니다.</block>
   <block id="1e1982b2e5b48af62e0f42cbc47ece79" category="admonition">백업이 활성화되면 각 ONTAP Tools 클러스터의 VM이 구축되는 데이터 저장소에 50GB의 공간이 추가로 필요합니다. 따라서 비 HA에는 400GB가 필요하며 HA에는 총 1100GB의 공간이 필요합니다.</block>
-  <block id="6b20aec4ce81da173c6f34628ae6d34d" category="admonition">VMware vSphere 9.XX용 ONTAP 툴에서 마이그레이션하려면 VASA Provider 및 VVol을 사용하는 경우에만 필요합니다. NFS 및 VMFS 데이터 저장소는 스토리지 검색 프로세스 중에 검색됩니다.</block>
   <block id="a30b2082cc14c7d77fb279a7ebc7b82a" category="cell"><block ref="a30b2082cc14c7d77fb279a7ebc7b82a" category="inline-link-macro-rx"></block></block>
   <block id="104f0fc4c7f350b84c4cabfd2d187d9a" category="cell"><block ref="104f0fc4c7f350b84c4cabfd2d187d9a" category="inline-link-macro-rx"></block></block>
   <block id="b2eac513dd0bf503b21a9173bc9d6a72" category="cell"><block ref="b2eac513dd0bf503b21a9173bc9d6a72" category="inline-link-macro-rx"></block></block>
+  <block id="310c2012d9e31c7b5fdc7c1d18ec2a5e" category="list-text">고급 옵션에서 NFS 프로토콜에 대해 * 사용자 지정 내보내기 정책 * 을 선택하거나 iSCSI 및 FC 프로토콜에 대해 사용자 지정 이니시에이터 그룹 이름을 선택할 수 있지만 권장하지는 않습니다. 이 옵션을 사용하는 경우 vCenter에서 모든 객체에 대해 검색을 실행해야 합니다.</block>
+  <block id="f8337e74d8f6e6f2215578fb2c3707d0" category="list-text">고급 옵션에서 사용자 지정 엑스포트 정책을 선택할 수 있지만 권장하지는 않습니다. 사용하는 경우 vCenter에서 모든 객체에 대해 검색을 실행해야 합니다.</block>
+  <block id="0882ef7c28701c98bdd62f72da8634a7" category="list-text">ESXi 호스트와 vSphere 7.0U3 최신 패치 이상 버전 및 ONTAP 9.14.1 이상 버전이 있는지 확인합니다.</block>
+  <block id="2bf603021962a26e3bcb2bea93110c9f" category="list-text">설치 후 ESXi 호스트를 수동으로 다시 시작합니다.</block>
+  <block id="ef3669e38cbe7dbc2c1702bdcefb324a" category="list-text">VASA Provider의 이름과 자격 증명을 입력합니다. 사용자 이름은 문자, 숫자 및 밑줄만 포함할 수 있습니다. 암호 길이는 8자에서 256자 사이여야 합니다.</block>
+  <block id="b5249314aff5fae6b6de54ce7f13f16b" category="list-text">Register * 를 선택합니다.</block>
+  <block id="7589490ed5e2b68e2f28beb45ecf3fca" category="paragraph">서비스를 처음 설정할 때는 VASA Provider 및 SRA 자격 증명을 생성해야 합니다. vCenter Server에서 VASA Provider 및 SRA 서비스를 등록하거나 설정하는 데 사용됩니다. 사용자 이름은 문자, 숫자 및 밑줄만 포함할 수 있습니다. 암호 길이는 8자에서 256자 사이여야 합니다.</block>
+  <block id="67b08defea5ec6059f6e7c54a1da7e7d" category="admonition">ONTAP 툴 10.4는 VMFS 데이터 저장소를 통해서만 NVMe-oF 프로토콜을 지원하므로 VMware vSphere 9용 ONTAP 툴에서 10.4로 마이그레이션한 후 NVMe/FC 프로토콜을 사용하는 VVOL 데이터 저장소가 작동하지 않습니다.</block>
+  <block id="7c4cc8f57df0d72a910b2adf9c1dfc8a" category="list-text">VMware Live Site Recovery 구성 관리 페이지로 이동합니다</block>
+  <block id="3f6debbe365887c1e9cead81caac7ed5" category="list-text">줄임표 메뉴에서 * Reset configuration * 을 선택합니다.</block>
+  <block id="89262eb49fd08637032ae5b8afc51a41" category="admonition">VMware vSphere 9용 ONTAP 툴에서 마이그레이션하는 작업은 VASA Provider와 VVOL을 사용하는 경우에만 필요합니다. NFS 및 VMFS 데이터 저장소는 스토리지 검색 프로세스 중에 검색됩니다.</block>
 </blocks>
