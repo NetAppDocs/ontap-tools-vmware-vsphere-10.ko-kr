@@ -17,7 +17,6 @@ NFS VAAI(NFS vStorage API for Array Integration) 플러그인은 VMware vSphere�
 *  https://mysupport.netapp.com/site/products/all/details/nfsplugin-vmware-vaai/downloads-tab["VMware VAAI용 NetApp NFS 플러그인"]설치 패키지를 다운로드합니다.
 * ESXi 호스트와 vSphere 7.0U3 최신 패치 이상 버전 및 ONTAP 9.14.1 이상 버전이 있는지 확인합니다.
 * NFS 데이터 저장소를 마운트합니다.
-* vSphere 8.x는 NetApp NFS VAAI 플러그인 2.0.1(빌드 16)에서 지원됩니다.
 
 
 .단계

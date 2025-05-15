@@ -211,14 +211,12 @@
   <block id="a883deebdfbfeb611d06d3f55178ccbf" category="doc">ESXi 호스트 값을 설정합니다</block>
   <block id="9232ab7e918fc93452c2dc7c8fab1b8c" category="paragraph">ESXi 호스트에서 다음 값을 설정할 수 있습니다.</block>
   <block id="ab9d8dfb65807487a899df1683e128fa" category="section-title">HBA/CNA 어댑터 설정</block>
-  <block id="d3c41b5a4cf556f3a598cc1221e08ee4" category="paragraph">NetApp 스토리지 시스템에 대해 권장되는 HBA 시간 초과 설정을 설정합니다.</block>
   <block id="c803cf4eb4cbf3a6b12b1e1cc3443970" category="section-title">MPIO 설정</block>
   <block id="5fc0e54193f8c3ad7e67febc376fc805" category="section-title">NFS 설정</block>
   <block id="5f115b5221541c527e67a2b71da5fb5d" category="list-text">사이드바에서 vCenter를 선택합니다.</block>
   <block id="3a0689f041b08d0026691257176a98a0" category="summary">VMware vSphere용 ONTAP 툴을 사용하여 VAAI\(NetApp NFS Plug-in for VMware vStorage APIs for Array Integration)를 설치할 수 있습니다.</block>
   <block id="e1f59101bee140f72feebf78fe15f214" category="doc">NFS VAAI 플러그인을 설치합니다</block>
   <block id="bf25ac3fc5bee2b3ec36e32661767682" category="inline-link">VMware VAAI용 NetApp NFS 플러그인</block>
-  <block id="ebfe914a124eb1ec0cc1d8f6d6c420cb" category="list-text">vSphere 8.x는 NetApp NFS VAAI 플러그인 2.0.1(빌드 16)에서 지원됩니다.</block>
   <block id="42e4695fefd280ddc3a6f11124586510" category="list-text">VAAI 플러그인이 vCenter Server에 업로드되면 * Existing version * 섹션에서 * Change * 를 선택합니다. VAAI 플러그인이 vCenter Server에 업로드되지 않은 경우 * 업로드 * 버튼을 선택합니다.</block>
   <block id="062e7967273cea76dff9c3579a0c44db" category="doc">vCenter Server 인스턴스에 VASA Provider를 등록합니다</block>
   <block id="3f95368adb4475e89e1f4206049b54ad" category="summary">VVOL 데이터 저장소 마운트 대화 상자를 사용하여 하나 이상의 추가 호스트에 VVol(VMware Virtual Volumes) 데이터 저장소를 마운트할 수 있습니다. 데이터 저장소를 마운트하면 추가 호스트에 대한 스토리지 액세스가 가능합니다. API를 통해서만 VVOL 데이터 저장소를 마운트 해제할 수 있습니다.</block>
@@ -1373,14 +1371,10 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="34708a7ee3c666f413240fedba4b042a" category="cell">이 카드는 성능 메트릭별로 정렬된 상위 10개 데이터 저장소를 보여 줍니다. 머리글을 선택하여 선택한 메트릭에 대한 상위 10개 데이터 저장소를 오름차순 또는 내림차순으로 정렬할 수 있습니다. 카드의 정렬 및 필터링 변경 사항은 브라우저 캐시를 변경하거나 지울 때까지 유지됩니다. 데이터 저장소 유형 드롭다운에서 데이터 저장소 유형을 선택할 수 있습니다(NFS, VMFS 또는 VVol).</block>
   <block id="4c2183bca6b89d1820fb11f5a1d938c8" category="cell">이 카드는 설정 그룹/범주별로 권장되는 NetApp 호스트 설정과 관련된 모든 ESXi 호스트(선택한 vCenter에 대한) 설정의 전체 규정 준수 상태를 표시합니다. 권장 설정 적용 * 링크를 선택하여 권장 설정을 적용할 수 있습니다. 호스트의 준수 상태를 선택하여 호스트 목록을 볼 수 있습니다.</block>
   <block id="62938ab037901a948099ef101beec571" category="list-text">상태인 검색된 스토리지 컨트롤러를<block ref="b7aa7656b58c3a7862a86f5f8cd10336" prefix=" " category="inline-code"></block> 선택하고 * Actions * &gt; * Modify * 를 선택합니다.</block>
-  <block id="3225a10b07f1580f10dee4abc3779e6c" category="cell">매개 변수</block>
   <block id="c77eb099ccd3a59aa3a56c3c98c84669" category="cell">이 값을 다음으로 설정...</block>
   <block id="117704664d6cada78ac3107380f63d23" category="cell">Disk.QFullSampleSize 를 참조하십시오</block>
-  <block id="07b21acb18ec7b34bd91453e33448369" category="cell">모든 구성에서 32. 이 값을 설정하면 I/O 오류가 발생하지 않습니다.</block>
   <block id="f66a3c183f0e736240b77f8b755c880e" category="cell">Disk.QFullThreshold를 참조하십시오</block>
-  <block id="ed6604a4485d16e1285db04ae3d4279f" category="cell">모든 구성에 대해 8을 선택합니다. 이 값을 설정하면 I/O 오류가 방지됩니다.</block>
   <block id="19c08de7404551288e1274186e039ef4" category="cell">Emulex FC HBA 시간 초과</block>
-  <block id="6ea7e3b1d2b04c77c55309b1aaa41f8c" category="cell">기본값.</block>
   <block id="d46cddda4da7ec11f17472d11df95b68" category="cell">QLogic FC HBA 시간 초과</block>
   <block id="83f499a540b1323009c200d6f8cc9396" category="cell">매개 변수</block>
   <block id="c3b49a515dd0046685e06092642aa139" category="cell">NET.TcpipHeapSize</block>
@@ -2263,8 +2257,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="a30b2082cc14c7d77fb279a7ebc7b82a" category="cell"><block ref="a30b2082cc14c7d77fb279a7ebc7b82a" category="inline-link-macro-rx"></block></block>
   <block id="104f0fc4c7f350b84c4cabfd2d187d9a" category="cell"><block ref="104f0fc4c7f350b84c4cabfd2d187d9a" category="inline-link-macro-rx"></block></block>
   <block id="b2eac513dd0bf503b21a9173bc9d6a72" category="cell"><block ref="b2eac513dd0bf503b21a9173bc9d6a72" category="inline-link-macro-rx"></block></block>
-  <block id="310c2012d9e31c7b5fdc7c1d18ec2a5e" category="list-text">고급 옵션에서 NFS 프로토콜에 대해 * 사용자 지정 내보내기 정책 * 을 선택하거나 iSCSI 및 FC 프로토콜에 대해 사용자 지정 이니시에이터 그룹 이름을 선택할 수 있지만 권장하지는 않습니다. 이 옵션을 사용하는 경우 vCenter에서 모든 객체에 대해 검색을 실행해야 합니다.</block>
-  <block id="f8337e74d8f6e6f2215578fb2c3707d0" category="list-text">고급 옵션에서 사용자 지정 엑스포트 정책을 선택할 수 있지만 권장하지는 않습니다. 사용하는 경우 vCenter에서 모든 객체에 대해 검색을 실행해야 합니다.</block>
   <block id="0882ef7c28701c98bdd62f72da8634a7" category="list-text">ESXi 호스트와 vSphere 7.0U3 최신 패치 이상 버전 및 ONTAP 9.14.1 이상 버전이 있는지 확인합니다.</block>
   <block id="2bf603021962a26e3bcb2bea93110c9f" category="list-text">설치 후 ESXi 호스트를 수동으로 다시 시작합니다.</block>
   <block id="ef3669e38cbe7dbc2c1702bdcefb324a" category="list-text">VASA Provider의 이름과 자격 증명을 입력합니다. 사용자 이름은 문자, 숫자 및 밑줄만 포함할 수 있습니다. 암호 길이는 8자에서 256자 사이여야 합니다.</block>
@@ -2274,4 +2266,9 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="7c4cc8f57df0d72a910b2adf9c1dfc8a" category="list-text">VMware Live Site Recovery 구성 관리 페이지로 이동합니다</block>
   <block id="3f6debbe365887c1e9cead81caac7ed5" category="list-text">줄임표 메뉴에서 * Reset configuration * 을 선택합니다.</block>
   <block id="89262eb49fd08637032ae5b8afc51a41" category="admonition">VMware vSphere 9용 ONTAP 툴에서 마이그레이션하는 작업은 VASA Provider와 VVOL을 사용하는 경우에만 필요합니다. NFS 및 VMFS 데이터 저장소는 스토리지 검색 프로세스 중에 검색됩니다.</block>
+  <block id="395ddb6ca1b9948e32145f8fa1a9201e" category="paragraph">다음 매개 변수를 기본값으로 설정합니다.</block>
+  <block id="be34be4d53796d7420ca7e08ae84df3e" category="list-text">고급 옵션 아래에서:</block>
+  <block id="bb18d56459266886917f70dbe8e01ef4" category="list-text">사용자 지정 내보내기 정책 * 을 선택한 경우 vCenter에서 모든 개체에 대해 검색을 실행해야 합니다. 이 옵션은 사용하지 않는 것이 좋습니다.</block>
+  <block id="0b3b86369c55c3299fc4f945d3cc9a8c" category="list-text">iSCSI 및 FC 프로토콜에 대해 * 사용자 정의 이니시에이터 그룹 * 이름을 선택할 수 있습니다.</block>
+  <block id="91756c37ce937828e162f58ca53f85a0" category="list-text">고급 옵션에서 * 사용자 지정 내보내기 정책 * 을 선택한 경우 vCenter에서 모든 객체에 대해 검색을 실행합니다. 이 옵션은 사용하지 않는 것이 좋습니다.</block>
 </blocks>
