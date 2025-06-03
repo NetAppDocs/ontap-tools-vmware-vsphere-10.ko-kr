@@ -64,9 +64,9 @@ ONTAP 툴의 사용자 인터페이스를 사용하여 클러스터 또는 SVM �
 * link:../configure/associate-storage-backend.html["스토리지 백엔드를 vCenter Server 인스턴스에 연결합니다"]
 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["6개"] 여러 vCenter Server로 작업하는 경우 인증서를 업그레이드합니다
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["6개"] 여러 vCenter Server 인스턴스로 작업하는 경우 인증서를 업그레이드하세요.
 [role="quick-margin-para"]
-여러 vCenter Server로 작업하는 경우 자체 서명된 인증서를 CA(인증 기관) 서명된 인증서로 업그레이드하십시오.
+여러 vCenter Server 인스턴스로 작업하는 경우 자체 서명된 인증서를 인증 기관(CA) 서명 인증서로 업그레이드합니다.
 
 [role="quick-margin-list"]
 * link:../manage/certificate-manage.html["인증서를 관리합니다"]
@@ -82,7 +82,7 @@ SRA 기능을 사용하여 재해 복구를 구성하고 NFS 또는 VMFS 데이�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-8.png["8개"] (선택 사항) SnapMirror 액티브 동기화 보호를 활성화합니다
 [role="quick-margin-para"]
-SnapMirror 활성 동기화에 대한 호스트 클러스터 보호를 관리하도록 VMware vSphere용 ONTAP 툴을 구성합니다. 소스 클러스터와 대상 클러스터와 SVM을 페어링하여 SnapMirror 액티브 동기화 지원 VMFS 데이터 저장소에만 적용됩니다.
+SnapMirror 활성 동기화에 대한 호스트 클러스터 보호를 관리하도록 VMware vSphere용 ONTAP 툴을 구성합니다. ONTAP 시스템에서 ONTAP 클러스터 및 SVM 피어링을 수행하여 SnapMirror 활성 동기화를 사용합니다. VMFS 데이터 저장소에만 적용됩니다.
 
 [role="quick-margin-list"]
 * link:../configure/protect-cluster.html["호스트 클러스터 보호를 사용하여 보호합니다"]
