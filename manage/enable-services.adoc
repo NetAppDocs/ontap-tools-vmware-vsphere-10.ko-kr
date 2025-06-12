@@ -26,6 +26,6 @@ ONTAP Tools Manager를 사용하여 관리자 암호를 변경하여 VASA Provid
 NOTE: 선택적 서비스를 비활성화하기 전에 ONTAP 툴로 관리되는 vCenter Server에서 해당 서비스를 사용하지 않도록 하십시오.
 
 +
-Allow import of vVols configuration * 옵션은 VASA Provider 서비스가 활성화된 경우에만 표시됩니다. 이 옵션을 사용하면 ONTAP 툴 9.x에서 ONTAP 툴 10.4으로 VVol 데이터를 마이그레이션할 수 있습니다.
+Allow import of vVols configuration * 옵션은 VASA Provider 서비스가 활성화된 경우에만 표시됩니다. 이 옵션을 사용하면 ONTAP 툴 9.xx에서 ONTAP 툴 10.4으로 VVol 데이터를 마이그레이션할 수 있습니다.
 
 

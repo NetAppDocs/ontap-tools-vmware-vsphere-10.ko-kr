@@ -281,9 +281,7 @@
   <block id="7ac3113c1b6737c7529a9d0b23af02fb" category="paragraph">ONTAP 툴 관리자 암호를 잊은 경우 VMware vSphere 유지 관리 콘솔용 ONTAP 툴에서 생성된 토큰을 사용하여 관리자 자격 증명을 재설정할 수 있습니다.</block>
   <block id="7b5d5a72aa33a2b11a9a331250d66471" category="list-text">로그인 화면에서 * 비밀번호 재설정 * 옵션을 선택합니다.</block>
   <block id="ca6ef544de910ada8f9334d21c77dd5e" category="list-text">암호 변경 팝업 창에서 암호 재설정 토큰, 사용자 이름 및 새 암호 세부 정보를 입력합니다.</block>
-  <block id="24e33ece3722557577533666c712c8a7" category="summary">ONTAP 툴의 유지보수 콘솔을 사용하여 애플리케이션, 시스템 및 네트워크 구성을 관리할 수 있습니다. 관리자 암호 및 유지보수 암호를 변경할 수 있습니다. 또한 지원 번들을 생성하고, 다양한 로그 수준을 설정하고, TLS 구성을 확인 및 관리하고, 원격 진단을 시작할 수 있습니다.</block>
   <block id="6de1d606334a744ef35a27bdd474a0c6" category="doc">VMware vSphere 유지 관리 콘솔용 ONTAP 툴 개요</block>
-  <block id="98e3bea019c371a7308c43a4583f8138" category="paragraph">유지 관리 콘솔에 액세스하려면 VMware vSphere용 ONTAP 툴을 구축한 후 VMware 툴을 설치해야 합니다. 를 사용해야 합니다<block ref="67f50785d40416a7a7689c5c353f1128" prefix=" " category="inline-code"></block> 구축 중에 ONTAP 툴의 유지 관리 콘솔에 로그인하기 위해 구성한 사용자 이름과 암호입니다. 유지 관리 또는 루트 로그인 콘솔에서 파일을 편집할 때는 * nano * 를 사용해야 합니다.</block>
   <block id="234b4e4f9ae67097596aecf827e76c96" category="admonition">에 대한 암호를 설정해야 합니다<block ref="776e6c3d14fd9df9fc13e130d598c448" prefix=" " category="inline-code"></block> 원격 진단을 활성화하는 동안 사용자.</block>
   <block id="477e80d80b2fc511da8499af4d9d38a6" category="list-text">VASA Provider Services 및 SRA Services에 대한 로그 수준을 변경합니다</block>
   <block id="905caaa103479b6c14b498a6d296af1e" category="list-text">AutoSupport를 비활성화합니다</block>
@@ -339,7 +337,6 @@
   <block id="0ca6560aa88bd22fa1b3bb69d8594555" category="list-title">단계:</block>
   <block id="c0714b594de6bdb767078508cfc29726" category="summary">VMware vSphere용 ONTAP 툴의 구성 탭에 있는 ONTAP 스토리지 뷰는 데이터 저장소 및 해당 볼륨과 관련된 데이터를 제공합니다.</block>
   <block id="eefb401515606432e535b2c010ca31a1" category="doc">데이터 저장소에 대한 ONTAP 스토리지 뷰</block>
-  <block id="c3e54de1629f4b952a428aa7d2126621" category="summary">VMware vSphere용 ONTAP 툴을 구축하기 전에 배포 패키지의 공간 요구 사항과 몇 가지 기본적인 호스트 시스템 요구 사항을 숙지해야 합니다.</block>
   <block id="d2a731e17e932f5e2185dd4d0230dace" category="paragraph">VMware vSphere용 ONTAP 툴을 VMware vCSA(vCenter Server 가상 어플라이언스)와 함께 사용할 수 있습니다. VMware vSphere용 ONTAP 툴을 ESXi 시스템이 포함된 지원되는 vSphere 클라이언트에 구축해야 합니다.</block>
   <block id="3c69aed3fe79d658207798783104200f" category="inline-link">콘텐츠 라이브러리 만들기 및 사용</block>
   <block id="310f705969896b4d59368edab71d1d87" category="list-text">완료 준비 * 창에서 세부 정보를 검토하고 * 마침 * 을 선택합니다.</block>
@@ -553,8 +550,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="3f175fe208931c674dc6c6252477f69b" category="list-text">리소스 매핑</block>
   <block id="7cb2c88a440a03e13d32d94f6c048340" category="list-text">자리 표시자 데이터 저장소</block>
   <block id="a00d4477c9c1974aff09f6ea5b44859d" category="paragraph">네트워크 매핑 페이지에는 보호된 사이트 리소스와 복구 사이트 리소스가 표시됩니다. 사용자 환경의 다른 네트워크에 대해서도 동일한 단계를 수행할 수 있습니다.</block>
-  <block id="135dda3ac3096b9bd31ceb04b513c216" category="section-title">일반적인 마이그레이션 단계</block>
-  <block id="a556515aafd07bfe4c2dfa6abbaa4ccb" category="section-title">SRA 마이그레이션 단계</block>
   <block id="77efba168b5a2059c2d20a1e2673f5d1" category="paragraph">보호 사이트와 복구 사이트 모두에서 다음 단계를 수행합니다.</block>
   <block id="4b2e39d58448cd6246edaab6e2789245" category="paragraph">*HTTP 메서드 및 끝점*</block>
   <block id="0b0231c1815d06ad4701a091ce91a740" category="paragraph">이 REST API 호출은 다음과 같은 메소드와 엔드포인트를 사용합니다.</block>
@@ -564,22 +559,7 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="b46b241331d5bfe90afd25ec36605c07" category="paragraph">* 처리 유형 *</block>
   <block id="288aae25bc408055f50c21c991903a44" category="paragraph">비동기식</block>
   <block id="a62fbfbe1fa2fbcd3ff1ab71d9f0cf7a" category="paragraph">* 컬링 예제 *</block>
-  <block id="80e56be2a784c57e6087b3af6db66ad9" category="paragraph">{
-  "OTV_IP":"10.12.13.45",
-  "VASA_provider_credentials": {
-    "사용자 이름":"vasauser",
-    "암호":"******* "
-  }
-  "database_password":" ******* "
-}</block>
   <block id="654a9186fe9a47c1397903b9228f2c36" category="paragraph">다른 릴리스 마이그레이션에 대한 요청 본문:</block>
-  <block id="5cda9daf0baf81a9f615b94e32abb4a8" category="paragraph">{
-  "OTV_IP":"10.12.13.45",
-  "VASA_provider_credentials": {
-    "사용자 이름":"vasauser",
-    "암호":"******* "
-  }
-}</block>
   <block id="18009c9216d59118fb460184e2ec0a3d" category="paragraph">* JSON 출력 예 *</block>
   <block id="492fdcd87814cf3c979a27709fc29350" category="paragraph">작업 객체가 반환됩니다. 다음 단계에서 사용할 작업 식별자를 저장해야 합니다.</block>
   <block id="372ff7cae2da4e0d6205af97a48a61eb" category="paragraph">{
@@ -589,7 +569,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
 }</block>
   <block id="ec874bf582309d24e5c0f1f38429fb73" category="inline-link-macro">vCenter Server에 VASA Provider를 등록합니다</block>
   <block id="63bc9a3997d66d835d9f3ec29451407d" category="cell">패치</block>
-  <block id="bdfee7ad87d9004e1091e6e1762d0e84" category="paragraph">* JSON 입력 예 *</block>
   <block id="589c4957e1e0bb7b0bf55fa835dbaf3d" category="list-text">y * 를 입력하여 선택한 암호를 설정합니다.</block>
   <block id="0a01c0c2d00b20ff323dc6b25ceb30a5" category="list-text">kN Exec-IT NTV-mongodb-0 sh-kn은 kubectl-n NTV-system의 별칭입니다.</block>
   <block id="bfc1d4c138c87f77e5b639193ca91674" category="list-text">다음 방법 중 하나를 사용하여 모든 볼륨의 스냅샷을 하나씩 생성합니다.</block>
@@ -949,7 +928,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="ec00f002c530dcfbc3a0e06a58d47937" category="cell">ONTAP 도구 10.1</block>
   <block id="ab83860ed087a089d00a21810f2a0bf7" category="cell">주요 가치 제안</block>
   <block id="4273cb76acdc3e1de02819d037c77ad4" category="cell">향상된 보안, 규정 준수 및 자동화 기능으로 Day 0 ~ Day 2 운영을 간소화하고 단순화합니다</block>
-  <block id="798f5d4722c6982593d6671eef46371d" category="cell">10.x에서 9.x 패리티로 진화하는 ONTAP 도구, 고가용성, 성능 및 확장성 제한 확장</block>
   <block id="92d3c85edd0fa69062ef2c7cca594814" category="cell">ONTAP 릴리스 자격</block>
   <block id="f69940d2c889c5ba58609514e4ec4bff" category="cell">ONTAP 9.9.1에서 ONTAP 9.15.1로</block>
   <block id="d4dcb3d0be17e55a6784a2f961f93bc2" category="cell">ONTAP 9.12.1에서 ONTAP 9.14.1로</block>
@@ -1110,7 +1088,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="623a19a9d92512b6c3a5932066325ffa" category="paragraph">인터페이스 탭은 인터페이스에 대한 자세한 정보를 제공합니다.</block>
   <block id="bbf638168b43bf582cecf10177afc3d2" category="paragraph">로컬 계층 탭에는 집계 목록에 대한 자세한 정보가 표시됩니다.</block>
   <block id="c46965d55afff0a89c0bb3bd26c0a653" category="summary">스토리지 데이터를 마이그레이션할 때 REST API를 사용하여 스토리지 백엔드를 수동으로 온보드합니다. VASA Provider 데이터를 마이그레이션할 때 기존 Derby 데이터베이스에서 데이터를 내보내고 MongoDB 데이터베이스로 가져옵니다.</block>
-  <block id="b7b423b5e37e418ae4659bcf83c729b5" category="section-title">VASA Provider 마이그레이션 단계</block>
   <block id="ffdec42d5d13cecca850e153f75748ec" category="paragraph">VASA Provider를 삭제하지 마십시오.</block>
   <block id="073983521d52887782f4ac8fcd628e60" category="cell">ONTAP TOOLS 10.2 이상</block>
   <block id="f995a81db9639d1f6676a86caa7c78e5" category="cell">VASA Provider 지원</block>
@@ -1629,7 +1606,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="f75d6048a8fcc9f4822dcc0f5eef23d2" category="inline-link-macro">VMware Live Site Recovery 어플라이언스에서 SRA를 구성합니다</block>
   <block id="0789cade62ba5a348d7e1ed5a15e5429" category="summary">VMware Live Site Recovery 어플라이언스를 구축한 후에는 VMware Live Site Recovery 어플라이언스에 SRA를 구성해야 합니다. SRA 구성이 성공하면 VMware Live Site Recovery 어플라이언스가 SRA와 통신하여 재해 복구 관리를 수행할 수 있습니다. VMware Live Site Recovery 어플라이언스와 SRA 간의 통신을 활성화하려면 VMware vSphere 자격 증명(IP 주소 및 관리자 암호\)용 ONTAP 툴을 VMware Live Site Recovery 어플라이언스에 저장해야 합니다.</block>
   <block id="ca19ccb681ec240b3ba2bef453f35015" category="paragraph">VMware Live Site Recovery 어플라이언스를 구축한 후에는 VMware Live Site Recovery 어플라이언스에 SRA를 구성해야 합니다. SRA 구성이 성공하면 VMware Live Site Recovery 어플라이언스가 SRA와 통신하여 재해 복구 관리를 수행할 수 있습니다. VMware Live Site Recovery 어플라이언스와 SRA 간의 통신을 활성화하려면 VMware vSphere 자격 증명(IP 주소)용 ONTAP 툴을 VMware Live Site Recovery 어플라이언스에 저장해야 합니다.</block>
-  <block id="16f65f1a2c3859080a448540a2f81494" category="list-text"><block ref="daf4de58883c030f033f07e61debf025" prefix=" " category="inline-code"></block>에서 VMware vSphere용 ONTAP 툴에 대한 바이너리(_.ova_)와 서명된 인증서가 포함된 파일을<block ref="db8756d7f65d6a8e593e69ba45adbb2e" category="inline-link-rx"></block> 다운로드합니다.</block>
   <block id="b0dfff6a1c3e295ea3b778c18fd97c19" category="paragraph">에서 _tar.gz_파일을 다운로드해야<block ref="2daaad32389df9c23111b0df1c3a53df" category="inline-link-rx"></block> 합니다.</block>
   <block id="7f17c0be45130bf2b12d5bf5ec2ead98" category="list-text"><block ref="d6f1afa70d6145a212d9dc6bc8a2fa64" prefix=" " category="inline-code"></block>에서 SRA Adapter 파일을 다운로드해야<block ref="db8756d7f65d6a8e593e69ba45adbb2e" category="inline-link-rx"></block> 합니다.</block>
   <block id="92b0e7888dea318ff0d52ecace485e8b" category="summary">역할 기반 액세스 제어(RBAC)는 조직 내 리소스에 대한 액세스를 제어하기 위한 보안 프레임워크입니다. RBAC는 개별 사용자에게 권한을 할당하는 대신 특정 수준의 권한을 사용하여 역할을 정의하여 관리를 단순화합니다. 정의된 역할이 사용자에게 할당되므로 오류 위험을 줄이고 조직 전체에서 액세스 제어 관리를 간소화할 수 있습니다.</block>
@@ -1771,7 +1747,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="b9307f5638c31e98c11df5ab9355ebc8" category="paragraph">콘텐츠 라이브러리가 없는 경우 다음 단계를 따라 콘텐츠 라이브러리를 만듭니다.</block>
   <block id="bff5af523c0c362efa94459dbb9bc8f3" category="paragraph">* 콘텐츠 라이브러리 만들기 * 소규모 단일 노드 배포만 사용할 계획이라면 콘텐츠 라이브러리를 만들 필요가 없습니다.</block>
   <block id="359966f79d38ac8700101ef368573a16" category="admonition">구축을 진행하기 전에 인벤토리에 있는 클러스터의 DRS(Distributed Resource Scheduler)를 '보존적'으로 설정합니다. 이렇게 하면 설치 중에 VM이 마이그레이션되지 않습니다.</block>
-  <block id="af0ada25f4fd07661e572cca28b961df" category="list-text"><block ref="daf4de58883c030f033f07e61debf025" prefix=" " category="inline-code"></block>에서 VMware vSphere용 ONTAP 툴에 대한 바이너리(_.ova_)와 서명된 인증서가 포함된 파일을<block ref="db8756d7f65d6a8e593e69ba45adbb2e" category="inline-link-rx"></block> 다운로드합니다. 콘텐츠 라이브러리로 OVA를 가져온 경우 이 단계를 건너뛰고 다음 단계를 진행할 수 있습니다.</block>
   <block id="8e872493652df7e9ffefc076dc59c381" category="list-text">OVA를 구축할 리소스 풀, 클러스터 또는 호스트로 이동합니다.</block>
   <block id="49e56c9b53ad658c96d55bc65668259a" category="admonition">VMware vSphere 가상 머신용 ONTAP 툴을 관리하는 VVOL 데이터 저장소에 저장하지 마십시오.</block>
   <block id="413560adb5f032ce013265b1080e4df5" category="list-text">컴퓨터 리소스를 선택하고 * 다음 * 을 선택합니다. 필요에 따라 배포된 VM의 전원을 자동으로 켜려면 * 확인란을 선택합니다.</block>
@@ -1806,7 +1781,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="d74a40c70cc0ce39ee0a63d9809a8cb2" category="paragraph">HA 기능을 활성화하려면 구축 중에 또는 나중에 VMware vSphere VM용 ONTAP 툴에서 CPU 핫 추가 및 메모리 핫 플러그를 활성화해야 합니다.</block>
   <block id="0d8e6f4e10df466752fe81f2900011de" category="summary">네트워크 액세스를 구성하지 않은 경우 기본적으로 ESXi 호스트에서 검색된 모든 IP 주소가 내보내기 정책에 추가됩니다.</block>
   <block id="9a68ed4eca42d8b38ad99492d29e8ab3" category="list-text">vSphere Client 메뉴를 선택하고 * Content libraries * 를 선택합니다.</block>
-  <block id="82b1e70d021d2ae63524015247494128" category="paragraph">VMware vSphere용 ONTAP 툴은 처음에 비 HA 설정으로 구축됩니다. HA 배포로 확장하려면 CPU 핫 플러그 및 메모리 핫 플러그인을 활성화해야 합니다. 배포 프로세스의 일부로 이 단계를 수행하거나 배포 후 VM 설정을 편집할 수 있습니다.</block>
   <block id="6868e47bbc3a8cf87041d4fea17b993d" category="list-text">콘텐츠 라이브러리 또는 로컬 시스템에서 OVA를 배포할 수 있습니다.</block>
   <block id="0b044bf45314e5d20c59ab7b578f7495" category="cell">로컬 시스템에서</block>
   <block id="0aac2e2d60f56941b22e0c247b2e8606" category="cell">콘텐츠 라이브러리에서</block>
@@ -2024,7 +1998,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="2917babee976ddb7acae4385de8ea868" category="cell">7.0U3 이상</block>
   <block id="669ce1d03d9fa934e3a84459db318586" category="cell">10.4</block>
   <block id="1354535f18a2310447c0fd43d952244c" category="cell">ONTAP 툴 가상 머신을 구축하기 위한 ESXi 호스트</block>
-  <block id="127d69665f43c1c73050a4cc7dc6e0da" category="cell">7.0, 7.0U1, 7.0U2, 7.0U3, 8.0, 8.0U1 및 8.0U3</block>
   <block id="4c2e2546fd73ce517decb920a7fda907" category="cell">vCenter Server - ONTAP 툴 가상 머신 구축</block>
   <block id="c9aa6778e894ec4b3dcffe7a4940f428" category="cell">7.0 및 8.0</block>
   <block id="74de20ed3426be46891750a9fda8af0e" category="admonition">VMware vSphere 10.4용 ONTAP 툴부터 가상 머신 하드웨어가 버전 10에서 17로 변경되었습니다.</block>
@@ -2106,7 +2079,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="26b7a24c2fb682cdde72ced3aadfb1fc" category="paragraph">VMware vSphere 10.3용 ONTAP 툴부터 어플라이언스는 동적 스토리지 프로비저닝을 사용하므로 제로 RPO를 달성할 수 없습니다. 하지만 거의 0에 가까운 RPO를 달성할 수 있습니다. RPO가 0에 가까우려면 설정 백업을 생성하고 새 가상 시스템에서 복원해야 합니다.</block>
   <block id="ac7b715393b89bac4b710e7aea826fbb" category="paragraph">새 가상 머신에 동일한 ONTAP 툴 IP 주소를 사용해야 하며 서비스 사용, 노드 크기, HA 모드 등의 시스템 구성은 초기 구축과 동일해야 합니다.</block>
   <block id="9388b8f101226e86df67ddf2f1f8f8c5" category="summary">ONTAP Tools Manager를 사용하여 관리자 암호를 변경하여 VASA Provider, VVol 구성 가져오기, ONTAP Tools Manager를 사용하여 SRA(재해 복구)와 같은 서비스를 사용하도록 설정할 수 있습니다.</block>
-  <block id="ae80821bc04ea97412a103f5a9cdea58" category="paragraph">Allow import of vVols configuration * 옵션은 VASA Provider 서비스가 활성화된 경우에만 표시됩니다. 이 옵션을 사용하면 ONTAP 툴 9.x에서 ONTAP 툴 10.4으로 VVol 데이터를 마이그레이션할 수 있습니다.</block>
   <block id="fff6f63a28676182cb9ee6c87c52911e" category="paragraph">자세한 내용은 을<block ref="74392a6ed560b64c3e452acc2a7ab97a" category="inline-link-rx"></block> 참조하십시오.</block>
   <block id="7846abe7ddf5ac39a4f1d59f03a61e7d" category="admonition">ASA R2 시스템 기반 VVols 데이터 저장소에 대해서는 VVols 데이터 저장소 축소 작업이 지원되지 않습니다.</block>
   <block id="7e80b22daba2fc98d372c1fedd3205c6" category="list-text">ASA R2 시스템 클러스터 드릴다운 뷰에는 SVM 또는 클러스터에 대해 Disaggregated 속성이 "true"로 설정된 경우 로컬 계층 탭이 포함되지 않습니다.</block>
@@ -2114,7 +2086,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="142b92f8974022c41936ada0973434a6" category="cell">Storage details * 페이지에는 스토리지 백엔드, 집계, 볼륨 및 SAZ(Storage Availability Zone) 세부 정보가 포함되어 있습니다. 저장 장치 세부 정보 * 페이지에는 저장 장치에 대한 세부 정보가 포함되어 있습니다.</block>
   <block id="d49d8a5effc0a522fa72d0ff457066df" category="list-text">유효한 * 프록시 URL * 을 입력하고 변경 사항을 저장합니다.</block>
   <block id="eb587ff6958c1e65b721306af8fa8e3b" category="paragraph">AutoSupport를 사용하지 않도록 설정하면 프록시 URL도 비활성화됩니다.</block>
-  <block id="936e3c96334eb643e687697ecc2f0c86" category="doc">VMware vSphere 9.x용 ONTAP 툴에서 10.4로 마이그레이션합니다</block>
   <block id="305675e418fa7f87d5c522fec4e29a3d" category="list-text">VMware vSphere 10.4용 ONTAP 툴용 OVA 구축</block>
   <block id="472d4465d1363ede67b4fdb4c6e0e1ff" category="inline-link-macro">VMware vSphere 10.x용 ONTAP 툴을 10.4로 업그레이드하십시오</block>
   <block id="601dd8c7000a195659d470e737339c2d" category="paragraph"><block ref="601dd8c7000a195659d470e737339c2d" category="inline-link-macro-rx"></block></block>
@@ -2181,16 +2152,10 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="5c8bff2565556a46ee36cdd1e107b4be" category="paragraph">VMware vSphere 10.0용 ONTAP 도구에서 10.1로 업그레이드하는 경우 업그레이드 작업을 진행하기 전에 다음 단계를 완료해야 합니다. * 진단 활성화 *</block>
   <block id="cb702676cfcf110ca7a10beaa4efb62a" category="paragraph">VMware vSphere 10.4용 ONTAP 툴로 업그레이드한 후 다음을 수행할 수 있습니다.</block>
   <block id="d8f7e97e3245c4d37ee67ab9e2dc4485" category="paragraph">VMware vSphere용 ONTAP 툴의 이전 릴리스에서 10.4으로 업그레이드한 후 SRA 어댑터를 다시 검색하여 VMware 라이브 사이트 복구 스토리지 복제 어댑터 페이지에 세부 정보가 업데이트되는지 확인합니다.</block>
-  <block id="d3b3106ef8139d93f3b29ebcc961808a" category="paragraph"><block ref="d3b3106ef8139d93f3b29ebcc961808a" category="inline-link-macro-rx"></block></block>
   <block id="fb029c6d9932bd7c5642df65930dc178" category="sidebar">VMware vSphere 10.4용 ONTAP 툴</block>
   <block id="0857bfd766eab16b4130e4efc5375da1" category="sidebar">백업을 생성하고 ONTAP 도구 설정을 복구합니다</block>
-  <block id="4a0289525221cf8ff283b68c2151b26c" category="sidebar">VMware vSphere 9.x용 ONTAP 툴을 10.4으로 마이그레이션합니다</block>
   <block id="0c72f5748e7c096b829fa8c13bdb6b7f" category="list-text">IPv4는 노드 구성의 IP 주소 구성 요소로, 디버깅 및 유지 관리를 위해 노드에서 진단 셸 및 SSH 액세스를 활성화하는 데 사용할 수 있습니다.</block>
-  <block id="a9919517205886b598c13e9032a09059" category="paragraph">스토리지 데이터의 마이그레이션 중에 REST API를 사용하여 스토리지 백엔드를 수동으로 온보드합니다. VASA Provider 데이터 마이그레이션에는 기존 Derby 데이터베이스의 데이터를 내보내고 MongoDB 데이터베이스로 가져오는 작업이 포함됩니다.</block>
   <block id="38376c135168fabdcdde30ebd8337b3c" category="paragraph">VMware vSphere 9.12D1, 9.13D2 및 9.13P2 릴리즈용 ONTAP 툴에서 VMware vSphere 10.4용 ONTAP 툴로 마이그레이션할 수 있습니다.</block>
-  <block id="8b8b53606264e9f2f6b3466d202a79e7" category="admonition">패치 릴리스로 업그레이드하기 전에 현재 ONTAP 도구의 배포를 백업해야 합니다.</block>
-  <block id="bf24d37a98e4819aab4f021ae207e4a2" category="list-text">VMware vSphere 10.4 릴리즈용 ONTAP 툴로 마이그레이션할 vCenter Server 인스턴스를 추가합니다. 자세한 내용은 을 <block ref="fbc3413db4202f1fe331f16af6b38f13" category="inline-link-macro-rx"></block> 참조하십시오.</block>
-  <block id="87e126829123fea19e6f12abbe92d154" category="paragraph">마이그레이션하기 전에 한 사이트가 보호 상태이고 다른 사이트가 복구 상태에 있는지 확인합니다.</block>
   <block id="46ec37b71ccf8c993dcbf7cb78fe2af7" category="admonition">페일오버가 완료되었지만 재보호가 보류 중인 경우에는 마이그레이션을 시작하지 마십시오. 마이그레이션을 진행하기 전에 재보호 프로세스가 완료되었는지 확인합니다. 테스트 페일오버가 진행 중인 경우 테스트 페일오버를 정리하고 마이그레이션을 시작합니다.</block>
   <block id="da2f48d729eae4ca1010b4a077b66b02" category="list-text">다음 단계에 따라 VMware 사이트 복구에서 VMware vSphere 9.xx용 ONTAP 툴 SRA 어댑터를 삭제합니다.</block>
   <block id="b2c26a87d051d5889e6d2e4ab1fc79de" category="list-text">스토리지 복제 어댑터 * 섹션으로 이동합니다.</block>
@@ -2199,11 +2164,8 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="e3e32085ef48d00b185f9ae05a428520" category="list-text">VMware Live Site Recovery 사용자 인터페이스 페이지에서 * 스토리지 검색 * 및 * 디바이스 검색 * 작업을 수행하고 디바이스가 마이그레이션 전과 동일하게 표시되는지 확인합니다.</block>
   <block id="6136a81a0ac0e402d6b510c2488f1d36" category="list-text">VMware vSphere용 기존 ONTAP 툴에서 더비 포트 1527을 활성화하려면 루트 사용자를 활성화하고 SSH를 통해 CLI에 로그인합니다. 그런 다음 다음 다음 명령을 실행합니다.</block>
   <block id="3b89ab69ad47240835c0cd31ab9230d1" category="list-text">VMware vSphere 10.4 릴리즈용 ONTAP 툴로 마이그레이션할 vCenter Server 인스턴스를 추가합니다. 자세한 내용은 을 <block ref="946669e64e0e42585f18099dec81ec03" category="inline-link-macro-rx"></block> 참조하십시오.</block>
-  <block id="04cb9537a1b5aeb2f489acc8a6af2479" category="list-text">ONTAP 툴 플러그인용 vCenter Server API에서 로컬로 스토리지 백엔드를 온보드합니다.</block>
-  <block id="40e0776d71fd5d591d53e451a6006fa9" category="paragraph">9.12 및 9.13에서 마이그레이션 요청 본문:</block>
   <block id="b02dd8a7793406878f54951af581d6f2" category="paragraph">작업을 완료한 후 마이그레이션 보고서를 검토합니다. 이 보고서는 작업 데이터에 포함되며 작업 응답에서 액세스할 수 있습니다.</block>
   <block id="4551975cd29f0bfb98cd73d6f5cb8388" category="inline-link-macro">VASA Provider를 등록합니다</block>
-  <block id="0edd46e4487a559e489864eebe825e64" category="list-text">VMware vSphere 스토리지 공급자용 ONTAP 툴을 vCenter Server 및 VMware vSphere용 ONTAP 툴과 함께 추가합니다<block ref="c283b8bc021fee7e6c856fce39783a46" category="inline-link-macro-rx"></block>.</block>
   <block id="588348e2b65e0439aeb5d92799e13781" category="inline-link-macro">VASA Provider를 설정합니다</block>
   <block id="8c6bc1d231b93b5d6466c303391dba0b" category="list-text"><block ref="3f0f412beb77bd4bc4dc7f97f661a149" category="inline-link-macro-rx"></block> VMware vSphere 10.4용 ONTAP 툴에 대한 서비스입니다.</block>
   <block id="84a75f6b0a005e405f2680d9ab007b12" category="admonition">UUID는 마이그레이션 후 API에 대한 응답으로 반환된 마이그레이션 UUID입니다.</block>
@@ -2227,10 +2189,7 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="8bd4742720d0b535334c005ff20fb5b9" category="list-text">ASA R2 시스템 기반 VVol 데이터 저장소의 경우 백업 볼륨을 삭제하는 확인란이 적용되지 않습니다.</block>
   <block id="6a9f1ff4ac0e0c970407817908ab7071" category="doc">VVOL 데이터 저장소를 확장합니다</block>
   <block id="c61ac620cee1003679fdaa462dbeaede" category="admonition">VVols 데이터 저장소 확장 작업은 ASA R2 시스템 기반 VVol 데이터 저장소에는 적용되지 않습니다.</block>
-  <block id="7949ac5c6b3d4313dd4d5969af832925" category="list-text">vCenter Server에서 ONTAP 툴 플러그인을 사용하여 스토리지 백엔드를 로컬로 온보드합니다. 마이그레이션을 위해 스토리지를 로컬 범위 스토리지로 추가합니다.</block>
   <block id="b5bf1eb9fc501e53457cde004db09086" category="list-text">Swagger 또는 Postman에서 다음 API를 실행하여 마이그레이션하십시오.</block>
-  <block id="45b4835ddd7ad16076afa0b51bf12d2a" category="paragraph">CURL-X POST 를 누릅니다<block ref="a9f22201e72a1b8e399b24ae5e861616" category="inline-link-rx"></block></block>
-  <block id="d15764d5088db3a571ec9ccf86341552" category="paragraph">Swagger는 다음 URL을 통해 액세스할 수 있습니다. "https://$FQDN_IP_PORT/,:<block ref="1f852f41a6044590b385b39eaef5531e" category="inline-link-rx"></block>.</block>
   <block id="54caf31d7246402cdcb6cd5c255c5c64" category="paragraph">CURL-X POST 를 누릅니다<block ref="4042f1acb8fe47ca556f8b938a8d6e08" category="inline-link-rx"></block></block>
   <block id="91377d2edc3d930017c1b8c4679bdb89" category="list-text">Swagger에서 다음 URI를 사용하여 상태를 확인합니다.</block>
   <block id="96b2fedcc932770f843418dedfe7f004" category="list-text">Swagger 또는 Postman에서 다음 API를 사용하여 패치 마이그레이션을 수행합니다.</block>
@@ -2250,10 +2209,8 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="ef3669e38cbe7dbc2c1702bdcefb324a" category="list-text">VASA Provider의 이름과 자격 증명을 입력합니다. 사용자 이름은 문자, 숫자 및 밑줄만 포함할 수 있습니다. 암호 길이는 8자에서 256자 사이여야 합니다.</block>
   <block id="b5249314aff5fae6b6de54ce7f13f16b" category="list-text">Register * 를 선택합니다.</block>
   <block id="7589490ed5e2b68e2f28beb45ecf3fca" category="paragraph">서비스를 처음 설정할 때는 VASA Provider 및 SRA 자격 증명을 생성해야 합니다. vCenter Server에서 VASA Provider 및 SRA 서비스를 등록하거나 설정하는 데 사용됩니다. 사용자 이름은 문자, 숫자 및 밑줄만 포함할 수 있습니다. 암호 길이는 8자에서 256자 사이여야 합니다.</block>
-  <block id="67b08defea5ec6059f6e7c54a1da7e7d" category="admonition">ONTAP 툴 10.4는 VMFS 데이터 저장소를 통해서만 NVMe-oF 프로토콜을 지원하므로 VMware vSphere 9용 ONTAP 툴에서 10.4로 마이그레이션한 후 NVMe/FC 프로토콜을 사용하는 VVOL 데이터 저장소가 작동하지 않습니다.</block>
   <block id="7c4cc8f57df0d72a910b2adf9c1dfc8a" category="list-text">VMware Live Site Recovery 구성 관리 페이지로 이동합니다</block>
   <block id="3f6debbe365887c1e9cead81caac7ed5" category="list-text">줄임표 메뉴에서 * Reset configuration * 을 선택합니다.</block>
-  <block id="89262eb49fd08637032ae5b8afc51a41" category="admonition">VMware vSphere 9용 ONTAP 툴에서 마이그레이션하는 작업은 VASA Provider와 VVOL을 사용하는 경우에만 필요합니다. NFS 및 VMFS 데이터 저장소는 스토리지 검색 프로세스 중에 검색됩니다.</block>
   <block id="395ddb6ca1b9948e32145f8fa1a9201e" category="paragraph">다음 매개 변수를 기본값으로 설정합니다.</block>
   <block id="be34be4d53796d7420ca7e08ae84df3e" category="list-text">고급 옵션 아래에서:</block>
   <block id="bb18d56459266886917f70dbe8e01ef4" category="list-text">사용자 지정 내보내기 정책 * 을 선택한 경우 vCenter에서 모든 개체에 대해 검색을 실행해야 합니다. 이 옵션은 사용하지 않는 것이 좋습니다.</block>
@@ -2270,7 +2227,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="e4365b2f9588eb138888d2bae6c6ac55" category="list-text">VMware vSphere 7 릴리즈를 사용하는 경우 VMware 사이트의 지침에 따라<block ref="6b6e21be7e83380915b7a93b5de98cc6" category="inline-link-rx"></block> NVMe/TCP 포트 바인딩을 구성합니다. VMware vSphere 8 릴리즈를 사용하는 경우 에 따라<block ref="5075091467dfddb38b411ec1bb554877" category="inline-link-rx"></block> NVMe/TCP 포트 바인딩을 구성합니다.</block>
   <block id="d6e530451ec429932fcb540369b5619d" category="list-text">VMware vSphere 7 릴리즈의 경우 페이지의 지침에 따라<block ref="562342ed7eb0295ae9f7a72ea788d31d" category="inline-link-rx"></block> NVMe/TCP 소프트웨어 어댑터를 구성합니다. VMware vSphere 8 릴리즈의 경우, 에 따라<block ref="1f8f8787602f2f92045aa29b0a3fa467" category="inline-link-rx"></block> NVMe/TCP 소프트웨어 어댑터를 구성합니다.</block>
   <block id="9d596e014ec247e8a36a9d698795a54f" category="list-text"><block ref="c076a6b54534640d64418e3f25ccabbb" category="inline-link-macro-rx"></block>ESXi 호스트에서 작업을 실행합니다. 자세한 내용은 을<block ref="08964a7c7e6cd9155ed7286907a68824" category="inline-link-rx"></block>참조하십시오.</block>
-  <block id="218024fb6e7af189844709b4e9d8c0e7" category="paragraph">VMware vSphere용 ONTAP 툴을 사용하여 vCenter Server 인스턴스에 VASA Provider를 등록할 수 있습니다. VASA Provider settings 섹션에는 선택한 vCenter Server에 대한 VASA Provider 등록 상태가 표시됩니다. 다중 vCenter 배포에서는 각 vCenter Server 인스턴스에 사용자 지정 CA 인증서가 있는지 확인하세요.</block>
   <block id="42c7c15e79d589d9c277ebcfaf6f5cbd" category="cell">ONTAP 도구 애플리케이션의 IP 주소입니다. ONTAP 도구 웹 인터페이스에 접속하기 위한 IP 주소입니다.</block>
   <block id="b88a0208d3e02d8e8542318a4bf1dae1" category="cell">내부 통신을 위한 ONTAP 도구 가상 IP 주소입니다. 이 IP 주소는 여러 ONTAP 도구 인스턴스가 있는 환경에서 내부 통신에 사용됩니다. 이 IP 주소는 ONTAP 도구 애플리케이션의 IP 주소와 동일해서는 안 됩니다.</block>
   <block id="5813391479b0e439cbd9b28d9c14a7b2" category="cell">첫 번째 노드의 IPv4 주소입니다. 관리 네트워크의 노드 관리 인터페이스에 대한 고유한 IPv4 주소입니다.</block>
@@ -2282,5 +2238,43 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="b02bbd059e55c04c7db94e76a92bd311" category="list-text">HA 설정의 노드 호스트 이름은 소문자여야 합니다.</block>
   <block id="a4a802cdddc104ad7f0a14d2bdc2c05e" category="list-text">10-60분 사이의 백업 빈도 값을 입력합니다.</block>
   <block id="843e69439f5c77bf5c54644b48190fc1" category="admonition">VMware vSphere HA 배포를 위한 ONTAP 도구의 경우 첫 번째 노드(node1)에서 유지 관리 콘솔 사용자 비밀번호를 변경해야 합니다.</block>
-  <block id="6ff4a9d3d74ed15774b9bf38288e7fab" category="list-text">VMware vSphere 9.xx용 ONTAP 툴에서 마이그레이션된 NFS 및 VMFS 데이터 저장소는 데이터 저장소 검색 작업이 트리거된 후에만 VMware vSphere 10.4용 ONTAP 툴에 표시됩니다. 이 작업은 완료하는 데 최대 30분이 걸릴 수 있습니다. VMware vSphere 플러그인 사용자 인터페이스 페이지의 ONTAP 도구 개요 페이지에 데이터 저장소가 표시되는지 확인하세요.</block>
+  <block id="56564ecb20e9cb45429b432b22f216f4" category="admonition">MPIO 설정은 NVMe, NVMe/FC 및 NVMe/TCP 프로토콜에는 적용되지 않습니다.</block>
+  <block id="07c9ecda15aaf26d8eef3770025ec27c" category="paragraph">VMware vSphere용 ONTAP 툴을 사용하여 vCenter Server 인스턴스에 VASA Provider를 등록할 수 있습니다. VASA Provider settings 섹션에는 선택한 vCenter Server에 대한 VASA Provider 등록 상태가 표시됩니다. 다중 vCenter 배포에서는 각 vCenter Server 인스턴스에 사용자 지정 CA 인증서가 있는지 확인하세요.</block>
+  <block id="6cc905f50a7d9454e2cd6814a57ffcc4" category="list-text">다운로드 <block ref="daf4de58883c030f033f07e61debf025" prefix=" " category="inline-code"></block> VMware vSphere용 ONTAP 도구의 바이너리(_.ova_)와 서명된 인증서가 포함된 파일 <block ref="db8756d7f65d6a8e593e69ba45adbb2e" category="inline-link-rx"></block> .</block>
+  <block id="5da601563ca7e442eafa7d6f32d54969" category="paragraph">VMware vSphere용 ONTAP 도구는 처음에는 비 HA 설정으로 배포됩니다. HA 배포로 확장하려면 CPU 핫 플러그 및 메모리 핫 플러그인을 활성화해야 합니다. 배포 프로세스의 일부로 이 단계를 수행하거나 배포 후 VM 설정을 편집할 수 있습니다.</block>
+  <block id="7ee31d2f37adf0d7f90807953a704c75" category="list-text">다운로드 <block ref="daf4de58883c030f033f07e61debf025" prefix=" " category="inline-code"></block> VMware vSphere용 ONTAP 도구에 대한 바이너리(_.ova_)와 서명된 인증서가 포함된 파일 <block ref="db8756d7f65d6a8e593e69ba45adbb2e" category="inline-link-rx"></block> . 콘텐츠 라이브러리로 OVA를 가져온 경우 이 단계를 건너뛰고 다음 단계를 진행할 수 있습니다.</block>
+  <block id="42bc4627d63b98bd97ba7ee44a76918d" category="summary">VMware vSphere용 ONTAP 툴을 구축하기 전에 구축 패키지에 대한 공간 요구 사항과 몇 가지 기본 호스트 시스템 요구 사항을 숙지해야 합니다.</block>
+  <block id="7cbac47005f891099143c8780a7b8c4a" category="cell">7.0U3 및 8.0U3</block>
+  <block id="76f4abcdaba315d261061ef1716fec26" category="paragraph">Allow import of vVols configuration * 옵션은 VASA Provider 서비스가 활성화된 경우에만 표시됩니다. 이 옵션을 사용하면 ONTAP 툴 9.xx에서 ONTAP 툴 10.4으로 VVol 데이터를 마이그레이션할 수 있습니다.</block>
+  <block id="5239d77bc203f1ccbb06d46c0327b099" category="summary">ONTAP 도구의 유지 관리 콘솔을 사용하여 애플리케이션, 시스템 및 네트워크 구성을 관리할 수 있습니다. 관리자 암호 및 유지보수 암호를 변경할 수 있습니다. 또한 지원 번들을 생성하고, 다양한 로그 수준을 설정하고, TLS 구성을 확인 및 관리하고, 원격 진단을 시작할 수 있습니다.</block>
+  <block id="f4b50e8494bf3a443986218866d19dd2" category="paragraph">VMware vSphere용 ONTAP 도구를 배포한 후 유지 관리 콘솔에 액세스하려면 VMware 도구가 설치되어 있어야 합니다 . <block ref="67f50785d40416a7a7689c5c353f1128" prefix=" " category="inline-code"></block> ONTAP 도구의 유지 관리 콘솔에 로그인하기 위해 배포 중에 구성한 사용자 이름과 비밀번호입니다. 유지 관리 또는 루트 로그인 콘솔에서 파일을 편집할 때는 * nano * 를 사용해야 합니다.</block>
+  <block id="da76ecb340fc565948a6b1a789558982" category="doc">VMware vSphere 9.xx용 ONTAP 툴에서 10.4로 마이그레이션합니다</block>
+  <block id="188f30594923570222a6f1488e852e69" category="paragraph">VMware vSphere용 NetApp ONTAP 도구를 버전 9.xx에서 10.x로 옮기려면 버전 전반에 걸쳐 중요한 제품 업데이트와 개선 사항이 적용되므로 마이그레이션 프로세스가 필요합니다.</block>
+  <block id="8b6081846f56ef049557c82e5b444e2d" category="paragraph">설정에 NFS 및 VMFS 데이터 저장소가 있고 vVols 데이터 저장소가 없는 경우 ONTAP Tools 9.xx를 제거하고 ONTAP Tools 10.x를 배포하면 됩니다. 하지만 설정에 vVols 데이터 저장소가 포함된 경우 VASA Provider와 SRA를 마이그레이션하는 과정을 거쳐야 합니다.</block>
+  <block id="30725e73463cac6869eb16851a0b7f1f" category="paragraph">다음 표에서는 두 가지 시나리오에서의 마이그레이션 프로세스를 간략하게 설명합니다.</block>
+  <block id="481ad82ca4c063eed4e75acc5640a962" category="cell">*설정에 vVols 데이터 저장소가 있는 경우*</block>
+  <block id="a52ec04716984e73a95a673f19b4381b" category="cell">*설정에 vVols 데이터 저장소가 포함되지 않은 경우*</block>
+  <block id="612ae34fe355690bba22816577fb8ceb" category="inline-link-macro">VASA 공급자 마이그레이션</block>
+  <block id="b01a9665d854fa0b6f2ee86db8e7e7e5" category="inline-link-macro">SRA 마이그레이션</block>
+  <block id="6e4d49fbd70ad4839257ed5ced55d275" category="inline-link">VM 스토리지 정책 생성</block>
+  <block id="a1a2f15a55d77fba2d3e9d1ffb9c2d37" category="cell">단계: 1. <block ref="b948e8148e317c6b3a44b41129efa89c" category="inline-link-macro-rx"></block> 2. <block ref="fd39ed98cbc7c628cdfb8965952c02e6" category="inline-link-macro-rx"></block> 3. <block ref="2f4f76d1186f7e1931e429142840bca6" category="inline-link-rx"></block></block>
+  <block id="27116dca14772e71a5f801de216fb934" category="inline-link-macro">VMware vSphere 10.4에 대한 ONTAP 도구 배포 및 구성</block>
+  <block id="ae2e6f54444edfbcea323e8f64be5184" category="inline-link">환경에서 OTV 9.xx를 제거하는 방법</block>
+  <block id="2de1e904f7a723f3fccf3b29b5d3a892" category="cell">단계: 1. 환경에서 ONTAP 도구 9.xx를 제거합니다. 다음을 참조하세요. <block ref="9bde8c27ff3ba526e74c5e0434eb2686" category="inline-link-rx"></block> NetApp 기술 자료 문서. 2. <block ref="b784a866e80ba41b4fb2f8e0caeb5197" category="inline-link-macro-rx"></block> 3. <block ref="2f4f76d1186f7e1931e429142840bca6" category="inline-link-rx"></block></block>
+  <block id="8fba1879056f1b6c411434b65fe61ee9" category="admonition">VMware vSphere 9.xx용 ONTAP 툴에서 10.4로 마이그레이션한 후 NVMe/FC 프로토콜을 사용하는 VVOL 데이터 저장소가 작동하지 않게 됩니다. ONTAP 툴 10.4는 VMFS 데이터 저장소에서만 NVMe-oF 프로토콜을 지원하기 때문입니다.</block>
+  <block id="61ace5a2518ab1c5ed7b0cdaaff98213" category="doc">VASA 공급자와 스토리지 복제 어댑터(SRA) 마이그레이션</block>
+  <block id="74a0fcc4fbe41d518dabd4de3a069584" category="section-title">VASA 공급자를 마이그레이션하는 단계</block>
+  <block id="db9ce82f740ff3a9f2ad609cd7d296c9" category="list-text">ONTAP 도구 플러그인을 위한 vCenter 서버 API에서 로컬로 스토리지 백엔드를 온보딩합니다.</block>
+  <block id="c31397b4be5939d5bf72a8bb0faf9443" category="paragraph">Swagger는 다음 URL을 통해 액세스할 수 있습니다. "https://$FQDN_IP_PORT/,:<block ref="31b962e36589b3bd2081bfb7d028723f" category="inline-link-rx"></block>.</block>
+  <block id="6e086f74a5eaa2061811529e1d6a623e" category="paragraph">curl -X POST <block ref="c5820eec1fb061702ab2f34b24d1d295" category="inline-link-rx"></block> \ --header 'x-auth: &lt;인증 토큰&gt;' \ --header '콘텐츠 유형: application/json' \ --data '{ "otv_ip": "xx.xx.xx.xx", "vasa_provider_credentials": { "username": "xxxxx", "password": "******" }, "database_password": "******" }'</block>
+  <block id="684e740f5c7b2c5d6085a2342428c783" category="paragraph">{ "otv_ip": "xx.xx.xx.xx", "vasa_provider_credentials": { "username": "xxxxx", "password": "*******" } }</block>
+  <block id="fafb1a9cdf3a5eb6029da27aa9e99060" category="list-text">vCenter Server에 VMware vSphere 스토리지 공급자용 ONTAP 도구를 추가합니다. <block ref="c283b8bc021fee7e6c856fce39783a46" category="inline-link-macro-rx"></block> VMware vSphere용 ONTAP 도구 사용.</block>
+  <block id="9a75388e84716581ed710b23451155ae" category="list-text">VMware vSphere 9.xxx용 ONTAP 툴에서 마이그레이션된 NFS 및 VMFS 데이터 저장소는 데이터 저장소 검색 작업이 트리거된 후에만 VMware vSphere 10.4용 ONTAP 툴에 표시됩니다. 이 작업은 완료하는 데 최대 30분이 걸릴 수 있습니다. VMware vSphere 플러그인 사용자 인터페이스 페이지의 ONTAP 도구 개요 페이지에 데이터 저장소가 표시되는지 확인하세요.</block>
+  <block id="219ce9585531b00b3bd54170f3775f53" category="section-title">SRA를 마이그레이션하는 단계</block>
+  <block id="507fcd9c144d0cee8403de3b0608fc58" category="paragraph">복구 계획에서 보호 사이트는 VM이 현재 실행 중인 위치를 나타내고, 복구 사이트는 VM이 복구될 위치를 나타냅니다. SRM 인터페이스는 보호 사이트와 복구 사이트에 대한 세부 정보와 함께 복구 계획의 상태를 표시합니다. 복구 계획에서 CLEANUP(정리) 및 REPROTECT(재보호) 버튼은 비활성화되어 있지만, TEST(테스트) 및 RUN(실행) 버튼은 활성화되어 있습니다. 이는 사이트가 데이터 복구를 위해 준비되었음을 나타냅니다. SRA를 마이그레이션하기 전에 한 사이트는 보호 상태이고 다른 사이트는 복구 상태인지 확인하십시오.</block>
+  <block id="d6b99aad2c3ad58ece5306ce3dbab4d3" category="cell">10.x에서 9.xx 패리티로 진화하는 ONTAP 도구, 고가용성, 성능 및 확장성 제한 확장</block>
+  <block id="ea974b3b2665a0ede55feb5ef712e4dd" category="paragraph"><block ref="ea974b3b2665a0ede55feb5ef712e4dd" category="inline-link-macro-rx"></block></block>
+  <block id="b9a7adbda4cb4f1f2ba292b154c6353e" category="sidebar">VMware vSphere 9.xx용 ONTAP 툴을 10.4으로 마이그레이션합니다</block>
+  <block id="d619f73b597358ef5140938f37254d97" category="sidebar">VMware vSphere용 최신 ONTAP 도구로 마이그레이션</block>
+  <block id="6cd5692bfbed66b11eefcd5a575d4cdd" category="sidebar">VASA 공급자 및 SRA 마이그레이션</block>
 </blocks>
