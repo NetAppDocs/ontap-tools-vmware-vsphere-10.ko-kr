@@ -2236,7 +2236,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="15f0aef685a07d8a64ee213328fd4abf" category="list-text">첫 번째 노드 VM에서 VMware vSphere 배포 유형에 대한 ONTAP 도구를 확인합니다.</block>
   <block id="82cb2fe68a0c35dd310db836d38102d0" category="list-text">vCenter Server에서 재해 복구 서비스(DRS) 자동화 수준을 "부분 자동화"로 설정합니다. HA를 구축한 후에는 "완전 자동화"로 되돌립니다.</block>
   <block id="b02bbd059e55c04c7db94e76a92bd311" category="list-text">HA 설정의 노드 호스트 이름은 소문자여야 합니다.</block>
-  <block id="a4a802cdddc104ad7f0a14d2bdc2c05e" category="list-text">10-60분 사이의 백업 빈도 값을 입력합니다.</block>
   <block id="843e69439f5c77bf5c54644b48190fc1" category="admonition">VMware vSphere HA 배포를 위한 ONTAP 도구의 경우 첫 번째 노드(node1)에서 유지 관리 콘솔 사용자 비밀번호를 변경해야 합니다.</block>
   <block id="56564ecb20e9cb45429b432b22f216f4" category="admonition">MPIO 설정은 NVMe, NVMe/FC 및 NVMe/TCP 프로토콜에는 적용되지 않습니다.</block>
   <block id="07c9ecda15aaf26d8eef3770025ec27c" category="paragraph">VMware vSphere용 ONTAP 툴을 사용하여 vCenter Server 인스턴스에 VASA Provider를 등록할 수 있습니다. VASA Provider settings 섹션에는 선택한 vCenter Server에 대한 VASA Provider 등록 상태가 표시됩니다. 다중 vCenter 배포에서는 각 vCenter Server 인스턴스에 사용자 지정 CA 인증서가 있는지 확인하세요.</block>
@@ -2277,4 +2276,5 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="b9a7adbda4cb4f1f2ba292b154c6353e" category="sidebar">VMware vSphere 9.xx용 ONTAP 툴을 10.4으로 마이그레이션합니다</block>
   <block id="d619f73b597358ef5140938f37254d97" category="sidebar">VMware vSphere용 최신 ONTAP 도구로 마이그레이션</block>
   <block id="6cd5692bfbed66b11eefcd5a575d4cdd" category="sidebar">VASA 공급자 및 SRA 마이그레이션</block>
+  <block id="51aabaf24027b697520ff09c79c5f552" category="list-text">백업 빈도 값을 5분에서 60분 사이로 입력하세요.</block>
 </blocks>
