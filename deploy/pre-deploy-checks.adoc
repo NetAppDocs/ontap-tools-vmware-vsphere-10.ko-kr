@@ -54,7 +54,7 @@ summary: VMware vSphere용 ONTAP 툴을 구축하기 전에 구축 패키지에 
 
 === 단일 노드 구축에 사용됩니다
 
-다음 워크시트를 사용하여 VMware vSphere 초기 구축을 위한 ONTAP 툴에 대한 필수 정보를 수집합니다. VMware vSphere 초기 구축용 ONTAP 툴:
+다음 워크시트를 사용하여 VMware vSphere 초기 배포를 위한 ONTAP 도구에 필요한 정보를 수집하세요.
 
 |===
 | 요구 사항 | 귀사의 가치 
@@ -133,4 +133,14 @@ summary: VMware vSphere용 ONTAP 툴을 구축하기 전에 구축 패키지에 
 
 == 네트워크 방화벽 구성
 
-네트워크 방화벽에서 IP 주소에 필요한 포트를 엽니다. ONTAP 툴은 포트 443을 통해 이 LIF에 연결할 수 있어야 합니다. 최신 업데이트는 을 link:../deploy/prerequisites.html["포트 요구 사항"]참조하십시오.
+네트워크 방화벽에서 IP 주소에 필요한 포트를 엽니다. ONTAP 도구는 포트 443을 통해 이 LIF에 도달할 수 있어야 합니다. 최신 업데이트는 을 link:../deploy/prerequisites.html["포트 요구 사항"]참조하십시오.
+
+
+
+== ONTAP 스토리지 설정
+
+ONTAP 스토리지와 VMware vSphere용 ONTAP 툴의 완벽한 통합을 보장하려면 다음 설정을 고려하십시오.
+
+* 스토리지 연결에 파이버 채널(FC)을 사용하는 경우 ESXi 호스트를 SVM의 FC LIF에 연결하도록 FC 스위치에서 조닝을 구성합니다. https://docs.netapp.com/us-en/ontap/peering/create-cluster-relationship-93-later-task.html["ONTAP 시스템을 통한 FC 및 FCoE 조닝에 대해 알아보십시오"]
+* ONTAP 툴 관리 SnapMirror 복제를 사용하려면 ONTAP 스토리지 관리자가 SnapMirror를 사용하기 전에 ONTAP에서 및 https://docs.netapp.com/us-en/ontap/peering/create-intercluster-svm-peer-relationship-93-later-task.html["ONTAP 인터클러스터 SVM 피어 관계"] 를 생성해야 https://docs.netapp.com/us-en/ontap/peering/create-cluster-relationship-93-later-task.html["ONTAP 클러스터 피어 관계"] 합니다.
+

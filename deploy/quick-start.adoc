@@ -24,7 +24,7 @@ vCenter Server가 설치되어 있고 액세스할 수 있는지 확인합니다
 
 [role="quick-margin-list"]
 * https://imt.netapp.com/matrix/#welcome["상호 운용성 매트릭스 툴"]
-* link:../deploy/prerequisites.html["VMware vSphere 구축을 위한 ONTAP 툴 사전 요구 사항"]
+* link:../deploy/prerequisites.html["VMware vSphere 요구 사항 및 구성 제한에 대한 ONTAP 도구"]
 * link:../deploy/pre-deploy-checks.html["시작하기 전에"]
 
 
