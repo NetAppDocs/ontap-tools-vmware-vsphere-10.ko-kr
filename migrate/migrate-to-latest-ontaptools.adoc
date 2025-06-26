@@ -20,10 +20,10 @@ VMware vSphere 9.12D1, 9.13D2 및 9.13P2 릴리즈용 ONTAP 툴에서 VMware vSp
 다음 표에서는 두 가지 시나리오에서의 마이그레이션 프로세스를 간략하게 설명합니다.
 
 |===
-| *설정에 vVols 데이터 저장소가 있는 경우* | *설정에 vVols 데이터 저장소가 포함되지 않은 경우* 
+| *설정에 vVols 데이터 저장소가 있는 경우* | *설정에 NFS 및 VMFS 데이터 저장소만 포함된 경우* 
 
 
-| 단계: 1. link:../migrate/sra-vasa-migration.html["VASA 공급자 마이그레이션"] 2. link:../migrate/sra-vasa-migration.html["SRA 마이그레이션"] 3.  https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vsphere-storage-8-0/storage-policy-based-management-in-vsphere/creating-and-managing-vsphere-storage-policies.html["VM 스토리지 정책 생성"] | 단계: 1. 환경에서 ONTAP 도구 9.xx를 제거합니다. 다음을 참조하세요.  https://kb.netapp.com/data-mgmt/OTV/VSC_Kbs/OTV_How_to_remove_OTV_9_12_from_your_environment["환경에서 OTV 9.xx를 제거하는 방법"] NetApp 기술 자료 문서. 2. link:../deploy/quick-start.html["VMware vSphere 10.4에 대한 ONTAP 도구 배포 및 구성"] 3.  https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vsphere-storage-8-0/storage-policy-based-management-in-vsphere/creating-and-managing-vsphere-storage-policies.html["VM 스토리지 정책 생성"] 
+| 단계: 1. link:../migrate/sra-vasa-migration.html["VASA 공급자 마이그레이션"] 2.  https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vsphere-storage-8-0/storage-policy-based-management-in-vsphere/creating-and-managing-vsphere-storage-policies.html["VM 스토리지 정책 생성"] | 단계: 1. 환경에서 ONTAP 도구 9.xx를 제거합니다. 다음을 참조하세요.  https://kb.netapp.com/data-mgmt/OTV/VSC_Kbs/OTV_How_to_remove_OTV_9_12_from_your_environment["환경에서 OTV 9.xx를 제거하는 방법"] NetApp 기술 자료 문서. 2. link:../deploy/quick-start.html["VMware vSphere 10.4에 대한 ONTAP 도구 배포 및 구성"] 3. link:../migrate/sra-vasa-migration.html["SRA를 업데이트합니다"] 4.  https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vsphere-storage-8-0/storage-policy-based-management-in-vsphere/creating-and-managing-vsphere-storage-policies.html["VM 스토리지 정책 생성"] 
 |===
 
 NOTE: VMware vSphere 9.xx용 ONTAP 툴에서 10.4로 마이그레이션한 후 NVMe/FC 프로토콜을 사용하는 VVOL 데이터 저장소가 작동하지 않게 됩니다. ONTAP 툴 10.4는 VMFS 데이터 저장소에서만 NVMe-oF 프로토콜을 지원하기 때문입니다.

@@ -4,5 +4,5 @@ title: VMware vSphere 9.xx용 ONTAP 툴을 10.4으로 마이그레이션합니�
 entries:
 - title: VMware vSphere용 최신 ONTAP 도구로 마이그레이션
   url: "/migrate/migrate-to-latest-ontaptools.html"
-- title: VASA 공급자 및 SRA 마이그레이션
+- title: VASA 공급자를 마이그레이션하고 SRA를 업데이트합니다.
   url: "/migrate/sra-vasa-migration.html"

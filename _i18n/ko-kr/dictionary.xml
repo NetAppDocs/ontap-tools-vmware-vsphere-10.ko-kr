@@ -2246,16 +2246,10 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="8b6081846f56ef049557c82e5b444e2d" category="paragraph">설정에 NFS 및 VMFS 데이터 저장소가 있고 vVols 데이터 저장소가 없는 경우 ONTAP Tools 9.xx를 제거하고 ONTAP Tools 10.x를 배포하면 됩니다. 하지만 설정에 vVols 데이터 저장소가 포함된 경우 VASA Provider와 SRA를 마이그레이션하는 과정을 거쳐야 합니다.</block>
   <block id="30725e73463cac6869eb16851a0b7f1f" category="paragraph">다음 표에서는 두 가지 시나리오에서의 마이그레이션 프로세스를 간략하게 설명합니다.</block>
   <block id="481ad82ca4c063eed4e75acc5640a962" category="cell">*설정에 vVols 데이터 저장소가 있는 경우*</block>
-  <block id="a52ec04716984e73a95a673f19b4381b" category="cell">*설정에 vVols 데이터 저장소가 포함되지 않은 경우*</block>
-  <block id="612ae34fe355690bba22816577fb8ceb" category="inline-link-macro">VASA 공급자 마이그레이션</block>
-  <block id="b01a9665d854fa0b6f2ee86db8e7e7e5" category="inline-link-macro">SRA 마이그레이션</block>
   <block id="6e4d49fbd70ad4839257ed5ced55d275" category="inline-link">VM 스토리지 정책 생성</block>
-  <block id="a1a2f15a55d77fba2d3e9d1ffb9c2d37" category="cell">단계: 1. <block ref="b948e8148e317c6b3a44b41129efa89c" category="inline-link-macro-rx"></block> 2. <block ref="fd39ed98cbc7c628cdfb8965952c02e6" category="inline-link-macro-rx"></block> 3. <block ref="2f4f76d1186f7e1931e429142840bca6" category="inline-link-rx"></block></block>
   <block id="27116dca14772e71a5f801de216fb934" category="inline-link-macro">VMware vSphere 10.4에 대한 ONTAP 도구 배포 및 구성</block>
   <block id="ae2e6f54444edfbcea323e8f64be5184" category="inline-link">환경에서 OTV 9.xx를 제거하는 방법</block>
-  <block id="2de1e904f7a723f3fccf3b29b5d3a892" category="cell">단계: 1. 환경에서 ONTAP 도구 9.xx를 제거합니다. 다음을 참조하세요. <block ref="9bde8c27ff3ba526e74c5e0434eb2686" category="inline-link-rx"></block> NetApp 기술 자료 문서. 2. <block ref="b784a866e80ba41b4fb2f8e0caeb5197" category="inline-link-macro-rx"></block> 3. <block ref="2f4f76d1186f7e1931e429142840bca6" category="inline-link-rx"></block></block>
   <block id="8fba1879056f1b6c411434b65fe61ee9" category="admonition">VMware vSphere 9.xx용 ONTAP 툴에서 10.4로 마이그레이션한 후 NVMe/FC 프로토콜을 사용하는 VVOL 데이터 저장소가 작동하지 않게 됩니다. ONTAP 툴 10.4는 VMFS 데이터 저장소에서만 NVMe-oF 프로토콜을 지원하기 때문입니다.</block>
-  <block id="61ace5a2518ab1c5ed7b0cdaaff98213" category="doc">VASA 공급자와 스토리지 복제 어댑터(SRA) 마이그레이션</block>
   <block id="74a0fcc4fbe41d518dabd4de3a069584" category="section-title">VASA 공급자를 마이그레이션하는 단계</block>
   <block id="db9ce82f740ff3a9f2ad609cd7d296c9" category="list-text">ONTAP 도구 플러그인을 위한 vCenter 서버 API에서 로컬로 스토리지 백엔드를 온보딩합니다.</block>
   <block id="c31397b4be5939d5bf72a8bb0faf9443" category="paragraph">Swagger는 다음 URL을 통해 액세스할 수 있습니다. "https://$FQDN_IP_PORT/,:<block ref="31b962e36589b3bd2081bfb7d028723f" category="inline-link-rx"></block>.</block>
@@ -2263,13 +2257,11 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="684e740f5c7b2c5d6085a2342428c783" category="paragraph">{ "otv_ip": "xx.xx.xx.xx", "vasa_provider_credentials": { "username": "xxxxx", "password": "*******" } }</block>
   <block id="fafb1a9cdf3a5eb6029da27aa9e99060" category="list-text">vCenter Server에 VMware vSphere 스토리지 공급자용 ONTAP 도구를 추가합니다. <block ref="c283b8bc021fee7e6c856fce39783a46" category="inline-link-macro-rx"></block> VMware vSphere용 ONTAP 도구 사용.</block>
   <block id="9a75388e84716581ed710b23451155ae" category="list-text">VMware vSphere 9.xxx용 ONTAP 툴에서 마이그레이션된 NFS 및 VMFS 데이터 저장소는 데이터 저장소 검색 작업이 트리거된 후에만 VMware vSphere 10.4용 ONTAP 툴에 표시됩니다. 이 작업은 완료하는 데 최대 30분이 걸릴 수 있습니다. VMware vSphere 플러그인 사용자 인터페이스 페이지의 ONTAP 도구 개요 페이지에 데이터 저장소가 표시되는지 확인하세요.</block>
-  <block id="219ce9585531b00b3bd54170f3775f53" category="section-title">SRA를 마이그레이션하는 단계</block>
   <block id="507fcd9c144d0cee8403de3b0608fc58" category="paragraph">복구 계획에서 보호 사이트는 VM이 현재 실행 중인 위치를 나타내고, 복구 사이트는 VM이 복구될 위치를 나타냅니다. SRM 인터페이스는 보호 사이트와 복구 사이트에 대한 세부 정보와 함께 복구 계획의 상태를 표시합니다. 복구 계획에서 CLEANUP(정리) 및 REPROTECT(재보호) 버튼은 비활성화되어 있지만, TEST(테스트) 및 RUN(실행) 버튼은 활성화되어 있습니다. 이는 사이트가 데이터 복구를 위해 준비되었음을 나타냅니다. SRA를 마이그레이션하기 전에 한 사이트는 보호 상태이고 다른 사이트는 복구 상태인지 확인하십시오.</block>
   <block id="d6b99aad2c3ad58ece5306ce3dbab4d3" category="cell">10.x에서 9.xx 패리티로 진화하는 ONTAP 도구, 고가용성, 성능 및 확장성 제한 확장</block>
   <block id="ea974b3b2665a0ede55feb5ef712e4dd" category="paragraph"><block ref="ea974b3b2665a0ede55feb5ef712e4dd" category="inline-link-macro-rx"></block></block>
   <block id="b9a7adbda4cb4f1f2ba292b154c6353e" category="sidebar">VMware vSphere 9.xx용 ONTAP 툴을 10.4으로 마이그레이션합니다</block>
   <block id="d619f73b597358ef5140938f37254d97" category="sidebar">VMware vSphere용 최신 ONTAP 도구로 마이그레이션</block>
-  <block id="6cd5692bfbed66b11eefcd5a575d4cdd" category="sidebar">VASA 공급자 및 SRA 마이그레이션</block>
   <block id="51aabaf24027b697520ff09c79c5f552" category="list-text">백업 빈도 값을 5분에서 60분 사이로 입력하세요.</block>
   <block id="d12f6b7d9e336bb21523e27a7954a424" category="doc">VMware vSphere용 ONTAP 도구의 igroups 및 내보내기 정책 이해</block>
   <block id="27fa3073e12d15edf2d9cd750cf92bd4" category="paragraph">이니시에이터 그룹(igroup)은 FC 프로토콜 호스트 WWPN(World Wide Port Name) 또는 iSCSI 호스트 정규 노드 이름의 테이블입니다. igroup을 정의하고 LUN에 매핑하여 LUN에 액세스할 수 있는 이니시에이터를 제어할 수 있습니다.</block>
@@ -2376,4 +2368,11 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="dc0055de9b7e911c1f50f49dc1b3ef79" category="inline-link-macro">VMware vSphere 요구 사항 및 구성 제한에 대한 ONTAP 도구</block>
   <block id="25eb466dd476278d60eabf35f3daa859" category="list-text"><block ref="25eb466dd476278d60eabf35f3daa859" category="inline-link-macro-rx"></block></block>
   <block id="8afddaa1858f79be24bc3f9dfe03eb86" category="sidebar">ONTAP 도구 요구 사항 및 구성 제한</block>
+  <block id="122962cdef914297e7bd27106c4b08ef" category="cell">*설정에 NFS 및 VMFS 데이터 저장소만 포함된 경우*</block>
+  <block id="23582373a176f3a1391b91644579b591" category="inline-link-macro">VASA 공급자 마이그레이션</block>
+  <block id="56e81eec05ba3edf697b5613dfbb8977" category="cell">단계: 1. <block ref="393201960d4eefccacb06cc7ccdc8cfc" category="inline-link-macro-rx"></block> 2. <block ref="2f4f76d1186f7e1931e429142840bca6" category="inline-link-rx"></block></block>
+  <block id="690fca4891ecdd9975fe5dc5bd2a520b" category="inline-link-macro">SRA를 업데이트합니다</block>
+  <block id="b468841971bd972a362e1fdbf6619e6e" category="cell">단계: 1. 환경에서 ONTAP 도구 9.xx를 제거합니다. 다음을 참조하세요. <block ref="9bde8c27ff3ba526e74c5e0434eb2686" category="inline-link-rx"></block> NetApp 기술 자료 문서. 2. <block ref="b784a866e80ba41b4fb2f8e0caeb5197" category="inline-link-macro-rx"></block> 3. <block ref="a29d94f131e388c7ee7c4a56d062be87" category="inline-link-macro-rx"></block> 4. <block ref="2f4f76d1186f7e1931e429142840bca6" category="inline-link-rx"></block></block>
+  <block id="3d73385f16fa6d4daf757e66c8eab31b" category="doc">VASA 공급자를 마이그레이션하고 SRA를 업데이트합니다.</block>
+  <block id="3ce8158207209ed6b060c0d6db6b685d" category="section-title">스토리지 복제 어댑터(SRA)를 업데이트하는 단계</block>
 </blocks>
