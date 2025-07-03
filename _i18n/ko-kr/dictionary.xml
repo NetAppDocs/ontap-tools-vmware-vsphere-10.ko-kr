@@ -2083,7 +2083,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="305675e418fa7f87d5c522fec4e29a3d" category="list-text">VMware vSphere 10.4용 ONTAP 툴용 OVA 구축</block>
   <block id="472d4465d1363ede67b4fdb4c6e0e1ff" category="inline-link-macro">VMware vSphere 10.x용 ONTAP 툴을 10.4로 업그레이드하십시오</block>
   <block id="601dd8c7000a195659d470e737339c2d" category="paragraph"><block ref="601dd8c7000a195659d470e737339c2d" category="inline-link-macro-rx"></block></block>
-  <block id="de07d353dcc67566b2f1a71fe30ec4aa" category="admonition">SRA(Storage Replication Adapter)는 정합성 보장 그룹에서 자동 장애 조치 이중 및 비동기식 관계 SnapMirror 유형의 단일 동기화 관계를 통해 팬 아웃을 지원합니다. 하지만 정합성 보장 그룹에 비동기식 SnapMirror 2개가 있는 팬아웃 또는 볼륨의 팬아웃 스냅 미러는 지원되지 않습니다.</block>
   <block id="cdeb8a4a9786cfc45563b399c91bcce8" category="summary">팬 아웃 보호에서는 일관성 그룹이 첫 번째 대상 ONTAP 클러스터에서 동기식 관계와 두 번째 대상 ONTAP 클러스터에서의 비동기식 관계를 통해 이중 보호됩니다.</block>
   <block id="e7fc5cd5d3b281daa6edd76ca9076d38" category="doc">팬 아웃 보호</block>
   <block id="7e6b27bdfe27b21cf49c575fe39989af" category="paragraph">팬 아웃 보호에서는 일관성 그룹이 첫 번째 대상 ONTAP 클러스터에서 동기식 관계와 두 번째 대상 ONTAP 클러스터에서의 비동기식 관계를 통해 이중 보호됩니다. SnapMirror 액티브 동기화 보호 워크플로우를 생성, 편집 및 삭제하면 동기식 보호 기능이 유지됩니다. SRM 페일오버 및 재보호 워크플로는 비동기 보호를 유지합니다.</block>
@@ -2298,7 +2297,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="2d6cceda29fb927297683321657cc7f7" category="paragraph-title">예시 3:</block>
   <block id="6e0ad0300479c496e85c7f90f364f3da" category="paragraph">호스트에서 데이터 저장소 마운트 해제</block>
   <block id="1042a36d4bd6b198c75db206e253d6a1" category="paragraph">*워크플로*: [마운트 해제] DS1(lun1): 호스트1(iqn1)</block>
-  <block id="99fb3d64e6243f94e6f41859fd70993d" category="paragraph">host1Igroup이 계층 구조에서 제거됩니다. 자식 igroup은 명시적으로 삭제되지 않습니다. 삭제는 다음 두 가지 조건에서 발생합니다. • LUN이 매핑되지 않은 경우 ONTAP 시스템은 자식 igroup을 삭제합니다. • 예약된 정리 작업을 통해 LUN 매핑이 없는 불안정한 자식 igroup을 제거합니다. 이러한 시나리오는 ONTAP 도구에서 관리하는 igroup에만 적용되며, 사용자 지정 igroup에는 적용되지 않습니다.</block>
   <block id="041ec4ff6ad5f804da8976d697659842" category="paragraph-title">예시 4:</block>
   <block id="e5e28486c61b67fca6b2ef177a5f9359" category="paragraph">데이터 저장소 삭제</block>
   <block id="4a3642a61d33fc5e86d2b97fb3ec5b26" category="paragraph">*작업 흐름*: [삭제] DS1(lun1): host2(iqn2)</block>
@@ -2375,4 +2373,8 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="b468841971bd972a362e1fdbf6619e6e" category="cell">단계: 1. 환경에서 ONTAP 도구 9.xx를 제거합니다. 다음을 참조하세요. <block ref="9bde8c27ff3ba526e74c5e0434eb2686" category="inline-link-rx"></block> NetApp 기술 자료 문서. 2. <block ref="b784a866e80ba41b4fb2f8e0caeb5197" category="inline-link-macro-rx"></block> 3. <block ref="a29d94f131e388c7ee7c4a56d062be87" category="inline-link-macro-rx"></block> 4. <block ref="2f4f76d1186f7e1931e429142840bca6" category="inline-link-rx"></block></block>
   <block id="3d73385f16fa6d4daf757e66c8eab31b" category="doc">VASA 공급자를 마이그레이션하고 SRA를 업데이트합니다.</block>
   <block id="3ce8158207209ed6b060c0d6db6b685d" category="section-title">스토리지 복제 어댑터(SRA)를 업데이트하는 단계</block>
+  <block id="6b384d855656d218511c98e4bb3a3c1a" category="paragraph">host1Igroup이 계층 구조에서 제거됩니다. 자식 igroup은 명시적으로 삭제되지 않습니다. 삭제는 다음 두 가지 조건에서 발생합니다.</block>
+  <block id="3650a37003fea5e62220604565648a36" category="list-text">LUN이 매핑되지 않으면 ONTAP 시스템은 자식 igroup을 삭제합니다.</block>
+  <block id="58f346f8b1d31103f78fd7d4298e390b" category="list-text">예약된 정리 작업은 LUN 매핑이 없는 불안정한 자식 igroup을 제거합니다. 이러한 시나리오는 ONTAP 도구에서 관리하는 igroup에만 적용되며, 사용자 지정 igroup에는 적용되지 않습니다.</block>
+  <block id="fcebdc1d37d884dcdadc2c706178b160" category="admonition">SRA(스토리지 복제 어댑터)는 일관성 그룹의 자동 장애 조치 이중화 유형의 동기화 관계 하나와 SnapMirror의 비동기 관계를 통한 팬아웃을 지원합니다. 하지만 정합성 보장 그룹에 비동기식 SnapMirror 2개가 있는 팬아웃 또는 볼륨의 팬아웃 스냅 미러는 지원되지 않습니다.</block>
 </blocks>

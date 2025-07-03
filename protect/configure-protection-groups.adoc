@@ -20,7 +20,7 @@ summary: 보호 사이트에서 가상 머신 그룹을 보호하려면 보호 �
 vSphere Client를 사용하여 생성한 보호 사이트와 복구 사이트를 페어링하여 SRA(Storage Replication Adapter)가 스토리지 시스템을 검색할 수 있도록 설정해야 합니다.
 
 
-NOTE: SRA(Storage Replication Adapter)는 정합성 보장 그룹에서 자동 장애 조치 이중 및 비동기식 관계 SnapMirror 유형의 단일 동기화 관계를 통해 팬 아웃을 지원합니다. 하지만 정합성 보장 그룹에 비동기식 SnapMirror 2개가 있는 팬아웃 또는 볼륨의 팬아웃 스냅 미러는 지원되지 않습니다.
+NOTE: SRA(스토리지 복제 어댑터)는 일관성 그룹의 자동 장애 조치 이중화 유형의 동기화 관계 하나와 SnapMirror의 비동기 관계를 통한 팬아웃을 지원합니다. 하지만 정합성 보장 그룹에 비동기식 SnapMirror 2개가 있는 팬아웃 또는 볼륨의 팬아웃 스냅 미러는 지원되지 않습니다.
 
 .시작하기 전에
 * 보호 사이트와 복구 사이트에 VMware Live Site Recovery가 설치되어 있어야 합니다.
