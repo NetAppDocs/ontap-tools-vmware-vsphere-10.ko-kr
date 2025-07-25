@@ -66,6 +66,6 @@ https://techdocs.broadcom.com/us/en/vmware-cis/live-recovery/live-site-recovery/
 .단계
 . 보호 사이트의 데이터 저장소에 vCenter Server에 등록된 가상 머신이 포함되어 있는지 확인합니다.
 . 보호 사이트의 ESXi 호스트에서 NFS 엑스포트 볼륨을 SVM(스토리지 가상 머신)에서 마운트했는지 확인합니다.
-. Array Manager 마법사를 사용하여 VMware Live Site Recovery에 어레이를 추가할 때 NFS 내보내기가 있는 IP 주소, 호스트 이름 또는 FQDN과 같은 유효한 주소가 * NFS 주소 * 필드에 지정되었는지 확인합니다.
+. Array Manager 마법사를 사용하여 VMware Live Site Recovery에 어레이를 추가할 때, NFS 내보내기가 있는 IP 주소나 FQDN과 같은 유효한 주소가 *NFS 주소* 필드에 지정되어 있는지 확인하십시오. *NFS 주소 * 필드에 NFS 호스트 이름을 사용하지 마십시오.
 . 를 사용합니다 `ping` 복구 사이트의 각 ESXi 호스트에서 명령을 실행하여 호스트에 SVM에서 NFS 엑스포트를 지원하는 데 사용되는 IP 주소를 액세스할 수 있는 VMkernel 포트가 있는지 확인합니다.
 
