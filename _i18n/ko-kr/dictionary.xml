@@ -2130,10 +2130,8 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="6a9f1ff4ac0e0c970407817908ab7071" category="doc">VVOL 데이터 저장소를 확장합니다</block>
   <block id="c61ac620cee1003679fdaa462dbeaede" category="admonition">VVols 데이터 저장소 확장 작업은 ASA R2 시스템 기반 VVol 데이터 저장소에는 적용되지 않습니다.</block>
   <block id="b5bf1eb9fc501e53457cde004db09086" category="list-text">Swagger 또는 Postman에서 다음 API를 실행하여 마이그레이션하십시오.</block>
-  <block id="54caf31d7246402cdcb6cd5c255c5c64" category="paragraph">CURL-X POST 를 누릅니다<block ref="4042f1acb8fe47ca556f8b938a8d6e08" category="inline-link-rx"></block></block>
   <block id="91377d2edc3d930017c1b8c4679bdb89" category="list-text">Swagger에서 다음 URI를 사용하여 상태를 확인합니다.</block>
   <block id="96b2fedcc932770f843418dedfe7f004" category="list-text">Swagger 또는 Postman에서 다음 API를 사용하여 패치 마이그레이션을 수행합니다.</block>
-  <block id="99a490d727b23ee47f3b441a7342d420" category="paragraph">curl-X 패치 <block ref="fd07e34d045cf59e25acb7168e60f530" category="inline-link-rx"></block></block>
   <block id="5db743b53293821cee54f2f6de3ecd01" category="list-text">검색 * 이 완료될 때까지 기다리면 모든 호스트에서 인증서가 자동으로 새로 고쳐집니다.</block>
   <block id="821d346df6abaf74ffd3d352413de8ff" category="list-text">* 호스트 시스템 크기 조정 요구 사항 * 배포 크기에 따른 권장 메모리는 아래 표와 같습니다. HA(고가용성)를 배포하려면 표에 지정된 어플라이언스 크기의 3배가 필요합니다.</block>
   <block id="a13a152159236a6645a22fae6e163217" category="cell">* 노드당 CPU *</block>
@@ -2196,7 +2194,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="8fba1879056f1b6c411434b65fe61ee9" category="admonition">VMware vSphere 9.xx용 ONTAP 툴에서 10.4로 마이그레이션한 후 NVMe/FC 프로토콜을 사용하는 VVOL 데이터 저장소가 작동하지 않게 됩니다. ONTAP 툴 10.4는 VMFS 데이터 저장소에서만 NVMe-oF 프로토콜을 지원하기 때문입니다.</block>
   <block id="74a0fcc4fbe41d518dabd4de3a069584" category="section-title">VASA 공급자를 마이그레이션하는 단계</block>
   <block id="db9ce82f740ff3a9f2ad609cd7d296c9" category="list-text">ONTAP 도구 플러그인을 위한 vCenter 서버 API에서 로컬로 스토리지 백엔드를 온보딩합니다.</block>
-  <block id="c31397b4be5939d5bf72a8bb0faf9443" category="paragraph">Swagger는 다음 URL을 통해 액세스할 수 있습니다. "https://$FQDN_IP_PORT/,:<block ref="31b962e36589b3bd2081bfb7d028723f" category="inline-link-rx"></block>.</block>
   <block id="6e086f74a5eaa2061811529e1d6a623e" category="paragraph">curl -X POST <block ref="c5820eec1fb061702ab2f34b24d1d295" category="inline-link-rx"></block> \ --header 'x-auth: &lt;인증 토큰&gt;' \ --header '콘텐츠 유형: application/json' \ --data '{ "otv_ip": "xx.xx.xx.xx", "vasa_provider_credentials": { "username": "xxxxx", "password": "******" }, "database_password": "******" }'</block>
   <block id="684e740f5c7b2c5d6085a2342428c783" category="paragraph">{ "otv_ip": "xx.xx.xx.xx", "vasa_provider_credentials": { "username": "xxxxx", "password": "*******" } }</block>
   <block id="fafb1a9cdf3a5eb6029da27aa9e99060" category="list-text">vCenter Server에 VMware vSphere 스토리지 공급자용 ONTAP 도구를 추가합니다. <block ref="c283b8bc021fee7e6c856fce39783a46" category="inline-link-macro-rx"></block> VMware vSphere용 ONTAP 도구 사용.</block>
@@ -2340,7 +2337,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="e6a187afd099cc2fbaed679eda4f9a89" category="paragraph">vCenter Server 환경에서 가상 데이터스토어를 구성, 관리 및 보호하기 위해 ONTAP tools for VMware vSphere 에 vCenter Server 인스턴스를 추가합니다.</block>
   <block id="0115ba480d5059c11ce8f89628a7743d" category="paragraph-title"><block ref="36915574c413876eaa75cbd48f69fd00" category="inline-image-macro-rx" type="image"></block> (선택 사항) SRA 보호 구성</block>
   <block id="3d67f96eb2aec81f92bfe17a27594d9f" category="list-text"><block ref="3d67f96eb2aec81f92bfe17a27594d9f" category="inline-link-macro-rx"></block></block>
-  <block id="26e0f425f3ae7a1bcdeaee665ec072ff" category="list-text"><block ref="26e0f425f3ae7a1bcdeaee665ec072ff" category="inline-link-macro-rx"></block></block>
   <block id="034f02f8ec70fbc1533e451250a2bcad" category="admonition">디스크가 가상 머신에서 제거됩니다. 다른 가상 머신이 디스크를 공유하는 경우 디스크 파일은 삭제되지 않습니다.</block>
   <block id="a5e1dbbf601c017647380a6aecd9eb8d" category="list-text">로그 번들 레이블을 입력하고 로그 번들을 생성하세요. 파일이 생성되면 다운로드 옵션이 표시됩니다. 다운로드하는 데 시간이 다소 걸릴 수 있습니다.</block>
   <block id="b0a6cb6bc671c9e84eb8bf05473ab774" category="summary">ONTAP tools for VMware vSphere 삭제한 후에는 배포 중에 생성된 FlexVolume을 정리해야 합니다. 배포에 전용 ONTAP 클러스터를 사용한 경우, 배포 과정에서 사용되지 않는 FlexVolume이 많이 생성되어 성능이 저하될 수 있으므로 FlexVolume을 정리해야 합니다.</block>
@@ -2354,7 +2350,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="c7a3e6d485a07dd9c95f9051e9912372" category="paragraph">이전 VASA Provider가 중지되면 vCenter Server는 ONTAP tools for VMware vSphere 로 장애 조치됩니다. 모든 데이터스토어와 VM에 액세스할 수 있게 되고 ONTAP tools for VMware vSphere 에서 서비스를 제공합니다.</block>
   <block id="4e3b183a92792cfb6d46be8c763d9b1f" category="list-text">데이터스토어 및 가상 머신 작업을 시작하기 전에 충분한 시간을 두십시오. 필요한 대기 시간은 구성 내 호스트, 데이터스토어 및 가상 머신 수에 따라 다릅니다. 대기하지 않으면 간헐적인 운영 장애가 발생할 수 있습니다.</block>
   <block id="2c6bdfd15e2c3837505962bde7327555" category="paragraph">복구 계획에서 보호 사이트는 현재 VM이 실행 중인 위치를 나타내고, 복구 사이트는 VM이 복구될 위치를 나타냅니다. SRM 인터페이스는 보호 사이트와 복구 사이트에 대한 세부 정보와 함께 복구 계획의 상태를 표시합니다. 복구 계획에서 *CleanupP* 및 *Reprotect* 버튼은 비활성화되어 있지만, TEST 및 RUN 버튼은 활성화되어 있습니다. 이는 사이트가 데이터 복구를 위해 준비되었음을 나타냅니다. SRA를 마이그레이션하기 전에 한 사이트는 보호 상태이고 다른 사이트는 복구 상태인지 확인하십시오.</block>
-  <block id="e6f96ab39ba072438ac442d86c5d8cbd" category="list-text"><block ref="e6f96ab39ba072438ac442d86c5d8cbd" category="inline-link-macro-rx"></block></block>
   <block id="2f1a00cebb4ee36563713e73cd552aad" category="list-text">클러스터에 연결하는 경우 *SVM 이름* 필드에 SVM 이름을 지정하거나 비워 두면 클러스터의 모든 SVM을 관리합니다.</block>
   <block id="5921d19c5073db0cf91d2f7a19cb58b3" category="summary">VMware Live Site Recovery 어플라이언스를 배포한 후 재해 복구 관리를 활성화하기 위해 SRA(스토리지 복제 어댑터)를 구성합니다.</block>
   <block id="5f917c11d7a2e921fe58d07dc5187d72" category="paragraph">VMware Live Site Recovery 어플라이언스에서 SRA를 구성하면 어플라이언스 내에 ONTAP tools for VMware vSphere 저장되어 VMware Live Site Recovery와 SRA 간의 통신이 가능해집니다.</block>
@@ -2383,4 +2378,8 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="93470a6d5ec43c6c46729637f4feda14" category="paragraph">ONTAP tools for VMware vSphere 에서 업그레이드하는 경우, 업그레이드 작업을 진행하기 전에 다음 단계를 완료해야 합니다. * 서비스 데이터는 VM에 로컬로 저장되므로 각 노드에 100GB 하드 디스크를 추가합니다. * 배포 버전에 따라 전원이 꺼진 VM의 CPU와 메모리를 변경합니다. CPU 및 RAM 핫 플러그인을 활성화합니다.</block>
   <block id="c9d47f8c41ca805122d820b5a33c8400" category="list-text">에서 ONTAP tools for VMware vSphere에 대한 바이너리(_.ova_) 및 서명된 인증서가 포함된 파일을 다운로드합니다<block ref="db8756d7f65d6a8e593e69ba45adbb2e" category="inline-link-rx"></block> OVA를 콘텐츠 라이브러리로 가져온 경우 이 단계를 건너뛰고 다음 단계로 진행할 수 있습니다</block>
   <block id="f7df05ae68c6e5833dfd15542c1632c0" category="list-text">ONTAP tools for VMware vSphere 의 바이너리(_.ova_)와 서명된 인증서가 포함된 파일을 다운로드하세요. <block ref="db8756d7f65d6a8e593e69ba45adbb2e" category="inline-link-rx"></block> .</block>
+  <block id="a99f72442060cbc9b70a30a0deceb5ac" category="list-text"><block ref="a99f72442060cbc9b70a30a0deceb5ac" category="inline-link-macro-rx"></block></block>
+  <block id="df0e042574783c577a323cad7e00d03f" category="paragraph">curl -X POST <block ref="60b2cf26de252a4c9c938a4ded6aed78" prefix=" " category="inline-code"></block></block>
+  <block id="1899392092401675b3ca134eaf0dae0e" category="paragraph">다음 URL을 통해 Swagger에 액세스할 수 있습니다. <block ref="2b09eb15e8e904ff30adf6fd75069681" prefix=" " category="inline-code"></block> .</block>
+  <block id="90299a7739327ddb8f7bdb36ab48e642" category="paragraph">curl -X 패치 <block ref="8083d85a2708038b6e3e98616b6fee1c" prefix=" " category="inline-code"></block></block>
 </blocks>
