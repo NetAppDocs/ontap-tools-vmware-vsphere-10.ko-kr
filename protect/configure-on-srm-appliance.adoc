@@ -16,10 +16,10 @@ VMware Live Site Recovery 어플라이언스를 배포한 후 재해 복구 관�
 VMware Live Site Recovery 어플라이언스에서 SRA를 구성하면 어플라이언스 내에 ONTAP tools for VMware vSphere 저장되어 VMware Live Site Recovery와 SRA 간의 통신이 가능해집니다.
 
 .시작하기 전에
-* _.tar.gz_ 파일을 다운로드했는지 확인하세요.  https://mysupport.netapp.com/site/products/all/details/otv10/downloads-tab["NetApp Support 사이트"] .
-* ONTAP 도구 관리자에서 SRA 서비스를 활성화했는지 확인하세요. 자세한 내용은 link:../manage/enable-services.html["VMware vSphere 서비스에 대해 ONTAP 툴을 사용하도록 설정합니다"] 부분.
-* VMware vSphere 어플라이언스용 ONTATP 도구에 vCenter Server를 추가했는지 확인하세요. 자세한 내용은 link:../configure/add-vcenter.html["vCenter 서버 추가"] 부분.
-* ONTAP tools for VMware vSphere 에 스토리지 백엔드를 추가했는지 확인하세요. 자세한 내용은 link:../configure/add-storage-backend.html["스토리지 백엔드 추가"] 부분.
+* _.tar.gz_ 파일을 다운로드하세요. https://mysupport.netapp.com/site/products/all/details/otv10/downloads-tab["NetApp Support 사이트"] .
+* ONTAP 도구 관리자에서 SRA 서비스를 활성화합니다. 자세한 내용은 link:../manage/enable-services.html["서비스 활성화"] 부분.
+* VMware vSphere 어플라이언스용 ONTATP 도구에 vCenter Server를 추가합니다. 자세한 내용은 link:../configure/add-vcenter.html["vCenter 서버 추가"] 부분.
+* ONTAP tools for VMware vSphere 에 스토리지 백엔드를 추가합니다. 자세한 내용은 link:../configure/add-storage-backend.html["스토리지 백엔드 추가"] 부분.
 
 
 .단계
@@ -32,12 +32,10 @@ VMware Live Site Recovery 어플라이언스에서 SRA를 구성하면 어플라
 . 컨테이너 ID에 로그인하려면 명령을 입력합니다. `docker exec -it -u srm <container id> sh`
 . 다음 명령을 사용하여 ONTAP tools for VMware vSphere IP 주소와 비밀번호를 사용하여 VMware Live Site Recovery를 구성합니다.  `perl command.pl -I --otv-ip <OTV_IP>:8443 --otv-username <Application username> --otv-password <Application password> --vcenter-guid <VCENTER_GUID>`
 +
+** 비밀번호를 작은따옴표로 묶어 제공하면 Perl 스크립트가 특수문자를 구분 기호가 아닌 비밀번호의 일부로 처리합니다.
+** ONTAP 도구 관리자에서 애플리케이션(VASA Provider/SRA) 사용자 이름과 비밀번호를 설정할 수 있습니다. 이 자격 증명을 사용하여 SRA를 VMware Live Site Recovery에 등록합니다.
+** vCenter GUID를 찾으려면 vCenter 인스턴스를 추가한 후 ONTAP 도구 관리자의 vCenter Server 페이지로 이동합니다.  참조하다link:../configure/add-vcenter.html["vCenter 서버 추가"] 부분.
 
-NOTE: Perl 스크립트가 암호의 특수 문자를 입력의 구분 기호로 읽지 않도록 하려면 암호 값을 작은따옴표로 묶어야 합니다.
-
-+
-
-NOTE: ONTAP 도구 관리자에서 애플리케이션(VASA Provider/SRA) 사용자 이름과 비밀번호를 설정할 수 있습니다. 이 자격 증명은 VMware Live Site Recovery 어플라이언스에 SRA를 등록하는 데 필요합니다.
 
 . 어댑터를 다시 검사하여 업데이트된 세부 정보가 VMware Live Site Recovery Storage Replication 어댑터 페이지에 나타나는지 확인합니다.
 

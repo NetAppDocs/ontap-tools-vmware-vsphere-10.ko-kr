@@ -11,7 +11,10 @@ summary: VMware vSphere 9용 ONTAP 툴과 VMware vSphere 10용 ONTAP 툴 기능 
 
 
 [role="lead"]
-VMware vSphere 9용 ONTAP 툴에서 VMware vSphere 10.1 이상 버전용 ONTAP 툴로 마이그레이션하는 것이 적합한지 알아보십시오. 최신 호환성 정보는 을 https://mysupport.netapp.com/matrix["NetApp 상호 운용성 매트릭스 툴"^]참조하십시오.
+ONTAP tools for VMware vSphere 에서 ONTAP tools for VMware vSphere 로 마이그레이션하는 것이 적합한지 알아보세요.
+
+
+NOTE: 최신 호환성 정보는 다음을 참조하세요. https://mysupport.netapp.com/matrix["NetApp 상호 운용성 매트릭스 툴"^] .
 
 [cols="20%,25%,25%,30%"]
 |===
@@ -21,7 +24,7 @@ VMware vSphere 9용 ONTAP 툴에서 VMware vSphere 10.1 이상 버전용 ONTAP �
 | 주요 가치 제안 | 향상된 보안, 규정 준수 및 자동화 기능으로 Day 0 ~ Day 2 운영을 간소화하고 단순화합니다 | 10.x에서 9.xx 패리티로 진화하는 ONTAP 도구, 고가용성, 성능 및 확장성 제한 확장 | VMFS 및 VVOL용 FC, VMFS-oF/FC, NVMe-oF/TCP만 포함하도록 지원이 확장되었습니다. NetApp SnapMirror의 간편한 사용, vSphere Metro 스토리지 클러스터의 간단한 설정, 3개 사이트 VMware Live Site Recovery 지원 
 
 
-| ONTAP 릴리스 자격 | ONTAP 9.9.1에서 ONTAP 9.15.1로 | ONTAP 9.12.1에서 ONTAP 9.14.1로 | ONTAP 툴 10.2 9.14.1, 9.15.1 및 ONTAP 툴 10.3용 9.16.0. ONTAP 툴용 ONTAP 9.12.1 - ONTAP 9.15.1. ONTAP 도구 10.4의 경우 ONTAP 9.14.1, 9.15.1, 9.16.0 및 9.16.1 
+| ONTAP 릴리스 자격 | ONTAP 9.9.1에서 ONTAP 9.16.1로 | ONTAP 9.12.1에서 ONTAP 9.14.1로 | ONTAP 도구 10.2를 위한 ONTAP 9.12.1~ ONTAP 9.15.1.  ONTAP 도구 10.3용 ONTAP 9.14.1, 9.15.1, 9.16.0 및 9.16.1.  ONTAP 도구 10.4용 ONTAP 9.14.1, 9.15.1, 9.16.0 및 9.16.1.  ASA r2 시스템을 사용하는 경우 ONTAP 도구 10.4에 ONTAP 9.16.1P3 이상이 필요합니다. 
 
 
 | VMware 릴리스 지원 | vSphere 7.x-8.x VMware SRM(Site Recovery Manager) 8.5에서 VMware Live Site Recovery 9.0으로 마이그레이션 | vSphere 7.x-8.x VMware SRM(Site Recovery Manager) 8.7에서 VMware Live Site Recovery 9.0으로 | vSphere 7.x-8.x VMware SRM(Site Recovery Manager) 8.7에서 VMware Live Site Recovery 9.0으로 

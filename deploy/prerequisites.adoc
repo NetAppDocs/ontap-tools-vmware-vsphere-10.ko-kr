@@ -53,7 +53,7 @@ NOTE: 백업이 활성화되면 각 ONTAP Tools 클러스터의 VM이 구축되�
 | 스토리지, 호스트 및 애플리케이션 | 버전 요구 사항 
 
 
-| ONTAP | 9.14.1, 9.15.1 및 9.16.0. FAS, ASA A-Series, ASA C-Series, AFF A-Series, AFF C-Series 및 ASA R2와 같은 스토리지 효율성 기술을 보유하고 있습니다. 
+| ONTAP | 9.14.1, 9.15.1, 9.16.0, 9.16.1 및 9.16.1P3 FAS, ASA A-시리즈, ASA C-시리즈, AFF A-시리즈, AFF C-시리즈 및 ASA r2. 
 
 
 | ONTAP 툴 지원 ESXi 호스트 | 7.0.3 이상 
