@@ -1351,7 +1351,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="4fa11816241a033e46d7ef0e6bb9c98c" category="list-text">템플릿의 세부 정보를 검토하고 * 다음 * 을 선택합니다.</block>
   <block id="db5ae9b3dd501309f26eea92d5f05e2b" category="list-text">사용권 계약을 읽고 동의한 후 * Next * 를 선택합니다.</block>
   <block id="65ab872e40a57d468184122e5d0784c0" category="list-text">각 소스 네트워크에 대한 대상 네트워크를 선택하고 * 다음 * 을 선택합니다.</block>
-  <block id="25cf3eb120c48489f9ac5e6faaf3e1b8" category="list-text">Customize template * 창에서 필수 필드를 입력하고 * Next * 를 선택합니다.</block>
   <block id="59d5c19f1f3c5f065c5ee15d4ace3947" category="list-text">화면 오른쪽 상단 모서리에 있는 * 관리자 * 아이콘을 선택하고 * 암호 변경 * 을 선택합니다.</block>
   <block id="ccd07bc5ed1ed05e8e27350cb1a41b7f" category="list-text">Host cluster protection * 창에서 클러스터에 대한 줄임표 메뉴를 선택한 다음 * Remove protection * 을 선택합니다.</block>
   <block id="27385d25f49e4eeebab01eda70b36576" category="list-text">개요 섹션에서 * 어플라이언스 설정 편집 * 을 선택합니다.</block>
@@ -1763,8 +1762,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="096078a372ad8b6c0fcc7c22ffe9a147" category="list-text"><block ref="096078a372ad8b6c0fcc7c22ffe9a147" category="inline-link-macro-rx"></block></block>
   <block id="955e2530b35bd36732551d894e503a00" category="list-text">Select a name and folder * 필드에 가상 머신 이름을 입력하고 위치를 선택합니다.</block>
   <block id="02793e3182fbe0f0f175da7ab3e93d73" category="list-text">vCenter Server 8.0.3 버전을 사용하는 경우 * 이 가상 시스템의 하드웨어 사용자 정의 * 옵션을 선택합니다. 그러면 * 완료 준비 * 창으로 진행하기 전에 * 하드웨어 사용자 정의 * 라는 추가 단계가 활성화됩니다.</block>
-  <block id="023e2f3d2e9fc24fbfa345f951d3739f" category="list-text">vCenter Server 7.0.3 버전을 사용 중인 경우 구축 종료 시 * 다음 단계는 무엇입니까? * 섹션의 단계를 따르십시오.</block>
-  <block id="6086b7cf0ed3f66a8f067f2609990958" category="list-text">vCenter Server 8.0.3 버전을 사용하는 경우 * Customize hardware * 창에서 * CPU hot add * 및 * Memory hot plug * 옵션을 활성화하여 HA 기능을 허용합니다.</block>
   <block id="97b6810eb76df77c1b712c70d530f60a" category="paragraph">vCenter Server 7.0.3과 함께 VMware vSphere용 ONTAP 툴을 배포한 경우 구축 후 다음 단계를 수행합니다.</block>
   <block id="d2a87194163daac768f661ff8d1d3300" category="list-text">vCenter 클라이언트에 로그인합니다</block>
   <block id="da93f5e9af6870a18b0865c5a2c7f8c4" category="list-text">Inventory * 아래에서 VMware vSphere 가상 머신용 ONTAP 툴로 이동하고 * Edit settings * 옵션을 선택합니다.</block>
@@ -1981,7 +1978,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="66497dafb11e4eb14a710aba82842f2a" category="section-title">ONTAP 스토리지 설정</block>
   <block id="b1f65147a07338ddacacf797fa8f8068" category="paragraph">ONTAP 스토리지와 VMware vSphere용 ONTAP 툴의 완벽한 통합을 보장하려면 다음 설정을 고려하십시오.</block>
   <block id="89dcc1d78edaf637785c6ecfca413588" category="inline-link">ONTAP 시스템을 통한 FC 및 FCoE 조닝에 대해 알아보십시오</block>
-  <block id="70b4e2df1c2bfeb98be224b551dbb572" category="list-text">스토리지 연결에 파이버 채널(FC)을 사용하는 경우 ESXi 호스트를 SVM의 FC LIF에 연결하도록 FC 스위치에서 조닝을 구성합니다.<block ref="b7794521bd71e03bf277ba88ec7edd58" category="inline-link-rx"></block></block>
   <block id="172a02306231a2a4f49511d5b78568bd" category="inline-link">ONTAP 클러스터 피어 관계</block>
   <block id="01409d70514dee021d7a19fe33614d67" category="inline-link">ONTAP 인터클러스터 SVM 피어 관계</block>
   <block id="896541ee85adff34fb9f5a9c75ef9d3d" category="list-text">ONTAP 툴 관리 SnapMirror 복제를 사용하려면 ONTAP 스토리지 관리자가 SnapMirror를 사용하기 전에 ONTAP에서 및<block ref="8c2edb06b2585f1e066ba3419010ff37" category="inline-link-rx"></block> 를 생성해야<block ref="c6246851dd06c6faec212d662b844298" category="inline-link-rx"></block> 합니다.</block>
@@ -2385,4 +2381,11 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="ec08a84e1743fa84ea31f88ca3a008ea" category="admonition">최신 호환성 정보는 다음을 참조하세요.<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> .</block>
   <block id="f41628526d2ecef49849a9d54aec2d46" category="cell">ONTAP 9.9.1에서 ONTAP 9.16.1로</block>
   <block id="18adf16502c1eb6879520f01503df225" category="cell">ONTAP 도구 10.2를 위한 ONTAP 9.12.1~ ONTAP 9.15.1.  ONTAP 도구 10.3용 ONTAP 9.14.1, 9.15.1, 9.16.0 및 9.16.1.  ONTAP 도구 10.4용 ONTAP 9.14.1, 9.15.1, 9.16.0 및 9.16.1.  ASA r2 시스템을 사용하는 경우 ONTAP 도구 10.4에 ONTAP 9.16.1P3 이상이 필요합니다.</block>
+  <block id="2de89f426cb40a40a73e0dc57ba1d0b0" category="inline-image-macro">이름과 폴더를 선택하세요</block>
+  <block id="797b9d658e154cdf3e14cfdbdb0fc337" category="list-text">vCenter Server 7.0.3 버전을 사용하는 경우 배포 마지막 부분의 *다음 단계는 무엇입니까?* 섹션의 단계를 따르세요.<block ref="10901421e1b49cc7648423e4186ee13b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="47d44ed4727a9bed10ad17773b1b922e" category="inline-image-macro">템플릿 사용자 정의</block>
+  <block id="603b3c719f65dafb1976e068ef1f8d45" category="list-text">*템플릿 사용자 지정* 창에서 필수 필드를 입력하고 *다음*을 선택합니다.<block ref="bfa0729b2fed6181848e39628c495247" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="63629b02d982d9e4fe0f19501143ce17" category="inline-image-macro">하드웨어 사용자 정의</block>
+  <block id="2a2d465455150512141b1402a600df32" category="list-text">vCenter Server 8.0.3 버전을 사용하는 경우, *하드웨어 사용자 지정* 창에서 *CPU 핫 추가* 및 *메모리 핫 플러그* 옵션을 활성화하여 HA 기능을 허용합니다.<block ref="93c02f5316fc65f2262959de5552f7c0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="936fb178b14835844700bc06aa5ab952" category="list-text">스토리지 연결에 파이버 채널(FC)을 사용하는 경우 FC 스위치의 구역 설정을 구성하여 ESXi 호스트를 SVM의 FC LIF에 연결합니다.<block ref="56d435991bafd2bcca9f59739e2992e7" category="inline-link-rx"></block></block>
 </blocks>
