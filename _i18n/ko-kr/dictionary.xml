@@ -1465,7 +1465,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="fdbd4c13a762f69f21a098a7dd8e55ad" category="list-text">변경 사항을 적용하려면 * 재설정 * 을 선택하십시오.</block>
   <block id="39a4d1dfe549518e18a4188e13768079" category="list-text">변경 사항을 적용하려면 * 재설정 * 을 선택하십시오. 암호 재설정에 성공하면 새 암호를 사용하여 로그인할 수 있습니다.</block>
   <block id="3ac063bd7a8e9b85e1a6cc3c07a304c3" category="list-text">오른쪽 창에서 * Configure * 탭을 선택합니다.</block>
-  <block id="41e0fa10828ee2d85cfd4c0ff833ac64" category="inline-link">마이그레이션</block>
   <block id="6981bfa872a319e4f266c3733ce4e5c3" category="list-text">오른쪽 창에서 * Monitor * 탭을 선택합니다.</block>
   <block id="e6cd86d61f4639c8a27006c6c29b3e9f" category="list-text">다음 * 을 선택합니다.</block>
   <block id="03c100e80bdd94d3eb4d85dffe4eaecb" category="list-text">관리 탭에서 * 자리 표시자 데이터 저장소 * &gt; * 신규 * 를 선택하여 새 자리 표시자 데이터 저장소를 생성합니다.</block>
@@ -1707,7 +1706,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="4c91382e492707f0779f372fcc750396" category="list-text">이 정보는 설치 중에 검증됩니다. 일치하지 않는 경우 웹 콘솔에 오류 메시지가 나타나고 수정하라는 메시지가 표시됩니다.</block>
   <block id="2760ddae8a52ae77e6711ac97cdeff45" category="list-text">호스트 이름은 문자(A-Z, a-z), 숫자(0-9) 및 하이픈(-)을 포함해야 합니다. 이중 스택을 구성하려면 IPv6 주소에 매핑된 호스트 이름을 지정합니다.</block>
   <block id="a1f2c5d218a3501d9d0831dccea5dbc3" category="admonition">Pure IPv6는 지원되지 않습니다. 혼합 모드는 IPv6 및 IPv4 주소를 모두 포함하는 VLAN에서 지원됩니다.</block>
-  <block id="1651a6277f4f59f0128c7be036557e5d" category="paragraph">OVF 양식에 불일치가 있는 경우 대화 상자에 수정 조치가 표시됩니다. 탭 버튼을 사용하여 탐색하고 필요한 내용을 변경한 다음 "확인"을 선택합니다. 문제를 해결하기 위해 세 번 시도할 수 있습니다. 세 번 시도해도 문제가 계속되면 설치 프로세스가 중지되고 새 가상 컴퓨터에서 설치를 다시 시도하는 것이 좋습니다.</block>
   <block id="fc670824c9b9087edaedbd8931be914a" category="doc">FlexVol 볼륨을 제거합니다</block>
   <block id="94ba231101263cc02a5bbd35865c2569" category="paragraph">VMware 배포용 ONTAP 툴용 전용 ONTAP 클러스터를 사용하면 사용되지 않은 FlexVol 볼륨이 여러 개 생성됩니다. VMware vSphere용 ONTAP 툴을 제거한 후에는 성능에 미치는 영향을 방지하기 위해 FlexVol 볼륨을 제거해야 합니다.</block>
   <block id="3fcb4ec0988a47a419299691b19d04fa" category="paragraph">iSCSI를 구축할 경우 igroup도 삭제해야 합니다.</block>
@@ -1720,7 +1718,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="23829b8d6575f7cd3e20a5e92b475a9e" category="doc">VMware vSphere용 ONTAP 툴을 제거합니다</block>
   <block id="82a00fc1c0ae6d437f6d942c64bee898" category="list-text">VMware vSphere에서 관리하는 데이터 저장소용 ONTAP 툴에서 모든 가상 머신을 제거하거나 이동합니다.</block>
   <block id="4ad237c48098cfd8973e73475bded403" category="list-text">가상 머신을 제거하려면 을 참조하십시오<block ref="c16fb322315174fa2c9720c74541cf45" category="inline-link-rx"></block></block>
-  <block id="937380d419246adf3fdb369397226f82" category="list-text">관리되지 않는 데이터 저장소로 이동하려면 을 참조하십시오<block ref="5c1e2b1dd1aaa388da4191e5a966b959" category="inline-link-rx"></block></block>
   <block id="1d920979688b28c7b10ef84d14436f95" category="list-text">VASA 공급자를 설정한 경우 ONTAP 툴에서 * Settings * &gt; * VASA Provider settings * &gt; * Unregister * 를 선택하여 모든 vCenter 서버에서 VASA Provider 등록을 취소합니다.</block>
   <block id="cdb9fe2a322209ab095ba01e8388697d" category="list-text">VMware Live Site Recovery에서 SRA 어댑터 제거:</block>
   <block id="1435a5cf1efdb19e83d0f140a2ca4f4f" category="list-text">포트 5480을 사용하여 VMware Live Site Recovery 어플라이언스 관리 인터페이스에 admin으로 로그인합니다.</block>
@@ -2388,4 +2385,7 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="63629b02d982d9e4fe0f19501143ce17" category="inline-image-macro">하드웨어 사용자 정의</block>
   <block id="2a2d465455150512141b1402a600df32" category="list-text">vCenter Server 8.0.3 버전을 사용하는 경우, *하드웨어 사용자 지정* 창에서 *CPU 핫 추가* 및 *메모리 핫 플러그* 옵션을 활성화하여 HA 기능을 허용합니다.<block ref="93c02f5316fc65f2262959de5552f7c0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="936fb178b14835844700bc06aa5ab952" category="list-text">스토리지 연결에 파이버 채널(FC)을 사용하는 경우 FC 스위치의 구역 설정을 구성하여 ESXi 호스트를 SVM의 FC LIF에 연결합니다.<block ref="56d435991bafd2bcca9f59739e2992e7" category="inline-link-rx"></block></block>
+  <block id="396603bc11e32e1c8be473d2a79f1d2a" category="paragraph">OVF 양식에 불일치 사항이 있는 경우 대화 상자가 나타나 수정 조치를 취하도록 안내합니다.  탭 버튼을 사용하여 탐색하고, 필요한 변경 사항을 적용한 후 *확인*을 선택하세요.  문제를 해결하려면 세 번의 시도가 있습니다.  3번 시도 후에도 문제가 지속되면 설치 프로세스가 중지되므로 새 가상 머신에서 설치를 다시 시도하는 것이 좋습니다.</block>
+  <block id="59dd8a5d1e9605907341901d2760c087" category="inline-link">Storage vMotion을 사용하여 가상 머신을 마이그레이션하는 방법</block>
+  <block id="0166be8b4848389c414e9e383efe9111" category="list-text">관리되지 않는 데이터 저장소로 이동하려면 다음을 참조하세요.<block ref="920cfb03e9def61d5164fb56cf050dd9" category="inline-link-rx"></block></block>
 </blocks>

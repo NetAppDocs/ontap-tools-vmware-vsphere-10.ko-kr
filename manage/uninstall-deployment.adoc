@@ -17,7 +17,7 @@ VMware vSphere용 ONTAP 툴을 제거하면 툴의 데이터가 모두 삭제됩
 . VMware vSphere에서 관리하는 데이터 저장소용 ONTAP 툴에서 모든 가상 머신을 제거하거나 이동합니다.
 +
 ** 가상 머신을 제거하려면 을 참조하십시오 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vsphere-virtual-machine-administration-guide-8-0/managing-virtual-machinesvsphere-vm-admin/adding-and-removing-virtual-machinesvsphere-vm-admin.html#GUID-376174FE-F936-4BE4-B8C2-48EED42F110B-en["VM 및 VM 템플릿을 제거하고 다시 등록합니다"]
-** 관리되지 않는 데이터 저장소로 이동하려면 을 참조하십시오 https://techdocs.broadcom.com/it/it/vmware-cis/vsphere/vsphere/8-0/vcenter-and-host-management-8-0/migrating-virtual-machines-host-management/migration-with-vmotion-host-management/migration-with-storage-vmotion-host-management.html["마이그레이션"]
+** 관리되지 않는 데이터 저장소로 이동하려면 다음을 참조하세요. https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/migrate-a-virtual-machine-with-storage-vmotion.html["Storage vMotion을 사용하여 가상 머신을 마이그레이션하는 방법"]
 
 
 . link:../manage/delete-ds.html["데이터 저장소를 삭제합니다"] VMware vSphere용 ONTAP 툴에 생성되었습니다.
