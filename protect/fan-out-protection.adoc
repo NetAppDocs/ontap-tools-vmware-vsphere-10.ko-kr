@@ -42,6 +42,6 @@ summary: 팬 아웃 보호에서는 일관성 그룹이 첫 번째 대상 ONTAP 
 
 * 단계 *
 
-. 새 자리 표시자 데이터 저장소를 생성합니다. 을 참조하십시오 https://docs.vmware.com/en/Site-Recovery-Manager/8.7/com.vmware.srm.admin.doc/GUID-5D4C9F38-37CA-47D1-B43A-A1FED48A05A3.html["자리 표시자 데이터 저장소를 선택합니다"]
+. 새로운 플레이스홀더 데이터 저장소를 만듭니다. 나타내다 https://techdocs.broadcom.com/us/en/vmware-cis/live-recovery/site-recovery-manager/8-8/site-recovery-manager-administration-8-8/about-placeholder-virtual-machines/configure-a-placeholder-datastore.html["자리 표시자 데이터 저장소를 선택합니다"]
 . 호스트 클러스터 보호에 데이터 link:../manage/edit-hostcluster-protection.html["보호된 호스트 클러스터를 수정합니다"]저장소를 추가합니다. 비동기 및 동기 정책 유형을 모두 추가해야 합니다.
 
