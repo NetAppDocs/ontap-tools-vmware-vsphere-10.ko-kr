@@ -50,7 +50,7 @@ VMware vSphere 10 REST API용 ONTAP 툴은 대부분의 요청을 동기식으�
 ONTAP 도구 관리자 환경에는 몇 가지 측면을 고려해야 합니다.
 
 .가상 머신
-VMware vSphere 10용 ONTAP 툴은 vSphere 원격 플러그인 아키텍처를 사용하여 구축됩니다. REST API 지원을 포함한 소프트웨어가 별도의 가상 머신에서 실행됩니다.
+ONTAP tools for VMware vSphere vSphere 원격 플러그인 아키텍처를 사용하여 배포됩니다.  REST API 지원을 포함한 소프트웨어는 별도의 가상 머신에서 실행됩니다.
 
 .ONTAP 도구 IP 주소입니다
 VMware vSphere 10용 ONTAP 툴은 가상 머신의 기능에 대한 게이트웨이를 제공하는 단일 IP 주소를 표시합니다. 초기 구성 중에 주소를 제공해야 하며 내부 로드 밸런서 구성 요소에 할당됩니다. 이 주소는 Swagger 문서 페이지 및 REST API에 직접 액세스할 뿐만 아니라 ONTAP 도구 관리자 사용자 인터페이스에서 사용됩니다.

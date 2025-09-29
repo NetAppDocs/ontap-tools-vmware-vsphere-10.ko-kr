@@ -1,0 +1,47 @@
+---
+permalink: manage/edit-autosupport.html 
+sidebar: sidebar 
+keywords:  
+summary: 처음으로 ONTAP tools for VMware vSphere 구성하는 경우 AutoSupport 기본적으로 활성화됩니다.  이 기능이 활성화된 후 24시간 이내에 기술 지원팀에 메시지가 전송됩니다. 
+---
+= AutoSupport 설정 편집
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+처음으로 ONTAP tools for VMware vSphere 구성하는 경우 AutoSupport 기본적으로 활성화됩니다.  이 기능이 활성화된 후 24시간 이내에 기술 지원팀에 메시지가 전송됩니다.
+
+
+
+== AutoSupport를 비활성화합니다
+
+AutoSupport 비활성화하면 더 이상 사전 지원 및 모니터링을 받을 수 없습니다.
+
+
+NOTE: 문제 감지 및 해결 속도를 높이는 데 도움이 되므로 AutoSupport 활성화해 두는 것이 좋습니다.  AutoSupport 비활성화되어 있어도 시스템은 계속해서 로컬에서 정보를 수집하고 저장하지만 네트워크를 통해 보고서를 보내지는 않습니다.
+
+.단계
+. 웹 브라우저에서 ONTAP 도구 관리자를 실행합니다. `\https://<ONTAPtoolsIP>:8443/virtualization/ui/`
+. 구축 중에 제공한 VMware vSphere 관리자 자격 증명용 ONTAP 툴을 사용하여 로그인합니다.
+. 설정 * > * 원격 측정 * > * 편집 * 옵션을 선택합니다.
+. AutoSupport * 옵션을 선택 취소하고 변경 사항을 저장합니다.
+
+
+
+
+== AutoSupport 프록시 URL을 업데이트합니다
+
+AutoSupport 프록시 URL을 업데이트하여 AutoSupport 기능이 안전한 전송을 위해 프록시 서버를 통해 데이터를 라우팅하도록 합니다.
+
+.단계
+. 웹 브라우저에서 ONTAP 도구 관리자를 실행합니다. `\https://<ONTAPtoolsIP>:8443/virtualization/ui/`
+. 구축 중에 제공한 VMware vSphere 관리자 자격 증명용 ONTAP 툴을 사용하여 로그인합니다.
+. 측면 표시줄에서 * 설정 * 을 선택합니다.
+. 설정 * > * 원격 측정 * > * 편집 * 옵션을 선택합니다.
+. 유효한 * 프록시 URL * 을 입력하고 변경 사항을 저장합니다.
++
+AutoSupport를 사용하지 않도록 설정하면 프록시 URL도 비활성화됩니다.
+
+

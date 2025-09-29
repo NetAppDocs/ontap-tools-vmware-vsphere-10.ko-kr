@@ -7,7 +7,7 @@ indexpage:
   - title: 시작하십시오
     links:
     - title: 릴리스 정보
-      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP3343864
+      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP3358876
     - title: VMware vSphere용 ONTAP 툴에 대해 자세히 알아보십시오
       url: "/concepts/ontap-tools-overview.html"
     - title: VMware vSphere용 ONTAP 툴을 구축합니다
@@ -22,8 +22,6 @@ indexpage:
       url: "/concepts/rbac-learn-about.html"
     - title: 원격 진단 구성
       url: "/manage/configure-remote-diagnostic-access.html"
-    - title: VMware vSphere용 ONTAP 툴의 고가용성
-      url: "/concepts/high-availability.html"
     - title: 데이터 저장소를 보호합니다
       url: "/protect/enable-storage-replication-adapter.html"
   - title: 더 많은 리소스

@@ -27,8 +27,8 @@ VMware Live Site Recovery 어플라이언스에서 SRA를 구성하면 어플라
 . VMware Live Site Recovery에 _.tar.gz_파일을 업로드합니다.
 . PuTTY와 같은 SSH 클라이언트를 통해 관리자 계정으로 VMware Live Site Recovery 어플라이언스에 로그인합니다.
 . 다음 명령을 사용하여 루트 사용자로 전환합니다. `su root`
-. 명령을 `cd /var/log/vmware/srm` 실행하여 로그 디렉토리로 이동합니다.
-. 로그 위치에 명령을 입력하여 SRA에서 사용하는 Docker ID를 가져옵니다. `docker ps -l`
+. 명령을 실행하세요 `cd /var/log/vmware/srm` 로그 디렉토리로 이동합니다.
+. 로그 위치에서 다음 명령을 입력하여 SRA에서 사용하는 Docker ID를 가져옵니다. `docker ps -l`
 . 컨테이너 ID에 로그인하려면 명령을 입력합니다. `docker exec -it -u srm <container id> sh`
 . 다음 명령을 사용하여 ONTAP tools for VMware vSphere IP 주소와 비밀번호를 사용하여 VMware Live Site Recovery를 구성합니다.  `perl command.pl -I --otv-ip <OTV_IP>:8443 --otv-username <Application username> --otv-password <Application password> --vcenter-guid <VCENTER_GUID>`
 +
@@ -40,5 +40,4 @@ VMware Live Site Recovery 어플라이언스에서 SRA를 구성하면 어플라
 . 어댑터를 다시 검사하여 업데이트된 세부 정보가 VMware Live Site Recovery Storage Replication 어댑터 페이지에 나타나는지 확인합니다.
 
 
-.결과
-저장소 자격 증명이 저장되었음을 나타내는 확인 메시지가 나타납니다. 이제 SRA는 지정된 IP 주소, 포트 및 자격 증명을 사용하여 SRA 서버와 통신할 수 있습니다.
+*결과* 저장소 자격 증명이 저장되었음을 나타내는 확인 메시지가 나타납니다.  이제 지정된 IP 주소, 포트, 자격 증명을 사용하여 SRA 서버와 통신할 수 있습니다.

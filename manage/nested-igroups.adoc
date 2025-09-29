@@ -13,7 +13,7 @@ summary:
 [role="lead"]
 ONTAP 도구 VM과 ONTAP 스토리지 시스템을 모두 관리할 때 igroup 동작을 이해하는 것이 필수적이며, 특히 ONTAP 도구가 아닌 환경에서 ONTAP 도구 관리 환경으로 데이터 저장소를 마이그레이션할 때 더욱 그렇습니다.  이 섹션에서는 이러한 전환 중에 igroup이 어떻게 업데이트되는지 설명합니다.
 
-ONTAP tools for VMware vSphere VMware 데이터 센터 환경 내에서 ONTAP 및 vCenter 객체의 생성과 유지 관리를 자동화하여 데이터 저장소 관리를 간소화합니다.
+ONTAP tools for VMware vSphere 부터 VMware 데이터 센터 환경에서 ONTAP 및 vCenter 객체를 자동으로 생성하고 유지 관리하여 데이터 저장소 관리가 간소화됩니다.
 
 ONTAP tools for VMware vSphere 두 가지 다른 맥락에서 igroup을 해석합니다.
 
@@ -23,7 +23,7 @@ ONTAP tools for VMware vSphere 두 가지 다른 맥락에서 igroup을 해석�
 image:../media/non-otv-managed.png["ONTAP 도구가 아닌 igroup 관리"]
 
 .ONTAP 도구로 관리되는 igroups
-데이터스토어를 생성할 때 ONTAP tools for VMware vSphere LUN 매핑을 더 쉽게 하기 위해 중첩 구조를 사용하여 igroup을 자동으로 생성합니다.
+데이터스토어를 생성하면 ONTAP tools for VMware vSphere LUN 매핑을 더 쉽게 하기 위해 중첩 구조를 사용하여 igroup을 자동으로 생성합니다.
 
 예를 들어, 호스트 1, 2, 3에 datastore1을 생성하여 마운트하고, 호스트 3, 4, 5에 새로운 datastore(datastore2)를 생성하여 마운트하는 경우 ONTAP 도구는 효율적인 관리를 위해 호스트 수준 igroup을 재사용합니다.
 

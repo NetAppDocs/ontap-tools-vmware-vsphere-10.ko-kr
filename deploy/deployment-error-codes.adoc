@@ -4,17 +4,57 @@ sidebar: sidebar
 keywords: upgrade 
 summary: 이 페이지에서는 VMware vSphere 시스템용 ONTAP 툴의 구축, 재부팅 및 복구 작업에 대한 오류 코드를 간략하게 설명합니다. 
 ---
-= 배포 오류 코드입니다
+= 배포 오류 문제 해결
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+배포 문제가 발생하는 경우 로그와 오류 코드를 검토하여 문제를 진단하고 해결하세요.  ONTAP tools for VMware vSphere 부터 포드에서 수집된 로그 번들에는 MongoDB, RabbitMQ, Vault의 로그와 모든 포드의 상태 및 설명이 포함됩니다.  이러한 기능은 기존 ONTAP 도구 서비스 로그에 추가로 제공되어 지원 및 문제 해결을 향상시킵니다.
+
+
+
+== 로그 파일을 수집합니다
+
+VMware vSphere용 ONTAP 툴에 대한 로그 파일은 ONTAP Tools Manager 사용자 인터페이스에서 사용할 수 있는 옵션을 통해 수집할 수 있습니다. 기술 지원 부서에서 문제 해결을 위해 로그 파일을 수집하도록 요청할 수 있습니다.
+
+
+NOTE: ONTAP Tools Manager에서 로그를 생성하는 데는 모든 vCenter Server 인스턴스에 대한 모든 로그가 포함됩니다. vCenter 클라이언트 사용자 인터페이스에서 로그를 생성하는 작업은 선택한 vCenter Server에 대해 범위가 지정됩니다.
+
+.단계
+. 웹 브라우저에서 ONTAP 도구 관리자를 실행합니다. `\https://<ONTAPtoolsIP>:8443/virtualization/ui/`
+. 구축 중에 제공한 VMware vSphere 관리자 자격 증명용 ONTAP 툴을 사용하여 로그인합니다.
+. 사이드바에서 * 로그 번들 * 을 선택합니다.
++
+이 작업은 몇 분 정도 걸릴 수 있습니다.
+
+. 로그 파일을 생성하려면 * Generate * 를 선택하십시오.
+. 로그 번들의 레이블을 입력하고 * Generate * 를 선택합니다.
++
+tar.gz 파일을 다운로드하여 기술 지원 부서에 보내십시오.
+
+
+
+vCenter 클라이언트 사용자 인터페이스를 사용하여 로그 번들을 생성하려면 다음 단계를 수행하십시오.
+
+.단계
+. vSphere Client에 로그인합니다.
+. vSphere Client 홈 페이지에서 * Support * > * Log bundle * > * Generate * 로 이동합니다.
+. 로그 번들 레이블을 입력하고 로그 번들을 생성하세요. 파일이 생성되면 다운로드 옵션이 표시됩니다. 다운로드하는 데 시간이 다소 걸릴 수 있습니다.
+
+
+
+NOTE: 생성된 로그 번들은 지난 3일 또는 72시간 내에 생성된 로그 번들을 대체합니다.
+
+
+
+== 배포 오류 코드입니다
+
 VMware vSphere 구축, 재부팅 및 복구 작업에 대한 ONTAP 툴 중에 오류 코드가 발생할 수 있습니다.
 오류 코드는 5자리 길이이며, 처음 두 자리는 문제가 발생한 스크립트를 나타내며, 마지막 세 자리는 해당 스크립트 내의 특정 워크플로를 나타냅니다.
 
-모든 오류 로그는 ansible-perl-errors.log 파일에 기록되므로 문제를 쉽게 추적하고 해결할 수 있습니다. 이 로그 파일에는 오류 코드와 실패한 Ansible 작업이 포함되어 있습니다.
+모든 오류 로그는 /var/log 디렉토리의 ansible-perl-errors.log 파일에 기록되어 문제를 쉽게 추적하고 해결할 수 있습니다.  이 로그 파일에는 오류 코드와 실패한 Ansible 작업이 포함되어 있습니다.
 
 
 NOTE: 이 페이지에 제공된 오류 코드는 참조용으로만 제공됩니다. 오류가 지속되거나 해결 방법이 언급되지 않은 경우 지원 팀에 문의하십시오.

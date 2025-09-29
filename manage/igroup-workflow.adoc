@@ -13,10 +13,10 @@ summary:
 [role="lead"]
 이니시에이터 그룹(igroup)은 FC 프로토콜 호스트 WWPN(World Wide Port Name) 또는 iSCSI 호스트 정규 노드 이름의 테이블입니다. igroup을 정의하고 LUN에 매핑하여 LUN에 액세스할 수 있는 이니시에이터를 제어할 수 있습니다.
 
-VMware vSphere 9.x용 ONTAP 도구에서 igroup은 vCenter의 각 데이터스토어가 단일 igroup과 연결되는 플랫 구조로 생성 및 관리되었습니다. 이 모델은 여러 데이터스토어에서 igroup의 유연성과 재사용성을 제한했습니다. VMware vSphere 10.x용 ONTAP 도구는 중첩 igroup을 도입하여 vCenter의 각 데이터스토어가 상위 igroup과 연결되고, 각 호스트는 해당 상위 igroup 아래의 하위 igroup에 연결됩니다. VMware 여러 데이터스토어에서 재사용할 수 있도록 사용자 정의 이름으로 사용자 지정 상위 igroup을 정의하여 igroup을 더욱 유연하고 상호 연결된 방식으로 관리할 수 있습니다. vSphere용 ONTAP 도구에서 LUN과 데이터스토어를 효과적으로 관리하려면 igroup 워크플로우를 이해하는 것이 필수적입니다. 다음 예와 같이 워크플로우에 따라 다양한 igroup 구성이 생성됩니다.
+ONTAP tools for VMware vSphere 에서 igroup은 플랫 구조로 생성 및 관리되었으며, vCenter의 각 데이터스토어는 단일 igroup과 연결되었습니다.  이 모델은 여러 데이터 저장소에서 igroup의 유연성과 재사용성을 제한했습니다.  ONTAP tools for VMware vSphere 중첩된 igroup을 도입하여 vCenter의 각 데이터 저장소가 상위 igroup과 연결되고 각 호스트는 해당 상위 아래의 하위 igroup에 연결됩니다.  여러 데이터 저장소에서 재사용할 수 있도록 사용자 정의 이름으로 사용자 정의 상위 igroup을 정의하여 igroup을 보다 유연하고 상호 연결된 방식으로 관리할 수 있습니다.  ONTAP tools for VMware vSphere 에서 LUN과 데이터 저장소를 효과적으로 관리하려면 igroup 워크플로를 이해하는 것이 필수적입니다.  다음 예에서 볼 수 있듯이 다양한 워크플로는 다양한 igroup 구성을 생성합니다.
 
 
-NOTE: 언급된 이름은 예시 목적으로만 사용되었으며 실제 igroup 이름을 나타내는 것이 아닙니다. ONTAP 도구에서 관리하는 igroup은 "otv_" 접두사를 사용합니다. 사용자 지정 igroup에는 원하는 이름을 지정할 수 있습니다.
+NOTE: 언급된 이름은 단지 설명을 위한 목적으로만 사용되었으며 실제 igroup 이름을 나타내는 것이 아닙니다.  ONTAP 도구에서 관리하는 igroup은 접두사 "otv_"를 사용합니다.  사용자 정의 igroup에는 원하는 이름을 지정할 수 있습니다.
 
 |===
 
@@ -94,7 +94,7 @@ DS1에 대한 부모 igroup DS1Igroup이 ONTAP 시스템에 생성되고, lun1�
 
 
 
-host1Igroup이 계층 구조에서 제거됩니다. 자식 igroup은 명시적으로 삭제되지 않습니다. 삭제는 다음 두 가지 조건에서 발생합니다.
+host1Igroup이 계층 구조에서 제거됩니다.  자식 igroup은 명시적으로 삭제되지 않습니다.  삭제는 다음 두 가지 조건에서 발생합니다.
 
 * LUN이 매핑되지 않으면 ONTAP 시스템은 자식 igroup을 삭제합니다.
 * 예약된 정리 작업은 LUN 매핑이 없는 불안정한 자식 igroup을 제거합니다. 이러한 시나리오는 ONTAP 도구에서 관리하는 igroup에만 적용되며, 사용자 지정 igroup에는 적용되지 않습니다.
@@ -114,7 +114,7 @@ host1Igroup이 계층 구조에서 제거됩니다. 자식 igroup은 명시적�
 
 
 
-다른 데이터 저장소가 부모 igroup을 재사용하지 않으면 부모 및 자식 igroup이 제거됩니다. 자식 igroup은 명시적으로 삭제되지 않습니다.
+다른 데이터 저장소가 부모 igroup을 재사용하지 않으면 부모 및 자식 igroup이 제거됩니다.  자식 igroup은 명시적으로 삭제되지 않습니다.
 
 .예시 5:
 사용자 정의 부모 igroup 아래에 여러 데이터 저장소 만들기
@@ -203,7 +203,7 @@ ONTAP 도구 9에서 10으로 마이그레이션(igroup 정규화)
 
 * 워크플로 *
 
-VMware vSphere 9.x 버전용 ONTAP 도구는 계층형 igroup을 지원하지 않습니다. 10.3 이상 버전으로 마이그레이션하는 동안 igroup을 계층 구조로 정규화해야 합니다.
+VMware vSphere 9.x 버전용 ONTAP 도구는 계층적 igroup을 지원하지 않습니다.  10.3 이상 버전으로 마이그레이션하는 동안 igroup을 계층 구조로 정규화해야 합니다.
 
 이전 전:
 

@@ -11,7 +11,7 @@ summary: VMware vSphere용 ONTAP 툴을 시작하려면 몇 단계를 거쳐야 
 
 
 [role="lead"]
-VVOL 데이터 저장소를 사용하는 경우 ONTAP 툴의 초기 구축을 HA(고가용성) 구성으로 확장하고 VASA Provider 서비스를 활성화해야 합니다.
+복원력을 높이고 서비스당 더 많은 컨테이너를 지원하려면 초기 ONTAP 도구 배포를 고가용성(HA) 구성으로 확장하세요.  HA 설정에서 vVols 데이터 저장소를 사용하려면 VASA 공급자 서비스를 활성화해야 합니다.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1개"] 배포 확장
 [role="quick-margin-para"]
@@ -23,7 +23,7 @@ VMware vSphere 구성용 ONTAP 툴을 스케일업하여 구축할 때 노드 �
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2개"] 서비스 활성화
 [role="quick-margin-para"]
-VVOL 데이터 저장소를 구성하려면 VASA Provider 서비스를 설정해야 합니다. vCenter에 VASA 공급자를 등록하고 스토리지 정책이 적절한 네트워크 및 스토리지 구성을 포함하여 HA 요구 사항을 충족하는지 확인합니다.
+vVols 데이터 저장소를 구성하려면 VASA Provider 서비스를 활성화해야 합니다.  vCenter에 VASA 공급자를 등록하고 적절한 네트워크 및 스토리지 구성을 비롯하여 스토리지 정책이 HA 요구 사항을 충족하는지 확인하세요.
 
 [role="quick-margin-para"]
 SRA 서비스가 VMware SRM(Site Recovery Manager) 또는 VMware VLSR(Live Site Recovery)에 ONTAP 툴을 사용하도록 설정합니다.

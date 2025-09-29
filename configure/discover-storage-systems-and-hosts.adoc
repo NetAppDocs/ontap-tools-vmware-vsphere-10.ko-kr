@@ -26,7 +26,7 @@ vSphere 클라이언트에서 VMware vSphere용 ONTAP 툴을 처음 실행하면
 
 .단계
 . vSphere Client 홈 페이지에서 * 호스트 및 클러스터 * 를 선택합니다.
-. 필요한 데이터 센터를 마우스 오른쪽 버튼으로 클릭하고 * NetApp ONTAP tools * > * Update Host Data * 를 선택합니다.
+. 필요한 데이터 센터를 마우스 오른쪽 버튼으로 클릭하고 * NetApp ONTAP 도구* > *호스트 데이터 업데이트*를 선택합니다.
 +
 확인 * 대화 상자에서 선택 사항을 확인합니다.
 

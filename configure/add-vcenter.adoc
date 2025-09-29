@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: vCenter Server 인스턴스를 VMware vSphere용 ONTAP 툴에 추가하여 vCenter Server 환경에서 가상 데이터 저장소를 구성, 관리 및 보호할 수 있습니다. 
 ---
-= vCenter Server 인스턴스를 추가합니다
+= ONTAP 도구에 vCenter Server 인스턴스 추가
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -13,14 +13,14 @@ summary: vCenter Server 인스턴스를 VMware vSphere용 ONTAP 툴에 추가하
 [role="lead"]
 vCenter Server 인스턴스를 VMware vSphere용 ONTAP 툴에 추가하여 vCenter Server 환경에서 가상 데이터 저장소를 구성, 관리 및 보호할 수 있습니다. 여러 vCenter Server 인스턴스를 추가하는 경우 ONTAP 도구와 각 vCenter Server 간의 보안 통신을 위해 사용자 지정 CA 인증서가 필요합니다.
 
-* 이 작업에 대한 정보 *
-
-ONTAP 툴을 vCenter와 통합하면 vSphere 클라이언트에서 프로비저닝, 스냅샷 및 데이터 보호와 같은 스토리지 작업을 직접 수행할 수 있으므로 별도의 스토리지 관리 콘솔로 전환할 필요가 없습니다.
+.이 작업에 대해
+ONTAP 도구는 vCenter Server와 통합되어 vSphere 클라이언트에서 직접 프로비저닝, 스냅샷, 데이터 보호와 같은 스토리지 작업을 수행합니다.
 
 .단계
-. 웹 브라우저를 열고 다음 URL로 이동합니다. `\https://<ONTAPtoolsIP>:8443/virtualization/ui/`
+. 웹 브라우저를 열고 다음 URL로 이동하세요. `\https://<ONTAPtoolsIP>:8443/virtualization/ui/`
 . 구축 중에 제공한 VMware vSphere 관리자 자격 증명용 ONTAP 툴을 사용하여 로그인합니다.
 . vCenter Server 인스턴스를 온보딩하려면 * vCenters * > * Add * 를 선택합니다. vCenter IP 주소 또는 호스트 이름, 사용자 이름, 암호 및 포트 세부 정보를 제공합니다.
+. 고급 옵션에서 vCenter Server 인증서를 자동으로 가져오거나(인증) 수동으로 업로드합니다.
 +
 
 NOTE: vCenter 인스턴스를 ONTAP 툴에 추가하기 위해 관리자 계정이 필요하지 않습니다. 제한된 권한을 가진 관리자 계정 없이 사용자 지정 역할을 만들 수 있습니다. 자세한 내용은 을 link:../concepts/rbac-vcenter-use.html["VMware vSphere 10용 ONTAP 툴과 함께 vCenter Server RBAC를 사용하십시오"] 참조하십시오.
@@ -29,7 +29,7 @@ NOTE: vCenter 인스턴스를 ONTAP 툴에 추가하기 위해 관리자 계정�
 
 ONTAP 툴에 vCenter Server 인스턴스를 추가하면 다음 작업이 자동으로 트리거됩니다.
 
-* vCenter Client 플러그인이 원격 플러그인으로 등록되어 있습니다.
+* ONTAP 도구는 vCenter 클라이언트 플러그인을 원격 플러그인으로 등록합니다.
 * 플러그인에 대한 사용자 지정 Privileges 및 API는 vCenter Server 인스턴스에 적용됩니다.
 * 사용자 지정 역할이 생성되어 사용자를 관리합니다.
 * vSphere 사용자 인터페이스에서 플러그인이 바로 가기로 표시됩니다.

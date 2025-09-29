@@ -11,12 +11,32 @@ summary: VMware vSphere용 ONTAP 툴은 가상 머신의 라이프사이클 관�
 
 
 [role="lead"]
-VMware vSphere용 ONTAP 툴은 가상 머신 라이프사이클 관리를 위한 툴 세트입니다. VMware 에코시스템과 통합되어 데이터 저장소 프로비저닝을 지원하고 가상 시스템에 대한 기본 보호 기능을 제공합니다. VMware vSphere용 ONTAP 툴은 수평으로 확장 가능한 이벤트 기반 마이크로서비스의 모음으로, OVA(Open Virtual Appliance)로 구축됩니다. 이번 릴리즈에서는 REST API를 ONTAP와 통합합니다.
+ONTAP tools for VMware vSphere 가상 머신 수명 주기 관리를 위한 도구 세트입니다.  VMware 에코시스템과 통합되어 데이터 저장소 프로비저닝을 간소화하고 가상 머신에 대한 기본적인 보호 기능을 제공합니다.  이는 OVA(Open Virtual Appliance)로 배포되는 수평 확장 가능한 이벤트 기반 마이크로서비스의 컬렉션입니다.
 
-VMware vSphere용 ONTAP 툴은 다음과 같이 구성됩니다.
+ONTAP tools for VMware vSphere 을 지원합니다.
 
-* 기본 보호 및 재해 복구와 같은 가상 시스템 기능
-* VM 세부 관리를 위한 VASA 공급자
+* 보호 및 재해 복구와 같은 핵심 가상 머신(VM) 기능
+* 스토리지 정책 기반 관리를 위한 VASA 공급자
 * 스토리지 정책 기반 관리
 * SRA(Storage Replication Adapter)
 
+
+.VMware용 ONTAP 도구의 고가용성
+ONTAP tools for VMware vSphere 장애 발생 시에도 중단 없는 운영을 유지하는 데 도움이 되는 고가용성(HA) 지원을 제공합니다.
+
+HA 솔루션은 다음과 같은 유형의 중단으로부터 신속하게 복구하는 데 도움이 됩니다.
+
+* 호스트 장애 - 단일 노드 장애만 지원됩니다.
+* 네트워크 오류입니다
+* 가상 머신(게스트 OS) 오류
+* 애플리케이션(ONTAP 도구) 실패
+
+
+ONTAP tools for VMware vSphere 활성화하기 위해 추가 구성을 수행할 필요가 없습니다.
+
+[NOTE]
+====
+ONTAP tools for VMware vSphere vCenter HA를 지원하지 않습니다.
+
+====
+HA 기능을 사용하려면 배포 중이나 나중에 VM 설정에서 CPU 핫 애드 및 메모리 핫 플러그가 활성화되어 있는지 확인하세요.

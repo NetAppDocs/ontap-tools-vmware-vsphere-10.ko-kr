@@ -12,5 +12,5 @@ entries:
   url: "/deploy/pre-deploy-checks.html"
 - title: VMware vSphere용 ONTAP 툴을 구축합니다
   url: "/deploy/ontap-tools-deployment.html"
-- title: 배포 오류 코드입니다
+- title: 배포 오류 문제 해결
   url: "/deploy/deployment-error-codes.html"

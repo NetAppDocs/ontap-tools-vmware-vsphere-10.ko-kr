@@ -4,12 +4,22 @@ title: VMware vSphere용 ONTAP 툴을 관리합니다
 entries:
 - title: VMware vSphere용 ONTAP 툴 대시보드 개요
   url: "/configure/dashboard-overview.html"
-- title: ONTAP 도구 관리자 사용자 인터페이스
-  url: "/configure/manager-user-interface.html"
 - title: igroups 및 내보내기 정책 이해
   url: "/manage/igroup-workflow.html"
 - title: ONTAP 도구 관리 igroups 이해
   url: "/manage/nested-igroups.html"
+- title: ONTAP 도구 관리자 사용자 인터페이스
+  url: "/manage/manager-user-interface.html"
+- title: ONTAP 도구 관리자 설정 관리
+  entries:
+  - title: AutoSupport 설정 편집
+    url: "/manage/edit-autosupport.html"
+  - title: NTP 서버를 추가합니다
+    url: "/manage/add-ntpserver.html"
+  - title: VASA 공급자 및 SRA 자격 증명 재설정
+    url: "/manage/reset-vasa-sra-credentials.html"
+  - title: 백업 설정 편집
+    url: "/manage/backup-settings.html"
 - title: VMware vSphere 서비스에 대해 ONTAP 툴을 사용하도록 설정합니다
   url: "/manage/enable-services.html"
 - title: VMware vSphere 구성에 대한 ONTAP 툴을 변경합니다
@@ -38,7 +48,7 @@ entries:
   url: "/manage/manage-storage-threshold.html"
 - title: 스토리지 백엔드 관리
   url: "/manage/storage-backend.html"
-- title: vCenter Server 인스턴스를 관리합니다
+- title: ONTAP 도구에서 vCenter Server 인스턴스 관리
   url: "/manage/manage-vcenter.html"
 - title: 인증서를 관리합니다
   url: "/manage/certificate-manage.html"
@@ -52,10 +62,10 @@ entries:
     url: "/manage/start-the-ssh-on-other-nodes.html"
   - title: vCenter Server 및 ONTAP 자격 증명을 업데이트합니다
     url: "/manage/update-vcenter-credentials.html"
+  - title: 인증서 유효성 검사 플래그 변경
+    url: "/manage/change-valid-flag.html"
 - title: ONTAP 도구 보고서
   url: "/manage/reports.html"
-- title: 로그 파일을 수집합니다
-  url: "/manage/collect-the-log-files.html"
 - title: 가상 머신 관리
   entries:
   - title: 가상 머신의 마이그레이션 또는 클론 생성 고려 사항
@@ -86,14 +96,8 @@ entries:
     url: "/manage/edit-hostcluster-protection.html"
   - title: 호스트 클러스터 보호를 제거합니다
     url: "/manage/delete-hostcluster-protection.html"
-- title: AutoSupport를 비활성화합니다
-  url: "/manage/disable-autosupport.html"
-- title: AutoSupport 프록시 URL을 업데이트합니다
-  url: "/manage/update-proxyurl.html"
-- title: NTP 서버를 추가합니다
-  url: "/manage/add-ntpserver.html"
-- title: 백업을 생성하고 ONTAP 도구 설정을 복구합니다
-  url: "/manage/enable-backup.html"
+- title: ONTAP 도구 설정 복구
+  url: "/manage/recover-backup.html"
 - title: VMware vSphere용 ONTAP 툴을 제거합니다
   url: "/manage/uninstall-deployment.html"
 - title: FlexVol 볼륨을 제거합니다

@@ -6,7 +6,7 @@ entries:
   url: "/concepts/ontap-tools-overview.html"
 - title: 주요 개념 및 용어
   url: "/concepts/ontap-tools-concepts-terms.html"
-- title: 역할 기반 액세스 제어
+- title: 역할 기반 접근 제어(RBAC)
   entries:
   - title: RBAC에 대해 알아보십시오
     url: "/concepts/rbac-learn-about.html"
@@ -22,7 +22,3 @@ entries:
       url: "/concepts/rbac-ontap-environment.html"
     - title: ONTAP에서 RBAC 사용
       url: "/concepts/rbac-ontap-use.html"
-- title: VMware vSphere용 ONTAP 툴의 고가용성
-  url: "/concepts/high-availability.html"
-- title: ONTAP 도구 관리자 사용자 인터페이스
-  url: "/configure/manager-user-interface.html"

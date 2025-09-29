@@ -11,16 +11,14 @@ summary: vCenter Client의 바로 가기 섹션에서 VMware vSphere 플러그�
 
 
 [role="lead"]
-vCenter Client의 바로 가기 섹션에서 VMware vSphere 플러그인용 ONTAP 툴 아이콘을 선택하면 사용자 인터페이스에서 개요 페이지로 이동합니다. 이 페이지는 VMware vSphere 플러그인용 ONTAP 툴에 대한 요약을 제공하는 대시보드 역할을 합니다.
+vCenter 클라이언트의 바로 가기 섹션에서 ONTAP tools for VMware vSphere 선택하면 개요 페이지가 열립니다.  이 대시보드는 ONTAP tools for VMware vSphere 에 대한 요약을 제공합니다.
 
-ELM(Enhanced Linked Mode Setup)의 경우 vCenter Server 선택 드롭다운이 나타나고 원하는 vCenter Server를 선택하여 관련 데이터를 볼 수 있습니다. 이 드롭다운은 플러그인의 다른 모든 목록 보기에 사용할 수 있습니다.
-한 페이지에서 선택한 vCenter Server는 플러그인의 탭에 계속 표시됩니다.
-image:../media/remote-plugin-dashboard.png["대시보드 개요"]
+향상된 연결 모드(ELM) 설정의 경우 vCenter Server 선택 드롭다운이 나타나고 원하는 vCenter Server를 선택하면 관련 데이터를 볼 수 있습니다.  이 드롭다운은 플러그인의 다른 모든 목록 보기에서 사용할 수 있습니다. 한 페이지에서 선택한 vCenter Server 항목은 플러그인의 모든 탭에 그대로 적용됩니다.image:../media/remote-plugin-dashboard.png["대시보드 개요"]
 
 개요 페이지에서 * Discovery * 작업을 실행할 수 있습니다. 검색 작업은 vCenter 레벨에서 검색을 실행하여 새로 추가되거나 업데이트된 스토리지 백엔드, 호스트, 데이터 저장소 및 보호 상태/관계를 감지합니다. 예약된 검색을 기다리지 않고도 필요에 따라 엔터티 검색을 실행할 수 있습니다.
 
 
-NOTE: 작업 버튼은 검색 작업을 수행할 수 있는 권한이 있는 경우에만 활성화됩니다.
+NOTE: *검색* 작업 버튼은 검색 작업을 수행하는 데 필요한 권한이 있는 경우에만 활성화됩니다.
 
 검색 요청이 제출된 후 최근 작업 패널에서 작업 진행 상황을 추적할 수 있습니다.
 

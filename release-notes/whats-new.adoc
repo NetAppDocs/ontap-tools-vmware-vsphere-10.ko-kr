@@ -1,31 +1,50 @@
 ---
 permalink: release-notes/whats-new.html 
 sidebar: sidebar 
-keywords: 'what"s new, release notes, 10.4, ONTAP tools for VMware vSphere' 
-summary: VMware vSphere 10.4용 ONTAP 툴에서 사용할 수 있는 새로운 기능에 대해 알아보십시오. 
+keywords: 'what"s new, release notes, 10.5, ONTAP tools for VMware vSphere' 
+summary: ONTAP tools for VMware vSphere 에서 사용할 수 있는 새로운 기능에 대해 알아보세요. 
 ---
-= VMware vSphere 10.4용 ONTAP 툴의 새로운 기능
+= ONTAP tools for VMware vSphere 의 새로운 기능
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-VMware vSphere 10.4용 ONTAP 툴에서 사용할 수 있는 새로운 기능에 대해 알아보십시오.
+ONTAP tools for VMware vSphere 에서 사용할 수 있는 새로운 기능에 대해 알아보세요.
 
-[cols="30%,70%"]
-|===
-| 업데이트 | 설명 
+* *플랫폼 자격*
 
 
-| link:../configure/create-datastore.html["ASA R2 시스템에서 클러스터당 12개 노드 지원"] | VMware vSphere 10.4용 ONTAP 툴은 클러스터당 최대 12개의 노드를 지원하는 ASA R2 스토리지 시스템용 워크플로우를 지원하여 데이터 관리 효율성과 확장성을 개선합니다. iSCSI 및 FC 프로토콜을 통해 VVOL 데이터 저장소와 iSCSI, FC 및 NVMe 프로토콜을 지원하는 VMFS 데이터 저장소를 지원하여 유연하고 향상된 스토리지 옵션을 제공합니다. 
+ONTAP tools for VMware vSphere ASA r2 시스템에 대한 지원을 추가하여 최신 하드웨어 및 소프트웨어 구성과의 호환성을 제공합니다.  이 릴리스에는 ONTAP 9.16.1 및 9.17.1과의 통합도 포함되어 지원 환경이 확장되었습니다.
+
+* *VMware 자격 및 인증*
 
 
-| link:../manage/add-ntpserver.html["ONTAP 도구 관리자 사용자 인터페이스 기능 향상"] | 이제 환경 전체에서 정확한 시간 동기화를 위해 NTP 서버를 활성화하고 ONTAP Tools Manager 인터페이스에서 시스템 성능을 모니터링하고 분석하도록 원격 측정 설정을 구성할 수 있습니다. 이러한 설정은 유지보수 콘솔에서 더 이상 사용할 수 없습니다. 
+ONTAP tools for VMware vSphere 현재 VMware 상호 운용성 인증 표준을 준수하며 ESXi 호스트와 vCenter Server를 모두 지원합니다.
+
+* * MetroCluster 지원*
 
 
-| 향상된 보안 기능 | 이제 보안 기능이 향상된 보호 기능과 업계 표준 준수 기능을 제공하므로 관리자가 VMware 환경을 보다 효율적으로 관리할 수 있도록 강력하고 사용자에게 친숙한 환경을 제공할 수 있습니다. 
+이 릴리스에서는 MetroCluster (MCC) 구성에 대한 지원이 도입되어 고가용성과 재해 복구 기능이 향상되었습니다.
+
+* *보안 및 인증서 관리*
 
 
-| link:../protect/enable-storage-replication-adapter.html["향상된 SRA 재해 복구 기능"] | VMware vSphere 10.4용 ONTAP 툴은 이제 SnapMirror 예약된 스냅샷 복사본 외에 사용자 지정 이름의 스냅샷과 함께 SRA(Site Recovery Appliance)를 사용하여 재해 복구 작업을 지원합니다. 
-|===
+이번 릴리스에서는 자체 서명 인증서의 관리가 간소화되어 사용자 경험과 보안 표준 준수가 모두 향상되었습니다.  ONTAP tools for VMware vSphere ONTAP 및 ONTAP 도구를 보호하기 위해 향상된 인증서 검증 워크플로를 제공합니다.
+
+* *복제 향상*
+
+
+이 릴리스에서는 ASA r2 시스템의 SRA 및 SnapMirror 활성 동기화를 포함한 계층적 일관성 그룹을 사용한 VMFS 복제를 지원합니다.  데이터 보호 및 복구를 개선하기 위해 0 RPO 백업을 지원합니다.
+
+* *업그레이드 및 마이그레이션*
+
+
+ONTAP tools for VMware vSphere 의 이전 버전에서 ONTAP tools for VMware vSphere 로의 업그레이드 및 마이그레이션 프로세스는 원활하고 효율적으로 설계되어 가동 중지 시간을 최소화하고 원활한 전환을 보장합니다.
+
+
+
+== 지원되는 ONTAP 플랫폼 및 vCenter Server 버전
+
+버전 호환성에 대한 최신 세부 정보는 다음을 참조하세요. https://imt.netapp.com/matrix/imt.jsp?components=105475;&solution=1777&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"^] .
