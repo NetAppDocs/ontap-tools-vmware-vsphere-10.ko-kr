@@ -26,7 +26,7 @@ ONTAP tools for VMware vSphere 현재 VMware 상호 운용성 인증 표준을 �
 * * MetroCluster 지원*
 
 
-이 릴리스에서는 MetroCluster (MCC) 구성에 대한 지원이 도입되어 고가용성과 재해 복구 기능이 향상되었습니다.
+이 릴리스에서는 MetroCluster 구성에 대한 지원이 도입되어 고가용성과 재해 복구 기능이 향상되었습니다.
 
 * *보안 및 인증서 관리*
 

@@ -22,6 +22,9 @@ VMware Live Site Recovery 어플라이언스에서 SRA를 구성하면 어플라
 * ONTAP tools for VMware vSphere 에 스토리지 백엔드를 추가합니다. 자세한 내용은 link:../configure/add-storage-backend.html["스토리지 백엔드 추가"] 부분.
 
 
+
+NOTE: ONTAP 도구에서 vCenter 인증서 패치를 적용한 경우 (:5480) 포트를 사용하여 VMware Live Site Recovery 어플라이언스에서 vCenter 구성을 업데이트합니다.  지침은 다음을 참조하세요. https://techdocs.broadcom.com/us/en/vmware-cis/live-recovery/site-recovery-manager/8-8/site-recovery-manager-installation-and-configuration-8-8/reconfiguring-the-site-recovery-manager-virtual-appliance/reconfigure-the-site-recovery-manager-appliance.html["Site Recovery Manager 어플라이언스 재구성"] .
+
 .단계
 . VMware Live Site Recovery 어플라이언스 화면에서 * Storage Replication Adapter * > * New Adapter * 를 선택합니다.
 . VMware Live Site Recovery에 _.tar.gz_파일을 업로드합니다.
