@@ -16,8 +16,7 @@ NFS 및 VMFS 데이터 저장소에서 가상 머신을 VVol(Virtual Volumes) �
 .시작하기 전에
 마이그레이션할 가상 시스템에서 VASA Provider가 실행되고 있지 않은지 확인합니다. VASA Provider를 실행하는 가상 머신을 VVol 데이터 저장소로 마이그레이션할 경우, VVOL 데이터 저장소에 있는 가상 머신의 전원을 켜는 것을 포함하여 관리 작업을 수행할 수 없습니다.
 
-* 이 작업에 대한 정보 *
-
+.이 작업에 대해
 NFS 및 VMFS 데이터 저장소에서 VVol 데이터 저장소로 마이그레이션할 때 vCenter Server는 VMFS 데이터 저장소에서 데이터를 이동할 때 VAAI(vStorage APIs for Array Integration) 오프로드를 사용하지만 NFS VMDK 파일에서는 데이터를 이동할 때 사용합니다. VAAI 오프로드는 일반적으로 호스트의 부하를 줄입니다.
 
 .단계

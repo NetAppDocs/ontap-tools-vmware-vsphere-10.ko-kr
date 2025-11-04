@@ -11,10 +11,10 @@ summary: 스토리지 보기에는 가상 시스템에서 생성된 VVol 목록�
 
 
 [role="lead"]
-스토리지 보기에는 가상 시스템에서 생성된 VVol 목록이 표시됩니다.
+저장소 보기에는 가상 머신이 생성하는 vVols 목록이 표시됩니다.
 
 
-NOTE: 이 보기는 VMware vSphere 관리 VVOL 데이터 저장소와 관련된 디스크가 마운트된 하나 이상의 ONTAP 툴이 있는 VM에 적용됩니다.
+NOTE: 이 보기는 ONTAP tools for VMware vSphere 관리 vVols 데이터 저장소용 ONTAP 도구에서 하나 이상의 디스크가 있는 VM에 적용됩니다.
 
 .단계
 . vSphere Client에서 가상 머신으로 이동합니다.
