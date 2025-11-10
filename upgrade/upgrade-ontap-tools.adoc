@@ -48,11 +48,20 @@ ONTAP tools for VMware vSphere 에서 10.5로 업그레이드할 수 있습니�
 * CPU와 RAM에 대한 핫 플러그인이 활성화되어 있는지 확인하세요.
 * ONTAP tools for VMware vSphere 의 경우 업그레이드하기 전에 ONTAP 도구 가상 머신에서 정지된 스냅샷을 만듭니다.
 * 낮은 RPO 백업을 활성화하고 vCenter Client 인터페이스에서 하나의 백업이 표시되는지 확인합니다.
++
+참조하다 link:../manage/backup-settings.html["백업 설정 편집"] 그리고 link:../manage/recover-backup.html["ONTAP 도구 설정 복구"] 백업 및 복구에 대한 자세한 내용은 다음을 참조하세요.
+
 
 
 .단계
 . VMware vSphere용 ONTAP 툴을 컨텐츠 라이브러리로 업그레이드합니다.
-. 기본 VM 페이지에서 * Actions * > * Edit Settings * 를 선택합니다
+. 기본 VM 페이지에서 *작업* > *설정 편집*을 선택합니다. 기본 VM 이름을 식별하려면:
++
+.. 모든 노드에서 진단 셸을 활성화합니다.
+.. 다음 명령을 실행하세요.
+`grep sourceHost /opt/netapp/meta/ansible_vars.yaml`
+
+
 . *CD/DVD 드라이브* 필드 아래의 편집 설정 창에서 *콘텐츠 라이브러리 ISO 파일*을 선택합니다.
 . ISO 파일을 선택하고, CD/DVD 드라이브 필드에서 연결됨 상자를 체크한 후, 확인(OK)을 클릭합니다.
 . vCenter Server에서 콘솔을 열고 ONTAP 툴을 엽니다.

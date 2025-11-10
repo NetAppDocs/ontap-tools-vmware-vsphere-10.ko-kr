@@ -204,9 +204,6 @@
   <block id="ad9681c4b067c102640e512ffe944ae5" category="paragraph">마이그레이션할 가상 시스템에서 VASA Provider가 실행되고 있지 않은지 확인합니다. VASA Provider를 실행하는 가상 머신을 VVol 데이터 저장소로 마이그레이션할 경우, VVOL 데이터 저장소에 있는 가상 머신의 전원을 켜는 것을 포함하여 관리 작업을 수행할 수 없습니다.</block>
   <block id="87dd176d02dc14ceef36faeb3b3e32ae" category="paragraph">NFS 및 VMFS 데이터 저장소에서 VVol 데이터 저장소로 마이그레이션할 때 vCenter Server는 VMFS 데이터 저장소에서 데이터를 이동할 때 VAAI(vStorage APIs for Array Integration) 오프로드를 사용하지만 NFS VMDK 파일에서는 데이터를 이동할 때 사용합니다. VAAI 오프로드는 일반적으로 호스트의 부하를 줄입니다.</block>
   <block id="951d3fc54a28f9f46798897467d96a5b" category="doc">인증서를 관리합니다</block>
-  <block id="a6f65a806180d1ff3c8d5e553e634e9d" category="summary">유지 관리 콘솔을 사용하여 vCenter Server 및 ONTAP 자격 증명을 업데이트할 수 있습니다.</block>
-  <block id="f72e000ebb4c7bedf651a46e595f1371" category="doc">vCenter Server 및 ONTAP 자격 증명을 업데이트합니다</block>
-  <block id="7ac19aa441feceb73519a5108d4cc366" category="paragraph">유지 관리 콘솔을 사용하여 vCenter Server 인스턴스 및 ONTAP 자격 증명을 업데이트할 수 있습니다.</block>
   <block id="21a56b485fb6cd9f7c9cc8f514440950" category="paragraph">유지보수 사용자 로그인 자격 증명이 있어야 합니다.</block>
   <block id="2e7ce9d8495225c584175fd7caa148ce" category="summary">VMware vSphere용 ONTAP 툴 플러그인은 가상 머신 및 데이터 저장소에 대한 보고서를 제공합니다.</block>
   <block id="bd294460cf119253eaf3ca5c5ff6bb68" category="summary">게스트 OS 재시작 작업 중에 grub 메뉴에 유지 관리 콘솔 사용자 암호를 재설정하는 옵션이 표시됩니다. </block>
@@ -475,7 +472,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="ec874bf582309d24e5c0f1f38429fb73" category="inline-link-macro">vCenter Server에 VASA Provider를 등록합니다</block>
   <block id="63bc9a3997d66d835d9f3ec29451407d" category="cell">패치</block>
   <block id="b06f0e274f6c746f0d30521b5c7f392e" category="list-text">VMware vSphere용 ONTAP 툴을 컨텐츠 라이브러리로 업그레이드합니다.</block>
-  <block id="dd5382558ec4a47dfbc203fb25698772" category="list-text">기본 VM 페이지에서 * Actions * &gt; * Edit Settings * 를 선택합니다</block>
   <block id="6aa61138e01e77bb590500715db216a4" category="list-text">를 업그레이드하면 다음 작업이 자동으로 수행됩니다.</block>
   <block id="ea228e7ce90fb22b7336716e47dc7d35" category="summary">이 페이지에서는 VMware vSphere 시스템용 ONTAP 툴의 업그레이드 작업에 대한 오류 코드를 간략하게 설명합니다.</block>
   <block id="f804f395829e966ca161a8be7756fec4" category="doc">업그레이드 오류 코드입니다</block>
@@ -576,8 +572,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="71a16bd19bda0e91c90a56e37682dc0d" category="list-text">Perl 명령을 실행하여 새 자격 증명으로 SRA를 구성합니다.</block>
   <block id="a40a3427484ba9037317f84856abff69" category="list-text">필요한 스토리지 쌍을 선택하고 해당 세부 정보를 확인합니다.</block>
   <block id="cea5a13834803a12adaeb249165351df" category="list-text">를<block ref="c81e728d9d4c2f636f067f89cc14862c" prefix=" " category="inline-code"></block> 입력하여 시스템 구성 메뉴를 선택합니다.</block>
-  <block id="86ce6e9c3af571980099ca308cd245e3" category="list-text">ONTAP 자격 증명을 변경하려면 를<block ref="45c48cce2e2d7fbdea1afc51c7c6ad26" prefix=" " category="inline-code"></block> 입력합니다.</block>
-  <block id="207c00a73dde0270cc0fbc7ce9c5f2fd" category="list-text">vCenter 자격 증명을 변경하려면 를<block ref="d3d9446802a44259755d38e6d163e820" prefix=" " category="inline-code"></block> 입력합니다.</block>
   <block id="ab475951501b4995dc2913e61372d546" category="section-title">이중 스택</block>
   <block id="5541521d8d465590f0919510f29154b2" category="summary">VMware vSphere용 ONTAP 툴을 구축하기 위한 구성 제한</block>
   <block id="96c7de8d06430bb8621d9ca29f8bf76b" category="paragraph">다음 표를 참조하여 VMware vSphere용 ONTAP 툴을 구성할 수 있습니다.</block>
@@ -677,7 +671,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="174e0bb9fd863076b8b78d2ca9e0dd08" category="sidebar">NFS 및 VMFS 데이터 저장소를 마운트합니다</block>
   <block id="41d4fa725cfb558559b7183adeea1e30" category="sidebar">NFS 및 VMFS 데이터 저장소를 마운트 해제합니다</block>
   <block id="e6e4c7644f1b4ac0c9a1fa2e3a633259" category="sidebar">VVOL 데이터 저장소를 확장합니다</block>
-  <block id="0b05bd7cf8d32e0eca345c170c1c2bdd" category="sidebar">vCenter Server 및 ONTAP 자격 증명을 업데이트합니다</block>
   <block id="b380edc36b1ed383fd72d0b93d5857c5" category="sidebar">호스트 클러스터 보호 관리</block>
   <block id="430cbe0d7261af556b6d05cea5b38e0e" category="sidebar">호스트 클러스터 보호를 수정합니다</block>
   <block id="4fb2d974d1e232174a0545c1d40f5345" category="section-title">VMware 라이브 사이트 복구</block>
@@ -2440,8 +2433,18 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="0e527af09bb57a137d15be7b82466174" category="cell">모든 볼륨을 나열합니다. ONTAP 스토리지 창에서 스토리지를 확장하거나 제거할 수 있습니다. ONTAP 도구는 ASA r2 시스템 기반 vVols 데이터 저장소에 대한 이 보기를 지원하지 않습니다.</block>
   <block id="c39c392ff0013e0b93fcc63dc310cc30" category="paragraph">데이터 저장소 마운트 해제 작업은 ESXi 호스트에서 NFS 또는 VMFS 데이터 저장소를 제거합니다.  ONTAP tools for VMware vSphere 에서 검색하거나 관리하는 데이터 저장소에 사용할 수 있습니다.</block>
   <block id="0901929c9c2cc418f53328e6412b7d46" category="paragraph">vSphere 클라이언트는 대화 상자를 열고 데이터스토어를 마운트하는 ESXi 호스트를 나열합니다. 보호된 데이터 저장소에서 작업을 수행하면 화면에 경고 메시지가 표시됩니다.</block>
-  <block id="e65e1eb2c16cb3c35af4e401b566b7c4" category="paragraph">배포 후 vCenter Server, ONTAP 또는 Data LIF 자격 증명을 변경한 경우 이 절차를 사용하여 업데이트합니다.</block>
   <block id="69e03ac4326032eeb38fb3fcf35c7ff6" category="paragraph">저장소 보기에는 가상 머신이 생성하는 vVols 목록이 표시됩니다.</block>
   <block id="6dc534da8e148f3344a75f75993a7078" category="admonition">이 보기는 ONTAP tools for VMware vSphere 관리 vVols 데이터 저장소용 ONTAP 도구에서 하나 이상의 디스크가 있는 VM에 적용됩니다.</block>
   <block id="c94984b666995a59419ca0857f214e23" category="list-text">*시스템 구성* 메뉴를 선택하려면 *2*을 입력하세요.</block>
+  <block id="bac860f1d4bb4c20d8de991eeeedd998" category="paragraph">클릭하여 포트 요구 사항 표를 확장하거나 축소하세요.</block>
+  <block id="f59d6f6c2fbe5659bab55bb335b17871" category="summary">유지 관리 콘솔을 사용하여 vCenter Server 자격 증명을 업데이트할 수 있습니다.</block>
+  <block id="d546c3915b2e0bc231d2bd0456f2d736" category="doc">vCenter Server 자격 증명 업데이트</block>
+  <block id="6e73e8087488ddc10c72aeec0f27cc93" category="paragraph">유지 관리 콘솔을 사용하여 vCenter Server 인스턴스 자격 증명을 업데이트할 수 있습니다.</block>
+  <block id="f13c11fc9998fa4e2d133fe7f943fb4f" category="paragraph">배포 후 vCenter Server 자격 증명을 변경한 경우 이 절차를 사용하여 업데이트합니다.</block>
+  <block id="a38dbe6982c223d82e53b7d0feab69ce" category="list-text">입력하다<block ref="c9f0f895fb98ab9159f51fd0297e236d" prefix=" " category="inline-code"></block> vCenter 자격 증명을 변경하려면.</block>
+  <block id="b09a768d508454c0e540ea7b37cb5509" category="paragraph">참조하다 <block ref="afe6cee65a7db7868c8d2eef90c140e6" category="inline-link-macro-rx"></block> 그리고 <block ref="da3a0196b755588b543a28093241fcfa" category="inline-link-macro-rx"></block> 백업 및 복구에 대한 자세한 내용은 다음을 참조하세요.</block>
+  <block id="a928a1b805644ea87a643f7f8d60a477" category="list-text">기본 VM 페이지에서 *작업* &gt; *설정 편집*을 선택합니다. 기본 VM 이름을 식별하려면:</block>
+  <block id="75a86edd37c9b2122be450b28fa09149" category="list-text">모든 노드에서 진단 셸을 활성화합니다.</block>
+  <block id="e016d50ae26af4214e6a864c1c2c8db5" category="list-text">다음 명령을 실행하세요.<block ref="1ebe86b64a17c55ae52f4488cffae75f" prefix=" " category="inline-code"></block></block>
+  <block id="e40ec845cea3d17ed090f7fc08824c3f" category="sidebar">vCenter 서버 자격 증명 업데이트</block>
 </blocks>

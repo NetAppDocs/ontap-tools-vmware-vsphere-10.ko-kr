@@ -62,7 +62,7 @@ entries:
     url: "/manage/configure-remote-diagnostic-access.html"
   - title: 다른 노드에서 SSH를 시작합니다
     url: "/manage/start-the-ssh-on-other-nodes.html"
-  - title: vCenter Server 및 ONTAP 자격 증명을 업데이트합니다
+  - title: vCenter 서버 자격 증명 업데이트
     url: "/manage/update-vcenter-credentials.html"
   - title: 인증서 유효성 검사 플래그 변경
     url: "/manage/change-valid-flag.html"
