@@ -11,17 +11,17 @@ summary: VMware vSphere용 ONTAP 툴의 대시보드를 사용하여 ESXi 호스
 
 
 [role="lead"]
-VMware vSphere용 ONTAP 툴의 대시보드를 사용하여 ESXi 호스트 설정을 편집할 수 있습니다.
+VMware vSphere의 ONTAP 도구 대시보드를 사용하여 구성 문제를 식별하고, ESXi 호스트를 선택하고, NetApp 권장 설정을 검토하고 적용합니다.
 
 .시작하기 전에
-ESXi 호스트 설정에 문제가 있는 경우 대시보드의 ESXi 호스트 시스템 포틀릿에 문제가 표시됩니다. 문제를 선택하여 문제가 발생한 ESXi 호스트의 호스트 이름 또는 IP 주소를 볼 수 있습니다.
+ESXi 호스트 시스템 포틀릿은 ESXi 호스트 설정과 관련된 문제를 표시합니다.  호스트 이름이나 IP 주소를 보려면 문제를 선택하세요.
 
 .단계
 . vSphere Client에 로그인합니다.
 . 바로 가기 페이지의 플러그인 섹션에서 * NetApp ONTAP tools * 를 선택합니다.
 . VMware vSphere 플러그인용 ONTAP 툴의 개요(대시보드)에서 * ESXi 호스트 규정 준수 * 포틀릿으로 이동합니다.
 . 권장 설정 적용 * 링크를 선택합니다.
-. Apply recommended host settings * 창에서 NetApp 권장 호스트 설정을 준수할 호스트를 선택하고 * Next * 를 선택합니다.
+. *권장 호스트 설정 적용* 창에서 NetApp 권장 호스트 설정을 사용할 호스트를 선택하고 *다음*을 선택합니다.
 +
 
 NOTE: ESXi 호스트를 확장하여 현재 값을 볼 수 있습니다.

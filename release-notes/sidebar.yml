@@ -6,3 +6,5 @@ entries:
   url: "/release-notes/release-notes.html"
 - title: ONTAP tools for VMware vSphere 의 새로운 기능
   url: "/release-notes/whats-new.html"
+- title: ONTAP tools for VMware vSphere
+  url: "/release-notes/ontap-tools-9-ontap-tools-10-feature-comparison.html"
