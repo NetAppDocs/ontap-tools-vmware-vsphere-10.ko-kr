@@ -10,6 +10,9 @@ summary: 스토리지 데이터를 마이그레이션할 때 REST API를 사용�
 :imagesdir: ../media/
 
 
+[role="lead"]
+이 섹션의 단계에 따라 ONTAP tools for VMware vSphere 에서 ONTAP tools for VMware vSphere 로 VASA 공급자를 마이그레이션하고 VMware Live Site Recovery 어플라이언스에서 SRA(스토리지 복제 어댑터)를 업데이트합니다.
+
 
 
 == VASA 공급자를 마이그레이션하는 단계

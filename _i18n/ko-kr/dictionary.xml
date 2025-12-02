@@ -1987,7 +1987,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="bf2ddf3529c43aaac032b60fd698afdf" category="admonition">배포를 진행하기 전에 인벤토리의 클러스터 분산 리소스 스케줄러(DRS)를 '보수적'으로 설정합니다.  이렇게 하면 설치 중에 VM이 마이그레이션되지 않습니다.</block>
   <block id="e665d4f634eb279e3d3649d89dce4f3e" category="paragraph">ONTAP tools for VMware vSphere 처음에는 비 HA 설정으로 배포됩니다.  HA 배포로 확장하려면 CPU 핫 플러그와 메모리 핫 플러그인을 활성화해야 합니다. 이 단계는 배포 프로세스의 일부로 수행하거나 배포 후 VM 설정을 편집할 수 있습니다.</block>
   <block id="76ecd43e2d7d963469ed779109b6621d" category="list-text">OVA를 배포하려는 리소스 풀, 클러스터 또는 호스트로 이동합니다.</block>
-  <block id="fb90c88e0a037c598666652371595d40" category="list-text">정보는 설치 중에 검증됩니다.  불일치가 있는 경우 웹 콘솔에 오류 메시지가 나타나고 이를 수정하라는 메시지가 표시됩니다.</block>
   <block id="a85cd355d0191e9ca39647db304e9886" category="list-text">*인벤토리*에서 ONTAP tools for VMware vSphere 로 이동하여 *설정 편집* 옵션을 선택합니다.</block>
   <block id="7bc1f449f84cbd0274b17756a6c88276" category="cell">ONTAP 도구 애플리케이션의 IP 주소입니다.  이는 ONTAP 도구 웹 인터페이스(로드 밸런서)에 액세스하기 위한 IP 주소입니다.</block>
   <block id="0a975d248a4d2c7d423087028109208e" category="cell">ONTAP 도구는 내부 통신을 위한 가상 IP 주소를 제공합니다.  이 IP 주소는 여러 ONTAP 도구 인스턴스가 있는 설정에서 내부 통신에 사용됩니다.  이 IP 주소는 ONTAP 도구 애플리케이션(Kubernetes 제어 평면)의 IP 주소와 동일해서는 안 됩니다.</block>
@@ -2505,4 +2504,5 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="765335765cc8607272cb60cd0929a9e9" category="list-text">낮은 RPO 백업을 권장합니다.  하지만 HA가 아닌 배포에서는 업그레이드하기 전에 ONTAP 도구 가상 머신의 정지된 스냅샷을 만들 수 있습니다.</block>
   <block id="750686b04dbf67a95b96fd8a0f1efb0f" category="list-text">ONTAP 도구 10.4 또는 10.3 SRA 어댑터를 제거하고 10.5 SRA 어댑터 tar 파일을 업로드합니다.</block>
   <block id="829b3830a5408ec70946282b75f9c6b7" category="list-text">SRA 어댑터 tar를 업로드한 후 설치 명령을 실행합니다. 그런 다음 SRA 어댑터를 다시 검사하여 VMware Site Recovery 스토리지 복제 어댑터 페이지를 업데이트합니다.</block>
+  <block id="070f340136b38d4a8c74afe9526b62dc" category="paragraph">이 섹션의 단계에 따라 ONTAP tools for VMware vSphere 에서 ONTAP tools for VMware vSphere 로 VASA 공급자를 마이그레이션하고 VMware Live Site Recovery 어플라이언스에서 SRA(스토리지 복제 어댑터)를 업데이트합니다.</block>
 </blocks>
