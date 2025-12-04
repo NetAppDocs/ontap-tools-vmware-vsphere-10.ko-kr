@@ -2477,13 +2477,11 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="073983521d52887782f4ac8fcd628e60" category="cell">ONTAP 도구 10.2 이상</block>
   <block id="ab83860ed087a089d00a21810f2a0bf7" category="cell">핵심 가치 제안</block>
   <block id="4273cb76acdc3e1de02819d037c77ad4" category="cell">향상된 보안, 규정 준수 및 자동화 기능으로 0일차부터 2일차까지의 운영을 간소화하고 단순화합니다.</block>
-  <block id="9596f14660005b587cb5dfdcc52a84c9" category="cell">FC(VMFS 및 NVMe-oF/FC), NVMe-oF/TCP(VMFS 전용)를 포함하도록 지원이 확대되었습니다. NetApp SnapMirror 의 사용 편의성, vSphere 메트로 스토리지 클러스터의 간단한 설정, 3개 사이트 VMware Live Site Recovery 지원</block>
   <block id="92d3c85edd0fa69062ef2c7cca594814" category="cell">ONTAP 릴리스 자격</block>
   <block id="f41628526d2ecef49849a9d54aec2d46" category="cell">ONTAP 9.9.1에서 ONTAP 9.16.1로</block>
   <block id="53f67abe3ae260cacfac7adeeda90377" category="cell">ONTAP 도구 10.2의 경우 ONTAP 9.12.1~9.15.1입니다. ONTAP 도구 10.3용 ONTAP 9.14.1, 9.15.1, 9.16.0 및 9.16.1. ONTAP 도구 10.4용 ONTAP 9.14.1, 9.15.1, 9.16.0 및 9.16.1. ASA r2 시스템을 사용하는 경우 ONTAP 도구 10.4에 ONTAP 9.16.1P3 이상이 필요합니다.  ONTAP 도구 10.5용 ONTAP 9.15.1, 9.16.0, 9.16.1, 9.17.0 및 9.17.1</block>
   <block id="d67ece44624c7aa69b0f38715d1ac2fb" category="cell">VMware 릴리스 지원</block>
   <block id="af0223f5c63fe0b5a6e75d3087868abd" category="cell">vSphere 7.x-8.x VMware Site Recovery Manager(SRM) 8.5에서 VMware Live Site Recovery 9.0으로</block>
-  <block id="d72bb3e1e67692ec327a89e11558943e" category="cell">vSphere 7.x-8.x VMware Site Recovery Manager(SRM) 8.7에서 VMware Live Site Recovery 9.0으로 *참고:* ONTAP 도구 10.x에서 SRM은 공유 사이트를 지원하여 확장성을 강화하고 성능을 개선합니다.</block>
   <block id="30388d1a3ab1a01f6930553a577eb80b" category="cell">프로토콜 지원</block>
   <block id="69e493705b5762fd000de8321c6e2f1b" category="cell">NFS 및 VMFS 데이터 저장소: NFS(v3 및 v4.1), VMFS(iSCSI 및 FCP)</block>
   <block id="308203c1fb88371d593fd65f1a44edf5" category="cell">NFS 및 VMFS 데이터 저장소: NFS(v3 및 v4.1), VMFS(iSCSI/FCP/NVMe-oF)</block>
@@ -2494,8 +2492,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="0ae86707597758caa42797b966846966" category="cell">성능, 용량 및 호스트 규정 준수 대시보드 동적 VM 및 데이터 저장소 보고서</block>
   <block id="e48d3655de549622076e6823dc5953da" category="cell">업데이트된 성능, 용량 및 호스트 규정 준수 대시보드 동적 VM 및 데이터 저장소 보고서</block>
   <block id="7e7397a7b79323762c61941fc0e6b5f9" category="cell">데이터 보호</block>
-  <block id="3e28850991da16d19121f4144528251d" category="cell">VMFS 및 NFS SCV 통합을 위한 SRA 복제 및 백업을 위한 상호 운용성</block>
-  <block id="f04d5a39f552e53928ef021fc890d6c5" category="cell">SMAS와 VMware Live Site Recovery를 결합한 3개 사이트 보호, iSCSI VMFS 및 NFS v3 데이터 저장소를 위한 SRA 복제.</block>
   <block id="f995a81db9639d1f6676a86caa7c78e5" category="cell">VASA 공급자 지원</block>
   <block id="8fc79c740ab04e88f200d7eddd9e1931" category="cell">VASA 4.0</block>
   <block id="5638860cdd6d2160f1889c6659867484" category="cell">VASA 3.0</block>
@@ -2505,4 +2501,10 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="750686b04dbf67a95b96fd8a0f1efb0f" category="list-text">ONTAP 도구 10.4 또는 10.3 SRA 어댑터를 제거하고 10.5 SRA 어댑터 tar 파일을 업로드합니다.</block>
   <block id="829b3830a5408ec70946282b75f9c6b7" category="list-text">SRA 어댑터 tar를 업로드한 후 설치 명령을 실행합니다. 그런 다음 SRA 어댑터를 다시 검사하여 VMware Site Recovery 스토리지 복제 어댑터 페이지를 업데이트합니다.</block>
   <block id="070f340136b38d4a8c74afe9526b62dc" category="paragraph">이 섹션의 단계에 따라 ONTAP tools for VMware vSphere 에서 ONTAP tools for VMware vSphere 로 VASA 공급자를 마이그레이션하고 VMware Live Site Recovery 어플라이언스에서 SRA(스토리지 복제 어댑터)를 업데이트합니다.</block>
+  <block id="503418f2f3e87464c59131a65b8d6509" category="cell">VMFS용 FC와 VMFS 전용 NVMe-oF를 포함하도록 지원이 확대되었습니다. NetApp SnapMirror 의 사용 편의성, vSphere 메트로 스토리지 클러스터의 간단한 설정, 3개 사이트 VMware Live Site Recovery 지원</block>
+  <block id="cdac32b049102650f7299ebf43f574d4" category="cell">vSphere 7.x-8.x ONTAP 도구 10.5 이상의 vSphere 9.0 VMware Site Recovery Manager(SRM) 8.7 VMware Live Site Recovery 9.0 *참고:* ONTAP 도구 10.x에서 SRM은 공유 사이트를 지원하여 확장성을 강화하고 성능을 개선합니다.</block>
+  <block id="3815b1a102d580dcf982cbd303e8f23c" category="cell">VMFS 및 NFS에 대한 SRA 복제.  SCV 통합 및 백업을 위한 상호 운용성.</block>
+  <block id="8aed0b79b91ac394e16a8ff5c674b844" category="cell">SMAS와 VMware Live Site Recovery를 결합한 3개 사이트 보호, iSCSI VMFS 및 NFS v3 데이터 저장소를 위한 SRA 복제. VMFS를 사용한 FCP에 대한 SRA 지원.</block>
+  <block id="d54f7e547c9116d6f3fa5c3da63b3f4c" category="list-text">메시지가 표시되면 vCenter 자격 증명을 제공합니다.  이는 ONTAP 도구가 호스팅되는 vCenter 인스턴스입니다.</block>
+  <block id="25c2ee20081a3dbb1ba37676816c4acf" category="paragraph">두 개의 vCenter Server 토폴로지에서 ONTAP 도구를 사용하는 경우(어플라이언스가 한 vCenter 인스턴스에 호스팅되고 다른 vCenter 인스턴스를 관리하는 경우) ONTAP 도구를 호스팅하는 vCenter 인스턴스에 제한된 역할을 할당할 수 있습니다.  아래에 나열된 데이터 저장소 권한만 사용하여 전담 vCenter 사용자 및 역할을 만들 수 있습니다.</block>
 </blocks>
