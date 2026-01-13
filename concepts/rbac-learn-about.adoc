@@ -43,7 +43,7 @@ permission_은 사용자 또는 그룹과 역할을 객체에 바인딩하는 �
 
 == 2개의 RBAC 환경
 
-VMware vSphere 10용 ONTAP 툴을 사용할 때는 두 가지 별개의 RBAC 환경을 고려해야 합니다.
+ONTAP tools for VMware vSphere 사용할 때 고려해야 할 RBAC 환경은 크게 두 가지가 있습니다. ONTAP tools for VMware vSphere 사용하려면 vCenter와 ONTAP 모두에서 특정 권한이 필요합니다. ONTAP 도구는 스토리지 관리 작업을 자동화하지만 vCenter 또는 ONTAP 에 사용자 계정을 생성하지는 않습니다. 서비스 계정은 필요에 따라 vSphere 관리자가 생성해야 합니다. 이 문서는 관리자가 ONTAP 도구를 효과적으로 관리하는 데 필요한 역할과 권한을 할당하는 방법에 대한 지침을 제공합니다.
 
 .VMware vCenter Server 를 참조하십시오
 VMware vCenter Server의 RBAC 구현은 vSphere Client 사용자 인터페이스를 통해 노출된 객체에 대한 액세스를 제한하는 데 사용됩니다. VMware vSphere 10용 ONTAP 툴을 설치할 때 RBAC 환경이 확장되어 ONTAP 툴의 기능을 나타내는 추가 개체가 포함됩니다. 이러한 객체에 대한 액세스는 원격 플러그인을 통해 제공됩니다. 자세한  내용은 을 참조하십시오.link:../concepts/rbac-vcenter-environment.html["vCenter Server RBAC 환경"]

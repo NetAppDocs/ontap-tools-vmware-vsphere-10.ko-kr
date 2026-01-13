@@ -1199,7 +1199,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="d06c4b7230b78df6a13a1ffe93c68ea7" category="paragraph">_Users_는 인증 후 적용된 역할에 할당되거나 연결됩니다. 일부 RBAC 구현에서는 한 번에 하나의 역할만 사용자에게 할당할 수 있는 반면, 한 번에 하나의 역할만 활성 상태일 수 있는 역할도 있습니다. 역할을 _groups_에 할당하면 보안 관리를 더욱 간소화할 수 있습니다.</block>
   <block id="74b037a49a7d27ecca7fc6857aedcd2a" category="paragraph">permission_은 사용자 또는 그룹과 역할을 객체에 바인딩하는 정의입니다. 사용 권한은 계층 구조에서 하위 개체가 선택적으로 상속할 수 있는 계층적 개체 모델에 유용할 수 있습니다.</block>
   <block id="ecc206dfcc570366eb56c27d01c64234" category="section-title">2개의 RBAC 환경</block>
-  <block id="857ac2a8af334039722446a532094bd6" category="paragraph">VMware vSphere 10용 ONTAP 툴을 사용할 때는 두 가지 별개의 RBAC 환경을 고려해야 합니다.</block>
   <block id="7b992155512beae7a0c0bcd838bf53bc" category="paragraph-title">VMware vCenter Server 를 참조하십시오</block>
   <block id="a44122ce0420d82ffec8245eb58d1686" category="inline-link-macro">vCenter Server RBAC 환경</block>
   <block id="abfe427299b92162e94931d6113396c6" category="paragraph">VMware vCenter Server의 RBAC 구현은 vSphere Client 사용자 인터페이스를 통해 노출된 객체에 대한 액세스를 제한하는 데 사용됩니다. VMware vSphere 10용 ONTAP 툴을 설치할 때 RBAC 환경이 확장되어 ONTAP 툴의 기능을 나타내는 추가 개체가 포함됩니다. 이러한 객체에 대한 액세스는 원격 플러그인을 통해 제공됩니다. 자세한  내용은 을 참조하십시오.<block ref="0dce39201791f8056b9c7e84d5c66f06" category="inline-link-macro-rx"></block></block>
@@ -2404,7 +2403,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="ab6b75688f7cffb753cc8176e2986ff4" category="admonition">배포 후에는 콘텐츠 라이브러리에서 OVA 템플릿을 삭제하지 마세요.</block>
   <block id="a00726d752fdb02dab8165021fc4e90c" category="list-text">*템플릿 사용자 지정* 창에서 필수 필드를 입력합니다.<block ref="84a003836f9d8bb0e3b8332e561bfec2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d9d9f212eda5eb8e0566b4f30f82fb10" category="admonition">vCenter 호스트 이름은 ONTAP 도구 어플라이언스가 배포된 vCenter Server 인스턴스의 이름입니다.</block>
-  <block id="3a7af0096c6ddabf7582b1bae1272dd6" category="paragraph">두 개의 vCenter Server 토폴로지에서 ONTAP 도구를 배포하는 경우(어플라이언스가 한 vCenter 인스턴스에 호스팅되고 다른 vCenter 인스턴스를 관리하는 경우) ONTAP 도구를 호스팅하는 vCenter 인스턴스에 제한된 역할을 할당할 수 있습니다.  OVF 템플릿 배포에 필요한 아래 나열된 데이터 저장소 권한만 사용하여 전담 vCenter 사용자 및 역할을 만들 수 있습니다.</block>
   <block id="c6519d60f243eebfcc92d096e23bdb8b" category="list-text">공간 할당</block>
   <block id="653ea8411fd85f46f22e62ee3cabb643" category="list-text">데이터 저장소 탐색</block>
   <block id="b21f085d08623fc7a5a9da204cc66c8c" category="list-text">파일 제거</block>
@@ -2502,7 +2500,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="3815b1a102d580dcf982cbd303e8f23c" category="cell">VMFS 및 NFS에 대한 SRA 복제.  SCV 통합 및 백업을 위한 상호 운용성.</block>
   <block id="8aed0b79b91ac394e16a8ff5c674b844" category="cell">SMAS와 VMware Live Site Recovery를 결합한 3개 사이트 보호, iSCSI VMFS 및 NFS v3 데이터 저장소를 위한 SRA 복제. VMFS를 사용한 FCP에 대한 SRA 지원.</block>
   <block id="d54f7e547c9116d6f3fa5c3da63b3f4c" category="list-text">메시지가 표시되면 vCenter 자격 증명을 제공합니다.  이는 ONTAP 도구가 호스팅되는 vCenter 인스턴스입니다.</block>
-  <block id="25c2ee20081a3dbb1ba37676816c4acf" category="paragraph">두 개의 vCenter Server 토폴로지에서 ONTAP 도구를 사용하는 경우(어플라이언스가 한 vCenter 인스턴스에 호스팅되고 다른 vCenter 인스턴스를 관리하는 경우) ONTAP 도구를 호스팅하는 vCenter 인스턴스에 제한된 역할을 할당할 수 있습니다.  아래에 나열된 데이터 저장소 권한만 사용하여 전담 vCenter 사용자 및 역할을 만들 수 있습니다.</block>
   <block id="02086c74e7c7de9c13df55ddb85cb6a9" category="paragraph">ONTAP tools for VMware vSphere 보려면 vSphere Client 상단의 *메뉴*를 선택하고 *관리*를 클릭한 다음 왼쪽의 *역할*을 클릭합니다. vCenter를 배포하거나 온보딩하는 담당 vCenter 사용자에게 할당된 역할에는 다음 권한이 포함되어야 합니다. 배포 또는 온보딩 프로세스의 필수 조건으로 이러한 권한이 구성되어 있는지 확인하십시오.</block>
   <block id="301d574ef42563b03638c8eae19225cb" category="list-text">경보</block>
   <block id="6c352acb91887b241b030d91d72bdf66" category="list-text">알람 확인</block>
@@ -2608,4 +2605,7 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="8012fc6ae8c7c5cd0d9d44e8d3169bbb" category="list-text">인증서가 Base 64 ASCII 형식이고 시작 및 끝 줄이 포함되어 있는지 확인하십시오. 예를 들면 다음과 같습니다.</block>
   <block id="aee38a297a583f14c6525dc700a8a384" category="list-text">출력 결과를 복사하여 텍스트 파일로 저장하세요.<block ref="bdf46f9562b038d0163af0feba0b1dfa" prefix=" " category="inline-code"></block> 데스크톱에 확장 프로그램이 설치됩니다.</block>
   <block id="60576f3967d7db42ad4e62e1f5d6edc4" category="paragraph"><block ref="60576f3967d7db42ad4e62e1f5d6edc4" category="inline-link-macro-rx"></block></block>
+  <block id="15a0f68745546e63813c4df1c8d72ba3" category="paragraph">ONTAP tools for VMware vSphere 사용할 때 고려해야 할 RBAC 환경은 크게 두 가지가 있습니다. ONTAP tools for VMware vSphere 사용하려면 vCenter와 ONTAP 모두에서 특정 권한이 필요합니다. ONTAP 도구는 스토리지 관리 작업을 자동화하지만 vCenter 또는 ONTAP 에 사용자 계정을 생성하지는 않습니다. 서비스 계정은 필요에 따라 vSphere 관리자가 생성해야 합니다. 이 문서는 관리자가 ONTAP 도구를 효과적으로 관리하는 데 필요한 역할과 권한을 할당하는 방법에 대한 지침을 제공합니다.</block>
+  <block id="4ae8aea132dd80b8c5923dad28c5b661" category="paragraph">어플라이언스가 하나의 vCenter 인스턴스에서 호스팅되고 다른 인스턴스를 관리하는 2개의 vCenter Server 토폴로지에서 ONTAP 도구를 배포하는 경우 ONTAP 도구를 호스팅하는 vCenter 인스턴스에 제한된 역할을 할당할 수 있습니다. OVF 템플릿 배포에 필요한 권한만 가진 전용 vCenter 사용자 및 역할을 생성할 수 있습니다. 자세한 내용은 아래에 나열된 역할을 참조하십시오.<block ref="4be7808a32deee04c9288e5441868f02" category="inline-link-rx"></block>.</block>
+  <block id="281aaa5cbe3748f40438f77dcaf6f2ab" category="paragraph">어플라이언스가 하나의 vCenter 인스턴스에서 호스팅되고 다른 인스턴스를 관리하는 2개의 vCenter Server 토폴로지에서 ONTAP 도구를 사용하는 경우, ONTAP 도구를 호스팅하는 vCenter 인스턴스에 제한된 역할을 할당할 수 있습니다. OVF 템플릿 배포에 필요한 권한만 가진 전용 vCenter 사용자 및 역할을 생성할 수 있습니다. 자세한 내용은 아래에 나열된 역할을 참조하십시오.<block ref="4be7808a32deee04c9288e5441868f02" category="inline-link-rx"></block>.</block>
 </blocks>

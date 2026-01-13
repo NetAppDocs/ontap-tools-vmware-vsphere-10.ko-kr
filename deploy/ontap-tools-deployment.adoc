@@ -84,18 +84,12 @@ NOTE: VMware vSphere 가상 머신용 ONTAP 툴을 관리하는 VVOL 데이터 �
 NOTE: vCenter 호스트 이름은 ONTAP 도구 어플라이언스가 배포된 vCenter Server 인스턴스의 이름입니다.
 
 +
-두 개의 vCenter Server 토폴로지에서 ONTAP 도구를 배포하는 경우(어플라이언스가 한 vCenter 인스턴스에 호스팅되고 다른 vCenter 인스턴스를 관리하는 경우) ONTAP 도구를 호스팅하는 vCenter 인스턴스에 제한된 역할을 할당할 수 있습니다.  OVF 템플릿 배포에 필요한 아래 나열된 데이터 저장소 권한만 사용하여 전담 vCenter 사용자 및 역할을 만들 수 있습니다.
+어플라이언스가 하나의 vCenter 인스턴스에서 호스팅되고 다른 인스턴스를 관리하는 2개의 vCenter Server 토폴로지에서 ONTAP 도구를 배포하는 경우 ONTAP 도구를 호스팅하는 vCenter 인스턴스에 제한된 역할을 할당할 수 있습니다. OVF 템플릿 배포에 필요한 권한만 가진 전용 vCenter 사용자 및 역할을 생성할 수 있습니다. 자세한 내용은 아래에 나열된 역할을 참조하십시오. https://review.docs.netapp.com/us-en/ontap-tools-vmware-vsphere-10_otv105-releasebranch/concepts/rbac-vcenter-use.html#vsphere-object-hierarchy["VMware vSphere 10용 ONTAP 툴에 포함된 역할"].
 
-+
-** 공간 할당
-** 데이터 저장소 탐색
-** 저수준 파일 작업
-** 파일 제거
-** 가상 머신 파일 업데이트
-** 가상 머신 메타데이터 업데이트
 +
 ONTAP 도구로 관리되는 vCenter 인스턴스의 경우 vCenter 사용자 계정에 관리자 권한이 있는지 확인하세요.
 
++
 ** 호스트 이름은 문자(A-Z, a-z), 숫자(0-9) 및 하이픈(-)을 포함해야 합니다. 이중 스택을 구성하려면 IPv6 주소에 매핑된 호스트 이름을 지정합니다.
 +
 
