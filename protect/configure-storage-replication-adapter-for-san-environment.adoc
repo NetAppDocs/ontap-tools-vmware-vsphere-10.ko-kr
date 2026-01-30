@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: 'VMware Live Site Recovery용 스토리지 복제 어댑터\(SRA\)를 실행하기 전에 스토리지 시스템을 설정해야 합니다.' 
 ---
-= SAN 및 NAS 환경에 대해 SRA 구성
+= SAN 및 NAS 환경용 ONTAP tools에서 SRA 구성
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

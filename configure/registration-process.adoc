@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: ONTAP tools for VMware vSphere 사용하여 vCenter Server 인스턴스에 VASA 공급자를 등록할 수 있습니다. 
 ---
-= ONTAP 도구를 사용하여 vCenter Server 인스턴스에 VASA 공급자 등록
+= ONTAP 도구에서 VASA Provider를 vCenter Server 인스턴스에 등록합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

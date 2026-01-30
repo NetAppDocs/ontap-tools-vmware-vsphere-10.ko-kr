@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: 업그레이드하기 전에 다른 노드에서 SSH를 시작해야 합니다. 
 ---
-= 다른 노드에서 SSH를 시작합니다
+= 다른 ONTAP tools 노드에서 SSH를 시작하세요
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

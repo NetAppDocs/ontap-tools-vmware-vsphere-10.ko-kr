@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: 데이터 디스크를 가상 머신에 연결하여 스토리지 용량을 확장합니다. 
 ---
-= 가상 머신에서 데이터 디스크를 연결 또는 분리합니다
+= ONTAP tools에서 VM에 데이터 디스크 연결 또는 분리
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

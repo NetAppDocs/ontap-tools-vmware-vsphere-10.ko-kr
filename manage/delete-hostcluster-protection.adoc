@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: vVols datastore,delete vVol 
 summary: 호스트 클러스터 보호를 제거하면 데이터 저장소가 보호되지 않는 상태가 됩니다. 
 ---
-= 호스트 클러스터 보호를 제거합니다
+= ONTAP tools에서 호스트 클러스터 보호 제거
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

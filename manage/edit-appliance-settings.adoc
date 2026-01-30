@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: ONTAP 도구 관리자를 사용하여 관리자 암호를 변경할 수 있습니다. 
 ---
-= VMware vSphere 구성에 대한 ONTAP 툴을 변경합니다
+= ONTAP 도구 어플라이언스 설정을 변경합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

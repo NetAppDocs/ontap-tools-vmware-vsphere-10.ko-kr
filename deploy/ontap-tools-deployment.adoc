@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: ONTAP tools for VMware vSphere NFS 및 VMFS 데이터 저장소를 지원하는 핵심 서비스와 함께 소규모 단일 노드로 배포됩니다. 
 ---
-= VMware vSphere용 ONTAP 툴을 구축합니다
+= ONTAP tools 배포
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

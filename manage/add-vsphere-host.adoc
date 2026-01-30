@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: ONTAP tools for VMware vSphere 에 새로운 VMware vSphere 호스트를 추가합니다. 
 ---
-= 새로운 VMware vSphere 호스트 추가
+= ONTAP tools에 VMware vSphere 호스트 추가
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

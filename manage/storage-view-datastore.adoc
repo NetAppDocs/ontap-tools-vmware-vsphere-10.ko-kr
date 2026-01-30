@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Remove vVol datastore 
 summary: VMware vSphere용 ONTAP 툴의 구성 탭에 있는 ONTAP 스토리지 뷰는 데이터 저장소 및 해당 볼륨과 관련된 데이터를 제공합니다. 
 ---
-= 데이터 저장소에 대한 ONTAP 스토리지 뷰
+= ONTAP tools의 데이터 저장소용 ONTAP 스토리지 뷰
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

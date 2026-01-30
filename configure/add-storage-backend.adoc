@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: 스토리지 백엔드는 ESXi 호스트가 데이터 스토리지에 사용하는 시스템입니다. 
 ---
-= ONTAP 도구에 스토리지 백엔드 추가
+= ONTAP tools에 스토리지 백엔드 추가
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

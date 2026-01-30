@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: 이 섹션의 단계를 사용하여 VASA 정리를 수행합니다. 
 ---
-= VASA 정리
+= ONTAP tools에서 VASA 구성을 정리합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

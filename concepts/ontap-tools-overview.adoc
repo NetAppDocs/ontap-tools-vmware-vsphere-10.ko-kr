@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: VMware vSphere용 ONTAP 툴은 가상 머신의 라이프사이클 관리를 위한 툴 모음입니다. VMware 에코시스템과 통합되며 가상 시스템의 프로비저닝, 기본 보호 및 재해 복구를 지원합니다. 
 ---
-= VMware vSphere용 ONTAP 툴 개요
+= ONTAP 도구에 대해 알아보세요
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

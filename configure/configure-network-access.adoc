@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: network access configuration, export policy, mount operation, ESXi hosts 
 summary: 네트워크 액세스를 구성하지 않은 경우 기본적으로 ESXi 호스트에서 검색된 모든 IP 주소가 내보내기 정책에 추가됩니다. 
 ---
-= 네트워크 액세스를 구성합니다
+= ONTAP 도구에서 네트워크 액세스 구성
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

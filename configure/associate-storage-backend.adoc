@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: 스토리지 백엔드를 vCenter Server에 연결하여 스토리지 백엔드와 온보딩된 vCenter Server 인스턴스 간의 매핑을 전체적으로 생성합니다. 
 ---
-= 스토리지 백엔드를 vCenter Server 인스턴스에 연결합니다
+= ONTAP 도구에서 스토리지 백엔드를 vCenter Server 인스턴스에 연결합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

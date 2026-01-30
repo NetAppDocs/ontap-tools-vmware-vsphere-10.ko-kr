@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: diag 사용자에 대해 SSH 액세스를 사용하도록 VMware vSphere용 ONTAP 툴을 구성할 수 있습니다. 
 ---
-= 원격 진단 액세스를 구성합니다
+= ONTAP tools에 대한 원격 진단 액세스 구성
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

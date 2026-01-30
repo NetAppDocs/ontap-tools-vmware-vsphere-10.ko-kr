@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: 호스트 클러스터 수준에서 데이터 저장소를 생성하면 ONTAP 도구는 모든 대상 호스트에 해당 데이터 저장소를 마운트하고 필요한 권한이 있는 경우에만 작업을 활성화합니다. 
 ---
-= 데이터 저장소를 생성합니다
+= ONTAP tools에서 데이터 저장소를 생성합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

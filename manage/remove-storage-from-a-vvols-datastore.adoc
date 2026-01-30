@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Remove vVol datastore 
 summary: 데이터 저장소 삭제 작업은 선택한 데이터 저장소에 VVol이 없을 때 데이터 저장소를 삭제합니다. 
 ---
-= VVOL 데이터 저장소를 축소합니다
+= ONTAP tools에서 vVols 데이터스토어 축소
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

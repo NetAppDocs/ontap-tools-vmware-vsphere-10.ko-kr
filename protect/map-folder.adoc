@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: 보호 사이트와 복구 사이트의 폴더를 매핑하여 폴더 간 통신을 활성화해야 합니다. 
 ---
-= 폴더 매핑을 구성합니다
+= ONTAP tools에서 폴더 매핑을 구성합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

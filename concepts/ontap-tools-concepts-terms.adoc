@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: 다음 섹션에서는 이 문서에 사용된 핵심 개념과 용어에 대해 설명합니다. 
 ---
-= 주요 개념 및 용어
+= ONTAP 도구의 주요 개념 및 용어
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

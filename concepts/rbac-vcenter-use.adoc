@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: vcenter, vcenter server, vcenter server rbac, use rbac 
 summary: 운영 환경에서 사용하기 전에 vCenter Server를 사용하여 VMware vSphere 10 RBAC를 구축하는 ONTAP 툴의 몇 가지 측면을 고려해야 합니다. 
 ---
-= VMware vSphere 10용 ONTAP 툴과 함께 vCenter Server RBAC를 사용하십시오
+= vCenter Server RBAC의 ONTAP tools 관련 고려 사항
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

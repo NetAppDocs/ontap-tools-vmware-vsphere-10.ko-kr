@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: 'ONTAP Tools Manager를 사용하여 관리자 암호를 변경하여 VASA Provider, VVol 구성 가져오기, ONTAP Tools Manager를 사용하여 SRA(재해 복구)와 같은 서비스를 사용하도록 설정할 수 있습니다.' 
 ---
-= VMware vSphere 서비스에 대해 ONTAP 툴을 사용하도록 설정합니다
+= ONTAP 툴 서비스를 활성화합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

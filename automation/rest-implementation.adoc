@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ontap tools vmware vsphere rest api reference 
 summary: REST에서 일반적인 기술 세트와 모범 사례를 설정하지만 각 API의 정확한 구현은 설계 선택에 따라 다를 수 있습니다. 그리고 VMware vSphere 10 REST API용 ONTAP 툴의 설계 방법을 숙지한 후에 사용해야 합니다. 
 ---
-= VMware vSphere 10 REST API용 ONTAP 툴 구현 세부 정보입니다
+= ONTAP tools REST API 구현 세부 정보
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

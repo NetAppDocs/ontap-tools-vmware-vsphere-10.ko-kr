@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: user roles 
 summary: vCenter Client의 바로 가기 섹션에서 VMware vSphere 플러그인용 ONTAP 툴 아이콘을 선택하면 사용자 인터페이스에서 개요 페이지로 이동합니다. 이 페이지는 VMware vSphere 플러그인용 ONTAP 툴에 대한 요약을 제공하는 대시보드 역할을 합니다. 
 ---
-= VMware vSphere용 ONTAP 툴 대시보드 개요
+= ONTAP 도구 대시보드에 대해 알아보십시오
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

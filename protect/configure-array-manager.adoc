@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: 'VMware Live Site Recovery의 Array Manager 마법사를 사용하여 SRA(스토리지 복제 어댑터)를 구성하여 VMware Live Site Recovery와 스토리지 가상 머신\(SVM\) 간의 상호 작용을 지원할 수 있습니다.' 
 ---
-= Array Manager를 사용하여 SRA를 구성합니다
+= ONTAP 도구의 어레이 관리자를 사용하여 SRA를 구성합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

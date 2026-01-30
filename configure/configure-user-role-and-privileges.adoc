@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: user roles 
 summary: ONTAP tools for VMware vSphere 및 ONTAP System Manager용 ONTAP 도구의 JSON 파일을 사용하여 스토리지 백엔드에 대한 사용자 역할과 권한을 구성합니다. 
 ---
-= ONTAP 사용자 역할 및 권한을 구성합니다
+= ONTAP tools에 대한 ONTAP 사용자 역할 및 권한을 구성합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

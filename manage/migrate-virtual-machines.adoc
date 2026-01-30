@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: 기존 가상 머신을 데이터 센터에서 마이그레이션할 때 고려해야 할 몇 가지 사항을 알고 있어야 합니다. 
 ---
-= 가상 머신의 마이그레이션 또는 클론 생성 고려 사항
+= ONTAP tools를 사용한 가상 머신 마이그레이션 및 복제 시 고려 사항
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

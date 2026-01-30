@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: virtual volume datastores 
 summary: vCenter 객체 보기에서 데이터 저장소 객체를 마우스 오른쪽 버튼으로 클릭하면 VMware vSphere용 ONTAP 툴 지원 작업이 플러그인 섹션 아래에 표시됩니다. 
 ---
-= VVOL 데이터 저장소를 확장합니다
+= ONTAP tools에서 vVols 데이터 저장소 확장
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

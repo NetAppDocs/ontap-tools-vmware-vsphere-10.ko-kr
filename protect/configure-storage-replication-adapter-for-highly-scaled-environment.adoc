@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: 'SRA\(Storage Replication Adapter\)의 권장 설정에 따라 스토리지 시간 초과 간격을 구성하여 확장성이 높은 환경에서 최적으로 수행되도록 해야 합니다.' 
 ---
-= 확장성이 높은 환경에 맞게 SRA를 구성합니다
+= 확장성이 높은 환경을 위해 ONTAP tools에서 SRA를 구성합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

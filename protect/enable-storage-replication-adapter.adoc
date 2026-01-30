@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: VMware vSphere용 ONTAP 툴은 SRA 기능을 사용하여 재해 복구를 구성할 수 있는 옵션을 제공합니다. 
 ---
-= 데이터 저장소를 보호하기 위한 SRA 구성
+= 데이터 저장소를 보호하려면 ONTAP tools에서 SRA를 구성하십시오
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

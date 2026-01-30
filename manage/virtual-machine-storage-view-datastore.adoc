@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Remove vVol datastore 
 summary: 스토리지 보기에는 가상 시스템에서 생성된 VVol 목록이 표시됩니다. 
 ---
-= 가상 머신 스토리지 뷰
+= ONTAP tools의 가상 머신 스토리지 보기
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: upgrade 
 summary: 이 페이지에서는 VMware vSphere 시스템용 ONTAP 툴의 구축, 재부팅 및 복구 작업에 대한 오류 코드를 간략하게 설명합니다. 
 ---
-= 배포 오류 문제 해결
+= ONTAP 도구 배포 오류 해결
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: migrate 
 summary: 스토리지 데이터를 마이그레이션할 때 REST API를 사용하여 스토리지 백엔드를 수동으로 온보드합니다. VASA Provider 데이터를 마이그레이션할 때 기존 Derby 데이터베이스에서 데이터를 내보내고 MongoDB 데이터베이스로 가져옵니다. 
 ---
-= VASA 공급자를 마이그레이션하고 SRA를 업데이트합니다.
+= VASA Provider를 마이그레이션하고 ONTAP tools에서 SRA를 업데이트합니다.
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: 볼륨과 집계 용량이 특정 수준에 도달하면 vCenter Server에서 알림을 받도록 임계값을 설정할 수 있습니다.  
 ---
-= 스토리지 임계값 관리
+= ONTAP tools에서 스토리지 임계값 관리
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

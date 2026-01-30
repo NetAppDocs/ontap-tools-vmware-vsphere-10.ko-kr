@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: upgrade 
 summary: 이 페이지에서는 VMware vSphere 시스템용 ONTAP 툴의 업그레이드 작업에 대한 오류 코드를 간략하게 설명합니다. 
 ---
-= 업그레이드 오류 코드입니다
+= ONTAP tools 업그레이드 오류 코드
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

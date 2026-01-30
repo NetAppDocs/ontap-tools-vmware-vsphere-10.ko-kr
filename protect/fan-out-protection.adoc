@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: 팬아웃 보호 시나리오에서 일관성 그룹은 첫 번째 대상 ONTAP 클러스터에서는 동기 관계로, 두 번째 대상 ONTAP 클러스터에서는 비동기 관계로 이중으로 보호됩니다. 
 ---
-= 팬아웃 보호
+= ONTAP 도구의 팬아웃 보호
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

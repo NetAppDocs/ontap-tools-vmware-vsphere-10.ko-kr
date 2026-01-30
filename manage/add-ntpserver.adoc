@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: NTP 서버 세부 정보를 입력하여 ONTAP 툴 어플라이언스의 시간 시계를 동기화합니다. 
 ---
-= NTP 서버를 추가합니다
+= ONTAP tools에 NTP 서버 추가
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

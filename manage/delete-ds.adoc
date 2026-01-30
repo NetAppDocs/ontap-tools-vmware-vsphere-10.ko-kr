@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: vVols datastore,delete vVol 
 summary: 데이터 저장소 삭제 작업은 데이터 저장소를 삭제합니다. NFS 또는 VMFS 데이터 저장소의 경우 데이터 저장소를 사용 중인 VM 목록이 포함된 대화 상자가 나타납니다. 
 ---
-= 데이터 저장소를 삭제합니다
+= ONTAP 도구에서 데이터 저장소를 삭제합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

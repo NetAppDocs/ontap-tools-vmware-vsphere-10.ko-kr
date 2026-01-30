@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ONTAP tools,Storage Replication Adapter 
 summary: 이 섹션의 지침에 따라 VMware vSphere 구축을 위한 ONTAP 툴을 올바르게 종료하십시오. 
 ---
-= VMware vSphere용 ONTAP 툴을 제거합니다
+= ONTAP 도구를 제거합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
