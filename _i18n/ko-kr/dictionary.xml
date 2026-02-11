@@ -1971,7 +1971,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="a6db38ab6788244dd400202a4ac077c9" category="cell">ONTAP 도구 관리 노드의 IPv4 주소입니다.  이는 관리 네트워크의 노드 관리 인터페이스를 위한 고유한 IPv4 주소입니다.</block>
   <block id="57a162b82ea942d344ca18a6563ae0ad" category="paragraph">모든 관련 IP 주소에 대해 필요한 방화벽 포트가 열려 있는지 확인하세요.  ONTAP 도구는 포트 443을 통해 LIF에 액세스해야 합니다.  필수 포트의 전체 목록은 다음 포트 요구 사항 섹션을 참조하세요.<block ref="1a93487a9f020b7c05d37b4998f77757" category="inline-link-macro-rx"></block> .</block>
   <block id="842fbe95dfc795462ae01e0da46b578d" category="list-text">스토리지 연결에 파이버 채널(FC)을 사용하는 경우 FC 스위치의 구역 설정을 구성하여 ESXi 호스트를 SVM의 FC LIF에 연결합니다.<block ref="56d435991bafd2bcca9f59739e2992e7" category="inline-link-rx"></block></block>
-  <block id="3238b34a31c90c89668904ec5be46d4c" category="cell">9.15.1, 9.16.0, 9.16.1, 9.17.0 및 9.17.1</block>
   <block id="10b3adf4529649ecb009c579e7713c8e" category="cell">10.5</block>
   <block id="40be5cc49cd5c75f73a6fb947ad09668" category="admonition">모든 ONTAP 도구 노드가 동일한 서브넷에 상주하여 서로 중단 없는 통신을 유지하도록 합니다.</block>
   <block id="43735eab3ba96d50a6b739b518e1e76c" category="paragraph">처음에는 NFS 및 VMFS 데이터 저장소를 지원하는 핵심 서비스를 제공하는 소규모 단일 노드 구성으로 ONTAP tools for VMware vSphere 배포합니다.  서비스당 추가 컨테이너를 위한 구성을 확장하거나 복원력을 강화하거나 vVols 데이터 저장소와 고가용성(HA)을 사용하려면 먼저 이 워크플로를 완료한 다음 확장 단계를 진행하세요. 자세한 내용은 다음을 참조하세요. <block ref="9ef467ebb813ac9bfc1579e0ba7d9e65" category="inline-link-macro-rx"></block> .</block>
@@ -2451,7 +2450,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="4273cb76acdc3e1de02819d037c77ad4" category="cell">향상된 보안, 규정 준수 및 자동화 기능으로 0일차부터 2일차까지의 운영을 간소화하고 단순화합니다.</block>
   <block id="92d3c85edd0fa69062ef2c7cca594814" category="cell">ONTAP 릴리스 자격</block>
   <block id="f41628526d2ecef49849a9d54aec2d46" category="cell">ONTAP 9.9.1에서 ONTAP 9.16.1로</block>
-  <block id="53f67abe3ae260cacfac7adeeda90377" category="cell">ONTAP 도구 10.2의 경우 ONTAP 9.12.1~9.15.1입니다. ONTAP 도구 10.3용 ONTAP 9.14.1, 9.15.1, 9.16.0 및 9.16.1. ONTAP 도구 10.4용 ONTAP 9.14.1, 9.15.1, 9.16.0 및 9.16.1. ASA r2 시스템을 사용하는 경우 ONTAP 도구 10.4에 ONTAP 9.16.1P3 이상이 필요합니다.  ONTAP 도구 10.5용 ONTAP 9.15.1, 9.16.0, 9.16.1, 9.17.0 및 9.17.1</block>
   <block id="d67ece44624c7aa69b0f38715d1ac2fb" category="cell">VMware 릴리스 지원</block>
   <block id="af0223f5c63fe0b5a6e75d3087868abd" category="cell">vSphere 7.x-8.x VMware Site Recovery Manager(SRM) 8.5에서 VMware Live Site Recovery 9.0으로</block>
   <block id="30388d1a3ab1a01f6930553a577eb80b" category="cell">프로토콜 지원</block>
@@ -2598,8 +2596,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="587025fcd9783b8dad6642bf4ea9050a" category="doc">vCenter Server RBAC가 ONTAP 도구와 연동되는 방식</block>
   <block id="b690b3fbfbdc8910bd0b4b68feb15af2" category="doc">vCenter Server RBAC의 ONTAP tools 관련 고려 사항</block>
   <block id="eaeddcc9311544bd9a0756a835a12cea" category="doc">ONTAP tools에 스토리지 백엔드 추가</block>
-  <block id="ff0b8d98acac2c2dec8cc8937cbbe057" category="paragraph">ONTAP tools Manager에 vCenter Server 인스턴스를 등록할 때 vCenter Server 인증서에 유효한 SAN(Subject Alternative Name) 확장이 포함되어 있는지 확인하십시오. SAN 확장에는 DNS 및 IP 주소 항목이 모두 포함되어야 합니다. 예를 들면 다음과 같습니다.</block>
-  <block id="b6a9b93d1e2b7bdb6d36311aa19ed1cf" category="paragraph">vCenter Server 인증서에 SAN 확장이 포함되어 있지 않거나 SAN 확장에 올바른 DNS 또는 IP 주소 값이 포함되어 있지 않은 경우, 인증서 유효성 검사 오류로 인해 ONTAP tools 작업이 실패할 수 있습니다.</block>
   <block id="152eb457072cc3f0d1daeb3318bbc7f4" category="doc">ONTAP 도구에서 스토리지 백엔드를 vCenter Server 인스턴스에 연결합니다</block>
   <block id="eb92fe0cb6bfddb65b18107ce1bfc6df" category="doc">ONTAP tools에서 ESXi 호스트 설정을 구성합니다.</block>
   <block id="362f310edd36afeeeec5d3c7f14cefac" category="doc">ONTAP 도구에서 네트워크 액세스 구성</block>
@@ -2687,4 +2683,22 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="c928bb04121a183be07f4eafbb06b783" category="doc">ONTAP tools에서 복제된 스토리지 시스템을 검증합니다</block>
   <block id="9d2c893e6932222a6e9063b1f628bae1" category="doc">ONTAP tools 릴리스 노트</block>
   <block id="c219ac41703e11b6d5430626757ee4d1" category="doc">ONTAP tools 업그레이드 오류 코드</block>
+  <block id="7387e2cfe8bac61aeada7d8df94fe9f7" category="list-text">vCenter Server 인증서에 DNS 및 IP 주소 항목이 모두 포함된 유효한 SAN(Subject Alternative Name) 확장이 있는지 확인하십시오. 예를 들면 다음과 같습니다.</block>
+  <block id="077c9bea99c626318ae6e1c521fb7c41" category="paragraph">인증서에 SAN 확장이 포함되어 있지 않거나 SAN 확장에 올바른 DNS 또는 IP 주소 값이 포함되어 있지 않은 경우 인증서 유효성 검사 오류로 인해 ONTAP tools 작업이 실패할 수 있습니다.</block>
+  <block id="6f8b3b7e42dadd9b7806e6e98d7d0a77" category="list-text">vCenter Server의 Primary Network Identifier(PNID)는 SAN 세부 정보에 포함되어야 합니다. PNID와 DNS 이름은 동일해야 하며 DNS에서 확인 가능해야 합니다.</block>
+  <block id="39e421f0221e3f55b7e77a0110fce9e0" category="list-text">vCenter Server를 배포할 때는 정규화된 도메인 이름(FQDN)을 사용하는 것이 좋으며, 최적의 호환성과 지원을 위해 인증서의 SAN에 DNS Name=machine_FQDN이 포함되도록 해야 합니다.</block>
+  <block id="dbabfcb48125f6c3a069313029fdada8" category="list-text">자세한 내용은 VMware 설명서를 참조하십시오.</block>
+  <block id="381b5a0822c9882ced35624a3338ea81" category="inline-link">vSphere 다양한 솔루션 경로에 대한 인증서 요구 사항</block>
+  <block id="38e7ce10f91b93ef8eecb43d98853cb3" category="list-text"><block ref="38e7ce10f91b93ef8eecb43d98853cb3" category="inline-link-rx"></block></block>
+  <block id="bab39c0d7f700e0dbd68e4761a2c9ac4" category="inline-link">vCenter 머신 SSL 인증서 교체 사용자 지정 인증 기관 서명 인증서</block>
+  <block id="81c3c30e39dc6db9cf179ead4dc53c00" category="list-text"><block ref="81c3c30e39dc6db9cf179ead4dc53c00" category="inline-link-rx"></block></block>
+  <block id="4ce004ede8d7c5a94bcc602e81d0dd46" category="inline-link">오류: Subject Alternate Name(SAN) 필드에 PNID가 없습니다. 유효한 인증서를 제공하십시오</block>
+  <block id="e124d9a97cf59877517198f1cf0f104c" category="list-text"><block ref="e124d9a97cf59877517198f1cf0f104c" category="inline-link-rx"></block></block>
+  <block id="b4a7fb91e417866bbf89b862eaf99003" category="paragraph">FQDN을 사용할 수 없는 경우 PNID를 IP 주소로 설정하고 해당 IP 주소를 SAN에 포함할 수 있습니다. 하지만 VMware에서는 이 방법을 권장하지 않습니다.</block>
+  <block id="71593980c484b19aefec169af936ae1e" category="cell">9.15.1, 9.16.1 및 9.17.0</block>
+  <block id="16ad6f9ee375f3dcd68aa34d3ccd374c" category="cell">ONTAP tools 10.2의 경우 ONTAP 9.12.1~9.15.1. ONTAP tools 10.3의 경우 ONTAP 9.14.1, 9.15.1, 9.16.0 및 9.16.1. ONTAP tools 10.4의 경우 ONTAP 9.14.1, 9.15.1, 9.16.0 및 9.16.1. ASA r2 시스템을 사용하는 경우 ONTAP tools 10.4에는 ONTAP 9.16.1P3 이상이 필요합니다. ONTAP tools 10.5의 경우 ONTAP 9.15.1, 9.16.1 및 9.17.0</block>
+  <block id="c9ea6c5f05454d915a89126e34375938" category="paragraph">ONTAP tools for VMware vSphere 10.5 P1은 SRA 및 SnapMirror active sync 구성 요소에 대한 vCenter 고가용성(HA) 구성을 지원합니다. 이 구성에서는 vVols가 지원되지 않습니다. HA 장애 조치 중에는 vCenter가 몇 분 동안 사용할 수 없을 수 있습니다. 대규모 환경이거나 오류가 발생한 경우, 장애 조치 시간이 15분을 초과할 수 있습니다.</block>
+  <block id="a51a2d315454dc257743fd165c6ec1e1" category="inline-link">vCenter 고가용성 문서</block>
+  <block id="b2275014ec45c2e387f49db63d8ae0de" category="inline-link">Broadcom 지원</block>
+  <block id="7617b6be9a4dd36133ef22cea59d80e2" category="paragraph">자세한 내용은<block ref="debb52d5bcbe0ce63e3d926c803fdf23" category="inline-link-rx"></block>를 참조하십시오. vCenter HA에 대한 질문은<block ref="2ce3402d69457b08a3211a429ae43e9d" category="inline-link-rx"></block>에 문의하십시오.</block>
 </blocks>

@@ -24,7 +24,7 @@ NOTE: 최신 호환성 정보는 다음을 참조하세요. https://mysupport.ne
 | 핵심 가치 제안 | 향상된 보안, 규정 준수 및 자동화 기능으로 0일차부터 2일차까지의 운영을 간소화하고 단순화합니다. | VMFS용 FC와 VMFS 전용 NVMe-oF를 포함하도록 지원이 확대되었습니다. NetApp SnapMirror 의 사용 편의성, vSphere 메트로 스토리지 클러스터의 간단한 설정, 3개 사이트 VMware Live Site Recovery 지원 
 
 
-| ONTAP 릴리스 자격 | ONTAP 9.9.1에서 ONTAP 9.16.1로 | ONTAP 도구 10.2의 경우 ONTAP 9.12.1~9.15.1입니다. ONTAP 도구 10.3용 ONTAP 9.14.1, 9.15.1, 9.16.0 및 9.16.1. ONTAP 도구 10.4용 ONTAP 9.14.1, 9.15.1, 9.16.0 및 9.16.1. ASA r2 시스템을 사용하는 경우 ONTAP 도구 10.4에 ONTAP 9.16.1P3 이상이 필요합니다.  ONTAP 도구 10.5용 ONTAP 9.15.1, 9.16.0, 9.16.1, 9.17.0 및 9.17.1 
+| ONTAP 릴리스 자격 | ONTAP 9.9.1에서 ONTAP 9.16.1로 | ONTAP tools 10.2의 경우 ONTAP 9.12.1~9.15.1. ONTAP tools 10.3의 경우 ONTAP 9.14.1, 9.15.1, 9.16.0 및 9.16.1. ONTAP tools 10.4의 경우 ONTAP 9.14.1, 9.15.1, 9.16.0 및 9.16.1. ASA r2 시스템을 사용하는 경우 ONTAP tools 10.4에는 ONTAP 9.16.1P3 이상이 필요합니다. ONTAP tools 10.5의 경우 ONTAP 9.15.1, 9.16.1 및 9.17.0 
 
 
 | VMware 릴리스 지원 | vSphere 7.x-8.x VMware Site Recovery Manager(SRM) 8.5에서 VMware Live Site Recovery 9.0으로 | vSphere 7.x-8.x ONTAP 도구 10.5 이상의 vSphere 9.0 VMware Site Recovery Manager(SRM) 8.7 VMware Live Site Recovery 9.0 *참고:* ONTAP 도구 10.x에서 SRM은 공유 사이트를 지원하여 확장성을 강화하고 성능을 개선합니다. 

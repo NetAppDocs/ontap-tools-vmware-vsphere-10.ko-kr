@@ -47,4 +47,8 @@ ONTAP tools for VMware vSphere 의 이전 버전에서 ONTAP tools for VMware vS
 
 == 지원되는 ONTAP 플랫폼 및 vCenter Server 버전
 
+ONTAP tools for VMware vSphere 10.5 P1은 SRA 및 SnapMirror active sync 구성 요소에 대한 vCenter 고가용성(HA) 구성을 지원합니다. 이 구성에서는 vVols가 지원되지 않습니다. HA 장애 조치 중에는 vCenter가 몇 분 동안 사용할 수 없을 수 있습니다. 대규모 환경이거나 오류가 발생한 경우, 장애 조치 시간이 15분을 초과할 수 있습니다.
+
+자세한 내용은 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-availability/vcenter-server-high-availability.html["vCenter 고가용성 문서"^]를 참조하십시오. vCenter HA에 대한 질문은 https://support.broadcom.com/["Broadcom 지원"^]에 문의하십시오.
+
 버전 호환성에 대한 최신 세부 정보는 다음을 참조하세요. https://imt.netapp.com/matrix/imt.jsp?components=105475;&solution=1777&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"^] .

@@ -13,19 +13,37 @@ summary: vCenter Server 인스턴스를 VMware vSphere용 ONTAP 툴에 추가하
 [role="lead"]
 vCenter Server 인스턴스를 VMware vSphere용 ONTAP 툴에 추가하여 vCenter Server 환경에서 가상 데이터 저장소를 구성, 관리 및 보호할 수 있습니다. 여러 vCenter Server 인스턴스를 추가하는 경우 ONTAP 도구와 각 vCenter Server 간의 보안 통신을 위해 사용자 지정 CA 인증서가 필요합니다.
 
-ONTAP tools Manager에 vCenter Server 인스턴스를 등록할 때 vCenter Server 인증서에 유효한 SAN(Subject Alternative Name) 확장이 포함되어 있는지 확인하십시오. SAN 확장에는 DNS 및 IP 주소 항목이 모두 포함되어야 합니다. 예를 들면 다음과 같습니다.
+.이 작업에 대해
+ONTAP 도구는 vCenter Server와 통합되어 vSphere 클라이언트에서 직접 프로비저닝, 스냅샷, 데이터 보호와 같은 스토리지 작업을 수행합니다.
 
+.시작하기 전에
+* vCenter Server 인증서에 DNS 및 IP 주소 항목이 모두 포함된 유효한 SAN(Subject Alternative Name) 확장이 있는지 확인하십시오. 예를 들면 다음과 같습니다.
++
 [listing]
 ----
 X509v3 extensions:
     X509v3 Subject Alternative Name:
         DNS: vcenter.example.com, DNS: vcenter, IP Address: 192.168.0.50
 ----
-vCenter Server 인증서에 SAN 확장이 포함되어 있지 않거나 SAN 확장에 올바른 DNS 또는 IP 주소 값이 포함되어 있지 않은 경우, 인증서 유효성 검사 오류로 인해 ONTAP tools 작업이 실패할 수 있습니다.
++
+인증서에 SAN 확장이 포함되어 있지 않거나 SAN 확장에 올바른 DNS 또는 IP 주소 값이 포함되어 있지 않은 경우 인증서 유효성 검사 오류로 인해 ONTAP tools 작업이 실패할 수 있습니다.
 
-.이 작업에 대해
-ONTAP 도구는 vCenter Server와 통합되어 vSphere 클라이언트에서 직접 프로비저닝, 스냅샷, 데이터 보호와 같은 스토리지 작업을 수행합니다.
+* vCenter Server의 Primary Network Identifier(PNID)는 SAN 세부 정보에 포함되어야 합니다. PNID와 DNS 이름은 동일해야 하며 DNS에서 확인 가능해야 합니다.
+* vCenter Server를 배포할 때는 정규화된 도메인 이름(FQDN)을 사용하는 것이 좋으며, 최적의 호환성과 지원을 위해 인증서의 SAN에 DNS Name=machine_FQDN이 포함되도록 해야 합니다.
+* 자세한 내용은 VMware 설명서를 참조하십시오.
++
+** https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vsphere-authentication/vsphere-security-certificates-authentication/certificate-requirements-for-different-solution-paths-authentication.html["vSphere 다양한 솔루션 경로에 대한 인증서 요구 사항"]
+** https://knowledge.broadcom.com/external/article/316601/replace-vcenter-machine-ssl-certificate.html["vCenter 머신 SSL 인증서 교체 사용자 지정 인증 기관 서명 인증서"]
+** https://knowledge.broadcom.com/external/article/406282/error-subject-alternate-name-san-field-d.html["오류: Subject Alternate Name(SAN) 필드에 PNID가 없습니다. 유효한 인증서를 제공하십시오"]
 
+
+
+
+[NOTE]
+====
+FQDN을 사용할 수 없는 경우 PNID를 IP 주소로 설정하고 해당 IP 주소를 SAN에 포함할 수 있습니다. 하지만 VMware에서는 이 방법을 권장하지 않습니다.
+
+====
 .단계
 . 웹 브라우저를 열고 다음 URL로 이동하세요. `\https://<ONTAPtoolsIP>:8443/virtualization/ui/`
 . 구축 중에 제공한 VMware vSphere 관리자 자격 증명용 ONTAP 툴을 사용하여 로그인합니다.
