@@ -25,16 +25,17 @@ iptables -I INPUT 1 -p tcp --dport 1527 -j ACCEPT
 ----
 . ONTAP tools for VMware vSphere 배포합니다.
 . ONTAP tools for VMware vSphere 로 마이그레이션하려는 vCenter Server 인스턴스를 추가합니다. . link:../configure/add-vcenter.html["vCenter Server 인스턴스를 추가합니다"] 자세한 내용은.
+. link:../manage/enable-services.html["VASA Provider를 설정합니다"]ONTAP tools for VMware vSphere 서비스.
 . ONTAP 도구 플러그인을 위한 vCenter 서버 API에서 로컬로 스토리지 백엔드를 온보딩합니다. 다음을 참조하세요.link:../configure/add-storage-backend.html["vSphere 클라이언트 인터페이스를 사용하여 스토리지 백엔드 추가"] 자세한 내용은.
 . REST API 요청을 인증하기 위한 액세스 토큰을 얻습니다.  다음 예를 사용하여 변수를 사용자 환경에 맞는 값으로 바꿔보세요.
 +
 [source, curl]
 ----
 curl --request POST \
---location "https://$FQDN_IP_PORT/virtualization/api/v1/auth/login” \
---header "Content-Type: application/json" \
---header "Accept: */*" \
--d "{"username": "$MYUSER", "password": "$MYPASSWORD"}"
+  --location "https://$FQDN_IP_PORT/virtualization/api/v1/auth/vcenter-login" \
+  --header "Content-Type: application/json" \
+  --header "Accept: */*" \
+  -d '{"username": "$MYUSER", "password": "$MYPASSWORD"}'
 ----
 +
 응답에서 반환된 액세스 토큰을 복사하여 저장합니다.
@@ -72,16 +73,16 @@ curl -X POST `\https://xx.xx.xx.xx:8443/virtualization/api/v1/vcenters/{vcguid}/
 [listing]
 ----
 curl -X POST 'https://<OTV-NG-IP>:8443/virtualization/api/v1/vcenters/<vcguid>/migration-jobs' \
---header 'x-auth: <auth_token>' \
---header 'Content-Type: application/json' \
---data '{
-  "otv_ip": "xx.xx.xx.xx",
-  "vasa_provider_credentials": {
-    "username": "xxxxx",
-    "password": "******"
-  },
-  "database_password": "******"
-}'
+  --header 'x-auth: <auth_token>' \
+  --header 'Content-Type: application/json' \
+  --data '{
+    "otv_ip": "xx.xx.xx.xx",
+    "vasa_provider_credentials": {
+      "username": "xxxxx",
+      "password": "******"
+    },
+    "database_password": "******"
+  }'
 ----
 다른 릴리스 마이그레이션에 대한 요청 본문:
 
@@ -112,23 +113,28 @@ curl -X POST 'https://<OTV-NG-IP>:8443/virtualization/api/v1/vcenters/<vcguid>/m
 +
 [listing]
 ----
-curl `\https://xx.xx.xx.xxx:8443/virtualization/api/jobmanager/v2/jobs/<migration_id>?includeSubJobsAndTasks=true`
+curl `\https://xx.xx.xx.xxx:8443/virtualization/api/jobmanager/v2/jobs/<JobId>?includeSubJobsAndTasks=true`
 ----
 +
-작업이 완료되면 작업 응답에서 마이그레이션 보고서를 검토합니다.
+이전 단계에서 마이그레이션 작업으로부터 반환된 'id' 값을 사용하십시오. 작업이 완료되면 작업 응답에서 마이그레이션 보고서를 검토하십시오.
 
 . vCenter Server에 ONTAP tools for VMware vSphere 추가합니다.
 . ONTAP tools for VMware vSphere 사용하여 VASA 공급자를 등록합니다. 지침은 다음을 참조하세요.link:../configure/registration-process.html["VASA Provider를 등록합니다"] .
-. 등록 후 vSphere Client의 *스토리지 공급자*에서 VASA 공급자의 이름과 상태를 확인하세요.  VASA 공급자가 온라인에 나타나 등록이 성공적으로 완료되었음을 확인해야 합니다.
-. link:../manage/enable-services.html["VASA Provider를 설정합니다"]ONTAP tools for VMware vSphere 서비스.
+. VASA Provider 등록을 확인하십시오:
++
+.. vSphere Client에서 vCenter Server로 이동합니다.
+.. *구성* > *스토리지 공급자*를 선택합니다.
+.. 이전 단계에서 등록한 VASA Provider가 온라인 상태인지 확인하십시오.
+
+
 . 다음 단계를 사용하여 ONTAP tools for VMware vSphere 중지합니다.
 +
 .. ONTAP 도구 9.x에서 웹 콘솔을 엽니다.
 .. 유지 관리 콘솔에 액세스합니다.
 .. 입력하다 `1` *응용 프로그램 구성* 메뉴를 선택하세요.
 .. 입력하다 `5` VASA 공급자와 SRA 서비스를 중지합니다.
-.. vSphere Client에서 *인벤토리* > *스토리지 공급자*로 이동합니다.
-.. 스토리지 백엔드에서 ONTAP 도구 9.x VASA 공급자를 선택하고 *제거*를 클릭합니다.
+.. vSphere Client에서 vCenter Server로 이동한 다음 *Configure* > *Storage Providers*를 선택합니다.
+.. ONTAP tools 9.x용 오프라인 VASA Provider를 선택하고 *Remove*를 선택합니다.
 +
 이전 VASA Provider가 중지되면 vCenter Server는 ONTAP tools for VMware vSphere 로 장애 조치됩니다. 모든 데이터스토어와 VM에 액세스할 수 있게 되고 ONTAP tools for VMware vSphere 에서 서비스를 제공합니다.
 
@@ -161,6 +167,28 @@ Swagger에서 다음 URI를 사용하세요.
 ----
 curl  -X PATCH  `\https://xx.xx.xx.xx:8443/virtualization/api/v1/vcenters/<vcenter_id>/migration-jobs/<migration_id>`
 ----
+*HTTP 메서드 및 끝점*
+
+이 REST API 호출은 다음과 같은 메소드와 엔드포인트를 사용합니다.
+
+|===
+
+
+| * HTTP 메서드 * | * 경로 * 
+
+
+| 패치 | /api/v1 을 참조하십시오 
+|===
+* 처리 유형 *
+
+비동기식
+
+Swagger에서 다음 URI를 사용하세요.
+
+[listing]
+----
+curl  -X PATCH  `\https://xx.xx.xx.xx:8443/virtualization/api/v1/vcenters/<vcenter_id>/migration-jobs/<migration_id>`
+----
 * 컬링 예제 *
 
 [listing]
@@ -168,8 +196,6 @@ curl  -X PATCH  `\https://xx.xx.xx.xx:8443/virtualization/api/v1/vcenters/<vcent
 curl  -X PATCH  `\https://xx.xx.xx.xx:8443/virtualization/api/v1/vcenters/56d373bd-4163-44f9-a872-9adabb008ca9/migration-jobs/d50073ce-35b4-4c51-9d2e-4ce66f802c35`
 ----
 * JSON 출력 예 *
-
-작업 객체가 반환됩니다. 다음 단계에서 사용할 작업 식별자를 저장해야 합니다.
 
 [listing]
 ----
@@ -181,12 +207,14 @@ curl  -X PATCH  `\https://xx.xx.xx.xx:8443/virtualization/api/v1/vcenters/56d373
 ----
 ====
 +
-패치 작업을 위한 요청 본문이 비어 있습니다.
 
+NOTE: 7단계에서 반환된 'migration_id' 값을 PATCH API 호출에서 <migration_id>로 사용합니다. 패치 작업의 경우 요청 본문은 비어 있습니다.
 
-
++
 
 NOTE: UUID는 마이그레이션 후 API에 대한 응답으로 반환된 마이그레이션 UUID입니다.
+
+
 
 패치 마이그레이션 API를 실행한 후에는 모든 VM이 스토리지 정책을 준수합니다.
 
@@ -200,14 +228,10 @@ NOTE: UUID는 마이그레이션 후 API에 대한 응답으로 반환된 마이
 업그레이드 후 가상 머신의 규정 준수 상태가 오래된 경우 다음 단계를 사용하여 스토리지 정책을 다시 적용합니다.
 
 . 데이터 저장소로 이동하여 *요약* > *VM 스토리지 정책*을 선택합니다.
-+
-시스템은 *VM 스토리지 정책 준수*에서 준수 상태를 *오래됨*으로 표시합니다.
-
+. 시스템은 *VM 스토리지 정책 준수*에서 준수 상태를 *오래됨*으로 표시합니다.
 . 저장소 VM 정책과 해당 VM을 선택합니다.
 . *적용*을 선택하세요.
-+
-*VM 스토리지 정책 준수*의 준수 상태가 준수로 표시됩니다.
-
+. *VM 스토리지 정책 준수*의 준수 상태가 준수로 표시됩니다.
 
 
 .관련 정보

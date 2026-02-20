@@ -454,7 +454,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="a62fbfbe1fa2fbcd3ff1ab71d9f0cf7a" category="paragraph">* 컬링 예제 *</block>
   <block id="654a9186fe9a47c1397903b9228f2c36" category="paragraph">다른 릴리스 마이그레이션에 대한 요청 본문:</block>
   <block id="18009c9216d59118fb460184e2ec0a3d" category="paragraph">* JSON 출력 예 *</block>
-  <block id="492fdcd87814cf3c979a27709fc29350" category="paragraph">작업 객체가 반환됩니다. 다음 단계에서 사용할 작업 식별자를 저장해야 합니다.</block>
   <block id="ec874bf582309d24e5c0f1f38429fb73" category="inline-link-macro">vCenter Server에 VASA Provider를 등록합니다</block>
   <block id="63bc9a3997d66d835d9f3ec29451407d" category="cell">패치</block>
   <block id="b06f0e274f6c746f0d30521b5c7f392e" category="list-text">VMware vSphere용 ONTAP 툴을 컨텐츠 라이브러리로 업그레이드합니다.</block>
@@ -981,7 +980,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="90182eba2ac7240af5b5cb5ba83a8c1b" category="sidebar">REST API에 대해 자세히 알아보십시오</block>
   <block id="d58b759501469292f5d0464d265c376c" category="sidebar">REST 구현</block>
   <block id="eaff07db9f9bd4c788b59cf5ac2e6f5e" category="paragraph"><block ref="eaff07db9f9bd4c788b59cf5ac2e6f5e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f663ec26fcc5dbf0e82a2df73c30a3e3" category="paragraph">패치 작업을 위한 요청 본문이 비어 있습니다.</block>
   <block id="c1da67abb88e41cb6c66ffcb6aa791c1" category="list-text">vCenter Server에서 콘솔을 열고 ONTAP 툴을 엽니다.</block>
   <block id="c8c29d2a26286541354fc8e377f3b6ce" category="list-text">비 HA 설정에서 HA 설정으로 이동합니다</block>
   <block id="9c1b85c4b3c7f912b4954489e7d9f1ad" category="list-text">개별 API 호출의 예로, 아래로 스크롤하여 * vCenters * 범주로 이동한 후 끝점 옆에 있는 * Get * 을 선택합니다<block ref="22d8515b1a0806aac1067186e4429b4c" prefix=" " category="inline-code"></block></block>
@@ -1965,10 +1963,8 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="e665d4f634eb279e3d3649d89dce4f3e" category="paragraph">ONTAP tools for VMware vSphere 처음에는 비 HA 설정으로 배포됩니다.  HA 배포로 확장하려면 CPU 핫 플러그와 메모리 핫 플러그인을 활성화해야 합니다. 이 단계는 배포 프로세스의 일부로 수행하거나 배포 후 VM 설정을 편집할 수 있습니다.</block>
   <block id="76ecd43e2d7d963469ed779109b6621d" category="list-text">OVA를 배포하려는 리소스 풀, 클러스터 또는 호스트로 이동합니다.</block>
   <block id="a85cd355d0191e9ca39647db304e9886" category="list-text">*인벤토리*에서 ONTAP tools for VMware vSphere 로 이동하여 *설정 편집* 옵션을 선택합니다.</block>
-  <block id="7bc1f449f84cbd0274b17756a6c88276" category="cell">ONTAP 도구 애플리케이션의 IP 주소입니다.  이는 ONTAP 도구 웹 인터페이스(로드 밸런서)에 액세스하기 위한 IP 주소입니다.</block>
   <block id="0a975d248a4d2c7d423087028109208e" category="cell">ONTAP 도구는 내부 통신을 위한 가상 IP 주소를 제공합니다.  이 IP 주소는 여러 ONTAP 도구 인스턴스가 있는 설정에서 내부 통신에 사용됩니다.  이 IP 주소는 ONTAP 도구 애플리케이션(Kubernetes 제어 평면)의 IP 주소와 동일해서는 안 됩니다.</block>
   <block id="1cd1ce31df98698494f685f0c097277b" category="cell">ONTAP 도구 관리 노드의 DNS 호스트 이름</block>
-  <block id="a6db38ab6788244dd400202a4ac077c9" category="cell">ONTAP 도구 관리 노드의 IPv4 주소입니다.  이는 관리 네트워크의 노드 관리 인터페이스를 위한 고유한 IPv4 주소입니다.</block>
   <block id="57a162b82ea942d344ca18a6563ae0ad" category="paragraph">모든 관련 IP 주소에 대해 필요한 방화벽 포트가 열려 있는지 확인하세요.  ONTAP 도구는 포트 443을 통해 LIF에 액세스해야 합니다.  필수 포트의 전체 목록은 다음 포트 요구 사항 섹션을 참조하세요.<block ref="1a93487a9f020b7c05d37b4998f77757" category="inline-link-macro-rx"></block> .</block>
   <block id="842fbe95dfc795462ae01e0da46b578d" category="list-text">스토리지 연결에 파이버 채널(FC)을 사용하는 경우 FC 스위치의 구역 설정을 구성하여 ESXi 호스트를 SVM의 FC LIF에 연결합니다.<block ref="56d435991bafd2bcca9f59739e2992e7" category="inline-link-rx"></block></block>
   <block id="10b3adf4529649ecb009c579e7713c8e" category="cell">10.5</block>
@@ -2234,7 +2230,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="fa885aacf6740d8be756318202aaeea3" category="paragraph">ONTAP 도구에서 데이터 저장소 검색을 실행하면 ONTAP 도구는 플랫 igroup을 중첩 구조로 변환합니다. 그런 다음 ONTAP 도구는 igroup을 관리하고 'otv_' 접두사로 이름을 바꿉니다. LUN은 이 프로세스 내내 동일한 igroup에 매핑된 상태로 유지됩니다.</block>
   <block id="6e63f9b05e0f51c3646052747b709edf" category="paragraph">ONTAP 도구에서 관리하는 igroup을 사용하여 ONTAP 시스템에서 처음 생성된 데이터 저장소를 ONTAP 도구에서 생성할 수 있습니다. 이러한 igroup은 사용자 정의 이니시에이터 그룹 이름 드롭다운 목록에 나타납니다. 그런 다음 데이터 저장소의 새 LUN은 "otv_NativeIgroup1"과 같은 해당 정규화된 자식 igroup에 매핑됩니다.</block>
   <block id="cf78d06b764932bff9c08da08c607da8" category="paragraph">시스템은 작업 객체를 반환합니다.  다음 단계에서 사용할 작업 식별자를 저장하세요.</block>
-  <block id="e79f49713689b554500076c29f3b0f0d" category="paragraph">작업이 완료되면 작업 응답에서 마이그레이션 보고서를 검토합니다.</block>
   <block id="8c72adfd7c929e7f36ec5083f128105b" category="list-text">마이그레이션된 NFS 및 VMFS 데이터 저장소는 데이터 저장소 검색 작업 후 ONTAP tools for VMware vSphere 에 나타나며, 이 작업에는 최대 30분이 걸릴 수 있습니다.  개요 페이지에서 가시성을 확인하세요.</block>
   <block id="03785cc80d260849e9ee53ea9ad304bf" category="list-text">*검색*이 완료될 때까지 기다리면 시스템이 모든 호스트의 인증서를 자동으로 새로 고칩니다.</block>
   <block id="32684456982f6de7f06ceb0a0a814307" category="list-text">데이터 저장소 및 가상 머신 작업을 시작하기 전에 기다리세요.  대기 시간은 호스트, 데이터스토어, 가상 머신의 수에 따라 달라집니다.  기다리지 않으면 가끔 실패를 겪을 수도 있습니다.</block>
@@ -2431,14 +2426,11 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="8d5176b0f7c64423a1410ec460a2fbcd" category="paragraph">응답에서 반환된 액세스 토큰을 복사하여 저장합니다.</block>
   <block id="7b7cd5f7fba7393568ce0f3e6a816e91" category="list-text">vCenter Server에 ONTAP tools for VMware vSphere 추가합니다.</block>
   <block id="2b0f4f36b8001dce4b825bc0fecf2e17" category="list-text">ONTAP tools for VMware vSphere 사용하여 VASA 공급자를 등록합니다. 지침은 다음을 참조하세요.<block ref="c283b8bc021fee7e6c856fce39783a46" category="inline-link-macro-rx"></block> .</block>
-  <block id="1a464e16899d07e725803f6174f5e1fb" category="list-text">등록 후 vSphere Client의 *스토리지 공급자*에서 VASA 공급자의 이름과 상태를 확인하세요.  VASA 공급자가 온라인에 나타나 등록이 성공적으로 완료되었음을 확인해야 합니다.</block>
   <block id="7449849ed5e181a25bd151a90c66a6d6" category="list-text">다음 단계를 사용하여 ONTAP tools for VMware vSphere 중지합니다.</block>
   <block id="3076f368d1fb701b7d40be8f8c0f7d05" category="list-text">ONTAP 도구 9.x에서 웹 콘솔을 엽니다.</block>
   <block id="6979cadafb4e3b67b5a0bda70225f50f" category="list-text">유지 관리 콘솔에 액세스합니다.</block>
   <block id="b94aaa9c1bb758125ee360d9695799cf" category="list-text">입력하다<block ref="c4ca4238a0b923820dcc509a6f75849b" prefix=" " category="inline-code"></block> *응용 프로그램 구성* 메뉴를 선택하세요.</block>
   <block id="64b8cf9b632898bad5081763af1fbebd" category="list-text">입력하다<block ref="e4da3b7fbbce2345d7772b0674a318d5" prefix=" " category="inline-code"></block> VASA 공급자와 SRA 서비스를 중지합니다.</block>
-  <block id="ccba785a416529522c083f4606900605" category="list-text">vSphere Client에서 *인벤토리* &gt; *스토리지 공급자*로 이동합니다.</block>
-  <block id="836dd342f378a7b29dcbef5f07ab1b95" category="list-text">스토리지 백엔드에서 ONTAP 도구 9.x VASA 공급자를 선택하고 *제거*를 클릭합니다.</block>
   <block id="f191ddd9150b5ab75986a7a94e92817b" category="paragraph">Swagger에서 다음 URI를 사용하세요.</block>
   <block id="7cf21d459cdbb9c2a1e4864da9f56b5a" category="summary">ONTAP tools for VMware vSphere 와 ONTAP tools for VMware vSphere 기능 비교에 대해 알아보세요.</block>
   <block id="49d4ace549bb255068ca23c9172eab10" category="doc">ONTAP tools for VMware vSphere</block>
@@ -2701,4 +2693,14 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="a51a2d315454dc257743fd165c6ec1e1" category="inline-link">vCenter 고가용성 문서</block>
   <block id="b2275014ec45c2e387f49db63d8ae0de" category="inline-link">Broadcom 지원</block>
   <block id="7617b6be9a4dd36133ef22cea59d80e2" category="paragraph">자세한 내용은<block ref="debb52d5bcbe0ce63e3d926c803fdf23" category="inline-link-rx"></block>를 참조하십시오. vCenter HA에 대한 질문은<block ref="2ce3402d69457b08a3211a429ae43e9d" category="inline-link-rx"></block>에 문의하십시오.</block>
+  <block id="015201c8d96a0d1f03859660b14c2930" category="cell">ONTAP 툴 애플리케이션의 IP 주소입니다. ONTAP 툴 관리자 웹 인터페이스(로드 밸런서)에 액세스하기 위한 IP 주소입니다<block ref="a06d973ff78e33873c1cb100862ab7a3" prefix=" " category="inline-code"></block></block>
+  <block id="818a93ed2e98a0dc1f094445fc5de89a" category="cell">ONTAP 도구 관리 노드의 IPv4 주소입니다. 관리 네트워크에서 노드 관리 인터페이스에 사용되는 고유한 IPv4 주소입니다. SSH를 통해 ONTAP 도구 어플라이언스에 원격 진단 액세스하는 데 사용됩니다.</block>
+  <block id="608710d42ef8659d2d9da02848081770" category="paragraph">이전 단계에서 마이그레이션 작업으로부터 반환된 'id' 값을 사용하십시오. 작업이 완료되면 작업 응답에서 마이그레이션 보고서를 검토하십시오.</block>
+  <block id="29a7e4682b4c588fb3d5a8c40bdd6124" category="list-text">VASA Provider 등록을 확인하십시오:</block>
+  <block id="f663c84551a178949a68d10f2492f5c6" category="list-text">vSphere Client에서 vCenter Server로 이동합니다.</block>
+  <block id="e4157e6ef58fbdd1f4edfff7edfb100a" category="list-text">*구성* &gt; *스토리지 공급자*를 선택합니다.</block>
+  <block id="36455669f9fbf01f7cd2ef94a12ea762" category="list-text">이전 단계에서 등록한 VASA Provider가 온라인 상태인지 확인하십시오.</block>
+  <block id="9c3fd4feed3b70ad58582159360ae925" category="list-text">vSphere Client에서 vCenter Server로 이동한 다음 *Configure* &gt; *Storage Providers*를 선택합니다.</block>
+  <block id="6df01bde6e0e3398aefe5b78073a6a20" category="list-text">ONTAP tools 9.x용 오프라인 VASA Provider를 선택하고 *Remove*를 선택합니다.</block>
+  <block id="5f3d684c32f3b3125b0b7b6f2b37b3f0" category="admonition">7단계에서 반환된 'migration_id' 값을 PATCH API 호출에서 &lt;migration_id&gt;로 사용합니다. 패치 작업의 경우 요청 본문은 비어 있습니다.</block>
 </blocks>
