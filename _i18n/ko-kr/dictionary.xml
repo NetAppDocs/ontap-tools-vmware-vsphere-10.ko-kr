@@ -2703,4 +2703,10 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="9c3fd4feed3b70ad58582159360ae925" category="list-text">vSphere Client에서 vCenter Server로 이동한 다음 *Configure* &gt; *Storage Providers*를 선택합니다.</block>
   <block id="6df01bde6e0e3398aefe5b78073a6a20" category="list-text">ONTAP tools 9.x용 오프라인 VASA Provider를 선택하고 *Remove*를 선택합니다.</block>
   <block id="5f3d684c32f3b3125b0b7b6f2b37b3f0" category="admonition">7단계에서 반환된 'migration_id' 값을 PATCH API 호출에서 &lt;migration_id&gt;로 사용합니다. 패치 작업의 경우 요청 본문은 비어 있습니다.</block>
+  <block id="c5ee1392d2a4919b586e3706e8fd7ca2" category="section-title">스토리지 백엔드용 SAN 기반 인증서를 확인합니다</block>
+  <block id="7fddec929757e28798cf7b2e040cc5c0" category="paragraph">안전한 통신과 적절한 유효성 검사를 보장하기 위해 모든 스토리지 백엔드가 SAN 기반 인증서를 사용하는지 확인하십시오.</block>
+  <block id="5f2131ae70df4a174b962b01cada7033" category="list-text">ONTAP 관리 인증서에 Subject Alternative Name(SAN) 항목이 포함되어 있는지 확인하십시오.</block>
+  <block id="8d80b04306b64b2c7241ee8c3b8cac3a" category="list-text">SAN 항목이 ONTAP 관리 IP 주소 또는 DNS 이름 또는 둘 다와 일치하는지 확인하십시오.</block>
+  <block id="0c205dec8702acf753959708a299c51f" category="list-text">ONTAP를 온보딩하는 데 사용된 세부 정보가 인증서의 SAN 항목에 있는 IP 주소 또는 DNS 이름과 일치하는지 확인하십시오.</block>
+  <block id="f38a6ced93585f5991828bd2b6c8fa42" category="paragraph">이러한 단계를 따르면 인증서 유효성 검사 문제를 방지하고 ONTAP 시스템이 안전하게 통합되도록 보장할 수 있습니다.</block>
 </blocks>
