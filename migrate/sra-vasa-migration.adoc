@@ -35,7 +35,7 @@ curl --request POST \
   --location "https://$FQDN_IP_PORT/virtualization/api/v1/auth/vcenter-login" \
   --header "Content-Type: application/json" \
   --header "Accept: */*" \
-  -d '{"username": "$MYUSER", "password": "$MYPASSWORD"}'
+  -d '{"username": "$MYUSER", "password": "$MYPASSWORD", "vcenter hostname": "$MYVCENTER"}'
 ----
 +
 응답에서 반환된 액세스 토큰을 복사하여 저장합니다.
@@ -118,7 +118,6 @@ curl `\https://xx.xx.xx.xxx:8443/virtualization/api/jobmanager/v2/jobs/<JobId>?i
 +
 이전 단계에서 마이그레이션 작업으로부터 반환된 'id' 값을 사용하십시오. 작업이 완료되면 작업 응답에서 마이그레이션 보고서를 검토하십시오.
 
-. vCenter Server에 ONTAP tools for VMware vSphere 추가합니다.
 . ONTAP tools for VMware vSphere 사용하여 VASA 공급자를 등록합니다. 지침은 다음을 참조하세요.link:../configure/registration-process.html["VASA Provider를 등록합니다"] .
 . VASA Provider 등록을 확인하십시오:
 +

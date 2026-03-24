@@ -246,7 +246,6 @@
   <block id="3b326cad8d176fc4ce802f76863c3ac6" category="paragraph">클론 생성된 가상 머신이 배치되는 FlexVol 볼륨에서는 메타데이터 파일이 업데이트된 가상 머신 세부 정보를 가져옵니다.</block>
   <block id="504756afdd8e0a45f90bb3a07484512e" category="paragraph">보호된 가상 머신의 클론 복제가 지원됩니다.</block>
   <block id="74aa15274c9a75ae1e9b01b9a4867fea" category="section-title">가상 머신 스냅샷</block>
-  <block id="49e93fd9a17de8559bffcb0218844f3a" category="paragraph">현재 메모리가 없는 가상 머신 스냅샷만 지원됩니다. 가상 머신에 메모리가 있는 스냅샷이 있는 경우 가상 머신이 보호 대상으로 고려되지 않습니다.</block>
   <block id="317f8a592684314bc3829f0ff356fe47" category="summary">데이터 저장소 삭제 작업은 데이터 저장소를 삭제합니다. NFS 또는 VMFS 데이터 저장소의 경우 데이터 저장소를 사용 중인 VM 목록이 포함된 대화 상자가 나타납니다.</block>
   <block id="3cd4a1ddd805e8692af529725906108e" category="doc">데이터 저장소를 삭제합니다</block>
   <block id="a8211be0a6fb73b95cdffd1ac6d2b9d5" category="list-text">ONTAP 스토리지에서 백업 볼륨을 삭제하려면 * Delete volumes on ONTAP cluster * 를 선택합니다.</block>
@@ -2072,7 +2071,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="7cc3bb1c6bb475d226bfbe5da1ebd38c" category="cell">ONTAP 도구 노드 카드는 노드 이름, VM 이름, 상태 및 네트워크 정보를 포함하여 어플라이언스의 모든 노드를 표시합니다.  특정 노드에 대한 자세한 내용을 보려면 *자세한 내용 보기*를 선택하세요.  [참고] HA가 아닌 구성에서는 단일 노드만 나타납니다.  HA 구성에서는 세 개의 노드가 표시됩니다.</block>
   <block id="5ab1668c9ec40eca8f10aa49dea404c7" category="list-text">마이그레이션하는 데이터스토어의 기능과 일치하는 가상 디스크 형식, VM 스토리지 정책 및 vVol 데이터스토어를 선택합니다.</block>
   <block id="74d3a58195c8c6b12b2399fe05a69332" category="paragraph">VMware는 현재 VM 템플릿에 복제된 가상 머신을 지원하지 않습니다.</block>
-  <block id="685ad41930091bf99f93dc256b62607d" category="paragraph">메모리 스냅샷이 있는 보호되지 않은 가상 머신도 보호할 수 없습니다.  이 릴리스에서는 가상 머신에 대한 보호를 활성화하기 전에 메모리 스냅샷을 삭제해야 합니다.</block>
   <block id="8406161320cdde68124591ab85e4092a" category="paragraph">ONTAP tools for VMware vSphere 두 가지 다른 맥락에서 igroup을 해석합니다.</block>
   <block id="eef2558425e977ca0012ab130a151a4c" category="paragraph">데이터스토어를 생성하면 ONTAP tools for VMware vSphere LUN 매핑을 더 쉽게 하기 위해 중첩 구조를 사용하여 igroup을 자동으로 생성합니다.</block>
   <block id="dc48ac4a32526d5d7522c456f1f1cc94" category="paragraph">ONTAP tools for VMware vSphere 부터 백업 기능이 기본적으로 활성화됩니다.</block>
@@ -2328,7 +2326,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="0e3dbc4805c820c2543dcfc7fb0ff1ae" category="paragraph">ONTAP tools for VMware vSphere 배포한 후 유지 관리 콘솔에 액세스할 수 없는 경우 vCenter Server에서 VMware 도구를 설치합니다.  다음을 사용하여 로그인하세요.<block ref="67f50785d40416a7a7689c5c353f1128" prefix=" " category="inline-code"></block> 배포 중에 설정된 사용자 이름과 비밀번호입니다.  유지 관리 또는 루트 로그인 콘솔에서 파일을 편집하려면 *nano*를 사용합니다.</block>
   <block id="3dc9723f860cc7fa81343acb2b1bc55f" category="list-text">*임계값 편집* 창에서 *거의 가득 참* 및 *가득 참* 필드에 원하는 값을 입력하고 *저장*을 선택합니다. 임계값을 권장 기본값인 거의 가득 참의 경우 80, 가득 참의 경우 90으로 복원할 수 있습니다.</block>
   <block id="0fb6f15f7c944e350ea4ee5dbe349ad8" category="paragraph">가상 머신을 다른 FlexVol volume 으로 마이그레이션하는 경우 시스템은 해당 볼륨의 메타데이터 파일을 가상 머신 정보로 업데이트합니다. 가상 머신이 동일한 스토리지를 사용하지만 다른 ESXi 호스트로 마이그레이션되는 경우 기본 FlexVol volume 메타데이터 파일은 수정되지 않습니다.</block>
-  <block id="ffae2d616a4df47529c992a2371e2ccb" category="paragraph">ASA r2 스토리지 유형을 사용하는 Windows VM의 경우 가상 머신의 스냅샷은 읽기 전용입니다.  VM의 전원을 켜면 VASA Provider가 읽기 전용 스냅샷에서 LUN을 생성하고 IOPS를 활성화합니다.  VM의 전원을 끄면 VASA Provider는 LUN을 삭제하고 IOPS를 비활성화합니다.</block>
   <block id="77320a87e6ca763456023daeede0729f" category="inline-link">vSphere 클러스터 워크플로에 ESX 호스트 추가</block>
   <block id="91d42183cd7455cc3f88c0c77b61174e" category="admonition">다음을 사용하여 새 ESXi 호스트를 추가하는 경우<block ref="4954232b8967f3dbfaee01742ae35b89" category="inline-link-rx"></block> ONTAP 도구에 표시되기 전에 예약된 호스트 검색이 완료될 때까지 기다리세요. 또는 NetApp ONTAP 도구 개요 화면에서 수동으로 검색을 실행할 수 있습니다.</block>
   <block id="ba8e3bf168d21be1baf9d641e008977f" category="paragraph">최근 작업 패널에는 진행 상황이 표시됩니다.</block>
@@ -2424,7 +2421,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="919f060162028da82b75ccf8400335b5" category="list-text">ONTAP 도구 플러그인을 위한 vCenter 서버 API에서 로컬로 스토리지 백엔드를 온보딩합니다. 다음을 참조하세요.<block ref="d60b7308493aa415dfe7fcd24539d7e4" category="inline-link-macro-rx"></block> 자세한 내용은.</block>
   <block id="25c9412d6c1bba60178b87bc1c36e2bc" category="list-text">REST API 요청을 인증하기 위한 액세스 토큰을 얻습니다.  다음 예를 사용하여 변수를 사용자 환경에 맞는 값으로 바꿔보세요.</block>
   <block id="8d5176b0f7c64423a1410ec460a2fbcd" category="paragraph">응답에서 반환된 액세스 토큰을 복사하여 저장합니다.</block>
-  <block id="7b7cd5f7fba7393568ce0f3e6a816e91" category="list-text">vCenter Server에 ONTAP tools for VMware vSphere 추가합니다.</block>
   <block id="2b0f4f36b8001dce4b825bc0fecf2e17" category="list-text">ONTAP tools for VMware vSphere 사용하여 VASA 공급자를 등록합니다. 지침은 다음을 참조하세요.<block ref="c283b8bc021fee7e6c856fce39783a46" category="inline-link-macro-rx"></block> .</block>
   <block id="7449849ed5e181a25bd151a90c66a6d6" category="list-text">다음 단계를 사용하여 ONTAP tools for VMware vSphere 중지합니다.</block>
   <block id="3076f368d1fb701b7d40be8f8c0f7d05" category="list-text">ONTAP 도구 9.x에서 웹 콘솔을 엽니다.</block>
@@ -2709,4 +2705,7 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="8d80b04306b64b2c7241ee8c3b8cac3a" category="list-text">SAN 항목이 ONTAP 관리 IP 주소 또는 DNS 이름 또는 둘 다와 일치하는지 확인하십시오.</block>
   <block id="0c205dec8702acf753959708a299c51f" category="list-text">ONTAP를 온보딩하는 데 사용된 세부 정보가 인증서의 SAN 항목에 있는 IP 주소 또는 DNS 이름과 일치하는지 확인하십시오.</block>
   <block id="f38a6ced93585f5991828bd2b6c8fa42" category="paragraph">이러한 단계를 따르면 인증서 유효성 검사 문제를 방지하고 ONTAP 시스템이 안전하게 통합되도록 보장할 수 있습니다.</block>
+  <block id="dbc36b4329f96473c291b930fc0022cc" category="paragraph">메모리 정보가 포함되지 않은 가상 머신 스냅샷이 지원됩니다. 메모리 정보가 포함된 스냅샷이 있는 가상 머신은 보호할 수 없습니다.</block>
+  <block id="d160829889a8982ffa6a76e6a77e9c03" category="paragraph">메모리 스냅샷이 포함된 보호되지 않은 가상 머신은 보호할 수 없습니다. 가상 머신에 대한 보호를 활성화하기 전에 메모리 스냅샷을 삭제하십시오.</block>
+  <block id="b4458ee64903f6d51a1cecdf4bbd4ab4" category="paragraph">ASA r2 스토리지 유형을 사용하는 Windows VM의 경우 가상 머신 스냅샷은 읽기 전용입니다. VM을 켜면 VASA Provider가 읽기 전용 스냅샷에서 LUN을 생성하고 IOPS를 활성화합니다. VM을 끄면 VASA Provider가 LUN을 삭제하고 IOPS를 비활성화합니다.</block>
 </blocks>
