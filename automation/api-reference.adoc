@@ -19,7 +19,7 @@ VMware vSphere 10 REST API 참조용 ONTAP 툴에는 모든 API 호출에 대한
 Swagger 사용자 인터페이스를 통해 VMware vSphere 10 REST API용 ONTAP 툴 설명서에 온라인으로 액세스할 수 있습니다. 포트뿐만 아니라 VMware vSphere 10 게이트웨이 서비스용 ONTAP 툴의 IP 주소 또는 FQDN이 필요합니다.
 
 .단계
-. 브라우저에 변수에 대해 적절한 IP 주소와 포트 조합을 대체할 다음 URL을 입력하고 * Enter * 키를 누릅니다.
+. 다음 URL을 브라우저에 입력하고 변수에 해당하는 IP 주소와 포트 조합을 대체한 후 *Enter* 키를 누르십시오.
 +
 `\https://$FQDN_IP_PORT/`
 

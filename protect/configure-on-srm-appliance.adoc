@@ -17,9 +17,9 @@ VMware Live Site Recovery 어플라이언스에서 SRA를 구성하면 어플라
 
 .시작하기 전에
 * _.tar.gz_ 파일을 다운로드하세요. https://mysupport.netapp.com/site/products/all/details/otv10/downloads-tab["NetApp Support 사이트"] .
-* ONTAP 도구 관리자에서 SRA 서비스를 활성화합니다. 자세한 내용은 link:../manage/enable-services.html["서비스 활성화"] 부분.
-* VMware vSphere 어플라이언스용 ONTATP 도구에 vCenter Server를 추가합니다. 자세한 내용은 link:../configure/add-vcenter.html["vCenter 서버 추가"] 부분.
-* ONTAP tools for VMware vSphere 에 스토리지 백엔드를 추가합니다. 자세한 내용은 link:../configure/add-storage-backend.html["스토리지 백엔드 추가"] 부분.
+* ONTAP tools Manager에서 SRA 서비스를 활성화하십시오. 자세한 내용은 link:../manage/enable-services.html["서비스 활성화"] 섹션을 참조하십시오.
+* vCenter 서버를 ONTAP tools for VMware vSphere 어플라이언스에 추가합니다. 자세한 내용은 link:../configure/add-vcenter.html["vCenter 서버 추가"] 섹션을 참조하십시오.
+* ONTAP tools for VMware vSphere에 스토리지 백엔드를 추가합니다. 자세한 내용은 link:../configure/add-storage-backend.html["스토리지 백엔드 추가"] 섹션을 참조하십시오.
 
 
 

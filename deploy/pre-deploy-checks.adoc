@@ -17,7 +17,7 @@ summary: VMware vSphere용 ONTAP 툴을 구축하기 전에 구축 패키지에 
 | 요구 사항 | 귀하의 상태 
 
 
-| vSphere 버전, ONTAP 버전 및 ESXi 호스트 버전은 ONTP 툴 버전과 호환됩니다. | ❏ 예 ❏ 아니요 
+| vSphere 버전, ONTAP 버전 및 ESXi 호스트 버전은 ONTAP tools 버전과 호환됩니다. | ❏ 예 ❏ 아니요 
 
 
 | vCenter Server 환경이 설정 및 구성됩니다 | ❏ 예 ❏ 아니요 
@@ -63,7 +63,7 @@ summary: VMware vSphere용 ONTAP 툴을 구축하기 전에 구축 패키지에 
 | ONTAP 툴 애플리케이션의 IP 주소입니다. ONTAP 툴 관리자 웹 인터페이스(로드 밸런서)에 액세스하기 위한 IP 주소입니다 `\https://<ip>:8443/virtualization/ui/` |  
 
 
-| ONTAP 도구는 내부 통신을 위한 가상 IP 주소를 제공합니다.  이 IP 주소는 여러 ONTAP 도구 인스턴스가 있는 설정에서 내부 통신에 사용됩니다.  이 IP 주소는 ONTAP 도구 애플리케이션(Kubernetes 제어 평면)의 IP 주소와 동일해서는 안 됩니다. |  
+| 내부 통신을 위한 ONTAP tools 가상 IP 주소입니다. 이 IP 주소는 여러 ONTAP tools 인스턴스가 있는 설정에서 내부 통신에 사용됩니다. 이 IP 주소는 ONTAP tools 애플리케이션의 IP 주소와 동일해서는 안 됩니다. (Kubernetes Control Plane) |  
 
 
 | ONTAP 도구 관리 노드의 DNS 호스트 이름 |  
@@ -96,7 +96,7 @@ summary: VMware vSphere용 ONTAP 툴을 구축하기 전에 구축 패키지에 
 | IPv6 주소의 게이트웨이(선택 사항) |  
 |===
 
-NOTE: 위의 모든 IP 주소에 대한 DNS 레코드를 만듭니다. 호스트 이름을 할당하기 전에 DNS의 사용 가능한 IP 주소에 매핑합니다. 모든 IP 주소는 배포용으로 선택된 동일한 VLAN에 있어야 합니다.
+NOTE: 위의 모든 IP 주소에 대한 DNS 레코드를 생성하십시오. 호스트 이름을 할당하기 전에 DNS에서 사용 가능한 IP 주소에 매핑해야 합니다. 모든 IP 주소는 배포를 위해 선택한 동일한 VLAN에 속해야 합니다.
 
 
 

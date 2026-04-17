@@ -90,11 +90,11 @@ JSON 파일 없이 사용자와 역할을 수동으로 생성합니다.
 
 . 사용자 생성:
 +
-.. 사용자 * 표에서 * 추가 * 를 선택합니다.
+.. *사용자* 테이블에서 *추가*를 선택합니다.
 .. 사용자 추가 * 대화 상자에서 * 시스템 관리자 * 를 선택합니다.
 .. 사용자 이름 * 을 입력합니다.
 .. 위의 * 역할 생성 * 단계에서 생성한 옵션에서 * 역할 * 을 선택합니다.
-.. 액세스 권한을 부여할 응용 프로그램과 인증 방법을 입력합니다. ONTAPI 및 HTTP는 필수 응용 프로그램이며 인증 유형은 * Password * 입니다.
+.. 액세스 권한을 부여할 애플리케이션과 인증 방법을 입력합니다. ONTAPI와 HTTP는 필수 애플리케이션이며, 인증 유형은 *Password*입니다.
 .. 사용자의 * 비밀번호 * 를 설정하고 사용자를 * 저장 * 합니다.
 
 
@@ -259,13 +259,13 @@ security login rest-role create -role <role-name> -api /api/svm/svms -access rea
 security login rest-role create -role <role-name> -api /api/cluster/metrocluster -access readonly
 
 ----
-또한 ONTAP 버전 9.16.0 이상의 경우 다음 명령을 실행합니다.
+또한 ONTAP 버전 9.16.0 이상에서는 다음 명령을 실행하십시오.
 
 [listing]
 ----
 security login rest-role create -role <role-name> -api /api/storage/storage-units -access all
 ----
-ONTAP 버전 9.16.1 이상의 ASA R2 시스템의 경우 다음 명령을 실행합니다.
+ONTAP 버전 9.16.1 이상의 ASA r2 시스템의 경우 다음 명령을 실행하십시오.
 
 [listing]
 ----
@@ -355,13 +355,13 @@ security login rest-role create -role <role-name> -api /api/svm/peers -access re
 
 security login rest-role create -role <role-name> -api /api/svm/svms -access readonly -vserver <vserver-name>
 ----
-또한 ONTAP 버전 9.16.0 이상의 경우 다음 명령을 실행합니다.
+또한 ONTAP 버전 9.16.0 이상에서는 다음 명령을 실행하십시오.
 
 [listing]
 ----
 security login rest-role create -role <role-name> -api /api/storage/storage-units -access all -vserver <vserver-name>
 ----
-위에서 생성한 API 기반 역할을 사용하여 새 API 기반 사용자를 생성하려면 다음 명령을 실행합니다.
+이전에 생성한 API 기반 역할을 사용하여 새 API 기반 사용자를 생성하려면 다음 명령을 실행하십시오.
 
 [listing]
 ----

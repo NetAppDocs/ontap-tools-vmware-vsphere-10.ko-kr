@@ -70,7 +70,7 @@ curl --request POST \
 --header "Accept: */*" \
 -d "{"username": "$MYUSER", "password": "$MYPASSWORD"}"
 ----
-응답에 제공된 액세스 토큰을 복사하고 저장합니다.
+응답에 제공된 액세스 토큰을 복사하여 저장하십시오.
 
 
 

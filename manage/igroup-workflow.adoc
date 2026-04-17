@@ -223,6 +223,12 @@ ONTAP 도구 9.x 로직은 일대일 호스트 매핑을 적용하지 않고도 
 
 이를 통해 계층적 모델을 준수할 수 있습니다.
 
+ONTAP tools 10.5P2부터 마이그레이션된 igroup은 더 이상 사용되지 않으면 삭제됩니다. 이전 버전에서는 마이그레이션된 igroup이 제거되지 않았습니다. 다음 사항에 유의하십시오.
+
+* 마이그레이션된 igroup은 데이터 저장소 간에 재사용할 수 없습니다.
+* 사용자 정의 igroup은 삭제되지 않으며 계속 재사용할 수 있습니다.
+
+
 .관련 항목
 https://docs.netapp.com/us-en/ontap/san-admin/igroups-concept.html["Igroup 정보"]
 

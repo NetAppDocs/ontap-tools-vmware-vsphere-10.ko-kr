@@ -39,4 +39,4 @@ ONTAP tools for VMware vSphere 활성화하기 위해 추가 구성을 수행할
 ONTAP tools for VMware vSphere vCenter HA를 지원하지 않습니다.
 
 ====
-HA 기능을 사용하려면 배포 중이나 나중에 VM 설정에서 CPU 핫 애드 및 메모리 핫 플러그가 활성화되어 있는지 확인하세요.
+HA 기능을 사용하려면 배포 중 또는 VM 설정에서 CPU 핫 추가 및 메모리 핫 플러그가 활성화되어 있는지 확인하십시오.
