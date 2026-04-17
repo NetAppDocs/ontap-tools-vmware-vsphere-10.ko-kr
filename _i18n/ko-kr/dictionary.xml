@@ -361,7 +361,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="8beb897fce777c3277508139c7915a20" category="list-text">스토리지 시스템을 구성해야 합니다.</block>
   <block id="7ceb2eab648208033ac8e2800ced40ef" category="list-text">SRA에 대한 테스트 페일오버 작업 및 페일오버 작업을 수행하기 전에 FlexClone 라이센스 및 SnapMirror 라이센스를 활성화해야 합니다.</block>
   <block id="71efe8ad619e3e3d48e0a978e35c5446" category="list-text">vCenter Server에 로그인합니다.</block>
-  <block id="8bb83fccb484f1f0daa29d9b57c5cf9a" category="paragraph">보호 사이트 및 복구 사이트에서 상태가 ""Enabled""로 설정된 스토리지 시스템을 검색해야 합니다.</block>
   <block id="dfb1f7e164fa9a18cdccdd70cc836871" category="doc">SRA 자격 증명을 업데이트합니다</block>
   <block id="bc5ad92fecd3f6eeb4473c9df6479d46" category="list-text"><block ref="4609acba202877f99742342f4195d95e" prefix="" category="inline-code"></block></block>
   <block id="a505f8df337aa6363aedcbf7da761b22" category="summary">보호 사이트와 복구 사이트의 폴더를 매핑하여 폴더 간 통신을 활성화해야 합니다.</block>
@@ -2093,7 +2092,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="265d1364e0c9a1c88e39aa2446ded154" category="paragraph">다른 데이터 저장소가 부모 igroup을 재사용하지 않는 한, 부모 및 자식 igroup은 제거됩니다.  자식 igroup은 명시적으로 삭제되지 않습니다.</block>
   <block id="cd703691d1da791a7eedb75ca98439de" category="paragraph">내보내기 정책은 ONTAP tools for VMware vSphere 에서 NFS 데이터 저장소 액세스와 클라이언트 권한을 제어합니다.  내보내기 정책은 ONTAP 시스템에서 생성 및 관리되며 NFS 데이터 저장소와 함께 사용하여 액세스 제어를 시행할 수 있습니다. 각 내보내기 정책은 액세스가 허용되는 클라이언트(IP 주소 또는 서브넷)와 부여되는 권한(읽기 전용 또는 읽기-쓰기)을 지정하는 규칙으로 구성됩니다.</block>
   <block id="4a03eb267c1ef745af6c9e425460c0ea" category="paragraph">ESXi 호스트에서 NFS 데이터스토어를 삭제하거나 마운트 해제하면 ONTAP tools for VMware vSphere 내보내기 정책에서 호스트의 IP 주소를 제거합니다. 다른 호스트가 해당 내보내기 정책을 사용하지 않으면 해당 정책은 삭제됩니다. NFS 데이터 저장소를 삭제하면 ONTAP tools for VMware vSphere 다른 데이터 저장소에서 재사용되지 않는 경우 해당 데이터 저장소와 연결된 내보내기 정책을 제거합니다. 내보내기 정책을 재사용하면 호스트 IP 주소가 유지되고 변경되지 않습니다. 데이터 저장소를 삭제하면 내보내기 정책은 호스트 IP 주소를 할당 해제하고 기본 내보내기 정책을 할당하여 필요한 경우 ONTAP 시스템이 해당 IP 주소에 액세스할 수 있도록 합니다.</block>
-  <block id="1bfb5765f8a7477bcd0a19363204252d" category="paragraph">ONTAP tools for VMware vSphere VMware 데이터 센터 환경에서 데이터 저장소 관리를 간소화하기 위해 ONTAP 및 vCenter 객체를 자동으로 생성하고 유지 관리합니다.</block>
   <block id="6465cb40b753be2d9e804f4f78805149" category="paragraph">ONTAP 도구에서 데이터 저장소를 생성하는 동안 드롭다운에서 선택하는 대신 사용자 정의 igroup 이름을 입력할 수 있습니다. 그런 다음 ONTAP 도구는 지정된 이름을 사용하여 데이터 저장소 수준에서 상위 igroup을 만듭니다. 동일한 호스트가 여러 데이터 저장소에 사용되는 경우 기존 호스트 수준(자식) igroup이 재사용됩니다. 결과적으로 새로운 데이터 저장소의 LUN은 기존 자식 igroup에 매핑되며, 이제 여러 부모 igroup(각 데이터 저장소당 하나씩)과 연결될 수 있습니다. vCenter Server 인터페이스에서 사용자 지정 igroup 이름이 포함된 새 데이터 저장소를 볼 수 있습니다.</block>
   <block id="fa885aacf6740d8be756318202aaeea3" category="paragraph">ONTAP 도구에서 데이터 저장소 검색을 실행하면 ONTAP 도구는 플랫 igroup을 중첩 구조로 변환합니다. 그런 다음 ONTAP 도구는 igroup을 관리하고 'otv_' 접두사로 이름을 바꿉니다. LUN은 이 프로세스 내내 동일한 igroup에 매핑된 상태로 유지됩니다.</block>
   <block id="6e63f9b05e0f51c3646052747b709edf" category="paragraph">ONTAP 도구에서 관리하는 igroup을 사용하여 ONTAP 시스템에서 처음 생성된 데이터 저장소를 ONTAP 도구에서 생성할 수 있습니다. 이러한 igroup은 사용자 정의 이니시에이터 그룹 이름 드롭다운 목록에 나타납니다. 그런 다음 데이터 저장소의 새 LUN은 "otv_NativeIgroup1"과 같은 해당 정규화된 자식 igroup에 매핑됩니다.</block>
@@ -2628,7 +2626,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="4f8fbebc962f05c4dfc0237789208547" category="paragraph">배포가 오류 코드 114와 함께 실패하면 다음 단계를 완료하십시오.</block>
   <block id="4780dfcfb0a5ecdfae0e318e6542d23a" category="list-text">진단 셸을 활성화합니다.</block>
   <block id="611a014c34b69fef8cff8cd0a561aee9" category="list-text">다음 명령을 실행합니다.<block ref="44eaadaddba398d530de456241b9f3da" prefix=" " category="inline-code"></block></block>
-  <block id="0a757ce751065b64e3352b32c640a98a" category="list-text"><block ref="7554706fe49df304ac54d9ab0e3a3ca3" prefix=" " category="inline-code"></block>에서 로그를 검토하십시오.</block>
   <block id="a312ce26b8ed1d9b491805fe774f55aa" category="paragraph">vVols 데이터스토어를 구성하려면 VASA Provider 서비스를 활성화해야 합니다. vCenter에 VASA 공급자를 등록하고 적절한 네트워크 및 스토리지 구성을 포함하여 스토리지 정책이 HA 요구 사항을 충족하는지 확인하십시오.</block>
   <block id="3f07b7680deaadf68a28477426629d63" category="admonition">향후 HA 배포를 활성화하려면 ONTAP tools 가상 머신을 ESXi 호스트에 직접 배포하지 마십시오. 대신 ESXi 호스트 클러스터 또는 리소스 풀 내에 배포하십시오.</block>
   <block id="b1ddccad5b5afdfe2272b6e7c0be4bc6" category="list-text">페이지 오른쪽에서 *Actions*를 선택하고 *Import item*을 선택한 다음 OVA 파일을 가져옵니다.</block>
@@ -2703,7 +2700,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="09a7c391005da807f6dee49c0fb6789e" category="list-text">ONTAP tools Manager에서 SRA 서비스를 활성화하십시오. 자세한 내용은 <block ref="39b62016395601556cd6c6d261d293be" category="inline-link-macro-rx"></block> 섹션을 참조하십시오.</block>
   <block id="8e14dbb27ed333e155285b318187bdc6" category="list-text">vCenter 서버를 ONTAP tools for VMware vSphere 어플라이언스에 추가합니다. 자세한 내용은 <block ref="3dbde986d1342171f2ded3fc331c93f7" category="inline-link-macro-rx"></block> 섹션을 참조하십시오.</block>
   <block id="98d22aed7deed599da3d87eaa4409a67" category="list-text">ONTAP tools for VMware vSphere에 스토리지 백엔드를 추가합니다. 자세한 내용은 <block ref="a4b852b9645b4ce1db7f6b1fa35e7953" category="inline-link-macro-rx"></block> 섹션을 참조하십시오.</block>
-  <block id="0633e5dc36205f30a5af18c5068635f1" category="admonition">스토리지 복제 어댑터(SRA)는 Automated Failover Duplex 유형의 동기 관계 1개와 일관성 그룹의 비동기 SnapMirror 관계를 사용하는 팬아웃을 지원합니다. 그러나 일관성 그룹에서 두 개의 비동기 SnapMirror 관계를 사용하거나 볼륨에서 SnapMirror 관계를 사용하여 팬아웃하는 것은 지원되지 않습니다. Vault 유형의 SnapMirror 관계는 이러한 팬아웃 제한에 포함되지 않습니다. SRA의 일관성 그룹 지원은 Unified 및 ASA r2 스토리지 시스템의 SAN 프로토콜(iSCSI 및 Fibre Channel)로 제한됩니다. NFS의 경우 일관성 그룹이 지원되지 않으며, NFS 데이터스토어 볼륨이 일관성 그룹에 속한 경우 장치 검색 작업이 실패합니다.</block>
   <block id="a4c40bc478ce5f55e59a4aab72716a37" category="list-text">*Type* 필드에서 NFS 및 VMFS 데이터 저장소에 대해 *Type field option...*을 데이터 저장소 그룹(어레이 기반 복제)으로 선택합니다. 장애 도메인은 복제가 활성화된 SVM으로 구성됩니다. 피어링만 구현되어 있고 문제가 없는 SVM이 표시됩니다.</block>
   <block id="00a510939945fb6eb144a70baf6f9fd4" category="admonition">지정된 타임아웃 간격은 최대값입니다. 최대 타임아웃 시간이 될 때까지 기다릴 필요는 없습니다. 대부분의 명령은 설정된 최대 타임아웃 간격 내에 완료됩니다.</block>
   <block id="0c00b4af56bd9b91aa675fff4e45e3b1" category="admonition">SRA 워크플로의 일관성 그룹은 Unified 및 ASA r2 스토리지 시스템 모두에서 SAN 프로토콜(iSCSI 및 Fibre Channel)을 통해서만 지원됩니다.</block>
@@ -2763,4 +2759,8 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="643cb37fb2acf3124bc8318042c61ff5" category="list-text">운영 노드를 재부팅합니다.</block>
   <block id="e9ea3eb60fedc2c670f5dcd02007c32b" category="list-text">ASA r2 시스템의 경우, 추가 스토리지 가용성 영역(SAZ)을 설정하기 전에 VMware vSphere용 ONTAP tools를 10.5로, ONTAP을 9.16.1로 업그레이드해야 합니다.</block>
   <block id="c7350f69257f107789d11e22929c1c1d" category="list-text">메시지가 표시되면 vCenter 자격 증명을 제공하십시오. 이는 ONTAP tools가 호스팅되는 vCenter 인스턴스입니다.</block>
+  <block id="1fd4970a87fe9d5dd4ecbaf6fc97bc98" category="list-text"><block ref="7554706fe49df304ac54d9ab0e3a3ca3" prefix=" " category="inline-code"></block>에서 로그를 검토하십시오</block>
+  <block id="13851b8712fd713a2b4c64e5c006d207" category="paragraph">ONTAP tools for VMware vSphere 10.4부터 ONTAP tools는 ONTAP 및 vCenter 객체를 자동으로 생성하고 유지 관리하여 VMware 데이터 센터 환경에서 데이터 저장소 관리를 간소화합니다.</block>
+  <block id="8a905a5ae0b4e8a047369390f0e12e9a" category="admonition">스토리지 복제 어댑터(SRA)는 자동 페일오버 이중 유형의 동기 관계 1개와 일관성 그룹의 비동기 SnapMirror 관계를 사용하는 팬아웃을 지원합니다. 그러나 일관성 그룹에서 두 개의 비동기 SnapMirror 관계를 사용하거나 볼륨에서 SnapMirror 관계를 사용하여 팬아웃하는 것은 지원되지 않습니다. Vault 유형의 SnapMirror 관계는 이러한 팬아웃 제한에 포함되지 않습니다. SRA의 일관성 그룹 지원은 Unified 및 ASA r2 스토리지 시스템의 SAN 프로토콜(iSCSI 및 파이버 채널)로 제한됩니다. NFS의 경우 일관성 그룹이 지원되지 않습니다. NFS 데이터스토어 볼륨이 일관성 그룹에 배치되면 장치 검색 작업이 실패합니다.</block>
+  <block id="130feced60ff3be4c19a41924346eaef" category="paragraph">스토리지 시스템은 보호 사이트와 복구 사이트에서 *Enabled* 상태로 검색되어야 합니다.</block>
 </blocks>
