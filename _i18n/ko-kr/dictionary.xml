@@ -1668,7 +1668,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="0166be8b4848389c414e9e383efe9111" category="list-text">관리되지 않는 데이터 저장소로 이동하려면 다음을 참조하세요.<block ref="920cfb03e9def61d5164fb56cf050dd9" category="inline-link-rx"></block></block>
   <block id="fc7036d1f06934713fc1a767e1354518" category="doc">ONTAP 도구 관리 igroups 이해</block>
   <block id="09b08f3348efbf7921da442f813dafc9" category="paragraph-title">ONTAP 도구가 아닌 관리되는 igroups</block>
-  <block id="bd5590df3d8bf4ea4ee4375d1502b60e" category="paragraph">스토리지 관리자는 ONTAP 시스템에서 플랫 또는 중첩 구조로 igroup을 생성할 수 있습니다.  이 그림은 ONTAP 시스템에서 생성된 플랫 igroup을 보여줍니다.</block>
   <block id="9738529e665f70e20304e0f0ff9c5f51" category="inline-image-macro">ONTAP 도구가 아닌 igroup 관리</block>
   <block id="572cd36eaad5edc6b82b660df677a0cd" category="paragraph"><block ref="572cd36eaad5edc6b82b660df677a0cd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e349a4e96a32db77479984ded59c694d" category="paragraph-title">ONTAP 도구로 관리되는 igroups</block>
@@ -1677,23 +1676,10 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="034ec76def2bb67df2065a028531ceda" category="paragraph"><block ref="034ec76def2bb67df2065a028531ceda" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b4214e66e80d2bcb41c3a862d82b9be2" category="inline-image-macro">ONTAP 도구는 재사용된 자식 igroup을 사용하여 igroup을 관리합니다.</block>
   <block id="92693985d1c42619843939f9e549ff4d" category="paragraph"><block ref="92693985d1c42619843939f9e549ff4d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b87bdb91525521ea25fb7906bd91baff" category="paragraph">다음은 ONTAP tools for VMware vSphere 의 몇 가지 사례입니다.</block>
-  <block id="55a92eda3ff0514692e00dcb0f2d7cc2" category="paragraph">*기본 igroup 설정으로 데이터 저장소를 생성하는 경우*</block>
-  <block id="1c3da32f7c8b5c4b73670520c6d915ad" category="paragraph">데이터 저장소를 생성하고 igroup 필드를 비워 두면(기본 설정), ONTAP 도구가 자동으로 해당 데이터 저장소에 대한 중첩된 igroup 구조를 생성합니다.  데이터 저장소 수준의 상위 igroup은 otv_&lt;vcguid&gt;_&lt;host_parent_datacenterMoref&gt;_&lt;datastore_name&gt; 패턴을 사용하여 명명됩니다.  각 호스트 수준 자식 igroup은 otv_&lt;hostMoref&gt;_&lt;vcguid&gt; 패턴을 따릅니다.  ONTAP 스토리지 인터페이스의 *부모 이니시에이터 그룹* 섹션에서 부모(데이터 저장소 수준) igroup과 자식(호스트 수준) igroup 간의 연결을 볼 수 있습니다.</block>
-  <block id="ee3d151b62d26a89578248357e3029cd" category="paragraph">중첩된 igroup 방식을 사용하면 LUN이 자식 igroup에만 매핑됩니다. 그러면 vCenter Server 인벤토리에 새 데이터 저장소가 표시됩니다.</block>
-  <block id="5f91cedf4c98e30169434f231ea6f548" category="paragraph">*사용자 정의 igroup 이름으로 데이터 저장소를 생성하는 경우*</block>
-  <block id="7962aa53f71f6f9f84f510a6c3819900" category="paragraph">*데이터 저장소 생성 중에 igroup 이름을 재사용하는 경우*</block>
-  <block id="719398cb6c9b709be107c189acbacc9d" category="paragraph">ONTAP 도구 사용자 인터페이스를 사용하여 데이터 저장소를 만들 때 드롭다운 목록에서 기존 사용자 정의 상위 igroup을 선택할 수 있습니다.  부모 igroup을 재사용하여 다른 데이터 저장소를 만든 후 ONTAP 시스템 사용자 인터페이스에 이 연결이 표시됩니다.  새로운 데이터스토어는 vCenter Server 사용자 인터페이스에도 나타납니다.</block>
-  <block id="7abc9e8ecfbb61a94b76a3fc28b26787" category="paragraph">이 작업은 API를 사용하여 수행할 수도 있습니다.  데이터 저장소를 생성하는 동안 기존 igroup을 재사용하려면 API 요청 페이로드에서 igroup UUID를 지정하세요.</block>
-  <block id="9568557fa9cc46f2d4ebe9507bb3c311" category="paragraph">* ONTAP 및 vCenter에서 기본적으로 데이터스토어와 igroup을 생성하는 경우*</block>
-  <block id="769802e52d4a8981aaa41119a73a4e20" category="paragraph">ONTAP 시스템과 VMware 환경에서 igroup과 데이터스토어를 직접 생성하는 경우 ONTAP 도구는 처음에는 이러한 객체를 관리하지 않습니다.  이렇게 하면 평평한 igroup 구조가 생성됩니다.</block>
   <block id="765aaa2d59837937f427f2cf53f50d56" category="inline-image-macro">기본적으로 생성된 Datastore 및 igroup</block>
   <block id="d50eb6343e578f63482a86c6c5273fc9" category="paragraph"><block ref="d50eb6343e578f63482a86c6c5273fc9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6d218e6795743d10ae8f5a4c09dd122f" category="paragraph">ONTAP 도구를 사용하여 기존 데이터 저장소와 igroup을 관리하려면 데이터 저장소 검색을 수행해야 합니다.  ONTAP 도구는 데이터 저장소와 igroup을 식별하고 등록하며, 이를 데이터베이스의 중첩 구조로 변환합니다.  사용자 지정 이름을 사용하여 새로운 부모 igroup이 생성되고, 기존 igroup의 이름은 "otv_" 접두사로 바뀌고 자식 igroup이 됩니다.  개시자 매핑은 변경되지 않습니다.  검색 중에는 데이터 저장소에 매핑된 igroup만 변환됩니다.  이후의 igroup 구조는 아래 그림과 같습니다.</block>
   <block id="926b1260b4878f62d14b84905c0f405f" category="inline-image-macro">ONTAP 도구로 관리되는 데이터 저장소 및 igroup</block>
   <block id="b9741b85de225ae753a2b0d17c93f26c" category="paragraph"><block ref="b9741b85de225ae753a2b0d17c93f26c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="47a4489bb0a008016124a87ac11ddd78" category="paragraph">* ONTAP 도구가 기본적으로 생성된 igroup을 재사용하는 방식*</block>
-  <block id="c01051c683682417a444926ea34fab23" category="paragraph">ONTAP tools for VMware vSphere ONTAP 도구에서 관리되지 않거나 데이터 저장소에 연결되지 않은 ONTAP 시스템에서 생성된 igroup을 감지하거나 사용하지 않습니다.</block>
   <block id="59ea5982ed0647b528de4b447de34293" category="paragraph">ONTAP tools for VMware vSphere vSphere 원격 플러그인 아키텍처를 사용하여 배포됩니다.  REST API 지원을 포함한 소프트웨어는 별도의 가상 머신에서 실행됩니다.</block>
   <block id="e16523d12fdec17545120726804461c5" category="cell">새로운 리소스 인스턴스를 생성하지 않는 호출의 경우 성공을 나타냅니다.</block>
   <block id="78bdf627584507d2f57a2e13f5e6f794" category="cell">요청에 언급된 리소스가 존재하지 않습니다.</block>
@@ -1953,8 +1939,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="5c7f849b2e350d34740fba56730e25ba" category="cell">스토리지 백엔드 카드는 ONTAP 도구에 구성된 모든 ONTAP 스토리지 클러스터의 상태와 연결 상태를 보여줍니다.  해당 링크를 선택하면 각 스토리지 백엔드에 대한 세부 정보를 볼 수 있으며, 선택한 클러스터에 대한 자세한 정보가 있는 페이지로 이동합니다.</block>
   <block id="7cc3bb1c6bb475d226bfbe5da1ebd38c" category="cell">ONTAP 도구 노드 카드는 노드 이름, VM 이름, 상태 및 네트워크 정보를 포함하여 어플라이언스의 모든 노드를 표시합니다.  특정 노드에 대한 자세한 내용을 보려면 *자세한 내용 보기*를 선택하세요.  [참고] HA가 아닌 구성에서는 단일 노드만 나타납니다.  HA 구성에서는 세 개의 노드가 표시됩니다.</block>
   <block id="5ab1668c9ec40eca8f10aa49dea404c7" category="list-text">마이그레이션하는 데이터스토어의 기능과 일치하는 가상 디스크 형식, VM 스토리지 정책 및 vVol 데이터스토어를 선택합니다.</block>
-  <block id="8406161320cdde68124591ab85e4092a" category="paragraph">ONTAP tools for VMware vSphere 두 가지 다른 맥락에서 igroup을 해석합니다.</block>
-  <block id="eef2558425e977ca0012ab130a151a4c" category="paragraph">데이터스토어를 생성하면 ONTAP tools for VMware vSphere LUN 매핑을 더 쉽게 하기 위해 중첩 구조를 사용하여 igroup을 자동으로 생성합니다.</block>
   <block id="dc48ac4a32526d5d7522c456f1f1cc94" category="paragraph">ONTAP tools for VMware vSphere 부터 백업 기능이 기본적으로 활성화됩니다.</block>
   <block id="4b22f5195e2a06a5686ef3db3a69b260" category="paragraph">ONTAP tools for VMware vSphere 배포하는 데이터 저장소에는 백업 파일이 저장됩니다.  ONTAP 도구 IP 주소(점은 밑줄로 대체되고 _OTV_backup_으로 접미사 추가)의 이름을 딴 폴더에는 가장 최근의 두 백업 파일(_OTV_backup_1.tar.enc_ 및 _OTV_backup_2.tar.enc_)과 최신 백업의 이름이 포함된 정보 파일(_OTV_backup_info.txt_)이 보관됩니다.</block>
   <block id="306eea5fcb683e6cb37822175d853d2c" category="paragraph">새로운 가상 머신이 동일한 ONTAP 도구 IP 주소를 사용하고 활성화된 서비스, 노드 크기, HA 모드를 포함한 초기 시스템 구성과 일치하는지 확인합니다.</block>
@@ -2092,9 +2076,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="265d1364e0c9a1c88e39aa2446ded154" category="paragraph">다른 데이터 저장소가 부모 igroup을 재사용하지 않는 한, 부모 및 자식 igroup은 제거됩니다.  자식 igroup은 명시적으로 삭제되지 않습니다.</block>
   <block id="cd703691d1da791a7eedb75ca98439de" category="paragraph">내보내기 정책은 ONTAP tools for VMware vSphere 에서 NFS 데이터 저장소 액세스와 클라이언트 권한을 제어합니다.  내보내기 정책은 ONTAP 시스템에서 생성 및 관리되며 NFS 데이터 저장소와 함께 사용하여 액세스 제어를 시행할 수 있습니다. 각 내보내기 정책은 액세스가 허용되는 클라이언트(IP 주소 또는 서브넷)와 부여되는 권한(읽기 전용 또는 읽기-쓰기)을 지정하는 규칙으로 구성됩니다.</block>
   <block id="4a03eb267c1ef745af6c9e425460c0ea" category="paragraph">ESXi 호스트에서 NFS 데이터스토어를 삭제하거나 마운트 해제하면 ONTAP tools for VMware vSphere 내보내기 정책에서 호스트의 IP 주소를 제거합니다. 다른 호스트가 해당 내보내기 정책을 사용하지 않으면 해당 정책은 삭제됩니다. NFS 데이터 저장소를 삭제하면 ONTAP tools for VMware vSphere 다른 데이터 저장소에서 재사용되지 않는 경우 해당 데이터 저장소와 연결된 내보내기 정책을 제거합니다. 내보내기 정책을 재사용하면 호스트 IP 주소가 유지되고 변경되지 않습니다. 데이터 저장소를 삭제하면 내보내기 정책은 호스트 IP 주소를 할당 해제하고 기본 내보내기 정책을 할당하여 필요한 경우 ONTAP 시스템이 해당 IP 주소에 액세스할 수 있도록 합니다.</block>
-  <block id="6465cb40b753be2d9e804f4f78805149" category="paragraph">ONTAP 도구에서 데이터 저장소를 생성하는 동안 드롭다운에서 선택하는 대신 사용자 정의 igroup 이름을 입력할 수 있습니다. 그런 다음 ONTAP 도구는 지정된 이름을 사용하여 데이터 저장소 수준에서 상위 igroup을 만듭니다. 동일한 호스트가 여러 데이터 저장소에 사용되는 경우 기존 호스트 수준(자식) igroup이 재사용됩니다. 결과적으로 새로운 데이터 저장소의 LUN은 기존 자식 igroup에 매핑되며, 이제 여러 부모 igroup(각 데이터 저장소당 하나씩)과 연결될 수 있습니다. vCenter Server 인터페이스에서 사용자 지정 igroup 이름이 포함된 새 데이터 저장소를 볼 수 있습니다.</block>
-  <block id="fa885aacf6740d8be756318202aaeea3" category="paragraph">ONTAP 도구에서 데이터 저장소 검색을 실행하면 ONTAP 도구는 플랫 igroup을 중첩 구조로 변환합니다. 그런 다음 ONTAP 도구는 igroup을 관리하고 'otv_' 접두사로 이름을 바꿉니다. LUN은 이 프로세스 내내 동일한 igroup에 매핑된 상태로 유지됩니다.</block>
-  <block id="6e63f9b05e0f51c3646052747b709edf" category="paragraph">ONTAP 도구에서 관리하는 igroup을 사용하여 ONTAP 시스템에서 처음 생성된 데이터 저장소를 ONTAP 도구에서 생성할 수 있습니다. 이러한 igroup은 사용자 정의 이니시에이터 그룹 이름 드롭다운 목록에 나타납니다. 그런 다음 데이터 저장소의 새 LUN은 "otv_NativeIgroup1"과 같은 해당 정규화된 자식 igroup에 매핑됩니다.</block>
   <block id="cf78d06b764932bff9c08da08c607da8" category="paragraph">시스템은 작업 객체를 반환합니다.  다음 단계에서 사용할 작업 식별자를 저장하세요.</block>
   <block id="8c72adfd7c929e7f36ec5083f128105b" category="list-text">마이그레이션된 NFS 및 VMFS 데이터 저장소는 데이터 저장소 검색 작업 후 ONTAP tools for VMware vSphere 에 나타나며, 이 작업에는 최대 30분이 걸릴 수 있습니다.  개요 페이지에서 가시성을 확인하세요.</block>
   <block id="03785cc80d260849e9ee53ea9ad304bf" category="list-text">*검색*이 완료될 때까지 기다리면 시스템이 모든 호스트의 인증서를 자동으로 새로 고칩니다.</block>
@@ -2199,7 +2180,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="403e2c858b37daa43171ef37b71e6640" category="paragraph"><block ref="403e2c858b37daa43171ef37b71e6640" category="inline-link-macro-rx"></block></block>
   <block id="8664aa558a2cba72e1c6505af0d61e83" category="list-text">호스트 클러스터가 균일한 구성으로 보호되는 경우 vSphere는 마운트 데이터스토어 옵션을 비활성화합니다.</block>
   <block id="a1f04821262e5782b06fa1bb2f7ef076" category="list-text">호스트 또는 호스트 클러스터에 NFS/VMFS 데이터 저장소를 마운트하려면 마우스 오른쪽 버튼을 클릭하고 * NetApp ONTAP 도구* &gt; *데이터 저장소 마운트*를 선택합니다.</block>
-  <block id="0b58e93bbab007c21f9f301adb42dc99" category="paragraph">ONTAP 도구 VM과 ONTAP 스토리지 시스템을 모두 관리하는 경우 igroup의 작동 방식을 이해하는 것이 중요합니다. 특히 ONTAP 도구로 관리되지 않는 환경에서 ONTAP 도구로 관리되는 환경으로 데이터 저장소를 옮길 때 더욱 그렇습니다. 이 페이지에서는 이 프로세스 중에 igroup이 어떻게 업데이트되는지 설명합니다.</block>
   <block id="fa8e5790b9361467cce37c07e12ce82a" category="paragraph">이 페이지에서는 vVols 데이터 저장소에서 볼륨을 제거하는 방법을 설명합니다.</block>
   <block id="0af9e2225c011d534179288b190817a8" category="paragraph">vCenter Server의 ONTAP 도구에서 관리하는 모든 vVols 데이터스토어에서 데이터스토어에서 스토리지 제거 작업을 사용합니다.</block>
   <block id="ccfaf6c006e0fbebe82be5ae3a6c2815" category="list-text">vVols 없는 볼륨을 선택하고 *제거*를 선택합니다.</block>
@@ -2682,7 +2662,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="a6dfe44f5c26ee3ec5e4275783b3873f" category="paragraph">ASA r2 스토리지 시스템에서 가상 머신 스냅샷의 동작은 다른 스토리지 유형과 다릅니다. 스냅샷은 읽기 전용입니다. 가상 머신을 시작하면 VASA Provider는 읽기 전용 스냅샷에서 LUN을 생성하고 IOPS를 활성화합니다. 가상 머신을 끄면 VASA Provider는 LUN을 삭제하고 IOPS를 비활성화합니다.</block>
   <block id="22cc0668c6bda3d1c1aa2f8059fba974" category="inline-link">스냅샷으로 가상 머신 관리</block>
   <block id="993612df9e7e6b4ae1480f4b1082805b" category="paragraph">가상 머신 스냅샷 관리에 대한 자세한 내용은 Broadcom 설명서<block ref="26787598a32c0b6e75a5e6887328ed87" category="inline-link-rx"></block>를 참조하십시오.</block>
-  <block id="edf526e13d6c30745e69e082c977ac8a" category="admonition">사용자 정의 igroup만 재사용할 수 있습니다. ONTAP tools 9.x에서 마이그레이션 중에 생성된 igroup(마이그레이션된 igroup)은 재사용할 수 없으며, ONTAP tools 10.5P2부터는 더 이상 사용하지 않을 경우 자동으로 삭제됩니다.</block>
   <block id="5e47c699225f9c6134236e2019564ec3" category="paragraph">게스트 OS 재시작 작업 중에 GRUB 메뉴에 유지 관리 콘솔 사용자 암호를 재설정하는 옵션이 표시됩니다. 이 옵션을 사용하여 VM의 유지 관리 콘솔 사용자 암호를 업데이트하십시오. 암호를 재설정하면 VM이 재시작되어 새 암호가 설정됩니다. HA 배포 시나리오에서 VM이 재시작되면 나머지 두 VM의 암호도 자동으로 업데이트됩니다.</block>
   <block id="9e6b10df4957c54ec814e189c6532a65" category="list-text">가상 머신을 마우스 오른쪽 버튼으로 클릭하고 *전원* &gt; *게스트 OS 다시 시작*을 선택합니다. 시스템이 다시 시작되면 다음 화면이 나타납니다: <block ref="515bd311b9d352624722007b23637a91" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2cdcbfb16b1e7a2981a34ccc1a4f72e8" category="admonition">가상 머신을 켜면 동일한 GRUB 메뉴가 나타납니다. 하지만 암호 재설정 옵션은 *Restart Guest OS* 옵션과 함께 사용해야 합니다.</block>
@@ -2758,9 +2737,58 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="e9ea3eb60fedc2c670f5dcd02007c32b" category="list-text">ASA r2 시스템의 경우, 추가 스토리지 가용성 영역(SAZ)을 설정하기 전에 VMware vSphere용 ONTAP tools를 10.5로, ONTAP을 9.16.1로 업그레이드해야 합니다.</block>
   <block id="c7350f69257f107789d11e22929c1c1d" category="list-text">메시지가 표시되면 vCenter 자격 증명을 제공하십시오. 이는 ONTAP tools가 호스팅되는 vCenter 인스턴스입니다.</block>
   <block id="1fd4970a87fe9d5dd4ecbaf6fc97bc98" category="list-text"><block ref="7554706fe49df304ac54d9ab0e3a3ca3" prefix=" " category="inline-code"></block>에서 로그를 검토하십시오</block>
-  <block id="13851b8712fd713a2b4c64e5c006d207" category="paragraph">ONTAP tools for VMware vSphere 10.4부터 ONTAP tools는 ONTAP 및 vCenter 객체를 자동으로 생성하고 유지 관리하여 VMware 데이터 센터 환경에서 데이터 저장소 관리를 간소화합니다.</block>
   <block id="8a905a5ae0b4e8a047369390f0e12e9a" category="admonition">스토리지 복제 어댑터(SRA)는 자동 페일오버 이중 유형의 동기 관계 1개와 일관성 그룹의 비동기 SnapMirror 관계를 사용하는 팬아웃을 지원합니다. 그러나 일관성 그룹에서 두 개의 비동기 SnapMirror 관계를 사용하거나 볼륨에서 SnapMirror 관계를 사용하여 팬아웃하는 것은 지원되지 않습니다. Vault 유형의 SnapMirror 관계는 이러한 팬아웃 제한에 포함되지 않습니다. SRA의 일관성 그룹 지원은 Unified 및 ASA r2 스토리지 시스템의 SAN 프로토콜(iSCSI 및 파이버 채널)로 제한됩니다. NFS의 경우 일관성 그룹이 지원되지 않습니다. NFS 데이터스토어 볼륨이 일관성 그룹에 배치되면 장치 검색 작업이 실패합니다.</block>
   <block id="130feced60ff3be4c19a41924346eaef" category="paragraph">스토리지 시스템은 보호 사이트와 복구 사이트에서 *Enabled* 상태로 검색되어야 합니다.</block>
   <block id="f6db8158f30cb5444097d38ac58ea534" category="paragraph">2개의 vCenter Server 토폴로지에서 ONTAP 도구를 배포하는 경우(어플라이언스가 하나의 vCenter 인스턴스에서 호스팅되고 다른 인스턴스를 관리하는 경우) ONTAP 도구를 호스팅하는 vCenter 인스턴스에 제한된 역할을 할당할 수 있습니다. OVF 템플릿 배포에 필요한 권한만 있는 전용 vCenter 사용자 및 역할을 생성할 수 있습니다. 자세한 내용은 <block ref="195bdbec94ccbccdb53d22ac92079db9" category="inline-link-macro-rx"></block>에 나열된 역할을 참조하십시오.</block>
   <block id="f8eb6f34101d2549cf54a3790c57397e" category="paragraph">ONTAP 도구를 두 개의 vCenter Server 토폴로지(어플라이언스가 하나의 vCenter 인스턴스에서 호스팅되고 다른 인스턴스를 관리하는 경우)에서 사용하는 경우, ONTAP 도구를 호스팅하는 vCenter 인스턴스에 제한된 역할을 할당할 수 있습니다. OVF 템플릿 배포에 필요한 권한만 있는 전용 vCenter 사용자 및 역할을 생성할 수 있습니다. 자세한 내용은 <block ref="195bdbec94ccbccdb53d22ac92079db9" category="inline-link-macro-rx"></block>에 나열된 역할을 참조하십시오.</block>
+  <block id="214248d585b70b2960756c0a7f628a71" category="summary">ONTAP tools for VMware vSphere가 igroup을 어떻게 표현하고 관리하는지, 중첩 igroup 동작, 재사용, 그리고 10.5 P2 정리 변경 사항을 포함하여 알아보십시오.</block>
+  <block id="da450a701c49172b37bf4971370bc3f4" category="paragraph">ONTAP 도구 VM과 ONTAP 스토리지 시스템을 모두 관리하는 경우, 특히 ONTAP 도구로 관리되지 않는 환경에서 관리되는 환경으로 데이터스토어를 이동할 때 igroup의 동작 방식을 이해하는 것이 중요합니다. 이 페이지에서는 ONTAP tools for VMware vSphere가 igroup을 표현하고 관리하는 방식을 설명합니다. 이는 이전 릴리스와 현재의 중첩 igroup 모델 간의 동작 차이를 이해하기 위한 개념적인 정보입니다.</block>
+  <block id="a83fac25f150a3e5e2154a4819a8d47c" category="paragraph">ONTAP tools for VMware vSphere 10.4부터 ONTAP tools는 ONTAP 및 vCenter 객체를 자동으로 생성하고 유지 관리하여 VMware 데이터 센터 환경에서 데이터 저장소 관리를 간소화합니다. ONTAP tools for VMware vSphere 10.5 P2부터는 마이그레이션된 igroup이 더 이상 사용되지 않을 경우 자동으로 삭제됩니다.</block>
+  <block id="915fd0444b3d91b928c15a7bd8f7c701" category="section-title">간략한 동작 요약</block>
+  <block id="88b6a35841af92779f821e186e63bae2" category="list-text">ONTAP tools for VMware vSphere로 관리되는 VMFS 데이터 저장소는 중첩된 igroup을 사용합니다. 데이터 저장소 컨텍스트당 하나의 상위 igroup과 호스트당 하나의 하위 igroup이 있습니다.</block>
+  <block id="2bb39d27dd5419bcc12b0e856f644d1e" category="list-text">LUN 매핑은 하위 igroup에 적용됩니다.</block>
+  <block id="fca9b56b2c94a98e222c433827cb910b" category="list-text">사용자 지정 상위 igroup은 데이터 저장소 간에 재사용할 수 있습니다.</block>
+  <block id="7be45ec5613a1c5a79c5e3daa31d705b" category="list-text">ONTAP tools for VMware vSphere 9.x에서 마이그레이션된 igroup은 재사용할 수 없습니다.</block>
+  <block id="8a1c578725035499525a2cd667d572bb" category="section-title">igroup 컨텍스트</block>
+  <block id="77304d68d27da03f8ea5e41bd8eff702" category="paragraph">ONTAP tools for VMware vSphere는 두 가지 컨텍스트에서 igroup을 처리합니다.</block>
+  <block id="573a174a2f78c5bd453d5fd05d096c0d" category="paragraph">스토리지 관리자는 ONTAP 시스템에서 평면 또는 중첩 구조로 igroup을 생성할 수 있습니다. 다음 그림은 ONTAP에서 직접 생성된 평면 igroup을 보여줍니다.</block>
+  <block id="e9b4c2e3bcde7f0fce99faf7549bc6d3" category="paragraph">데이터스토어를 생성할 때 ONTAP tools for VMware vSphere는 중첩 구조로 igroup을 생성합니다.</block>
+  <block id="ec187b67cf4829ebc2f6df29f31e2392" category="section-title">명명 동작</block>
+  <block id="d1c5748e01e91556c4d989655a59ee0a" category="paragraph">데이터 저장소를 생성할 때 igroup 필드를 비워두면 ONTAP tools는 기본적으로 중첩된 igroup 구조를 생성합니다.</block>
+  <block id="d3be99bc14fe8df74f6008b8cfa92e08" category="list-text">상위 igroup 명명 패턴:<block ref="f4287b384ebb2ccc8653d38f5649577e" prefix=" " category="inline-code"></block></block>
+  <block id="2ba177ed6f34e424a5194cd1f39fb0ce" category="list-text">하위 igroup 명명 패턴:<block ref="6801a15d5168d5d2cc3c46751c963243" prefix=" " category="inline-code"></block></block>
+  <block id="795d4eceef57fdba5f9404802d63bfaa" category="paragraph">ONTAP 시스템 인터페이스는 *상위 이니시에이터 그룹* 필드에서 상위 및 하위 igroup 간의 관계를 보여줍니다.</block>
+  <block id="d848190696e2cdebe1570c54062c81b8" category="section-title">시나리오별 동작</block>
+  <block id="54861efdd06fc309e1c9a420feff98eb" category="cell">시나리오</block>
+  <block id="31e36803f0bf0431cfa4bdb228024384" category="cell">상위 igroup 동작</block>
+  <block id="3031561d49c5412fba1879d7eb33e53c" category="cell">하위 igroup 동작</block>
+  <block id="4fcc811078f0ccf125075d9be66792be" category="cell">LUN 매핑 및 가시성</block>
+  <block id="4d0a03a57349782e04b82d0ce459a1a0" category="cell">기본 igroup 설정으로 생성된 데이터 저장소</block>
+  <block id="f0565ff7aafb25a2ac9eb5be70b7a056" category="cell">기본 ONTAP tools 관리 상위 igroup이 생성됩니다.</block>
+  <block id="9b2b1d5892468527a83c5758b597a4f4" category="cell">호스트 수준의 하위 igroup은 필요에 따라 생성됩니다.</block>
+  <block id="7d0b8026e147959cc4941ba03502b8dd" category="cell">LUN은 하위 igroup에 매핑됩니다. 데이터 저장소가 vCenter Server 인벤토리에 나타납니다.</block>
+  <block id="46b25a383828719a28355c6625db7cef" category="cell">사용자 지정 igroup 이름으로 생성된 데이터 저장소</block>
+  <block id="98d0a0feb7ff152a04c96585c62b3326" category="cell">지정된 이름으로 사용자 지정 상위 igroup이 생성됩니다.</block>
+  <block id="45776dcaac336ca04df3e2b6d4b8191b" category="cell">호스트가 중복될 경우 기존 호스트 수준 하위 igroup이 재사용됩니다.</block>
+  <block id="d9688db405ee441f82a58c0e7487a726" category="cell">새 데이터스토어 LUN이 재사용되거나 새로 생성된 하위 igroup에 매핑됩니다. 데이터스토어가 vCenter Server에 나타납니다.</block>
+  <block id="2ff880f8dd8ded23071f4716935b8a6d" category="cell">데이터 저장소 생성 중에 기존 사용자 지정 igroup이 재사용됩니다</block>
+  <block id="57ef6c01207eadf8a19e400013075605" category="cell">기존의 사용자 지정 상위 igroup이 선택되어 재사용됩니다.</block>
+  <block id="8537d76ae88945f59633e1db30a75b33" category="cell">하위 igroup은 호스트 멤버십에 따라 재사용되거나 확장됩니다.</block>
+  <block id="c949eb6e57e86518ac322f58161e5383" category="cell">새 데이터스토어 LUN은 연결된 하위 igroup을 통해 매핑됩니다. 데이터스토어가 vCenter Server에 나타납니다.</block>
+  <block id="b47bb8c7bacb1d6d7cedfcc1a989423b" category="cell">데이터스토어와 igroup은 ONTAP 및 vCenter에서 기본적으로 생성된 후 ONTAP tools에서 검색됩니다</block>
+  <block id="0fa862d3485c5ba2f8635fb497a7ce5e" category="cell">ONTAP tools는 관리 컨텍스트에 상위 igroup을 생성하고 원래 igroup 이름을 유지합니다.</block>
+  <block id="309d4549a45baea8e4267e6492ff80af" category="cell">ONTAP tools는 원래 igroup의 이름을 <block ref="aab72ee24c6cb7d0cb1a4f9f52b31c7a" prefix=" " category="inline-code"></block> 접두사로 변경하고 계층 구조에서 하위 igroup으로 나타냅니다.</block>
+  <block id="ae8a7bd9b8003d620b3f5fcd3d59fd7d" category="cell">이니시에이터 매핑은 변경되지 않습니다. 검색 중에 데이터 저장소에 매핑된 igroup만 변환됩니다.</block>
+  <block id="1be9c7853125fa91d752d5642ac7815f" category="section-title">사용자 정의 igroup 재사용 및 API 동작</block>
+  <block id="a6a135e095ad24b653af368cc820207d" category="paragraph">ONTAP tools for VMware vSphere 사용자 인터페이스에서 데이터 저장소를 생성하는 동안 드롭다운 목록에서 기존 사용자 지정 상위 igroup을 재사용할 수 있습니다.</block>
+  <block id="b1901f1f6cc126b36c3ff958f06b3758" category="paragraph">API를 통해서도 동일한 동작이 지원됩니다. 데이터 저장소 생성 중에 기존 igroup을 재사용하려면 API 요청 페이로드에 igroup UUID를 제공하십시오.</block>
+  <block id="4fa079a1f5cab34f881f8b6ababb95df" category="admonition">사용자 정의 igroup만 재사용할 수 있습니다. ONTAP tools 9.x에서 마이그레이션된 igroup은 재사용할 수 없으며, ONTAP tools 10.5 P2부터는 더 이상 사용하지 않을 경우 자동으로 삭제됩니다.</block>
+  <block id="a7a9fe023a2f428690fb8aa6cc6a8dfd" category="section-title">네이티브에서 관리형으로의 전환 보기</block>
+  <block id="ad3f469106fbcef8e5ab970c5749f59b" category="paragraph">ONTAP 시스템 및 VMware 환경에서 igroup과 데이터스토어를 직접 생성하는 경우, ONTAP tools는 초기에는 이러한 객체를 관리하지 않습니다. 따라서 igroup 구조가 평면적으로 생성됩니다.</block>
+  <block id="fb15774e938bc74abaac49d5ebb52fe8" category="paragraph">데이터 저장소 검색 후 ONTAP tools는 데이터 저장소에 매핑된 igroup을 식별하고 등록한 다음 중첩 모델로 표현합니다. 상위 igroup은 데이터 저장소 수준에서 표현되고, 기존 igroup은<block ref="aab72ee24c6cb7d0cb1a4f9f52b31c7a" prefix=" " category="inline-code"></block> 접두사가 붙은 하위 igroup으로 이름이 변경되며, 이니시에이터 매핑은 변경되지 않습니다.</block>
+  <block id="6b48aae04023f64a58fe48f72131f50c" category="paragraph">ONTAP tools for VMware vSphere는 ONTAP 시스템에서 생성되었지만 데이터 저장소에 매핑되지 않았거나 ONTAP tools에 연결되지 않은 igroup을 감지하거나 관리하지 않습니다. 검색 중에 ONTAP tools는 검색된 데이터 저장소에 매핑된 igroup만 변환하며, 다른 igroup은 관리되지 않은 상태로 유지됩니다.</block>
+  <block id="2d0a7cdbdd21a063457344edcd4f0bd2" category="section-title">발견된 네이티브 igroup의 재사용</block>
+  <block id="45f0d050845f640650733b37410eca9f" category="paragraph">ONTAP tools for VMware vSphere가 검색된 네이티브 igroup을 관리한 후에는 해당 igroup이 데이터 저장소 생성을 위한 사용자 지정 이니시에이터 그룹 이름 드롭다운 목록에서 사용 가능해집니다.</block>
+  <block id="8d90581e01616bc6e833be117c8bf966" category="paragraph">새 데이터 저장소 LUN은 정규화된 하위 igroup에 매핑됩니다(예:<block ref="e2e2c5bf7535645ea2278f194b28ad1e" prefix=" " category="inline-code"></block>).</block>
+  <block id="270b8c3a2baff1c0296c4a92204b5a54" category="paragraph">ONTAP tools for VMware vSphere는 ONTAP tools로 관리되지 않거나 데이터스토어에 연결되지 않은 ONTAP 시스템에서 생성된 igroup을 감지하거나 사용하지 않습니다.</block>
 </blocks>
