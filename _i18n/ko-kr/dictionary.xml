@@ -2791,4 +2791,8 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="45f0d050845f640650733b37410eca9f" category="paragraph">ONTAP tools for VMware vSphere가 검색된 네이티브 igroup을 관리한 후에는 해당 igroup이 데이터 저장소 생성을 위한 사용자 지정 이니시에이터 그룹 이름 드롭다운 목록에서 사용 가능해집니다.</block>
   <block id="8d90581e01616bc6e833be117c8bf966" category="paragraph">새 데이터 저장소 LUN은 정규화된 하위 igroup에 매핑됩니다(예:<block ref="e2e2c5bf7535645ea2278f194b28ad1e" prefix=" " category="inline-code"></block>).</block>
   <block id="270b8c3a2baff1c0296c4a92204b5a54" category="paragraph">ONTAP tools for VMware vSphere는 ONTAP tools로 관리되지 않거나 데이터스토어에 연결되지 않은 ONTAP 시스템에서 생성된 igroup을 감지하거나 사용하지 않습니다.</block>
+  <block id="3830b8eac1743f2f8fe4765b99fa2547" category="summary">ONTAP 도구에서 vCenter 인스턴스에 대해 로컬로 또는 클러스터 전체 검색을 위해 전역적으로 스토리지 백엔드를 추가 및 관리합니다.</block>
+  <block id="986013590d14c5a1a3fba70da34aec61" category="inline-link">OTV 10: 스토리지 백엔드 글로벌 및 로컬 범위란 무엇인가</block>
+  <block id="7a2217d00eec7417d83566729e06f7aa" category="paragraph">글로벌 및 로컬 스토리지 백엔드에 대한 자세한 내용은 KB 문서<block ref="8136f7308c7184af5e69534cb5835c82" category="inline-link-rx"></block>를 참조하십시오.</block>
+  <block id="0c1cd48173490f27f69352986a77e96e" category="paragraph"><block ref="0c1cd48173490f27f69352986a77e96e" category="inline-link-rx"></block></block>
 </blocks>
