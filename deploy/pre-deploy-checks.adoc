@@ -48,10 +48,12 @@ summary: VMware vSphere용 ONTAP 툴을 구축하기 전에 구축 패키지에 
 |===
 
 
+[[deployment-worksheet]]
 == 배포 워크시트
 
 
 
+[[for-single-node-deployment]]
 === 단일 노드 구축에 사용됩니다
 
 다음 워크시트를 사용하여 VMware vSphere 초기 배포를 위한 ONTAP 도구에 필요한 정보를 수집하세요.
@@ -100,6 +102,7 @@ NOTE: 위의 모든 IP 주소에 대한 DNS 레코드를 생성하십시오. 호
 
 
 
+[[for-high-availability-ha-deployment]]
 === 고가용성(HA) 배포를 위해
 
 단일 노드 배포 요구 사항 외에 HA 배포를 위해 다음과 같은 정보가 필요합니다.
@@ -132,12 +135,14 @@ NOTE: 위의 모든 IP 주소에 대한 DNS 레코드를 생성하십시오. 호
 |===
 
 
+[[network-firewall-configuration]]
 == 네트워크 방화벽 구성
 
 모든 관련 IP 주소에 대해 필요한 방화벽 포트가 열려 있는지 확인하세요.  ONTAP 도구는 포트 443을 통해 LIF에 액세스해야 합니다.  필수 포트의 전체 목록은 다음 포트 요구 사항 섹션을 참조하세요.link:../deploy/prerequisites.html["VMware vSphere 요구 사항 및 구성 제한에 대한 ONTAP 도구"] .
 
 
 
+[[ontap-storage-settings]]
 == ONTAP 스토리지 설정
 
 ONTAP 스토리지와 VMware vSphere용 ONTAP 툴의 완벽한 통합을 보장하려면 다음 설정을 고려하십시오.

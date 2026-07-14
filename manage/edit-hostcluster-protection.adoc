@@ -24,6 +24,7 @@ NOTE: 호스트 클러스터에 대한 보호를 생성, 편집 또는 삭제한
 
 
 
+[[monitor-host-cluster-protection]]
 == 호스트 클러스터 보호를 모니터링합니다
 
 각 보호된 호스트 클러스터의 보호 상태, SnapMirror 관계, 데이터 저장소 및 SnapMirror 상태를 모니터링합니다.
@@ -39,6 +40,7 @@ NOTE: 호스트 클러스터에 대한 보호를 생성, 편집 또는 삭제한
 
 
 
+[[add-new-datastores-or-hosts]]
 == 새 데이터 저장소 또는 호스트를 추가합니다
 
 vCenter 사용자 인터페이스를 사용하여 보호된 클러스터에 호스트를 추가하거나 데이터 저장소를 만듭니다.
@@ -69,6 +71,7 @@ ONTAP 도구는 vCenter 작업을 생성하고, *최근 작업* 패널에서 진
 
 
 
+[[add-a-new-snapmirror-relationship]]
 == 새 SnapMirror 관계를 추가합니다
 
 .단계
@@ -91,6 +94,7 @@ ONTAP 도구는 vCenter 작업을 생성하고, *최근 작업* 패널에서 진
 
 
 
+[[delete-an-existing-snapmirror-relationship]]
 == 기존 SnapMirror 관계를 삭제합니다
 
 SnapMirror 비동기 관계를 삭제하려면 보조 사이트 SVM 또는 클러스터가 ONTAP tools for VMware vSphere 에서 스토리지 백엔드로 추가되었는지 확인하세요.  모든 SnapMirror 관계를 한 번에 삭제할 수는 없습니다.  관계를 삭제하면 ONTAP 클러스터에서도 해당 관계가 제거됩니다.  자동 장애 조치 듀플렉스 SnapMirror 관계를 삭제하면 시스템은 대상 데이터 저장소의 매핑을 해제하고 대상 ONTAP 클러스터에서 일관성 그룹, LUN, 볼륨 및 igroup을 삭제합니다.
@@ -118,6 +122,7 @@ ONTAP 도구는 vCenter 작업을 생성하고, *최근 작업* 패널에서 진
 
 
 
+[[modify-an-existing-snapmirror-relationship]]
 == 기존 SnapMirror 관계 수정
 
 SnapMirror 비동기 관계를 수정하려면 보조 사이트 SVM 또는 클러스터가 ONTAP tools for VMware vSphere 에서 스토리지 백엔드로 추가되었는지 확인하세요.  자동 장애 조치 Duplex SnapMirror 관계의 경우 균일한 구성에 대한 호스트 근접성이나 비균일한 구성에 대한 호스트 액세스를 업데이트할 수 있습니다.  비동기 및 자동 장애 조치 이중 정책 유형 간의 변경은 지원되지 않습니다.  클러스터에서 새로 검색된 호스트에 대한 근접성 또는 액세스 설정을 구성할 수 있습니다.

@@ -18,6 +18,7 @@ ONTAP는 강력하고 확장 가능한 RBAC 환경을 제공합니다. RBAC 기�
 
 
 
+[[overview-of-the-administrative-options]]
 == 관리 옵션 개요
 
 ONTAP RBAC를 사용할 때는 환경 및 목표에 따라 몇 가지 옵션을 사용할 수 있습니다. 주요 행정 결정의 개요는 다음과 같다. 자세한 내용은 를 https://docs.netapp.com/us-en/ontap-automation/rest/rbac_overview.html["ONTAP 자동화: RBAC 보안 개요"^] 참조하십시오.
@@ -48,6 +49,7 @@ ONTAP는 클러스터와 SVM 레벨 모두에서 사전 정의된 역할 세트�
 
 
 
+[[working-with-ontap-rest-roles]]
 == ONTAP REST 역할을 사용하여 작업합니다
 
 VMware vSphere 10용 ONTAP 툴에 포함된 ONTAP REST 역할을 사용할 때는 몇 가지 사항을 고려해야 합니다.

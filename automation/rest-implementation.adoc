@@ -20,6 +20,7 @@ REST API에는 vCenter 및 Aggregate와 같은 몇 가지 리소스 범주가 �
 
 
 
+[[how-to-access-the-rest-api]]
 == REST API 액세스 방법
 
 ONTAP 툴의 IP 주소와 포트를 통해 VMware vSphere 10 REST API용 ONTAP 툴에 액세스할 수 있습니다. 전체 URL에는 다음과 같은 여러 부분이 있습니다.
@@ -47,12 +48,14 @@ CAUTION: 아래 예제의 IP 주소 및 포트 값은 예시용입니다. 환경
 
 
 
+[[http-details]]
 == HTTP 세부 정보입니다
 
 VMware vSphere 10 REST API용 ONTAP 툴은 HTTP 및 관련 매개 변수를 사용하여 리소스 인스턴스 및 컬렉션에 대해 작동합니다. HTTP 구현에 대한 자세한 내용은 아래에 나와 있습니다.
 
 
 
+[[http-methods]]
 === HTTP 메서드
 
 REST API가 지원하는 HTTP 메서드 또는 동사는 아래 표에 나와 있습니다.
@@ -78,6 +81,7 @@ REST API가 지원하는 HTTP 메서드 또는 동사는 아래 표에 나와 �
 |===
 
 
+[[request-and-response-headers]]
 === 요청 및 응답 헤더
 
 다음 표에는 REST API와 함께 사용되는 가장 중요한 HTTP 헤더가 요약되어 있습니다.
@@ -97,6 +101,7 @@ REST API가 지원하는 HTTP 메서드 또는 동사는 아래 표에 나와 �
 |===
 
 
+[[http-status-codes]]
 === HTTP 상태 코드입니다
 
 REST API에서 사용하는 HTTP 상태 코드는 다음과 같다.
@@ -137,6 +142,7 @@ REST API에서 사용하는 HTTP 상태 코드는 다음과 같다.
 |===
 
 
+[[authentication]]
 == 인증
 
 REST API에 대한 클라이언트 인증은 액세스 토큰을 사용하여 수행됩니다. 토큰 및 인증 프로세스의 관련 특징은 다음과 같습니다.
@@ -151,6 +157,7 @@ REST API에 대한 클라이언트 인증은 액세스 토큰을 사용하여 �
 
 
 
+[[synchronous-and-asynchronous-requests]]
 == 동기 및 비동기 요청
 
 대부분의 REST API 호출은 빠르게 완료되므로 동기식으로 실행됩니다. 즉, 요청이 완료된 후 상태 코드(예: 200)를 반환합니다. 백그라운드 작업을 사용하여 비동기적으로 실행하는 데 시간이 오래 걸리는 요청

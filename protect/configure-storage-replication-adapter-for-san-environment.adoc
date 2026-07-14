@@ -15,6 +15,7 @@ VMware Live Site Recovery용 SRA(Storage Replication Adapter)를 실행하기 �
 
 
 
+[[configure-sra-for-san-environments]]
 == SAN 환경에 맞게 SRA 구성
 
 
@@ -48,6 +49,7 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
 
 
 
+[[configure-sra-for-nas-environments]]
 == NAS 환경에 대한 SRA 구성
 
 

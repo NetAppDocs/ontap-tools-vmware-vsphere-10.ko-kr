@@ -45,6 +45,7 @@ ONTAP tools for VMware vSphere 의 이전 버전에서 ONTAP tools for VMware vS
 
 
 
+[[supported-ontap-platforms-and-vcenter-server-versions]]
 == 지원되는 ONTAP 플랫폼 및 vCenter Server 버전
 
 ONTAP tools for VMware vSphere 10.5 P1은 SRA 및 SnapMirror active sync 구성 요소에 대한 vCenter 고가용성(HA) 구성을 지원합니다. 이 구성에서는 vVols가 지원되지 않습니다. HA 장애 조치 중에는 vCenter가 몇 분 동안 사용할 수 없을 수 있습니다. 대규모 환경이거나 오류가 발생한 경우, 장애 조치 시간이 15분을 초과할 수 있습니다.

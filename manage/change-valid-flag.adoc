@@ -31,6 +31,7 @@ summary: 유지 관리 콘솔을 사용하여 인증서 유효성 검사 플래�
 
 
 
+[[verify-san-based-certificates-for-storage-backends]]
 == 스토리지 백엔드용 SAN 기반 인증서를 확인합니다
 
 안전한 통신과 적절한 유효성 검사를 보장하기 위해 모든 스토리지 백엔드가 SAN 기반 인증서를 사용하는지 확인하십시오.

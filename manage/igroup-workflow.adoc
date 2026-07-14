@@ -234,6 +234,7 @@ https://docs.netapp.com/us-en/ontap/san-admin/igroups-concept.html["Igroup 정�
 
 
 
+[[export-policies]]
 == 엑스포트 정책
 
 내보내기 정책은 ONTAP tools for VMware vSphere 에서 NFS 데이터 저장소 액세스와 클라이언트 권한을 제어합니다.  내보내기 정책은 ONTAP 시스템에서 생성 및 관리되며 NFS 데이터 저장소와 함께 사용하여 액세스 제어를 시행할 수 있습니다. 각 내보내기 정책은 액세스가 허용되는 클라이언트(IP 주소 또는 서브넷)와 부여되는 권한(읽기 전용 또는 읽기-쓰기)을 지정하는 규칙으로 구성됩니다.

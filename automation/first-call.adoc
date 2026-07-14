@@ -18,6 +18,7 @@ curl을 사용하여 API 호출을 실행하여 VMware vSphere 10 REST API용 ON
 
 
 
+[[before-you-begin]]
 == 시작하기 전에
 
 curl 예제에 필요한 정보와 매개변수를 검토해야 합니다.
@@ -58,6 +59,7 @@ echo $FQDN_IP
 ----
 
 
+[[step-1-acquire-an-access-token]]
 == 1단계: 액세스 토큰을 획득합니다
 
 REST API를 사용하려면 액세스 토큰을 얻어야 합니다. 액세스 토큰을 요청하는 방법의 예는 다음과 같습니다. 환경에 적합한 값으로 대체해야 합니다.
@@ -74,6 +76,7 @@ curl --request POST \
 
 
 
+[[step-2-issue-the-rest-api-call]]
 == 2단계: REST API 호출을 실행합니다
 
 액세스 토큰이 있으면 curl을 사용하여 REST API 호출을 실행할 수 있습니다. 첫 번째 단계에서 획득한 액세스 토큰을 포함합니다.

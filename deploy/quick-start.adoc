@@ -13,11 +13,13 @@ summary: 이 빠른 시작 섹션을 통해 ONTAP tools for VMware vSphere 설�
 [role="lead"]
 이 빠른 시작 섹션을 통해 ONTAP tools for VMware vSphere 설정하세요.
 
+ONTAP 도구를 활용하여 초기 관리 및 프로비저닝을 수행하려면 먼저 다음 핵심 작업을 완료하십시오. 그런 다음 환경 및 보호 요구 사항에 따라 선택적 작업을 완료하십시오.
+
 처음에는 NFS 및 VMFS 데이터 저장소를 지원하는 핵심 서비스를 제공하는 소규모 단일 노드 구성으로 ONTAP tools for VMware vSphere 배포합니다.  서비스당 추가 컨테이너를 위한 구성을 확장하거나 복원력을 강화하거나 vVols 데이터 저장소와 고가용성(HA)을 사용하려면 먼저 이 워크플로를 완료한 다음 확장 단계를 진행하세요. 자세한 내용은 다음을 참조하세요. link:../deploy/ha-workflow.html["HA 배포 워크플로우"] .
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1개"] 배포 계획
 [role="quick-margin-para"]
-vSphere, ONTAP 및 ESXi 호스트 버전이 ONTAP 도구 버전과 호환되는지 확인하세요. 충분한 CPU, 메모리 및 디스크 공간을 할당하세요. 보안 규칙에 따라 네트워크 트래픽을 허용하기 위해 방화벽이나 기타 보안 도구를 설정해야 할 수도 있습니다.
+지원되는 배포를 위한 환경 준비가 완료되었는지 확인하십시오. vSphere, ONTAP 및 ESXi 호스트 버전이 ONTAP tools 버전과 호환되는지 확인하십시오. 충분한 CPU, 메모리 및 디스크 공간을 할당하십시오. 보안 규칙에 따라 네트워크 트래픽을 허용하도록 방화벽 또는 기타 보안 도구를 설정해야 할 수 있습니다.
 
 [role="quick-margin-para"]
 vCenter Server가 설치되어 있고 액세스할 수 있는지 확인합니다.
@@ -30,31 +32,29 @@ vCenter Server가 설치되어 있고 액세스할 수 있는지 확인합니다
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2개"] VMware vSphere용 ONTAP 툴을 구축합니다
 [role="quick-margin-para"]
-처음에는 ONTAP tools for VMware vSphere NFS 및 VMFS 데이터 저장소를 지원하는 핵심 서비스를 제공하는 소규모 단일 노드 구성으로 배포합니다. vVols 데이터 저장소와 고가용성(HA)을 사용하도록 구성을 확장하려면 이 워크플로를 완료한 후에 확장해야 합니다. HA 설정으로 확장하려면 CPU 핫 애드 및 메모리 핫 플러그가 활성화되어 있는지 확인하십시오.
+NFS 및 VMFS 데이터스토어에 대한 기본 서비스를 설정하려면 ONTAP tools 어플라이언스를 배포하십시오.
+
+[role="quick-margin-para"]
+처음에는 ONTAP tools for VMware vSphere를 소규모 단일 노드 구성으로 배포합니다. vVols 데이터스토어와 고가용성(HA)을 사용하도록 구성을 확장하려면 이 워크플로를 완료한 후에 진행하면 됩니다. HA 구성으로 확장하려면 CPU 핫 추가 및 메모리 핫 플러그가 활성화되어 있는지 확인하십시오.
+
+[role="quick-margin-para"]
+배포 시 *템플릿 사용자 지정* 필드를 주의 깊게 검토하십시오. 특히 호스트 이름, ONTAP tools IP 주소 사용 및 DNS 요구 사항을 확인하십시오.
 
 [role="quick-margin-list"]
 * link:../deploy/ontap-tools-deployment.html["VMware vSphere용 ONTAP 툴을 구축합니다"]
 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["세 가지"] vCenter Server 인스턴스를 추가합니다
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["세 가지"] vCenter 클라이언트 플러그인을 등록하고 설치합니다
 [role="quick-margin-para"]
-vCenter Server 환경에서 가상 데이터스토어를 구성, 관리 및 보호하기 위해 ONTAP tools for VMware vSphere 에 vCenter Server 인스턴스를 추가합니다.
+vCenter 클라이언트 플러그인을 등록하고 필요한 권한 및 역할을 적용하려면 vCenter Server 인스턴스를 추가하십시오. vCenter Server 인스턴스를 추가하면 ONTAP tools가 원격 플러그인을 등록하고, 사용자 지정 플러그인 및 API 권한을 적용하고, 사용자 지정 역할을 생성하고, vSphere 사용자 인터페이스에 플러그인 바로 가기를 추가합니다.
 
 [role="quick-margin-list"]
-* link:../configure/add-vcenter.html["vCenter Server 인스턴스를 추가합니다"]
+* link:../configure/add-vcenter.html["ONTAP 도구에 vCenter Server 인스턴스 추가"]
 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["네"] ONTAP 사용자 역할 및 Privileges를 구성합니다
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["네"] 스토리지 백엔드 구성
 [role="quick-margin-para"]
-VMware vSphere용 ONTAP 툴과 함께 제공되는 JSON 파일을 사용하여 새로운 사용자 역할과 Privileges를 구성하여 스토리지 백엔드 관리
-
-[role="quick-margin-list"]
-* link:../configure/configure-user-role-and-privileges.html["ONTAP 사용자 역할 및 권한을 구성합니다"]
-
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["다섯"] 스토리지 백엔드를 구성합니다
-[role="quick-margin-para"]
-ONTAP 클러스터에 스토리지 백엔드를 추가합니다. vCenter가 관련 SVM과 함께 테넌트 역할을 하는 멀티 테넌시 설정의 경우 ONTAP Tools Manager를 사용하여 클러스터를 추가합니다. 스토리지 백엔드를 vCenter Server와 연결하여 온보드된 vCenter Server 인스턴스에 전역적으로 매핑합니다.
+ONTAP 도구가 데이터스토어를 프로비저닝하고 관리할 수 있도록 ONTAP 스토리지 리소스를 연결합니다. ONTAP 클러스터에 스토리지 백엔드를 추가합니다. vCenter Server가 테넌트 SVM과 연결된 멀티테넌트 환경에서는 ONTAP 도구 관리자를 사용하여 클러스터를 추가합니다. 그런 다음 스토리지 백엔드를 vCenter Server와 연결하여 해당 vCenter 인스턴스에 대한 전역 매핑을 생성합니다.
 
 [role="quick-margin-para"]
 ONTAP 툴의 사용자 인터페이스를 사용하여 클러스터 또는 SVM 자격 증명으로 로컬 스토리지 백엔드를 추가합니다. 이러한 스토리지 백엔드는 단일 vCenter로 제한됩니다. 로컬로 클러스터 자격 증명을 사용할 경우 연결된 SVM이 vCenter에 자동으로 매핑되어 VVOL 또는 VMFS를 관리합니다. ONTAP 툴은 SRA를 포함한 VMFS 관리의 경우 글로벌 클러스터 없이 SVM 자격 증명을 지원합니다.
@@ -64,32 +64,46 @@ ONTAP 툴의 사용자 인터페이스를 사용하여 클러스터 또는 SVM �
 * link:../configure/associate-storage-backend.html["스토리지 백엔드를 vCenter Server 인스턴스에 연결합니다"]
 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["6개"] 여러 vCenter Server 인스턴스로 작업하는 경우 인증서를 업그레이드하세요.
+[discrete]
+== 다음 작업 (선택 사항)
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1개"] ONTAP 사용자 역할 및 권한 구성
 [role="quick-margin-para"]
-여러 vCenter Server 인스턴스로 작업하는 경우 자체 서명된 인증서를 인증 기관(CA) 서명 인증서로 업그레이드합니다.
+ONTAP 기본 관리자 계정 대신 최소 권한 액세스를 위해 사용자 지정 ONTAP 역할을 구성하십시오.
+
+[role="quick-margin-list"]
+* link:../configure/configure-user-role-and-privileges.html["ONTAP 사용자 역할 및 권한을 구성합니다"]
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2개"] 여러 vCenter Server 인스턴스의 인증서 업그레이드
+[role="quick-margin-para"]
+여러 vCenter Server 인스턴스 간에 신뢰할 수 있는 인증서 기반 통신을 사용하도록 인증서를 업그레이드하십시오.
 
 [role="quick-margin-list"]
 * link:../manage/certificate-manage.html["인증서를 관리합니다"]
 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png["7번"] (선택 사항) SRA 보호 구성
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["세 가지"] SRA 보호 구성
 [role="quick-margin-para"]
-SRA 기능을 사용하여 재해 복구를 구성하고 NFS 또는 VMFS 데이터 저장소를 보호할 수 있습니다.
+NFS 및 VMFS 데이터스토어에 대한 재해 복구 보호 설정을 위해 SRA 기능을 활성화하십시오.
 
 [role="quick-margin-list"]
 * link:../manage/enable-services.html["VMware vSphere 서비스에 대해 ONTAP 툴을 사용하도록 설정합니다"]
 * link:../protect/configure-on-srm-appliance.html["VMware Live Site Recovery 어플라이언스에서 SRA를 구성합니다"]
 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-8.png["8개"] (선택 사항) SnapMirror 액티브 동기화 보호를 활성화합니다
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["네"] SnapMirror 활성 동기화 보호 활성화
 [role="quick-margin-para"]
-SnapMirror 활성 동기화에 대한 호스트 클러스터 보호를 관리하도록 VMware vSphere용 ONTAP 툴을 구성합니다. ONTAP 시스템에서 ONTAP 클러스터 및 SVM 피어링을 수행하여 SnapMirror 활성 동기화를 사용합니다. VMFS 데이터 저장소에만 적용됩니다.
+SnapMirror 활성 동기화를 사용하여 VMFS 데이터스토어를 보호하기 위해 호스트 클러스터 보호를 설정하십시오. ONTAP 시스템에서는 필요한 클러스터와 SVM을 피어링한 다음 ONTAP tools for VMware vSphere에서 호스트 클러스터 보호를 구성하십시오. 이 옵션은 VMFS 데이터스토어에만 적용됩니다.
 
 [role="quick-margin-list"]
 * link:../configure/protect-cluster.html["호스트 클러스터 보호를 사용하여 보호합니다"]
 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-9.png["아홉"] VMware vSphere 구축을 위한 ONTAP 툴의 백업 및 복구 설정
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["다섯"] ONTAP tools 배포를 위한 백업 및 복구 설정
+[role="quick-margin-para"]
+ONTAP tools 구성을 보호하고 장애 발생 시 신속하게 복구할 수 있도록 백업 및 복구를 설정하십시오.
+
 [role="quick-margin-para"]
 ONTAP tools for VMware vSphere 에서는 백업이 기본적으로 활성화되어 있으며 10분마다 수행됩니다.  장애 발생 시 설정을 복구하는 데 사용할 수 있는 ONTAP tools for VMware vSphere 의 백업을 예약합니다.
 

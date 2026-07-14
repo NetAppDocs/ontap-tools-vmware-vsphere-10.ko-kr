@@ -1320,28 +1320,15 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="1497fccb0979c83f7f0501efa49af88e" category="list-text"><block ref="1497fccb0979c83f7f0501efa49af88e" category="inline-link-macro-rx"></block></block>
   <block id="69182d9cdaae4040cb12f338633b33c7" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> VMware vSphere용 ONTAP 툴을 구축합니다</block>
   <block id="e5470d0dab088b9c8b712af4be3801de" category="list-text"><block ref="e5470d0dab088b9c8b712af4be3801de" category="inline-link-macro-rx"></block></block>
-  <block id="d6f4de0e60c9b74a0f06b9c8cb7e5556" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> vCenter Server 인스턴스를 추가합니다</block>
-  <block id="fbc3413db4202f1fe331f16af6b38f13" category="list-text"><block ref="fbc3413db4202f1fe331f16af6b38f13" category="inline-link-macro-rx"></block></block>
   <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">네</block>
-  <block id="f876a7cbd467b5fe36bfff5b237cab15" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> ONTAP 사용자 역할 및 Privileges를 구성합니다</block>
-  <block id="a3dce2225c6773b6233d6d06ca6524a1" category="paragraph">VMware vSphere용 ONTAP 툴과 함께 제공되는 JSON 파일을 사용하여 새로운 사용자 역할과 Privileges를 구성하여 스토리지 백엔드 관리</block>
   <block id="b3debf9a0a4da8901422599f88761e9e" category="list-text"><block ref="b3debf9a0a4da8901422599f88761e9e" category="inline-link-macro-rx"></block></block>
   <block id="e5d9de39f7ca1ba2637e5640af3ae8aa" category="inline-image-macro">다섯</block>
-  <block id="78a9753ae84f65cfc93b9190109fdbe1" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> 스토리지 백엔드를 구성합니다</block>
-  <block id="151c3727ca69fe365d30ca8b00d0ef02" category="paragraph">ONTAP 클러스터에 스토리지 백엔드를 추가합니다. vCenter가 관련 SVM과 함께 테넌트 역할을 하는 멀티 테넌시 설정의 경우 ONTAP Tools Manager를 사용하여 클러스터를 추가합니다. 스토리지 백엔드를 vCenter Server와 연결하여 온보드된 vCenter Server 인스턴스에 전역적으로 매핑합니다.</block>
   <block id="623727ddcf21460c69461e09290ff6e3" category="paragraph">ONTAP 툴의 사용자 인터페이스를 사용하여 클러스터 또는 SVM 자격 증명으로 로컬 스토리지 백엔드를 추가합니다. 이러한 스토리지 백엔드는 단일 vCenter로 제한됩니다. 로컬로 클러스터 자격 증명을 사용할 경우 연결된 SVM이 vCenter에 자동으로 매핑되어 VVOL 또는 VMFS를 관리합니다. ONTAP 툴은 SRA를 포함한 VMFS 관리의 경우 글로벌 클러스터 없이 SVM 자격 증명을 지원합니다.</block>
   <block id="5e15cfab5137c8c5b07a50f9eb816e0a" category="list-text"><block ref="5e15cfab5137c8c5b07a50f9eb816e0a" category="inline-link-macro-rx"></block></block>
   <block id="d0c12810d8bb376bdd62e0a7dcb8f3ef" category="inline-link-macro">스토리지 백엔드를 vCenter Server 인스턴스에 연결합니다</block>
   <block id="349dea55081cba7988d2e74a569b149b" category="list-text"><block ref="349dea55081cba7988d2e74a569b149b" category="inline-link-macro-rx"></block></block>
-  <block id="e6fbc0b9673f8c86726688d7607fc8f5" category="inline-image-macro">6개</block>
-  <block id="12e67aac3e7f9227cc35f8f047d7dc74" category="inline-image-macro">7번</block>
-  <block id="461016ffd7a6c7ca138e75fad0c9b7ce" category="paragraph">SRA 기능을 사용하여 재해 복구를 구성하고 NFS 또는 VMFS 데이터 저장소를 보호할 수 있습니다.</block>
   <block id="9b6610ae0d9b3f2df042445cc8433cf4" category="list-text"><block ref="9b6610ae0d9b3f2df042445cc8433cf4" category="inline-link-macro-rx"></block></block>
-  <block id="24d27c169c2c881eb09a065116f2aa5c" category="inline-image-macro">8개</block>
-  <block id="1f3c2366ee78e590a43f78ce3ec33af9" category="paragraph-title"><block ref="bf2dc80b0d3f76e4f77c4fce580f56c0" category="inline-image-macro-rx" type="image"></block> (선택 사항) SnapMirror 액티브 동기화 보호를 활성화합니다</block>
   <block id="5c77c00bef7fd2d8fb97abc8f2ff015a" category="list-text"><block ref="5c77c00bef7fd2d8fb97abc8f2ff015a" category="inline-link-macro-rx"></block></block>
-  <block id="24db11216549ee55172c33cf3def2f3f" category="inline-image-macro">아홉</block>
-  <block id="c5ee3ef473a8e2d4f3f8b40330e2bcd2" category="paragraph-title"><block ref="b37b448eff4f65237cf47b29bdd2817c" category="inline-image-macro-rx" type="image"></block> VMware vSphere 구축을 위한 ONTAP 툴의 백업 및 복구 설정</block>
   <block id="4073f6bd126ab1197095ddfaadcb200f" category="list-text">CPU 핫 애드 및 메모리 핫 플러그가 활성화되어 있는지 확인합니다.</block>
   <block id="1e98e4c05a8f5cfd1ddd0daba1e28284" category="paragraph">ONTAP 툴의 IP 주소와 포트를 통해 VMware vSphere 10 REST API용 ONTAP 툴에 액세스할 수 있습니다. 전체 URL에는 다음과 같은 여러 부분이 있습니다.</block>
   <block id="b36742dbca767f044c826ec8fbe9b099" category="inline-link">정합성 보장 그룹</block>
@@ -1508,9 +1495,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="e4365b2f9588eb138888d2bae6c6ac55" category="list-text">VMware vSphere 7 릴리즈를 사용하는 경우 VMware 사이트의 지침에 따라<block ref="6b6e21be7e83380915b7a93b5de98cc6" category="inline-link-rx"></block> NVMe/TCP 포트 바인딩을 구성합니다. VMware vSphere 8 릴리즈를 사용하는 경우 에 따라<block ref="5075091467dfddb38b411ec1bb554877" category="inline-link-rx"></block> NVMe/TCP 포트 바인딩을 구성합니다.</block>
   <block id="d6e530451ec429932fcb540369b5619d" category="list-text">VMware vSphere 7 릴리즈의 경우 페이지의 지침에 따라<block ref="562342ed7eb0295ae9f7a72ea788d31d" category="inline-link-rx"></block> NVMe/TCP 소프트웨어 어댑터를 구성합니다. VMware vSphere 8 릴리즈의 경우, 에 따라<block ref="1f8f8787602f2f92045aa29b0a3fa467" category="inline-link-rx"></block> NVMe/TCP 소프트웨어 어댑터를 구성합니다.</block>
   <block id="9d596e014ec247e8a36a9d698795a54f" category="list-text"><block ref="c076a6b54534640d64418e3f25ccabbb" category="inline-link-macro-rx"></block>ESXi 호스트에서 작업을 실행합니다. 자세한 내용은 을<block ref="08964a7c7e6cd9155ed7286907a68824" category="inline-link-rx"></block>참조하십시오.</block>
-  <block id="5ba022aa97c9316a9962bea92efe8e4f" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block> 여러 vCenter Server 인스턴스로 작업하는 경우 인증서를 업그레이드하세요.</block>
-  <block id="cc2976705cd90914f7093a509084c243" category="paragraph">여러 vCenter Server 인스턴스로 작업하는 경우 자체 서명된 인증서를 인증 기관(CA) 서명 인증서로 업그레이드합니다.</block>
-  <block id="293752750693507b1f4c7f6bc41f019e" category="paragraph">SnapMirror 활성 동기화에 대한 호스트 클러스터 보호를 관리하도록 VMware vSphere용 ONTAP 툴을 구성합니다. ONTAP 시스템에서 ONTAP 클러스터 및 SVM 피어링을 수행하여 SnapMirror 활성 동기화를 사용합니다. VMFS 데이터 저장소에만 적용됩니다.</block>
   <block id="82cb2fe68a0c35dd310db836d38102d0" category="list-text">vCenter Server에서 재해 복구 서비스(DRS) 자동화 수준을 "부분 자동화"로 설정합니다. HA를 구축한 후에는 "완전 자동화"로 되돌립니다.</block>
   <block id="b02bbd059e55c04c7db94e76a92bd311" category="list-text">HA 설정의 노드 호스트 이름은 소문자여야 합니다.</block>
   <block id="42bc4627d63b98bd97ba7ee44a76918d" category="summary">VMware vSphere용 ONTAP 툴을 구축하기 전에 구축 패키지에 대한 공간 요구 사항과 몇 가지 기본 호스트 시스템 요구 사항을 숙지해야 합니다.</block>
@@ -1628,10 +1612,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="64330c7217f629eb146d9c9276f808df" category="admonition">ASA r2 스토리지 시스템 유형 SVM에서는 데이터 저장소가 논리적 컨테이너일 뿐이므로 스토리지 단위(LUN/네임스페이스)가 생성되지 않습니다.</block>
   <block id="36b0287ed1ac9ef5ae710b3824924694" category="paragraph">검색 요청이 제출된 후 최근 작업 패널에서 작업 진행 상황을 추적할 수 있습니다.</block>
   <block id="8598aab6bb36721c708c8e437a58cdc2" category="summary">이 빠른 시작 섹션을 통해 ONTAP tools for VMware vSphere 설정하세요.</block>
-  <block id="569d8591be50649b9e7b8bea144f3512" category="paragraph">vSphere, ONTAP 및 ESXi 호스트 버전이 ONTAP 도구 버전과 호환되는지 확인하세요. 충분한 CPU, 메모리 및 디스크 공간을 할당하세요. 보안 규칙에 따라 네트워크 트래픽을 허용하기 위해 방화벽이나 기타 보안 도구를 설정해야 할 수도 있습니다.</block>
-  <block id="e9b5da82e11916ae21c792527e11c3be" category="paragraph">처음에는 ONTAP tools for VMware vSphere NFS 및 VMFS 데이터 저장소를 지원하는 핵심 서비스를 제공하는 소규모 단일 노드 구성으로 배포합니다. vVols 데이터 저장소와 고가용성(HA)을 사용하도록 구성을 확장하려면 이 워크플로를 완료한 후에 확장해야 합니다. HA 설정으로 확장하려면 CPU 핫 애드 및 메모리 핫 플러그가 활성화되어 있는지 확인하십시오.</block>
-  <block id="e6a187afd099cc2fbaed679eda4f9a89" category="paragraph">vCenter Server 환경에서 가상 데이터스토어를 구성, 관리 및 보호하기 위해 ONTAP tools for VMware vSphere 에 vCenter Server 인스턴스를 추가합니다.</block>
-  <block id="0115ba480d5059c11ce8f89628a7743d" category="paragraph-title"><block ref="36915574c413876eaa75cbd48f69fd00" category="inline-image-macro-rx" type="image"></block> (선택 사항) SRA 보호 구성</block>
   <block id="3d67f96eb2aec81f92bfe17a27594d9f" category="list-text"><block ref="3d67f96eb2aec81f92bfe17a27594d9f" category="inline-link-macro-rx"></block></block>
   <block id="034f02f8ec70fbc1533e451250a2bcad" category="admonition">디스크가 가상 머신에서 제거됩니다. 다른 가상 머신이 디스크를 공유하는 경우 디스크 파일은 삭제되지 않습니다.</block>
   <block id="a5e1dbbf601c017647380a6aecd9eb8d" category="list-text">로그 번들 레이블을 입력하고 로그 번들을 생성하세요. 파일이 생성되면 다운로드 옵션이 표시됩니다. 다운로드하는 데 시간이 다소 걸릴 수 있습니다.</block>
@@ -2051,7 +2031,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="2613ec9391540fc8d9d6ce743d7a9759" category="list-text">CPU와 RAM에 대한 핫 플러그인이 활성화되어 있는지 확인하세요.</block>
   <block id="c3061246985713c75c44c8a3b878779b" category="list-text">*CD/DVD 드라이브* 필드 아래의 편집 설정 창에서 *콘텐츠 라이브러리 ISO 파일*을 선택합니다.</block>
   <block id="462136a29a804d85c9626a4ff63b2bef" category="list-text">ISO 파일을 선택하고, CD/DVD 드라이브 필드에서 연결됨 상자를 체크한 후, 확인(OK)을 클릭합니다.</block>
-  <block id="9f6f7d4ab9570c7b22acd4966be9f823" category="list-text">*업그레이드* 옵션을 선택하려면 *7*을 입력하세요.</block>
   <block id="c6306b642a5e71b051af55355ca139dc" category="paragraph">업그레이드하는 동안 온보딩된 스토리지 백엔드 인증서에 SAN(주체 대체 이름) 항목이 누락된 경우 누락된 SAN을 나타내는 메시지가 표시됩니다.  SAN을 검증하지 않고 계속 진행하면 업그레이드는 계속되지만 잠재적인 보안 위험 때문에 권장하지 않습니다.</block>
   <block id="6c872843c1ab00a20d8f946d62fe9e30" category="list-text">게이트웨이 인증서는 1년 유효기간으로 갱신됩니다.  이전 SRA 어댑터를 제거하고 새로운 10.5 어댑터를 업로드하면 SRA 인증서 유효 기간이 10년에서 1년으로 변경됩니다.</block>
   <block id="f77f29b09f12b9fd7711c99fe911df61" category="list-text">원격 플러그인이 업그레이드되었습니다</block>
@@ -2795,4 +2774,32 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="986013590d14c5a1a3fba70da34aec61" category="inline-link">OTV 10: 스토리지 백엔드 글로벌 및 로컬 범위란 무엇인가</block>
   <block id="7a2217d00eec7417d83566729e06f7aa" category="paragraph">글로벌 및 로컬 스토리지 백엔드에 대한 자세한 내용은 KB 문서<block ref="8136f7308c7184af5e69534cb5835c82" category="inline-link-rx"></block>를 참조하십시오.</block>
   <block id="0c1cd48173490f27f69352986a77e96e" category="paragraph"><block ref="0c1cd48173490f27f69352986a77e96e" category="inline-link-rx"></block></block>
+  <block id="32baa6fa3fd628b1cfe2b88a5916a2d0" category="paragraph">배포를 성공적으로 완료하려면 *템플릿 사용자 지정* 페이지의 값이 필수입니다.</block>
+  <block id="75db3442d8b7defbd86cc017cc392550" category="paragraph">다음 필드에 특히 주의하십시오:</block>
+  <block id="2bd591705cef0dfc0c9ec432fc2beb36" category="list-text">*호스트 이름*: ONTAP tools VM 호스트 이름을 입력합니다. 유효한 호스트 이름 형식을 사용하십시오.</block>
+  <block id="03ffc67414aededc55ef2a19403a00ab" category="list-text">*ONTAP tools IP 주소*: ONTAP tools에 액세스하는 데 사용되는 기본 관리 인터페이스입니다.</block>
+  <block id="93d910cd0742d24cb2d5837f339a34f8" category="list-text">*IPv4 주소*: 문제 해결 및 유지 관리를 위한 진단 셸 및 SSH 액세스에 사용되는 노드 IP 주소입니다.</block>
+  <block id="c9143eee30edd84eeded44c8dd4bb50f" category="paragraph">호스트 또는 vCenter에 DNS 이름을 사용하는 경우 해당 이름이 DNS에서 올바르게 확인되는지 확인하십시오.</block>
+  <block id="b58aeebf1906a056812bcdbaf54f976c" category="paragraph">ONTAP 도구를 활용하여 초기 관리 및 프로비저닝을 수행하려면 먼저 다음 핵심 작업을 완료하십시오. 그런 다음 환경 및 보호 요구 사항에 따라 선택적 작업을 완료하십시오.</block>
+  <block id="64d1ecdf3bedbe05adfb8f78686b4db7" category="paragraph">지원되는 배포를 위한 환경 준비가 완료되었는지 확인하십시오. vSphere, ONTAP 및 ESXi 호스트 버전이 ONTAP tools 버전과 호환되는지 확인하십시오. 충분한 CPU, 메모리 및 디스크 공간을 할당하십시오. 보안 규칙에 따라 네트워크 트래픽을 허용하도록 방화벽 또는 기타 보안 도구를 설정해야 할 수 있습니다.</block>
+  <block id="276faf3e6e29fa7b1570b8f766258180" category="paragraph">NFS 및 VMFS 데이터스토어에 대한 기본 서비스를 설정하려면 ONTAP tools 어플라이언스를 배포하십시오.</block>
+  <block id="55747971e728b60a8cf7102d4827be24" category="paragraph">처음에는 ONTAP tools for VMware vSphere를 소규모 단일 노드 구성으로 배포합니다. vVols 데이터스토어와 고가용성(HA)을 사용하도록 구성을 확장하려면 이 워크플로를 완료한 후에 진행하면 됩니다. HA 구성으로 확장하려면 CPU 핫 추가 및 메모리 핫 플러그가 활성화되어 있는지 확인하십시오.</block>
+  <block id="8a6f9e4a5fb59bbab0bc76b71989a8f2" category="paragraph">배포 시 *템플릿 사용자 지정* 필드를 주의 깊게 검토하십시오. 특히 호스트 이름, ONTAP tools IP 주소 사용 및 DNS 요구 사항을 확인하십시오.</block>
+  <block id="b03edebb993cb976361dcfc8a538c1f7" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> vCenter 클라이언트 플러그인을 등록하고 설치합니다</block>
+  <block id="5bc0d5ae0656002c035d2539cfea51ba" category="paragraph">vCenter 클라이언트 플러그인을 등록하고 필요한 권한 및 역할을 적용하려면 vCenter Server 인스턴스를 추가하십시오. vCenter Server 인스턴스를 추가하면 ONTAP tools가 원격 플러그인을 등록하고, 사용자 지정 플러그인 및 API 권한을 적용하고, 사용자 지정 역할을 생성하고, vSphere 사용자 인터페이스에 플러그인 바로 가기를 추가합니다.</block>
+  <block id="24e6d4440f24355aaa1e4165cfb6a5cc" category="list-text"><block ref="24e6d4440f24355aaa1e4165cfb6a5cc" category="inline-link-macro-rx"></block></block>
+  <block id="b52069e3641f2eb2864cffb4c8c7c4fa" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 스토리지 백엔드 구성</block>
+  <block id="2a26c8ff6aa8490afbb0fa106898391c" category="paragraph">ONTAP 도구가 데이터스토어를 프로비저닝하고 관리할 수 있도록 ONTAP 스토리지 리소스를 연결합니다. ONTAP 클러스터에 스토리지 백엔드를 추가합니다. vCenter Server가 테넌트 SVM과 연결된 멀티테넌트 환경에서는 ONTAP 도구 관리자를 사용하여 클러스터를 추가합니다. 그런 다음 스토리지 백엔드를 vCenter Server와 연결하여 해당 vCenter 인스턴스에 대한 전역 매핑을 생성합니다.</block>
+  <block id="ea535b00ee3474d0227260e20f46a815" category="floating-title">다음 작업 (선택 사항)</block>
+  <block id="21a0a2e2c5f22a528df4f552d86138b3" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> ONTAP 사용자 역할 및 권한 구성</block>
+  <block id="76d2aa0929f56a4db2a8e5000cf7fb83" category="paragraph">ONTAP 기본 관리자 계정 대신 최소 권한 액세스를 위해 사용자 지정 ONTAP 역할을 구성하십시오.</block>
+  <block id="a280d081e593760440ed6669695cab4c" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 여러 vCenter Server 인스턴스의 인증서 업그레이드</block>
+  <block id="c561f6968a3856f0e862792702438ef2" category="paragraph">여러 vCenter Server 인스턴스 간에 신뢰할 수 있는 인증서 기반 통신을 사용하도록 인증서를 업그레이드하십시오.</block>
+  <block id="12df35656e0e2d52e94d1b7dfa72dec6" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> SRA 보호 구성</block>
+  <block id="362b420dc64efd583c01df906961512c" category="paragraph">NFS 및 VMFS 데이터스토어에 대한 재해 복구 보호 설정을 위해 SRA 기능을 활성화하십시오.</block>
+  <block id="f62b5a465756ead58c7977a24742bf1e" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> SnapMirror 활성 동기화 보호 활성화</block>
+  <block id="5c6a636fcbf98404a3efd92d16afa6ff" category="paragraph">SnapMirror 활성 동기화를 사용하여 VMFS 데이터스토어를 보호하기 위해 호스트 클러스터 보호를 설정하십시오. ONTAP 시스템에서는 필요한 클러스터와 SVM을 피어링한 다음 ONTAP tools for VMware vSphere에서 호스트 클러스터 보호를 구성하십시오. 이 옵션은 VMFS 데이터스토어에만 적용됩니다.</block>
+  <block id="a3aabff6b45a63c93a791fd68b5023c2" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> ONTAP tools 배포를 위한 백업 및 복구 설정</block>
+  <block id="09aa3c7b466d868e6fc06622035e28ff" category="paragraph">ONTAP tools 구성을 보호하고 장애 발생 시 신속하게 복구할 수 있도록 백업 및 복구를 설정하십시오.</block>
+  <block id="528b6cb0de0d2a7a4138b5cc5f0e7bd2" category="list-text">*6*을 입력하여 *업그레이드* 옵션을 선택합니다.</block>
 </blocks>

@@ -15,6 +15,7 @@ vCenter Server 인스턴스는 호스트, 가상 머신 및 스토리지 백엔�
 
 
 
+[[dissociate-storage-backends-with-the-vcenter-server-instance]]
 == vCenter Server 인스턴스로 스토리지 백엔드를 분리합니다
 
 vCenter Server 목록 페이지에는 연결된 스토리지 백엔드 수가 표시됩니다. 각 vCenter Server 인스턴스에는 스토리지 백엔드에 연결하거나 연결을 해제하는 옵션이 있습니다.
@@ -29,6 +30,7 @@ vCenter Server 목록 페이지에는 연결된 스토리지 백엔드 수가 �
 
 
 
+[[modify-a-vcenter-server-instance]]
 == vCenter Server 인스턴스를 수정합니다
 
 vCenter Server 인스턴스를 수정하려면 다음 단계를 따르십시오.
@@ -43,6 +45,7 @@ vCenter Server 인스턴스를 수정하려면 다음 단계를 따르십시오.
 
 
 
+[[remove-a-vcenter-server-instance]]
 == vCenter Server 인스턴스를 제거합니다
 
 vCenter Server를 제거하기 전에 모든 스토리지 백엔드를 제거하세요.
@@ -65,6 +68,7 @@ ONTAP 툴에서 vCenter Server 인스턴스를 제거하면 다음 작업이 자
 
 
 
+[[renew-vcenter-server-certificate]]
 == vCenter 서버 인증서 갱신
 
 ONTAP 도구는 vCenter 인증서의 만료일이 임박했거나 만료되었을 때 알려줍니다. vCenter 인증서를 갱신한 후 다음 단계에 따라 새 인증서를 ONTAP 도구에 업로드하십시오.

@@ -17,6 +17,7 @@ ONTAP tools for VMware vSphere를 VMware vCenter Server Virtual Appliance(vCSA)�
 
 
 
+[[system-requirements]]
 == 시스템 요구 사항
 
 * * 노드별 설치 패키지 공간 요구 사항 *
@@ -47,6 +48,7 @@ NOTE: 백업이 활성화되면 각 ONTAP Tools 클러스터의 VM이 구축되�
 
 
 
+[[minimum-storage-and-application-requirements]]
 == 최소 스토리지 및 애플리케이션 요구사항
 
 |===
@@ -82,6 +84,7 @@ https://imt.netapp.com/matrix/imt.jsp?components=105475;&solution=1777&isHWU&src
 
 
 
+[[port-requirements]]
 == 포트 요구 사항
 
 다음 표는 NetApp 에서 사용하는 네트워크 포트와 그 용도를 간략하게 설명합니다. 포트에는 세 가지 유형이 있습니다.
@@ -158,6 +161,7 @@ NOTE: HA 배포의 경우 모든 노드 간에 UDP 포트 8472가 열려 있는�
 ====
 
 
+[[configuration-limits-to-deploy-ontap-tools-for-vmware-vsphere-for-vvols-datastores]]
 == ONTAP tools for VMware vSphere를 vVols 데이터스토어에 배포하기 위한 구성 한계
 
 다음 표를 참고하여 VMware vSphere용 ONTAP tools를 구성할 수 있습니다.
@@ -187,6 +191,7 @@ NOTE: 표에 표시된 호스트 수는 연결된 모든 vCenters의 총합입�
 
 
 
+[[configuration-limits-to-deploy-ontap-tools-for-vmware-vsphere-for-vmfs-and-nfs-datastores]]
 == VMFS 및 NFS 데이터스토어용 ONTAP tools for VMware vSphere 배포를 위한 구성 제한
 
 이 섹션에 나열된 구성 제한 사항은 NetApp에서 검증되고 지원됩니다. 실제 제한 사항은 환경 및 워크로드에 따라 다를 수 있습니다. 이러한 제한을 초과하면 성능이나 지원 가능성에 영향을 미칠 수 있으므로 권장하지 않습니다. 표를 검토할 때 다음 사항을 고려하십시오.
@@ -218,6 +223,7 @@ NOTE: 표에 표시된 호스트 수는 연결된 모든 vCenters의 총합입�
 |===
 
 
+[[ontap-tools-for-vmware-vsphere-storage-replication-adapter-sra]]
 == VMware vSphere용 ONTAP 툴 - SRA(Storage Replication Adapter)
 
 다음 표에는 VMware vSphere용 ONTAP 툴을 사용하여 VMware 라이브 사이트 복구 인스턴스당 지원되는 수가 나와 있습니다.

@@ -15,6 +15,7 @@ summary: 스토리지 데이터를 마이그레이션할 때 REST API를 사용�
 
 
 
+[[steps-to-migrate-the-vasa-provider]]
 == VASA 공급자를 마이그레이션하는 단계
 
 . VMware vSphere용 기존 ONTAP 툴에서 더비 포트 1527을 활성화하려면 루트 사용자를 활성화하고 SSH를 통해 CLI에 로그인합니다. 그런 다음 다음 다음 명령을 실행합니다.
@@ -240,6 +241,7 @@ NOTE: UUID는 마이그레이션 후 API에 대한 응답으로 반환된 마이
 
 
 
+[[steps-to-update-the-storage-replication-adapter-sra]]
 == 스토리지 복제 어댑터(SRA) 업데이트 단계
 
 .시작하기 전에

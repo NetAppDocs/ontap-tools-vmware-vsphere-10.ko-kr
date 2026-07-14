@@ -15,6 +15,7 @@ ONTAP tools for VMware vSphere는 컴퓨팅 전용(vMotion), 스토리지 전용
 
 
 
+[[migrate-protected-virtual-machines]]
 == 보호된 가상 시스템을 마이그레이션합니다
 
 보호된 가상 머신을 다음 위치로 마이그레이션할 수 있습니다.
@@ -30,6 +31,7 @@ ONTAP tools for VMware vSphere는 컴퓨팅 전용(vMotion), 스토리지 전용
 
 
 
+[[clone-protected-virtual-machines]]
 == 보호된 가상 머신의 클론을 생성합니다
 
 보호된 가상 컴퓨터를 다음 컴퓨터에 클론 복제할 수 있습니다.
@@ -56,6 +58,7 @@ VMware는 현재 VM 템플릿으로 복제된 가상 머신을 지원하지 않�
 
 
 
+[[virtual-machine-snapshots]]
 == 가상 머신 스냅샷
 
 ONTAP tools는 표준 VMware 워크플로를 통해 가상 머신 스냅샷을 지원합니다. 스냅샷은 테스트 및 패치 준비와 같은 사용 사례를 위한 단기 롤백 지점입니다. 스냅샷은 백업 또는 복제 기반 데이터 보호를 대체하는 것이 아닙니다. 스냅샷에서 가상 머신을 장기간 실행하면 불안정성 및 데이터 손실이 발생할 수 있습니다.

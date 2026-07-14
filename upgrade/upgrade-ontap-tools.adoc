@@ -67,7 +67,7 @@ ONTAP tools for VMware vSphere 에서 10.5로 업그레이드할 수 있습니�
 . vCenter Server에서 콘솔을 열고 ONTAP 툴을 엽니다.
 . 유지보수 사용자로 로그인합니다.
 . *시스템 구성* 메뉴를 선택하려면 *2*을 입력하세요.
-. *업그레이드* 옵션을 선택하려면 *7*을 입력하세요.
+. *6*을 입력하여 *업그레이드* 옵션을 선택합니다.
 . 메시지가 표시되면 vCenter 자격 증명을 제공하십시오. 이는 ONTAP tools가 호스팅되는 vCenter 인스턴스입니다.
 +
 ONTAP 도구를 두 개의 vCenter Server 토폴로지(어플라이언스가 하나의 vCenter 인스턴스에서 호스팅되고 다른 인스턴스를 관리하는 경우)에서 사용하는 경우, ONTAP 도구를 호스팅하는 vCenter 인스턴스에 제한된 역할을 할당할 수 있습니다. OVF 템플릿 배포에 필요한 권한만 있는 전용 vCenter 사용자 및 역할을 생성할 수 있습니다. 자세한 내용은 link:../concepts/rbac-vcenter-use.html#vsphere-object-hierarchy["VMware vSphere 10용 ONTAP 툴에 포함된 역할"]에 나열된 역할을 참조하십시오.
