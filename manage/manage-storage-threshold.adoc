@@ -1,8 +1,8 @@
 ---
 permalink: manage/manage-storage-threshold.html 
 sidebar: sidebar 
-keywords:  
-summary: 볼륨과 집계 용량이 특정 수준에 도달하면 vCenter Server에서 알림을 받도록 임계값을 설정할 수 있습니다.  
+keywords: storage threshold alerts, ONTAP tools capacity thresholds, vCenter storage notifications, aggregate volume capacity warnings 
+summary: vCenter Server에서 볼륨 및 애그리게이트 용량 수준에 대한 임계값 알림을 설정합니다. 
 ---
 = ONTAP tools에서 스토리지 임계값 관리
 :allow-uri-read: 

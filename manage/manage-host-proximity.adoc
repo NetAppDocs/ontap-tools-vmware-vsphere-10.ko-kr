@@ -1,0 +1,35 @@
+---
+permalink: manage/manage-host-proximity.html 
+sidebar: sidebar 
+keywords: host cluster configuration, manage host proximity, SVM mapping, ONTAP tools host cluster protection 
+summary: 호스트 클러스터 보호를 위한 호스트 클러스터 구성 설정을 보고, 편집하고, 제거할 수 있습니다. 
+---
+= ONTAP tools에서 클러스터 구성 관리
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+이 작업을 사용하여 ONTAP tools에서 호스트 클러스터 구성 설정을 보고, 편집하고, 제거하여 호스트 클러스터 보호를 위한 사이트 할당이 정확하게 유지되도록 하십시오.
+
+.시작하기 전에
+* vSphere에 대한 관리자 권한이 있는지 확인하십시오.
+* ONTAP tools 사용자 계정에 호스트 클러스터 보호 설정을 관리할 수 있는 권한이 있는지 확인하십시오.
+
+
+.단계
+. ONTAP tools 플러그인에서 *보호* > *클러스터 보호 구성*으로 이동합니다.
++
+호스트 클러스터 구성 설정은 구성 유형, SVM 및 호스트와 함께 나열됩니다.
+
+. 관리하려는 호스트 클러스터 구성 설정 옆에 있는 세로 줄임표(점 세 개)를 선택합니다.
++
+.. 구성을 편집하려면 *Edit*를 선택하고 필요한 설정을 업데이트하십시오. 자세한 내용은 link:../protect/config-proximity.html["ONTAP tools를 사용하여 데이터 저장소 보호를 위한 클러스터 구성"]을 참조하십시오.
++
+클러스터에 새 호스트를 추가하면 기존 클러스터 구성 설정이 해당 호스트에 자동으로 적용되지 않습니다. 기존 클러스터 구성을 편집하고 새 호스트를 적절한 사이트에 할당하십시오.
+
+.. 구성을 제거하려면 *제거*를 선택하고 대화 상자에서 삭제를 확인하십시오.
+
+
+

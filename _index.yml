@@ -7,7 +7,7 @@ indexpage:
   - title: 시작하십시오
     links:
     - title: 릴리스 정보
-      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP3358876
+      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP3383264
     - title: VMware vSphere용 ONTAP 툴에 대해 자세히 알아보십시오
       url: "/concepts/ontap-tools-overview.html"
     - title: VMware vSphere용 ONTAP 툴을 구축합니다

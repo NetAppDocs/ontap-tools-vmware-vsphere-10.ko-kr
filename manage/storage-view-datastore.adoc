@@ -1,8 +1,8 @@
 ---
 permalink: manage/storage-view-datastore.html 
 sidebar: sidebar 
-keywords: Remove vVol datastore 
-summary: ONTAP tools for VMware vSphere의 Configure 탭 아래에 있는 ONTAP 스토리지 보기에는 데이터 저장소 및 해당 볼륨과 관련된 데이터가 표시됩니다. 
+keywords: ONTAP storage view datastores, datastore volume details, NFS VMFS vVol datastore insights, ONTAP tools storage visibility 
+summary: ONTAP tools for VMware vSphere의 ONTAP 스토리지 페이지에서 데이터스토어 및 볼륨 세부 정보를 확인합니다. 
 ---
 = ONTAP tools의 데이터 저장소용 ONTAP 스토리지 뷰
 :allow-uri-read: 
@@ -11,10 +11,10 @@ summary: ONTAP tools for VMware vSphere의 Configure 탭 아래에 있는 ONTAP 
 
 
 [role="lead"]
-VMware vSphere용 ONTAP 툴은 구성 탭에 데이터 저장소와 해당 볼륨에 대한 ONTAP 스토리지의 뷰를 보여 줍니다.
+*구성* 탭의 ONTAP 스토리지 페이지를 사용하여 데이터 저장소 및 볼륨 정보를 확인하십시오.
 
 .단계
-. vSphere 클라이언트에서 데이터스토어로 이동합니다.
+. vSphere Client 인벤토리에서 데이터스토어를 선택합니다.
 . 오른쪽 창에서 * Configure * 탭을 선택합니다.
 . * NetApp ONTAP 도구* > * ONTAP 스토리지*를 선택합니다. 데이터 저장소 유형에 따라 뷰가 변경됩니다.  아래 표를 참조하세요.
 
@@ -25,11 +25,13 @@ VMware vSphere용 ONTAP 툴은 구성 탭에 데이터 저장소와 해당 볼�
 | * 데이터 저장소 유형 * | * 사용 가능한 정보 * 
 
 
-| NFS 데이터 저장소 | 스토리지 세부 정보 * 페이지에는 스토리지 백엔드, 집계 및 볼륨 정보가 포함되어 있습니다. nfs details * 페이지에는 NFS 데이터 저장소와 관련된 데이터가 포함되어 있습니다. 
+| NFS 데이터 저장소 | *스토리지 세부 정보* 페이지에는 스토리지 백엔드, 애그리게이트 및 볼륨 정보가 포함됩니다.  *NFS 세부 정보* 페이지에는 NFS 데이터 저장소 관련 데이터가 포함됩니다.  참고: ONTAP tools 외부에서 nconnect 값을 변경하면 ONTAP tools에 표시되는 값이 외부 변경 사항을 반영하지 않을 수 있습니다. 
 
 
-| VMFS 데이터 저장소 | Storage details * 페이지에는 스토리지 백엔드, 집계, 볼륨 및 SAZ(Storage Availability Zone) 세부 정보가 포함되어 있습니다. 저장 장치 세부 정보 * 페이지에는 저장 장치에 대한 세부 정보가 포함되어 있습니다. 
+| VMFS 데이터 저장소 | *스토리지 세부 정보* 페이지에는 스토리지 백엔드, 애그리게이트, 볼륨 및 스토리지 가용성 영역(SAZ) 세부 정보가 표시됩니다. *스토리지 유닛 세부 정보* 페이지에는 스토리지 유닛 세부 정보가 표시됩니다. 
 
 
 | VVOL 데이터 저장소 | 모든 볼륨을 나열합니다. ONTAP 스토리지 창에서 스토리지를 확장하거나 제거할 수 있습니다. ONTAP 도구는 ASA r2 시스템 기반 vVols 데이터 저장소에 대한 이 보기를 지원하지 않습니다. 
 |===
+.결과
+선택한 데이터 저장소 유형에 따라 ONTAP 측 데이터 저장소 세부 정보를 검토할 수 있습니다.

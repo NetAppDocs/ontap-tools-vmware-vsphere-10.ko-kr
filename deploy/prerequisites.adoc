@@ -1,8 +1,8 @@
 ---
 permalink: deploy/prerequisites.html 
 sidebar: sidebar 
-keywords: ONTAP tools,Storage Replication Adapter 
-summary: VMware vSphere용 ONTAP 툴을 구축하기 전에 구축 패키지에 대한 공간 요구 사항과 몇 가지 기본 호스트 시스템 요구 사항을 숙지해야 합니다. 
+keywords: ONTAP tools requirements, configuration limits, supported versions, sizing 
+summary: ONTAP tools for VMware vSphere를 배포하기 전에 지원되는 버전, 크기 조정, 포트 요구 사항 및 구성 제한을 검토하십시오. 
 ---
 = VMware vSphere 요구 사항 및 구성 제한에 대한 ONTAP 도구
 :allow-uri-read: 
@@ -11,9 +11,9 @@ summary: VMware vSphere용 ONTAP 툴을 구축하기 전에 구축 패키지에 
 
 
 [role="lead"]
-VMware vSphere용 ONTAP 툴을 구축하기 전에 구축 패키지에 대한 공간 요구 사항과 몇 가지 기본 호스트 시스템 요구 사항을 숙지해야 합니다.
+ONTAP tools for VMware vSphere를 배포하기 전에 지원되는 버전, 크기 조정, 포트 요구 사항 및 구성 제한을 검토하십시오.
 
-ONTAP tools for VMware vSphere를 VMware vCenter Server Virtual Appliance(vCSA)와 함께 사용할 수 있습니다. ESXi 호스트가 포함된 지원되는 vSphere 환경에 ONTAP tools for VMware vSphere를 배포해야 합니다.
+ESXi 호스트 및 VMware vCenter Server Virtual Appliance(vCSA)가 포함된 지원되는 vSphere 환경에 ONTAP tools for VMware vSphere를 배포합니다.
 
 
 
@@ -26,7 +26,7 @@ ONTAP tools for VMware vSphere를 VMware vCenter Server Virtual Appliance(vCSA)�
 ** 일반 프로비저닝 설치의 경우 348GB
 
 
-* *호스트 시스템 크기 요구 사항* 아래 표는 각 배포 크기에 권장되는 메모리를 보여줍니다. 고가용성(HA) 배포의 경우 나열된 어플라이언스 크기의 3배가 필요합니다.
+* *호스트 시스템 크기 요구 사항* 아래 표는 각 배포 규모에 대한 노드당 권장 CPU, 메모리 및 디스크 공간을 보여줍니다. 고가용성(HA) 배포의 경우 3개의 노드를 배포하십시오.
 
 
 |===
@@ -35,16 +35,22 @@ ONTAP tools for VMware vSphere를 VMware vCenter Server Virtual Appliance(vCSA)�
 | * 배포 유형 * | * 노드당 CPU * | * 노드당 메모리(GB) * | * 노드당 디스크 공간(GB) 씩 프로비저닝 * 
 
 
+| 엑스트라 스몰(XS) | 6 | 12 | 350 
+
+
 | 작은 크기 | 9 | 18 | 350 
 
 
 | 중간 | 13 | 26 | 350 
 
 
-| 대규모 참고: 대규모 구축은 HA 구성에만 해당됩니다. | 17 | 34 | 350 
+| 대형 | 17 | 34 | 350 
 |===
 
-NOTE: 백업이 활성화되면 각 ONTAP Tools 클러스터의 VM이 구축되는 데이터 저장소에 50GB의 공간이 추가로 필요합니다. 따라서 비 HA에는 400GB가 필요하며 HA에는 총 1100GB의 공간이 필요합니다.
+NOTE: 대규모 배포 크기는 HA 구성에서만 지원됩니다.
+
+
+NOTE: 백업이 활성화된 경우, 각 ONTAP tools 클러스터는 VM이 배포된 데이터스토어에 추가로 50GB의 공간이 필요합니다. 따라서 고가용성(HA)을 사용하지 않는 경우 총 400GB, 고가용성(HA)을 사용하는 경우 총 1100GB의 공간이 필요합니다.
 
 
 
@@ -55,28 +61,28 @@ NOTE: 백업이 활성화되면 각 ONTAP Tools 클러스터의 VM이 구축되�
 | 스토리지, 호스트 및 애플리케이션 | 버전 요구 사항 
 
 
-| ONTAP | 9.15.1, 9.16.1 및 9.17.0 
+| ONTAP 시스템 | 9.16.1, 9.17.1, 9.18.1, 9.19.1 
 
 
-| ONTAP 툴 지원 ESXi 호스트 | 7.0.3 이상 
+| ONTAP tools로 관리되는 ESXi 호스트 | 7.0.3 이상 
 
 
-| ONTAP 툴이 vCenter Server를 지원했다 | 7.0U3 이상 
+| vCenter ONTAP tools로 관리되는 Server 인스턴스 | 8.0U3 이후 버전 
 
 
 | VASA 공급자 | 3.0 
 
 
-| OVA 응용 프로그램 | 10.5 
+| OVA 응용 프로그램 | 10.6 
 
 
-| ONTAP 툴 가상 머신을 구축하기 위한 ESXi 호스트 | 7.0U3 및 8.0U3 
+| ONTAP tools 가상 머신을 배포하는 데 사용되는 ESXi 호스트 | 7.0U3 및 8.0U3 
 
 
-| vCenter Server - ONTAP 툴 가상 머신 구축 | 7.0 및 8.0 
+| vCenter Server는 ONTAP tools 가상 머신을 배포하는 데 사용됩니다 | 7.0 및 8.0 
 |===
 
-NOTE: VMware vSphere 10.4용 ONTAP 툴부터 가상 머신 하드웨어가 버전 10에서 17로 변경되었습니다.
+NOTE: ONTAP tools for VMware vSphere 10.4부터 가상 머신 하드웨어 버전이 10에서 17로 변경되었습니다.
 
 상호 운용성 매트릭스 툴(IMT)에는 지원되는 ONTAP 버전, vCenter Server, ESXi 호스트 및 플러그인 애플리케이션에 대한 최신 정보가 포함되어 있습니다.
 
@@ -90,7 +96,7 @@ https://imt.netapp.com/matrix/imt.jsp?components=105475;&solution=1777&isHWU&src
 다음 표는 NetApp 에서 사용하는 네트워크 포트와 그 용도를 간략하게 설명합니다. 포트에는 세 가지 유형이 있습니다.
 
 * 외부 포트: 이 포트는 Kubernetes 클러스터나 노드 외부에서 접근할 수 있습니다. 이를 통해 서비스가 외부 네트워크나 사용자와 통신할 수 있으므로 클러스터 환경 외부의 시스템과 통합이 가능합니다.
-* 노드 간 포트: 이 포트는 Kubernetes 클러스터 내의 노드 간 통신을 가능하게 합니다. 데이터 공유나 협력과 같은 클러스터 작업에 필요합니다. 단일 노드 배포의 경우 노드 간 포트는 노드 내부에서만 사용되며 외부 액세스가 필요하지 않습니다. 노드 간 포트는 클러스터 외부에서 트래픽을 허용할 수 있습니다. 방화벽 규칙을 사용하여 인터넷 접근에서 노드 간 포트를 차단합니다.
+* 노드 간 포트: 이러한 포트는 Kubernetes 클러스터 내 노드 간 통신을 가능하게 합니다. 데이터 교환 및 노드 조정과 같은 클러스터 운영에 필수적입니다. 단일 노드 배포의 경우 노드 간 포트는 해당 노드 내에서만 사용되며 외부 액세스가 필요하지 않습니다. 신뢰할 수 있는 클러스터 네트워크에서만 노드 간 트래픽을 허용하고 방화벽 규칙을 사용하여 인터넷 액세스를 차단하십시오.
 * 내부 포트: 이 포트는 ClusterIP 주소를 사용하여 Kubernetes 클러스터 내에서 통신합니다. 이러한 항목은 외부에 노출되지 않으며 방화벽 규칙에 추가할 필요가 없습니다.
 
 
@@ -161,10 +167,10 @@ NOTE: HA 배포의 경우 모든 노드 간에 UDP 포트 8472가 열려 있는�
 ====
 
 
-[[configuration-limits-to-deploy-ontap-tools-for-vmware-vsphere-for-vvols-datastores]]
-== ONTAP tools for VMware vSphere를 vVols 데이터스토어에 배포하기 위한 구성 한계
+[[configuration-limits-for-vvol-datastores]]
+== vVol 데이터스토어에 대한 구성 제한
 
-다음 표를 참고하여 VMware vSphere용 ONTAP tools를 구성할 수 있습니다.
+다음 표를 ONTAP tools for VMware vSphere 구성 지침으로 사용하십시오.
 
 |===
 
@@ -178,21 +184,21 @@ NOTE: HA 배포의 경우 모든 노드 간에 UDP 포트 8472가 열려 있는�
 | HA가 아닙니다 | 중간(M) | 최대 24K | 64 
 
 
-| 고가용성 | 소형(S) | 최대 24K | 64 
+| HA | 소형(S) | 최대 24K | 64 
 
 
-| 고가용성 | 중간(M) | 최대 50,000 | 128 
+| HA | 중간(M) | 최대 50K | 128 
 
 
-| 고가용성 | 크게(L) | 최대 10만 | 256 
+| HA | 크게(L) | 최대 100K | 256 
 |===
 
 NOTE: 표에 표시된 호스트 수는 연결된 모든 vCenters의 총합입니다.
 
 
 
-[[configuration-limits-to-deploy-ontap-tools-for-vmware-vsphere-for-vmfs-and-nfs-datastores]]
-== VMFS 및 NFS 데이터스토어용 ONTAP tools for VMware vSphere 배포를 위한 구성 제한
+[[configuration-limits-for-vmfs-and-nfs-datastores]]
+== VMFS 및 NFS 데이터스토어에 대한 구성 제한
 
 이 섹션에 나열된 구성 제한 사항은 NetApp에서 검증되고 지원됩니다. 실제 제한 사항은 환경 및 워크로드에 따라 다를 수 있습니다. 이러한 제한을 초과하면 성능이나 지원 가능성에 영향을 미칠 수 있으므로 권장하지 않습니다. 표를 검토할 때 다음 사항을 고려하십시오.
 
@@ -207,10 +213,16 @@ NOTE: 표에 표시된 호스트 수는 연결된 모든 vCenters의 총합입�
 | 구축 | VMFS 및 NFS 데이터 저장소 수 | DR이 설정된 VMFS 데이터 저장소 수 | 호스트 수 
 
 
+| 엑스트라 스몰 | 50 | 50 | 16 
+
+
 | 비 HA 소형 | 200 | 80 | 32 
 
 
 | HA가 아닌 중간 | 250 | 100 | 32 
+
+
+| HA 초소형 | 200 | 100 | 32 
 
 
 | HA 소규모 | 350 | 200 | 64 
@@ -229,7 +241,7 @@ NOTE: 표에 표시된 호스트 수는 연결된 모든 vCenters의 총합입�
 다음 표에는 VMware vSphere용 ONTAP 툴을 사용하여 VMware 라이브 사이트 복구 인스턴스당 지원되는 수가 나와 있습니다.
 
 |===
-| * vCenter 배포 크기 * | * 소형 * | * 중간 * 
+| *vCenter 배포 크기* | * 소형 * | * 중간 * 
 
 
 | 스토리지 기반 복제를 사용하여 보호를 위해 구성된 총 가상 시스템 수입니다 | 2000 | 5000 
@@ -251,10 +263,10 @@ NOTE: 표에 표시된 호스트 수는 연결된 모든 vCenters의 총합입�
 |===
 
 
-| * VMware Live Site Recovery 인스턴스 수 * | * ONTAP 도구 배포 크기 * 
+| * VMware Live Site Recovery 인스턴스 수 * | *ONTAP tools 배포 규모* 
 
 
-| 최대 4개 | 작은 크기 
+| 최대 4 | 작은 크기 
 
 
 | 4 - 8 | 중간 

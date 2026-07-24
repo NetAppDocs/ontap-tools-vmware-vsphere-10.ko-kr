@@ -1,61 +1,53 @@
 ---
 permalink: manage/edit-appliance-settings.html 
 sidebar: sidebar 
-keywords:  
-summary: ONTAP 도구 관리자를 사용하여 관리자 암호를 변경할 수 있습니다. 
+keywords: scale ONTAP tools appliance, enable high availability, ONTAP tools HA configuration, appliance scaling settings 
+summary: 'ONTAP tools Manager를 사용하여 ONTAP tools 어플라이언스를 확장하고 고가용성(HA)을 구성하십시오.' 
 ---
-= ONTAP 도구 어플라이언스 설정을 변경합니다
+= ONTAP tools 확장 및 고가용성 활성화
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ONTAP 도구 관리자를 사용하면 노드 수를 늘리거나 고가용성(HA)을 활성화하여 ONTAP tools for VMware vSphere 확장할 수 있습니다.  기본적으로 ONTAP tools for VMware vSphere 단일 노드, 비 HA 구성으로 배포됩니다.
+ONTAP Tools Manager를 사용하여 어플라이언스를 확장하고 고가용성(HA)을 구성하십시오. 기본적으로 ONTAP tools for VMware vSphere는 단일 노드, 비HA 구성으로 배포됩니다.
 
 .시작하기 전에
-* OVA 템플릿의 OVA 버전이 노드 1과 동일한지 확인합니다. 노드 1은 VMware vSphere OVA용 ONTAP 툴이 처음 구축되는 기본 노드입니다.
-* CPU 핫 애드 및 메모리 핫 플러그가 활성화되어 있는지 확인합니다.
-* vCenter Server에서 재해 복구 서비스(DRS) 자동화 수준을 "부분 자동화"로 설정합니다. HA를 구축한 후에는 "완전 자동화"로 되돌립니다.
-* HA 설정의 노드 호스트 이름은 소문자여야 합니다.
+* OVA 템플릿 버전이 노드 1(초기 배포 노드)의 버전과 일치하는지 확인하십시오.
+* 하이퍼바이저에서 CPU 핫 추가 및 메모리 핫 플러그를 활성화합니다. 이러한 기능은 어플라이언스의 스케일 업 및 고가용성(HA) 활성화에 필요합니다. ONTAP tools 10.6 이상 버전에서는 이러한 기능이 기본적으로 활성화되어 있습니다. 이전 버전의 경우 스케일 업 또는 HA 활성화 전에 이러한 기능을 활성화해야 합니다.
+* vCenter Server에서 재해 복구 서비스(DRS) 자동화 수준을 부분 자동화로 설정합니다. HA 배포가 완료되면 완전 자동화로 되돌립니다.
++
+
+NOTE: 노드 크기는 늘릴 수는 있지만 줄일 수는 없습니다. 초소형(XS) 배포 환경에서는 특정 서비스가 제한됩니다.
+
 
 
 .단계
-. 웹 브라우저에서 ONTAP 도구 관리자를 실행합니다. `\https://<ONTAPtoolsIP>:8443/virtualization/ui/`
-. 구축 중에 제공한 VMware vSphere 관리자 자격 증명용 ONTAP 툴을 사용하여 로그인합니다.
-. 개요 섹션에서 * 어플라이언스 설정 편집 * 을 선택합니다.
-. *구성* 섹션에서 노드 크기를 확장하고 HA 구성을 활성화합니다.  vCenter Server 자격 증명을 사용하여 변경합니다.
+. ONTAP tools Manager를 실행합니다: `\https://<ONTAPtoolsIP>:8443/virtualization/ui/`
+. ONTAP tools 관리자 자격 증명으로 로그인하십시오.
+. 개요 섹션에서 *기기 설정 편집*을 선택합니다.
+. *구성* 섹션에서 새 노드 크기를 선택하고 HA 스위치를 켜서 고가용성을 활성화하십시오.
+. *HA 설정* 페이지에서 다음 사항을 확인하십시오:
 +
-HA 구성에서는 콘텐츠 라이브러리 세부 정보를 변경할 수 있습니다.  각 편집에 대한 비밀번호를 제공하세요.
-
-+
-
-NOTE: ONTAP tools for VMware vSphere 에서는 노드 크기를 늘릴 수만 있고, 노드 크기를 줄일 수는 없습니다.  HA가 아닌 설정에서는 중간 크기 구성만 지원됩니다.  HA 설정에서는 중간 및 대규모 구성이 지원됩니다.
-
-. HA 전환 버튼을 사용하여 HA 구성을 활성화합니다. HA 설정 * 페이지에서 다음을 확인합니다.
-+
-** 컨텐츠 라이브러리는 ONTAP 툴 노드 VM이 실행되는 동일한 vCenter Server에 속합니다. vCenter Server 자격 증명은 어플라이언스 변경 사항을 확인하기 위해 OVA 템플릿을 다운로드하고 다운로드하는 데 사용됩니다.
-** ONTAP 툴을 호스팅하는 가상 시스템은 ESXi 호스트에 직접 구축되지 않습니다. VM은 클러스터 또는 리소스 풀에 배포해야 합니다.
+** 콘텐츠 라이브러리는 ONTAP tools VM이 실행될 vCenter Server와 동일한 서버에 있습니다.
+** ONTAP tools의 VM은 ESXi 호스트에 직접 배포되는 것이 아니라 클러스터 또는 리소스 풀에 배포됩니다.
 +
 
-NOTE: HA 구성이 활성화된 후에는 HA가 아닌 단일 노드 구성으로 되돌릴 수 없습니다.
+IMPORTANT: HA를 활성화한 후에는 HA를 사용하지 않는 단일 노드 구성으로 되돌릴 수 없습니다.
 
 
 
-. 어플라이언스 설정 편집 * 창의 * HA 설정 * 섹션에서 노드 2와 3의 세부 정보를 입력할 수 있습니다. VMware vSphere용 ONTAP 툴은 HA 설정에서 3개의 노드를 지원합니다.
+. *HA 설정* 섹션에서 노드 2와 3에 대한 네트워크 정보를 입력하십시오. ONTAP tools는 HA 모드에서 세 개의 노드를 지원합니다.
 +
+ONTAP tools는 대부분의 필드를 노드 1의 네트워크 설정으로 미리 채웁니다. 마법사를 완료하기 전에 이러한 값을 편집할 수 있습니다. IPv6 주소 항목은 관리 노드에서 IPv6가 활성화된 경우에만 사용할 수 있습니다. 각 ESXi 호스트에는 ONTAP tools VM이 하나만 있어야 합니다.
 
-NOTE: ONTAP 도구는 워크플로를 단순화하기 위해 대부분의 입력 옵션에 노드 1 네트워크 세부 정보를 미리 입력합니다.  마법사의 마지막 페이지로 가기 전에 입력 데이터를 편집할 수 있습니다. ONTAP 도구 관리 노드에서 IPv6 주소가 활성화된 경우에만 다른 두 노드에 대한 IPv6 주소 세부 정보를 입력할 수 있습니다.
-
-+
-각 ESXi 호스트에는 ONTAP tools VM이 하나만 있어야 합니다. 입력값은 다음 창으로 이동할 때마다 유효성 검사를 거칩니다.
-
-. 요약 * 섹션의 세부 사항을 검토하고 변경 사항을 * 저장 * 하십시오.
+. 요약을 검토하고 *저장*을 클릭합니다.
 
 
-.다음 단계
-*개요* 페이지는 배포 상태를 보여줍니다. 작업 ID를 사용하여 작업 보기에서 편집 기기 설정 작업 상태를 추적할 수도 있습니다.
+.결과
+어플라이언스가 스케일링 및 고가용성(HA) 활성화를 시작합니다. *개요* 페이지에서 진행 상황을 모니터링하거나 *작업* 보기에서 작업 ID를 사용하여 작업을 추적할 수 있습니다.
 
-HA 배포에 실패하고 새 노드 상태가 '신규'인 경우 HA를 다시 활성화하기 전에 vCenter에서 새 VM을 삭제하세요.
+HA 배포가 '새로 생성됨' 상태로 실패하면 vCenter에서 실패한 VM을 삭제하고 다시 시도하십시오.
 
-왼쪽 패널의 * Alerts * 탭에는 VMware vSphere용 ONTAP 툴에 대한 경고가 표시됩니다.
+진행 과정에서 발생할 수 있는 경고나 문제점을 확인하려면 *알림* 탭을 검토하십시오.

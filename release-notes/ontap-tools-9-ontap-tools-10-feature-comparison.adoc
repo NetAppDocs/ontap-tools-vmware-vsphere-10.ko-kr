@@ -1,8 +1,8 @@
 ---
 permalink: release-notes/ontap-tools-9-ontap-tools-10-feature-comparison.html 
 sidebar: sidebar 
-keywords: release notes, feature, comparison 
-summary: ONTAP tools for VMware vSphere 와 ONTAP tools for VMware vSphere 기능 비교에 대해 알아보세요. 
+keywords: ONTAP tools feature comparison, VMware vSphere, version upgrade, compatibility, NetApp tools 
+summary: ONTAP tools for VMware vSphere 9 및 10의 기능을 비교하여 ONTAP tools 10.2 이상으로 마이그레이션할지 여부를 결정하십시오. 
 ---
 = ONTAP tools for VMware vSphere
 :allow-uri-read: 
@@ -11,26 +11,28 @@ summary: ONTAP tools for VMware vSphere 와 ONTAP tools for VMware vSphere 기�
 
 
 [role="lead"]
-ONTAP tools for VMware vSphere 에서 ONTAP tools for VMware vSphere 로 마이그레이션하는 것이 적합한지 알아보세요.
+ONTAP tools for VMware vSphere 9에서 ONTAP tools for VMware vSphere 10.2 이상으로 마이그레이션하는 것이 귀하의 환경에 적합한 선택인 이유를 알아보십시오.
 
 
-NOTE: 최신 호환성 정보는 https://mysupport.netapp.com/matrix["NetApp 상호 운용성 매트릭스 툴"^]을 참조하십시오.
+NOTE: 최신 호환성 정보는  https://mysupport.netapp.com/matrix["NetApp 상호 운용성 매트릭스 툴"^]을 참조하십시오.
+
+ONTAP tools 9.x의 최신 지원 종료 정보는  https://mysupport.netapp.com/site/info/version-support["소프트웨어 버전 지원"^]을 참조하십시오.
 
 [cols="20%,25%,30%"]
 |===
 | 특징 | ONTAP 도구 9.13 | ONTAP 도구 10.2 이상 
 
 
-| 핵심 가치 제안 | 향상된 보안, 규정 준수 및 자동화 기능으로 0일차부터 2일차까지의 운영을 간소화하고 단순화합니다. | VMFS용 FC와 VMFS 전용 NVMe-oF를 포함하도록 지원이 확대되었습니다. NetApp SnapMirror 의 사용 편의성, vSphere 메트로 스토리지 클러스터의 간단한 설정, 3개 사이트 VMware Live Site Recovery 지원 
+| 핵심 가치 제안 | 향상된 보안, 규정 준수 및 자동화 기능을 통해 초기 구축부터 운영까지 간소화하고 단순화하십시오. ONTAP tools 어플라이언스당 vCenter Server는 하나만 지원합니다. | VMFS용 FC 및 VMFS 전용 NVMe-oF를 포함하도록 지원 범위가 확장되었습니다. NetApp SnapMirror의 사용 편의성, vSphere 메트로 스토리지 클러스터의 간편한 설정, 3개 사이트 VMware Live Site Recovery 지원. ONTAP tools 어플라이언스당 여러 vCenter Server 인스턴스를 지원하여 어플라이언스 수와 전체 리소스 요구 사항을 줄입니다. 
 
 
-| ONTAP 릴리스 자격 | ONTAP 9.9.1에서 ONTAP 9.16.1로 | ONTAP tools 10.2의 경우 ONTAP 9.12.1~9.15.1. ONTAP tools 10.3의 경우 ONTAP 9.14.1, 9.15.1, 9.16.0 및 9.16.1. ONTAP tools 10.4의 경우 ONTAP 9.14.1, 9.15.1, 9.16.0 및 9.16.1. ASA r2 시스템을 사용하는 경우 ONTAP tools 10.4에는 ONTAP 9.16.1P3 이상이 필요합니다. ONTAP tools 10.5의 경우 ONTAP 9.15.1, 9.16.1 및 9.17.0 
+| ONTAP 릴리스 자격 | ONTAP 9.9.1에서 ONTAP 9.16.1로 | ONTAP tools 10.2의 경우 ONTAP 9.12.1~9.15.1. ONTAP tools 10.3의 경우 ONTAP 9.14.1, 9.15.1, 9.16.0 및 9.16.1. ONTAP tools 10.4의 경우 ONTAP 9.14.1, 9.15.1, 9.16.0 및 9.16.1. ASA r2 시스템을 사용하는 경우 ONTAP tools 10.4에는 ONTAP 9.16.1P3 이상이 필요합니다. ONTAP tools 10.5의 경우 ONTAP 9.15.1, 9.16.1 및 9.17.0, ONTAP tools 10.6의 경우 ONTAP 9.16.1, 9.17.1, 9.18.1 및 9.19.1과 ASA r2 버전 9.16.1P3, 9.17.1, 9.18.1 및 9.19.1. 
 
 
-| VMware 릴리스 지원 | vSphere 7.x-8.x VMware Site Recovery Manager(SRM) 8.5에서 VMware Live Site Recovery 9.0으로 | vSphere 7.x-8.x ONTAP 도구 10.5 이상의 vSphere 9.0 VMware Site Recovery Manager(SRM) 8.7 VMware Live Site Recovery 9.0 *참고:* ONTAP 도구 10.x에서 SRM은 공유 사이트를 지원하여 확장성을 강화하고 성능을 개선합니다. 
+| VMware 릴리스 지원 | vSphere 7.x-8.x VMware Site Recovery Manager(SRM) 8.5에서 VMware Live Site Recovery 9.0으로 | vSphere 7.x-8.x vSphere 9.0(ONTAP tools 10.5 이상), VMware Site Recovery Manager(SRM) 8.7부터 VMware Live Site Recovery 9.0, 9.0.1, 9.0.2, 9.0.3 및 9.0.4까지 
 
 
-| 프로토콜 지원 | NFS 및 VMFS 데이터 저장소: NFS(v3 및 v4.1), VMFS(iSCSI 및 FCP) | NFS 및 VMFS 데이터 저장소: NFS(v3 및 v4.1), VMFS(iSCSI/FCP/NVMe-oF) 
+| 프로토콜 지원 | NFS 및 VMFS 데이터 저장소: NFS(v3 및 v4.1), VMFS(iSCSI 및 FCP) | NFS 및 VMFS 데이터 저장소: NFS(v3 및 v4.1), VMFS(iSCSI/FCP/NVMe-TCP 및 NVMe-FC) 
 
 
 | 확장성 | 호스트 및 VM: 300개 호스트, 최대 10,000개 VM 데이터 저장소: 600개 NFS, 최대 50개 VMFS | 호스트 및 VM: 600개 호스트 
@@ -39,7 +41,7 @@ NOTE: 최신 호환성 정보는 https://mysupport.netapp.com/matrix["NetApp 상
 | 관찰 가능성 | 성능, 용량 및 호스트 규정 준수 대시보드 동적 VM 및 데이터 저장소 보고서 | 업데이트된 성능, 용량 및 호스트 규정 준수 대시보드 동적 VM 및 데이터 저장소 보고서 
 
 
-| 데이터 보호 | VMFS 및 NFS에 대한 SRA 복제.  SCV 통합 및 백업을 위한 상호 운용성. | SMAS와 VMware Live Site Recovery를 결합한 3개 사이트 보호, iSCSI VMFS 및 NFS v3 데이터 저장소를 위한 SRA 복제. VMFS를 사용한 FCP에 대한 SRA 지원. 
+| 데이터 보호 | VMFS 및 NFS에 대한 SRA 복제.  SCV 통합 및 백업을 위한 상호 운용성. | iSCSI VMFS 및 NFS v3 데이터스토어용 SRA 복제, SMAS 및 VMware Live Site Recovery를 결합한 3개 사이트 보호. VMFS를 사용한 FCP에 대한 SRA 지원. ONTAP tools 10.6에서 세부적인 데이터스토어 보호 및 일관성 그룹 관리. *참고:* ONTAP tools 10.x에서는 SRM이 공유 사이트를 지원하여 확장성과 성능이 향상됩니다. 
 
 
 | VASA 공급자 지원 | VASA 4.0 | VASA 3.0 

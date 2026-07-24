@@ -1,8 +1,8 @@
 ---
 permalink: deploy/deployment-error-codes.html 
 sidebar: sidebar 
-keywords: upgrade 
-summary: 이 페이지에서는 VMware vSphere 시스템용 ONTAP 툴의 구축, 재부팅 및 복구 작업에 대한 오류 코드를 간략하게 설명합니다. 
+keywords: troubleshooting deployment errors, log bundles, error codes, ONTAP tools 
+summary: ONTAP 도구의 배포 오류 코드를 사용하여 배포, 재부팅 및 복구 실패를 진단하고 해결하십시오. 
 ---
 = ONTAP 도구 배포 오류 해결
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 이 페이지에서는 VMware vSphere 시스템용 ONTAP 툴의 구축,
 
 
 [role="lead"]
-배포 문제가 발생하는 경우 로그와 오류 코드를 검토하여 문제를 진단하고 해결하세요.  ONTAP tools for VMware vSphere 부터 포드에서 수집된 로그 번들에는 MongoDB, RabbitMQ, Vault의 로그와 모든 포드의 상태 및 설명이 포함됩니다.  이러한 기능은 기존 ONTAP 도구 서비스 로그에 추가로 제공되어 지원 및 문제 해결을 향상시킵니다.
+배포 문제가 발생하는 경우 로그 및 오류 코드를 검토하여 문제를 진단하고 해결하십시오. ONTAP tools for VMware vSphere 10.6부터 Pod에서 수집되는 로그 번들에는 MongoDB, RabbitMQ 및 Vault의 로그와 모든 Pod의 상태 및 설명이 포함됩니다. ONTAP tools 10.6에는 문제 해결 시 추적성을 향상시키기 위한 감사 로깅 기능도 추가되었습니다. 이러한 로그는 기존 ONTAP tools 서비스 로그에 추가로 제공되어 지원 및 문제 해결 기능을 강화합니다.
 
 
 
@@ -56,7 +56,7 @@ NOTE: 생성된 로그 번들은 지난 3일 또는 72시간 내에 생성된 �
 VMware vSphere 구축, 재부팅 및 복구 작업에 대한 ONTAP 툴 중에 오류 코드가 발생할 수 있습니다.
 오류 코드는 5자리 길이이며, 처음 두 자리는 문제가 발생한 스크립트를 나타내며, 마지막 세 자리는 해당 스크립트 내의 특정 워크플로를 나타냅니다.
 
-모든 오류 로그는 /var/log 디렉토리의 ansible-perl-errors.log 파일에 기록되어 문제를 쉽게 추적하고 해결할 수 있습니다.  이 로그 파일에는 오류 코드와 실패한 Ansible 작업이 포함되어 있습니다.
+모든 오류 로그는 문제 추적 및 해결을 용이하게 하기 위해 /var/log/otvng 디렉터리의 ansible-perl-errors.log 파일에 기록됩니다. 이 로그 파일에는 오류 코드와 실패한 Ansible 작업이 포함됩니다.
 
 
 NOTE: 이 페이지에 제공된 오류 코드는 참고용일 뿐입니다. 오류가 계속 발생하거나 해결 방법이 제시되지 않은 경우 지원팀에 문의하십시오.
@@ -129,10 +129,10 @@ sudo rke2-uninstall.sh (모든 VM).
 | 060 | 운영자 배치에 실패했습니다 | 를 다시 시작합니다 
 
 
-| 061 | 서비스를 배포하지 못했습니다 | NTV-system 네임스페이스에서 get pods, get RS, get svc 등과 같은 기본 Kubernetes 디버깅을 수행하여 자세한 내용과 오류 로그를 확인할 수 있습니다. /var/log/ansible-perl-errors.log 및 /var/log/ansible-run.log 및 redeploy 를 참조하십시오. 
+| 061 | 서비스를 배포하지 못했습니다 | /var/log/otvng/ansible-perl-errors.log 및 /var/log/otvng/ansible-run.log에서 자세한 내용과 오류 로그를 확인하려면 ntv-system 네임스페이스에서 get pods, get rs, get svc 등의 기본 Kubernetes 디버깅을 수행한 후 재배포하십시오. 
 
 
-| 062 | ONTAP 도구 서비스 배포가 실패했습니다 | 자세한 내용 및 재배포는 /var/log/ansible-perl-errors.log 오류 로그를 참조하십시오. 
+| 062 | ONTAP 도구 서비스 배포가 실패했습니다 | 자세한 내용을 확인하고 다시 배포하려면 /var/log/otvng/ansible-perl-errors.log에 있는 오류 로그를 참조하십시오. 
 
 
 | 065 | Swagger 페이지 URL에 연결할 수 없습니다 | 재배포 
@@ -143,7 +143,7 @@ sudo rke2-uninstall.sh (모든 VM).
 
 * 진단 셸을 활성화합니다.
 * 'sudo perl /home/maint/scripts/post-deploy-upgrade.pl --postDeploy' 명령을 실행합니다.
-* /var/log/post-deploy-upgrade.log에서 로그를 확인하십시오.
+* /var/log/otvng/post-deploy-upgrade.log 경로에서 로그를 확인하십시오.
 
 
 
@@ -158,16 +158,6 @@ sudo rke2-uninstall.sh (모든 VM).
 
 
 | 108 | 시드 스크립트가 실패했습니다 | - 
-
-
-| 114 | MongoDB 컬렉션의 내부 인증서 업데이트가 실패했습니다  a| 
-배포가 오류 코드 114와 함께 실패하면 다음 단계를 완료하십시오.
-
-* 진단 셸을 활성화합니다.
-* 다음 명령을 실행합니다. `sudo perl /home/maint/scripts/post-deploy-upgrade.pl --internal_cert_update_collection`
-*  `/var/log/otvng/post-deploy-upgrade.log`에서 로그를 검토하십시오
-
-
 |===
 |===
 

@@ -10,6 +10,8 @@ entries:
   url: "/manage/nested-igroups.html"
 - title: ONTAP 도구 관리자 사용자 인터페이스
   url: "/manage/manager-user-interface.html"
+- title: ONTAP tools의 감사 로그 관리
+  url: "/manage/audit-logs.html"
 - title: ONTAP 도구 관리자 설정 관리
   entries:
   - title: AutoSupport 설정 편집
@@ -28,6 +30,10 @@ entries:
   url: "/manage/add-vsphere-host.html"
 - title: 데이터 저장소를 관리합니다
   entries:
+  - title: VMFS 데이터스토어 보호
+    url: "/manage/protect-ds.html"
+  - title: VMFS 데이터스토어 보호 해제
+    url: "/manage/unprotect-ds.html"
   - title: NFS 및 VMFS 데이터 저장소를 마운트합니다
     url: "/manage/mount-datastores-on-host.html"
   - title: NFS 및 VMFS 데이터 저장소를 마운트 해제합니다
@@ -36,6 +42,8 @@ entries:
     url: "/manage/mount-a-vvols-datastore.html"
   - title: NFS 및 VMFS 데이터 저장소의 크기를 조정합니다
     url: "/manage/resize-datastores.html"
+  - title: ESXi 호스트의 기본 nconnect 값 변경
+    url: "/manage/nconnect-change-default.html"
   - title: VVOL 데이터 저장소를 확장합니다
     url: "/manage/expand-storage-of-vvol-datastore.html"
   - title: VVOL 데이터 저장소를 축소합니다
@@ -94,10 +102,10 @@ entries:
     url: "/manage/reset-maint-password.html"
 - title: 호스트 클러스터 보호 관리
   entries:
-  - title: 호스트 클러스터 보호를 수정합니다
-    url: "/manage/edit-hostcluster-protection.html"
-  - title: 호스트 클러스터 보호를 제거합니다
-    url: "/manage/delete-hostcluster-protection.html"
+  - title: ONTAP tools에서 보호 그룹 관리
+    url: "/manage/manage-protection-groups.html"
+  - title: ONTAP tools에서 호스트 클러스터 구성 관리
+    url: "/manage/manage-host-proximity.html"
 - title: ONTAP 도구 설정 복구
   url: "/manage/recover-backup.html"
 - title: VMware vSphere용 ONTAP 툴을 제거합니다

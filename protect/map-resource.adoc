@@ -1,8 +1,8 @@
 ---
 permalink: protect/map-resource.html 
 sidebar: sidebar 
-keywords:  
-summary: 가상 시스템이 하나의 호스트 그룹 또는 다른 그룹으로 페일오버되도록 구성되도록 보호 사이트 및 복구 사이트에 리소스를 매핑해야 합니다. 
+keywords: resource mappings, ESXi hosts and clusters, VMware Live Site Recovery, failover configuration, ONTAP tools 
+summary: 장애 조치 시 가상 머신을 올바르게 배치하기 위해 보호 사이트와 복구 사이트 간의 리소스 풀, 호스트 또는 클러스터를 매핑합니다. 
 ---
 = ONTAP tools에서 리소스 매핑을 구성합니다
 :allow-uri-read: 

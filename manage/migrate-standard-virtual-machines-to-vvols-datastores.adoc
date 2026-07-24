@@ -1,8 +1,8 @@
 ---
 permalink: manage/migrate-standard-virtual-machines-to-vvols-datastores.html 
 sidebar: sidebar 
-keywords: Migrate NFS and VMFS virtual machines 
-summary: 'NFS 및 VMFS 데이터 저장소에서 VVol(Virtual Volumes\) 데이터 저장소로 가상 머신을 마이그레이션하여 정책 기반 VM 관리 및 기타 VVol 기능을 활용할 수 있습니다. VVOL 데이터 저장소를 사용하면 증가하는 워크로드 요구사항을 충족할 수 있습니다.' 
+keywords: migrate VMs to vVols, NFS VMFS to vVol migration, virtual machine storage migration, policy-based VM storage 
+summary: 정책 기반 관리를 위해 가상 머신을 NFS 및 VMFS 데이터스토어에서 vVols 데이터스토어로 마이그레이션합니다. 
 ---
 = ONTAP tools에서 가상 머신을 vVols 데이터 저장소로 마이그레이션합니다
 :allow-uri-read: 

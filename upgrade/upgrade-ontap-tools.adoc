@@ -1,34 +1,34 @@
 ---
 permalink: upgrade/upgrade-ontap-tools.html 
 sidebar: sidebar 
-keywords: upgrade 
-summary: HA 및 비 HA 구현 모두에서 업그레이드가 지원됩니다. 
+keywords: upgrade, ONTAP tools, VMware vSphere, HA, non-HA, low RPO backup, SRA adapter, vCenter Server 
+summary: 필수 사전 검사 및 백업 단계를 사용하여 HA 및 비HA 배포 환경에서 ONTAP tools for VMware vSphere를 10.4 또는 10.5에서 10.6으로 업그레이드하십시오. 
 ---
-= ONTAP tools for VMware vSphere 에서 10.5로 업그레이드
+= VMware vSphere 10.x용 ONTAP tools에서 10.6으로 업그레이드
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ONTAP tools for VMware vSphere 에서 10.5로 업그레이드할 수 있습니다.  그러나 ONTAP 도구 10.0, 10.1 또는 10.2에서 10.5로 업그레이드하려면 10.5로 진행하기 전에 먼저 10.3 또는 10.4로 업그레이드해야 합니다.
+ONTAP tools for VMware vSphere 10.4 또는 10.5를 10.6으로 직접 업그레이드할 수 있습니다. ONTAP tools 10.0, 10.1, 10.2 또는 10.3에서 10.6으로 업그레이드하려면 먼저 10.4 또는 10.5로 업그레이드해야 합니다.
 
 [NOTE]
 ====
-* ASA r2 시스템의 경우, 추가 스토리지 가용성 영역(SAZ)을 설정하기 전에 VMware vSphere용 ONTAP tools를 10.5로, ONTAP을 9.16.1로 업그레이드해야 합니다.
-* ONTAP tools for VMware vSphere 에서 10.5로의 업그레이드가 실패하면 롤백할 수 없습니다. 낮은 RPO 또는 스냅샷 복구를 사용하여 설정을 복원합니다. ONTAP tools for VMware vSphere 의 경우, 0-RPO를 사용하여 설정을 복원합니다.
+* ASA r2 시스템의 경우, 추가 스토리지 가용성 영역(SAZ)을 설정하기 전에 ONTAP tools for VMware vSphere를 10.6으로, ONTAP을 9.16.1로 업그레이드해야 합니다.
+* ONTAP tools for VMware vSphere 10.4 또는 10.5에서 10.6으로의 업그레이드가 실패하면 롤백할 수 없습니다. 설정을 복원하려면 낮은 RPO 또는 스냅샷 복구를 사용하십시오. ONTAP tools for VMware vSphere 10.3 이하 버전의 경우, 설정을 복원하려면 zero-RPO를 사용하십시오. 보호된 환경에서 복원 후 데이터스토어 보호를 다시 검증하고 보호 그룹 상태 및 관계를 확인하십시오.
 
 
 ====
 .시작하기 전에
-* 모든 노드가 활성화되어 있는지 확인하세요.
+* 업그레이드를 시작하기 전에 모든 노드가 활성화되어 있는지 확인하십시오.
 * ONTAP 시스템 인증서와 온보딩된 vCenter 인증서가 최소 5일 동안 유효한지 확인하세요. 인증서가 일찍 만료되면 업그레이드가 실패합니다.
 * 모든 노드에 100GB 용량의 다섯 번째 디스크가 있는지 확인하세요.
 * 노드 구성이 아래 표의 사양과 일치하는지 확인하세요.
 
 
 |===
-| 배포 유형 | 노드당 CPU(코어 | 노드당 메모리(GB)입니다 | 노드당 디스크 공간(GB)입니다 | 총 CPU(코어) | 메모리(GB) | 총 디스크 공간(GB) 
+| 배포 유형 | 노드당 CPU 코어 수 | 노드당 메모리(GB) | 노드당 디스크 공간(GB) | 총 CPU 코어 수 | 총 메모리 용량(GB) | 총 디스크 공간(GB) 
 
 
 | 비 HA 소형 | 9 | 18 | 350 | 9 | 18 | 350 
@@ -45,8 +45,7 @@ ONTAP tools for VMware vSphere 에서 10.5로 업그레이드할 수 있습니�
 
 | HA 대규모 | 17 | 34 | 350 | 51 | 102 | 1050 
 |===
-* CPU와 RAM에 대한 핫 플러그인이 활성화되어 있는지 확인하세요.
-* 낮은 RPO 백업을 활성화하고 하나의 백업이 vCenter Client 인터페이스에 표시되는지 확인합니다.  업그레이드하기 전에 백업 폴더를 다운로드하세요.
+* 낮은 RPO 백업을 활성화하고 vSphere Client 인터페이스에 백업 파일이 하나 이상 표시되는지 확인하십시오. 업그레이드 전에 백업 폴더를 다운로드하십시오.
 * 낮은 RPO 백업을 권장합니다.  하지만 HA가 아닌 배포에서는 업그레이드하기 전에 ONTAP 도구 가상 머신의 정지된 스냅샷을 만들 수 있습니다.
 +
 참조하다 link:../manage/backup-settings.html["백업 설정 편집"] 그리고 link:../manage/recover-backup.html["ONTAP 도구 설정 복구"] 백업 및 복구에 대한 자세한 내용은 다음을 참조하세요.
@@ -64,8 +63,9 @@ ONTAP tools for VMware vSphere 에서 10.5로 업그레이드할 수 있습니�
 
 . *CD/DVD 드라이브* 필드 아래의 편집 설정 창에서 *콘텐츠 라이브러리 ISO 파일*을 선택합니다.
 . ISO 파일을 선택하고, CD/DVD 드라이브 필드에서 연결됨 상자를 체크한 후, 확인(OK)을 클릭합니다.
-. vCenter Server에서 콘솔을 열고 ONTAP 툴을 엽니다.
-. 유지보수 사용자로 로그인합니다.
+. vCenter 서버에 로그인합니다.
+. 기본 ONTAP tools VM을 찾아 웹 콘솔을 실행합니다.
+.  `maint` 자격 증명을 사용하여 로그인합니다.
 . *시스템 구성* 메뉴를 선택하려면 *2*을 입력하세요.
 . *6*을 입력하여 *업그레이드* 옵션을 선택합니다.
 . 메시지가 표시되면 vCenter 자격 증명을 제공하십시오. 이는 ONTAP tools가 호스팅되는 vCenter 인스턴스입니다.
@@ -80,28 +80,30 @@ ONTAP 도구로 관리되는 vCenter 인스턴스의 경우 vCenter 사용자 �
 
 . 를 업그레이드하면 다음 작업이 자동으로 수행됩니다.
 +
-.. 게이트웨이 인증서는 1년 유효기간으로 갱신됩니다.  이전 SRA 어댑터를 제거하고 새로운 10.5 어댑터를 업로드하면 SRA 인증서 유효 기간이 10년에서 1년으로 변경됩니다.
+.. 게이트웨이 인증서는 1년 유효기간으로 갱신됩니다. 기존 SRA 어댑터를 제거하고 새 10.6 어댑터를 업로드하면 SRA 인증서의 유효기간이 10년에서 1년으로 변경됩니다.
 .. 원격 플러그인이 업그레이드되었습니다
 .. ONTAP 및 vCenter Server 인증서가 검증되어 ONTAP 도구에 추가됩니다.
 .. 백업이 활성화되었습니다
+.. 10.5 또는 이전 릴리스에서 호스트 클러스터 보호 설정이 있는 경우 ONTAP tools는 업그레이드 중에 별도의 *클러스터 보호 구성* 탐색 항목을 생성합니다.
 
 
 
 
 .다음 단계
-ONTAP tools for VMware vSphere 로 업그레이드한 후:
+ONTAP tools for VMware vSphere 10.6으로 업그레이드한 후:
 
 * 시스템 알림을 모니터링하고 게이트웨이 인증서가 1년 후 만료되기 전에 갱신할 계획을 세우세요.
-* ONTAP 도구 10.4 또는 10.3 SRA 어댑터를 제거하고 10.5 SRA 어댑터 tar 파일을 업로드합니다.
+* ONTAP tools 10.4 또는 10.5 SRA 어댑터를 제거하고 10.6 SRA 어댑터 tar 파일을 업로드하십시오.
 * SRA 어댑터 tar를 업로드한 후 설치 명령을 실행합니다. 그런 다음 SRA 어댑터를 다시 검사하여 VMware Site Recovery 스토리지 복제 어댑터 페이지를 업데이트합니다.
+* *클러스터 보호 구성*을 열고 기존 호스트 클러스터 보호 설정이 있는지, 그리고 올바르게 매핑되었는지 확인하십시오.
 
 
 업그레이드 후에는 다음을 수행할 수 있습니다.
 
-* 관리자 사용자 인터페이스에서 서비스를 비활성화합니다
+* ONTAP tools Manager에서 서비스 비활성화
 * 비 HA 설정에서 HA 설정으로 이동합니다
 * HA가 아닌 소규모 구성을 HA가 아닌 중규모 구성으로 확장하거나, HA 중규모 또는 대규모 구성으로 확장합니다.
 
 
 .관련 정보
-link:../migrate/migrate-to-latest-ontaptools.html["ONTAP tools for VMware vSphere 에서 10.5로 마이그레이션"]
+link:../migrate/migrate-to-latest-ontaptools.html["ONTAP tools for VMware vSphere 9.x에서 10.6으로 마이그레이션"]

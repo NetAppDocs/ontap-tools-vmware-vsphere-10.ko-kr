@@ -1,8 +1,8 @@
 ---
 permalink: protect/fan-out-protection.html 
 sidebar: sidebar 
-keywords:  
-summary: 팬아웃 보호 시나리오에서 일관성 그룹은 첫 번째 대상 ONTAP 클러스터에서는 동기 관계로, 두 번째 대상 ONTAP 클러스터에서는 비동기 관계로 이중으로 보호됩니다. 
+keywords: fan-out protection, SnapMirror active sync, asynchronous replication, VMware Live Site Recovery, placeholder datastore, host cluster protection 
+summary: 두 개의 대상 ONTAP 클러스터에 걸쳐 동기 및 비동기 복제를 사용하여 팬아웃 보호 기능으로 일관성 그룹을 보호합니다. 
 ---
 = ONTAP 도구의 팬아웃 보호
 :allow-uri-read: 
@@ -11,37 +11,35 @@ summary: 팬아웃 보호 시나리오에서 일관성 그룹은 첫 번째 대�
 
 
 [role="lead"]
-팬아웃 보호 시나리오에서 일관성 그룹은 첫 번째 대상 ONTAP 클러스터에서는 동기 관계로, 두 번째 대상 ONTAP 클러스터에서는 비동기 관계로 이중으로 보호됩니다.  SnapMirror 활성 동기화 보호 워크플로를 만들고, 편집하고, 삭제하면 동기 보호가 유지됩니다.  VMware Live Site Recovery 어플라이언스 장애 조치 및 재보호 워크플로는 비동기 보호 기능을 유지합니다.
+팬아웃 보호 기능을 사용하여 두 대상 ONTAP 클러스터에 걸쳐 일관성 그룹을 보호할 수 있습니다. ONTAP tools는 SnapMirror 활성 동기화 보호 워크플로(생성, 편집 및 삭제)를 통해 동기 관계를 유지하고, VMware Live Site Recovery는 장애 조치 및 재보호 워크플로를 통해 비동기 관계를 유지합니다.
 
 
 NOTE: SVM 사용자에 대해서는 팬아웃이 지원되지 않습니다.
 
 팬아웃 보호를 설정하려면 세 개의 사이트 클러스터와 SVM을 피어링합니다.
 
+다음 다이어그램은 팬아웃 보호 구성을 보여줍니다: image:../media/fan-out-protection.png["팬아웃 보호 구성"]
+
 예:
 
-|===
+만약에:
 
-
-| If(경우 | 그런 다음 
-
-
- a| 
 * 소스 정합성 보장 그룹이 클러스터 C1 및 SVM svm1에 있습니다
 * 첫 번째 대상 정합성 보장 그룹은 클러스터 C2 및 SVM svm2 및 에 있습니다
 * 두 번째 대상 정합성 보장 그룹이 클러스터 C3 및 SVM svm3에 있습니다
 
- a| 
+
+그 다음에,
+
 * 소스 ONTAP 클러스터의 클러스터 피어링은 (C1, C2) 및 (C1, C3)입니다.
 * 첫 번째 대상 ONTAP 클러스터의 클러스터 피어링은 (C2, C1) 및 (C2, C3) 등입니다
 * 두 번째 대상 ONTAP 클러스터의 클러스터 피어링은 (C3, C1) 및 (C3, C2)입니다.
 * 소스 SVM에서 SVM 피어링은 (svm1, svm2) 및 (svm1, svm3)입니다.
 * 첫 번째 대상 SVM에서 SVM 피어링은 (svm2, svm1) 및 (svm2, svm3) 및 입니다
-* 두 번째 목적지 svm의 SVM 피어링은 (svm3, svm1) 및 (svm3, svm2)입니다.
+* 두 번째 대상 SVM에 대한 SVM 피어링은 (svm3, svm1) 및 (svm3, svm2)가 됩니다.
 
 
-|===
-다음 다이어그램은 팬아웃 보호 구성을 보여줍니다.image:../media/fan-out-protection.png["팬아웃 보호 구성"] image:../media/fan-out-protection-relationship.png["팬아웃 보호 관계"]
+image:../media/fan-out-protection-relationship.png["팬아웃 보호 관계"]
 
 .단계
 . 새로운 임시 데이터 저장소를 선택하십시오. 단계별 보호를 위한 임시 데이터 저장소 선택 기준은 다음과 같습니다.
@@ -49,9 +47,9 @@ NOTE: SVM 사용자에 대해서는 팬아웃이 지원되지 않습니다.
 ** 보호하고 있는 호스트 클러스터에 플레이스홀더 데이터 저장소를 두지 마세요.
 ** 호스트 클러스터에 자리 표시자 데이터 저장소를 포함해야 하는 경우 SnapMirror 활성 동기화 보호를 설정하기 전에 VMware Live Site Recovery 어플라이언스에 추가하십시오. 이렇게 설정하면 자리 표시자 데이터 저장소를 보호 대상에서 제외할 수 있습니다.
 +
-자세한 내용은 다음을 참조하세요. https://techdocs.broadcom.com/us/en/vmware-cis/live-recovery/site-recovery-manager/8-8/site-recovery-manager-administration-8-8/about-placeholder-virtual-machines/configure-a-placeholder-datastore.html["자리 표시자 데이터 저장소를 선택합니다"]
+자세한 내용은  https://techdocs.broadcom.com/us/en/vmware-cis/live-recovery/site-recovery-manager/8-8/site-recovery-manager-administration-8-8/about-placeholder-virtual-machines/configure-a-placeholder-datastore.html["자리 표시자 데이터 저장소를 선택합니다"]을(를) 참조하십시오.
 
 
 
-. link:../manage/edit-hostcluster-protection.html["보호된 호스트 클러스터를 수정합니다"]에 따라 호스트 클러스터 보호에 데이터 저장소를 추가하십시오. 비동기 및 동기 정책 유형을 모두 추가하십시오.
+. link:../protect/protect-multiple-ds.html["클러스터 내 데이터 저장소 보호"]에 따라 호스트 클러스터 보호에 데이터 저장소를 추가하십시오. 비동기 및 동기 정책 유형을 모두 추가하십시오.
 

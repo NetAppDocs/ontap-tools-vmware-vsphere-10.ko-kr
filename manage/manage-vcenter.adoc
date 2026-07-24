@@ -1,8 +1,8 @@
 ---
 permalink: manage/manage-vcenter.html 
 sidebar: sidebar 
-keywords:  
-summary: vCenter는 호스트, 가상 머신 및 스토리지 백엔드를 제어할 수 있는 중앙 관리 플랫폼입니다. 
+keywords: manage vCenter instances, add remove vCenter, ONTAP tools vCenter credentials, vCenter certificate management 
+summary: ONTAP tools에서 vCenter 인스턴스를 관리하여 호스트, 가상 머신 및 스토리지 백엔드를 제어하십시오. 
 ---
 = ONTAP 도구에서 vCenter Server 인스턴스 관리
 :allow-uri-read: 
@@ -15,16 +15,16 @@ vCenter Server 인스턴스는 호스트, 가상 머신 및 스토리지 백엔�
 
 
 
-[[dissociate-storage-backends-with-the-vcenter-server-instance]]
-== vCenter Server 인스턴스로 스토리지 백엔드를 분리합니다
+[[dissociate-storage-backends-from-a-vcenter-server-instance]]
+== vCenter Server 인스턴스에서 스토리지 백엔드 분리
 
 vCenter Server 목록 페이지에는 연결된 스토리지 백엔드 수가 표시됩니다. 각 vCenter Server 인스턴스에는 스토리지 백엔드에 연결하거나 연결을 해제하는 옵션이 있습니다.
 
 .단계
 . 웹 브라우저에서 ONTAP 도구 관리자를 실행합니다. `\https://<ONTAPtoolsIP>:8443/virtualization/ui/`
 . 구축 중에 제공한 VMware vSphere 관리자 자격 증명용 ONTAP 툴을 사용하여 로그인합니다.
-. 사이드바에서 필요한 vCenter Server 인스턴스를 선택합니다.
-. 스토리지 백엔드와 연결하거나 분리할 vCenter Server에 대해 세로 줄임표를 선택합니다.
+. 사이드바에서 *vCenters*를 선택합니다.
+. 스토리지 백엔드와 연결 또는 연결 해제할 vCenter Server에 해당하는 세로 점 세 개(…)를 선택하십시오.
 . 스토리지 백엔드 분리 * 를 선택합니다.
 
 
@@ -33,12 +33,10 @@ vCenter Server 목록 페이지에는 연결된 스토리지 백엔드 수가 �
 [[modify-a-vcenter-server-instance]]
 == vCenter Server 인스턴스를 수정합니다
 
-vCenter Server 인스턴스를 수정하려면 다음 단계를 따르십시오.
-
 . 웹 브라우저에서 ONTAP 도구 관리자를 실행합니다. `\https://<ONTAPtoolsIP>:8443/virtualization/ui/`
 . 구축 중에 제공한 VMware vSphere 관리자 자격 증명용 ONTAP 툴을 사용하여 로그인합니다.
-. 사이드바에서 해당 vCenter Server 인스턴스를 선택합니다
-. 수정할 vCenter Server에 대해 수직 타원을 선택하고 * Modify * 를 선택합니다.
+. 사이드바에서 *vCenters*를 선택합니다.
+. 수정하려는 vCenter Server의 세로 점 세 개(…)를 선택한 다음 *수정*을 선택합니다.
 . *vCenter 수정* 창에서 사용자 이름, 비밀번호, 포트 세부 정보를 입력합니다.
 . 인증서를 업로드하고 *수정*을 선택하세요.
 
@@ -48,22 +46,61 @@ vCenter Server 인스턴스를 수정하려면 다음 단계를 따르십시오.
 [[remove-a-vcenter-server-instance]]
 == vCenter Server 인스턴스를 제거합니다
 
-vCenter Server를 제거하기 전에 모든 스토리지 백엔드를 제거하세요.
+vCenter Server 인스턴스는 데이터스토어와 스토리지 백엔드가 여전히 연결된 상태에서도 제거할 수 있습니다. * vCenter 제거* 대화 상자는 vCenter Server의 현재 상태에 따라 필요한 작업을 안내합니다.
 
+
+NOTE: 강제 삭제는 ONTAP tools 메타데이터만 제거합니다. ONTAP 스토리지 객체(볼륨 또는 LUN), vSphere 데이터스토어 또는 가상 머신은 제거하지 않습니다.
+
+.시작하기 전에
+vCenter Server에 vVols 데이터스토어 또는 보호된 데이터스토어가 있는 경우 강제 삭제가 차단됩니다. 진행하기 전에 다음 사항을 확인하십시오.
+
+* 모든 vVols 데이터스토어를 제거하거나 마이그레이션합니다.
+* 보호된 데이터 저장소를 모두 보호 해제합니다.
+* 검색 작업이 실행 중이지 않은지 확인하십시오. 검색 작업이 진행 중인 경우 강제 삭제 작업이 진행되지 않습니다.
+
+
+
+NOTE: 다른 vCenter Server 인스턴스와 공유하는 글로벌 스토리지 백엔드는 유지됩니다. 삭제된 vCenter Server와의 연결만 제거됩니다.
+
+.단계
 . 웹 브라우저에서 ONTAP 도구 관리자를 실행합니다. `\https://<ONTAPtoolsIP>:8443/virtualization/ui/`
 . 구축 중에 제공한 VMware vSphere 관리자 자격 증명용 ONTAP 툴을 사용하여 로그인합니다.
-. 사이드바에서 해당 vCenter Server 인스턴스를 선택합니다
-. 제거하려는 vCenter Server에 대한 세로 줄임표를 선택하고 *제거*를 선택합니다.
+. 사이드바에서 *vCenters*를 선택합니다.
+. 필요한 vCenter Server에 해당하는 세로 점 세 개(…)를 선택하고 *제거*를 선택합니다.
+. *Remove vCenter* 대화 상자에서 vCenter 서버의 상태를 검토하고 필요한 조치를 완료하십시오.
 +
+대화 상자의 동작은 vCenter Server의 상태에 따라 달라집니다.
 
-NOTE: vCenter Server 인스턴스를 제거하면 애플리케이션에서 더 이상 유지 관리되지 않습니다.
++
+[cols="2,2,3"]
+|===
+| 상태 | 대화 동작 | 필수 조치 
 
 
+| vVols이나 보호된 데이터 저장소는 없지만 스토리지 백엔드는 연결되어 있습니다. | 이 대화 상자에는 연결된 스토리지 백엔드 및 데이터 저장소의 수가 표시됩니다. | *이 vCenter Server에서 모든 스토리지 아티팩트 제거* 및 *관련 데이터스토어는 더 이상 ONTAP tools에서 관리되지 않음을 이해합니다*를 선택합니다. 
 
-ONTAP 툴에서 vCenter Server 인스턴스를 제거하면 다음 작업이 자동으로 수행됩니다.
+
+| vVols 데이터스토어, 보호된 데이터스토어 또는 스토리지 백엔드가 없습니다 | 삭제를 확인하는 대화 상자가 나타납니다. | 별도의 조치가 필요하지 않습니다. 
+|===
+. *강제 삭제*를 선택합니다.
+. 작업을 확인합니다.
+
+
+.결과
+ONTAP tools는 다음 작업을 자동으로 수행합니다.
 
 * 플러그인이 등록되지 않았습니다.
 * 플러그인 권한 및 플러그인 역할이 제거됩니다.
+
+
+vCenter Server 인스턴스는 더 이상 ONTAP tools로 관리되지 않습니다.
+
+vCenter 서버에 삭제 중 연결할 수 없는 경우:
+
+* ONTAP tools는 vCenter Server 레코드를 제거합니다.
+* 플러그인 등록 해제는 발생하지 않습니다.
+* 경고 메시지가 표시됩니다.
+* VMware vCenter Server에서 플러그인을 수동으로 등록 해제해야 합니다.
 
 
 
@@ -120,9 +157,9 @@ siO7bL+k/Pxql27NVIhuCoVJAlcI7ak=
 . 웹 브라우저에서 ONTAP 도구 관리자를 실행합니다. `\https://<ONTAPtoolsIP>:8443/virtualization/ui/`
 . 구축 중에 제공한 VMware vSphere 관리자 자격 증명용 ONTAP 툴을 사용하여 로그인합니다.
 . 사이드바에서 해당 vCenter Server 인스턴스를 선택합니다
-. 수정할 vCenter Server에 대해 수직 타원을 선택하고 * Modify * 를 선택합니다.
+. 수정하려는 vCenter Server의 세로 점 세 개(…)를 선택한 다음 *수정*을 선택합니다.
 . *vCenter 수정* 창에서 사용자 이름, 비밀번호, 포트 세부 정보를 입력합니다.
-. 인증서를 업로드하고 *수정*을 선택하세요.
+. 인증서를 업로드하고 *수정*을 선택합니다.
 
 
 .관련 정보

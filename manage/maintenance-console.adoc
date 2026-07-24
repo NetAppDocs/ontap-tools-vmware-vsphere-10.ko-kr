@@ -1,8 +1,8 @@
 ---
 permalink: manage/maintenance-console.html 
 sidebar: sidebar 
-keywords:  
-summary: ONTAP 도구의 유지 관리 콘솔을 사용하여 애플리케이션, 시스템 및 네트워크 구성을 관리할 수 있습니다. 관리자 암호 및 유지보수 암호를 변경할 수 있습니다. 또한 지원 번들을 생성하고, 다양한 로그 수준을 설정하고, TLS 구성을 확인 및 관리하고, 원격 진단을 시작할 수 있습니다. 
+keywords: ONTAP tools maintenance console, appliance system management, support bundle generation, TLS and network configuration 
+summary: ONTAP tools 구성 관리, 암호 재설정, 지원 번들 생성 및 TLS 설정 구성을 수행할 수 있습니다. 
 ---
 = ONTAP 도구 유지 관리 콘솔에 대해 알아보십시오
 :allow-uri-read: 
@@ -40,12 +40,14 @@ NOTE: 에 대한 암호를 설정해야 합니다 `diag` 원격 진단을 활성
 시스템 구성
  a| 
 . 가상 머신을 재부팅합니다
-. 가상 머신을 종료합니다
-. '성자' 사용자 암호를 변경합니다
+. 가상 머신 종료
+. 관리자 UI 비밀번호 재설정을 위한 토큰 생성
 . 시간대를 변경합니다
 . jail 디스크 크기 증가(/jail)
 . 업그레이드
 . VMware Tools를 설치합니다
+. vCenter 자격 증명 업데이트
+. ONTAP tools 서비스 인증서 새로 고침
 
 
 

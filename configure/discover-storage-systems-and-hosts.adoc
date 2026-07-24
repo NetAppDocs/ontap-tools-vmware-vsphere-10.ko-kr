@@ -1,8 +1,8 @@
 ---
 permalink: configure/discover-storage-systems-and-hosts.html 
 sidebar: sidebar 
-keywords:  
-summary: vSphere Client에서 VMware vSphere용 ONTAP 툴을 처음 실행하면 VMware vSphere용 ONTAP 툴이 ESXi 호스트, 해당 LUN 및 NFS 내보내기, 해당 LUN 및 내보내기를 소유한 NetApp 스토리지 시스템을 검색합니다. 
+keywords: discover storage systems and hosts, ONTAP tools first discovery, ESXi host and LUN discovery, NFS export discovery 
+summary: ONTAP tools를 처음 실행하면 ESXi 호스트, LUN, NFS 내보내기 및 NetApp 스토리지 시스템을 검색합니다. 
 ---
 = ONTAP tools에서 스토리지 시스템 및 호스트 검색
 :allow-uri-read: 
@@ -24,8 +24,8 @@ ONTAP tools for VMware vSphere vSphere Client에서 처음 실행하면 ESXi 호
 스토리지 시스템을 검색하는 동안 VMware vSphere용 ONTAP 툴은 vCenter Server 인스턴스에서 관리하는 ESXi 호스트에서 정보를 수집합니다.
 
 .단계
-. vSphere Client 홈 페이지에서 * 호스트 및 클러스터 * 를 선택합니다.
-. 필요한 데이터 센터를 마우스 오른쪽 버튼으로 클릭하고 *NetApp ONTAP tools* > *호스트 데이터 업데이트*를 선택합니다.
+. vSphere 클라이언트 홈 페이지에서 *호스트 및 클러스터*를 선택합니다.
+. 필요한 데이터 센터를 마우스 오른쪽 버튼으로 클릭하고 *NetApp ONTAP tools* > *호스트 및 스토리지 데이터 업데이트*를 선택합니다.
 +
 확인 * 대화 상자에서 선택 사항을 확인합니다.
 

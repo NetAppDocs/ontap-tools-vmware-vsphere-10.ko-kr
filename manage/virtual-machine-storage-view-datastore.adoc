@@ -1,8 +1,8 @@
 ---
 permalink: manage/virtual-machine-storage-view-datastore.html 
 sidebar: sidebar 
-keywords: Remove vVol datastore 
-summary: 스토리지 보기에는 가상 시스템에서 생성된 VVol 목록이 표시됩니다. 
+keywords: virtual machine storage view, vVols list per VM, ONTAP tools VM storage details, datastore usage by virtual machine 
+summary: 스토리지 보기에서 가상 머신이 생성한 vVols 목록을 볼 수 있습니다. 
 ---
 = ONTAP tools의 가상 머신 스토리지 보기
 :allow-uri-read: 

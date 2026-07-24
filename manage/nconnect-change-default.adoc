@@ -1,0 +1,33 @@
+---
+permalink: manage/nconnect-change-default.html 
+sidebar: sidebar 
+keywords: change nconnect default, ESXi NFS nconnect, ONTAP tools host nconnect settings, vCenter NFS performance tuning 
+summary: vCenter Server에서 ESXi 호스트의 기본 nconnect 값을 변경합니다. 
+---
+= ONTAP tools에서 ESXi 호스트의 기본 nconnect 값 변경
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+이 작업을 사용하여 선택한 vCenter Server의 ESXi 호스트에 대한 기본 연결 수(nconnect)를 변경할 수 있습니다.
+
+.이 작업에 대해
+* 이 페이지에 설정된 nconnect 값은 호스트 수준의 기본값입니다.
+* 이 설정은 선택한 vCenter Server의 모든 ESXi 호스트에 대해 NFSv3 및 NFSv4 프로토콜에 적용됩니다.
+* 현재 호스트 수준 설정보다 높은 nconnect 값으로 NFS 데이터스토어를 생성하면 ONTAP tools가 호스트 수준 설정을 일치하도록 업데이트합니다.
+
+
+
+NOTE: 이 변경 사항은 선택한 vCenter Server의 모든 ESXi 호스트에 적용됩니다. .단계
+
+. vSphere 클라이언트에 로그인합니다.
+. 플러그인 섹션에서 * 바로 가기 * > * NetApp ONTAP tools * 를 선택합니다.
+. *설정* > *기본 nconnect 값*을 선택합니다.
+. *편집*을 선택합니다.
+. ESXi 호스트에 대한 새 기본 nconnect 값을 입력하고 *저장*을 선택합니다.
+
+
+.결과
+업데이트된 nconnect 값은 NFSv3 및 NFSv4 프로토콜에 대해 선택한 vCenter Server의 모든 ESXi 호스트에 적용됩니다.

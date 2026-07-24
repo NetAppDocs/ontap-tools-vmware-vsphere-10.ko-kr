@@ -1,8 +1,8 @@
 ---
 permalink: manage/attach-detach-disk.html 
 sidebar: sidebar 
-keywords:  
-summary: 데이터 디스크를 가상 머신에 연결하여 스토리지 용량을 확장합니다. 
+keywords: attach data disk VM, detach VM disk, ONTAP tools virtual machine disk, VMware VM storage expansion 
+summary: 가상 머신 데이터 디스크를 연결하거나 분리하여 스토리지 용량을 관리합니다. 
 ---
 = ONTAP tools에서 VM에 데이터 디스크 연결 또는 분리
 :allow-uri-read: 

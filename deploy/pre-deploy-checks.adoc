@@ -1,8 +1,8 @@
 ---
 permalink: deploy/pre-deploy-checks.html 
 sidebar: sidebar 
-keywords: ONTAP tools,Storage Replication Adapter 
-summary: VMware vSphere용 ONTAP 툴을 구축하기 전에 구축 패키지에 대한 공간 요구 사항과 몇 가지 기본 호스트 시스템 요구 사항을 숙지해야 합니다. 
+keywords: pre-deployment checklist, deployment worksheet, certificates, vCenter Server 
+summary: ONTAP tools에 대한 사전 배포 체크리스트를 완료하십시오. 여기에는 vSphere 호환성, 크기 조정, 인증서 및 네트워크 요구 사항이 포함됩니다. 
 ---
 = ONTAP 도구 배포 전 요구 사항
 :allow-uri-read: 
@@ -58,14 +58,15 @@ summary: VMware vSphere용 ONTAP 툴을 구축하기 전에 구축 패키지에 
 
 다음 워크시트를 사용하여 VMware vSphere 초기 배포를 위한 ONTAP 도구에 필요한 정보를 수집하세요.
 
+[cols="3,1"]
 |===
 | 요구 사항 | 귀사의 가치 
 
 
-| ONTAP 툴 애플리케이션의 IP 주소입니다. ONTAP 툴 관리자 웹 인터페이스(로드 밸런서)에 액세스하기 위한 IP 주소입니다 `\https://<ip>:8443/virtualization/ui/` |  
+| ONTAP tools IP 주소(이전 명칭: 로드 밸런서). 이 외부 IP 주소는  `\https://<ip>:8443/virtualization/ui/`에서 ONTAP tools 관리자 인터페이스에 접속하고, API 호출을 전송하고, vCenter 인터페이스에서 ONTAP tools 플러그인에 접속하는 데 사용됩니다. |  
 
 
-| 내부 통신을 위한 ONTAP tools 가상 IP 주소입니다. 이 IP 주소는 여러 ONTAP tools 인스턴스가 있는 설정에서 내부 통신에 사용됩니다. 이 IP 주소는 ONTAP tools 애플리케이션의 IP 주소와 동일해서는 안 됩니다. (Kubernetes Control Plane) |  
+| ONTAP tools 가상 IP 주소(이전 명칭: 노드 인터커넥트). 이 IP 주소는 Kubernetes API 서버에 할당되며 단일 노드 및 다중 노드 배포에서 Kubernetes 컨트롤 플레인의 가상 IP 주소 역할을 합니다. 클러스터 내부 통신 및 Kubernetes 관리에 사용되며, ONTAP tools IP 주소와 달라야 합니다. |  
 
 
 | ONTAP 도구 관리 노드의 DNS 호스트 이름 |  
@@ -80,7 +81,7 @@ summary: VMware vSphere용 ONTAP 툴을 구축하기 전에 구축 패키지에 
 | DNS 검색 도메인입니다 |  
 
 
-| ONTAP 도구 관리 노드의 IPv4 주소입니다. 관리 네트워크에서 노드 관리 인터페이스에 사용되는 고유한 IPv4 주소입니다. SSH를 통해 ONTAP 도구 어플라이언스에 원격 진단 액세스하는 데 사용됩니다. |  
+| ONTAP tools 관리 노드의 IPv4 주소입니다. 단일 노드 배포에서는 이 주소가 ONTAP tools VM에 지정된 호스트 이름에 매핑됩니다. HA 배포에서는 추가 ONTAP tools VM 두 대에 대해 추가 IPv4 주소를 제공해야 합니다. |  
 
 
 | IPv4 주소의 서브넷 마스크입니다 |  
@@ -107,6 +108,7 @@ NOTE: 위의 모든 IP 주소에 대한 DNS 레코드를 생성하십시오. 호
 
 단일 노드 배포 요구 사항 외에 HA 배포를 위해 다음과 같은 정보가 필요합니다.
 
+[cols="3,1"]
 |===
 
 

@@ -1,8 +1,8 @@
 ---
 permalink: protect/configure-placeholder-datastores.html 
 sidebar: sidebar 
-keywords:  
-summary: '복구 사이트의 vCenter 인벤토리에서 보호된 가상 머신(VM)을 위한 공간을 예약하기 위해 플레이스홀더 데이터 저장소를 구성합니다.  플레이스홀더 데이터스토어에는 최소한의 용량만 필요합니다. 플레이스홀더 VM은 작고 일반적으로 수백 킬로바이트만 사용하기 때문입니다.' 
+keywords: placeholder datastore, VMware Live Site Recovery, vCenter inventory, protected virtual machines, ONTAP tools 
+summary: 보호 대상 가상 머신을 위해 vCenter 인벤토리 공간을 확보하려면 복구 사이트에 자리 표시자 데이터 저장소를 구성하십시오. 
 ---
 = ONTAP tools에서 플레이스홀더 데이터 저장소를 구성합니다
 :allow-uri-read: 

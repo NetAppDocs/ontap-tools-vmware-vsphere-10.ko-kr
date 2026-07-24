@@ -1,7 +1,7 @@
 ---
 permalink: configure/add-storage-backend.html 
 sidebar: sidebar 
-keywords:  
+keywords: add storage backend, ONTAP tools storage backend, local and global storage backend, MetroCluster storage backend 
 summary: ONTAP 도구에서 vCenter 인스턴스에 대해 로컬로 또는 클러스터 전체 검색을 위해 전역적으로 스토리지 백엔드를 추가 및 관리합니다. 
 ---
 = ONTAP tools에 스토리지 백엔드 추가
@@ -19,7 +19,7 @@ ONTAP tools for VMware vSphere 사용하여 ESXi 호스트의 스토리지 백�
 
 글로벌 및 로컬 스토리지 백엔드에 대한 자세한 내용은 KB 문서 https://kb.netapp.com/data-mgmt/OTV/VSC_Kbs/OTV_10_What_is_storage_backend_global_and_local_scope["OTV 10: 스토리지 백엔드 글로벌 및 로컬 범위란 무엇인가"^]를 참조하십시오.
 
-ONTAP 에서 MetroCluster 지원이 활성화된 경우 소스 및 대상 클러스터를 모두 로컬 또는 글로벌 스토리지 백엔드로 온보딩합니다.
+NetApp MetroCluster 지원이 ONTAP에서 활성화된 경우, 소스 및 대상 클러스터를 모두 로컬 또는 글로벌 스토리지 백엔드로 온보딩하십시오.
 
 .시작하기 전에
 인증서에 유효한 SAN(주체 대체 이름) 필드가 포함되어 있는지 확인하세요.  ONTAP 시스템은 SAN 필드를 사용하여 클러스터 및 SVM 관리 LIF를 식별합니다.

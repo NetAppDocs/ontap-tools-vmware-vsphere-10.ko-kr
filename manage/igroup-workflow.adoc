@@ -1,8 +1,8 @@
 ---
 permalink: manage/igroup-workflow.html 
 sidebar: sidebar 
-keywords:  
-summary:  
+keywords: ONTAP tools igroup workflow, export policy management, initiator group mapping, VMware datastore access control 
+summary: ONTAP tools가 데이터 저장소 액세스를 위한 igroup 및 내보내기 정책을 생성하고 관리하는 방법을 이해합니다. 
 ---
 = ONTAP tools가 igroup 및 엑스포트 정책을 관리하는 방법
 :allow-uri-read: 
@@ -13,7 +13,7 @@ summary:
 [role="lead"]
 이니시에이터 그룹(igroup)은 FC 프로토콜 호스트 WWPN(World Wide Port Name) 또는 iSCSI 호스트 정규 노드 이름의 테이블입니다. igroup을 정의하고 LUN에 매핑하여 LUN에 액세스할 수 있는 이니시에이터를 제어할 수 있습니다.
 
-ONTAP tools for VMware vSphere 에서 igroup은 플랫 구조로 생성 및 관리되었으며, vCenter의 각 데이터스토어는 단일 igroup과 연결되었습니다. 이 모델은 여러 데이터 저장소에서 igroup의 유연성과 재사용성을 제한했습니다. ONTAP tools for VMware vSphere 중첩된 igroup을 도입하여 vCenter의 각 데이터 저장소가 상위 igroup과 연결되고 각 호스트는 해당 상위 아래의 하위 igroup에 연결됩니다. 사용자 정의 이름으로 사용자 정의 부모 igroup을 정의하여 여러 데이터 저장소에서 재사용할 수 있으므로 igroup 관리가 더 쉬워집니다.  ONTAP tools for VMware vSphere 에서 LUN과 데이터 저장소를 관리하기 위한 igroup 워크플로를 이해합니다. 다음 예에서 볼 수 있듯이 다양한 워크플로는 다양한 igroup 구성을 생성합니다.
+ONTAP tools for VMware vSphere 9.x에서는 iGroup이 평면 구조로 생성 및 관리되었으며, vCenter의 각 데이터스토어는 단일 iGroup과 연결되었습니다. 이 모델은 유연성을 제한하고 여러 데이터스토어에서 iGroup을 재사용하는 데 제약을 주었습니다. ONTAP tools for VMware vSphere 10.4에서는 중첩 iGroup이 도입되어 vCenter의 각 데이터스토어는 상위 iGroup과 연결되고, 각 호스트는 해당 상위 iGroup 아래의 하위 iGroup에 연결됩니다. 사용자 정의 이름을 사용하여 사용자 지정 상위 iGroup을 정의하고 여러 데이터스토어에서 재사용하여 iGroup 관리를 간소화할 수 있습니다. ONTAP tools for VMware vSphere에서 LUN 및 데이터스토어를 관리하려면 iGroup 워크플로를 이해하십시오. 다음 예와 같이 다양한 워크플로는 서로 다른 iGroup 구성을 생성합니다.
 
 
 NOTE: 언급된 이름은 단지 설명을 위한 목적으로만 사용되었으며 실제 igroup 이름을 나타내는 것이 아닙니다.  ONTAP 도구에서 관리하는 igroup은 접두사 "otv_"를 사용합니다.  사용자 정의 igroup에는 원하는 이름을 지정할 수 있습니다.

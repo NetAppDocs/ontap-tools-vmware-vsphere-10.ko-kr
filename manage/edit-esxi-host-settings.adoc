@@ -1,8 +1,8 @@
 ---
 permalink: manage/edit-esxi-host-settings.html 
 sidebar: sidebar 
-keywords:  
-summary: VMware vSphere용 ONTAP 툴의 대시보드를 사용하여 ESXi 호스트 설정을 편집할 수 있습니다. 
+keywords: modify ESXi host settings, ONTAP tools host configuration, VMware host tuning, ESXi settings dashboard 
+summary: ONTAP tools 대시보드에서 ESXi 호스트 설정을 편집합니다. 
 ---
 = ONTAP 툴을 사용하여 ESXi 호스트 설정을 수정합니다
 :allow-uri-read: 

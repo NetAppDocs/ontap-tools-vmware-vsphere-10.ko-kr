@@ -1,21 +1,21 @@
 ---
 permalink: migrate/migrate-to-latest-ontaptools.html 
 sidebar: sidebar 
-keywords: migrate 
-summary: 스토리지 데이터를 마이그레이션할 때 REST API를 사용하여 스토리지 백엔드를 수동으로 온보드합니다. VASA Provider 데이터를 마이그레이션할 때 기존 Derby 데이터베이스에서 데이터를 내보내고 MongoDB 데이터베이스로 가져옵니다. 
+keywords: ONTAP tools migration, vVols migration, VMware vSphere, NFS datastores, VMFS datastores 
+summary: vVols 데이터스토어 사용 여부에 따라 경로를 선택하여 ONTAP tools for VMware vSphere 9.xx를 10.6으로 마이그레이션합니다. 
 ---
-= ONTAP tools for VMware vSphere 에서 10.5로 마이그레이션
+= VMware vSphere 9.xx용 ONTAP tools에서 10.6으로 마이그레이션
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-NetApp ONTAP tools for VMware vSphere 설정을 버전 9.xx에서 10.5로 이전하려면 버전 간 주요 제품 업데이트 및 개선 사항으로 인해 마이그레이션 프로세스가 필요합니다.
+VMware vSphere 9.xx용 ONTAP tools for VMware vSphere에서 10.6으로 마이그레이션하려면 데이터스토어 유형에 따라 다른 단계를 수행해야 합니다.
 
-ONTAP tools for VMware vSphere 에서 ONTAP tools for VMware vSphere 로 마이그레이션할 수 있습니다.
+ONTAP tools for VMware vSphere 9.12D1, 9.13D2 및 9.13P2 릴리스에서 ONTAP tools for VMware vSphere 10.6으로 마이그레이션할 수 있습니다.
 
-설정에 NFS 및 VMFS 데이터 저장소가 있고 vVols 데이터 저장소가 없는 경우 ONTAP tools 9.xx를 제거하고 ONTAP tools 10.5를 구축하기만 하면 됩니다. 그러나 설정에 vVols 데이터 저장소가 포함된 경우 VASA Provider 및 SRA를 마이그레이션하는 프로세스를 거쳐야 합니다.
+시스템에 NFS 및 VMFS 데이터스토어가 있고 vVols 데이터스토어가 없는 경우 ONTAP tools 9.xx를 제거하고 ONTAP tools 10.6을 배포하십시오. 시스템에 vVols 데이터스토어가 있는 경우 VASA Provider 및 SRA를 마이그레이션하십시오.
 
 다음 표에서는 두 가지 시나리오에서의 마이그레이션 프로세스를 간략하게 설명합니다.
 
@@ -23,7 +23,19 @@ ONTAP tools for VMware vSphere 에서 ONTAP tools for VMware vSphere 로 마이�
 | *설정에 vVols 데이터 저장소가 있는 경우* | *설정에 NFS 및 VMFS 데이터 저장소만 포함된 경우* 
 
 
-| 단계: 1. link:../migrate/sra-vasa-migration.html["VASA 공급자 마이그레이션"] 2.  https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vsphere-storage-8-0/storage-policy-based-management-in-vsphere/creating-and-managing-vsphere-storage-policies.html["VM 스토리지 정책 생성"] | 단계: 1.  환경에서 ONTAP 도구 9.xx를 제거합니다.  참조하다 https://kb.netapp.com/data-mgmt/OTV/VSC_Kbs/OTV_How_to_remove_OTV_9_12_from_your_environment["환경에서 OTV 9.xx를 제거하는 방법"] NetApp 기술 자료 문서. 2. link:../deploy/quick-start.html["ONTAP tools for VMware vSphere 배포 및 구성"] 3. link:../migrate/sra-vasa-migration.html["SRA를 업데이트합니다"] 4. https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vsphere-storage-8-0/storage-policy-based-management-in-vsphere/creating-and-managing-vsphere-storage-policies.html["VM 스토리지 정책 생성"] 
+| 단계: 1. link:../migrate/sra-vasa-migration.html["VASA 공급자 마이그레이션"] 2.  https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vsphere-storage-8-0/storage-policy-based-management-in-vsphere/creating-and-managing-vsphere-storage-policies.html["VM 스토리지 정책 생성"] | 단계: 1. 사용자 환경에서 ONTAP tools 9.xx를 제거합니다. NetApp 기술 자료의  https://kb.netapp.com/data-mgmt/OTV/VSC_Kbs/OTV_How_to_remove_OTV_9_12_from_your_environment["환경에서 OTV 9.xx를 제거하는 방법"]을 참조하십시오. 2. link:../deploy/quick-start.html["ONTAP tools for VMware vSphere 10.6 배포 및 구성"] 3. link:../migrate/sra-vasa-migration.html["SRA를 업데이트합니다"] 4. https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vsphere-storage-8-0/storage-policy-based-management-in-vsphere/creating-and-managing-vsphere-storage-policies.html["VM 스토리지 정책 생성"] 
 |===
 
-NOTE: ONTAP tools for VMware vSphere 에서 10.5로 마이그레이션한 후, NVMe/FC 프로토콜을 사용하는 vVols 데이터 저장소는 작동하지 않습니다. ONTAP 도구 10.5는 VMFS 데이터 저장소에서만 NVMe-oF 프로토콜을 지원하기 때문입니다.
+NOTE: ONTAP tools for VMware vSphere 9.xx에서 10.6으로 마이그레이션한 후, ONTAP tools 10.6은 NVMe-oF 프로토콜을 VMFS 데이터스토어에서만 지원하기 때문에 NVMe/FC 프로토콜을 사용하는 vVols 데이터스토어가 작동하지 않게 됩니다.
+
+
+
+[[after-migration]]
+== 마이그레이션 후
+
+다음 사항을 확인하십시오.
+
+* 데이터 저장소는 vCenter Server에서 액세스할 수 있습니다.
+* VM 스토리지 정책이 예상대로 매핑되었습니다.
+* 구성된 데이터 저장소의 보호 및 복제 상태가 정상으로 표시됩니다.
+

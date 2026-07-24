@@ -1,8 +1,8 @@
 ---
 permalink: manage/reports.html 
 sidebar: sidebar 
-keywords:  
-summary: VMware vSphere용 ONTAP 툴 플러그인은 가상 머신 및 데이터 저장소에 대한 보고서를 제공합니다. 
+keywords: ONTAP tools reports, virtual machine reports, datastore reports, VMware storage reporting 
+summary: ONTAP tools 플러그인에서 가상 머신 및 데이터 저장소 보고서를 볼 수 있습니다. 
 ---
 = ONTAP 도구 보고서
 :allow-uri-read: 

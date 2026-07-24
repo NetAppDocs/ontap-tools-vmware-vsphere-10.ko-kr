@@ -1,8 +1,8 @@
 ---
 permalink: upgrade/upgrade-error-codes.html 
 sidebar: sidebar 
-keywords: upgrade 
-summary: 이 페이지에서는 VMware vSphere 시스템용 ONTAP 툴의 업그레이드 작업에 대한 오류 코드를 간략하게 설명합니다. 
+keywords: upgrade error codes, ONTAP tools, VMware vSphere, troubleshooting, Ansible logs 
+summary: ONTAP 도구 업그레이드 오류 코드를 사용하여 실패한 워크플로를 식별하고 VMware vSphere의 업그레이드 문제를 해결합니다. 
 ---
 = ONTAP tools 업그레이드 오류 코드
 :allow-uri-read: 
@@ -65,7 +65,7 @@ NOTE: 이 페이지에 제공된 오류 코드는 참고용일 뿐입니다. 오
 | 052 | ISO는 현재 버전과 동일할 수도 있고, 현재 버전보다 두 개 상위 버전일 수도 있습니다. | 현재 버전에서 업그레이드하려면 ISO 호환 버전을 사용하십시오. 
 
 
-| 068 | 데비안 패키지 롤백에 실패했습니다 | 제로 RPO 또는 스냅샷 기반 복구를 사용하고 업그레이드를 다시 시도하십시오. 
+| 068 | Debian OS 패키지 롤백이 실패했습니다 | 제로 RPO 또는 스냅샷 기반 복구를 사용하고 업그레이드를 다시 시도하십시오. 
 
 
 | 069 | 파일을 복원하지 못했습니다 | 제로 RPO 또는 스냅샷 기반 복구를 사용하고 업그레이드를 다시 시도하십시오. 
@@ -77,7 +77,7 @@ NOTE: 이 페이지에 제공된 오류 코드는 참고용일 뿐입니다. 오
 | 071 | Kubernetes 클러스터가 정상 상태가 아닙니다 | - 
 
 
-| 074 | ISO 마운트에 실패했습니다 | /var/log/upgrade-run.log 를 확인하고 업그레이드를 다시 시도하십시오. 
+| 074 | ISO 마운트에 실패했습니다 | /var/log/otvng/upgrade-run.log 파일을 확인하고 업그레이드를 다시 시도하십시오. 
 
 
 | 075 | 업그레이드 사전 검사가 실패했습니다 | 업그레이드를 다시 시도하십시오. 
@@ -107,10 +107,10 @@ NOTE: 이 페이지에 제공된 오류 코드는 참고용일 뿐입니다. 오
 | 083 | 백업을 삭제하지 못했습니다 | 제로 RPO 또는 스냅샷 기반 복구를 사용하고 업그레이드를 다시 시도하십시오. 
 
 
-| 084 | JobManager를 프로덕션으로 다시 변경하지 못했습니다 | 업그레이드를 복구/완료하려면 다음 단계를 수행하십시오. 1. Diagnostic Shell 2를 활성화합니다. 다음 명령을 실행합니다. _sudo perl /home/maint/scripts/post-deploy-upgrade.pl --postupgrade_ 3. /var/log/post-deploy-upgrade.log에서 로그를 확인합니다. 
+| 084 | JobManager를 프로덕션으로 다시 변경하지 못했습니다 | 업그레이드를 복구/완료하려면 다음 단계를 수행하십시오. 1. 진단 셸을 활성화합니다. 2. 다음 명령을 실행합니다. _sudo perl /home/maint/scripts/post-deploy-upgrade.pl --postupgrade_ 3. /var/log/otvng/post-deploy-upgrade.log에서 로그를 확인합니다. 
 
 
-| 087 | 업그레이드 후 단계가 실패했습니다. | 업그레이드를 복구/완료하려면 다음 단계를 수행하십시오. 1. 진단 셸 2를 활성화합니다. run_sudo perl/home/maint/scripts/post-deploy-upgrade.pl --postupgrade_command 3. /var/log/post-deploy-upgrade.log 에서 로그를 확인합니다 
+| 087 | 업그레이드 후 단계가 실패했습니다. | 업그레이드를 복구/완료하려면 다음 단계를 수행하십시오. 1. 진단 셸을 활성화합니다. 2. _sudo perl /home/maint/scripts/post-deploy-upgrade.pl --postupgrade_ 명령을 실행합니다. 3. /var/log/otvng/post-deploy-upgrade.log에서 로그를 확인합니다. 
 
 
 | 088 | 저널러에 대한 로그 회전을 구성하지 못했습니다 | VM이 호스팅되는 호스트와 호환되는 VM 네트워크 설정을 확인하십시오. VM을 다른 호스트로 마이그레이션한 후 다시 시작해 볼 수 있습니다. 
@@ -128,10 +128,13 @@ NOTE: 이 페이지에 제공된 오류 코드는 참고용일 뿐입니다. 오
 | 097 | 업그레이드를 위한 서비스를 제거하지 못했습니다 | 제로 RPO 또는 스냅샷 기반 복구를 사용하고 업그레이드를 다시 시도하십시오. 
 
 
-| 098 | NTV-system에서 동적 스토리지 프로비저닝 네임스페이스로 dockercredd 암호를 복사하지 못했습니다 | 업그레이드 로그를 확인하고 업그레이드를 다시 시도하십시오. 
+| 098 | ntv-system 네임스페이스에서 rook-ceph 네임스페이스로 dockercred 비밀 키를 복사하는 데 실패했습니다. | 업그레이드 로그를 확인하고 업그레이드를 다시 시도하십시오. 
 
 
 | 099 | 새 HDD 추가를 확인하지 못했습니다 | HA의 경우 모든 노드에, HA가 아닌 구축 시 단일 노드에 새 HDD를 추가합니다. 
+
+
+| 108 | 시드 스크립트가 실패했습니다 | - 
 
 
 | 109 | 영구 볼륨 데이터를 백업하지 못했습니다 | 업그레이드 로그를 확인하고 업그레이드를 다시 시도하십시오. 
@@ -161,7 +164,7 @@ NOTE: 이 페이지에 제공된 오류 코드는 참고용일 뿐입니다. 오
 | 056 | 마이그레이션 백업을 삭제하지 못했습니다 | 해당 없음 
 
 
-| 090 | 스토리지 백엔드 및 vCenter에 대한 인증서 유효성 검사가 실패했습니다. | 업그레이드 로그와 /var/log/cert_validation_error.log의 로그 파일을 확인하고 업그레이드를 다시 시도하세요. 
+| 090 | 스토리지 백엔드 및 vCenter에 대한 인증서 유효성 검사가 실패했습니다. | 업그레이드 로그와 /var/log/otvng/cert_validation_error.log의 로그 파일을 확인하고 업그레이드를 다시 시도하십시오. 
 
 
 | 114 | MongoDB 컬렉션의 내부 인증서 업데이트가 실패했습니다  a| 
@@ -216,7 +219,7 @@ sudo perl /home/maint/scripts/post-deploy-upgrade.pl --postupgrade
 +
 [listing]
 ----
-tail -f /var/log/post-deploy-upgrade.log
+tail -f /var/log/otvng/post-deploy-upgrade.log
 ----
 +
 성공 메시지를 찾습니다. `Completed post 10.5 upgrade steps.`

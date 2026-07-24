@@ -1,8 +1,8 @@
 ---
 permalink: migrate/sra-vasa-migration.html 
 sidebar: sidebar 
-keywords: migrate 
-summary: 스토리지 데이터를 마이그레이션할 때 REST API를 사용하여 스토리지 백엔드를 수동으로 온보드합니다. VASA Provider 데이터를 마이그레이션할 때 기존 Derby 데이터베이스에서 데이터를 내보내고 MongoDB 데이터베이스로 가져옵니다. 
+keywords: VASA Provider migration, SRA update, VMware Live Site Recovery, ONTAP tools migration, vVols migration, migration jobs, Swagger, REST API 
+summary: VMware Live Site Recovery를 위해 VASA Provider를 마이그레이션하고 SRA를 ONTAP tools 9.x에서 10.6으로 업데이트합니다. 
 ---
 = VASA Provider를 마이그레이션하고 ONTAP tools에서 SRA를 업데이트합니다.
 :allow-uri-read: 
@@ -11,23 +11,25 @@ summary: 스토리지 데이터를 마이그레이션할 때 REST API를 사용�
 
 
 [role="lead"]
-이 섹션의 단계에 따라 ONTAP tools for VMware vSphere 에서 ONTAP tools for VMware vSphere 로 VASA 공급자를 마이그레이션하고 VMware Live Site Recovery 어플라이언스에서 SRA(스토리지 복제 어댑터)를 업데이트합니다.
+이 작업을 사용하여 VASA Provider를 VMware vSphere 9.xx용 ONTAP tools for VMware vSphere에서 10.6으로 마이그레이션하고 VMware Live Site Recovery 어플라이언스의 SRA(Storage Replication Adapter)를 업데이트합니다.
 
 
 
-[[steps-to-migrate-the-vasa-provider]]
-== VASA 공급자를 마이그레이션하는 단계
+[[migrate-the-vasa-provider]]
+== VASA 공급자 마이그레이션
 
-. VMware vSphere용 기존 ONTAP 툴에서 더비 포트 1527을 활성화하려면 루트 사용자를 활성화하고 SSH를 통해 CLI에 로그인합니다. 그런 다음 다음 다음 명령을 실행합니다.
+.시작하기 전에
+ONTAP tools for VMware vSphere 10.6이 배포되었는지, 그리고 대상 vCenter Server 및 스토리지 백엔드가 마이그레이션 준비가 되었는지 확인하십시오.
+
+. 기존 ONTAP tools for VMware vSphere 어플라이언스에서 Derby 포트 1527을 활성화하려면 루트 사용자를 활성화하고 SSH를 통해 CLI에 로그인한 다음 다음 명령을 실행하십시오.
 +
 [listing]
 ----
 iptables -I INPUT 1 -p tcp --dport 1527 -j ACCEPT
 ----
-. ONTAP tools for VMware vSphere 배포합니다.
-. ONTAP tools for VMware vSphere 로 마이그레이션하려는 vCenter Server 인스턴스를 추가합니다. . link:../configure/add-vcenter.html["vCenter Server 인스턴스를 추가합니다"] 자세한 내용은.
-. link:../manage/enable-services.html["VASA Provider를 설정합니다"]ONTAP tools for VMware vSphere 서비스.
-. ONTAP 도구 플러그인을 위한 vCenter 서버 API에서 로컬로 스토리지 백엔드를 온보딩합니다. 다음을 참조하세요.link:../configure/add-storage-backend.html["vSphere 클라이언트 인터페이스를 사용하여 스토리지 백엔드 추가"] 자세한 내용은.
+. VMware vSphere 10.6용 ONTAP tools for VMware vSphere의 OVA를 배포합니다.
+. 마이그레이션할 vCenter Server 인스턴스를 ONTAP tools for VMware vSphere 10.6에 추가하십시오. 자세한 내용은 link:../configure/add-vcenter.html["vCenter Server 인스턴스를 추가합니다"]을 참조하십시오.
+. ONTAP 도구 플러그인용 vCenter Server API를 통해 스토리지 백엔드를 로컬에 온보딩합니다. 자세한 내용은 link:../configure/add-storage-backend.html["vSphere Client 인터페이스를 사용하여 스토리지 백엔드 추가"]을 참조하십시오.
 . REST API 요청을 인증하기 위한 액세스 토큰을 얻습니다.  다음 예를 사용하여 변수를 사용자 환경에 맞는 값으로 바꿔보세요.
 +
 [source, curl]
@@ -41,7 +43,7 @@ curl --request POST \
 +
 응답에서 반환된 액세스 토큰을 복사하여 저장합니다.
 
-. 마이그레이션을 위해 Swagger 또는 Postman에서 다음 API를 실행하십시오.
+. Swagger 또는 Postman에서 다음 마이그레이션 API 호출을 실행하십시오.
 +
 [listing]
 ----
@@ -110,6 +112,13 @@ curl -X POST 'https://<OTV-NG-IP>:8443/virtualization/api/v1/vcenters/<vcguid>/m
 }
 ----
 ====
+
+
+
+
+[[check-migration-status]]
+=== 마이그레이션 상태 확인
+
 . Swagger에서 다음 URI를 사용하여 상태를 확인합니다.
 +
 [listing]
@@ -118,6 +127,13 @@ curl `\https://xx.xx.xx.xxx:8443/virtualization/api/jobmanager/v2/jobs/<JobId>?i
 ----
 +
 이전 단계에서 마이그레이션 작업으로부터 반환된 'id' 값을 사용하십시오. 작업이 완료되면 작업 응답에서 마이그레이션 보고서를 검토하십시오.
+
+
+
+
+
+[[register-and-verify-the-migrated-vasa-provider]]
+=== 마이그레이션된 VASA Provider를 등록하고 확인합니다.
 
 . ONTAP tools for VMware vSphere 사용하여 VASA 공급자를 등록합니다. 지침은 다음을 참조하세요.link:../configure/registration-process.html["VASA Provider를 등록합니다"] .
 . VASA Provider 등록을 확인하십시오:
@@ -130,18 +146,25 @@ curl `\https://xx.xx.xx.xxx:8443/virtualization/api/jobmanager/v2/jobs/<JobId>?i
 . 다음 단계를 사용하여 ONTAP tools for VMware vSphere 중지합니다.
 +
 .. ONTAP 도구 9.x에서 웹 콘솔을 엽니다.
-.. 유지 관리 콘솔에 액세스합니다.
+..  `maint` 자격 증명을 사용하여 로그인합니다.
 .. 입력하다 `1` *응용 프로그램 구성* 메뉴를 선택하세요.
 .. 입력하다 `5` VASA 공급자와 SRA 서비스를 중지합니다.
 .. vSphere Client에서 vCenter Server로 이동한 다음 *Configure* > *Storage Providers*를 선택합니다.
 .. ONTAP tools 9.x용 오프라인 VASA Provider를 선택하고 *Remove*를 선택합니다.
 +
-이전 VASA Provider가 중지되면 vCenter Server는 ONTAP tools for VMware vSphere 로 장애 조치됩니다. 모든 데이터스토어와 VM에 액세스할 수 있게 되고 ONTAP tools for VMware vSphere 에서 서비스를 제공합니다.
+기존 VASA Provider가 중지되면 vCenter Server는 ONTAP tools for VMware vSphere로 페일오버됩니다. 모든 데이터스토어와 VM은 액세스 가능하게 되며 ONTAP tools for VMware vSphere에서 제공됩니다.
 
 
 
-. 마이그레이션된 NFS 및 VMFS 데이터 저장소는 데이터 저장소 검색 작업 후 ONTAP tools for VMware vSphere 에 나타나며, 이 작업에는 최대 30분이 걸릴 수 있습니다.  개요 페이지에서 가시성을 확인하세요.
-. Swagger 또는 Postman에서 다음 API를 사용하여 패치 마이그레이션을 수행합니다.
+. 마이그레이션된 NFS 및 VMFS 데이터스토어는 데이터스토어 검색 작업(최대 30분 소요)이 완료된 후 ONTAP tools for VMware vSphere 10.6에 나타납니다. 개요 페이지에서 데이터스토어의 표시 여부를 확인하십시오.
+
+
+
+
+[[run-the-patch-migration]]
+=== 패치 마이그레이션을 실행합니다
+
+. Swagger 또는 Postman을 사용하여 패치 마이그레이션 API 호출을 수행하십시오.
 +
 []
 ====
@@ -218,8 +241,12 @@ NOTE: UUID는 마이그레이션 후 API에 대한 응답으로 반환된 마이
 
 패치 마이그레이션 API를 실행한 후에는 모든 VM이 스토리지 정책을 준수합니다.
 
-.다음 단계
-마이그레이션을 완료하고 ONTAP 도구 10.5를 vCenter Server에 등록한 후 다음 단계를 따르세요.
+
+
+[[after-migration]]
+== 마이그레이션 후
+
+마이그레이션을 완료하고 ONTAP tools 10.6을 vCenter Server에 등록한 후 다음 단계를 따르십시오.
 
 * *검색*이 완료될 때까지 기다리면 시스템이 모든 호스트의 인증서를 자동으로 새로 고칩니다.
 * 데이터 저장소 및 가상 머신 작업을 시작하기 전에 기다리세요.  대기 시간은 호스트, 데이터스토어, 가상 머신의 수에 따라 달라집니다.  기다리지 않으면 가끔 실패를 겪을 수도 있습니다.
@@ -236,16 +263,21 @@ NOTE: UUID는 마이그레이션 후 API에 대한 응답으로 반환된 마이
 
 .관련 정보
 * link:../concepts/rbac-learn-about.html["VMware vSphere 10 RBAC용 ONTAP 툴에 대해 알아보십시오"]
-* link:../upgrade/upgrade-ontap-tools.html["ONTAP tools for VMware vSphere 에서 10.5로 업그레이드"]
+* link:../upgrade/upgrade-ontap-tools.html["VMware vSphere 10.x용 ONTAP tools에서 10.6으로 업그레이드"]
 
 
 
 
-[[steps-to-update-the-storage-replication-adapter-sra]]
-== 스토리지 복제 어댑터(SRA) 업데이트 단계
+[[update-the-storage-replication-adapter-sra]]
+== 스토리지 복제 어댑터(SRA) 업데이트
 
 .시작하기 전에
-복구 계획에서 보호 사이트는 현재 VM이 실행 중인 위치를 나타내고, 복구 사이트는 VM이 복구될 위치를 나타냅니다. VMware Live Site Recovery 어플라이언스 인터페이스는 보호된 사이트와 복구 사이트에 대한 세부 정보와 함께 복구 계획의 상태를 표시합니다.  복구 계획에서 CLEANUP 및 REPROTECT 버튼은 비활성화되지만 TEST 및 RUN 버튼은 활성화된 상태로 유지됩니다. 이는 사이트가 데이터 복구를 위해 준비되었음을 나타냅니다. SRA를 마이그레이션하기 전에 한 사이트는 보호 상태이고 다른 사이트는 복구 상태인지 확인하십시오.
+SRA를 마이그레이션하기 전에 다음 사항을 확인하십시오.
+
+* 복구 계획에서 보호 사이트는 현재 VM이 실행 중인 위치이고, 복구 사이트는 VM이 복구될 위치입니다.
+* VMware Live Site Recovery 어플라이언스 인터페이스에서 한 사이트는 보호 상태로 표시되고 다른 사이트는 복구 상태로 표시됩니다.
+* 복구 계획에서 *CLEANUP* 및 *REPROTECT* 버튼은 비활성화되고 *TEST* 및 *RUN* 버튼은 활성화된 상태로 유지됩니다.
+
 
 
 NOTE: 페일오버가 완료되었지만 재보호가 보류 중인 경우 마이그레이션을 시작하지 마십시오. 마이그레이션을 진행하기 전에 재보호 프로세스가 완료되었는지 확인하십시오. 테스트 페일오버가 진행 중인 경우 테스트 페일오버를 정리하고 마이그레이션을 시작하십시오.
@@ -261,7 +293,7 @@ NOTE: 페일오버가 완료되었지만 재보호가 보류 중인 경우 마�
 . 보호 사이트와 복구 사이트 모두에서 다음 단계를 수행합니다.
 +
 .. link:../manage/enable-services.html["VMware vSphere 서비스에 대해 ONTAP 툴을 사용하도록 설정합니다"]
-.. 다음 단계를 사용하여 ONTAP tools for VMware vSphere 구성합니다.link:../protect/configure-on-srm-appliance.html["VMware Live Site Recovery 어플라이언스에서 SRA를 구성합니다"] .
+.. link:../protect/configure-on-srm-appliance.html["VMware Live Site Recovery 어플라이언스에서 SRA를 구성합니다"]의 단계에 따라 VMware vSphere 10.6 SRA 어댑터용 ONTAP tools for VMware vSphere를 구성하십시오.
 .. VMware Live Site Recovery 인터페이스에서 *어레이 검색* 및 *장치 검색*을 실행합니다.  마이그레이션 전과 마찬가지로 장치가 표시되는지 확인하세요.
 
 

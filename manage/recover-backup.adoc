@@ -1,8 +1,8 @@
 ---
 permalink: manage/recover-backup.html 
 sidebar: sidebar 
-keywords:  
-summary: VMware vSphere 10.3용 ONTAP 툴부터는 어플라이언스가 동적 스토리지 프로비저닝을 사용하므로 RPO를 0으로 달성할 수 없습니다. 하지만 거의 0에 가까운 RPO를 달성할 수 있습니다. 
+keywords: recover ONTAP tools setup, appliance recovery workflow, near zero RPO recovery, restore ONTAP tools configuration 
+summary: 백업에서 ONTAP tools를 복구하고 릴리스별 제로 RPO 및 거의 제로 RPO 동작을 파악합니다. 
 ---
 = ONTAP 도구 설정 복구
 :allow-uri-read: 
@@ -26,8 +26,9 @@ ONTAP tools for VMware vSphere 배포하는 데이터 저장소에는 백업 파
 
 
 . 기존 가상 머신의 전원을 끕니다.  그런 다음 원래 배포와 동일한 OVA 파일을 사용하여 새 가상 머신을 배포합니다.
-. vCenter Server에서 유지 관리 콘솔을 엽니다.
-. 유지보수 사용자로 로그인합니다.
+. vCenter 서버에 로그인합니다.
+. 새로 배포된 ONTAP tools VM을 찾아 웹 콘솔을 실행하십시오.
+.  `maint` 자격 증명을 사용하여 로그인합니다.
 . 를 `4` 입력하여 * 지원 및 진단 * 을 선택합니다.
 . Enter 키를 `2` 눌러 * 원격 진단 액세스 활성화 * 옵션을 선택하고 진단 액세스에 사용할 새 암호를 만듭니다.
 . 다운로드한 디렉토리에서 백업 파일을 선택하세요.  최신 백업을 확인하려면 _OTV_backup_info.txt_ 파일을 참조하세요.
@@ -48,7 +49,7 @@ NOTE: 명령에 언급된 대상 경로와 파일 이름(/home/diag/system_recov
 sudo perl /home/maint/scripts/post-deploy-upgrade.pl -recovery
 ----
 +
-로그는 _/var/log/post-deploy-upgrade.log_file에 기록됩니다.
+로그는 _/var/log/otvng/post-deploy-upgrade.log_ 파일에 기록됩니다.
 
 
 

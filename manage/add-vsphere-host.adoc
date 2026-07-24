@@ -1,8 +1,8 @@
 ---
 permalink: manage/add-vsphere-host.html 
 sidebar: sidebar 
-keywords:  
-summary: ONTAP tools for VMware vSphere 에 새로운 VMware vSphere 호스트를 추가합니다. 
+keywords: add vSphere host, ONTAP tools host discovery, register ESXi host, VMware host management 
+summary: VMware vSphere 호스트를 ONTAP tools for VMware vSphere에 추가합니다. 
 ---
 = ONTAP tools에 VMware vSphere 호스트 추가
 :allow-uri-read: 
@@ -14,7 +14,7 @@ summary: ONTAP tools for VMware vSphere 에 새로운 VMware vSphere 호스트�
 ONTAP tools for VMware vSphere 에 새로운 VMware vSphere 호스트를 추가하여 호스트의 데이터 저장소를 관리하고 보호합니다.
 
 .단계
-. 다음 페이지의 워크플로에 따라 VMware vSphere 클러스터에 호스트를 추가합니다. https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/use-quickstart-to-add---host-to-a-cluster.html["빠른 시작 워크플로를 사용하여 vSphere 클러스터에 ESX 호스트를 추가하는 방법"]
+. 다음 지침에 따라 VMware vSphere 클러스터에 호스트를 추가하십시오. https://techdocs.broadcom.com/["Broadcom 기술 문서"]
 . 호스트를 추가한 후 ONTAP 도구 메인 메뉴로 가서 개요 패널에서 *검색*을 선택합니다. 검색 프로세스가 완료될 때까지 기다리세요. 또는 예약된 호스트 검색이 완료될 때까지 기다릴 수 있습니다.
 
 

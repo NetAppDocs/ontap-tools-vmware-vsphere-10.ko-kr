@@ -1,0 +1,55 @@
+---
+permalink: manage/protect-ds.html 
+sidebar: sidebar 
+keywords: protect VMFS datastore, SnapMirror datastore protection, create protection group, ONTAP tools disaster recovery 
+summary: SnapMirror 복제를 사용하여 적합한 VMFS 데이터스토어를 보호 그룹에 추가하여 보호하십시오. 
+---
+= VMFS 데이터스토어 보호
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+이 작업을 사용하여 적합한 VMFS 데이터스토어를 보호 그룹에 추가하여 보호할 수 있습니다.
+
+.시작하기 전에
+* 데이터 저장소가 iSCSI 또는 FC 프로토콜을 사용하는지 확인하십시오.
+* vSphere에 대한 관리자 권한이 있는지 확인합니다.
+* 데이터 저장소가 이미 보호 그룹에 속해 있지 않은지 확인하십시오.
+
+
+.단계
+. vSphere 클라이언트에 로그인합니다.
+. 호스트 클러스터를 선택하고 *데이터 저장소*를 선택합니다.
+. 보호하려는 VMFS 데이터스토어를 마우스 오른쪽 버튼으로 클릭하고 *NetApp ONTAP tools* > *보호*를 선택합니다.
++
+시스템은 데이터 저장소의 보호 적합성을 확인합니다. 데이터 저장소가 적합하면 보호 워크플로가 계속 진행됩니다. 데이터 저장소가 적합하지 않으면 사유가 표시된 메시지가 나타나고 더 이상 진행할 수 없습니다.
+
+. 데이터 저장소를 기존 보호 그룹에 추가할지 또는 새 보호 그룹을 만들지 선택하십시오.
++
+.. 기존 보호 그룹을 사용하려면 해당 보호 그룹을 선택하고 계속 진행하십시오.
+.. 새로운 보호 그룹을 만들려면:
++
+... 보호 그룹의 이름을 입력하십시오.
+... 관계 추가 * 를 선택합니다.
+... SnapMirror 관계 추가 * 창에서 * 대상 스토리지 VM * 및 * 정책 * 유형을 선택합니다.
++
+정책 유형은 *비동기* 또는 *AutomatedFailOverDuplex*일 수 있습니다.
+
++
+*AutomatedFailOverDuplex*를 선택하는 경우, ONTAP tools for VMware vSphere가 배포된 동일한 vCenter Server에 대상 스토리지 VM을 스토리지 백엔드로 추가하십시오.
+
++
+*AutomatedFailOverDuplex*의 경우 균일 또는 비균일 호스트 구성을 선택합니다. *균일 호스트 구성* 토글을 선택하면 호스트 시작자 그룹 구성이 대상 사이트에 암묵적으로 복제됩니다. 자세한 내용은 link:../concepts/ontap-tools-concepts-terms.html["주요 개념 및 용어"]을 참조하십시오.
+
+... 균일하지 않은 호스트 구성을 선택하는 경우, 클러스터의 각 호스트에 대해 호스트 액세스(소스/대상)를 선택하십시오.
+
+
+
+
+. 보호 워크플로를 시작하려면 *확인*을 선택하십시오.
+
+
+.결과
+데이터 저장소가 선택된 보호 그룹에 나타납니다. ONTAP tools 플러그인을 통해 보호 상태를 확인하고 관리할 수 있습니다.

@@ -1,8 +1,8 @@
 ---
 permalink: manage/nested-igroups.html 
 sidebar: sidebar 
-keywords:  
-summary: ONTAP tools for VMware vSphere가 igroup을 어떻게 표현하고 관리하는지, 중첩 igroup 동작, 재사용, 그리고 10.5 P2 정리 변경 사항을 포함하여 알아보십시오. 
+keywords: ONTAP tools igroups, nested igroup management, initiator group handling, VMware host access mapping 
+summary: ONTAP tools가 효율적인 호스트 및 데이터 저장소 매핑을 위해 중첩된 igroup을 표현하고 관리하는 방법을 알아보십시오. 
 ---
 = ONTAP tools에서 igroup을 관리하는 방법
 :allow-uri-read: 

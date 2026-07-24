@@ -2,8 +2,12 @@
 section: protect
 title: 데이터 저장소와 가상 머신을 보호합니다
 entries:
-- title: 호스트 클러스터 보호를 사용하여 보호합니다
-  url: "/configure/protect-cluster.html"
+- title: 세부적인 데이터 저장소 보호 개념 및 적격성
+  url: "/protect/granular-datastore-protection-concept.html"
+- title: 데이터 저장소 보호를 위한 클러스터 구성
+  url: "/protect/config-proximity.html"
+- title: 클러스터 내 데이터 저장소 보호
+  url: "/protect/protect-multiple-ds.html"
 - title: SRA 보호를 사용하여 보호합니다
   entries:
   - title: 데이터 저장소를 보호하기 위한 SRA 구성

@@ -1,8 +1,8 @@
 ---
 permalink: manage/unmount-datastores-on-host.html 
 sidebar: sidebar 
-keywords:  
-summary: 데이터 저장소 마운트 해제 작업은 ESXi 호스트에서 NFS 또는 VMFS 데이터 저장소를 마운트 해제합니다. 데이터 저장소 마운트 해제 작업은 VMware vSphere용 ONTAP 툴로 검색되거나 관리되는 NFS 및 VMFS 데이터 저장소에 대해 설정됩니다. 
+keywords: unmount NFS VMFS datastore, remove datastore from host, ONTAP tools datastore unmount, ESXi host storage detach 
+summary: ONTAP tools를 사용하여 ESXi 호스트에서 NFS 또는 VMFS 데이터스토어를 마운트 해제합니다. 
 ---
 = ONTAP 도구에서 NFS 및 VMFS 데이터 저장소 마운트 해제
 :allow-uri-read: 
@@ -11,13 +11,15 @@ summary: 데이터 저장소 마운트 해제 작업은 ESXi 호스트에서 NFS
 
 
 [role="lead"]
-데이터 저장소 마운트 해제 작업은 ESXi 호스트에서 NFS 또는 VMFS 데이터 저장소를 제거합니다.  ONTAP tools for VMware vSphere 에서 검색하거나 관리하는 데이터 저장소에 사용할 수 있습니다.
+이 작업을 사용하여 ESXi 호스트에서 NFS 또는 VMFS 데이터스토어를 마운트 해제할 수 있습니다. 클러스터 수준의 데이터스토어 마운트 해제는 UI 또는 API를 통해 지원되지 않습니다.
+
+ONTAP tools 10.6부터 보호된 VMFS 데이터스토어의 마운트 해제가 차단됩니다.
 
 .단계
 . vSphere Client에 로그인합니다.
-. NFS 또는 VMFS 데이터 저장소 객체를 마우스 오른쪽 버튼으로 클릭하고 *데이터 저장소 마운트 해제*를 선택합니다.
+. NFS 또는 VMFS 데이터스토어 개체를 마우스 오른쪽 버튼으로 클릭하고 *데이터스토어 마운트 해제*를 선택합니다.
 +
-vSphere 클라이언트는 대화 상자를 열고 데이터스토어를 마운트하는 ESXi 호스트를 나열합니다. 보호된 데이터 저장소에서 작업을 수행하면 화면에 경고 메시지가 표시됩니다.
+vSphere 클라이언트는 데이터스토어를 마운트한 ESXi 호스트 목록을 표시하는 대화 상자를 엽니다. 데이터스토어가 보호되어 있는 경우 ONTAP tools는 요청을 차단하고 데이터스토어가 보호 중이므로 마운트 해제할 수 없다는 메시지를 표시합니다.
 
 . 데이터 저장소를 마운트 해제할 ESXi 호스트를 하나 이상 선택합니다.
 +
@@ -25,12 +27,12 @@ vSphere 클라이언트는 대화 상자를 열고 데이터스토어를 마운�
 
 . Unmount * 버튼을 선택합니다.
 +
-데이터 저장소가 보호된 호스트 클러스터의 일부인 경우 경고 메시지가 표시됩니다.
+*데이터 저장소 마운트 해제* 옵션은 호스트가 보호된 호스트 클러스터 외부로 이동된 경우에만 사용할 수 있습니다.
 
 
 
 
-NOTE: 보호된 데이터 저장소가 마운트 해제된 경우 기존 보호 설정으로 인해 부분 보호가 발생할 수 있습니다. 다음을 참조하세요. link:../manage/edit-hostcluster-protection.html["보호된 호스트 클러스터를 수정합니다"] 완벽한 보호를 가능하게 합니다.
+NOTE: 데이터 저장소가 보호되어 있는 경우, 마운트 해제하기 전에 먼저 보호를 해제해야 합니다.
 
 .다음 단계
 최근 작업 패널에서 진행 상황을 추적할 수 있습니다.
