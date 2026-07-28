@@ -197,6 +197,13 @@ NOTE: 표에 표시된 호스트 수는 연결된 모든 vCenters의 총합입�
 
 
 
+[[configuration-limits-for-storage-backend-discovery]]
+== 스토리지 백엔드 검색에 대한 구성 제한
+
+ONTAP tools는 최대 200개의 SVM 및 약 10,000개의 LUN에 대한 스토리지 백엔드 검색을 지원합니다.
+
+
+
 [[configuration-limits-for-vmfs-and-nfs-datastores]]
 == VMFS 및 NFS 데이터스토어에 대한 구성 제한
 

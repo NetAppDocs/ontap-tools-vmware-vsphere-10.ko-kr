@@ -67,11 +67,6 @@ ONTAP tools 인터페이스를 사용하여 클러스터 또는 SVM 자격 증�
 [discrete]
 == 다음 작업 (선택 사항)
 
-
-
-[[optional-next-tasks]]
-== 다음 작업 (선택 사항)
-
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1개"] ONTAP 사용자 역할 및 권한 구성
 [role="quick-margin-para"]
 ONTAP 기본 관리자 계정 대신 최소 권한 액세스를 위해 사용자 지정 ONTAP 역할을 구성하십시오.
