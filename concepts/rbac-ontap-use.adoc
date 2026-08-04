@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: ONTAP RBAC deployment, custom roles, user configuration, JSON role definition 
 summary: ONTAP tools를 운영 환경에서 사용하기 전에 ONTAP RBAC 고려 사항을 검토하십시오. 
 ---
-= ONTAP tools에 대한 ONTAP RBAC 고려 사항
+= ONTAP tools for VMware vSphere의 ONTAP RBAC
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-VMware vSphere 10 RBAC를 운영 환경에서 사용하기 전에 ONTAP를 사용하여 구축하는 ONTAP 툴의 여러 측면을 고려해야 합니다.
+ONTAP tools for VMware vSphere는 ONTAP를 통해 역할 기반 액세스 제어(RBAC)를 지원하므로 스토리지 리소스에 대한 액세스를 제한하는 사용자 지정 사용자 및 역할을 생성할 수 있습니다. 구성 프로세스와 권한 수준을 이해하면 운영 환경에서 ONTAP tools를 배포하기 전에 적절한 액세스 제어를 설정하는 데 도움이 됩니다.
 
 
 
@@ -20,7 +20,7 @@ VMware vSphere 10 RBAC를 운영 환경에서 사용하기 전에 ONTAP를 사�
 
 ONTAP tools for VMware vSphere 사용자 정의 역할이 있는 ONTAP 사용자를 만드는 기능이 포함되어 있습니다.  정의는 ONTAP 클러스터에 업로드할 수 있는 JSON 파일에 패키징됩니다.  사용자를 만들고 해당 환경과 보안 요구 사항에 맞게 역할을 조정할 수 있습니다.
 
-주요 구성 단계는 아래에 자세히 설명되어 있습니다. link:../configure/configure-user-role-and-privileges.html["ONTAP 사용자 역할 및 권한을 구성합니다"]자세한 내용은 을 참조하십시오.
+다음 섹션에서는 주요 구성 단계를 개략적으로 설명합니다. 자세한 내용은 link:../configure/configure-user-role-and-privileges.html["ONTAP 사용자 역할 및 권한을 구성합니다"]을 참조하십시오.
 
 .1. 준비
 ONTAP 툴 관리자와 ONTAP 클러스터 모두에 대한 관리 자격 증명이 있어야 합니다.
@@ -32,7 +32,7 @@ ONTAP 도구 관리자 사용자 인터페이스에 로그인한 후 RBAC 정의
 System Manager에 로그인한 후 사용자 및 역할을 생성할 수 있습니다.
 
 . 왼쪽에서 * Cluster * 를 선택한 다음 * Settings * 를 선택합니다.
-. 아래로 스크롤하여 * 사용자 및 역할 * 을 클릭합니다 `-->`.
+. 아래로 스크롤하여 *사용자 및 역할*을 선택하고 `-->`을 선택합니다.
 . 사용자 * 아래에서 * 추가 * 를 선택하고 * 가상화 제품 * 을 선택합니다.
 . 로컬 워크스테이션에서 JSON 파일을 선택하고 업로드합니다.
 
@@ -59,7 +59,7 @@ RBAC 정의는 VSC, VASA Provider, SRA의 조합을 포함하여 여러 제품 �
 [[privileges]]
 === 권한
 
-역할 권한은 ONTAP 스토리지에 필요한 액세스 수준에 따라 네 가지 세트로 구성됩니다. 역할의 기반이 되는 권한은 다음과 같습니다.
+역할 권한은 ONTAP 스토리지에 필요한 액세스 수준에 따라 네 가지 세트로 구성됩니다. 각 역할의 기반이 되는 권한은 다음과 같습니다.
 
 * 탐색
 +
@@ -84,7 +84,7 @@ RBAC 정의는 VSC, VASA Provider, SRA의 조합을 포함하여 여러 제품 �
 [[generate-the-user-with-a-role]]
 === 역할이 있는 사용자를 생성합니다
 
-사용자 환경에 대한 구성 옵션을 선택한 후 * 추가 * 를 클릭하면 ONTAP가 사용자 및 역할을 생성합니다. 생성된 역할의 이름은 다음 값을 연결한 것입니다.
+환경에 대한 구성 옵션을 선택한 후 *추가*를 선택하면 ONTAP에서 사용자와 역할을 생성합니다. 생성된 역할의 이름은 다음 값들을 연결한 것입니다.
 
 * JSON 파일에 정의된 상수 접두사 값(예: "OTV_10")
 * 선택한 제품 기능
@@ -94,4 +94,4 @@ RBAC 정의는 VSC, VASA Provider, SRA의 조합을 포함하여 여러 제품 �
 .예
 `OTV_10_VSC_Discovery_Create`
 
-새 사용자는 '사용자 및 역할' 페이지의 목록에 추가됩니다. HTTP 및 ONTAPI 사용자 로그인 방법이 모두 지원됩니다.
+새 사용자는 *사용자 및 역할* 페이지의 목록에 나타납니다. HTTP 및 ONTAPI 사용자 로그인 방식이 모두 지원됩니다.

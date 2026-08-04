@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: virtual machine migration considerations, ONTAP tools VM cloning guidance, VMware storage vMotion considerations, VM migration best practices 
 summary: 데이터 센터의 기존 가상 머신을 마이그레이션하기 전에 주요 고려 사항을 검토하십시오. 
 ---
-= ONTAP tools를 사용한 가상 머신 마이그레이션 및 복제 시 고려 사항
+= ONTAP tools의 가상 머신 마이그레이션 및 클로닝에 대해 알아보십시오
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ONTAP tools for VMware vSphere는 컴퓨팅 전용(vMotion), 스토리지 전용(Storage vMotion) 및 모든 데이터스토어에 걸친 컴퓨팅 및 스토리지 결합 마이그레이션을 포함하여 모든 주요 유형의 가상 머신 마이그레이션을 지원합니다. 이 항목에서는 기본 데이터스토어 유형에 관계없이 가상 머신의 성공적인 마이그레이션 및 복제를 보장하기 위한 주요 고려 사항과 모범 사례를 설명합니다.
+ONTAP tools for VMware vSphere는 컴퓨팅 전용(vMotion), 스토리지 전용(Storage vMotion) 및 모든 데이터스토어에 걸친 컴퓨팅 및 스토리지 결합 마이그레이션을 포함하여 모든 주요 유형의 가상 머신 마이그레이션을 지원합니다. 이러한 마이그레이션 및 클론 관련 고려 사항과 모범 사례를 이해하면 기본 데이터스토어 유형에 관계없이 성공적인 결과를 얻을 수 있습니다.
 
 
 
@@ -25,7 +25,7 @@ ONTAP tools for VMware vSphere는 컴퓨팅 전용(vMotion), 스토리지 전용
 * 다른 ESXi 호스트에 있는 호환 가능한 다른 데이터 저장소
 
 
-가상 머신을 다른 FlexVol 볼륨으로 마이그레이션하면 시스템은 해당 볼륨의 메타데이터 파일을 가상 머신 정보로 업데이트합니다. 가상 머신을 다른 ESXi 호스트로 마이그레이션하되 스토리지는 동일하게 유지하는 경우, 기본 FlexVol 볼륨의 메타데이터 파일은 수정되지 않습니다.
+가상 머신을 다른 FlexVol 볼륨으로 마이그레이션하면 시스템은 해당 볼륨의 메타데이터 파일을 가상 머신 정보로 업데이트합니다. 가상 머신을 다른 ESXi 호스트로 마이그레이션하지만 스토리지는 동일하게 유지하는 경우, 기본 FlexVol 볼륨의 메타데이터 파일은 수정되지 않습니다.
 
 가상 머신 마이그레이션에 대한 자세한 내용은 다음을 참조하십시오. https://techdocs.broadcom.com/["Broadcom 기술 문서"]
 
@@ -38,15 +38,15 @@ ONTAP tools for VMware vSphere는 컴퓨팅 전용(vMotion), 스토리지 전용
 
 * 복제 그룹을 사용하는 동일한 FlexVol 볼륨의 동일한 컨테이너
 +
-동일한 FlexVol 볼륨의 메타데이터 파일이 복제된 가상 머신의 세부 정보로 업데이트됩니다.
+ONTAP tools는 동일한 FlexVol 볼륨의 메타데이터 파일을 복제된 가상 머신 세부 정보로 업데이트합니다.
 
 * 복제 그룹을 사용하는 다른 FlexVol 볼륨의 동일한 컨테이너
 +
-복제된 가상 머신이 배치된 FlexVol 볼륨에서 메타데이터 파일이 복제된 가상 머신 세부 정보로 업데이트됩니다.
+복제된 가상 머신이 배치된 FlexVol 볼륨에서 ONTAP tools는 복제된 가상 머신의 세부 정보로 메타데이터 파일을 업데이트합니다.
 
 * 다른 컨테이너 또는 vVols 데이터 저장소
 +
-복제된 가상 머신이 배치된 FlexVol 볼륨에서 메타데이터 파일이 가상 머신 세부 정보로 업데이트됩니다.
+복제된 가상 머신이 배치된 FlexVol 볼륨에서 ONTAP tools는 메타데이터 파일을 가상 머신 세부 정보로 업데이트합니다.
 
 
 

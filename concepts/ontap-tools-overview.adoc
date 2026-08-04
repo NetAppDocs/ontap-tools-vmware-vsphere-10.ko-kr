@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: ONTAP tools overview, virtual machine lifecycle, VASA Provider, disaster recovery 
 summary: ONTAP tools for VMware vSphere가 가상 머신 스토리지 수명 주기 관리, 데이터스토어 프로비저닝 및 재해 복구를 어떻게 지원하는지 알아보십시오. 
 ---
-= ONTAP 도구에 대해 알아보세요
+= VMware vSphere용 ONTAP 툴에 대해 자세히 알아보십시오
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ONTAP tools for VMware vSphere는 가상 머신 스토리지 수명 주기 관리를 위한 도구 모음입니다. VMware 에코시스템과 통합되어 데이터스토어 프로비저닝을 간소화하고 가상 머신에 대한 기본 보호 기능을 제공합니다. 이는 수평 확장이 가능하고 이벤트 기반의 마이크로서비스 모음으로, 개방형 가상 어플라이언스(OVA) 형태로 배포됩니다.
+ONTAP tools for VMware vSphere는 가상 머신 수명 주기 관리를 위한 툴 모음입니다. VMware 에코시스템과 통합되어 데이터스토어 프로비저닝을 간소화하고 가상 머신에 대한 기본 보호 및 재해 복구 기능을 제공합니다. 개방형 가상 어플라이언스(OVA)로 배포되며, 수평 확장이 가능한 이벤트 기반 마이크로서비스를 사용하여 대규모 환경에서도 안정적인 성능을 제공합니다.
 
 ONTAP tools for VMware vSphere 을 지원합니다.
 
@@ -21,7 +21,7 @@ ONTAP tools for VMware vSphere 을 지원합니다.
 * SRA(Storage Replication Adapter)
 
 
-.VMware용 ONTAP 도구의 고가용성
+.ONTAP tools for VMware vSphere의 고가용성
 ONTAP tools for VMware vSphere 장애 발생 시에도 중단 없는 운영을 유지하는 데 도움이 되는 고가용성(HA) 지원을 제공합니다.
 
 HA 솔루션은 다음과 같은 유형의 중단으로부터 신속하게 복구하는 데 도움이 됩니다.

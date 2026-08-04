@@ -11,7 +11,7 @@ summary: 업그레이드를 실행하기 전에 다른 노드에서 SSH를 시�
 
 
 [role="lead"]
-업그레이드하기 전에 다른 노드에서 SSH를 시작해야 합니다.
+ONTAP tools for VMware vSphere를 업그레이드하기 전에 환경의 다른 각 노드에서 SSH를 시작해야 합니다.
 
 .시작하기 전에
 vCenter Server 인스턴스에 대해 VASA 공급자 확장 기능을 활성화합니다.

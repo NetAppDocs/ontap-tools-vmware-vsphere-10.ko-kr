@@ -11,7 +11,7 @@ summary: 백업에서 ONTAP tools를 복구하고 릴리스별 제로 RPO 및 �
 
 
 [role="lead"]
-ONTAP tools for VMware vSphere 부터 백업 기능이 기본적으로 활성화됩니다.
+ONTAP tools for VMware vSphere 설치는 데이터스토어에 저장된 백업 파일에서 복원하여 복구할 수 있습니다. ONTAP tools for VMware vSphere 10.5부터는 백업 기능이 기본적으로 활성화되어 있으므로 어플라이언스를 재배포하거나 복구해야 할 경우 최근 백업 파일을 사용할 수 있습니다.
 
 ONTAP tools for VMware vSphere 배포하는 데이터 저장소에는 백업 파일이 저장됩니다.  ONTAP 도구 IP 주소(점은 밑줄로 대체되고 _OTV_backup_으로 접미사 추가)의 이름을 딴 폴더에는 가장 최근의 두 백업 파일(_OTV_backup_1.tar.enc_ 및 _OTV_backup_2.tar.enc_)과 최신 백업의 이름이 포함된 정보 파일(_OTV_backup_info.txt_)이 보관됩니다.
 
@@ -40,7 +40,7 @@ scp <OTV_backup_X.tar.enc> diag@<node_ip>:/home/diag/system_recovery.tar.enc
 ----
 +
 
-NOTE: 명령에 언급된 대상 경로와 파일 이름(/home/diag/system_recovery.tar.enc)을 변경하지 마세요.
+NOTE: 명령에 언급된 대상 경로 및 파일 이름(/home/diag/system_recovery.tar.enc)을 변경하지 마십시오.
 
 . 백업 파일이 전송된 후 진단 셸에 로그인하여 다음 명령을 실행합니다.
 +

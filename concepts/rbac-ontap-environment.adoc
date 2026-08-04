@@ -14,17 +14,17 @@ summary: ONTAP RBAC 환경과 REST API 및 CLI를 통해 스토리지 및 시스
 
 
 [role="lead"]
-ONTAP는 강력하고 확장 가능한 RBAC 환경을 제공합니다. RBAC 기능을 사용하여 REST API 및 CLI를 통해 노출되는 스토리지 및 시스템 작업에 대한 액세스를 제어할 수 있습니다. 이 환경을 VMware vSphere 10 구축용 ONTAP 툴과 함께 사용하기 전에 이 환경을 잘 아는 것이 좋습니다.
+ONTAP는 REST API 및 CLI를 통해 스토리지 및 시스템 작업에 대한 액세스를 제어하는 강력하고 확장 가능한 RBAC 환경을 제공합니다. 역할 유형, 범위 및 권한을 포함한 ONTAP RBAC 개념을 이해하면 ONTAP tools for VMware vSphere 10 배포에 대한 사용자 액세스를 구성하고 관리하는 데 도움이 됩니다.
 
 
 
 [[overview-of-the-administrative-options]]
 == 관리 옵션 개요
 
-ONTAP RBAC를 사용할 때는 환경 및 목표에 따라 몇 가지 옵션을 사용할 수 있습니다. 주요 행정 결정의 개요는 다음과 같다. 자세한 내용은 를 https://docs.netapp.com/us-en/ontap-automation/rest/rbac_overview.html["ONTAP 자동화: RBAC 보안 개요"^] 참조하십시오.
+ONTAP RBAC를 사용할 때 환경 및 목표에 따라 여러 가지 옵션을 선택할 수 있습니다. 다음 섹션에서는 주요 관리 결정 사항에 대한 개요를 제공합니다. 자세한 내용은  https://docs.netapp.com/us-en/ontap-automation/rest/rbac_overview.html["ONTAP 자동화: RBAC 보안 개요"^]을 참조하십시오.
 
 
-NOTE: ONTAP RBAC는 스토리지 환경에 맞춰 설계되었으며 vCenter Server에서 제공하는 RBAC 구현보다 간단합니다.  ONTAP 사용하면 사용자에게 직접 역할을 할당할 수 있습니다.  ONTAP RBAC에서는 vCenter Server에서 사용되는 것과 같은 명시적 권한을 구성할 필요가 없습니다.
+NOTE: ONTAP RBAC는 스토리지 환경에 맞게 조정되었으며 vCenter Server에서 제공하는 RBAC 구현보다 간단합니다. ONTAP에서는 사용자에게 역할을 직접 할당합니다. vCenter Server와 달리 ONTAP RBAC는 명시적인 권한을 구성할 필요가 없습니다.
 
 .역할 유형 및 Privileges
 ONTAP 사용자를 정의할 때는 ONTAP 역할이 필요합니다. ONTAP 역할에는 두 가지 유형이 있습니다.
@@ -39,7 +39,7 @@ ONTAP 9.6 이전에 존재했던 레거시 역할입니다. RBAC의 기본 요�
 
 
 
-REST 역할은 비교적 최근에 도입되었지만, 기존 역할에도 몇 가지 장점이 있습니다. 예를 들어, 추가 쿼리 매개변수를 포함하여 Privileges가 적용되는 객체를 더욱 정확하게 정의할 수 있습니다.
+REST 역할은 비교적 최근에 도입되었지만, 기존 역할에도 몇 가지 장점이 있습니다. 예를 들어, 추가 쿼리 매개변수를 포함하여 권한이 적용되는 오브젝트를 더욱 정확하게 정의할 수 있습니다.
 
 .범위
 ONTAP 역할은 두 가지 다른 범위 중 하나로 정의할 수 있습니다. 특정 데이터 SVM(SVM 레벨) 또는 전체 ONTAP 클러스터(클러스터 레벨)에 적용할 수 있습니다.
@@ -52,7 +52,7 @@ ONTAP는 클러스터와 SVM 레벨 모두에서 사전 정의된 역할 세트�
 [[working-with-ontap-rest-roles]]
 == ONTAP REST 역할을 사용하여 작업합니다
 
-VMware vSphere 10용 ONTAP 툴에 포함된 ONTAP REST 역할을 사용할 때는 몇 가지 사항을 고려해야 합니다.
+ONTAP tools for VMware vSphere 10에 포함된 ONTAP REST 역할을 사용할 때 다음 사항을 유념하십시오.
 
 .역할 매핑
 기존 역할을 사용하든 REST 역할을 사용하든 모든 ONTAP 액세스는 기본 CLI 명령을 기반으로 결정됩니다. 하지만 REST 역할의 Privileges는 REST API 엔드포인트의 관점에서 정의되기 때문에 ONTAP는 각 REST 역할에 대해 _mapped_trademic 역할을 생성해야 합니다. 따라서 각 REST 역할은 기본적인 기존 역할에 매핑됩니다. 이를 통해 ONTAP는 역할 유형에 관계없이 일관된 방식으로 액세스 제어 결정을 내릴 수 있습니다. 병렬 매핑된 역할은 수정할 수 없습니다.
