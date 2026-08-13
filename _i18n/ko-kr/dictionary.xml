@@ -2016,8 +2016,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="dc99d10a215fcfc7c9cc258f6b526f04" category="doc">ONTAP 도구의 어레이 관리자를 사용하여 SRA를 구성합니다</block>
   <block id="f825d08cca5235c68d18f5f167189a42" category="doc">ONTAP tools를 사용하여 VMware Live Site Recovery 어플라이언스에서 SRA를 구성합니다</block>
   <block id="8c8cc20f279873e3e2c26985f73dde50" category="doc">ONTAP tools에서 플레이스홀더 데이터 저장소를 구성합니다</block>
-  <block id="7daa54a7e34530faf73a185cac6ff92e" category="doc">ONTAP tools에서 보호 사이트 및 복구 사이트를 구성합니다</block>
-  <block id="7f76078e340f36a84d5f402d8a9e9ed2" category="doc">확장성이 높은 환경을 위해 ONTAP tools에서 SRA를 구성합니다</block>
   <block id="366099eedc535323fc065faade609247" category="doc">SAN 및 NAS 환경용 ONTAP tools에서 SRA 구성</block>
   <block id="36acaddf44788c31be5317a19ff8bcfa" category="doc">데이터 저장소를 보호하려면 ONTAP tools에서 SRA를 구성하십시오</block>
   <block id="866ca228b7c9c7c4dd7f33b4edfe6343" category="doc">ONTAP 도구의 팬아웃 보호</block>
@@ -2851,7 +2849,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="41d5b3331c49688beabf64a476565b2f" category="paragraph">자세한 내용은 <block ref="63042c288d643bd286f708c30aa7eeb1" category="inline-link-rx"></block>을(를) 참조하십시오.</block>
   <block id="70ada8320af8255a677b6ffe7e62fb77" category="list-text"><block ref="606bd525eb6add3259ec861686535f41" category="inline-link-macro-rx"></block>에 따라 호스트 클러스터 보호에 데이터 저장소를 추가하십시오. 비동기 및 동기 정책 유형을 모두 추가하십시오.</block>
   <block id="30c3acc62ace9fe8b9f51083513c9b1f" category="summary">호스트 클러스터에서 데이터 저장소를 보호하기 전에 세부적인 데이터 저장소 보호 방법과 데이터 저장소 적격성 기준을 이해해야 합니다.</block>
-  <block id="f8bdb2b4320068538b2e660cf5594097" category="doc">세부적인 데이터 저장소 보호 적격 기준</block>
   <block id="7a6c5f13c11ac0091369e5de3372b041" category="paragraph">전체 클러스터를 보호하는 대신, 호스트 클러스터 내에서 선택한 VMFS 데이터스토어를 보호하기 위해 세분화된 데이터스토어 보호 기능을 사용하십시오.</block>
   <block id="94ba1053dfcb4c2f50ecb31c2a3a48e9" category="paragraph">세부적인 데이터스토어 보호 기능은 ONTAP tools for VMware vSphere 10.6 이상 버전에서 사용할 수 있습니다. 이 기능은 클러스터 전체를 대상으로 하는 선택 방식 대신 데이터스토어 수준의 보호 계획을 수립할 수 있도록 지원합니다.</block>
   <block id="5885c3f17ed13c3b9ddcd82efb888751" category="paragraph">이 기능을 사용하면 다음을 수행할 수 있습니다.</block>
@@ -3123,4 +3120,7 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="f02ba84a6292d236b6193eb515758b58" category="cell">이 페이지에는 모든 볼륨이 나열됩니다. ONTAP 스토리지 창에서 스토리지를 확장하거나 제거할 수 있습니다. ONTAP tools for VMware vSphere는 ASA r2 시스템 기반 vVols 데이터스토어에 대해 이 보기를 지원하지 않습니다.</block>
   <block id="d6ac92fc703f8db58239689a33a3a860" category="doc">VMware vSphere 배포를 위한 ONTAP tools 제거</block>
   <block id="675f332e8d70702f8454fa3cd1db7207" category="paragraph">ONTAP tools for VMware vSphere를 제거하면 툴의 모든 데이터가 삭제되므로, 예기치 않은 데이터 손실을 방지하고 배포를 안전하게 종료하려면 다음 단계를 완료해야 합니다.</block>
+  <block id="61aba9a185948f67b0e30c93c8bd8745" category="doc">ONTAP 툴에서 사이트 페어링 및 보호 그룹 구성</block>
+  <block id="2f1ee6929021bf5cd62c7d2d50b7d710" category="doc">ONTAP 툴의 대규모 환경에 대한 SRA 시간 초과 설정</block>
+  <block id="ead0b27d7cf57e3420b139c5b99f4200" category="doc">ONTAP 툴의 세분화된 데이터스토어 보호 자격 기준</block>
 </blocks>
