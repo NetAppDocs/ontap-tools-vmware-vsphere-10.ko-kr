@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: virtual machine storage view, vVols list per VM, ONTAP tools VM storage details, datastore usage by virtual machine 
 summary: 스토리지 보기에서 가상 머신이 생성한 vVols 목록을 볼 수 있습니다. 
 ---
-= ONTAP tools의 가상 머신 스토리지 보기
+= ONTAP tools에서 가상 머신 스토리지 세부 정보 보기
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-저장소 보기에는 가상 머신이 생성하는 vVols 목록이 표시됩니다.
+스토리지 뷰를 사용하여 가상 머신과 연결된 vVols를 확인할 수 있습니다.
 
 
 NOTE: 이 보기는 ONTAP tools for VMware vSphere 관리 vVols 데이터 저장소용 ONTAP 도구에서 하나 이상의 디스크가 있는 VM에 적용됩니다.
@@ -19,8 +19,8 @@ NOTE: 이 보기는 ONTAP tools for VMware vSphere 관리 vVols 데이터 저장
 .단계
 . vSphere Client에서 가상 머신으로 이동합니다.
 . 오른쪽 창에서 * Monitor * 탭을 선택합니다.
-. NetApp ONTAP tools * > * 스토리지 * 를 선택합니다. 오른쪽 창에 * Storage * 세부 정보가 나타납니다. VM에 있는 VVol 목록을 볼 수 있습니다.
+. NetApp ONTAP 툴* > *스토리지*를 선택합니다. 오른쪽 창에 *스토리지* 세부 정보가 표시됩니다. VM의 vVols 목록을 볼 수 있습니다.
 +
-'열 관리' 옵션을 사용하여 다른 열을 숨기거나 표시할 수 있습니다.
+*열 관리* 옵션을 사용하여 열을 숨기거나 표시할 수 있습니다.
 
 

@@ -11,14 +11,14 @@ summary: 가상 머신을 삭제한 후 VASA 정리 작업을 실행하십시오
 
 
 [role="lead"]
-VASA 정리 과정을 완료하려면 다음 단계를 따르세요.
+ONTAP tools에서 VASA 정리를 완료하려면 다음 단계를 따르십시오.
 
 
-NOTE: VASA 정리를 시작하기 전에 모든 vVols 데이터 저장소를 제거하는 것이 좋습니다.
+NOTE: VASA 정리 작업을 시작하기 전에 vVols 데이터 저장소를 모두 제거하십시오.
 
 .단계
-. \https://OTV_IP:8143/Register.html로 이동하여 플러그인 등록을 취소합니다
+. 열기 `\https://OTV_IP:8143/Register.html` 플러그인 등록을 해제합니다.
 . vCenter Server에서 플러그인을 더 이상 사용할 수 없는지 확인합니다.
-. VMware vSphere VM용 ONTAP 툴을 종료합니다.
+. ONTAP tools for VMware vSphere 가상 머신(VM)을 종료합니다.
 . VMware vSphere VM용 ONTAP 툴을 삭제합니다.
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: enable ONTAP tools services, enable VASA provider, enable SRA service, vVols service configuration 
 summary: 'VASA Provider, vVols 구성 가져오기 및 재해 복구(SRA)를 포함한 선택적 ONTAP tools 서비스를 활성화합니다.' 
 ---
-= ONTAP 툴 서비스를 활성화합니다
+= ONTAP tools Manager에서 선택적 서비스를 활성화합니다.
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

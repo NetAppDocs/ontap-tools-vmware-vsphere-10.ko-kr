@@ -11,7 +11,7 @@ summary: ONTAP tools for VMware vSphere의 ONTAP 스토리지 페이지에서 �
 
 
 [role="lead"]
-ONTAP tools for VMware vSphere는 구성 탭에서 데이터스토어 및 해당 볼륨의 ONTAP 스토리지 측 보기를 보여주며, 각 데이터스토어 유형에 대한 스토리지 백엔드, 애그리게이트 및 볼륨 세부 정보를 포함합니다.
+ONTAP tools for VMware vSphere는 *구성* 탭에서 데이터스토어 및 해당 볼륨에 대한 ONTAP 측 세부 정보를 표시합니다. 여기에는 각 데이터스토어 유형에 대한 스토리지 백엔드, 애그리게이트 및 볼륨 세부 정보가 포함됩니다.
 
 .단계
 . vSphere Client 인벤토리에서 데이터스토어를 선택합니다.

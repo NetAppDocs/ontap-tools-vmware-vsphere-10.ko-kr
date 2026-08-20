@@ -11,10 +11,10 @@ summary: 추가 호스트에 vVols 데이터스토어를 마운트하여 가상 
 
 
 [role="lead"]
-VMware Virtual Volumes(vVols) 데이터스토어를 하나 이상의 추가 호스트에 마운트하여 추가 호스트에 스토리지 액세스를 제공할 수 있습니다. vVols 데이터스토어는 호스트 수준 API를 통해서만 마운트 해제할 수 있습니다. 클러스터 수준의 데이터스토어 마운트 해제는 지원되지 않습니다.
+VMware Virtual Volumes(vVols) 데이터스토어를 하나 이상의 추가 호스트에 마운트하여 스토리지 액세스를 확장합니다. vVols 데이터스토어는 호스트 수준 API를 통해서만 마운트 해제할 수 있습니다. 클러스터 수준의 데이터스토어 마운트 해제는 지원되지 않습니다.
 
 
-NOTE: 호스트를 추가한 후 예약된 호스트 검색이 완료될 때까지 기다리면 ONTAP tools에 표시됩니다. 또는 NetApp ONTAP tools 개요 화면에서 수동으로 검색을 실행할 수 있습니다. vSphere 클러스터에 ESXi 호스트를 추가하는 방법에 대한 자세한 내용은 https://techdocs.broadcom.com/["Broadcom 기술 문서"]을 참조하십시오.
+NOTE: 호스트를 추가한 후 예약된 호스트 검색이 완료될 때까지 기다리면 ONTAP 툴에 표시됩니다. 또는 NetApp ONTAP 툴 개요 화면에서 수동으로 검색을 실행할 수 있습니다. vSphere 클러스터에 ESXi 호스트를 추가하는 방법에 대한 자세한 내용은 https://techdocs.broadcom.com/["Broadcom 기술 문서"]을 참조하십시오.
 
 .단계
 . vSphere Client 홈 페이지에서 * 호스트 및 클러스터 * 를 선택합니다.

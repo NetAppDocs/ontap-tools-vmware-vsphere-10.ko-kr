@@ -11,7 +11,7 @@ summary: ONTAP tools에서 어플라이언스 시간을 동기화하려면 NTP �
 
 
 [role="lead"]
-NTP 서버 세부 정보를 입력하여 ONTAP 툴 어플라이언스의 시간 시계를 동기화합니다.
+ONTAP 툴 어플라이언스의 시계를 동기화하려면 NTP 서버 정보를 입력하십시오.
 
 
 NOTE: ONTAP tools for VMware vSphere 10.6부터 시간 동기화 데몬이 ntpd 대신 chronyd로 변경되었습니다. 10.6으로 업그레이드하는 동안 기존 NTP 서버 설정이 자동으로 마이그레이션됩니다. 수동으로 재구성할 필요가 없습니다.

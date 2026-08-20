@@ -11,7 +11,7 @@ summary: ONTAP tools에 대한 AutoSupport 설정을 구성하고 기본 지원 
 
 
 [role="lead"]
-처음으로 ONTAP tools for VMware vSphere 구성하는 경우 AutoSupport 기본적으로 활성화됩니다.  이 기능이 활성화된 후 24시간 이내에 기술 지원팀에 메시지가 전송됩니다.
+AutoSupport는 ONTAP tools for VMware vSphere를 처음 구성할 때 기본적으로 활성화됩니다. 활성화 후 24시간이 지나면 기술 지원팀에 메시지를 보냅니다.
 
 
 
@@ -21,7 +21,7 @@ summary: ONTAP tools에 대한 AutoSupport 설정을 구성하고 기본 지원 
 AutoSupport 비활성화하면 더 이상 사전 지원 및 모니터링을 받을 수 없습니다.
 
 
-NOTE: 문제 감지 및 해결 속도를 높이는 데 도움이 되므로 AutoSupport 활성화해 두는 것이 좋습니다.  AutoSupport 비활성화되어 있어도 시스템은 계속해서 로컬에서 정보를 수집하고 저장하지만 네트워크를 통해 보고서를 보내지는 않습니다.
+NOTE: AutoSupport는 문제 감지 및 해결 속도를 높이는 데 도움이 되므로 활성화 상태로 유지하십시오. AutoSupport가 비활성화된 경우에도 시스템은 계속해서 정보를 수집하고 로컬에 저장하지만, 네트워크를 통해 보고서를 전송하지는 않습니다.
 
 .단계
 . 웹 브라우저에서 ONTAP 도구 관리자를 실행합니다. `\https://<ONTAPtoolsIP>:8443/virtualization/ui/`

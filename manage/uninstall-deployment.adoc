@@ -11,7 +11,7 @@ summary: ONTAP tools for VMware vSphere 배포를 안전하게 종료하십시�
 
 
 [role="lead"]
-ONTAP tools for VMware vSphere를 제거하면 툴의 모든 데이터가 삭제되므로, 예기치 않은 데이터 손실을 방지하고 배포를 안전하게 종료하려면 다음 단계를 완료해야 합니다.
+ONTAP tools for VMware vSphere를 제거하면 어플라이언스의 데이터가 삭제되므로 예기치 않은 데이터 손실을 방지하려면 다음 단계를 완료하여 배포를 안전하게 종료하십시오.
 
 .단계
 . VMware vSphere에서 관리하는 데이터 저장소용 ONTAP 툴에서 모든 가상 머신을 제거하거나 이동합니다.
@@ -21,7 +21,7 @@ ONTAP tools for VMware vSphere를 제거하면 툴의 모든 데이터가 삭제
 
 
 . link:../manage/delete-ds.html["데이터 저장소를 삭제합니다"] VMware vSphere용 ONTAP 툴에 생성되었습니다.
-. VASA 공급자를 설정한 경우 ONTAP 툴에서 * Settings * > * VASA Provider settings * > * Unregister * 를 선택하여 모든 vCenter 서버에서 VASA Provider 등록을 취소합니다.
+. VASA 공급자를 활성화한 경우 ONTAP 툴에서 *설정* > *VASA 공급자 설정* > *등록 취소* 를 선택하여 모든 vCenter Server 인스턴스에서 VASA 공급자의 등록을 해제하십시오.
 . vCenter Server 인스턴스에서 모든 스토리지 백엔드의 연결을 해제합니다. 을 link:../manage/manage-vcenter.html["vCenter Server 인스턴스로 스토리지 백엔드를 분리합니다"]참조하십시오.
 . 모든 스토리지 백엔드를 삭제합니다. 을 link:../manage/storage-backend.html["스토리지 백엔드 관리"]참조하십시오.
 . VMware Live Site Recovery에서 SRA 어댑터 제거:

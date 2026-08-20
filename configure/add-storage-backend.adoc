@@ -11,11 +11,11 @@ summary: ONTAP 도구에서 vCenter 인스턴스에 대해 로컬로 또는 클�
 
 
 [role="lead"]
-ONTAP tools for VMware vSphere 사용하여 ESXi 호스트의 스토리지 백엔드를 추가하고 관리하세요.  클러스터나 SVM을 온보딩하고, MetroCluster 지원을 활성화하고, 안전한 연결을 위해 인증서를 검증할 수 있습니다.  ONTAP 도구 관리자나 vSphere 클라이언트를 사용하여 스토리지 백엔드를 구성하고, 인증서 상태를 모니터링하고, 클러스터 변경 후 리소스를 수동으로 다시 검색할 수 있습니다.
+ONTAP tools for VMware vSphere를 사용하여 클러스터 또는 SVM 온보딩, MetroCluster 지원 활성화, 보안 연결을 위한 인증서 유효성 검사 등 ESXi 호스트의 스토리지 백엔드를 추가 및 관리할 수 있습니다. ONTAP tools Manager 또는 vSphere Client를 사용하여 스토리지 백엔드를 구성하고, 인증서 상태를 모니터링하고, 클러스터 변경 후 리소스를 수동으로 다시 검색할 수 있습니다.
 
 로컬로 스토리지 백엔드를 추가하려면 ONTAP 도구 인터페이스에서 클러스터 또는 SVM 자격 증명을 사용하세요.  로컬 스토리지 백엔드는 선택한 vCenter Server에서만 사용할 수 있습니다. ONTAP 도구는 vVols 또는 VMFS 데이터 저장소 관리를 위해 SVM을 vCenter Server에 매핑합니다.  VMFS 데이터 저장소와 SRA 워크플로의 경우 클러스터를 전역적으로 매핑하지 않고도 SVM 자격 증명을 사용할 수 있습니다.
 
-글로벌 스토리지 백엔드를 추가하려면 ONTAP 도구 관리자에서 ONTAP 클러스터 자격 증명을 사용하세요.  글로벌 스토리지 백엔드를 사용하면 검색 워크플로를 통해 vVol 관리에 필요한 클러스터 리소스를 식별할 수 있습니다.  멀티테넌트 환경에서는 SVM 사용자를 로컬로 추가하여 vVols 데이터 저장소를 관리할 수 있습니다.
+글로벌 스토리지 백엔드를 추가하려면 ONTAP tools Manager에서 ONTAP 클러스터 자격 증명을 사용하십시오. 글로벌 스토리지 백엔드를 사용하면 vVols 관리에 필요한 클러스터 리소스를 식별하는 검색 워크플로를 수행할 수 있습니다. 멀티테넌트 환경에서는 SVM 사용자를 로컬에 추가하여 vVols 데이터스토어를 관리할 수 있습니다.
 
 글로벌 및 로컬 스토리지 백엔드에 대한 자세한 내용은 KB 문서 https://kb.netapp.com/data-mgmt/OTV/VSC_Kbs/OTV_10_What_is_storage_backend_global_and_local_scope["OTV 10: 스토리지 백엔드 글로벌 및 로컬 범위란 무엇인가"^]를 참조하십시오.
 
@@ -76,7 +76,7 @@ NOTE: ONTAP 시스템이 전환 및 스위치백을 수행한 후 ONTAP 도구 �
 
 --
 ====
-ONTAP 도구는 새로 추가된 스토리지 백엔드를 *스토리지 백엔드* 페이지에 나열합니다.  인증서가 30일 이내에 만료되면 ONTAP 도구는 인증서 만료 날짜 열에 경고를 표시합니다.  만료 후 ONTAP 도구는 스토리지 시스템에 연결할 수 없으므로 스토리지 백엔드를 알 수 없음으로 표시합니다.
+ONTAP tools는 *Storage backends* 페이지에 새로 추가된 스토리지 백엔드를 표시합니다. 인증서가 30일 이내에 만료되는 경우, ONTAP tools는 인증서 만료일 열에 경고를 표시합니다. 만료 후에 ONTAP tools는 스토리지 시스템에 연결할 수 없기 때문에 스토리지 백엔드를 알 수 없음으로 표시합니다.
 
 .관련 정보
 https://kb.netapp.com/data-mgmt/OTV/VSC_Kbs/OTV_10_What_is_storage_backend_global_and_local_scope["OTV 10: 스토리지 백엔드 글로벌 및 로컬 범위란 무엇인가"^]

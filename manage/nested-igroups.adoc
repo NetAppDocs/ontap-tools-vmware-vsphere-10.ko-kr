@@ -4,16 +4,16 @@ sidebar: sidebar
 keywords: ONTAP tools igroups, nested igroup management, initiator group handling, VMware host access mapping 
 summary: ONTAP tools가 효율적인 호스트 및 데이터 저장소 매핑을 위해 중첩된 igroup을 표현하고 관리하는 방법을 알아보십시오. 
 ---
-= ONTAP tools에서 igroup을 관리하는 방법
+= ONTAP tools의 중첩 igroup 관리
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ONTAP 툴 VM과 ONTAP 스토리지 시스템을 모두 관리하는 경우, 특히 ONTAP 툴에서 관리하지 않는 환경에서 관리하는 환경으로 데이터 저장소를 이동할 때 igroup의 동작 방식을 이해해야 합니다. ONTAP tools for VMware vSphere는 중첩 igroup 모델을 사용하여 igroup을 표현하고 관리하며, 이 모델을 이해하면 이전 릴리스와 현재 구현 간의 동작 차이를 파악하는 데 도움이 됩니다.
+ONTAP 툴로 관리되지 않는 환경에서 관리되는 환경으로 데이터 저장소를 이동하는 경우 iGroup의 동작 방식을 이해해야 합니다. ONTAP tools for VMware vSphere는 중첩된 iGroup 모델을 사용하므로 이전 릴리스와 현재 구현 간의 동작 차이를 이해하는 데 도움이 됩니다.
 
-ONTAP tools for VMware vSphere 10.4부터 ONTAP tools는 ONTAP 및 vCenter 객체를 자동으로 생성하고 유지 관리하여 VMware 데이터 센터 환경에서 데이터 저장소 관리를 간소화합니다. ONTAP tools for VMware vSphere 10.5 P2부터는 마이그레이션된 igroup이 더 이상 사용되지 않을 경우 자동으로 삭제됩니다.
+ONTAP tools for VMware vSphere 10.4부터 ONTAP 툴은 ONTAP 및 vCenter 객체를 자동으로 생성하고 유지 관리하여 VMware 데이터센터 환경에서 데이터스토어 관리를 간소화합니다. ONTAP tools for VMware vSphere 10.5 P2부터 ONTAP 툴은 마이그레이션된 igroup이 더 이상 사용되지 않을 경우 자동으로 삭제합니다.
 
 
 

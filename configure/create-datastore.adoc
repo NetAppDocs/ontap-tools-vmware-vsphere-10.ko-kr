@@ -11,9 +11,12 @@ summary: ONTAP tools를 사용하여 호스트 또는 호스트 클러스터 수
 
 
 [role="lead"]
-호스트 클러스터 수준에서 데이터 저장소를 생성하면 ONTAP 도구는 모든 대상 호스트에 해당 데이터 저장소를 마운트하고 필요한 권한이 있는 경우에만 작업을 활성화합니다.
+호스트 또는 호스트 클러스터 수준에서 NFS, VMFS 또는 vVols 데이터스토어를 생성합니다. 호스트 클러스터 수준에서 데이터스토어를 생성하면 필요한 권한이 있는 경우 ONTAP 툴이 모든 대상 호스트에 해당 데이터스토어를 마운트합니다.
 
-*vCenter Server 및 ONTAP 도구로 관리되는 데이터스토어를 사용하는 기본 데이터스토어 간 상호 운용성*
+
+
+[[interoperability-between-native-datastores-and-ontap-tools-managed-datastores]]
+== 네이티브 데이터 저장소와 ONTAP tools 관리 데이터 저장소 간의 상호 운용성
 
 ONTAP tools for VMware vSphere 부터 ONTAP 도구는 데이터스토어에 대한 중첩된 igroup을 생성하며, 부모 igroup은 데이터스토어에 특정하고 자식 igroup은 호스트에 매핑됩니다.  ONTAP System Manager에서 플랫 igroup을 만들고 ONTAP 도구를 사용하지 않고도 이를 사용하여 VMFS 데이터 저장소를 만들 수 있습니다. 참조하다 https://docs.netapp.com/us-en/ontap/san-admin/manage-san-initiators-task.html["SAN 이니시에이터 및 igroup 관리"] 자세한 내용은.
 
@@ -43,7 +46,7 @@ NOTE: ASA R2 시스템은 VVOL을 위해 iSCSI 및 FC 프로토콜을 지원합�
 . 데이터 저장소를 생성할 스토리지 VM을 선택합니다.
 . *고급 옵션*에서:
 +
-** *사용자 지정 내보내기 정책*을 선택하는 경우, 계속하기 전에 vCenter에서 모든 개체에 대한 검색을 실행하십시오. 이 옵션은 사용하지 않는 것이 좋습니다.
+** *사용자 지정 내보내기 정책*을 선택하는 경우, 계속 진행하기 전에 vCenter에서 모든 오브젝트에 대한 검색을 실행하십시오. NetApp은 이 옵션을 사용하지 않을 것을 권장합니다.
 ** iSCSI 및 FC 프로토콜에 대해 *Custom initiator group* 이름을 선택할 수 있습니다.
 +
 
@@ -61,7 +64,7 @@ NOTE: ASA r2 SVM의 경우 데이터 저장소가 논리적 컨테이너이므�
 --
 .NFS 데이터 저장소를 생성합니다
 --
-NFS 데이터스토어는 NFS 프로토콜을 사용하여 ESXi 호스트를 공유 스토리지에 연결합니다. 간단하고 유연하며 VMware vSphere 환경에서 사용됩니다.
+NFS 데이터스토어는 NFS 프로토콜을 사용하여 ESXi 호스트를 공유 스토리지에 연결합니다. NFS는 간단하고 유연하며, VMware vSphere 환경에서 일반적으로 사용됩니다.
 
 .단계
 . vSphere 클라이언트에 로그인합니다.
@@ -84,7 +87,7 @@ NOTE: Kerberos 인증은 NFS 4.1 프로토콜을 선택한 경우에만 사용�
 NOTE: SVM의 기본 또는 루트 볼륨 정책을 사용하여 NFS 데이터 저장소를 만들 수 없습니다.
 
 +
-** * 고급 옵션*에서 *비대칭* 토글 버튼은 플랫폼 드롭다운 메뉴에서 성능 또는 용량이 선택된 경우에만 표시됩니다. 단, *비대칭* 옵션은 NFS 데이터스토어 생성에는 적용되지 않습니다.
+** *고급 옵션*에서 *비대칭* 토글 버튼은 플랫폼 드롭다운 목록에서 성능 또는 용량을 선택한 경우에만 표시됩니다. 단, *비대칭* 옵션은 NFS 데이터스토어 생성에는 적용되지 않습니다.
 ** 플랫폼 드롭다운 메뉴에서 *모두* 옵션을 선택하면 vCenter의 모든 SVM이 표시됩니다. 플랫폼 및 비대칭 설정은 가시성에 영향을 미치지 않습니다.
 
 

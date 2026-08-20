@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: virtual machine migration considerations, ONTAP tools VM cloning guidance, VMware storage vMotion considerations, VM migration best practices 
 summary: 데이터 센터의 기존 가상 머신을 마이그레이션하기 전에 주요 고려 사항을 검토하십시오. 
 ---
-= ONTAP tools의 가상 머신 마이그레이션 및 클로닝에 대해 알아보십시오
+= ONTAP tools의 가상 머신 마이그레이션 및 클로닝
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-ONTAP tools for VMware vSphere는 컴퓨팅 전용(vMotion), 스토리지 전용(Storage vMotion) 및 모든 데이터스토어에 걸친 컴퓨팅 및 스토리지 결합 마이그레이션을 포함하여 모든 주요 유형의 가상 머신 마이그레이션을 지원합니다. 이러한 마이그레이션 및 클론 관련 고려 사항과 모범 사례를 이해하면 기본 데이터스토어 유형에 관계없이 성공적인 결과를 얻을 수 있습니다.
+ONTAP tools for VMware vSphere의 가상 머신 마이그레이션 및 클론 생성 고려 사항을 검토합니다. 여기에는 컴퓨팅 전용(vMotion), 스토리지 전용(Storage vMotion) 및 지원되는 데이터스토어 유형 간의 컴퓨팅 및 스토리지 결합 마이그레이션이 포함됩니다.
 
 
 

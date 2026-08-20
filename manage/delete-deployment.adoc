@@ -11,15 +11,15 @@ summary: ONTAP tools 배포를 제거한 후 성능 저하를 방지하려면 �
 
 
 [role="lead"]
-VMware 배포용 ONTAP 툴용 전용 ONTAP 클러스터를 사용하면 사용되지 않은 FlexVol 볼륨이 여러 개 생성됩니다. VMware vSphere용 ONTAP 툴을 제거한 후에는 성능에 미치는 영향을 방지하기 위해 FlexVol 볼륨을 제거해야 합니다.
+전용 ONTAP 클러스터에 ONTAP tools for VMware vSphere를 배포하면 사용되지 않는 FlexVol 볼륨이 많이 생성됩니다. ONTAP tools를 제거한 후 성능 저하를 방지하기 위해 사용되지 않는 FlexVol 볼륨을 삭제하십시오.
 
 .단계
-. ONTAP 도구 관리 노드 VM에서 ONTAP tools for VMware vSphere 찾아보세요.  다음 명령을 실행하여 배포 유형을 확인하세요: _cat /opt/netapp/meta/ansible_vars.yaml | grep -i protocol_
+. ONTAP tools for VMware vSphere 배포 유형을 ONTAP tools 관리 노드 VM에서 확인합니다. 다음 명령을 실행하여 배포 유형을 확인하십시오. _cat /opt/netapp/meta/ansible_vars.yaml | grep -i protocol_
 +
-iSCSI 배포인 경우 igroup도 삭제합니다.
+배포 환경에서 iSCSI를 사용하는 경우 igroup도 삭제해야 합니다.
 
 . FlexVol 볼륨 목록을 가져옵니다. _kubectl 지속적 볼륨 설명 | grep internalName | awk -F'=' '{print $2}'_
 . vCenter Server에서 VM을 제거합니다. 을 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vsphere-virtual-machine-administration-guide-8-0/managing-virtual-machinesvsphere-vm-admin/adding-and-removing-virtual-machinesvsphere-vm-admin.html#GUID-376174FE-F936-4BE4-B8C2-48EED42F110B-en["VM 및 VM 템플릿을 제거하고 다시 등록합니다"]참조하십시오.
 . FlexVol 볼륨을 삭제합니다. 참조하다 https://docs.netapp.com/us-en/ontap/volumes/delete-flexvol-task.html["FlexVol 볼륨을 삭제합니다"] . 볼륨을 삭제하려면 CLI 명령에 정확한 FlexVol volume 이름을 입력하세요.
-. iSCSI 구축 시 ONTAP 스토리지 시스템에서 SAN igroup을 삭제합니다. 을 https://docs.netapp.com/us-en/ontap/san-admin/manage-san-initiators-task.html["SAN 이니시에이터 및 igroup을 보고 관리합니다"]참조하십시오.
+. iSCSI 배포의 경우 ONTAP 스토리지 백엔드에서 SAN igroup을 삭제하십시오. 을 참조하십시오 https://docs.netapp.com/us-en/ontap/san-admin/manage-san-initiators-task.html["SAN 이니시에이터 및 igroup을 보고 관리합니다"].
 

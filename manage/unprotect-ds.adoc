@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: unprotect VMFS datastore, remove datastore protection group, SnapMirror protection removal, ONTAP tools DR cleanup 
 summary: VMFS 데이터스토어의 보호를 해제하고, 선택적으로 연결된 대상 측 스토리지 요소를 제거합니다. 
 ---
-= VMFS 데이터스토어 보호 해제
+= ONTAP tools에서 VMFS 데이터스토어 보호 해제
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -16,8 +16,8 @@ summary: VMFS 데이터스토어의 보호를 해제하고, 선택적으로 연�
 .이 작업에 대해
 VMFS 데이터스토어의 보호를 해제할 때 다음 동작을 고려하십시오.
 
-* 보호 그룹에서 마지막 데이터 저장소의 보호를 해제하면 보호 그룹과 해당 보호 설정 이름이 삭제됩니다.
-* 마지막 데이터 저장소의 경우 ONTAP tools는 보호 설정 이름을 표시합니다.
+* 보호 그룹에서 마지막 데이터 저장소의 보호를 해제하면 보호 그룹과 해당 보호 설정이 모두 삭제됩니다.
+* 마지막 데이터스토어의 경우 ONTAP tools에서 보호 설정 이름을 표시합니다.
 
 
 .시작하기 전에

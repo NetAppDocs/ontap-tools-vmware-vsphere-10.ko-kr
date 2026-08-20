@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: protect VMFS datastore, SnapMirror datastore protection, create protection group, ONTAP tools disaster recovery 
 summary: SnapMirror 복제를 사용하여 적합한 VMFS 데이터스토어를 보호 그룹에 추가하여 보호하십시오. 
 ---
-= VMFS 데이터스토어 보호
+= ONTAP tools에서 VMFS 데이터스토어 보호
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-이 작업을 사용하여 적합한 VMFS 데이터스토어를 보호 그룹에 추가하여 보호할 수 있습니다.
+적합한 VMFS 데이터스토어를 보호하려면 해당 데이터스토어를 보호 그룹에 추가하십시오.
 
 .시작하기 전에
 * 데이터 저장소가 iSCSI 또는 FC 프로토콜을 사용하는지 확인하십시오.

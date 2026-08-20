@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ONTAP tools maintenance console, appliance system management, support bundle generation, TLS and network configuration 
 summary: ONTAP tools 구성 관리, 암호 재설정, 지원 번들 생성 및 TLS 설정 구성을 수행할 수 있습니다. 
 ---
-= ONTAP 도구 유지 관리 콘솔에 대해 알아보십시오
+= ONTAP tools 유지 관리 콘솔
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -13,12 +13,12 @@ summary: ONTAP tools 구성 관리, 암호 재설정, 지원 번들 생성 및 T
 [role="lead"]
 ONTAP tools for VMware vSphere 의 유지 관리 콘솔을 사용하면 애플리케이션, 시스템 및 네트워크 설정을 관리할 수 있습니다.  관리자 및 유지 관리 비밀번호를 업데이트하고, 지원 번들을 생성하고, 로그 수준을 구성하고, TLS 설정을 관리하고, 원격 진단을 활성화할 수 있습니다.
 
-ONTAP tools for VMware vSphere 배포한 후 유지 관리 콘솔에 액세스할 수 없는 경우 vCenter Server에서 VMware 도구를 설치합니다.  다음을 사용하여 로그인하세요. `maint` 배포 중에 설정된 사용자 이름과 비밀번호입니다.  유지 관리 또는 루트 로그인 콘솔에서 파일을 편집하려면 *nano*를 사용합니다.
+ONTAP tools for VMware vSphere를 배포한 후 유지 관리 콘솔에 액세스할 수 없는 경우 vCenter Server에서 VMware Tools를 설치하십시오. 배포 시 설정한 `maint` 사용자 이름과 암호를 사용하여 로그인합니다. 유지 관리 또는 루트 로그인 콘솔에서 *nano*를 사용하여 파일을 편집하십시오.
 
 
-NOTE: 에 대한 암호를 설정해야 합니다 `diag` 원격 진단을 활성화하는 동안 사용자.
+NOTE: 원격 진단을 활성화할 때 `diag` 사용자의 암호를 설정합니다.
 
-유지 관리 콘솔에 액세스하려면 구축된 VMware vSphere용 ONTAP 툴의 * Summary * 탭을 사용해야 합니다. 을 image:../media/launch-maintenance-console.gif["재생 버튼"]선택하면 유지보수 콘솔이 시작됩니다.
+배포된 ONTAP tools for VMware vSphere의 *요약* 탭을 사용하여 유지 관리 콘솔에 액세스하십시오. image:../media/launch-maintenance-console.gif["재생 버튼"]을 선택하여 유지 관리 콘솔을 시작하십시오.
 
 |===
 

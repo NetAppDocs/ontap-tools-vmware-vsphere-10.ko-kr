@@ -4,17 +4,17 @@ sidebar: sidebar
 keywords: expand vVols datastore, increase vVol datastore capacity, ONTAP tools vVol storage expansion, VMware virtual volumes scaling 
 summary: ONTAP tools 작업을 사용하여 vCenter 객체 보기에서 vVols 데이터스토어 스토리지를 확장합니다. 
 ---
-= ONTAP tools에서 vVols 데이터 저장소 확장
+= ONTAP tools에서 vVols 데이터스토어 확장
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-vCenter 개체 보기에서 데이터스토어 개체를 마우스 오른쪽 버튼으로 클릭하면 플러그인 섹션에 ONTAP tools for VMware vSphere 에 지원되는 작업이 표시됩니다. 특정 작업은 데이터 저장소 유형과 현재 사용자 권한에 따라 활성화됩니다.
+vCenter 오브젝트 보기에서 데이터스토어 오브젝트를 마우스 오른쪽 버튼으로 클릭하면 플러그인 섹션에 ONTAP tools for VMware vSphere에 대해 지원되는 작업이 표시됩니다. 사용 가능한 작업은 데이터스토어 유형과 현재 사용자 Privileges에 따라 다릅니다.
 
 
-NOTE: VVols 데이터 저장소 확장 작업은 ASA R2 시스템 기반 VVol 데이터 저장소에는 적용되지 않습니다.
+NOTE: 이 절차는 ASA r2 시스템 기반 vVols 데이터스토어에는 적용되지 않습니다.
 
 .단계
 . vSphere Client 홈 페이지에서 * 호스트 및 클러스터 * 를 선택합니다.

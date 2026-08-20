@@ -11,14 +11,14 @@ summary: ONTAP tools에서 vCenter 인스턴스를 관리하여 호스트, 가�
 
 
 [role="lead"]
-vCenter Server 인스턴스는 호스트, 가상 머신 및 스토리지 백엔드를 제어할 수 있는 중앙 관리 플랫폼입니다. ONTAP 툴에서 스토리지 백엔드 연결을 해제하고, 인스턴스 세부 정보를 수정하고, 인스턴스를 제거하고, vCenter Server 인증서를 갱신할 수 있습니다.
+ONTAP 툴을 사용하여 스토리지 백엔드를 분리하고, vCenter Server 인스턴스 세부 정보를 수정하고, 인스턴스를 제거하고, vCenter Server 인증서를 갱신할 수 있습니다.
 
 
 
 [[dissociate-storage-backends-from-a-vcenter-server-instance]]
 == vCenter Server 인스턴스에서 스토리지 백엔드 분리
 
-vCenter Server 목록 페이지에는 연결된 스토리지 백엔드 수가 표시됩니다. 각 vCenter Server 인스턴스에는 스토리지 백엔드에 연결하거나 연결을 해제하는 옵션이 있습니다.
+vCenter Server 목록 페이지에는 연결된 스토리지 백엔드 수가 표시됩니다. 각 vCenter Server 인스턴스는 스토리지 백엔드에 연결하거나 연결을 해제할 수 있습니다.
 
 .단계
 . 웹 브라우저에서 ONTAP 도구 관리자를 실행합니다. `\https://<ONTAPtoolsIP>:8443/virtualization/ui/`
@@ -33,7 +33,7 @@ vCenter Server 목록 페이지에는 연결된 스토리지 백엔드 수가 �
 [[modify-a-vcenter-server-instance]]
 == vCenter Server 인스턴스를 수정합니다
 
-다음 단계를 완료하여 vCenter Server 인스턴스를 수정하십시오.
+vCenter Server 인스턴스를 수정하려면 다음 단계를 완료하십시오.
 
 . 웹 브라우저에서 ONTAP 도구 관리자를 실행합니다. `\https://<ONTAPtoolsIP>:8443/virtualization/ui/`
 . 구축 중에 제공한 VMware vSphere 관리자 자격 증명용 ONTAP 툴을 사용하여 로그인합니다.
@@ -155,7 +155,7 @@ iVm0cl+2BZNi/QTMh/MkWV2dYXJ3NuNlqqfzFY+bUfkzkR4SneMk0HX3joNNYDJv
 siO7bL+k/Pxql27NVIhuCoVJAlcI7ak=
 ---{}END CERTIFICATE{}---
 ----
-. 출력 결과를 복사하여 텍스트 파일로 저장하세요. `.pem` 데스크톱에 확장 프로그램이 설치됩니다.
+. 출력 결과를 복사하여 바탕 화면에  `.pem` 파일로 저장합니다.
 . 웹 브라우저에서 ONTAP 도구 관리자를 실행합니다. `\https://<ONTAPtoolsIP>:8443/virtualization/ui/`
 . 구축 중에 제공한 VMware vSphere 관리자 자격 증명용 ONTAP 툴을 사용하여 로그인합니다.
 . 사이드바에서 해당 vCenter Server 인스턴스를 선택합니다

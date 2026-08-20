@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ONTAP tools Manager UI, appliance administration interface, tenant and backend management, ONTAP tools manager portal 
 summary: ONTAP tools Manager를 사용하여 어플라이언스, 테넌트 및 스토리지 백엔드를 관리하십시오. 
 ---
-= ONTAP tools Manager 사용자 인터페이스에 대해 알아보십시오
+= ONTAP 도구 관리자 사용자 인터페이스
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -12,8 +12,6 @@ summary: ONTAP tools Manager를 사용하여 어플라이언스, 테넌트 및 �
 
 [role="lead"]
 ONTAP tools Manager는 ONTAP tools for VMware vSphere를 관리하는 데 사용하는 웹 기반 콘솔로, vCenter Server 인스턴스, 스토리지 백엔드, 고가용성(HA) 및 노드 확장 등의 어플라이언스 구성이 포함됩니다. 멀티 테넌시(multi-tenancy)를 지원하므로 단일 인터페이스에서 여러 vCenter Server 인스턴스를 관리할 수 있습니다.
-
-ONTAP 도구 관리자는 ONTAP tools for VMware vSphere 관리하기 위한 웹 기반 콘솔입니다.
 
 ONTAP 도구 관리자는 다음과 같은 기능을 제공합니다.
 
@@ -38,7 +36,7 @@ image:../media/ontap-tools-manager-overview.png["ONTAP tools Manager 대시보�
 | 어플라이언스 카드 | 어플라이언스 카드는 ONTAP 도구 어플라이언스의 전반적인 상태, 구성 세부 정보 및 활성화된 서비스 상태를 보여줍니다.  자세한 내용을 보려면 *자세히 보기* 링크를 선택하세요.  기기 설정을 변경하면 변경이 완료될 때까지 카드에 작업 상태와 세부 정보가 표시됩니다. 
 
 
-| 경고 카드 | 알림 카드는 HA 노드 수준 알림을 포함하여 유형별로 분류된 ONTAP 도구 알림을 보여줍니다.  알림 개수 하이퍼링크를 클릭하면 선택한 알림 유형별로 필터링된 알림 페이지로 이동하여 자세한 알림을 볼 수 있습니다. 
+| 경고 카드 | 알림 카드에는 HA 노드 수준 알림을 포함하여 유형별로 분류된 ONTAP 툴 알림이 표시됩니다. 개수 링크를 선택하면 선택한 알림 유형으로 필터링된 알림 페이지로 이동하여 자세한 알림을 볼 수 있습니다. 
 
 
 | vCenter 카드 | vCenter 카드는 ONTAP 도구에서 관리하는 모든 vCenter Server 인스턴스의 상태를 보여줍니다.  해당 링크를 선택하면 각 vCenter에 대한 세부 정보를 볼 수 있으며, 이 링크를 클릭하면 선택한 인스턴스에 대한 자세한 정보가 있는 페이지로 이동합니다. 
