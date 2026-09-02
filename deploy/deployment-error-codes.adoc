@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: troubleshooting deployment errors, log bundles, error codes, ONTAP tools 
 summary: ONTAP 도구의 배포 오류 코드를 사용하여 배포, 재부팅 및 복구 실패를 진단하고 해결하십시오. 
 ---
-= ONTAP 도구 배포 오류 해결
+= ONTAP tools 배포 오류 코드
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: deploy ONTAP tools, OVA, content library, single-node configuration 
 summary: ONTAP tools for VMware vSphere를 초소형 단일 노드 어플라이언스로 배포합니다. 
 ---
-= ONTAP tools 배포
+= ONTAP tools를 단일 노드 어플라이언스로 배포합니다.
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

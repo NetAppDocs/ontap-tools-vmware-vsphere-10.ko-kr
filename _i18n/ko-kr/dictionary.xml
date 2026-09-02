@@ -1838,7 +1838,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="e6452e8e9c18000281aae81760220823" category="list-text">진단 셸에서 갱신된 vCenter 인증서를 가져오세요.</block>
   <block id="60576f3967d7db42ad4e62e1f5d6edc4" category="paragraph"><block ref="60576f3967d7db42ad4e62e1f5d6edc4" category="inline-link-macro-rx"></block></block>
   <block id="15a0f68745546e63813c4df1c8d72ba3" category="paragraph">ONTAP tools for VMware vSphere 사용할 때 고려해야 할 RBAC 환경은 크게 두 가지가 있습니다. ONTAP tools for VMware vSphere 사용하려면 vCenter와 ONTAP 모두에서 특정 권한이 필요합니다. ONTAP 도구는 스토리지 관리 작업을 자동화하지만 vCenter 또는 ONTAP 에 사용자 계정을 생성하지는 않습니다. 서비스 계정은 필요에 따라 vSphere 관리자가 생성해야 합니다. 이 문서는 관리자가 ONTAP 도구를 효과적으로 관리하는 데 필요한 역할과 권한을 할당하는 방법에 대한 지침을 제공합니다.</block>
-  <block id="85f52c3a4cf68ed98d733bd16d720806" category="doc">ONTAP tools REST API 참조</block>
   <block id="3e6657795439746877b7825a3d38e9ee" category="doc">첫 번째 ONTAP tools REST API 호출</block>
   <block id="d3aa1a65fd672d6117cbd17f19ef3713" category="doc">ONTAP 도구 REST API에 대해 알아보십시오</block>
   <block id="5a605ad8e95d1a9f3283371391a80135" category="doc">ONTAP tools REST API 구현 세부 정보</block>
@@ -1851,9 +1850,7 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="95d5cac81150e067965210d361bbfb2f" category="doc">ONTAP tools에서 데이터 저장소를 생성합니다</block>
   <block id="287275745bfa919e80da387835621319" category="doc">ONTAP tools에서 스토리지 시스템 및 호스트 검색</block>
   <block id="e697d4e8f25b738f21f477e610eec27a" category="doc">ONTAP 도구에서 VASA Provider를 vCenter Server 인스턴스에 등록합니다</block>
-  <block id="7f3151e275294a9f61ed00de889273e2" category="doc">ONTAP 도구 배포 오류 해결</block>
   <block id="294a9fea24dd193e76e09982dc7598f8" category="doc">ONTAP 도구의 고가용성 배포 워크플로</block>
-  <block id="3d7fe3e43f9f24fffe5ed0d546d12f13" category="doc">ONTAP tools 배포</block>
   <block id="a852f7bb9ca4b2463cb324f20a03a33f" category="doc">ONTAP 도구 배포 전 요구 사항</block>
   <block id="b5d2d3a15a4fc37813f0e8d92c8df16d" category="cell">최대 12K</block>
   <block id="1075c55fd78c4ee15842761b6be2c749" category="cell">최대 24K</block>
@@ -2992,7 +2989,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="c0f9e2b5a70cb22ffbaec35e0963504a" category="cell">이 카드에는 성능 지표별로 정렬된 상위 10개 데이터 저장소가 표시됩니다. 헤더를 선택하여 선택한 지표에 대해 상위 10개 데이터 저장소를 오름차순 또는 내림차순으로 정렬할 수 있습니다. 카드에서 변경한 정렬 및 필터링 내용은 브라우저 캐시를 변경하거나 삭제할 때까지 유지됩니다. 데이터 저장소 유형 드롭다운 목록을 사용하여 NFS, VMFS 또는 vVols 데이터 저장소 유형을 선택합니다.</block>
   <block id="12de44e04cf272eb16b72ae12e77adcd" category="paragraph">ONTAP tools for VMware vSphere를 vSphere Client에서 처음 실행하면 ESXi 호스트, 연결된 LUN 및 NFS 내보내기, 그리고 이러한 리소스를 소유하는 NetApp 스토리지 시스템을 자동으로 검색합니다.</block>
   <block id="87aa71b46d12fe17cac2c0b855f379a3" category="list-text">필요한 데이터 센터를 마우스 오른쪽 버튼으로 클릭하고 *NetApp ONTAP tools* &gt; *호스트 및 스토리지 데이터 업데이트*를 선택합니다.</block>
-  <block id="f5eb38e0d7510dc50906995da5266ad4" category="doc">ONTAP tools를 사용하여 NFS VAAI 플러그인 설치</block>
   <block id="aa73e1a501dc6e18d7c4e895589d2005" category="paragraph">Array Integration용 NFS vStorage API(NFS VAAI) 플러그인은 VMware vSphere를 NFS 스토리지 어레이에 연결하여 ESXi 호스트 대신 스토리지 어레이가 특정 스토리지 작업을 처리할 수 있도록 합니다. VAAI 플러그인을 설치하려면 ONTAP tools for VMware vSphere를 사용하십시오.</block>
   <block id="a3b203702a6097601122fe2faf910248" category="list-text">플러그인 섹션에서 *바로가기* &gt; *NetApp ONTAP tools*를 선택하십시오.</block>
   <block id="7c0e08714c4cb3e8da61be850118b1f9" category="paragraph">ONTAP 툴 어플라이언스의 시계를 동기화하려면 NTP 서버 정보를 입력하십시오.</block>
@@ -3052,7 +3048,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="3e7ddae4cf1db8d9c002c8ea20899198" category="doc">ONTAP tools에서 vVols 데이터스토어 확장</block>
   <block id="b0b62f1236c5866a65b083c891ba140b" category="paragraph">vCenter 오브젝트 보기에서 데이터스토어 오브젝트를 마우스 오른쪽 버튼으로 클릭하면 플러그인 섹션에 ONTAP tools for VMware vSphere에 대해 지원되는 작업이 표시됩니다. 사용 가능한 작업은 데이터스토어 유형과 현재 사용자 Privileges에 따라 다릅니다.</block>
   <block id="95e9c1a7d2cfd152c5a51f8703f540dc" category="admonition">이 절차는 ASA r2 시스템 기반 vVols 데이터스토어에는 적용되지 않습니다.</block>
-  <block id="eb50753fe343f5a3bd1299b243db9237" category="doc">ONTAP tools의 이그룹 및 내보내기 정책 워크플로우</block>
   <block id="f8b2875ad5502793710c9bdefd26c541" category="paragraph">이 정보를 활용하여 ONTAP tools for VMware vSphere가 데이터스토어 액세스를 위한 igroup 및 내보내기 정책을 생성하고 관리하는 방법을 이해하십시오.</block>
   <block id="e71c2200ee51ec842f21452effc78de6" category="paragraph">ONTAP tools for VMware vSphere 9.x에서는 igroup이 평면 구조로 생성 및 관리되었으며, vCenter의 각 데이터스토어는 단일 igroup과 연결되었습니다. 이 모델은 유연성을 제한하고 여러 데이터스토어에서 igroup을 재사용하는 데 제약을 주었습니다. ONTAP tools for VMware vSphere 10.4에서는 중첩 igroup이 도입되어 vCenter의 각 데이터스토어는 상위 igroup과 연결되고, 각 호스트는 해당 상위 igroup 아래의 하위 igroup에 연결됩니다. 데이터스토어 전반에서 재사용할 수 있도록 사용자 정의 이름을 가진 사용자 지정 상위 igroup을 정의하여 igroup 관리를 간소화할 수 있습니다. 이 정보를 통해 ONTAP tools for VMware vSphere가 igroup 워크플로를 통해 LUN 및 데이터스토어를 관리하는 방식을 이해할 수 있습니다. 다음 예와 같이 다양한 워크플로는 서로 다른 igroup 구성을 생성합니다.</block>
   <block id="b4620fbb34dbdb976eca43eee22b9fc4" category="paragraph">ONTAP tools for VMware vSphere는 하위 igroup인 host2Igroup을 생성하고 이를 기존 상위 igroup인 DS1Igroup에 추가합니다.</block>
@@ -3129,4 +3124,18 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="ae70d77fff05174738fe4cb76f19e0a2" category="doc">ONTAP tools에서 가상 머신 스토리지 세부 정보 보기</block>
   <block id="cac5f85fabd72ec42e30d493b57a81da" category="paragraph">스토리지 뷰를 사용하여 가상 머신과 연결된 vVols를 확인할 수 있습니다.</block>
   <block id="82199557859e59cf6898b255cd98ea3f" category="list-text">NetApp ONTAP 툴* &gt; *스토리지*를 선택합니다. 오른쪽 창에 *스토리지* 세부 정보가 표시됩니다. VM의 vVols 목록을 볼 수 있습니다.</block>
+  <block id="5a66ba13a8dc00ed8bcea0c5323f9dec" category="doc">Swagger UI에서 ONTAP tools REST API 문서 보기</block>
+  <block id="152eb457072cc3f0d1daeb3318bbc7f4" category="doc">ONTAP 도구에서 스토리지 백엔드를 vCenter Server 인스턴스에 연결합니다</block>
+  <block id="8761e266bba00679b7078b2ece451295" category="doc">ONTAP tools를 사용하여 NFS VAAI 플러그인 설치</block>
+  <block id="2476099c83b7793808f5ba708e5b592c" category="doc">ONTAP tools 배포 오류 코드</block>
+  <block id="8dee8cc33274cb62a45a4ac35700d849" category="doc">ONTAP tools를 단일 노드 어플라이언스로 배포합니다.</block>
+  <block id="6d538e124b476aff2397c149a69e279b" category="doc">ONTAP tools가 igroup 및 엑스포트 정책을 관리하는 방법</block>
+  <block id="30e47efa2040640e7c0056e2bfb71a7b" category="doc">버전별 VMware vSphere 기능 비교를 위한 ONTAP tools</block>
+  <block id="ebf11048b18616fbd6ba58d38a1858be" category="cell">094</block>
+  <block id="dc8434651b9231a4a07cd70651df6cb2" category="cell">NTP 구성이 실패하여 시스템이 NTPsec으로 롤백되었습니다.</block>
+  <block id="deffa26efb6f3e7347013d7b1e7145cb" category="paragraph">Chrony 설치 오류로 인해 업그레이드가 실패하는 경우:</block>
+  <block id="1b4d213b917b2a9601c255e522c420e3" category="list-text">Chrony가 설치되어 있는지 확인합니다.</block>
+  <block id="4ea2f2639373a757d002c323f4650ae1" category="list-text">Chrony가 설치되어 있고 제공한 NTP 서버에 문제가 있는 경우 해당 서버에 연결할 수 있는지 확인하십시오.</block>
+  <block id="4db51794b7899f8781b7e514861f9c54" category="paragraph">서버에 접속 가능한 경우, 문제는 서버 접속 문제와는 무관합니다. 서버에 실제로 접속할 수 없는 경우, ONTAP tools Manager에서 해당 서버를 제거하고 접속 가능한 NTP 서버를 대신 제공하십시오.</block>
+  <block id="58d802804e6af6816051d4101a78cd4b" category="list-text">NTP 업그레이드 도중 다른 문제로 인해 업그레이드가 실패하는 경우 다음 로그를 확인하십시오.</block>
 </blocks>

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: associate storage backend, ONTAP tools backend mapping, global storage backend association, vCenter storage backend 
 summary: ONTAP tools에서 vCenter Server 인스턴스와 글로벌 스토리지 백엔드를 연결합니다. 
 ---
-= 스토리지 백엔드를 vCenter Server 인스턴스에 연결합니다
+= ONTAP 도구에서 스토리지 백엔드를 vCenter Server 인스턴스에 연결합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
