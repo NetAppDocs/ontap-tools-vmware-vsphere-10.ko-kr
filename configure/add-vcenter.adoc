@@ -40,7 +40,7 @@ X509v3 extensions:
 * vCenter Server를 정규화된 도메인 이름(FQDN)을 사용하여 배포하고, 최적의 호환성과 지원을 위해 인증서의 SAN에 DNS Name=machine_FQDN이 포함되어 있는지 확인하십시오.
 * 자세한 내용은 VMware 설명서를 참조하십시오.
 +
-** https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vsphere-authentication/vsphere-security-certificates-authentication/certificate-requirements-for-different-solution-paths-authentication.html["vSphere 다양한 솔루션 경로에 대한 인증서 요구 사항"]
+** https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vsphere-authentication/vsphere-security-certificates/certificate-requirements-for-different-solution-paths.html["vSphere 다양한 솔루션 경로에 대한 인증서 요구 사항"]
 ** https://knowledge.broadcom.com/external/article/316601/replace-vcenter-machine-ssl-certificate.html["vCenter 머신 SSL 인증서 교체 사용자 지정 인증 기관 서명 인증서"]
 ** https://knowledge.broadcom.com/external/article/406282/error-subject-alternate-name-san-field-d.html["오류: Subject Alternate Name(SAN) 필드에 PNID가 없습니다. 유효한 인증서를 제공하십시오"]
 
