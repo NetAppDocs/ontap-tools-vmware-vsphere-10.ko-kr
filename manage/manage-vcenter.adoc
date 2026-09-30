@@ -117,7 +117,8 @@ ONTAP 도구는 vCenter 인증서의 만료일이 임박했거나 만료되었�
 +
 [listing]
 ----
-echo | openssl s_client connect <vcenter>:443 2>&1 | sed -n '/-BEGIN CERTIFICATE/,/END CERTIFICATE/p'
+echo | openssl s_client -connect <vcenter>:443 2>&1 | sed -n '/-BEGIN CERTIFICATE/,/END CERTIFICATE/p'
+// OTVDOC-378 updates
 ----
 . 인증서가 Base 64 ASCII 형식인지, 그리고 시작 및 끝 줄이 포함되어 있는지 확인하십시오. 예를 들면 다음과 같습니다.
 +

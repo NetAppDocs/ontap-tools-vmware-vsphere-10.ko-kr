@@ -16,6 +16,9 @@ ONTAP tools for VMware vSphere를 배포하기 전에 지원되는 버전, 크�
 ESXi 호스트 및 VMware vCenter Server Virtual Appliance(vCSA)가 포함된 지원되는 vSphere 환경에 ONTAP tools for VMware vSphere를 배포합니다.
 
 
+NOTE: vCenter Server의 VMware vApp 내에 ONTAP 툴 가상 머신을 배포하지 마십시오.
+
+
 
 [[system-requirements]]
 == 시스템 요구 사항

@@ -850,7 +850,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="cd976ca49583a8080802261ae61aa5a0" category="list-text">마운트할 데이터 저장소를 선택하고 * Mount * 를 선택합니다.</block>
   <block id="267de19ac03e71a99875cacf87972c29" category="list-text">측면 표시줄에서 * 설정 * 을 선택합니다.</block>
   <block id="f0833ce92c23eb056dde238669740988" category="list-text"><block ref="523efdef8100699453c6b07ce8f4921c" category="inline-link-macro-rx"></block> VMware vSphere용 ONTAP 툴에 생성되었습니다.</block>
-  <block id="b2aac3a919762e9dd0f89ef1b3999500" category="list-text">모든 스토리지 백엔드를 삭제합니다. 을 <block ref="c97897721457f9108ce9caf2b3f0d235" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="11e59432e8c34141d30396d503dc7c73" category="list-text">Storage Replication Adapters * 를 선택합니다.</block>
   <block id="51853e46fcef4ee8c2608d1c9995935a" category="list-text">어댑터 삭제 결과를 알고 있는지 확인하고 * 삭제 * 를 선택합니다.</block>
   <block id="7ecf25a7ff85dee8180a09f0f8a71a56" category="list-text">VMware Live Site Recovery에서 * Array Managers * &gt; * Add Array Manager * 를 선택합니다.</block>
@@ -938,9 +937,7 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="c961da7f498e50ff48715252d593d099" category="cell">* 사용 가능한 정보 *</block>
   <block id="b5380e34617914719b059f6d55b97b66" category="cell">VMFS 데이터 저장소</block>
   <block id="e122a7a507ac1f580cc5b9f2632a851c" category="cell">VVOL 데이터 저장소</block>
-  <block id="5a43e80953e87c7df463deaedcab9879" category="section-title">vCenter Server 인스턴스로 스토리지 백엔드를 분리합니다</block>
   <block id="9a9ef84d994bd8c482cd3e98feba5977" category="list-text">스토리지 백엔드 분리 * 를 선택합니다.</block>
-  <block id="02a713a12e2b216b65a52896d0728a0a" category="list-text">vCenter Server 인스턴스에서 모든 스토리지 백엔드의 연결을 해제합니다. 을 <block ref="8f766e539ddb39a7c07c0c84dded1670" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="f75d6048a8fcc9f4822dcc0f5eef23d2" category="inline-link-macro">VMware Live Site Recovery 어플라이언스에서 SRA를 구성합니다</block>
   <block id="7f17c0be45130bf2b12d5bf5ec2ead98" category="list-text"><block ref="d6f1afa70d6145a212d9dc6bc8a2fa64" prefix=" " category="inline-code"></block>에서 SRA Adapter 파일을 다운로드해야<block ref="db8756d7f65d6a8e593e69ba45adbb2e" category="inline-link-rx"></block> 합니다.</block>
   <block id="bc7d4efb983c07650bf67ebd23206b42" category="doc">VMware vSphere 10 RBAC용 ONTAP 툴에 대해 알아보십시오</block>
@@ -1047,7 +1044,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="cdb9fe2a322209ab095ba01e8388697d" category="list-text">VMware Live Site Recovery에서 SRA 어댑터 제거:</block>
   <block id="1435a5cf1efdb19e83d0f140a2ca4f4f" category="list-text">포트 5480을 사용하여 VMware Live Site Recovery 어플라이언스 관리 인터페이스에 admin으로 로그인합니다.</block>
   <block id="2ec2edd0a7db2ac9b3f23b9db6dda124" category="list-text">해당 SRA 카드를 선택하고 드롭다운 메뉴에서 * Delete * 를 선택합니다.</block>
-  <block id="d34cead72810ffa475c9303607018d30" category="list-text">VMware vSphere용 ONTAP 툴에 온보딩된 vCenter 서버 인스턴스를 삭제합니다. 을 <block ref="71e9ea3cb5165d1231d572643ddb35cb" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="3014a29195e86ef40c71c31cde3ad9e7" category="list-text">vCenter Server에서 VMware vSphere VM용 ONTAP 툴의 전원을 끄고 VM을 삭제합니다.</block>
   <block id="056110d308abee4fb5305efd8c8994d0" category="paragraph"><block ref="056110d308abee4fb5305efd8c8994d0" category="inline-link-macro-rx"></block></block>
   <block id="af97740fd99b637615a0fe129d5fc42f" category="list-text">웹 브라우저에서 ONTAP 도구 관리자를 실행합니다.<block ref="a2fad8db83c338dbc95675bd05c70607" prefix=" " category="inline-code"></block></block>
@@ -2699,7 +2695,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="1ecc48e7d703ccee72239ae065025e8b" category="list-text">호스트 클러스터에서 선택한 데이터 저장소만 보호합니다.</block>
   <block id="36c8c92fa35e1f64c72f630ce6180299" category="list-text">선택한 데이터 저장소를 보호 그룹으로 묶습니다.</block>
   <block id="7d99b8f7ded10f4f2921239a1a9c9a43" category="list-text">SnapMirror 관계 및 정책을 보호 그룹 수준에서 적용합니다.</block>
-  <block id="76b1a8b712394da72e5366b816d6419b" category="list-text">동일한 클러스터 내에서 서로 다른 데이터 저장소 그룹에 대해 서로 다른 보호 방식을 사용하십시오.</block>
   <block id="1947b0d44f9e85eca7623e1cab6b8bae" category="paragraph">이 기능은 iSCSI 또는 FC 프로토콜을 사용하는 VMFS 데이터스토어만 지원합니다.</block>
   <block id="632923e99d3fb84490cf1fed11f3d12a" category="paragraph">다음 정책 유형을 적격 데이터 저장소에 사용할 수 있습니다.</block>
   <block id="b1f095471f89f11c20fe033a35afe72f" category="list-text">*AutomatedFailOverDuplex (AFD)*</block>
@@ -2731,7 +2726,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="ab5d207d269446dad86a9b15cec92d6a" category="list-text">사용자 지정 비동기 정책은 지원되지 않습니다. 기본 ONTAP 비동기 정책을 사용하십시오.</block>
   <block id="224a5056830c20959480843b73cf0533" category="list-text">3차 구성 또는 비동기 전용 구성에서는 비동기 관계 정리가 수동으로 수행됩니다.</block>
   <block id="4f948c7d9b938caffddb97c0d0f8394c" category="list-text">ONTAP System Manager에서 페일오버를 트리거합니다. ONTAP tools 외부에서 ONTAP Mediator를 구성합니다.</block>
-  <block id="9aab7c7432877f8502ee090eee7abdc2" category="paragraph">ONTAP tools 10.5에서 업그레이드할 경우 기존 호스트 클러스터 보호 구성은 세분화된 데이터스토어 보호 형식으로 마이그레이션됩니다. 업그레이드 후 보호 그룹 및 데이터스토어 멤버십을 확인하십시오.</block>
   <block id="7f6120908ce94360b9a41585185a9108" category="inline-link-macro">ONTAP tools를 사용하여 클러스터의 데이터 저장소 보호</block>
   <block id="c1b7f8376d6217ab8332bd89d741aae1" category="list-text"><block ref="c1b7f8376d6217ab8332bd89d741aae1" category="inline-link-macro-rx"></block></block>
   <block id="aa80a3d8f54a41c521c248368b7227fa" category="summary">VMware Live Site Recovery 장애 조치 워크플로를 준비하기 위해 보호 사이트와 복구 사이트 간의 폴더를 매핑합니다.</block>
@@ -2855,7 +2849,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="a6e5efc1d16eb34745bb75a77226d583" category="list-text">낮은 RPO 백업을 활성화하고 vSphere Client 인터페이스에 백업 파일이 하나 이상 표시되는지 확인하십시오. 업그레이드 전에 백업 폴더를 다운로드하십시오.</block>
   <block id="bbac914a781e9dc109fcf5bab03d2c11" category="list-text">기본 ONTAP tools VM을 찾아 웹 콘솔을 실행합니다.</block>
   <block id="034b9e64b5ae759244f5eecd018ed221" category="list-text">게이트웨이 인증서는 1년 유효기간으로 갱신됩니다. 기존 SRA 어댑터를 제거하고 새 10.6 어댑터를 업로드하면 SRA 인증서의 유효기간이 10년에서 1년으로 변경됩니다.</block>
-  <block id="9b63ec403219c80e52e7dae8c3a61d23" category="list-text">10.5 또는 이전 릴리스에서 호스트 클러스터 보호 설정이 있는 경우 ONTAP tools는 업그레이드 중에 별도의 *클러스터 보호 구성* 탐색 항목을 생성합니다.</block>
   <block id="1e271ba64f48de298f8de2968b529b3a" category="paragraph">ONTAP tools for VMware vSphere 10.6으로 업그레이드한 후:</block>
   <block id="7e07903e1b79156be237c3f4f9194ffe" category="list-text">ONTAP tools 10.4 또는 10.5 SRA 어댑터를 제거하고 10.6 SRA 어댑터 tar 파일을 업로드하십시오.</block>
   <block id="2d96dfea27764d22dbafb174af190a36" category="list-text">*클러스터 보호 구성*을 열고 기존 호스트 클러스터 보호 설정이 있는지, 그리고 올바르게 매핑되었는지 확인하십시오.</block>
@@ -3138,4 +3131,18 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="4db51794b7899f8781b7e514861f9c54" category="paragraph">서버에 접속 가능한 경우, 문제는 서버 접속 문제와는 무관합니다. 서버에 실제로 접속할 수 없는 경우, ONTAP tools Manager에서 해당 서버를 제거하고 접속 가능한 NTP 서버를 대신 제공하십시오.</block>
   <block id="58d802804e6af6816051d4101a78cd4b" category="list-text">NTP 업그레이드 도중 다른 문제로 인해 업그레이드가 실패하는 경우 다음 로그를 확인하십시오.</block>
   <block id="f5589bd09ceeb2368f74d5725fa2dcc7" category="list-text"><block ref="f5589bd09ceeb2368f74d5725fa2dcc7" category="inline-link-rx"></block></block>
+  <block id="345a87b70523fdb5dd79038a7e873845" category="admonition">vCenter Server의 VMware vApp 내에 ONTAP 툴 가상 머신을 배포하지 마십시오.</block>
+  <block id="b86439358b560760313055a90bd5812c" category="list-text">ONTAP tools for VMware vSphere에 온보딩된 vCenter Server 인스턴스를 제거합니다. <block ref="71e9ea3cb5165d1231d572643ddb35cb" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="26adf559940dd20d02f0bdec74d0cc28" category="paragraph">vCenter Server 인스턴스를 제거할 때 ONTAP tools에서 필요한 정리 작업을 안내합니다. *vCenter 제거* 대화 상자에 메시지가 표시되면 *이 vCenter Server에서 모든 스토리지 아티팩트 제거* 및 *관련 데이터스토어는 더 이상 ONTAP tools에서 관리되지 않음을 이해합니다*를 선택한 다음 *강제 삭제*를 선택하십시오.</block>
+  <block id="c4d716c88a05e0d00551ac8ea6da15a0" category="paragraph">*강제 삭제*를 사용하기 전에 모든 vVols 데이터스토어가 제거되거나 마이그레이션되었는지, 모든 보호된 데이터스토어가 보호 해제되었는지, 그리고 검색 작업이 실행 중이지 않은지 확인하십시오.</block>
+  <block id="7eb5227d0f36e7346167a93b856b0fa7" category="paragraph">vCenter Server를 삭제하는 동안 연결할 수 없는 경우 ONTAP tools는 vCenter Server 레코드만 제거합니다. VMware vCenter Server에서 플러그인을 수동으로 등록 해제해야 합니다.</block>
+  <block id="38fbd92f67469b25016c6a83c8a94171" category="list-text">동일한 호스트 클러스터 내에서 서로 다른 데이터 저장소 그룹에 대해 서로 다른 보호 방식을 사용하십시오.</block>
+  <block id="a56b4b9b7649b05781df3dab1c45651b" category="list-text">단일 호스트 클러스터에 여러 보호 설정을 할당합니다.</block>
+  <block id="4bf2e3d77c651d3fb73aa4b90e436796" category="list-text">동일한 스토리지 가상 머신(SVM), 서로 다른 SVM 또는 서로 다른 스토리지 시스템에 걸쳐 보호 설정을 구성할 수 있습니다.</block>
+  <block id="20d81ee1f8e1f28cd4b2b539fbf352ee" category="list-text">호스트 클러스터의 일부 데이터 저장소는 보호되지 않은 상태로 유지하십시오.</block>
+  <block id="e472ea4c0e1a3e6d590c155e00c141db" category="list-text">개별 데이터 저장소에 대한 보호 기능을 제거합니다.</block>
+  <block id="aa398ba1f850bdbde5e4cba259662cc0" category="list-text">프로비저닝 중에 데이터 저장소를 보호합니다.</block>
+  <block id="47d11b58a635ad0e3f489449a130c627" category="paragraph">ONTAP tools for VMware vSphere 10.5에서 업그레이드할 경우 기존 호스트 클러스터 보호 설정이 세분화된 데이터스토어 보호로 자동 변환됩니다. 업그레이드 후 보호 그룹 및 데이터스토어 멤버십을 확인하십시오.</block>
+  <block id="c3f0c8b4da16f3b290431c535f98a9f7" category="list-text">ONTAP tools for VMware vSphere 10.5 이하 버전의 호스트 클러스터 보호 설정이 있는 경우, ONTAP tools는 이를 세부적인 데이터스토어 보호로 변환하고 별도의 *클러스터 보호 구성* 탐색 항목을 생성합니다.</block>
+  <block id="744e01cbfcb5b5f86287c1c9beac6075" category="list-text">세부적인 데이터 저장소 보호 기능 및 자격 요건에 대한 자세한 내용은 <block ref="9a8072c85e6a05ec4ad84b9967b3caa6" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
 </blocks>
