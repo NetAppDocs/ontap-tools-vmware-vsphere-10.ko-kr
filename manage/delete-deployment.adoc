@@ -19,7 +19,7 @@ summary: ONTAP tools 배포를 제거한 후 성능 저하를 방지하려면 �
 배포 환경에서 iSCSI를 사용하는 경우 igroup도 삭제해야 합니다.
 
 . FlexVol 볼륨 목록을 가져옵니다. _kubectl 지속적 볼륨 설명 | grep internalName | awk -F'=' '{print $2}'_
-. vCenter Server에서 VM을 제거합니다. 을 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vsphere-virtual-machine-administration-guide-8-0/managing-virtual-machinesvsphere-vm-admin/adding-and-removing-virtual-machinesvsphere-vm-admin.html#GUID-376174FE-F936-4BE4-B8C2-48EED42F110B-en["VM 및 VM 템플릿을 제거하고 다시 등록합니다"]참조하십시오.
+. vCenter Server에서 VM을 제거합니다.  https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-virtual-machine-administration/managing-virtual-machines/adding-and-removing-virtual-machines.html["VM 및 VM 템플릿을 제거하고 다시 등록합니다"]을(를) 참조하십시오.
 . FlexVol 볼륨을 삭제합니다. 참조하다 https://docs.netapp.com/us-en/ontap/volumes/delete-flexvol-task.html["FlexVol 볼륨을 삭제합니다"] . 볼륨을 삭제하려면 CLI 명령에 정확한 FlexVol volume 이름을 입력하세요.
 . iSCSI 배포의 경우 ONTAP 스토리지 백엔드에서 SAN igroup을 삭제하십시오. 을 참조하십시오 https://docs.netapp.com/us-en/ontap/san-admin/manage-san-initiators-task.html["SAN 이니시에이터 및 igroup을 보고 관리합니다"].
 

@@ -16,7 +16,7 @@ ONTAP tools for VMware vSphere를 제거하면 어플라이언스의 데이터�
 .단계
 . VMware vSphere에서 관리하는 데이터 저장소용 ONTAP 툴에서 모든 가상 머신을 제거하거나 이동합니다.
 +
-** 가상 머신을 제거하려면 을 참조하십시오 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vsphere-virtual-machine-administration-guide-8-0/managing-virtual-machinesvsphere-vm-admin/adding-and-removing-virtual-machinesvsphere-vm-admin.html#GUID-376174FE-F936-4BE4-B8C2-48EED42F110B-en["VM 및 VM 템플릿을 제거하고 다시 등록합니다"]
+** 가상 머신을 제거하려면 다음을 참조하십시오 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-virtual-machine-administration/managing-virtual-machines/adding-and-removing-virtual-machines.html["VM 및 VM 템플릿을 제거하고 다시 등록합니다"]
 ** 관리되지 않는 데이터스토어로 이동하려면 Storage vMotion을 사용하여 가상 머신을 마이그레이션하는 방법에 대해  https://techdocs.broadcom.com/["Broadcom 기술 문서"]을 참조하십시오
 
 

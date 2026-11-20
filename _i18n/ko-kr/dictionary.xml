@@ -1036,10 +1036,8 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="413560adb5f032ce013265b1080e4df5" category="list-text">컴퓨터 리소스를 선택하고 * 다음 * 을 선택합니다. 필요에 따라 배포된 VM의 전원을 자동으로 켜려면 * 확인란을 선택합니다.</block>
   <block id="fc670824c9b9087edaedbd8931be914a" category="doc">FlexVol 볼륨을 제거합니다</block>
   <block id="fde79a3ad6359be293ba5687504ff1e1" category="inline-link">VM 및 VM 템플릿을 제거하고 다시 등록합니다</block>
-  <block id="0e430f76e438c52f413b9c67136dbe04" category="list-text">vCenter Server에서 VM을 제거합니다. 을<block ref="c16fb322315174fa2c9720c74541cf45" category="inline-link-rx"></block>참조하십시오.</block>
   <block id="23829b8d6575f7cd3e20a5e92b475a9e" category="doc">VMware vSphere용 ONTAP 툴을 제거합니다</block>
   <block id="82a00fc1c0ae6d437f6d942c64bee898" category="list-text">VMware vSphere에서 관리하는 데이터 저장소용 ONTAP 툴에서 모든 가상 머신을 제거하거나 이동합니다.</block>
-  <block id="4ad237c48098cfd8973e73475bded403" category="list-text">가상 머신을 제거하려면 을 참조하십시오<block ref="c16fb322315174fa2c9720c74541cf45" category="inline-link-rx"></block></block>
   <block id="cdb9fe2a322209ab095ba01e8388697d" category="list-text">VMware Live Site Recovery에서 SRA 어댑터 제거:</block>
   <block id="1435a5cf1efdb19e83d0f140a2ca4f4f" category="list-text">포트 5480을 사용하여 VMware Live Site Recovery 어플라이언스 관리 인터페이스에 admin으로 로그인합니다.</block>
   <block id="2ec2edd0a7db2ac9b3f23b9db6dda124" category="list-text">해당 SRA 카드를 선택하고 드롭다운 메뉴에서 * Delete * 를 선택합니다.</block>
@@ -3237,4 +3235,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 iSCSI
   <block id="ace000412a4686f2d39bcff385c7f9a9" category="paragraph">예. ONTAP 툴은 ONTAP 클러스터 REST API와는 별도로 자동화를 위한 REST API를 제공합니다. API 액세스는 ONTAP 툴 IP 주소와 포트 8443을 사용합니다. ONTAP 툴 Manager 자격 증명으로 인증하여 액세스 토큰을 얻은 다음, <block ref="27e609fa34c63bdd66a44eac9027c817" prefix=" " category="inline-code"></block> 헤더에 토큰을 전송합니다. 장시간 실행되는 작업은 비동기적으로 실행될 수 있으며 모니터링할 작업을 반환합니다. 시작하려면 <block ref="d6e36bb958210663cc4b017ad9ad5fc2" category="inline-link-macro-rx"></block> 및 <block ref="e80b3414f41f200b08ca92f57c0602dd" category="inline-link-macro-rx"></block>를 참조하십시오.</block>
   <block id="cb0bf506e37053e61b7bc79a19047980" category="admonition">SVM 사용자의 경우 팬아웃 보호 기능이 지원되지 않습니다. 팬아웃 보호 기능을 사용하려면 AutomatedFailOverDuplex 관계 외에도 비동기 관계가 필요하지만, ONTAP 툴은 SVM 사용자 자격 증명으로 추가된 스토리지 백엔드에 대한 비동기 보호 생성을 지원하지 않습니다.</block>
   <block id="f12b92f1d5668f1f94a0ad1f11f6cfe8" category="list-text"><block ref="c3933049d26fccba0396e7760f0fba06" prefix="" category="inline-code"></block></block>
+  <block id="885d21dec9edfd9e47c0de1b52512a21" category="list-text">vCenter Server에서 VM을 제거합니다. <block ref="f91a993b6f6c788bbf2a6ee8baba0206" category="inline-link-rx"></block>을(를) 참조하십시오.</block>
+  <block id="6e0fe697d4f7df604cb13a3a0b92121e" category="list-text">가상 머신을 제거하려면 다음을 참조하십시오<block ref="f91a993b6f6c788bbf2a6ee8baba0206" category="inline-link-rx"></block></block>
 </blocks>
